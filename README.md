@@ -8,7 +8,7 @@ https://sendbird.gitbooks.io/ios-sdk/content/en/index.html
 You can download [a sample app](https://github.com/smilefam/sendbird-sample).
 
 ## Other platforms
-* [Android](https://sendbird.gitbooks.io/android-sdk/content/en/index.html)
-* [Unity3D](https://sendbird.gitbooks.io/unity-sdk/content/en/index.html)
+* [Android](https://sendbird.gitbooks.io/sendbird-android-sdk/content/en/index.html)
+* [Unity SDK](https://sendbird.gitbooks.io/sendbird-unity-sdk/content/en/index.html)
 * [Web(JavaScript)](https://sendbird.gitbooks.io/sendbird-web-doc/content/en/index.html)
-* [Server API](https://sendbird.gitbooks.io/api/content/en/index.html)
+* [Server API](https://sendbird.gitbooks.io/sendbird-server-api/content/en/index.html)
