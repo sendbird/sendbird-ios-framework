@@ -10,17 +10,17 @@ If You comply with this agreement, You have the rights below.
 
 (2) SCOPE OF LICENSE. The SDK is licensed, not sold. This agreement only gives You some rights to use the SDK. SendBird specifically does not grant any express or implied rights under its patents with respect to your Authorized Applications. In doing so, You must comply with any technical limitations in the SDK that only allow You to use it in certain ways. You may not: (a) reverse engineer, decompile, distribute or disassemble the SDK, except and only to the extent that applicable law expressly permits; or (b) make more copies of the SDK than specified in this agreement, except and only to the extent applicable law expressly permits; or (c) publish the SDK for others to copy; or (d) rent, lease or lend the SDK.
 
-(3) USE OF THE SERVICES. Your use of the Services, and the use of the Services by anyone hosting or using your Authorized Application, is governed by the then-current Terms of Services (“TOS”) which can be found at: http://jiver.co/web/terms.
+(3) USE OF THE SERVICES. Your use of the Services, and the use of the Services by anyone hosting or using your Authorized Application, is governed by the then-current Terms of Services (“TOS”) which can be found at: http://sendbird.com/web/terms.
 
 (4) EXPORT RESTRICTIONS. THE SDK IS SUBJECT TO UNITED STATES EXPORT LAWS AND REGULATIONS. YOU MUST COMPLY WITH ALL DOMESTIC AND INTERNATIONAL EXPORT LAWS AND REGULATIONS THAT APPLY TO THE SDK.
 
-(5) FEEDBACK. By submitting feedback to SendBird, either via email at help@jiver.io or by any other means: You automatically grant to SendBird a perpetual, irrevocable, transferable, royalty-free license to use Your feedback for any and all purposes without any compensation to You.
+(5) FEEDBACK. By submitting feedback to SendBird, either via email at help@sendbird.com or by any other means: You automatically grant to SendBird a perpetual, irrevocable, transferable, royalty-free license to use Your feedback for any and all purposes without any compensation to You.
 
 (6) TERMINATION. SendBird reserves the right to discontinue offering the SDK or Services or to modify the SDK or Services at any time in its sole discretion. This Section and Sections 3, 4, 5, 8, 9, 10, 11, and 12 will survive termination of this agreement or any discontinuation of the offering of the SDK or Services along with any other provisions that would reasonably be deemed to survive such events.
 
 (7) RESERVATION OF RIGHTS. You are not authorized to alter, modify, copy, edit, format, create derivative works of or otherwise use any materials, content or technology provided under this agreement except as explicitly provided in this agreement or approved in advance in writing by SendBird.
 
-(8) MODIFICATIONS; NOTICES. If we change this contract, then we will give you notice before the change is in force. If you do not agree to these changes, then you must cancel and stop using the SDK and Services before the changes are in force. If you do not stop using the SDK or Services, then your use of the SDK or Services will continue under the changed contract. SendBird may give notices to You, at SendBird's option, by posting on any portion of jiver.co or jiver.io or by electronic mail to any e-mail address provided by You to SendBird.
+(8) MODIFICATIONS; NOTICES. If we change this contract, then we will give you notice before the change is in force. If you do not agree to these changes, then you must cancel and stop using the SDK and Services before the changes are in force. If you do not stop using the SDK or Services, then your use of the SDK or Services will continue under the changed contract. SendBird may give notices to You, at SendBird's option, by posting on any portion of sendbird.com or by electronic mail to any e-mail address provided by You to SendBird.
 
 (9) ENTIRE AGREEMENT. This agreement, and any applicable TOS or contract for Services, are the entire agreement with respect to the SDK or Services.
 
