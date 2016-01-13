@@ -595,6 +595,8 @@ typedef enum {
  */
 + (enum WSReadyState) connectState;
 
++ (void) userListWithToken:(NSString *)token page:(long)page withLimit:(long)limit resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
+
 /**
  *  For UnitTest
  */

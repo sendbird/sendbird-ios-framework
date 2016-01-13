@@ -28,6 +28,7 @@
 #define kApiMarkAsRead @"/v1/mark_as_read"
 #define kApiMessagingUnreadCount @"/v1/messaging_unread_count"
 #define kApiUserBlockList @"/v1/user_block_list"
+#define kApiUserList @"/v1/user_list"
 
 @interface SendBirdAPIClient : NSObject
 
@@ -58,6 +59,7 @@
 - (void) memberListInChannel:(NSString *)channelUrl withPageNum:(int)page withQuery:(NSString *)query withLimit:(int)limit resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) messageListWithChannelUrl:(NSString *)channelUrl messageTs:(long long)messageTs prevLimit:(int)prevLimit andNextLimit:(int)nextLimit include:(BOOL)include resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) messagingUnreadCountResultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
+- (void) userListWithToken:(NSString *)token page:(long)page withLimit:(long)limit resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) cancelAll;
 - (void) getBlockedUserListResultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 
