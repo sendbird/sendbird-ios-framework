@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  Application user class. Either a new user is created or logged in using an existing user based on the parameters set using [`loginWithUserName:`](./SendBird.html#//api/name/loginWithUserName:), [`loginWithUserName:andUserImageUrl:`](./SendBird.html#//api/name/loginWithUserName:andUserImageUrl:), [`igawLoginWithUserId:`](/SendBird.html#//api/name/igawLoginWithUserId:), [`igawLoginWithUserName:`](./SendBird.html#//api/name/igawLoginWithUserName:), [`igawLoginWithUserName:andUserImageUrl:`](./SendBird.html#//api/name/igawLoginWithUserName:andUserImageUrl:), [`loginWithUserId:andUserName:`](./SendBird.html#//api/name/loginWithUserId:andUserName:) methods. [`guestId`](./SendBirdAppUser.html#//api/name/guestId) is used to identify unique users, so we recommending using [`guestId`](./SendBirdAppUser.html#//api/name/guestId) to map the app's users to SendBird users.
+ */
 @interface SendBirdAppUser : NSObject
 
 /**
@@ -21,7 +24,7 @@
 @property (retain) NSString *nickname;
 
 /**
- *  Profile iamge URL
+ *  Profile image URL
  */
 @property (retain) NSString *picture;
 
