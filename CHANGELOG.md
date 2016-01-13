@@ -1,6 +1,6 @@
 # Change Log
 
-### v2.0.3(Jan 13, 2016)
+### v2.0.4(Jan 13, 2016)
 * Added new feature to get user list in app.
 
 ### v2.0.0(Jan 4, 2016)
