@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SendBirdSDK"
-  s.version      = "2.0.5"
+  s.version      = "2.0.6"
   s.summary      = "SendBird iOS Framework"
   s.description  = <<-DESC
                    SendBird is the simplest solution for chat and messaging.
