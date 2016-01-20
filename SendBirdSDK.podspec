@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SendBirdSDK"
-  s.version      = "2.0.7"
+  s.version      = "2.0.8"
   s.summary      = "SendBird iOS Framework"
   s.description  = <<-DESC
                    SendBird is the simplest solution for chat and messaging.
@@ -16,4 +16,5 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'SendBirdSDK.framework'
   s.ios.frameworks = ["AdSupport", "UIKit", "QuartzCore", "CFNetwork", "Security", "Foundation", "MobileCoreServices"]
   s.ios.library   = "icucore"
+  s.public_header_files = "SendBirdSDK.framework/Headers/*.h" 
 end
