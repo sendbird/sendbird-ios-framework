@@ -8,31 +8,33 @@
 
 #import <UIKit/UIKit.h>
 
+
+
+// In this header, you should import all the public headers of your framework using statements like #import "PublicHeader"
+
+#import "SendBirdAPIClient.h"
+#import "SendBirdChannelListQuery.h"
+#import "SendBirdCommand.h"
+#import "SendBird.h"
+#import "SendBirdClient.h"
+#import "SendBirdChannel.h"
+#import "SendBirdFileInfo.h"
+#import "SendBirdFileLink.h"
+#import "SendBirdMessage.h"
+#import "SendBirdSystemMessage.h"
+#import "SendBirdSender.h"
+#import "SendBirdWSClient.h"
+#import "SendBirdBroadcastMessage.h"
+#import "SendBirdMemberInMessagingChannel.h"
+#import "SendBirdMember.h"
+#import "SendBirdMessageListQuery.h"
+#import "SendBirdMessagingUnreadCountQuery.h"
+#import "SendBirdMessagingChannelUpdate.h"
+#import "SendBirdAppUser.h"
+#import "SendBirdUserListQuery.h"
+
 //! Project version number for SendBirdSDK.
 FOUNDATION_EXPORT double SendBirdSDKVersionNumber;
 
 //! Project version string for SendBirdSDK.
 FOUNDATION_EXPORT const unsigned char SendBirdSDKVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <SendBirdSDK/PublicHeader.h>
-
-#import <SendBirdSDK/SendBirdAPIClient.h>
-#import <SendBirdSDK/SendBirdChannelListQuery.h>
-#import <SendBirdSDK/SendBirdCommand.h>
-#import <SendBirdSDK/SendBird.h>
-#import <SendBirdSDK/SendBirdClient.h>
-#import <SendBirdSDK/SendBirdChannel.h>
-#import <SendBirdSDK/SendBirdFileInfo.h>
-#import <SendBirdSDK/SendBirdFileLink.h>
-#import <SendBirdSDK/SendBirdMessage.h>
-#import <SendBirdSDK/SendBirdSystemMessage.h>
-#import <SendBirdSDK/SendBirdSender.h>
-#import <SendBirdSDK/SendBirdWSClient.h>
-#import <SendBirdSDK/SendBirdBroadcastMessage.h>
-#import <SendBirdSDK/SendBirdMemberInMessagingChannel.h>
-#import <SendBirdSDK/SendBirdMember.h>
-#import <SendBirdSDK/SendBirdMessageListQuery.h>
-#import <SendBirdSDK/SendBirdMessagingUnreadCountQuery.h>
-#import <SendBirdSDK/SendBirdMessagingChannelUpdate.h>
-#import <SendBirdSDK/SendBirdAppUser.h>
-#import <SendBirdSDK/SendBirdUserListQuery.h>
