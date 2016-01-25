@@ -2,7 +2,7 @@
 [SendBird](http://sendbird.com) enables your app to engage and retain your users in real-time.
 
 ## Documentation
-https://sendbird.gitbooks.io/ios-sdk/content/en/index.html
+https://sendbird.gitbooks.io/sendbird-ios-sdk/content/en/
 
 ## Sample
 You can download [a sample app](https://github.com/smilefam/sendbird-sample).
