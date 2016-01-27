@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.0.11(Jan 20, 2016)
+* Support Swift.
+
 ### v2.0.5(Jan 13, 2016)
 * Added new feature to get user list in app.
 
