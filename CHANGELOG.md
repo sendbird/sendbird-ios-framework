@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.0.13(Jan 28, 2016)
+* Fixed WebSocket bug.
+
 ### v2.0.11(Jan 20, 2016)
 * Support Swift.
 

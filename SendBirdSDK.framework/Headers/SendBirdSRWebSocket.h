@@ -25,22 +25,33 @@ typedef NS_ENUM(NSInteger, SendBirdSRReadyState) {
 };
 
 typedef enum SendBirdSRStatusCode : NSInteger {
+    // 0–999: Reserved and not used.
     SendBirdSRStatusCodeNormal = 1000,
     SendBirdSRStatusCodeGoingAway = 1001,
     SendBirdSRStatusCodeProtocolError = 1002,
     SendBirdSRStatusCodeUnhandledType = 1003,
     // 1004 reserved.
     SendBirdSRStatusNoStatusReceived = 1005,
-    // 1004-1006 reserved.
+    SendBirdSRStatusCodeAbnormal = 1006,
     SendBirdSRStatusCodeInvalidUTF8 = 1007,
     SendBirdSRStatusCodePolicyViolated = 1008,
     SendBirdSRStatusCodeMessageTooBig = 1009,
+    SendBirdSRStatusCodeMissingExtension = 1010,
+    SendBirdSRStatusCodeInternalError = 1011,
+    SendBirdSRStatusCodeServiceRestart = 1012,
+    SendBirdSRStatusCodeTryAgainLater = 1013,
+    // 1014: Reserved for future use by the WebSocket standard.
+    SendBirdSRStatusCodeTLSHandshake = 1015,
+    // 1016–1999: Reserved for future use by the WebSocket standard.
+    // 2000–2999: Reserved for use by WebSocket extensions.
+    // 3000–3999: Available for use by libraries and frameworks. May not be used by applications. Available for registration at the IANA via first-come, first-serve.
+    // 4000–4999: Available for use by applications.
 } SendBirdSRStatusCode;
 
 @class SendBirdSRWebSocket;
 
 extern NSString *const SendBirdSRWebSocketErrorDomain;
-extern NSString *const SendBirdSRHTTPResponseErrorKey;
+extern NSString *const SRHTTPResponseErrorKey;
 
 #pragma mark - SendBirdSRWebSocketDelegate
 
@@ -115,17 +126,17 @@ extern NSString *const SendBirdSRHTTPResponseErrorKey;
 
 @end
 
-#pragma mark - NSURLRequest (SendBirdCertificateAdditions)
+#pragma mark - NSURLRequest (SRCertificateAdditions)
 
-@interface NSURLRequest (SendBirdCertificateAdditions)
+@interface NSURLRequest (SRCertificateAdditions)
 
 @property (nonatomic, retain, readonly) NSArray *SR_SSLPinnedCertificates;
 
 @end
 
-#pragma mark - NSMutableURLRequest (SendBirdCertificateAdditions)
+#pragma mark - NSMutableURLRequest (SRCertificateAdditions)
 
-@interface NSMutableURLRequest (SendBirdCertificateAdditions)
+@interface NSMutableURLRequest (SRCertificateAdditions)
 
 @property (nonatomic, retain) NSArray *SR_SSLPinnedCertificates;
 
