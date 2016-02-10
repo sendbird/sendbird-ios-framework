@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/SendBird.h</key>
 		<data>
-		+SDMmFjMlGM1cOjWIarfVb2SfV0=
+		Vey+s6q5LOr7z0xNf33qERQf8k0=
 		</data>
 		<key>Headers/SendBirdAPIClient.h</key>
 		<data>
-		h1hjA+ou7E4Mag1u0mO89XCqsic=
+		nMBEcn4PC2H3Y3S9J3XFCHcbeVU=
 		</data>
 		<key>Headers/SendBirdAppUser.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/SendBirdClient.h</key>
 		<data>
-		PwhGYsrB3m9jos7A/XsuQpe5wOk=
+		UiHfqsA4RZGUAcnufmnsxsLScF8=
 		</data>
 		<key>Headers/SendBirdCommand.h</key>
 		<data>
@@ -100,13 +100,17 @@
 		<data>
 		TbnGfnVBUeIFlScYEJ7jSX0Lobk=
 		</data>
+		<key>Headers/SendBirdOnlineMemberCountQuery.h</key>
+		<data>
+		DX3Rs8hktvOe8oeJDddC4cO92PU=
+		</data>
 		<key>Headers/SendBirdReadStatus.h</key>
 		<data>
 		+YUS9YydAGdn8rLFlS9E5Xw6+WE=
 		</data>
 		<key>Headers/SendBirdSDK.h</key>
 		<data>
-		hPleOZUW/ekKgXsN2b1WcFKvbXg=
+		VvCyYAeIVXpOKz/p4cYIGpc43ko=
 		</data>
 		<key>Headers/SendBirdSDKUtils.h</key>
 		<data>
@@ -146,7 +150,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5w7qWq/cy6h0kEtsZL5wfjJ/7qQ=
+		Je0swuwIwTuFXu3D25KKu5ME+5g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -157,11 +161,11 @@
 	<dict>
 		<key>Headers/SendBird.h</key>
 		<data>
-		+SDMmFjMlGM1cOjWIarfVb2SfV0=
+		Vey+s6q5LOr7z0xNf33qERQf8k0=
 		</data>
 		<key>Headers/SendBirdAPIClient.h</key>
 		<data>
-		h1hjA+ou7E4Mag1u0mO89XCqsic=
+		nMBEcn4PC2H3Y3S9J3XFCHcbeVU=
 		</data>
 		<key>Headers/SendBirdAppUser.h</key>
 		<data>
@@ -189,7 +193,7 @@
 		</data>
 		<key>Headers/SendBirdClient.h</key>
 		<data>
-		PwhGYsrB3m9jos7A/XsuQpe5wOk=
+		UiHfqsA4RZGUAcnufmnsxsLScF8=
 		</data>
 		<key>Headers/SendBirdCommand.h</key>
 		<data>
@@ -251,13 +255,17 @@
 		<data>
 		TbnGfnVBUeIFlScYEJ7jSX0Lobk=
 		</data>
+		<key>Headers/SendBirdOnlineMemberCountQuery.h</key>
+		<data>
+		DX3Rs8hktvOe8oeJDddC4cO92PU=
+		</data>
 		<key>Headers/SendBirdReadStatus.h</key>
 		<data>
 		+YUS9YydAGdn8rLFlS9E5Xw6+WE=
 		</data>
 		<key>Headers/SendBirdSDK.h</key>
 		<data>
-		hPleOZUW/ekKgXsN2b1WcFKvbXg=
+		VvCyYAeIVXpOKz/p4cYIGpc43ko=
 		</data>
 		<key>Headers/SendBirdSDKUtils.h</key>
 		<data>

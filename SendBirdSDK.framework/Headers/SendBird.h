@@ -30,6 +30,7 @@
 #import "SendBirdStructuredMessage.h"
 #import "SendBirdBlockedUser.h"
 #import "SendBirdUserListQuery.h"
+#import "SendBirdOnlineMemberCountQuery.h"
 
 #define kSendBirdInitWithIDFA 0
 #define kSendBirdInitWithIDFV 1
@@ -59,6 +60,7 @@ typedef enum {
 @class SendBirdFileLink;
 @class SendBirdMessagingUnreadCountQuery;
 @class SendBirdUserListQuery;
+@class SendBirdOnlineMemberCountQuery;
 
 /**
  *  `SendBird` is the main class of [SendBird](http://sendBird.com). This class offers connection to SendBird platform, login, setting event callback blocks, message transfers, and others. This class will be defined as a Single Instance in an iOS app. The typical usage order is as the following:
@@ -601,7 +603,14 @@ typedef enum {
 + (enum WSReadyState) connectState;
 
 /**
- *  Create the instance of [`SendBirdUserListQuery`](./SendBirdUserListQuery.html)  to retrieve the users.
+ *  Create the instance of [`SendBirdOnlineMemberCountQuery`](./SendBirdOnlineMemberCountQuery.html) to retrieve the users.
+ *
+ *  @return [`SendBirdOnlineMemberCountQuery`](./SendBirdOnlineMemberCountQuery.html) instance.
+ */
++ (SendBirdOnlineMemberCountQuery *) queryOnlineMemberCount:(NSString *)channelUrl;
+
+/**
+ *  Create the instance of [`SendBirdUserListQuery`](./SendBirdUserListQuery.html) to retrieve the users.
  *
  *  @return [`SendBirdUserListQuery`](./SendBirdUserListQuery.html) instance.
  */
