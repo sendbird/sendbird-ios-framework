@@ -4,6 +4,28 @@
 ## Documentation
 https://sendbird.gitbooks.io/sendbird-ios-sdk/content/en/
 
+## Install SendBird Framework from CocoaPods
+
+Add below into your Podfile on Xcode.
+
+For a ***Swift*** project, you should use use_frameworks! in Podfile.
+
+```
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+pod 'SendBirdSDK'
+```
+
+Install SendBird Framework through CocoaPods.
+
+```
+pod install
+```
+
+Now you can see installed SendBird framework by inspecting YOUR_PROJECT.xcworkspace.
+
+
 ## Sample
 You can download [a sample app](https://github.com/smilefam/sendbird-sample).
 
