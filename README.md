@@ -8,7 +8,7 @@ https://sendbird.gitbooks.io/sendbird-ios-sdk/content/en/
 
 Add below into your Podfile on Xcode.
 
-For a ***Swift*** project, you should use use_frameworks! in Podfile.
+For a ***Swift*** project, you should use ```use_frameworks!``` in Podfile.
 
 ```
 # Uncomment this line if you're using Swift
