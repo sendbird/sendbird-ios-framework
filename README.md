@@ -175,7 +175,7 @@ YourViewController.m
 
 #### Swift
 
-YourViewController.m
+YourViewController.swift
 
 ```swift
 SendBird.loginWithUserId(USER_ID, andUserName: USER_NAME)
@@ -194,7 +194,7 @@ YourViewController.m
 
 #### Swift
 
-YourViewController.m
+YourViewController.swift
 
 ```swift
 SendBird.joinChannel(CHANNEL_URL)
@@ -213,7 +213,7 @@ YourViewController.m
 
 #### Swift
 
-YourViewController.m
+YourViewController.swift
 
 ```swift
 SendBird.sendMessage(message)
