@@ -221,7 +221,7 @@ SendBird.sendMessage(message)
 
 
 ## Sample
-You can download [a sample app](https://github.com/smilefam/sendbird-sample).
+You can download [a sample app](https://github.com/smilefam/SendBird-iOS)
 
 ## Other platforms
 * [Android](https://sendbird.gitbooks.io/sendbird-android-sdk/content/en/index.html)
