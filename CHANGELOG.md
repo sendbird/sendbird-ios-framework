@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.0.16(Feb 15, 2016)
+* Replaced NSURLConnection with NSURLSession
+
 ### v2.0.15(Feb 9, 2016)
 * Added api for counting online member
 
