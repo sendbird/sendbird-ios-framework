@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.0.20(Feb 18, 2016)
+* Fixed crash bug when switching between foreground and background
+
 ### v2.0.16(Feb 15, 2016)
 * Replaced NSURLConnection with NSURLSession
 
