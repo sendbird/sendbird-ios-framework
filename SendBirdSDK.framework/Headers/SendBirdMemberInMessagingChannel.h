@@ -35,6 +35,16 @@
 
 @property long long lastReadMillis;
 
+/**
+ *  On-line or off-line status of user
+ */
+@property BOOL isOnline;
+
+/**
+ *  The latest time of logging off
+ */
+@property long long lastSeenAt;
+
 @property (retain) NSDictionary *jsonObj;
 
 - (id) initWithDic:(NSDictionary *) dic;

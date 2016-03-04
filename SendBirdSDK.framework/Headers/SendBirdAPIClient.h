@@ -30,6 +30,7 @@
 #define kApiUserBlockList @"/v1/user_block_list"
 #define kApiUserList @"/v1/user_list"
 #define kApiOnlineMemberCount @"/v1/online_member_count"
+#define kApiMessageDelete @"/v1/message_delete"
 
 @interface SendBirdAPIClient : NSObject
 
@@ -64,5 +65,6 @@
 - (void) userListWithToken:(NSString *)token page:(long)page withLimit:(long)limit resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) cancelAll;
 - (void) getBlockedUserListResultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
+- (void) deleteMessage:(long long)msgId resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 
 @end

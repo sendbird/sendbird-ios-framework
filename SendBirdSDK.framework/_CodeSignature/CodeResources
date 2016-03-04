@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/SendBird.h</key>
 		<data>
-		t95VELi9/DZ1H0ypaEwswWkpsL8=
+		5En0MAFRKscwiPAc3aY5kpT9Jjc=
 		</data>
 		<key>Headers/SendBirdAPIClient.h</key>
 		<data>
-		nMBEcn4PC2H3Y3S9J3XFCHcbeVU=
+		qtAOtjo04sOegp4G0CVEMzb/pUQ=
 		</data>
 		<key>Headers/SendBirdAppUser.h</key>
 		<data>
-		Cgt8RxI+f26haVLGPtWa/txKu2Q=
+		ltNxzpRGYpyA1sISaacumkFVSuY=
 		</data>
 		<key>Headers/SendBirdBlockedUser.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/SendBirdClient.h</key>
 		<data>
-		UiHfqsA4RZGUAcnufmnsxsLScF8=
+		yfTP4tPFIqp1WFDk+loItqLIYeA=
 		</data>
 		<key>Headers/SendBirdCommand.h</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Headers/SendBirdMember.h</key>
 		<data>
-		OiygHyiHieuFktTykzOSlgYfq/k=
+		qkH8FKFrLV1yWxJoTJWybe4ujH8=
 		</data>
 		<key>Headers/SendBirdMemberInMessagingChannel.h</key>
 		<data>
-		nJbisuvozyETRB8RkpdZgzklY8c=
+		xiGBhArieb4ugjdCfXi0OZI9Dj4=
 		</data>
 		<key>Headers/SendBirdMemberListQuery.h</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		d94/63UzWk+sfQciNNIobphVtu4=
+		eSBybIkNuQJwxCp7i9LsrY0Su+0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -161,15 +161,15 @@
 	<dict>
 		<key>Headers/SendBird.h</key>
 		<data>
-		t95VELi9/DZ1H0ypaEwswWkpsL8=
+		5En0MAFRKscwiPAc3aY5kpT9Jjc=
 		</data>
 		<key>Headers/SendBirdAPIClient.h</key>
 		<data>
-		nMBEcn4PC2H3Y3S9J3XFCHcbeVU=
+		qtAOtjo04sOegp4G0CVEMzb/pUQ=
 		</data>
 		<key>Headers/SendBirdAppUser.h</key>
 		<data>
-		Cgt8RxI+f26haVLGPtWa/txKu2Q=
+		ltNxzpRGYpyA1sISaacumkFVSuY=
 		</data>
 		<key>Headers/SendBirdBlockedUser.h</key>
 		<data>
@@ -193,7 +193,7 @@
 		</data>
 		<key>Headers/SendBirdClient.h</key>
 		<data>
-		UiHfqsA4RZGUAcnufmnsxsLScF8=
+		yfTP4tPFIqp1WFDk+loItqLIYeA=
 		</data>
 		<key>Headers/SendBirdCommand.h</key>
 		<data>
@@ -213,11 +213,11 @@
 		</data>
 		<key>Headers/SendBirdMember.h</key>
 		<data>
-		OiygHyiHieuFktTykzOSlgYfq/k=
+		qkH8FKFrLV1yWxJoTJWybe4ujH8=
 		</data>
 		<key>Headers/SendBirdMemberInMessagingChannel.h</key>
 		<data>
-		nJbisuvozyETRB8RkpdZgzklY8c=
+		xiGBhArieb4ugjdCfXi0OZI9Dj4=
 		</data>
 		<key>Headers/SendBirdMemberListQuery.h</key>
 		<data>

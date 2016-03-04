@@ -113,10 +113,7 @@ typedef enum {
  */
 @property (retain) NSString *appId;
 
-/**
- *  Displays connection status with the messaging server
- */
-@property BOOL connected;
+@property BOOL connected DEPRECATED_ATTRIBUTE;
 
 @property BOOL mLoginRequired;
 
@@ -626,5 +623,7 @@ typedef enum {
 + (void) testUserBlockListResultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 
 + (NSString *) getDeviceToken;
+
++ (void) deleteMessage:(long long)msgId resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 
 @end
