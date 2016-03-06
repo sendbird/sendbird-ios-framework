@@ -1,8 +1,10 @@
 # Change Log
 
+### v2.0.22(Mar 6, 2016)
+* Bitcode enabled
+
 ### v2.0.21(Mar 3, 2016)
 * Added delete message method
-* Bitcode enabled
 * Added the property for user online/offline
 
 ### v2.0.20(Feb 18, 2016)
