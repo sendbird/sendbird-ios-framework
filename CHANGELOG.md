@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.0.25(Mar 16, 2016)
+* Added system event for mute
+
 ### v2.0.24(Mar 16, 2016)
 * Added meta data and meta counter for channel
 * Added muted property to user and message

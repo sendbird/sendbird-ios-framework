@@ -14,6 +14,7 @@ typedef enum {
     SendBirdSystemEventCategoryUnknown = 0,
     SendBirdSystemEventCategoryChannelJoin = 10100,
     SendBirdSystemEventCategoryChannelLeave = 10101,
+    SendBirdSystemEventCategoryUserChannelMute = 10201,
 } SendBirdSystemEventCategory;
 
 @interface SendBirdSystemEvent : SendBirdMessageModel
