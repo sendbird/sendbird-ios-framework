@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.0.26(Mar 17, 2016)
+* Added received events for muted message and file to `setEventHandler`
+
 ### v2.0.25(Mar 16, 2016)
 * Added system event for mute
 

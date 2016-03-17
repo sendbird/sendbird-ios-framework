@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SendBird.h</key>
 		<data>
-		aN8AFxSbTB3rujQMrH607eKKrUA=
+		Xqut+Yuhq4WHwSQswtejUUCQq4g=
 		</data>
 		<key>Headers/SendBirdAPIClient.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/SendBirdClient.h</key>
 		<data>
-		j1QoHs79sZZ1dP4QMOxe1n642rM=
+		cYqA3TfaWXL3HmABOuFIKEMydw4=
 		</data>
 		<key>Headers/SendBirdCommand.h</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FhVO0/U4a3a8ZY26gtV9XWs7o7M=
+		SgjPyAuGVX0H1i41ZWULT5alCl4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -177,7 +177,7 @@
 	<dict>
 		<key>Headers/SendBird.h</key>
 		<data>
-		aN8AFxSbTB3rujQMrH607eKKrUA=
+		Xqut+Yuhq4WHwSQswtejUUCQq4g=
 		</data>
 		<key>Headers/SendBirdAPIClient.h</key>
 		<data>
@@ -217,7 +217,7 @@
 		</data>
 		<key>Headers/SendBirdClient.h</key>
 		<data>
-		j1QoHs79sZZ1dP4QMOxe1n642rM=
+		cYqA3TfaWXL3HmABOuFIKEMydw4=
 		</data>
 		<key>Headers/SendBirdCommand.h</key>
 		<data>
