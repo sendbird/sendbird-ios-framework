@@ -24,6 +24,7 @@
 #import "SendBirdWSClient.h"
 #import "SendBirdMention.h"
 #import "SendBirdStructuredMessage.h"
+#import "SendBirdSystemEvent.h"
 
 //extern void (^onMessageReceived)(SendBirdMessage *message);
 //extern void (^onSystemMessageReceived)(SendBirdSystemMessage *message);
@@ -66,6 +67,7 @@
 //- (void) getMessagingListWithResultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) getMessagingListV2WithToken:(NSString *)token andPage:(int)page withLimit:(int)limit andShowEmpty:(BOOL)showEmpty resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) messageListInChannelUrl:(NSString *)channelUrl withMessageTs:(long long)messageTs prevLimit:(int)prevLimit andNextLimit:(int)nextLimit include:(BOOL)include resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
+- (void) messageListWithChannelUrl:(NSString *)channelUrl messageStartTs:(long long)messageStartTs messageEndTs:(long long)messageEndTs resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) leaveChannel:(NSString *)channelUrl;
 - (void) getBlockedUserListResultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) uploadFile:(NSData *)file type:(NSString *)type size:(unsigned long)size customField:(NSString *)customField uploadBlock:(void (^)(SendBirdFileInfo *fileInfo, NSError *error))onUpload;
@@ -105,7 +107,22 @@
 - (void) inviteMessagingWithChannelUrl:(NSString *)channelUrl andGuestIds:(NSArray *)guestIds;
 //- (long long)getMaxMessageTs;
 - (enum WSReadyState) connectState;
-- (void) onlineMemberCount:(NSString *)channelUrl resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
+- (void) onlineMemberCount:(NSString *)channelUrl resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult DEPRECATED_ATTRIBUTE;
+- (void) memberCount:(NSString *)channelUrl resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) userListWithToken:(NSString *)token page:(long)page withLimit:(long)limit resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) deleteMessage:(long long)msgId resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
+
+- (void) setMetaData:(NSDictionary *)metadata toChannel:(NSString *)channelUrl resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
+- (void) getMetaDataFromChannel:(NSString *)channelUrl withKeys:(NSArray<NSString *> *)keys resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
+- (void) deleteMetaDataOfChannel:(NSString *)channelUrl withKeys:(NSArray<NSString *> *)keys resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
+- (void) setMetaCounter:(NSDictionary *)metadata toChannel:(NSString *)channelUrl resultBlock:(void (^)(NSDictionary<NSString *, NSNumber *> *response, NSError *error))onResult;
+- (void) getMetaCounterFromChannel:(NSString *)channelUrl withKeys:(NSArray<NSString *> *)keys resultBlock:(void (^)(NSDictionary<NSString *, NSNumber *> *response, NSError *error))onResult;
+- (void) deleteMetaCounterOfChannel:(NSString *)channelUrl withKeys:(NSArray<NSString *> *)keys resultBlock:(void (^)(NSDictionary<NSString *, NSNumber *> *response, NSError *error))onResult;
+- (void) increaseMetaCounterOfChannel:(NSString *)channelUrl withData:(NSDictionary<NSString *, NSNumber *> *)data resultBlock:(void (^)(NSDictionary<NSString *, NSNumber *> *response, NSError *error))onResult;
+- (void) decreaseMetaCounterOfChannel:(NSString *)channelUrl withData:(NSDictionary<NSString *, NSNumber *> *)data resultBlock:(void (^)(NSDictionary<NSString *, NSNumber *> *response, NSError *error))onResult;
+
+- (void) setMutedMessagesReceivedBlock:(void (^)(SendBirdMessage *message))mutedMessagesReceivedBlock;
+- (void) setMutedFileReceivedBlock:(void (^)(SendBirdFileLink *message))mutedFileReceivedBlock;
+- (void) setSystemEventReceivedBlock:(void (^)(SendBirdSystemEvent *event))systemEventReceivedBlock;
+
 @end

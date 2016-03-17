@@ -1,5 +1,11 @@
 # Change Log
 
+### v2.0.24(Mar 16, 2016)
+* Added meta data and meta counter for channel
+* Added muted property to user and message
+* Added message query method by timestamp
+* Added new system event
+
 ### v2.0.23(Mar 6, 2016)
 * Bitcode enabled
 

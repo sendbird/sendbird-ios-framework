@@ -45,6 +45,11 @@
  */
 @property long long lastSeenAt;
 
+/**
+ *  Returns YES if the user is muted, otherwise returns NO
+ */
+@property BOOL isMuted;
+
 @property (retain) NSDictionary *jsonObj;
 
 - (id) initWithDic:(NSDictionary *) dic;
