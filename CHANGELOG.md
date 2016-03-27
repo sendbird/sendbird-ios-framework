@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.0.27(Mar 27, 2016)
+* Fixed bug of session control in background
+
 ### v2.0.26(Mar 17, 2016)
 * Added received events for muted message and file to `setEventHandler`
 
