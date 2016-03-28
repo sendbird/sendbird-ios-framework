@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.0.28(Mar 28, 2016)
+* Changed parameter name of a block
+
 ### v2.0.27(Mar 27, 2016)
 * Fixed bug of session control in background
 
