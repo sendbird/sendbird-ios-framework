@@ -1,5 +1,9 @@
 # Change Log
 
+### v2.1.0(Apr, 19, 2016)
+* Added routing for getting server address
+* Fixed malformed command
+
 ### v2.0.28(Mar 28, 2016)
 * Changed parameter name of a block
 
