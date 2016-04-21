@@ -1,5 +1,10 @@
 # Change Log
 
+### v2.1.1(Apr, 21, 2016)
+* Fixed bug of uploading video file.
+* Deprecated `[SendBird uploadFile:type:hasSizeOfFile:withCustomField:uploadBlock:]` method
+* Added `[SendBird uploadFile:filename:type:hasSizeOfFile:withCustomField:uploadBlock:]` method
+
 ### v2.1.0(Apr, 19, 2016)
 * Added routing for getting server address
 * Fixed malformed command

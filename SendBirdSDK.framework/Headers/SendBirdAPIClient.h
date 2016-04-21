@@ -53,7 +53,8 @@
 - (void) post:(NSString *)uri form:(NSMutableDictionary *)form resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) joinChannel:(NSString *)channelUrl resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) leaveChannel:(NSString *)channelUrl resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
-- (void) uploadFile:(NSData *)file resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
+- (void) uploadFile:(NSData *)file resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult DEPRECATED_ATTRIBUTE;
+- (void) uploadFile:(NSData *)file filename:(NSString *)aFilename resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) messagingStartWithGuestIds:(NSArray *)guestIds resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) markAsReadForChannelUrl:(NSString *)channelUrl resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) markAllAsReadWithResultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;

@@ -93,9 +93,15 @@ typedef enum {
 
 + (BOOL) SENDBIRD_LOG_DEBUG;
 
++ (BOOL) SB_DEBUG_MODE;
+
 + (NSString *) WS_HOST DEPRECATED_ATTRIBUTE;
 
 + (NSString *) API_HOST DEPRECATED_ATTRIBUTE;
+
++ (NSString *) DEBUG_WS_HOST;
+
++ (NSString *) DEBUG_API_HOST;
 
 + (NSString *) getWSHost;
 
@@ -538,8 +544,26 @@ typedef enum {
  *  @param size        File size
  *  @param customField Custom data
  *  @param onUpload    Callback block invoked upon completition of the upload
+ *
+ *  @deprecated in 2.1.1. Use [`uploadFile:filename:type:hasSizeOfFile:withCustomField:uploadBlock:`](./SendBird.html#//api/name/uploadFile:filename:type:hasSizeOfFile:withCustomField:uploadBlock:)
  */
-+ (void) uploadFile:(NSData *)file type:(NSString *)type hasSizeOfFile:(unsigned long)size withCustomField:(NSString *)customField uploadBlock:(void (^)(SendBirdFileInfo *fileInfo, NSError *error))onUpload;
++ (void) uploadFile:(NSData *)file type:(NSString *)type hasSizeOfFile:(unsigned long)size withCustomField:(NSString *)customField uploadBlock:(void (^)(SendBirdFileInfo *fileInfo, NSError *error))onUpload DEPRECATED_ATTRIBUTE;
+
+/**
+ *  Upload a file
+ *
+ *  @param file        File data using NSData class
+ *  @param aFilename   File name
+ *  @param type        File type
+ *
+ *  - `video`
+ *  - `image`
+ *  - `etc`
+ *  @param size        File size
+ *  @param customField Custom data
+ *  @param onUpload    Callback block invoked upon completition of the upload
+ */
++ (void) uploadFile:(NSData *)file filename:(NSString *)aFilename type:(NSString *)type hasSizeOfFile:(unsigned long)size withCustomField:(NSString *)customField uploadBlock:(void (^)(SendBirdFileInfo *fileInfo, NSError *error))onUpload;
 
 /**
  *  Create an instance of [`SendBirdMessagingChannelListQuery`](./SendBirdMessagingChannelListQuery.html) to get the list of Messaging/Group Messaging channels
