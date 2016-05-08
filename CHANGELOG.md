@@ -1,7 +1,10 @@
 # Change Log
 
+### v2.2.1(May 8, 2016)
+* Fixed ARC bug
+
 ### v2.2.0(May 4, 2016)
-* Fixed bug
+* **DO NOT USE THIS VERSION**
 
 ### v2.1.1(Apr 21, 2016)
 * Fixed bug of uploading video file.
