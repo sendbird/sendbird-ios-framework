@@ -1,5 +1,9 @@
 # Change Log
 
+### v2.2.2(May 13, 2016)
+* Fixed message parsing bug
+* Changed the way to try to reconnect
+
 ### v2.2.1(May 8, 2016)
 * Fixed ARC bug
 
