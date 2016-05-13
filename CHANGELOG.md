@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.2.3(May 13, 2016)
+* Fixed memory leak
+
 ### v2.2.2(May 13, 2016)
 * Fixed message parsing bug
 * Changed the way to try to reconnect
