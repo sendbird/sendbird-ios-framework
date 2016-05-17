@@ -1,5 +1,9 @@
 # Change Log
 
+### v2.2.4(May 17, 2016)
+* Added methods for push registration and unregistration
+* Added method for creating group messaging channel
+
 ### v2.2.3(May 13, 2016)
 * Fixed memory leak
 
