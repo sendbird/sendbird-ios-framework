@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.2.5(May 24, 2016)
+* Improved performance of logging in.
+
 ### v2.2.4(May 17, 2016)
 * Added methods for push registration and unregistration
 * Added method for creating group messaging channel
