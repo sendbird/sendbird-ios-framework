@@ -1,6 +1,6 @@
 # Change Log
 
-### v2.2.6(May 27, 2016)
+### v2.2.7(May 27, 2016)
 * Fixed login bug
 
 ### v2.2.5(May 24, 2016)
