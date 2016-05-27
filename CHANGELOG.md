@@ -1,7 +1,10 @@
 # Change Log
 
+### v2.2.6(May 27, 2016)
+* Fixed login bug
+
 ### v2.2.5(May 24, 2016)
-* Improved performance of logging in.
+* Improved performance of logging in
 
 ### v2.2.4(May 17, 2016)
 * Added methods for push registration and unregistration
