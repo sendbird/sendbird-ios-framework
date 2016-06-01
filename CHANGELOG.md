@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.2.8(Jun 1, 2016)
+* Fixed connection bug without channel url
+
 ### v2.2.7(May 27, 2016)
 * Fixed login bug
 
