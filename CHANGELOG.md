@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.2.10(Jun 3, 2016)
+* Added error handling for session key
+
 ### v2.2.9(Jun 2, 2016)
 * Fixed crash bug
 
