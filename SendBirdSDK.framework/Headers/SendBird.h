@@ -37,6 +37,7 @@
 #import "SendBirdChannelMetaCounterQuery.h"
 #import "SendBirdMemberCountQuery.h"
 #import "SendBirdSystemEvent.h"
+#import "SendBirdAppUser.h"
 
 #define kSendBirdInitWithIDFA 0
 #define kSendBirdInitWithIDFV 1
@@ -709,6 +710,14 @@ typedef enum {
  *  @param onResult callback for the result
  */
 + (void) unregisterAllDevicesPushToken:(void (^)(NSDictionary *response, NSError *error))onResult;
+
+/**
+ *  Check if the users exist.
+ *
+ *  @param userList List of user id
+ *  @param onResult callback for the result
+ */
++ (void) checkUserExistenceWithUserList:(NSArray<NSString *> *)userList resultBlock:(void (^)(NSDictionary<NSString *, SendBirdAppUser *>*response, NSError *error))onResult;
 
 /**
  *  For UnitTest

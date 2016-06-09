@@ -46,6 +46,7 @@
 #define kApiChannelMultiLeave @"/v1/channel_multi_leave"
 #define kApiRegisterPushToken @"/v1/register_push_token"
 #define kApiUnregisterPushToken @"/v1/unregister_push_token"
+#define kApiCheckUserExistence @"/v1/user_list/exist"
 
 @interface SendBirdAPIClient : NSObject
 
@@ -98,5 +99,6 @@
 - (void) registerPushToken:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) unregisterCurrentDevicePushToken:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) unregisterAllDevicesPushToken:(void (^)(NSDictionary *response, NSError *error))onResult;
+- (void) checkUserExistenceWithUserList:(NSArray<NSString *> *)userList resultBlock:(void (^)(NSDictionary<NSString *, NSDictionary *> *response, NSError *error))onResult;
 
 @end

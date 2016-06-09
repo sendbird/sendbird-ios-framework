@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.2.11(Jun 9, 2016)
+* Introduced new API checkUserExistenceWithUserList:resultBlock: which returns information about the given users or null if they don''t exist.
+
 ### v2.2.10(Jun 3, 2016)
 * Added error handling for session key
 

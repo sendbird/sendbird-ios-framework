@@ -25,6 +25,7 @@
 #import "SendBirdMention.h"
 #import "SendBirdStructuredMessage.h"
 #import "SendBirdSystemEvent.h"
+#import "SendBirdAppUser.h"
 
 //extern void (^onMessageReceived)(SendBirdMessage *message);
 //extern void (^onSystemMessageReceived)(SendBirdSystemMessage *message);
@@ -129,5 +130,6 @@
 - (void) registerPushToken:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) unregisterCurrentDevicePushToken:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) unregisterAllDevicesPushToken:(void (^)(NSDictionary *response, NSError *error))onResult;
+- (void) checkUserExistenceWithUserList:(NSArray<NSString *> *)userList resultBlock:(void (^)(NSDictionary<NSString *, SendBirdAppUser *> *response, NSError *error))onResult;
 
 @end
