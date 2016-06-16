@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.2.12(Jun 16, 2016)
+* Fixed crash bug when went to background.
+
 ### v2.2.11(Jun 9, 2016)
 * Introduced new API checkUserExistenceWithUserList:resultBlock: which returns information about the given users or null if they don't exist.
 
