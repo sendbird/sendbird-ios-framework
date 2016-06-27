@@ -582,6 +582,14 @@ typedef enum {
 + (void) uploadFile:(NSData *)file filename:(NSString *)aFilename type:(NSString *)type hasSizeOfFile:(unsigned long)size withCustomField:(NSString *)customField uploadBlock:(void (^)(SendBirdFileInfo *fileInfo, NSError *error))onUpload;
 
 /**
+ *  Upload a profile image
+ *
+ *  @param file        Profile image file data using NSData class
+ *  @param onUpload    Callback block invoked upon completition of the upload
+ */
++ (void) uploadProfileImage:(NSData *)file uploadBlock:(void (^)(NSString *url, NSError *error))onUpload;
+
+/**
  *  Create an instance of [`SendBirdMessagingChannelListQuery`](./SendBirdMessagingChannelListQuery.html) to get the list of Messaging/Group Messaging channels
  *
  *  @return [`SendBirdMessagingChannelListQuery`](./SendBirdMessagingChannelListQuery.html) instance.

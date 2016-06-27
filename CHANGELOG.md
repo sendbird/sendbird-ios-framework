@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.2.13(Jun 27, 2016)
+* Added method for uploading profile image.
+
 ### v2.2.12(Jun 16, 2016)
 * Fixed crash bug when went to background.
 

@@ -47,6 +47,7 @@
 #define kApiRegisterPushToken @"/v1/register_push_token"
 #define kApiUnregisterPushToken @"/v1/unregister_push_token"
 #define kApiCheckUserExistence @"/v1/user_list/exist"
+#define kApiUploadProfile @"/v1/upload_profile"
 
 @interface SendBirdAPIClient : NSObject
 
@@ -63,6 +64,7 @@
 - (void) leaveMultipleChannels:(NSArray<NSString *> *)channelUrls resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) uploadFile:(NSData *)file resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult DEPRECATED_ATTRIBUTE;
 - (void) uploadFile:(NSData *)file filename:(NSString *)aFilename resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
+- (void) uploadProfileImage:(NSData *)file resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) messagingStartWithGuestIds:(NSArray *)guestIds andIsGroup:(BOOL)isGroup resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) markAsReadForChannelUrl:(NSString *)channelUrl resultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) markAllAsReadWithResultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;

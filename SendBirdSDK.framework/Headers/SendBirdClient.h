@@ -75,6 +75,7 @@
 - (void) leaveMultipleChannels:(NSArray<NSString *> *)channelUrls;
 - (void) getBlockedUserListResultBlock:(void (^)(NSDictionary *response, NSError *error))onResult;
 - (void) uploadFile:(NSData *)file filename:(NSString *)aFilename type:(NSString *)type size:(unsigned long)size customField:(NSString *)customField uploadBlock:(void (^)(SendBirdFileInfo *fileInfo, NSError *error))onUpload;
+- (void) uploadProfileImage:(NSData *)file uploadBlock:(void (^)(NSString *url, NSError *error))onUpload;
 - (void) cmdFile:(SendBirdFileInfo *)fileInfo toChannel:(SendBirdChannel *)channel;
 //- (void) saveCursor;
 //- (long long) loadCursorWithChannelUrl:(NSString *)channelUrl;
