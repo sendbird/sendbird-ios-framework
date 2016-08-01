@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.2.14(Aug 1, 2016)
+Added `[SendBird logout]` method.
+
 ### v2.2.13(Jun 27, 2016)
 * Added method for uploading profile image.
 

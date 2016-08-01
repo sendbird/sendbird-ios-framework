@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SendBirdSDK"
-  s.version      = "2.2.13"
+  s.version      = "2.2.14"
   s.summary      = "SendBird iOS Framework"
   s.description  = <<-DESC
                    Messaging and Chat API for Mobile Apps and Websites
@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.ios.platform = :ios, "7.0"
   s.ios.vendored_frameworks = 'SendBirdSDK.framework'
-  s.ios.frameworks = ["AdSupport", "UIKit", "QuartzCore", "CFNetwork", "Security", "Foundation", "MobileCoreServices"]
+  s.ios.frameworks = ["UIKit", "QuartzCore", "CFNetwork", "Security", "Foundation", "MobileCoreServices"]
   s.ios.library   = "icucore"
 end

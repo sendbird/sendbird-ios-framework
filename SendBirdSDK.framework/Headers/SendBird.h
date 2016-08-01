@@ -290,6 +290,11 @@ typedef enum {
 + (void) loginWithUserId:(NSString *)userId andUserName:(NSString *)userName andUserImageUrl:(NSString *)imageUrl andAccessToken:(NSString *)accessToken;
 
 /**
+ *  Log out.
+ */
++ (void) logout;
+
+/**
  *  Join a channel. You can make user join an Open Chat anytime, but you need to add a user to Members in case of Messaging Channels or Group Messaging Channels.
  *
  *  @param channelUrl Channel URL
