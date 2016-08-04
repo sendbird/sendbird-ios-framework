@@ -1,7 +1,10 @@
 # Change Log
 
+### v2.2.15(Aug 4, 2016)
+* Fixed memory leak.
+
 ### v2.2.14(Aug 1, 2016)
-Added `[SendBird logout]` method.
+* Added `[SendBird logout]` method.
 
 ### v2.2.13(Jun 27, 2016)
 * Added method for uploading profile image.
