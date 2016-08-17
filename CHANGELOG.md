@@ -1,7 +1,10 @@
 # Change Log
 
-### v2.2.16(Aug 17, 2016)
+### v2.2.17(Aug 17, 2016)
 * Fixed crash bugs.
+
+### v2.2.16(Aug 17, 2016)
+* **DO NOT USE THIS VERSION**
 
 ### v2.2.15(Aug 4, 2016)
 * Fixed memory leak.
