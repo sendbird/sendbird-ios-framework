@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.2.18(Aug 18, 2016)
+* Added a user filter to user list query.
+
 ### v2.2.17(Aug 17, 2016)
 * Fixed crash bugs.
 
