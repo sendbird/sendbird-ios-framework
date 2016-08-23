@@ -1,5 +1,9 @@
 # Change Log
 
+### v2.2.19(Aug 23, 2016)
+* Added a method for setting do-not-disturb.
+* Added a method for push on/off for each messaging channel.
+
 ### v2.2.18(Aug 18, 2016)
 * Added a user filter to user list query.
 
