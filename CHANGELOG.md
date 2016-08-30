@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.3(Aug 30, 2016)
+* Removed duplicated symbol.
+
 ### v3.0.2(Aug 26, 2016)
 * Updated version.
 
