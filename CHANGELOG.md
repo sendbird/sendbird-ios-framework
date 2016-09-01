@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.8(Sep 1, 2016)
+* Fixed group channel unread count bug.
+
 ### v3.0.7(Sep 1, 2016)
 * Fixed minor bug.
 
