@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.5(Sep 1, 2016)
+* Added URL encoding to API parameters.
+
 ### v3.0.4(Aug 30, 2016)
 * Removed duplicated symbols.
 
