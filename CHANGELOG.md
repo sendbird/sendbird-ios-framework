@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.7(Sep 1, 2016)
+* Fixed minor bug.
+
 ### v3.0.6(Sep 1, 2016)
 * Added URL encoding to API parameters.
 
