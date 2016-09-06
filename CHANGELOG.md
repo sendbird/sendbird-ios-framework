@@ -1,5 +1,18 @@
 # Change Log
 
+### v3.0.9(Sep 6, 2016)
+* Fixed bug of `data` of `SBDFileMessage`.
+* Added a method to get user list with user IDs(`+ createUserListQueryWithUserIds:` of `SBDMain`).
+* Added a method to register a APNS device token without login(`+ registerDevicePushToken:completionHandler:` of `SBDMain`).
+* Added keywords for open channel name and URL search(`urlKeyword` and `nameKeyword` of `SBDOpenChannelListQuery`).
+* Added a method to get a total unread message count(`+ getTotalUnreadMessageCountWithCompletionHandler:` of `SBDGroupChannel`).
+* Added a method to get a last timestamp when a user read at the channel(`- getLastSeenAtByUser:` and `- getLastSeenAtByUserId:` of `SBDGroupChannel`).
+* Added a method to get members who read the message(`- getReadMembersWithMessage:` of `SBDGroupChannel`).
+* Added a method to get members who did not read the message(`- getUnreadMemebersWithMessage:` of `SBDGroupChannel`).
+* Added a method to get the read status(`- getReadStatus` of `SBDGroupChannel`).
+* Added methods to set push preference(`- setPushPreferenceWithPushOn:completionHandler:` and `- getPushPreferenceWithCompletionHandler:` of `SBDGroupChannel`. `+ setDoNotDisturbWithEnable:startHour:startMin:endHour:endMin:timezone:completionHandler:` and `+ getDoNotDisturbWithCompletionHandler:` of `SBDMain`).
+* Deprecated `+ registerPushToken:completionHandler:` of `SBDMain`.
+
 ### v3.0.8(Sep 1, 2016)
 * Fixed group channel unread count bug.
 
