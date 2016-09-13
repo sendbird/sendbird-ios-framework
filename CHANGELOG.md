@@ -1,6 +1,6 @@
 # Change Log
 
-### v2.2.21(Sep 13, 2016)
+### v2.2.22(Sep 13, 2016)
 * Updated websocket.
 
 ### v2.2.20(Aug 31, 2016)
