@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.10(Sep 13, 2016)
+* Removed validation of sending a user message.
+* Added a channel type to messages from a message query.
+
 ### v3.0.9(Sep 6, 2016)
 * Fixed bug of `data` of `SBDFileMessage`.
 * Added a method to get user list with user IDs(`+ createUserListQueryWithUserIds:` of `SBDMain`).
