@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.11(Sep 23, 2016)
+* Fixed bug of disconnection and reconnection(APNS-related bug).
+
 ### v3.0.10(Sep 13, 2016)
 * Removed validation of sending a user message.
 * Added a channel type to messages from a message query.
