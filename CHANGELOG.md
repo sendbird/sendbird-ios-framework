@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.2.23(Sep 27, 2016)
+* Added getter for channel data.
+
 ### v2.2.22(Sep 13, 2016)
 * Updated websocket.
 
