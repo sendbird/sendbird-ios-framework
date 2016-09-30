@@ -32,4 +32,4 @@ Now you can see installed SendBird framework by inspecting YOUR_PROJECT.xcworksp
 
 1. Add `github "smilefam/sendbird-ios-framework"` to your `Cartfile`.
 2. Run `carthage update`.
-Go to your Xcode project's "General" settings. Open `<YOUR_XCODE_PROJECT_DIRECTORY>/Carthage/Build/iOS` in Finder and drag `SendBirdSDK.framework` to the "Embedded Binaries" section in Xcode. Make sure `Copy items if needed` is selected and click `Finish`.
+3. Go to your Xcode project's "General" settings. Open `<YOUR_XCODE_PROJECT_DIRECTORY>/Carthage/Build/iOS` in Finder and drag `SendBirdSDK.framework` to the "Embedded Binaries" section in Xcode. Make sure `Copy items if needed` is selected and click `Finish`.
