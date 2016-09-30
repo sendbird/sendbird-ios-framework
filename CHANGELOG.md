@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.12(Sep 30, 2016)
+* Support Carthage.
+* Fixed unread message count bug.
+* Fixed minor bugs.
+
 ### v3.0.11(Sep 23, 2016)
 * Fixed bug of disconnection and reconnection(APNS-related bug).
 

@@ -4,12 +4,13 @@
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://cocoapods.org/pods/SendBirdSDK)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/smilefam/sendbird-ios-framework)
 [![CocoaPods](https://img.shields.io/badge/pod-v3.0.10-green.svg)](https://cocoapods.org/pods/SendBirdSDK)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Commercial License](https://img.shields.io/badge/license-Commercial-brightgreen.svg)](https://github.com/smilefam/sendbird-ios-framework/blob/master/LICENSE.md)
 
 ## Documentation
 https://docs.sendbird.com/
 
-## Install SendBird Framework from CocoaPods
+## Install SendBird Framework from CocoaPods(iOS 7+)
 
 Add below into your Podfile on Xcode.
 
@@ -27,3 +28,8 @@ pod install
 
 Now you can see installed SendBird framework by inspecting YOUR_PROJECT.xcworkspace.
 
+## Install SendBird Framework from Carthage(iOS 8+)
+
+1. Add `github "smilefam/sendbird-ios-framework"` to your `Cartfile`.
+2. Run `carthage update`.
+Go to your Xcode project's "General" settings. Open `<YOUR_XCODE_PROJECT_DIRECTORY>/Carthage/Build/iOS` in Finder and drag `SendBirdSDK.framework` to the "Embedded Binaries" section in Xcode. Make sure `Copy items if needed` is selected and click `Finish`.
