@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.2.24(Oct 3, 2016)
+* Fixed reconnection bug.
+
 ### v2.2.23(Sep 27, 2016)
 * Added getter for channel data.
 
