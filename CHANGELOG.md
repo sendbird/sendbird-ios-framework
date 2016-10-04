@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.13(Oct 4, 2016)
+* Support Base SDK 9.3
+* Fixed bug of the channel type of messages.
+
 ### v3.0.12(Sep 30, 2016)
 * Support Carthage.
 * Fixed unread message count bug.
