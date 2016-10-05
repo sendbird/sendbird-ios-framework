@@ -1,5 +1,8 @@
 # Change Log
 
+### v2.2.25(Oct 5, 2016)
+* Support Base SDK 9.3
+
 ### v2.2.24(Oct 3, 2016)
 * Fixed reconnection bug.
 
