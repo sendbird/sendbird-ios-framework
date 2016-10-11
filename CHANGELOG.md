@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.14(Oct 11, 2016)
+* Fixed URL encoding bug.
+* Fixed minor bug.
+
 ### v3.0.13(Oct 4, 2016)
 * Support Base SDK 9.3
 * Fixed bug of the channel type of messages.
