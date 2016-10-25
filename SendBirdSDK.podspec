@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "2.2.26"
   s.summary      = "SendBird iOS Framework"
   s.description  = "Messaging and Chat API for Mobile Apps and Websites"
-  s.homepage     = "https://sendbird.com"
+  s.homepage     = 'https://sendbird.com'
   s.license      = "Commercial"
   s.author       = { "Jed Gyeong" => "jed.gyeong@sendbird.com" }
   s.source       = { :git => "https://github.com/smilefam/sendbird-ios-framework.git", :tag => "v#{s.version}" }
