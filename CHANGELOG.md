@@ -1,6 +1,6 @@
 # Change Log
 
-### v2.2.26(Oct 25, 2016)
+### v2.2.27(Oct 25, 2016)
 * Fixed file message bug.
 
 ### v2.2.25(Oct 5, 2016)
