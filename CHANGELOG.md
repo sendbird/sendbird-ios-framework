@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.15(Oct 31, 2016)
+* Added custom type to messages.
+* Added group channel list search by member nicknames and user IDs.
+* Added creating and updating channel cover image with binary file.
+
 ### v3.0.14(Oct 11, 2016)
 * Fixed URL encoding bug.
 * Fixed minor bug.
