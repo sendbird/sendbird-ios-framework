@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.16(Nov 3, 2016)
+* Added group channel list search by a member nickname. (Search by multiple nicknames option in v3.0.15 is no more supported.)
+* Added auto-translating feature to SBDUserMessage.
+* Improved connection performance.
+
 ### v3.0.15(Oct 31, 2016)
 * Added custom type to messages.
 * Added group channel list search by member nicknames and user IDs.
