@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.18(Nov 23, 2016)
+* Fixed bug of last message of group channels.
+
 ### v3.0.17(Nov 4, 2016)
 * Fixed connection bug.
 
