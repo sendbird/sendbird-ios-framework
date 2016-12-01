@@ -1,5 +1,5 @@
 //
-//  SBDUser2.h
+//  SBDUser.h
 //  SendBirdSDK
 //
 //  Created by Jed Gyeong on 11/23/16.

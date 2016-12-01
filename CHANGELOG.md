@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.19(Dec 1, 2016)
+* Added user IDs filters and query type to `SBDGroupChannelListQuery`.
+* Added channel custom type for `SBDOpenChannel` and `SBDGroupChannel`.
+* Fixed to call `channelWasChanged:` delegate when unread message count or last message has been updated.
+* Fixed bug of reconnection for `SBDOpenChannel`.
+
 ### v3.0.18(Nov 23, 2016)
 * Fixed bug of last message of group channels.
 
