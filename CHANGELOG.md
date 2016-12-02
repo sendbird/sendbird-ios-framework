@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.20(Dec 2, 2016)
+* Fixed bug of unread message count and last message of group channel.
+
 ### v3.0.19(Dec 1, 2016)
 * Added user IDs filters and query type to `SBDGroupChannelListQuery`.
 * Added channel custom type for `SBDOpenChannel` and `SBDGroupChannel`.
