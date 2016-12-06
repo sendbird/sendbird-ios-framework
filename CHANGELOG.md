@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.21(Dec 6, 2016)
+* Fixed bug of unread message count of group channel.
+* Added `isPushEnabled` property to `SBDGroupChannel` in order to represent the push notification configuration.
+* Deprecated `getPushPreferenceWithCompletionHandler:` of `SBDGroupChannel`. 
+
 ### v3.0.20(Dec 2, 2016)
 * Fixed bug of unread message count and last message of group channel.
 
