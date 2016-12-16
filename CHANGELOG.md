@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.22(Dec 16, 2016)
+* Added `unique` option to push registration.
+
 ### v3.0.21(Dec 6, 2016)
 * Fixed bug of unread message count of group channel.
 * Added `isPushEnabled` property to `SBDGroupChannel` in order to represent the push notification configuration.
