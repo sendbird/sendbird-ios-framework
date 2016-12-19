@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.23(Dec 19, 2016)
+* Fixed channel URL and user ID encoding bug.
+
 ### v3.0.22(Dec 16, 2016)
 * Added `unique` option to push registration.
 
