@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.25(Dec 23, 2016)
+* Added a feature that sets a push notification template.
+
 ### v3.0.24(Dec 19, 2016)
 * Fixed channel URL and user ID encoding bug.
 * Fixed bug of creating group channel with distinct option.
