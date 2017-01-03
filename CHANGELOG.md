@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.26(Jan 3, 2017)
+* Fixed the bug of the group channel's data.
+* Added the feature for generating the thumbnail of the image file message.
+
 ### v3.0.25(Dec 23, 2016)
 * Added a feature that sets a push notification template.
 
