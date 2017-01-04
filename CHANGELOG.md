@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.27(Jan 4, 2017)
+* Added the class to represent a thumbnail max size.
+
 ### v3.0.26(Jan 3, 2017)
 * Fixed the bug of the group channel's data.
 * Added the feature for generating the thumbnail of the image file message.
