@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.28(Jan 9, 2017)
+* Added file path parameter to the methods which are for uploading file.
+
 ### v3.0.27(Jan 4, 2017)
 * Added the class to represent a thumbnail max size.
 
