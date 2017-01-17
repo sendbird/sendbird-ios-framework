@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.29(Jan 17, 2017)
+* Fixed the bug of unread message count in group channel.
+* Added file name parameter to the message for sending file with URL.
+
 ### v3.0.28(Jan 9, 2017)
 * Added file path parameter to the methods which are for uploading file.
 
