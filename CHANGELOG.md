@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.30(Jan 18, 2017)
+* More accurate connection state.
+
 ### v3.0.29(Jan 17, 2017)
 * Fixed the bug of unread message count in group channel.
 * Added file name parameter to the message for sending file with URL.
