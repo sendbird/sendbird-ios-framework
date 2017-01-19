@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.31(Jan 19, 2017)
+* Added error code for network error.
+
 ### v3.0.30(Jan 18, 2017)
 * More accurate connection state.
 
