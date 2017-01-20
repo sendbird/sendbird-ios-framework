@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.32(Jan 20, 2017)
+* Modified network error code.
+
 ### v3.0.31(Jan 19, 2017)
 * Added error code for network error.
 
