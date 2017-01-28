@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.33(Jan 28, 2017)
+* Improved usability of channel delegates and connection delegates.
+
 ### v3.0.32(Jan 20, 2017)
 * Modified network error code.
 
