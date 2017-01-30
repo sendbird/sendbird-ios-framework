@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.34(Jan 30, 2017)
+* Added error for uninitialized class.
+
 ### v3.0.33(Jan 28, 2017)
 * Improved usability of channel delegates and connection delegates.
 
