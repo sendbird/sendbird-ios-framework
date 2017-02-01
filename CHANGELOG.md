@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.36(Jan 31, 2017)
+* Fixed bug of thumbnail image in file message.
+
 ### v3.0.35(Jan 30, 2017)
 * Added a method to run reconnection.
 * Improved unread message count management.
