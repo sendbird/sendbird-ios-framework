@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.37(Feb 14, 2017)
+* Fixed bug of updating meta counter of channel.
+
+*Note that we don't return result objects anymore when there's an error in completion handlers starting from this version. Please make sure that you don't use a result object when an error occurs after updating SDK.*
+
 ### v3.0.36(Jan 31, 2017)
 * Fixed bug of thumbnail image in file message.
 
