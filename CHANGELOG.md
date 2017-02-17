@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.38(Feb 17, 2017)
+* Added file encryption.
+* Fixed connection bug.
+
 ### v3.0.37(Feb 14, 2017)
 * Fixed bug of updating meta counter of channel.
 
