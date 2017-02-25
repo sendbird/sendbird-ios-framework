@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.39(Feb 25, 2017)
+* Fixed bugs of send user message and file message.
+
 ### v3.0.38(Feb 17, 2017)
 * Added file encryption.
 * Fixed connection bug.
