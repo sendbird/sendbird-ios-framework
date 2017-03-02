@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.40(Mar 2, 2017)
+* Added serialization for SBDUser, SBDBaseChannel, and SBDBaseMessage object.
+
 ### v3.0.39(Feb 25, 2017)
 * Fixed bugs of send user message and file message.
 
