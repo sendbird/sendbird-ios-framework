@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.41(Mar 6, 2017)
+* Added option for sync member in group channel and sender of message.
+* Added accurate error.
+* Fixed unread count bug of group channel.
+* Added message type and custom type options for getting messages.
+
 ### v3.0.40(Mar 2, 2017)
 * Added serialization for SBDUser, SBDBaseChannel, and SBDBaseMessage object.
 
