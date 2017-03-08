@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.42(Mar 8, 2017)
+* Fixed unread message count sync problem.
+* Added a method to get total unread channel count.
+
 ### v3.0.41(Mar 6, 2017)
 * Added option for sync member in group channel and sender of message.
 * Added accurate error.
