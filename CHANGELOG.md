@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.43(Mar 9, 2017)
+* Fixed unread message count bug.
+
 ### v3.0.42(Mar 8, 2017)
 * Fixed unread message count sync problem.
 * Added a method to get total unread channel count.
