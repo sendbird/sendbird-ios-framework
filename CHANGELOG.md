@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.44(Mar 13, 2017)
+* Fixed serialization bug.
+
 ### v3.0.43(Mar 9, 2017)
 * Fixed unread message count bug.
 
