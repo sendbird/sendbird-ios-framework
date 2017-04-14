@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.36(Apr 14, 2017)
+* Improved reconnection.
+* Supported background file upload.
+
 ### v3.0.45(Apr 8, 2017)
 * Improved connection speed.
 
