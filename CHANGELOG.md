@@ -1,8 +1,29 @@
 # Change Log
 
-### v3.0.46(Apr 14, 2017)
-* Improved reconnection.
-* Supported background file upload.
+### v3.0.50(Apr 14, 2017)
+* This is the biggest release since our  initial v3 release. Some of changes should be carefully taken when you update the SDK.
+
+* Now every completion handler/delegates in SDK is returned to **MAIN THREAD queue**.  It used to be inconsistent so some were returned to main thread and others to background thread.  **Be aware that you shouldn't call any blocking/long running job without using custom background queue in our completion handler/delegates!!!!**
+
+For your convenience we added the methods to set default dispatch queue for every delegates and completion handlers. The queue can be changed like this:
+
+```swift
+[SBDMain setCompletionHandlerDelegateQueue:dispatch_get_main_queue()];
+```
+or
+```swift
+[SBDMain setCompletionHandlerDelegateQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
+```
+
+* The auto reconnection is also triggered with network awareness. The default option is on but you might want to turn it off if you have manual network detection to call reconnect(). It can be turned on or off like this:
+```swift
+[SBDMain setNetworkAwarenessReconnection:YES];
+```
+or
+```swift
+[SBDMain setNetworkAwarenessReconnection:NO];
+```
+* Now we support file uploading in background so you can send very large files.
 
 ### v3.0.45(Apr 8, 2017)
 * Improved connection speed.
