@@ -1,7 +1,18 @@
 # Change Log
 
+### v3.0.51(Apr 19, 2017)
+* **Only iOS 8.0 or later is supported from this version.** `Podfile` has to be updated for dynamic frameworks like this:
+```
+platform :ios, '8.0'
+use_frameworks!
+
+target YOUR_PROJECT_TARGET do
+  pod 'SendBirdSDK'
+end
+```
+
 ### v3.0.50(Apr 14, 2017)
-* This is the biggest release since our  initial v3 release. Some of changes should be carefully taken when you update the SDK.
+* This is the biggest release since our initial v3 release. Some of changes should be carefully taken when you update the SDK.
 
 * Now every completion handler/delegates in SDK is returned to **MAIN THREAD queue**.  It used to be inconsistent so some were returned to main thread and others to background thread.  **Be aware that you shouldn't call any blocking/long running job without using custom background queue in our completion handler/delegates!!!!**
 
