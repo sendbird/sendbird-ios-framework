@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.52(Apr 24, 2017)
+* Improved connection performance.
+
 ### v3.0.51(Apr 19, 2017)
 * **Only iOS 8.0 or later is supported from this version.** `Podfile` has to be updated for dynamic frameworks like this:
 ```
