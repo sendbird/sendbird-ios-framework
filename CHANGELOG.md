@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.53(May 19, 2017)
+* Added methods to update a user message and a file message.
+* Added a delegate to receive the event for message updating.
+* Added a method to cancel uploading file message.
+
 ### v3.0.52(Apr 24, 2017)
 * Improved connection performance.
 
