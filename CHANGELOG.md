@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.54(Jun 5, 2017)
+* Fixed bug of participant count in open channel.
+* Added a channel URL parameter to a method to create an open channel.
+
 ### v3.0.53(May 19, 2017)
 * Added methods to update a user message and a file message.
 * Added a delegate to receive the event for message updating.
