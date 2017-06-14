@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.55(Jun 14, 2017)
+* Added custom type filter to channel query.
+
 ### v3.0.54(Jun 5, 2017)
 * Fixed bug of participant count in open channel.
 * Added a channel URL parameter to a method to create an open channel.
