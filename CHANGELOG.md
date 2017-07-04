@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.56(Jul 4, 2017)
+* Added a setter and a getter for push sound.
+
 ### v3.0.55(Jun 14, 2017)
 * Added custom type filter to channel query.
 
