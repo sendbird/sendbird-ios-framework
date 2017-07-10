@@ -14,6 +14,7 @@
 #import "SBDAdminMessage.h"
 #import "SBDFileMessage.h"
 #import "SBDError.h"
+#import "SBDMember.h"
 
 @class SBDPreviousMessageListQuery;
 @class SBDThumbnailSize;
@@ -80,6 +81,26 @@
  *  @param sender The group channel where the typing status updated.
  */
 - (void)channelDidUpdateTypingStatus:(SBDGroupChannel * _Nonnull)sender;
+
+
+/**
+ A callback when users are invited by inviter.
+
+ @param sender The group channel where the invitation is occured.
+ @param inviter Inviter. It can be nil.
+ @param invitees Invitees.
+ */
+- (void)channel:(SBDGroupChannel * _Nonnull)sender didReceiveInvitation:(NSArray<SBDUser *> * _Nullable)invitees inviter:(SBDUser * _Nullable)inviter;
+
+
+/**
+ A callback when user declined the invitation.
+
+ @param sender The group channel where the invitation is occured.
+ @param invitee Inviter. It can be nil.
+ @param inviter Invitee.
+ */
+- (void)channel:(SBDGroupChannel * _Nonnull)sender didDeclineInvitation:(SBDUser * _Nonnull)invitee inviter:(SBDUser * _Nullable)inviter;
 
 /**
  *  A callback when new member joined to the group channel.

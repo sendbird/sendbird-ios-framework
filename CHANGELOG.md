@@ -1,5 +1,14 @@
 # Change Log
 
+### v3.0.57(Jul 10, 2017)
+* Added `SBDMember` class for an invitation.
+* Changed member objects of `SBDGroupChannel` to `SBDMember` objects.
+* Added the methods to accept and decline an invitation to `SBDGroupChannel` object.
+* Added `SBDMemberStateFilter` for group channel list query.
+* Added the methods to set and get the channel invitation preference for automatic acceptance.
+* Added `channel:userDidJoin:inviter:` delegate for invitation acceptance.
+* Added `channel:didReceiveInvitation:inviter:` delegate for an invitation.
+
 ### v3.0.56(Jul 4, 2017)
 * Added a setter and a getter for push sound.
 
