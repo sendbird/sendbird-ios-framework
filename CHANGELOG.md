@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.58(Jul 15, 2017)
+* Added methods to copy a user message and a file message to another channel.
+
 ### v3.0.57(Jul 10, 2017)
 * Added `SBDMember` class for an invitation.
 * Changed member objects of `SBDGroupChannel` to `SBDMember` objects.

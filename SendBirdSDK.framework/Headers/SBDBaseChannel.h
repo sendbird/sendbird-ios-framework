@@ -814,4 +814,27 @@
  */
 + (void)cancelUploadingFileMessageWithRequestId:(NSString * _Nonnull)requestId completionHandler:(nullable void (^)(BOOL result, SBDError * _Nullable error))completionHandler;
 
+
+/**
+ Copies a user message to the target channel.
+
+ @param message User message object.
+ @param targetChannel Target channel object.
+ @param completionHandler The handler block to execute. The `userMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @return Returns the temporary user message with a request ID. It doesn't have a message ID.
+ */
+- (SBDUserMessage * _Nullable)copyUserMessage:(SBDUserMessage * _Nonnull)message toTargetChannel:(SBDBaseChannel * _Nonnull)targetChannel completionHandler:(nullable void (^)(SBDUserMessage * _Nullable userMessage, SBDError * _Nullable error))completionHandler;
+
+
+/**
+ Copies a file message to the target channel.
+
+ @param message File message object.
+ @param targetChannel Target channel object.
+ @param completionHandler The handler block to execute. The `fileMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @return Returns the temporary file message with a request ID. It doesn't have a message ID.
+ */
+- (SBDFileMessage * _Nullable)copyFileMessage:(SBDFileMessage * _Nonnull)message toTargetChannel:(SBDBaseChannel * _Nonnull)targetChannel completionHandler:(nullable void (^)(SBDFileMessage * _Nullable fileMessage,  SBDError * _Nullable error))completionHandler;
+
+
 @end
