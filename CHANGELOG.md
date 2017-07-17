@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.59(Jul 17, 2017)
+* Fixed serialization bug.
+
 ### v3.0.58(Jul 15, 2017)
 * Added methods to copy a user message and a file message to another channel.
 
