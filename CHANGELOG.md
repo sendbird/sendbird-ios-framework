@@ -1,6 +1,6 @@
 # Change Log
 
-### v3.0.59(Jul 19, 2017)
+### v3.0.60(Jul 19, 2017)
 * Fixed serialization bug.
 
 ### v3.0.59(Jul 17, 2017)
