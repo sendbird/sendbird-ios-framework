@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.61(Jul 25, 2017)
+* Added channel url filter for group channel list query.
+
 ### v3.0.60(Jul 19, 2017)
 * Fixed serialization bug.
 
