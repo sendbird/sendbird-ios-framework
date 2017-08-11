@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.0.62(Aug 11, 2017)
+* Set default value to channel data.
+* Added conditions to avoid null value when channel instance is updated.
+* Fixed URL encoding bug.
+* Fixed memory leak.
+* Added events for changing meta counters and meta data.
+
 ### v3.0.61(Jul 25, 2017)
 * Added channel url filter for group channel list query.
 
