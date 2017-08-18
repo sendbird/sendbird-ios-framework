@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.63(Aug 18, 2017)
+* Added new option to the method to hide a group channel for hiding the previous messages when the channel was hidden.
+* Added freeze state to open channel.
+* Added user meta data.
+* Added meta data filter to user list query.
+
 ### v3.0.62(Aug 11, 2017)
 * Set default value to channel data.
 * Added conditions to avoid null value when channel instance is updated.
