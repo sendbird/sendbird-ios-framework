@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.64(Aug 21, 2017)
+* Added user block flags to a member of group channels.
+* Added a method to get message changelogs.
+* Deprecated filters of channel list query as properties.
+* Added methods for filters of channel list query.
+
 ### v3.0.63(Aug 18, 2017)
 * Added new option to the method to hide a group channel for hiding the previous messages when the channel was hidden.
 * Added freeze state to open channel.

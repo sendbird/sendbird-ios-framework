@@ -670,4 +670,9 @@
  */
 - (nullable NSDictionary *)_toDictionary;
 
+/**
+ *  Internal use only.
+ */
++ (nullable NSArray<SBDGroupChannel *> *)getCachedChannels;
+
 @end
