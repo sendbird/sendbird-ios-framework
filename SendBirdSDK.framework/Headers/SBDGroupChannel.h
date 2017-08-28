@@ -675,4 +675,19 @@
  */
 + (nullable NSArray<SBDGroupChannel *> *)getCachedChannels;
 
+/**
+ Resets the history in this channel.
+
+ @param completionHandler The handler block to execute.
+ */
+- (void)resetMyHistoryWithCompletionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
+ Gets the group channel count.
+
+ @param memberStateFilter The member state of the current user in the channels that are counted.
+ @param completionHandler The handler block to execute.
+ */
++ (void)getChannelCountWithMemberStateFilter:(SBDMemberStateFilter)memberStateFilter completionHandler:(nullable void (^)(NSUInteger groupChannelCount, SBDError * _Nullable error))completionHandler;
+
 @end

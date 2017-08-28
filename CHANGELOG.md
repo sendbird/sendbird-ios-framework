@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.65(Aug 28, 2017)
+* Added a method to count my group channels.
+* Added a method to reset the group channel history.
+
 ### v3.0.64(Aug 21, 2017)
 * Added user block flags to a member of group channels.
 * Added a method to get message changelogs.
