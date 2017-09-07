@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.66(Sep 7, 2017)
+* Fixed message parsing bug.
+
 ### v3.0.65(Aug 28, 2017)
 * Added a method to count my group channels.
 * Added a method to reset the group channel history.
