@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.67(Oct 6, 2017)
+* Fixed reconnection bug.
+
 ### v3.0.66(Sep 7, 2017)
 * Fixed message parsing bug.
 
