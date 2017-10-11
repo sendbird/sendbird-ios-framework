@@ -1,6 +1,10 @@
 # Change Log
 
+### v3.0.68(Oct 11, 2017)
+* Bitcode support.
+
 ### v3.0.67(Oct 6, 2017)
+* **DO NOT USE THIS VERSION**
 * Fixed reconnection bug.
 
 ### v3.0.66(Sep 7, 2017)
