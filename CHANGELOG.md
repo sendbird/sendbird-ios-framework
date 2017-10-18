@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.69(Oct 18, 2017)
+* Turned off LLVM profiling and code coverage options.
+
 ### v3.0.68(Oct 11, 2017)
 * Bitcode support.
 
