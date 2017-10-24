@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.70(Oct 24, 2017)
+* Fixed bug of file message's custom type.
+
 ### v3.0.69(Oct 18, 2017)
 * Turned off LLVM profiling and code coverage options.
 
