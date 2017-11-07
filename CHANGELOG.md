@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.71(Nov 7, 2017)
+* Added `isHidden` property to a group channel.
+
 ### v3.0.70(Oct 24, 2017)
 * Fixed bug of file message's custom type.
 
