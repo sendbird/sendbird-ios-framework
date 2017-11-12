@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.72(Nov 12, 2017)
+* Added a group channel hidden event.
+
 ### v3.0.71(Nov 7, 2017)
 * Added `isHidden` property to a group channel.
 

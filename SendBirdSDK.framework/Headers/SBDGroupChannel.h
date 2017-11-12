@@ -72,7 +72,7 @@
 /**
  *  Represents this channel is hidden or not.
  */
-@property (atomic, readonly) BOOL isHidden;
+@property (atomic) BOOL isHidden;
 
 /**
  Internal use only.
