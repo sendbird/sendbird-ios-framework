@@ -151,8 +151,10 @@
  *  Initializes `SBDMain` singleton instance with SendBird Application ID. The Application ID is on SendBird dashboard. This method has to be run first in order to user SendBird.
  *
  *  @param applicationId The Applicatin ID of SendBird. It can be founded on SendBird Dashboard.
+ *
+ *  @return If YES, the applicationId is set.
  */
-+ (void)initWithApplicationId:(NSString * _Nonnull)applicationId;
++ (BOOL)initWithApplicationId:(NSString * _Nonnull)applicationId;
 
 /**
  *  SendBird internal use only.

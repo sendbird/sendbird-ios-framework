@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.74(Nov 29, 2017)
+* Fixed bug.
+
 ### v3.0.73(Nov 13, 2017)
 * Added `channelWasHidden:` delegate to `SBDChannelDelegate` for a channel hidden event.
 
