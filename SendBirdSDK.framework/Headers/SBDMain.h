@@ -90,9 +90,9 @@
  */
 @property (nonatomic, strong, readonly, nullable) NSMapTable<NSString *, id<SBDChannelDelegate>> *channelDelegatesDictionary;
 
-@property (nonatomic, strong, nullable) void (^backgroundSessionCompletionHandler)();
+@property (nonatomic, strong, nullable) void (^backgroundSessionCompletionHandler)(void);
 
-@property (strong, nonatomic, nonnull) NSMutableArray<void (^)()> *backgroundTaskBlock;
+@property (strong, nonatomic, nonnull) NSMutableArray<void (^)(void)> *backgroundTaskBlock;
 
 @property (atomic) int URLSessionDidFinishEventsForBackgroundURLSession;
 
@@ -200,7 +200,7 @@
  *
  *  @param completionHandler The handler block to execute.
  */
-+ (void)disconnectWithCompletionHandler:(nullable void (^)())completionHandler;
++ (void)disconnectWithCompletionHandler:(nullable void (^)(void))completionHandler;
 
 /**
  *  Adds the `SBDConnectionDelegate`.

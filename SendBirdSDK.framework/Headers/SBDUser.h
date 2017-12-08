@@ -41,6 +41,11 @@
 @property (atomic, readonly) long long lastSeenAt;
 
 /**
+ Represents the user is activated. This property is changed by the [Platform API](https://docs.sendbird.com/platform#user_3_update_a_user)
+ */
+@property (atomic, readonly) BOOL isActive;
+
+/**
  *  Internal use only.
  */
 - (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict;

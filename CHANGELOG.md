@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.75(Dec 8, 2017)
+* Added isActive property to `SBDUser`.
+
 ### v3.0.74(Nov 29, 2017)
 * Fixed bug.
 
