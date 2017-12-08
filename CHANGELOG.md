@@ -1,6 +1,6 @@
 # Change Log
 
-### v3.0.76(Dec 8, 2017)
+### v3.0.77(Dec 8, 2017)
 * Fixed `state` of `SBDMember` bug.
 
 ### v3.0.75(Dec 8, 2017)
