@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.78(Dec 14, 2017)
+* Fixed connection bug.
+
 ### v3.0.77(Dec 8, 2017)
 * Fixed `state` of `SBDMember` bug.
 
