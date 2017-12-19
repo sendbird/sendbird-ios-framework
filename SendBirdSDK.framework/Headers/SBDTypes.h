@@ -76,6 +76,7 @@ typedef NS_ENUM(NSInteger, SDBErrorCode) {
     SBDErrorRequestFailed = 800220,
     SBDErrorFileUploadCancelFailed = 800230,
     SBDErrorFileUploadCancelled = 800240,
+	SBDErrorFileUploadTimeout = 800250,
 };
 
 /**

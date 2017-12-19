@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.79(Dec 19, 2017)
+* Fixed file uploading bug.
+
 ### v3.0.78(Dec 14, 2017)
 * Fixed connection bug.
 
