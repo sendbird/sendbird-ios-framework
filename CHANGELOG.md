@@ -1,5 +1,23 @@
 # Change Log
 
+### v3.0.80(Jan 5, 2018)
+ * Added `setCustomTypesFilter` in `SBDGroupChannelListQuery` to search group channels.  
+ * Added `originalProfileUrl` in `SBDUser` for getting original profile image.  
+ * Added **Friend** feature.
+   * `addFriendsWithUserIds:completionHandler:` adds friends with friends' user IDs. 
+   * `deleteFriendWithUserId:completionHandler:` deletes a friend with a friend's user ID.
+   * `deleteFriendsWithUserIds:completionHandler:` deletes friends with friends' user IDs.  
+   * `deleteFriendWithDiscovery:completionHandler:` deletes friend's discovery key.
+   * `deleteFriendsWithDiscoveries:completionHandler:` deletes friends' discovery keys. 
+   * `uploadFriendDiscoveries:completionHandler:` adds friend using discovery key. 
+   * `getFriendChangeLogsByToken:completionHandler:` gets the logs about changing friend relation. 
+   * `createFriendListQuery` creates a `SBDFriendListQuery` object for getting friend list. 
+   * `addUserEventDelegate:identifier:` adds delegate for receiving user event. 
+   * `removeUserEventDelegateForIdentifier:` removes user event delegate with identifier.
+   * `removeAllUserEventDelegates` removes all user event delegate.
+   * `SBDUserEventDelegate`: user event delegate. 
+ * From now, even when you call `connectWithUserId:...` before the previous `connectWithUserId:...` finishes, all of them get called back for the connection establishment result at the same time. 
+
 ### v3.0.79(Dec 19, 2017)
 * Fixed file uploading bug.
 

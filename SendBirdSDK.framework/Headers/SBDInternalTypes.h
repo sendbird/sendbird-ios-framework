@@ -52,6 +52,7 @@ typedef NS_ENUM(NSInteger, SBDChannelEventCategory) {
 typedef NS_ENUM(NSInteger, SBDUserEventCategory) {
     SBDUserEventCategoryUserUnblock = 20000,
     SBDUserEventCategoryUserBlock = 20001,
+    SBDUserEventCategoryUserFriendDiscoveryReady = 20900,
 };
 
 typedef NS_ENUM(NSUInteger, SBDUserListQueryType) {

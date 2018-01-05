@@ -16,6 +16,7 @@
 #import "SBDTypes.h"
 #import "SBDUserListQuery.h"
 #import "SBDInternalTypes.h"
+#import "SBDFriendListQuery.h"
 
 /**
  Represents operation options.
@@ -89,6 +90,8 @@
  *  Manages registered `SBDChannelDelegate`.
  */
 @property (nonatomic, strong, readonly, nullable) NSMapTable<NSString *, id<SBDChannelDelegate>> *channelDelegatesDictionary;
+
+@property (nonatomic, strong, readonly, nullable) NSMapTable<NSString *, id<SBDUserEventDelegate>> *userEventDelegatesDictionary;
 
 @property (nonatomic, strong, nullable) void (^backgroundSessionCompletionHandler)(void);
 
@@ -540,5 +543,29 @@
  @param completionHandler The handler block to execute.
  */
 + (void)getChannelInvitationPreferenceAutoAcceptWithCompletionHandler:(nullable void (^)(BOOL autoAccept, SBDError * _Nullable error))completionHandler;
+
+#pragma mark - User Event
++ (void)addUserEventDelegate:(id<SBDUserEventDelegate> _Nonnull)delegate identifier:(NSString * _Nonnull)identifier;
+
++ (void)removeUserEventDelegateForIdentifier:(NSString * _Nonnull)identifier;
+
++ (void)removeAllUserEventDelegates;
+
+#pragma mark - Friend List
++ (nullable SBDFriendListQuery *)createFriendListQuery;
+
++ (void)addFriendsWithUserIds:(NSArray<NSString *> * _Nonnull)userIds completionHandler:(nullable void (^)(NSArray<SBDUser *> * _Nullable users, SBDError * _Nullable error))completionHandler;
+
++ (void)deleteFriendWithUserId:(NSString * _Nonnull)userId completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
++ (void)deleteFriendsWithUserIds:(NSArray<NSString *> * _Nonnull)userIds completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
++ (void)deleteFriendWithDiscovery:(NSString * _Nonnull)discoveryKey completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
++ (void)deleteFriendsWithDiscoveries:(NSArray<NSString *> * _Nonnull)discoveryKeys completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
++ (void)uploadFriendDiscoveries:(NSDictionary<NSString *, NSString *> * _Nonnull)discoveryKeyAndNames completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
++ (void)getFriendChangeLogsByToken:(NSString * _Nullable)token completionHandler:(nullable void (^)(NSArray<SBDUser *> * _Nullable addedUsers, NSArray<SBDUser *> * _Nullable updatedUsers, NSArray<NSString *> * _Nullable deletedUserIds, BOOL hasMore, NSString * _Nullable token, SBDError * _Nullable error))completionHandler;
 
 @end

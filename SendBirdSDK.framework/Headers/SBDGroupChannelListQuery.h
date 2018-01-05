@@ -126,9 +126,17 @@
  Sets the custom type filter.
 
  @param customType The custom type to search.
+ 
+ @deprecated in v3.0.79.
  */
-- (void)setCustomTypeFilter:(NSString * _Nullable)customType;
+- (void)setCustomTypeFilter:(NSString * _Nullable)customType DEPRECATED_ATTRIBUTE;
 
+/**
+ Sets the custom types filter.
+ 
+ @param customTypes The custom types to search.
+ */
+- (void)setCustomTypesFilter:(NSArray<NSString *> * _Nullable)customTypes;
 
 /**
  Sets the member state filter.
