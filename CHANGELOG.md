@@ -1,5 +1,7 @@
 # Change Log
 
+### v3.0.81(Jan 10, 2018)
+
 ### v3.0.80(Jan 5, 2018)
  * Added `setCustomTypesFilter` in `SBDGroupChannelListQuery` to search group channels.  
  * Added `originalProfileUrl` in `SBDUser` for getting original profile image.  
