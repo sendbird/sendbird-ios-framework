@@ -172,12 +172,16 @@ typedef NS_ENUM(NSInteger, SBDMessageTypeFilter) {
 
  - SBDMemberStateFilterAll: All.
  - SBDMemberStateFilterJoinedOnly: Joined state only.
- - SBDMemberStateFilterInvitedOnly: Invited state only.
+ - SBDMemberStateFilterInvitedOnly: Invited state only. This contains SBDMemberStateFilterByFriend, SBDMemberStateFilterByNonFriend.
+ - SBDMemberStateFilterByFriend: Invited by friend state only.
+ - SBDMemberStateFilterByNonFriend: Invited by non-friend state only.
  */
 typedef NS_ENUM(NSInteger, SBDMemberStateFilter) {
-    SBDMemberStateFilterAll = 0,
-    SBDMemberStateFilterJoinedOnly = 1,
-    SBDMemberStateFilterInvitedOnly = 2,
+    SBDMemberStateFilterAll                 = 0,
+    SBDMemberStateFilterJoinedOnly          = 1,
+    SBDMemberStateFilterInvitedOnly         = 2,
+    SBDMemberStateFilterInvitedByFriend     = 3,
+    SBDMemberStatefilterInvitedByNonFriend  = 4
 };
 
 

@@ -424,7 +424,7 @@
  *
  *  @param completionHandler The handler block to execute.
  */
-+ (void)markAsReadAllWithCompletionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler;
++ (void)markAsReadAllWithCompletionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler DEPRECATED_ATTRIBUTE;
 
 /**
  *  Internal use only.

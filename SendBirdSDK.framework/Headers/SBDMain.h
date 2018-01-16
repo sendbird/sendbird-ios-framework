@@ -566,6 +566,23 @@
 
 + (void)uploadFriendDiscoveries:(NSDictionary<NSString *, NSString *> * _Nonnull)discoveryKeyAndNames completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
-+ (void)getFriendChangeLogsByToken:(NSString * _Nullable)token completionHandler:(nullable void (^)(NSArray<SBDUser *> * _Nullable addedUsers, NSArray<SBDUser *> * _Nullable updatedUsers, NSArray<NSString *> * _Nullable deletedUserIds, BOOL hasMore, NSString * _Nullable token, SBDError * _Nullable error))completionHandler;
++ (void)getFriendChangeLogsByToken:(NSString * _Nullable)token completionHandler:(nullable void (^)(NSArray<SBDUser *> * _Nullable updatedUsers, NSArray<NSString *> * _Nullable deletedUserIds, BOOL hasMore, NSString * _Nullable token, SBDError * _Nullable error))completionHandler;
+
+#pragma mark - Channel List
+/**
+ *  Marks as read all group channels of the current user.
+ *
+ *  @param completionHandler The handler block to execute.
+ */
++ (void)markAsReadAllWithCompletionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler;
+
+/**
+ *  Marks as read some group channels of the current user.
+ *
+ *  @param channelUrls The array list with channel urls to be marked as read.
+ *  @param completionHandler The handler block to execute.
+ */
++ (void)markAsReadWithChannelUrls:(NSArray <NSString *> * _Nonnull)channelUrls completionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler;
+
 
 @end
