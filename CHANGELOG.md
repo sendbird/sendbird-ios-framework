@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.84(Jan 17, 2018)
+ * Fixed a bug of updating channel.
+
 ### v3.0.83(Jan 16, 2018)
 
 ### v3.0.82(Jan 11, 2018)

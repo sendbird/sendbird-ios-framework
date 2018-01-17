@@ -96,6 +96,11 @@
 - (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict;
 
 /**
+ Internal use only.
+ */
+- (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict isDirty:(BOOL)isDirty;
+
+/**
  *  Creates a query for my group channel list.
  *
  *  @return SBDGroupChannelListQuery instance for the current user.

@@ -305,7 +305,20 @@
  */
 @property (strong, nonatomic, nullable) NSString *customType;
 
+/**
+ *  Internal use only.
+ */
+@property (atomic) BOOL isDirty;
+
+/**
+ *  Internal use only.
+ */
 - (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict;
+
+/**
+ *  Internal use only.
+ */
+- (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict isDirty:(BOOL)isDirty;
 
 /**
  *  Sends a user message without <span>data</span>.
