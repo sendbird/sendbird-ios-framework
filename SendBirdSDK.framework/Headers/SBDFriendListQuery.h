@@ -12,7 +12,13 @@
 
 @interface SBDFriendListQuery : NSObject
 
-- (instancetype)init;
+/**
+ *  Initialize SBDFriendListQuery instance.
+ *  This method is designated initializer.
+ *
+ *  @return SBDFriendListQuery  The instance of this class.
+ */
+- (nullable instancetype)init;
 
 /**
  *  Sets the number of friends per page.

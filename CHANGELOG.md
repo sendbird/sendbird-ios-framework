@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.86(Jan 29, 2018)
+ * Fixed **SBDGroupChannel** instance method name `getUnreadMemebersWithMessage:` to `getUnreadMembersWithMessage:`
+ * Deprecated **SBDGroupChannel** instance methods - `getLastSeenAtByUser:`, `getLastSeenAtByUserId:`
+
 ### v3.0.85(Jan 20, 2018)
 
 ### v3.0.84(Jan 17, 2018)

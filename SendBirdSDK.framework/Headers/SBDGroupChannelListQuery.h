@@ -77,6 +77,12 @@
 @property (strong, nonatomic, nullable) NSString *channelNameFilter DEPRECATED_ATTRIBUTE;
 
 /**
+ *  Sets to filter super mode.
+ *  SBDGroupChannelSuperChannelFilterAll by default.
+ */
+@property (nonatomic) SBDGroupChannelSuperChannelFilter superChannelFilter;
+
+/**
  *  Shows if the query is loading.
  *
  *  @return Returns YES if the query is loading, otherwise returns NO.

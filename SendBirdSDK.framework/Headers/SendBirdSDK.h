@@ -22,6 +22,7 @@
 #import "SBDBaseChannel.h"
 #import "SBDOpenChannel.h"
 #import "SBDGroupChannel.h"
+#import "SBDGroupChannelParams.h"
 
 #import "SBDCommand.h"
 #import "SBDChannelEvent.h"
@@ -36,6 +37,7 @@
 #import "SBDGroupChannelListQuery.h"
 #import "SBDMessageListQuery.h"
 #import "SBDPreviousMessageListQuery.h"
+#import "SBDGroupChannelMemberListQuery.h"
 
 //! Project version number for SendBirdSDK.
 FOUNDATION_EXPORT double SendBirdSDKVersionNumber;

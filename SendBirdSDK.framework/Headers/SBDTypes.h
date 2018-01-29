@@ -196,4 +196,17 @@ typedef NS_ENUM(NSInteger, SBDMemberState) {
     SBDMemberStateInvited = 1,
 };
 
+/**
+ *  Channel filter for super mode in group channel.
+ 
+ - SBDGroupChannelSuperChannelFilterAll        : By default. No filtering.
+ - SBDGroupChannelSuperChannelFilterSuper      : To filter super group channel.
+ - SBDGroupChannelSuperChannelFilterNonSuper   : To filter non-super group channel.
+ */
+typedef NS_ENUM(NSUInteger, SBDGroupChannelSuperChannelFilter) {
+    SBDGroupChannelSuperChannelFilterAll       = 0,
+    SBDGroupChannelSuperChannelFilterSuper     = 1,
+    SBDGroupChannelSuperChannelFilterNonSuper  = 2,
+};
+
 #endif /* SBDTypes_h */
