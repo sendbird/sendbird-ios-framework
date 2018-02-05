@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.87(Feb 5, 2018)
+ * Added `setSharedContainerIdentifier:` in `SBDMain` to set shared container identifier of background session configuration for App Extension
+
 ### v3.0.86(Jan 29, 2018)
  * Fixed **SBDGroupChannel** instance method name `getUnreadMemebersWithMessage:` to `getUnreadMembersWithMessage:`
  * Deprecated **SBDGroupChannel** instance methods - `getLastSeenAtByUser:`, `getLastSeenAtByUserId:`

@@ -160,6 +160,14 @@
 + (BOOL)initWithApplicationId:(NSString * _Nonnull)applicationId;
 
 /**
+ *  Initialize `sharedContainerIdentifier` of NSURLSessionConfiguration to use background session. 
+ *  Important! If you use `App Extension` and use upload file message in extension, you MUST set thie field.
+ *
+ *  @param identifier   The identifier to set background session configuraion.
+ */
++ (void)setSharedContainerIdentifier:(nonnull NSString *)identifier;
+
+/**
  *  SendBird internal use only.
  */
 + (void)logWithLevel:(SBDLogLevel)logLevel format:(NSString * _Nonnull)format, ...;
