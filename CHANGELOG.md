@@ -1,22 +1,61 @@
 # Change Log
 
+### v3.0.88(Feb 6, 2018)
+ * Added `setSharedContainerIdentifier:` in `SBDMain` to set shared container identifier of background session configuration for App Extension
+ * Added **PublicGroupChannel** features.
+   * new **SBDPublicGroupChannelListQuery** class.
+   * added `isPublic` in **SBDGroupChannel** to flag public group channel or private group channel. 
+   * added `createPublicGroupChannelListQuery` in **SBDGroupChannel** to create public group channel list query.
+   * added `joinWithCompletionHandler:` in **SBDGroupChannel** to join public group channel.
+   * added filters `publicChannelFilter`, `customTypeStartsWithFilter` in **SBDPublicGroupChannelListQuery**.
+   * added enum `SBDGroupChannelPublicChannelFilter` - `SBDGroupChannelPublicChannelFilterAll`, `SBDGroupChannelPublicChannelFilterPublic`, `SBDGroupChannelPublicChannelFilterPrivate`.
+   * added enum `SBDPublicGroupChannelMembershipFilter` - `SBDPublicGroupChannelMembershipFilterAll`, `SBDPublicGroupChannelMembershipFilterJoined`.
+ * Added `channelUrl` in **SBDGroupChannelParams** to create group channel with explicit channel url.
+ * Added `SBDGroupChannelListOrderChannelNameAlphabetical` in `SBDGroupChannelListOrder` enum.
+ * Added enum `SBDPublicGroupChannelListOrder` - `SBDPublicGroupChannelListOrderChronological`, `SBDPublicGroupChannelListOrderChannelNameAlphabetical`.
+ * Removed `SBDLogLevelDebug` in log level.
+ * Improved socket connection.
+
 ### v3.0.87(Feb 5, 2018)
  * Added `setSharedContainerIdentifier:` in `SBDMain` to set shared container identifier of background session configuration for App Extension
 
 ### v3.0.86(Jan 29, 2018)
- * Fixed **SBDGroupChannel** instance method name `getUnreadMemebersWithMessage:` to `getUnreadMembersWithMessage:`
- * Deprecated **SBDGroupChannel** instance methods - `getLastSeenAtByUser:`, `getLastSeenAtByUserId:`
-
+ * Fixed **SBDGroupChannel** instance method name `getUnreadMemebersWithMessage:` to `getUnreadMembersWithMessage:`.
+ * Fixed nullability of `init` in **SBDFriendListQuery**.
+ * Deprecated **SBDGroupChannel** instance methods - `getLastSeenAtByUser:`, `getLastSeenAtByUserId:`.
+ * Added **SBDGroupChannelParams** to create or update group channel.
+   * added `createChannelWithParams:completionHandler:` in **SBDGroupChannel** to create group channel with params.
+   * added `updateChannelWithParams:completionHandler:` in **SBDGroupChannel** to update group channel with params.
+ * Added **SBDGroupChannelMemberListQuery** to query member list in group channel.
+   * added `createMemberListQuery` in **SBDGroupChannel** to create member list query instance.
+ * Added **SuperGroupChannel** features.
+   * added `isSuper` in **SBDGroupChannel** to flag super group channel or not.
+   * added enum `SBDGroupChannelSuperChannelFilter` - `SBDGroupChannelSuperChannelFilterAll`, `SBDGroupChannelSuperChannelFilterSuper`, `SBDGroupChannelSuperChannelFilterNonSuper`.
+   * added `superChannelFilter` in **SBDGroupChannelListQuery** to filter super group channel.
+ * Removed `coverImageName` in **SBDGroupChannelParams** 
+ 
 ### v3.0.85(Jan 20, 2018)
+ * Improved file upload.
 
 ### v3.0.84(Jan 17, 2018)
  * Fixed a bug of updating channel.
 
 ### v3.0.83(Jan 16, 2018)
+ * Added dirty flag for cache in **SBDGroupChannel**, **SBDOpenChannel**.
 
 ### v3.0.82(Jan 11, 2018)
-
+ * Moved `markAsReadAllWithCompletionHandler:` from **SBDGroupChannel** to **SBDMain**.
+ * Added `markAsReadWithChannelUrls:completionHandler:` in **SBDMain** to mark ad read some channels.
+ * Added member state filter enum - `SBDMemberStateFilterInvitedByFriend`, `SBDMemberStatefilterInvitedByNonFriend`.
+ * Changed notification key in **SBDReachability** not to conflict duplicate.
+ * Changed callback parameters of `getFriendChangeLogsByToken:completionHandler:`. Combined `addedUsers` and `updatedUsers` to `updatedUsers`.
+ * Change unread message count behavior.
+ * Updated SocketRocket library.
+ * Fixed SocketRocket library not working with 'MyDataManager' application.
+ * Improved routing.
+ 
 ### v3.0.81(Jan 10, 2018)
+ * Improved socket connection.
 
 ### v3.0.80(Jan 5, 2018)
  * Added `setCustomTypesFilter` in `SBDGroupChannelListQuery` to search group channels.  

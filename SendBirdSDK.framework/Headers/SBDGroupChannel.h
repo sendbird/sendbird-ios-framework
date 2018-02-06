@@ -18,6 +18,7 @@
 @class SBDGroupChannelListQuery;
 @class SBDGroupChannelParams;
 @class SBDGroupChannelMemberListQuery;
+@class SBDPublicGroupChannelListQuery;
 
 /**
  *  The `SBDGroupChannel` class represents a group channel which is a private chat. The user who wants to join the group channel has to be invited by another user who is already joined the channel. This class is derived from `SBDBaseChannel`. If the `SBDChannelDelegate` is added, the user will automatically receive all messages from the group channels where the user belongs after connection. The `SBDGroupChannel` provides the features of general messaging apps.
@@ -44,6 +45,12 @@
  *  NO by default.
  */
 @property (nonatomic, setter=setSuper:) BOOL isSuper;
+
+/**
+ *  Represents the channel is public channel or private one.
+ *  NO by default.
+ */
+@property (nonatomic, setter=setPublic:) BOOL isPublic;
 
 /**
  *  Represents the channel is distinct or not.
@@ -114,6 +121,13 @@
  *  @return SBDGroupChannelListQuery instance for the current user.
  */
 + (nullable SBDGroupChannelListQuery *)createMyGroupChannelListQuery;
+
+/**
+ *  Creates a query for public group channel list.
+ *
+ *  @return SBDPublicGroupChannelListQuery  The instance to query public group channels.
+ */
++ (nullable SBDPublicGroupChannelListQuery *)createPublicChannelListQuery;
 
 /**
  *  Creates a query for members in group channel list.
@@ -734,5 +748,12 @@
  @param completionHandler The handler block to execute.
  */
 + (void)getChannelCountWithMemberStateFilter:(SBDMemberStateFilter)memberStateFilter completionHandler:(nullable void (^)(NSUInteger groupChannelCount, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Join a group channel
+ *
+ *  @param completionHandler    The handler block to execute.
+ */
+- (void)joinWithCompletionHandler:(nullable void(^)(SBDError * _Nullable error))completionHandler;
 
 @end

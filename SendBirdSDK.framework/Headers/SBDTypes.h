@@ -19,8 +19,17 @@
  *  The order type for `SBDGroupChannelListQuery`.
  */
 typedef NS_ENUM(NSInteger, SBDGroupChannelListOrder) {
-    SBDGroupChannelListOrderChronological = 0,
-    SBDGroupChannelListOrderLatestLastMessage = 1,
+    SBDGroupChannelListOrderChronological           = 0,
+    SBDGroupChannelListOrderLatestLastMessage       = 1,
+    SBDGroupChannelListOrderChannelNameAlphabetical = 2,
+};
+
+/**
+ *  The order type for `SBDPublicGroupChannelListQuery`.
+ */
+typedef NS_ENUM(NSUInteger, SBDPublicGroupChannelListOrder) {
+    SBDPublicGroupChannelListOrderChronological           = 0,
+    SBDPublicGroupChannelListOrderChannelNameAlphabetical = 2,
 };
 
 /**
@@ -197,7 +206,7 @@ typedef NS_ENUM(NSInteger, SBDMemberState) {
 };
 
 /**
- *  Channel filter for super mode in group channel.
+ *  Channel filter for super mode in group channels.
  
  - SBDGroupChannelSuperChannelFilterAll        : By default. No filtering.
  - SBDGroupChannelSuperChannelFilterSuper      : To filter super group channel.
@@ -207,6 +216,30 @@ typedef NS_ENUM(NSUInteger, SBDGroupChannelSuperChannelFilter) {
     SBDGroupChannelSuperChannelFilterAll       = 0,
     SBDGroupChannelSuperChannelFilterSuper     = 1,
     SBDGroupChannelSuperChannelFilterNonSuper  = 2,
+};
+
+/**
+ *  Filter public group channel or private one in group channels.
+ 
+ - SBDGroupChannelPublicChannelFilterAll        : By default. No filtering.
+ - SBDGroupChannelPublicChannelFilterPublic     : To filter public group channel.
+ - SBDGroupChannelPublicChannelFilterPrivate    : To filter private group channel.
+ */
+typedef NS_ENUM(NSUInteger, SBDGroupChannelPublicChannelFilter) {
+    SBDGroupChannelPublicChannelFilterAll       = 0,
+    SBDGroupChannelPublicChannelFilterPublic    = 1,
+    SBDGroupChannelPublicChannelFilterPrivate   = 2,
+};
+
+/**
+ *  Filter my channels or all ones in public group channels.
+ 
+ - SBDPublicGroupChannelMembershipFilterAll       : By default. No filtering.
+ - SBDPublicGroupChannelMembershipFilterJoined    : To filter public group channel joined with me.
+ */
+typedef NS_ENUM(NSUInteger, SBDPublicGroupChannelMembershipFilter) {
+    SBDPublicGroupChannelMembershipFilterAll      = 0,
+    SBDPublicGroupChannelMembershipFilterJoined   = 1,
 };
 
 #endif /* SBDTypes_h */

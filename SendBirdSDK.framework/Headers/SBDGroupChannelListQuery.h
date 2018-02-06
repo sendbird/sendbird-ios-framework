@@ -77,10 +77,21 @@
 @property (strong, nonatomic, nullable) NSString *channelNameFilter DEPRECATED_ATTRIBUTE;
 
 /**
- *  Sets to filter super mode.
+ *  Sets to filter super channel.
  *  SBDGroupChannelSuperChannelFilterAll by default.
  */
 @property (nonatomic) SBDGroupChannelSuperChannelFilter superChannelFilter;
+
+/**
+ *  Sets to filter public channel.
+ *  SBDGroupChannelSuperChannelFilterAll by default.
+ */
+@property (nonatomic) SBDGroupChannelPublicChannelFilter publicChannelFilter;
+
+/**
+ *  Sets to filter channels by custom type that starts with.
+ */
+@property (nonatomic, copy, nullable) NSString *customTypeStartsWithFilter;
 
 /**
  *  Shows if the query is loading.

@@ -22,10 +22,22 @@
 @interface SBDGroupChannelParams : NSObject
 
 /**
+ *  Represents the channel is to be updated.
+ *  Use in creation only.
+ */
+@property (nonatomic, copy, nullable) NSString *channelUrl;
+
+/**
  *  Represents the channel is super channel or not.
  *  NO by default.
  */
 @property (nonatomic, setter=setSuper:) BOOL isSuper;
+
+/**
+ *  Represents the channel is public channel or not.
+ *  NO by default, a.k.a. private.
+ */
+@property (nonatomic, setter=setPublic:) BOOL isPublic;
 
 /**
  *  Represents the channel is distinct or not.
@@ -37,27 +49,27 @@
 /**
  *  Represents the custom type of group channel.
  */
-@property (nonatomic, strong, nullable) NSString *customType;
+@property (nonatomic, copy, nullable) NSString *customType;
 
 /**
  *  Represents the custom data of group channel.
  */
-@property (nonatomic, strong, nullable) NSString *data;
+@property (nonatomic, copy, nullable) NSString *data;
 
 /**
  *  Represnets the cover image url of group channel.
  */
-@property (nonatomic, strong, nullable) NSString *coverUrl;
+@property (nonatomic, copy, nullable) NSString *coverUrl;
 
 /**
  *  Represents the cover image data of group channel.
  */
-@property (nonatomic, strong, nullable) NSData *coverImage;
+@property (nonatomic, copy, nullable) NSData *coverImage;
 
 /**
  *  Represents the name of group channel.
  */
-@property (nonatomic, strong, nullable) NSString *name;
+@property (nonatomic, copy, nullable) NSString *name;
 
 /**
  *  Add user with SBDUser class to be member of the group channel.
