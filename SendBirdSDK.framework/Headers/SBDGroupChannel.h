@@ -19,6 +19,7 @@
 @class SBDGroupChannelParams;
 @class SBDGroupChannelMemberListQuery;
 @class SBDPublicGroupChannelListQuery;
+@class SBDUserListQuery;
 
 /**
  *  The `SBDGroupChannel` class represents a group channel which is a private chat. The user who wants to join the group channel has to be invited by another user who is already joined the channel. This class is derived from `SBDBaseChannel`. If the `SBDChannelDelegate` is added, the user will automatically receive all messages from the group channels where the user belongs after connection. The `SBDGroupChannel` provides the features of general messaging apps.
@@ -127,7 +128,7 @@
  *
  *  @return SBDPublicGroupChannelListQuery  The instance to query public group channels.
  */
-+ (nullable SBDPublicGroupChannelListQuery *)createPublicChannelListQuery;
++ (nullable SBDPublicGroupChannelListQuery *)createPublicGroupChannelListQuery;
 
 /**
  *  Creates a query for members in group channel list.
@@ -135,6 +136,14 @@
  *  @return SBDGroupChannelMemberListQuery  The instance of the members in group channel.
  */
 - (nullable SBDGroupChannelMemberListQuery *)createMemberListQuery;
+
+/**
+ *  Creates a query instance for banned user list of the channel.
+ *
+ *  @return SBDUserListQuery The instance for the banned user list. Query only banned user list.
+ *  @since 3.0.89
+ */
+- (nullable SBDUserListQuery *)createBannedUserListQuery;
 
 /**
  *  Creates a group channel with user objects.
@@ -755,5 +764,99 @@
  *  @param completionHandler    The handler block to execute.
  */
 - (void)joinWithCompletionHandler:(nullable void(^)(SBDError * _Nullable error))completionHandler;
+
+#pragma mark - moderation
+
+/**
+ *  Bans a user for seconds. Let a user out and prevent to join again. If the user is already banned, duration will be updated from the time that was initialized.
+ *
+ *  @param userId               The user id to be banned.
+ *  @param seconds              Seconds of ducation to be banned. Seconds should be larger than -1. If it is -1, user is banned forever. If it is 0, duration is set 10years by default.
+ *  @param description          The reason why the user was banned.
+ *  @param completionHandler    The handler block to be executed after the user is banned. This block has no return value and takes an argument that is an error made when there is something wrong to ban.
+ *  @since 3.0.89
+ */
+- (void)banUserWithUserId:(nonnull NSString *)userId seconds:(NSInteger)seconds description:(nullable NSString *)description completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Bans a user for seconds. Let a user out and prevent to join again. If the user is already banned, duration will be updated from the time that was initialized.
+ *
+ *  @param user                 The user to be banned.
+ *  @param seconds              Seconds of ducation to be banned. Seconds should be larger than -1. If it is -1, user is banned forever. If it is 0, duration is set 10years by default.
+ *  @param description          The reason why the user was banned.
+ *  @param completionHandler    The handler block to be executed after the user is banned. This block has no return value and takes an argument that is an error made when there is something wrong to ban.
+ *  @since 3.0.89
+ */
+- (void)banUser:(nonnull SBDUser *)user seconds:(NSInteger)seconds description:(nullable NSString *)description completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Remove ban for a user.
+ *
+ *  @param userId            The user id to be removed ban.
+ *  @param completionHandler The handler block to be executed after remove ban. This block has no return value and takes an argument that is an error made when there is something wrong to remove ban.
+ *  @since 3.0.89
+ */
+- (void)unbanUserWithUserId:(nonnull NSString *)userId completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Remove ban for a user.
+ *
+ *  @param user              The user to be removed ban.
+ *  @param completionHandler The handler block to be executed after remove ban. This block has no return value and takes an argument that is an error made when there is something wrong to remove ban.
+ *  @since 3.0.89
+ */
+- (void)unbanUser:(nonnull SBDUser *)user completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Mute the user. Muted user cannot send any messages to the group channel.
+ *
+ *  @param userId            The user id to be muted.
+ *  @param completionHandler The handler block to be executed after mute. This block has no return value and takes an argument that is an error made when there is something wrong to mute the user.
+ *  @since 3.0.89
+ */
+- (void)muteUserWithUserId:(nonnull NSString *)userId completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Mute the user. Muted user cannot send any messages to the group channel.
+ *
+ *  @param user              The user to be muted.
+ *  @param completionHandler The handler block to be executed after mute. This block has no return value and takes an argument that is an error made when there is something wrong to mute the user.
+ *  @since 3.0.89
+ */
+- (void)muteUser:(nonnull SBDUser *)user completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Turn off mute the user.
+ *
+ *  @param userId            The user Id to be turned off mute.
+ *  @param completionHandler The handler block to be executed after turn off mute. This block has no return value and takes an argument that is an error made when there is something wrong to turn off mute.
+ *  @since 3.0.89
+ */
+- (void)unmuteUserWithUserId:(nonnull NSString *)userId completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Turn off mute the user.
+ *
+ *  @param user              The user to be turned off mute.
+ *  @param completionHandler The handler block to be executed after turn off mute. This block has no return value and takes an argument that is an error made when there is something wrong to turn off mute.
+ *  @since 3.0.89
+ */
+- (void)unmuteUser:(nonnull SBDUser *)user completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Freeze the channel. If channel is frozen, only operators can send messages to the channel.
+ *
+ *  @param completionHandler The handler block to be executed after freeze. This block has no return value and takes an argument that is an error made when there is something wrong to freeze.
+ *  @since 3.0.89
+ */
+- (void)freezeWithCompletionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Stop to freeze the channel. If It is not frozen channel, this will be ignored.
+ *
+ *  @param completionHandler The handler block to be executed after stop to freeze. This block has no return value and takes an argument that is an error made when there is something wrong to stop to freeze.
+ *  @since 3.0.89
+ */
+- (void)unfreezeWithCompletionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
 @end

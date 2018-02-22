@@ -592,5 +592,4 @@
  */
 + (void)markAsReadWithChannelUrls:(NSArray <NSString *> * _Nonnull)channelUrls completionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler;
 
-
 @end

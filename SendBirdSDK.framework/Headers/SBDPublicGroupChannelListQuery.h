@@ -13,7 +13,7 @@
 
 /**
  *  The `SBDPublicGroupChannelListQuery` class is a query class for getting the list of public group channels.
- *  The instance of this class is created by [`createPublicChannelListQuery`](../Classes/SBDGroupChannel.html#//api/name/createPublicChannelListQuery) in `SBDGroupChannel` class.
+ *  The instance of this class is created by [`createPublicGroupChannelListQuery`](../Classes/SBDGroupChannel.html#//api/name/createPublicGroupChannelListQuery) in `SBDGroupChannel` class.
  */
 @interface SBDPublicGroupChannelListQuery : NSObject
 
@@ -32,14 +32,6 @@
  *  YES if the query is loading, otherwise returns NO.
  */
 @property (atomic, readonly, getter=isLoading) BOOL loading;
-
-/**
- *  Initialize SBDGroupChannelMemberListQuery instance.
- *  This method is designated initializer.
- *
- *  @return SBDPublicGroupChannelListQuery  The instance of this class.
- */
-- (nullable instancetype)init NS_DESIGNATED_INITIALIZER;
 
 /**
  *  If the value is YES, the channel list includes empty channel.

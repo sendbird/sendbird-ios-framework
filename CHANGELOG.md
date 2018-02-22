@@ -1,5 +1,17 @@
 # Change Log
 
+### v3.0.89(Feb 22, 2018)
+ * **Changed channel 6 delegates parameter type from `SBDOpenChannel` to `SBDBaseChannel`** 
+   * changed from `channel:(SBDOpenChannel * _Nonnull)sender userWasMuted:(SBDUser * _Nonnull)user` to `channel:(SBDBaseChannel * _Nonnull)sender userWasMuted:(SBDUser * _Nonnull)user`
+   * changed from `channel:(SBDOpenChannel * _Nonnull)sender userWasUnmuted:(SBDUser * _Nonnull)user` to `channel:(SBDBaseChannel * _Nonnull)sender userWasUnmuted:(SBDUser * _Nonnull)user`
+   * changed from `channel:(SBDOpenChannel * _Nonnull)sender userWasBanned:(SBDUser * _Nonnull)user` to `channel:(SBDBaseChannel * _Nonnull)sender userWasBanned:(SBDUser * _Nonnull)user`
+   * changed from `channel:(SBDOpenChannel * _Nonnull)sender userWasUnbanned:(SBDUser * _Nonnull)user` to `channel:(SBDBaseChannel * _Nonnull)sender userWasUnbanned:(SBDUser * _Nonnull)user`
+   * changed from `channelWasFrozen:(SBDOpenChannel * _Nonnull)sender` to `channelWasFrozen:(SBDBaseChannel * _Nonnull)sender`
+   * changed from `channelWasUnfrozen:(SBDOpenChannel * _Nonnull)sender` to `channelWasUnfrozen:(SBDBaseChannel * _Nonnull)sender`
+ * Moved property named `isFrozen` from **SBDOpenChannel** to **SBDBaseChannel**
+ * Fixed error enum type.
+ * Removed warning signals.
+
 ### v3.0.88(Feb 6, 2018)
  * Added `setSharedContainerIdentifier:` in `SBDMain` to set shared container identifier of background session configuration for App Extension
  * Added **PublicGroupChannel** features.

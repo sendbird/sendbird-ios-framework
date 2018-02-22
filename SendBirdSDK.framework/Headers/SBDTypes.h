@@ -35,7 +35,7 @@ typedef NS_ENUM(NSUInteger, SBDPublicGroupChannelListOrder) {
 /**
  *  Error types.
  */
-typedef NS_ENUM(NSInteger, SDBErrorCode) {
+typedef NS_ENUM(NSInteger, SBDErrorCode) {
     // RESTful API Errors
     SBDErrorInvalidParameterValueString = 400100,
     SBDErrorInvalidParameterValueNumber = 400101,
@@ -240,6 +240,32 @@ typedef NS_ENUM(NSUInteger, SBDGroupChannelPublicChannelFilter) {
 typedef NS_ENUM(NSUInteger, SBDPublicGroupChannelMembershipFilter) {
     SBDPublicGroupChannelMembershipFilterAll      = 0,
     SBDPublicGroupChannelMembershipFilterJoined   = 1,
+};
+
+/**
+ *  Filter operators in group channels.
+ 
+ - SBDGroupChannelOperatorFilterAll         : By default. No filtering.
+ - SBDGroupChannelOperatorFilterOperator    : To filter operators.
+ - SBDGroupChannelOperatorFilterNonOperator : To filter members except operators.
+ */
+typedef NS_ENUM(NSUInteger, SBDGroupChannelOperatorFilter) {
+    SBDGroupChannelOperatorFilterAll            = 0,
+    SBDGroupChannelOperatorFilterOperator      = 1,
+    SBDGroupChannelOperatorFilterNonOperator   = 2,
+};
+
+/**
+ *  Filter operators in group channels.
+ 
+ - SBDGroupChannelMutedMemberFilterAll      : By default. No filtering.
+ - SBDGroupChannelMutedMemberFilterMuted    : To filter muted members.
+ - SBDGroupChannelMutedMemberFilterUnmuted  : To filter members not muted.
+ */
+typedef NS_ENUM(NSUInteger, SBDGroupChannelMutedMemberFilter) {
+    SBDGroupChannelMutedMemberFilterAll     = 0,
+    SBDGroupChannelMutedMemberFilterMuted   = 1,
+    SBDGroupChannelMutedMemberFilterUnmuted = 2,
 };
 
 #endif /* SBDTypes_h */

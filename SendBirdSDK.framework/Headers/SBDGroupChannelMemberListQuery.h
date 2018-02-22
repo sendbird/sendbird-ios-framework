@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBDTypes.h"
 
 @class SBDMember, SBDError;
 
@@ -17,14 +18,8 @@
 @interface SBDGroupChannelMemberListQuery : NSObject
 
 /**
- *  Initialize SBDGroupChannelMemberListQuery instance.
- *  This method is designated initializer.
- *
- *  @param  channelUrl      the channel url to get member list.
- *  @return SBDGroupChannelMemberListQuery  The instance of this class.
+ *  Don't use this initializer. Use `createGroupChannelListQuery` of `SBDGroupChannel` instead.
  */
-- (nullable instancetype)initWithChannelUrl:(nonnull NSString *)channelUrl NS_DESIGNATED_INITIALIZER;
-
 - (nullable instancetype)init NS_UNAVAILABLE;
 
 /**
@@ -36,6 +31,24 @@
  *  Shows if there is a next page
  */
 @property (atomic, readonly) BOOL hasNext;
+
+/**
+ *  Sets a filter to query operators.
+ *
+ *  @param filter  The filter about members as operator.
+ *
+ *  @since 3.0.89
+ */
+- (void)setOperatorFilter:(SBDGroupChannelOperatorFilter)filter;
+
+/**
+ *  Sets a filter to query muted member list.
+ *
+ *  @param filter  The filter about muted/unmuted members.
+ *
+ *  @since 3.0.89
+ */
+- (void)setMutedMemberFilter:(SBDGroupChannelMutedMemberFilter)filter;
 
 /**
  *  Gets the list of member in group channel. If this method is repeatedly called, it will retrieve the following pages of the member list.

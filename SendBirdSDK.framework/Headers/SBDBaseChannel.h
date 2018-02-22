@@ -137,50 +137,50 @@
 - (void)channel:(SBDOpenChannel * _Nonnull)sender userDidExit:(SBDUser * _Nonnull)user;
 
 /**
- *  A callback when a user was muted in the open channel.
+ *  A callback when a user was muted in the channel.
  *
- *  @param sender The open channel.
+ *  @param sender The channel.
  *  @param user   The user who was muted.
  */
-- (void)channel:(SBDOpenChannel * _Nonnull)sender userWasMuted:(SBDUser * _Nonnull)user;
+- (void)channel:(SBDBaseChannel * _Nonnull)sender userWasMuted:(SBDUser * _Nonnull)user;
 
 /**
- *  A callback when a user was unmuted in the open channel.
+ *  A callback when a user was unmuted in the channel.
  *
- *  @param sender The open channel.
+ *  @param sender The channel.
  *  @param user   The user who was unmuted.
  */
-- (void)channel:(SBDOpenChannel * _Nonnull)sender userWasUnmuted:(SBDUser * _Nonnull)user;
+- (void)channel:(SBDBaseChannel * _Nonnull)sender userWasUnmuted:(SBDUser * _Nonnull)user;
 
 /**
- *  A callback when a user was banned in the open channel.
+ *  A callback when a user was banned in the channel.
  *
- *  @param sender The open channel.
+ *  @param sender The channel.
  *  @param user   The user who was banned.
  */
-- (void)channel:(SBDOpenChannel * _Nonnull)sender userWasBanned:(SBDUser * _Nonnull)user;
+- (void)channel:(SBDBaseChannel * _Nonnull)sender userWasBanned:(SBDUser * _Nonnull)user;
 
 /**
- *  A callback when a user was unbanned in the open channel.
+ *  A callback when a user was unbanned in the channel.
  *
- *  @param sender The open channel.
+ *  @param sender The channel.
  *  @param user   The user who was unbanned.
  */
-- (void)channel:(SBDOpenChannel * _Nonnull)sender userWasUnbanned:(SBDUser * _Nonnull)user;
+- (void)channel:(SBDBaseChannel * _Nonnull)sender userWasUnbanned:(SBDUser * _Nonnull)user;
 
 /**
- *  A callback when an open channel was frozen.
+ *  A callback when an channel was frozen.
  *
- *  @param sender The open channel.
+ *  @param sender The channel.
  */
-- (void)channelWasFrozen:(SBDOpenChannel * _Nonnull)sender;
+- (void)channelWasFrozen:(SBDBaseChannel * _Nonnull)sender;
 
 /**
- *  A callback when an open channel was unfrozen.
+ *  A callback when an channel was unfrozen.
  *
- *  @param sender The open channel.
+ *  @param sender The channel.
  */
-- (void)channelWasUnfrozen:(SBDOpenChannel * _Nonnull)sender;
+- (void)channelWasUnfrozen:(SBDBaseChannel * _Nonnull)sender;
 
 /**
  *  A callback when an open channel was changed.
@@ -309,6 +309,14 @@
  *  Internal use only.
  */
 @property (atomic) BOOL isDirty;
+
+/**
+ *  The flag for a frozen channel.
+ *
+ *  @since 3.0.89
+ *  Was moved from SBDOpenChannel
+ */
+@property (atomic, setter=setFreeze:) BOOL isFrozen;
 
 /**
  *  Internal use only.

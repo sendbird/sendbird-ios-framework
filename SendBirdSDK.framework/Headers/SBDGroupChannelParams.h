@@ -72,6 +72,13 @@
 @property (nonatomic, copy, nullable) NSString *name;
 
 /**
+ *  Represents the operators's user id.
+ *  
+ *  @since 3.0.89
+ */
+@property (nonatomic, copy, nullable) NSArray <NSString *> *operatorUserIds;
+
+/**
  *  Add user with SBDUser class to be member of the group channel.
  *
  *  @param user     The user to be member of a group channel.
@@ -105,5 +112,13 @@
  *  @return userIds  The user ids to be member of a group channel.
  */
 - (nullable NSArray <NSString *> *)userIds;
+
+/**
+ *  Set operators with list of user instance.
+ *
+ *  @see operatorUserIds
+ *  @since 3.0.89
+ */
+- (void)setOperators:(nonnull NSArray <SBDUser *> *)operators;
 
 @end
