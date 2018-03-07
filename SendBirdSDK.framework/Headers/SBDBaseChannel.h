@@ -24,6 +24,7 @@
 @class SBDMessageListQuery;
 @class SBDGroupChannel;
 @class SBDOpenChannel;
+@class SBDUserMessageParams, SBDFileMessageParams;
 
 /**
  *  An object that adopts the `SBDChannelDelegate` protocol is responsible for receiving the events in the channel. Some of delegate methods are common for the `SBDBaseChannel`. However, there are delegate methods for the `SBDOpenChannel` and `SBDGroupChannel` exclusive. The `SBDChannelDelegate` can be added by [`addChannelDelegate:identifier:`](../Classes/SBDMain.html#//api/name/addChannelDelegate:identifier:) in `SBDMain`. Every `SBDChannelDelegate` method which is added is going to receive events. 
@@ -69,6 +70,14 @@
  @param message The updated message.
  */
 - (void)channel:(SBDBaseChannel * _Nonnull)sender didUpdateMessage:(SBDBaseMessage * _Nonnull)message;
+
+/**
+ A delegate is called when someone mentioned the user.
+
+ @param channel The channel mention was occured in.
+ @param message The message mention was occured about.
+ */
+- (void)channel:(nonnull SBDBaseChannel *)channel didReceiveMention:(nonnull SBDBaseMessage *)message;
 
 /**
  *  A callback when read receipts updated.
@@ -319,6 +328,13 @@
 @property (atomic, setter=setFreeze:) BOOL isFrozen;
 
 /**
+ *  Represents the channel is ephemeral or not.
+ *
+ *  @since 3.0.90
+ */
+@property (nonatomic, readonly) BOOL isEphemeral;
+
+/**
  *  Internal use only.
  */
 - (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict;
@@ -396,6 +412,16 @@
  *  @return Returns the temporary user message with a request ID. It doesn't have a message ID.
  */
 - (nonnull SBDUserMessage *)sendUserMessage:(NSString * _Nullable)message data:(NSString * _Nullable)data customType:(NSString * _Nullable)customType targetLanguages:(NSArray<NSString *> * _Nullable)targetLanguages completionHandler:(nullable void (^)(SBDUserMessage * _Nullable userMessage, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Sends a string message of params. The message is translated into the target languages.
+ *
+ *  @param params               The instance of SBDUserMessageParams that can has parameters related with string message.
+ *  @param completionHandler    The handler block to be executed after the message was sent. This block has no return value and takes two argument, one is a file message was sent and other is an error made when there is something wrong to message.
+ *
+ *  @return SDBUserMessage      Returns the temporary user message instance with a request ID. It doesn't have a message ID and an URL.
+ */
+- (nonnull SBDUserMessage *)sendUserMessageWithParams:(nonnull SBDUserMessageParams *)params completionHandler:(nullable void (^)(SBDUserMessage * _Nullable userMessage, SBDError * _Nullable error))completionHandler;
 
 /**
  *  Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to SendBird file storage and a URL of the file will be generated.
@@ -548,6 +574,27 @@
  *  @return Returns the temporary file message with a request ID. It doesn't have a message ID and an URL.
  */
 - (nonnull SBDFileMessage *)sendFileMessageWithFilePath:(NSString * _Nonnull)filepath type:(NSString * _Nonnull)type thumbnailSizes:(NSArray<SBDThumbnailSize *> * _Nullable)thumbnailSizes data:(NSString * _Nullable)data customType:(NSString * _Nullable)customType progressHandler:(nullable void (^)(int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend))progressHandler completionHandler:(nullable void (^)(SBDFileMessage * _Nullable fileMessage, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Sends a file message with file or file URL of params without progress. If the params has a binary file, it will upload data to Sendbird storage. If not, the params has a file url, it will send a message with file url.
+ *
+ *  @param params               The instance of SBDFileMessageParams that can has parameters related with file.
+ *  @param completionHandler    The handler block to be executed after the message was sent. This block has no return value and takes two argument, one is a file message was sent and other is an error made when there is something wrong to message.
+ *
+ *  @return SDBFileMessage      Returns the temporary file message instance with a request ID. It doesn't have a message ID and an URL.
+ */
+- (nonnull SBDFileMessage *)sendFileMessageWithParams:(nonnull SBDFileMessageParams *)params completionHandler:(nullable void (^)(SBDFileMessage * _Nullable fileMessage, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Sends a file message with file or file URL of params with progress. If the params has a binary file, it will upload data to Sendbird storage. If not, the params has a file url, it will send a message with file url.
+ *
+ *  @param params               The instance of SBDFileMessageParams that can has parameters related with file.
+ *  @param progressHandler      The handler block to be used to monitor progression. `bytesSent` is the number of bytes sent since this method was called. `totalBytesSent` is the total number of bytes sent so far. `totalBytesExpectedToSend` is the expected length of the body data. These parameters are the same to the declaration of [`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:`](https://developer.apple.com/reference/foundation/nsurlsessiontaskdelegate/1408299-urlsession?language=objc).
+ *  @param completionHandler    The handler block to be executed after the message was sent. This block has no return value and takes two argument, one is a file message was sent and other is an error made when there is something wrong to message.
+ *
+ *  @return SDBFileMessage      Returns the temporary file message instance with a request ID. It doesn't have a message ID and an URL.
+ */
+- (nonnull SBDFileMessage *)sendFileMessageWithParams:(nonnull SBDFileMessageParams *)params progressHandler:(nullable void (^)(int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend))progressHandler completionHandler:(nullable void (^)(SBDFileMessage * _Nullable fileMessage, SBDError * _Nullable error))completionHandler;
 
 #pragma mark - Load message list
 /**

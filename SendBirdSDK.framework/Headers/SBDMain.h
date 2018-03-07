@@ -37,6 +37,14 @@
  */
 + (void)setUseMemberAsMessageSender:(BOOL)tf;
 
+
+/**
+ Sets the timeout for connection. If there is a timeout error frequently, set the longer timeout than default value. The default is 10 seconds.
+
+ @param timeout The timeout for connection.
+ */
++ (void)setConnectionTimeout:(NSInteger)timeout;
+
 @end
 
 /**

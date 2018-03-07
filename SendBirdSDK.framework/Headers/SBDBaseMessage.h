@@ -32,10 +32,16 @@
 @property (strong, nonatomic, nullable) NSString *channelType;
 
 /**
+ *  The list of users who was mentioned together with the message.
+ *
+ *  @since 3.0.90
+ */
+@property (strong, nonatomic, readonly, nullable) NSArray <SBDUser *> *mentionedUsers;
+
+/**
  *  Message created time in millisecond(UTC).
  */
 @property (atomic) long long createdAt;
-
 
 /**
  Message updated time in millisecond(UTC).

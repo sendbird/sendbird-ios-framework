@@ -96,6 +96,11 @@
 @property (atomic) BOOL hasBeenUpdated;
 
 /**
+ Current member's state in the channel.
+ */
+@property (atomic) SBDMemberState myMemberState;
+
+/**
  *  Refreshes this channel instance.
  *
  *  @param completionHandler The handler block to execute.

@@ -1,5 +1,22 @@
 # Change Log
 
+### v3.0.90(Mar 7, 2018)
+ * Added **mentioning to specific user**.
+   * added channel delegate, `channel:didReceiveMention:`, which is called when the current user is mentioned.
+   * added a property named `mentionedUsers` which means the users received mention together. 
+ * Added **ephemeral group channel**.
+   * added a property named `isEphemeral` in `SBDBaseChannel`.
+   * added a property named `isEphemeral` in `SBDGroupChannelParams`.
+ * Added api that can **message with an instance of MessageParams** .
+   * added `SBDUserMessageParams`, `SBDFileMessageParams` based on `SBDBaseMessageParams` to message.
+   * added an api, `sendUserMessageWithParams:completionHandler:`, used to send user message with message params.
+   * added apis, `sendFileMessageWithParams:completionHandler:` and `sendFileMessageWithParams:progressHandler:completionHandler:`, used to send file message with message params.
+ * Added **member's state** in group channel.
+   * added a property named `myMemberState` type of `SBDMemberState` which means state of member in `SBDGroupChannel`.
+   * added `SBDMemberStateNone` type of enum SBDMemberState.
+ * Added `setConnectionTimeout:` to configure websocket timeout.
+ * Removed `SBDChannelEvent.h` and `SBDCommand.h`.
+
 ### v3.0.89(Feb 22, 2018)
  * **Changed channel 6 delegates parameter type from `SBDOpenChannel` to `SBDBaseChannel`** 
    * changed from `channel:(SBDOpenChannel * _Nonnull)sender userWasMuted:(SBDUser * _Nonnull)user` to `channel:(SBDBaseChannel * _Nonnull)sender userWasMuted:(SBDUser * _Nonnull)user`

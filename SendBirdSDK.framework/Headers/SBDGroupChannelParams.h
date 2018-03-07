@@ -47,6 +47,14 @@
 @property (nonatomic, setter=setDistinct:) BOOL isDistinct;
 
 /**
+ *  Represents the channel is ephemeral or not.
+ *  The default value is NO
+ *
+ *  @since 3.0.90
+ */
+@property (nonatomic, setter=setEphemeral:) BOOL isEphemeral;
+
+/**
  *  Represents the custom type of group channel.
  */
 @property (nonatomic, copy, nullable) NSString *customType;

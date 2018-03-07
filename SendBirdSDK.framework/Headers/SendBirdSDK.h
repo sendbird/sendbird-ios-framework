@@ -24,13 +24,13 @@
 #import "SBDGroupChannel.h"
 #import "SBDGroupChannelParams.h"
 
-#import "SBDCommand.h"
-#import "SBDChannelEvent.h"
-
 #import "SBDBaseMessage.h"
 #import "SBDUserMessage.h"
 #import "SBDFileMessage.h"
 #import "SBDAdminMessage.h"
+#import "SBDBaseMessageParams.h"
+#import "SBDUserMessageParams.h"
+#import "SBDFileMessageParams.h"
 
 #import "SBDUserListQuery.h"
 #import "SBDOpenChannelListQuery.h"

@@ -199,10 +199,12 @@ typedef NS_ENUM(NSInteger, SBDMemberStateFilter) {
 
  - SBDMemberStateJoined: Joined member in a group channel.
  - SBDMemberStateInvited: Invited member in a group channel.
+ - SBDMemberStateNone: Not member in a group channel.
  */
 typedef NS_ENUM(NSInteger, SBDMemberState) {
     SBDMemberStateJoined = 0,
     SBDMemberStateInvited = 1,
+    SBDMemberStateNone = 2,
 };
 
 /**
