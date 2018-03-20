@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.91(Mar 20, 2018)
+ * Fixed a bug that can't send file message with a binary file.
+
 ### v3.0.90(Mar 7, 2018)
  * Added **mentioning to specific user**.
    * added channel delegate, `channel:didReceiveMention:`, which is called when the current user is mentioned.
