@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.92(Mar 21, 2018)
+ * Changed an ephemeral `SBDGroupChannel` to maintain fields of `lastMessage` and `unreadMessageCount` after connected.
+
 ### v3.0.91(Mar 20, 2018)
  * Fixed a bug that can't send file message with a binary file.
 
