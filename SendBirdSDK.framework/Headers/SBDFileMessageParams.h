@@ -15,20 +15,79 @@
  */
 @interface SBDFileMessageParams : SBDBaseMessageParams
 
+/**
+ *  Binary file data.
+ *  `file` and `fileUrl` cannot be set together.
+ *
+ *  @since 3.0.90
+ */
 @property (copy, nonatomic, nullable) NSData *file;
 
+/**
+ *  File URL.
+ *  `file` and `fileUrl` cannot be set together.
+ *
+ *  @since 3.0.90
+ */
 @property (copy, nonatomic, nullable) NSString *fileUrl;
 
+/**
+ *  Thumbnail sizes. This parameter is the array of `SBDThumbnailSize` instance and works for image file only.
+ *
+ *  @since 3.0.90
+ */
 @property (copy, nonatomic, nullable) NSArray <SBDThumbnailSize *> *thumbnailSizes;
 
+/**
+ *  File name.
+ *
+ *  @since 3.0.90
+ */
 @property (copy, nonatomic, nullable) NSString *fileName;
 
+/**
+ *  File MIME type.
+ *
+ *  @since 3.0.90
+ */
 @property (copy, nonatomic, nullable) NSString *mimeType;
 
+/**
+ *  File size.
+ *
+ *  @since 3.0.90
+ */
 @property (nonatomic) NSUInteger fileSize;
 
+/**
+ *  Don't use this initializer.
+ *  Initializes an instance of a file message params.
+ *
+ *  @see -initWithFile: or initWithFileUrl:
+ *  @return nil as this method is unavailable.
+ *  @since 3.0.90
+ */
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnullability"
 - (nullable instancetype)init NS_UNAVAILABLE;
+#pragma clang diagnostic pop
+
+/**
+ *  Initializes an instance of a file message params with binary file.
+ *
+ *  @param file A Biniary file to be sent.
+ *  @return An initialized file message params, used to send file message.
+ *  @since 3.0.90
+ */
 - (nullable instancetype)initWithFile:(nonnull NSData *)file;
+
+/**
+ *  Initializes an instance of a file message params with file url.
+ *
+ *  @param fileUrl  The file url to be sent.
+ *  @return An initialized file message params, used to send file message.
+ *  @since 3.0.90
+ */
 - (nullable instancetype)initWithFileUrl:(nonnull NSString *)fileUrl;
 
 @end

@@ -124,6 +124,7 @@
 /**
  *  Set operators with list of user instance.
  *
+ *  @param operators The list of operators.
  *  @see operatorUserIds
  *  @since 3.0.89
  */

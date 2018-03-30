@@ -100,10 +100,12 @@
  */
 - (BOOL)isLoading;
 
-- (nullable instancetype)init;
-
 /**
  *  Internal use only.
+ *
+ *  @param user user
+ *  @see [SBDGroupChannel createMyGroupChannelListQuery]
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 - (nullable instancetype)initWithUser:(SBDUser * _Nonnull)user;
 

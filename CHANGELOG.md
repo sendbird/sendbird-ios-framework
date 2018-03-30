@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.93(Mar 30, 2018)
+ * Added `SBDPushNotificationDeliveryOption` to determine how to deliver the push notification when sending a user or a file message.
+ * Added a method that gets a unread message count with custom types of group channel.
+
 ### v3.0.92(Mar 21, 2018)
  * Changed an ephemeral `SBDGroupChannel` to maintain fields of `lastMessage` and `unreadMessageCount` after connected.
 

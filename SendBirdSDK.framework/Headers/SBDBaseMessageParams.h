@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBDTypes.h"
 
 @class SBDUser;
 
@@ -30,15 +31,23 @@
 @property (copy, nonatomic, nullable) NSString *customType;
 
 /**
- *  Can mention to specific users. If this field is set and send a message with this, the message will be arrived to mention users. The default value is nil.
+ The push notification delivery option that determines how to deliver the push notification when sending a user or a file message. The default value is `SBDPushNotificationDeliveryOptionDefault`.
+ */
+@property (atomic) SBDPushNotificationDeliveryOption pushNotificationDeliveryOption;
+
+/**
+ *  Can mention to specific users.
+ *  If sends a message with this field, the message will be arrived to mentioned users.
+ *  The default value is nil.
  *
  *  @since 3.0.90
  */
 @property (copy, nonatomic, nullable) NSArray <NSString *> *mentionedUserIds;
 
 /**
- *  Can set mentioned users with a list of users.
+ *  Can set the `mentionedUserIds` by this method either.
  *
+ *  @param mentionedUsers The list of users will be receive mention.
  *  @since 3.0.90
  */
 - (void)setMentionedUsers:(nonnull NSArray <SBDUser *> *)mentionedUsers;

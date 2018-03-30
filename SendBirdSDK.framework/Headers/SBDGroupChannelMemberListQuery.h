@@ -20,7 +20,10 @@
 /**
  *  Don't use this initializer. Use `createGroupChannelListQuery` of `SBDGroupChannel` instead.
  */
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnullability"
 - (nullable instancetype)init NS_UNAVAILABLE;
+#pragma clang diagnostic pop
 
 /**
  *  Sets the number of members per page.

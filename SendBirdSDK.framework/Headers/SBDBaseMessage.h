@@ -59,16 +59,27 @@
 
 /**
  *  Internal use only.
+ *
+ *  @param dict dict
+ *  @see -initWithDictionary:
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (nullable SBDBaseMessage *)buildWithDictionary:(NSDictionary * _Nonnull)dict;
 
 /**
  *  Internal use only.
+ *
+ *  @param dict dict
+ *  @param channel channel
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (nullable SBDBaseMessage *)buildWithDictionary:(NSDictionary * _Nonnull)dict channel:(SBDBaseChannel * _Nonnull)channel;
 
 /**
  *  Internal use only.
+ *
+ *  @param data data
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (nullable SBDBaseMessage *)buildWithData:(NSString * _Nonnull)data;
 
@@ -103,6 +114,9 @@
 
 /**
  *  Internal use only.
+ *
+ *  @see -serialize
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 - (nullable NSDictionary *)_toDictionary;
 

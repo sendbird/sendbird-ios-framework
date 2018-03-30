@@ -18,6 +18,8 @@
 #import "SBDInternalTypes.h"
 #import "SBDFriendListQuery.h"
 
+typedef void(^SBDBackgroundSessionBlock)(void);
+
 /**
  Represents operation options.
  */
@@ -99,15 +101,25 @@
  */
 @property (nonatomic, strong, readonly, nullable) NSMapTable<NSString *, id<SBDChannelDelegate>> *channelDelegatesDictionary;
 
+/**
+ *  Manages registered `SBDUserEventlDelegate`.
+ */
 @property (nonatomic, strong, readonly, nullable) NSMapTable<NSString *, id<SBDUserEventDelegate>> *userEventDelegatesDictionary;
 
-@property (nonatomic, strong, nullable) void (^backgroundSessionCompletionHandler)(void);
+/**
+ *  The completion handler of background session.
+ */
+@property (nonatomic, strong, nullable) SBDBackgroundSessionBlock backgroundSessionCompletionHandler;
 
-@property (strong, nonatomic, nonnull) NSMutableArray<void (^)(void)> *backgroundTaskBlock;
+/**
+ *  The list of tasks in background.
+ */
+@property (strong, nonatomic, nonnull) NSMutableArray <SBDBackgroundSessionBlock> *backgroundTaskBlock;
 
+/**
+ *  The number of URLSessionDidFinishEventsForBackgroundURLSession.
+ */
 @property (atomic) int URLSessionDidFinishEventsForBackgroundURLSession;
-
-- (nullable instancetype)init;
 
 /**
  *  Retrieves the SDK version.
@@ -176,7 +188,13 @@
 + (void)setSharedContainerIdentifier:(nonnull NSString *)identifier;
 
 /**
- *  SendBird internal use only.
+ *  Internal use only.
+ *
+ *  @param logLevel logLevel
+ *  @param format format
+ *  @param ... arguments
+ *  @see +setLogLevel:
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (void)logWithLevel:(SBDLogLevel)logLevel format:(NSString * _Nonnull)format, ...;
 
@@ -198,7 +216,15 @@
 + (void)connectWithUserId:(NSString * _Nonnull)userId accessToken:(NSString * _Nullable)accessToken completionHandler:(nullable void (^)(SBDUser * _Nullable user, SBDError * _Nullable error))completionHandler;
 
 /**
- Internal use only.
+ *  Internal use only.
+ *
+ *  @param userId userId
+ *  @param accessToken accessToken
+ *  @param apiHost apiHost
+ *  @param wsHost wsHost
+ *  @param completionHandler completionHandler
+ *  @see -connectWithUserId:accessToken:completionHandler:
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (void)connectWithUserId:(NSString * _Nonnull)userId accessToken:(NSString * _Nullable)accessToken apiHost:(NSString * _Nullable)apiHost wsHost:(NSString * _Nullable)wsHost completionHandler:(nullable void (^)(SBDUser * _Nullable user, SBDError * _Nullable error))completionHandler;
 
@@ -210,7 +236,9 @@
 + (nullable SBDUser *)getCurrentUser;
 
 /**
- *  SendBird internal use only.
+ *  Internal use only.
+ *
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (void)clearCurrentUser;
 
@@ -307,6 +335,10 @@
 
 /**
  *  Internal use only.
+ *
+ *  @param command command
+ *  @param completionHandler completionHandler
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 - (void)_sendCommand:(SBDCommand * _Nonnull)command completionHandler:(nullable void (^)(SBDCommand * _Nullable command, SBDError * _Nullable error))completionHandler;
 
@@ -479,6 +511,7 @@
  Sets push sound
  
  @param sound Push sound
+ @param completionHandler The handler block to be executed after set push sound. This block has no return value and takes an argument that is an error made when there is something wrong to set it.
  */
 + (void)setPushSound:(NSString * _Nonnull)sound completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
@@ -533,13 +566,17 @@
 
 
 /**
- Internal use only.
+ *  Internal use only.
+ *
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (nullable NSString *)getCustomApiHost;
 
 
 /**
- Internal use only.
+ *  Internal use only.
+ *
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (nullable NSString *)getCustomWsHost;
 

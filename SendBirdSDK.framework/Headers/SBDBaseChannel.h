@@ -201,7 +201,8 @@
 /**
  *  A callback when an open channel was deleted.
  *
- *  @param channelUrl The open channel.
+ *  @param channelUrl The channel url.
+ *  @param channelType The Type of channel, types of open channel or group channel.
  */
 - (void)channelWasDeleted:(NSString * _Nonnull)channelUrl channelType:(SBDChannelType)channelType;
 
@@ -316,6 +317,8 @@
 
 /**
  *  Internal use only.
+ *
+ *  @warning *Important*: DON'T use this property. This property will be unavailable.
  */
 @property (atomic) BOOL isDirty;
 
@@ -336,11 +339,18 @@
 
 /**
  *  Internal use only.
+ *
+ *  @param dict dict
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 - (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict;
 
 /**
  *  Internal use only.
+ *
+ *  @param dict dict
+ *  @param isDirty isDirty
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 - (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict isDirty:(BOOL)isDirty;
 
@@ -973,6 +983,9 @@
 
 /**
  *  Internal use only.
+ *
+ *  @see -serialize
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 - (nullable NSDictionary *)_toDictionary;
 

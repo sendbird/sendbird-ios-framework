@@ -91,7 +91,9 @@
 @property (atomic) BOOL isHidden;
 
 /**
- Internal use only.
+ *  Internal use only.
+ *
+ *  @warning *Important*: DON'T use this property. This property will be unavailable.
  */
 @property (atomic) BOOL hasBeenUpdated;
 
@@ -117,7 +119,12 @@
 - (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict;
 
 /**
- Internal use only.
+ *  Internal use only.
+ *
+ *  @param dict dict
+ *  @param isDirty isDirty
+ *  @see -initWithDictionary:
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 - (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict isDirty:(BOOL)isDirty;
 
@@ -494,6 +501,7 @@
  *  Internal use only.
  *
  *  @deprecated in v3.0.42.
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (void)_markAsRead DEPRECATED_ATTRIBUTE;
 
@@ -514,16 +522,25 @@
 
 /**
  *  Internal use only.
+ *
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (void)clearCache;
 
 /**
  *  Internal use only.
+ *
+ *  @param channelUrl channelUrl
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (void)removeChannelFromCacheWithChannelUrl:(NSString * _Nonnull)channelUrl;
 
 /**
  *  Internal use only.
+ *
+ *  @param channelUrl channelUrl
+ *  @see +getChannelWithUrl:completionHandler:
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (SBDGroupChannel * _Nullable)getChannelFromCacheWithChannelUrl:(NSString * _Nonnull)channelUrl;
 
@@ -614,31 +631,49 @@
 
 /**
  *  Internal use only.
+ *
+ *  @param userId userId
+ *  @param timestamp timestamp
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 - (void)updateReadReceiptWithUserId:(NSString * _Nonnull)userId timestamp:(long long)timestamp;
 
 /**
  *  Internal use only.
+ *
+ *  @param user user
+ *  @param start start
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 - (void)updateTypingStatusWithUser:(SBDUser * _Nonnull)user start:(BOOL)start;
 
 /**
  *  Internal use only.
+ *
+ *  @param user user
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 - (void)addMember:(SBDMember * _Nonnull)user;
 
 /**
  *  Internal use only.
+ *
+ *  @param user user
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 - (nullable SBDMember *)removeMember:(SBDMember * _Nonnull)user;
 
 /**
  *  Internal use only.
+ *
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 - (void)typingStatusTimeout;
 
 /**
  *  Internal use only.
+ *
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (void)updateTypingStatus;
 
@@ -672,6 +707,15 @@
  *  @param completionHandler The handler block to execute. The `unreadCount` is the total count of unread channels in all of group channel which the current is a member.
  */
 + (void)getTotalUnreadChannelCountWithCompletionHandler:(nullable void (^)(NSUInteger unreadCount, SBDError * _Nullable error))completionHandler;
+
+/**
+ Gets the total unread message count of the channels that have the specific custom types.
+
+ @param customTypes The array of the custom types. If the array is nil or the length of the array is zero, the total unread message count will be the same result of the `getTotalUnreadMessageCountWithCompletionHandler:`.
+ @param completionHandler The handler block to execute. The `unreadCount` is the total unread message count of the channels that have the specific custom types. If there isn't any error, the `error` will be nil.
+ */
++ (void)getTotalUnreadMessageCountWithChannelCustomTypes:(NSArray<NSString *> * _Nullable)customTypes
+                                       completionHandler:(nullable void (^)(NSUInteger unreadCount, SBDError * _Nullable error))completionHandler;
 
 /**
  Builds a group channel object from serialized <span>data</span>.
@@ -740,11 +784,16 @@
 
 /**
  *  Internal use only.
+ *
+ *  @see -serialize
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 - (nullable NSDictionary *)_toDictionary;
 
 /**
  *  Internal use only.
+ *
+ *  @warning *Important*: DON'T use this method. This method will be unavailable.
  */
 + (nullable NSArray<SBDGroupChannel *> *)getCachedChannels;
 
