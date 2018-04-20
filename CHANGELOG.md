@@ -1,5 +1,13 @@
 # Change Log
 
+### v3.0.94(Apr 20, 2018)
+ * Deprecated `SBDGroupChannelOperatorFilter` in `SBDGroupChannelMemberListQuery`.
+ * Added `createOperatorListQuery` in `SBDBaseChannel` to query users who are operators in the channel.
+ * Removed internal methods.
+ * Changed code convention in headers.
+ * Updated project build setting.
+ * Minor bug fix.  
+
 ### v3.0.93(Mar 30, 2018)
  * Added `SBDPushNotificationDeliveryOption` to determine how to deliver the push notification when sending a user or a file message.
  * Added a method that gets a unread message count with custom types of group channel.
