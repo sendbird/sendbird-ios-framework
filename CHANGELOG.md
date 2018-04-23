@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.95(Apr 23, 2018)
+ * Fixed minor bug.
+
 ### v3.0.94(Apr 20, 2018)
  * Deprecated `SBDGroupChannelOperatorFilter` in `SBDGroupChannelMemberListQuery`.
  * Added `createOperatorListQuery` in `SBDBaseChannel` to query users who are operators in the channel.
