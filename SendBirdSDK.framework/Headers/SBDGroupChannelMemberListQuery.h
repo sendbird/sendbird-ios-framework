@@ -40,7 +40,7 @@
  *
  *  @return Returns YES if the query is loading, otherwise returns NO.
  *
- *  @since 9.0.94
+ *  @since 3.0.94
  */
 @property (atomic, readonly, getter=isLoading) BOOL loading;
 

@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.96(May 3, 2018)
+ * Ordered member list by nickname alphabetically.
+ * Fixed a bug that an encrypted file url contains duplicated query keys.
+ * Fixed minor bug.
+
 ### v3.0.95(Apr 23, 2018)
  * Fixed minor bug.
 
