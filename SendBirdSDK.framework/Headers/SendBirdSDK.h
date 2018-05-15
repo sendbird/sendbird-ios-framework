@@ -23,6 +23,7 @@
 #import "SBDOpenChannel.h"
 #import "SBDGroupChannel.h"
 #import "SBDGroupChannelParams.h"
+#import "SBDGroupChannelTotalUnreadMessageCountParams.h"
 
 #import "SBDBaseMessage.h"
 #import "SBDUserMessage.h"

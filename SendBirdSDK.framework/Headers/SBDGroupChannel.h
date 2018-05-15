@@ -16,7 +16,7 @@
 @class SBDMember;
 @class SBDGroupChannel;
 @class SBDGroupChannelListQuery;
-@class SBDGroupChannelParams;
+@class SBDGroupChannelParams, SBDGroupChannelTotalUnreadMessageCountParams;
 @class SBDGroupChannelMemberListQuery;
 @class SBDPublicGroupChannelListQuery;
 @class SBDUserListQuery;
@@ -94,6 +94,11 @@
  Current member's state in the channel.
  */
 @property (atomic) SBDMemberState myMemberState;
+
+/**
+ *  The role of current user in the channel.
+ */
+@property (atomic, readonly) SBDRole myRole;
 
 /**
  *  DO NOT USE this initializer. You can only get an instance type of `SBDGroupChannel` from SDK.
@@ -737,6 +742,7 @@ DEPRECATED_ATTRIBUTE;
  *  Gets the total unread message count of all group channels.
  *
  *  @param completionHandler The handler block to execute. The `unreadCount` is the total count of unread messages in all of group channel which the current is a member.
+ *  @see  `getTotalUnreadMessageCountWithParams:completionHandler:`
  */
 + (void)getTotalUnreadMessageCountWithCompletionHandler:(nullable void (^)(NSUInteger unreadCount, SBDError * _Nullable error))completionHandler;
 
@@ -744,17 +750,30 @@ DEPRECATED_ATTRIBUTE;
  *  Gets the total unread channel count of all group channels.
  *
  *  @param completionHandler The handler block to execute. The `unreadCount` is the total count of unread channels in all of group channel which the current is a member.
+ *  @see  `getTotalUnreadMessageCountWithParams:completionHandler:`
  */
 + (void)getTotalUnreadChannelCountWithCompletionHandler:(nullable void (^)(NSUInteger unreadCount, SBDError * _Nullable error))completionHandler;
 
 /**
- Gets the total unread message count of the channels that have the specific custom types.
-
- @param customTypes The array of the custom types. If the array is nil or the length of the array is zero, the total unread message count will be the same result of the `getTotalUnreadMessageCountWithCompletionHandler:`.
- @param completionHandler The handler block to execute. The `unreadCount` is the total unread message count of the channels that have the specific custom types. If there isn't any error, the `error` will be nil.
+ *  Gets the total unread message count of the channels that have the specific custom types.
+ *
+ *  @param customTypes The array of the custom types. If the array is nil or the length of the array is zero, the total unread message count will be the same result of the `getTotalUnreadMessageCountWithCompletionHandler:`.
+ *  @param completionHandler The handler block to execute. The `unreadCount` is the total unread message count of the channels that have the specific custom types. If there isn't any error, the `error` will be nil.
+ *  @see  `getTotalUnreadMessageCountWithParams:completionHandler:`
  */
 + (void)getTotalUnreadMessageCountWithChannelCustomTypes:(NSArray<NSString *> * _Nullable)customTypes
                                        completionHandler:(nullable void (^)(NSUInteger unreadCount, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Gets the total unread message count of the channels with filters of params.
+ *
+ *  @param params             The instance of parameters to filter.
+ *  @param completionHandler  The handler block to be executed after getting total unread message count. This block has no return value and takes two argument, the one is the number of unread message and the other is error.
+ *
+ *  @since 3.0.97
+ */
++ (void)getTotalUnreadMessageCountWithParams:(nonnull SBDGroupChannelTotalUnreadMessageCountParams *)params
+                           completionHandler:(nonnull void (^)(NSUInteger unreadCount, SBDError * _Nullable error))completionHandler;
 
 /**
  Builds a group channel object from serialized <span>data</span>.

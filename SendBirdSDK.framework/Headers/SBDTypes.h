@@ -353,4 +353,18 @@ typedef NS_ENUM(NSUInteger, SBDPushNotificationDeliveryOption) {
     SBDPushNotificationDeliveryOptionSuppress = 1,
 };
 
+/**
+ *  The users's role which gives different behaviors, permisions to user.
+ */
+typedef NS_ENUM(NSUInteger, SBDRole) {
+    /**
+     *  The default role that means nothing.
+     */
+    SBDRoleNone = 0,
+    /**
+     *  The role of operator.
+     */
+    SBDRoleOperator = 1,
+};
+
 #endif /* SBDTypes_h */
