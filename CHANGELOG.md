@@ -1,8 +1,11 @@
 # Change Log
 
+### v3.0.98(May 17, 2018)
+ * Fixed an occasional member count mismatch in a super group channel.
+
 ### v3.0.97(May 15, 2018)
- * added a property named `myRole` in the `SBDGroupChannel` which is a role of current user in the group channel.
- * added `SBDGroupChannelTotalUnreadMessageCountParams` class that is used to get total unread message count.
+ * Added a property named `myRole` in the `SBDGroupChannel` which is a role of current user in the group channel.
+ * Added `SBDGroupChannelTotalUnreadMessageCountParams` class that is used to get total unread message count.
 
 ### v3.0.96(May 3, 2018)
  * Ordered member list by nickname alphabetically.
