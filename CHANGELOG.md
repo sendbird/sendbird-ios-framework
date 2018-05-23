@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.99(May 23, 2018)
+ * Fixed a minor bug when uploading file in background.
+
 ### v3.0.98(May 17, 2018)
  * Fixed an occasional member count mismatch in a super group channel.
 
