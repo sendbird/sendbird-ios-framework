@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.100 (Jun 1, 2018)
+ * Added a setter for typing indicator throttling interval.
+ * Fixed a minor bug for `buildFromSerialize:`
+ * Fixed a minor bug when uploading file in background.
+ 
 ### v3.0.99(May 23, 2018)
  * Fixed a minor bug when uploading file in background.
 
