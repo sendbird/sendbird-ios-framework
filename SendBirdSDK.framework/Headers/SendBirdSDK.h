@@ -41,6 +41,7 @@
 #import "SBDGroupChannelMemberListQuery.h"
 #import "SBDPublicGroupChannelListQuery.h"
 #import "SBDOperatorListQuery.h"
+#import "SBDUnreadItemCount.h"
 
 //! Project version number for SendBirdSDK.
 FOUNDATION_EXPORT double SendBirdSDKVersionNumber;

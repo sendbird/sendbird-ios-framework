@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.0.101 (Jun 13, 2018)
+ * Added `joinedMemberCount` to get count of member joined in `SBDGroupChannel`.
+ * Added `myMutedState` to show whether the current user is muted or not in `SBDGroupChannel`.
+ * Added an api of `getUnreadItemCountWithKey:completionHandler:` in `SBDGroupChannel`.
+   * The api gets an instance of `SBDUnreadItemCount` that contains properties of `nonSuperUnreadMessageCount`, `superUnreadMessageCount`, `nonSuperInvitationCount`, `superInvitationCount`.
+   * As a parameter, bitmask `SBDUnreadItemKey` is used. It has `SBDUnreadItemKeyNonSuperUnreadMessageCount`, `SBDUnreadItemKeySuperUnreadMessageCount`, `SBDUnreadItemKeyNonSuperInvitationCount`, `SBDUnreadItemKeySuperInvitationCount`.
+ 
 ### v3.0.100 (Jun 1, 2018)
  * Added a setter for typing indicator throttling interval.
  * Fixed a minor bug for `buildFromSerialize:`

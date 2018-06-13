@@ -12,14 +12,10 @@
 #import "SBDUser.h"
 #import "SBDMember.h"
 
-@class SBDUser;
-@class SBDMember;
-@class SBDGroupChannel;
-@class SBDGroupChannelListQuery;
-@class SBDGroupChannelParams, SBDGroupChannelTotalUnreadMessageCountParams;
-@class SBDGroupChannelMemberListQuery;
-@class SBDPublicGroupChannelListQuery;
-@class SBDUserListQuery;
+@class SBDUser, SBDMember;
+@class SBDGroupChannel, SBDGroupChannelParams, SBDGroupChannelTotalUnreadMessageCountParams;
+@class SBDGroupChannelListQuery, SBDGroupChannelMemberListQuery, SBDPublicGroupChannelListQuery, SBDUserListQuery;
+@class SBDUnreadItemCount;
 
 /**
  *  The `SBDGroupChannel` class represents a group channel which is a private chat. The user who wants to join the group channel has to be invited by another user who is already joined the channel. This class is derived from `SBDBaseChannel`. If the `SBDChannelDelegate` is added, the user will automatically receive all messages from the group channels where the user belongs after connection. The `SBDGroupChannel` provides the features of general messaging apps.
@@ -74,6 +70,11 @@
 @property (atomic, readonly) NSUInteger memberCount;
 
 /**
+ *  The number of joined <span>members</span>.
+ */
+@property (atomic, readonly) NSUInteger joinedMemberCount;
+
+/**
  *  The flag for sending mark as read.
  *
  *  @deprecated in v3.0.42.
@@ -99,6 +100,11 @@
  *  The role of current user in the channel.
  */
 @property (atomic, readonly) SBDRole myRole;
+
+/**
+ The muted state of the current user in the channel.
+ */
+@property (atomic, readonly) SBDMutedState myMutedState;
 
 /**
  *  DO NOT USE this initializer. You can only get an instance type of `SBDGroupChannel` from SDK.
@@ -965,4 +971,15 @@ DEPRECATED_ATTRIBUTE;
  */
 - (void)unfreezeWithCompletionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
+/**
+ *  Get unread counts of message and invitation counts in super and non_super channels.
+ *
+ *  @param key  bitmask key composed of super/non_super unread message count, super/non_super invitation count.
+ *  @param completionHandler  The handler block to be executed after getting unread item count. This block has no return value and takes two argument. the one is type of SBDUnreadItemCount that contains unsinged interger for count you requested. the other is an error made when there is something wrong to response.
+ *
+ *  @since 3.0.101
+ */
+- (void)getUnreadItemCountWithKey:(SBDUnreadItemKey)key
+                completionHandler:(nonnull void(^)(SBDUnreadItemCount * _Nullable count, SBDError * _Nullable error))completionHandler;
+                                        
 @end
