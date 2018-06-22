@@ -401,5 +401,23 @@ typedef NS_OPTIONS(NSUInteger, SBDUnreadItemKey) {
     SBDUnreadItemKeySuperInvitationCount        = (1 << 3),
 };
 
+/**
+ *  The enum type to represent various kinds of counts.
+ */
+typedef NS_ENUM(NSUInteger, SBDCountPreference) {
+    /**
+     *  The channel of this preference has all of count.
+     */
+    SBDCountPreferenceAll = 0,
+    /**
+     *  The channel of this preference has only unread message count.
+     */
+    SBDCountPreferenceUnreadMessageCountOnly = 1,
+    /**
+     *  The channel of this preference does not get any count.
+     */
+    SBDCountPreferenceOff = 3,
+};
+
 
 #endif /* SBDTypes_h */

@@ -11,6 +11,7 @@
 #import "SBDBaseMessage.h"
 #import "SBDUser.h"
 #import "SBDMember.h"
+#import "SBDTypes.h"
 
 @class SBDUser, SBDMember;
 @class SBDGroupChannel, SBDGroupChannelParams, SBDGroupChannelTotalUnreadMessageCountParams;
@@ -57,7 +58,7 @@
 /**
  *  Unread message count of the channel.
  */
-@property (atomic) NSUInteger unreadMessageCount;
+@property (nonatomic) NSUInteger unreadMessageCount;
 
 /**
  *  Channel <span>members</span>.
@@ -105,6 +106,13 @@
  The muted state of the current user in the channel.
  */
 @property (atomic, readonly) SBDMutedState myMutedState;
+
+/**
+ *  The preference lets to know counts in the channel. The default value is `SBDCountPreferenceAll`.
+ *
+ *  @since 3.0.102
+ */
+@property (atomic, readonly) SBDCountPreference myCountPreference;
 
 /**
  *  DO NOT USE this initializer. You can only get an instance type of `SBDGroupChannel` from SDK.
@@ -981,5 +989,15 @@ DEPRECATED_ATTRIBUTE;
  */
 - (void)getUnreadItemCountWithKey:(SBDUnreadItemKey)key
                 completionHandler:(nonnull void(^)(SBDUnreadItemCount * _Nullable count, SBDError * _Nullable error))completionHandler;
-                                        
+
+/**
+ *  Sets count preference of current user.
+ *
+ *  @param myCountPreference  Preference is type of `SBDCountPreference`. The default value is `SBDCountPreferenceAll`.
+ *
+ *  @since 3.0.102
+ */
+- (void)setMyCountPreference:(SBDCountPreference)myCountPreference
+           completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
 @end

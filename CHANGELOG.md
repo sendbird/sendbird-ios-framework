@@ -1,5 +1,13 @@
 # Change Log
 
+### v3.0.102 (Jun 22, 2018)
+ * Added `nicknameStartsWithFilter` in `SBDGroupChannelMemberListQuery`.
+ * Added enum `SBDCountPreference`.
+   * Enum has `SBDCountPreferenceAll`, `SBDCountPreferenceUnreadMessageCountOnly`, `SBDCountPreferenceOff`.
+   * Added `myCountPreference` in `SBDGroupChannel` as a getter.
+   * Added `setMyCountPreference:completionHandler:` in `SBDGroupChannel` as an aynchronous setter.
+ * Fixed a bug that `myRole` is not updated in `SBDGroupChannel`.
+
 ### v3.0.101 (Jun 13, 2018)
  * Added `joinedMemberCount` to get count of member joined in `SBDGroupChannel`.
  * Added `myMutedState` to show whether the current user is muted or not in `SBDGroupChannel`.
