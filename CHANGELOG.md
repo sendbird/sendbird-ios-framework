@@ -1,5 +1,16 @@
 # Change Log
 
+### v3.0.103 (Jun 29, 2018)
+* Added `unreadMentionCount` property in `SBDGroupChannel`.
+* Added enum `SBDCountPreferenceUnreadMentionCountOnly` in `SBDCountPreference`.
+* Added `SBDUnreadItemKeyNonSuperUnreadMentionCount`, `SBDUnreadItemKeySuperUnreadMentionCount`, SBDUnreadItemKeyGroupChannelUnreadMessageCount`, `SBDUnreadItemKeyGroupChannelUnreadMentionCount`, `SBDUnreadItemKeyGroupChannelInvitationCount` in `SBDUnreadItemKey`.
+* Added mention type.
+  * New enum type `SBDMentionType` that has `SBDMentionTypeUsers` and `SBDMentionTypeChannel`.
+  * New property in `SBDBaseMessage`. 
+* Deprecated instance method, `getUnreadItemCountWithKey:completionHandler:` in `SBDGroupChannel`.
+  * Replaced with class method `getUnreadItemCountWithKey:completionHandler:` in `SBDGroupChannel` instead.
+* Minor bug fixed.
+
 ### v3.0.102 (Jun 22, 2018)
  * Added `nicknameStartsWithFilter` in `SBDGroupChannelMemberListQuery`.
  * Added enum `SBDCountPreference`.
