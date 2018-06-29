@@ -1,6 +1,6 @@
 # Change Log
 
-### v3.0.103 (Jun 29, 2018)
+### v3.0.104 (Jun 29, 2018)
 * Added `unreadMentionCount` property in `SBDGroupChannel`.
 * Added enum `SBDCountPreferenceUnreadMentionCountOnly` in `SBDCountPreference`.
 * Added `SBDUnreadItemKeyNonSuperUnreadMentionCount`, `SBDUnreadItemKeySuperUnreadMentionCount`, SBDUnreadItemKeyGroupChannelUnreadMessageCount`, `SBDUnreadItemKeyGroupChannelUnreadMentionCount`, `SBDUnreadItemKeyGroupChannelInvitationCount` in `SBDUnreadItemKey`.
