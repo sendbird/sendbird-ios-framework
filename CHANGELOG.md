@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.105 (Jul 6, 2018)
+ * Disabled to put the current user into `mentionedUsers`, `mentionedUserIds` in `SBDUserMessageParams` and `SBDFileMessageParams`.
+ * Changed not to increase `unreadMentionCount` and not to call `channel:didReceiveMention:` for CHANNEL mention by the current user (i.e. the message sender is the current user).
+
 ### v3.0.104 (Jun 29, 2018)
 * Added `unreadMentionCount` property in `SBDGroupChannel`.
 * Added enum `SBDCountPreferenceUnreadMentionCountOnly` in `SBDCountPreference`.
