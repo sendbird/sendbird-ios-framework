@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.106(Jul 13, 2018)
+ * Added `loadWithCompletionHandler:`, `setMessageTypeFilter:`, `setCustomTypeFilter:`, `setSenderUserIdsFilter:` in `SBDPreviousMessageListQuery`.
+ * Added `getNextMessagesByTimestamp:limit:reverse:messageType:customType:senderUserIds:completionHandler:`, `getPreviousMessagesByTimestamp:limit:reverse:messageType:customType:senderUserIds:completionHandler:`, `getPreviousAndNextMessagesByTimestamp:prevLimit:nextLimit:reverse:messageType:customType:senderUserIds:completionHandler:`, `getNextMessagesByMessageId:limit:reverse:messageType:customType:senderUserIds:completionHandler:`, `getPreviousMessagesByMessageId:limit:reverse:messageType:customType:senderUserIds:completionHandler:`, and `getPreviousAndNextMessagesByMessageId:prevLimit:nextLimit:reverse:messageType:customType:senderUserIds:completionHandler:` in `SBDBaseChannel`.
+
 ### v3.0.105 (Jul 6, 2018)
  * Disabled to put the current user into `mentionedUsers`, `mentionedUserIds` in `SBDUserMessageParams` and `SBDFileMessageParams`.
  * Changed not to increase `unreadMentionCount` and not to call `channel:didReceiveMention:` for CHANNEL mention by the current user (i.e. the message sender is the current user).
