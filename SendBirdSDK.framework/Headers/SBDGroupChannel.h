@@ -122,6 +122,13 @@
 @property (atomic, readonly) SBDCountPreference myCountPreference;
 
 /**
+ *  The time stamp when the current user got a invitation from other user in the channel.
+ *
+ *  @since 3.0.107
+ */
+@property (atomic, readonly) long long invitedAt;
+
+/**
  *  DO NOT USE this initializer. You can only get an instance type of `SBDGroupChannel` from SDK.
  */
 #pragma clang diagnostic push

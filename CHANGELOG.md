@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.107(Aug 3, 2018)
+ * Added `invitedAt` in `SBDGroupChannel`.
+
 ### v3.0.106(Jul 13, 2018)
  * Added `loadWithCompletionHandler:`, `setMessageTypeFilter:`, `setCustomTypeFilter:`, `setSenderUserIdsFilter:` in `SBDPreviousMessageListQuery`.
  * Added `getNextMessagesByTimestamp:limit:reverse:messageType:customType:senderUserIds:completionHandler:`, `getPreviousMessagesByTimestamp:limit:reverse:messageType:customType:senderUserIds:completionHandler:`, `getPreviousAndNextMessagesByTimestamp:prevLimit:nextLimit:reverse:messageType:customType:senderUserIds:completionHandler:`, `getNextMessagesByMessageId:limit:reverse:messageType:customType:senderUserIds:completionHandler:`, `getPreviousMessagesByMessageId:limit:reverse:messageType:customType:senderUserIds:completionHandler:`, and `getPreviousAndNextMessagesByMessageId:prevLimit:nextLimit:reverse:messageType:customType:senderUserIds:completionHandler:` in `SBDBaseChannel`.
