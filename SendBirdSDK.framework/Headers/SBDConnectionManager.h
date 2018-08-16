@@ -15,7 +15,7 @@
 /**
  Network delegate.
  To add or remove this delegate, use `addNetworkDelegate:identifier:`, `removeNetworkDelegateForIdentifier:`, and `removeAllNetworkDelegates`.
- @since 3.0.108
+ @since 3.0.109
  */
 @protocol SBDNetworkDelegate <NSObject>
 
@@ -29,7 +29,7 @@
 @end
 
 /**
- @since 3.0.108
+ @since 3.0.109
  */
 @interface SBDAuthInfoRequestHandler : NSObject
 
@@ -47,7 +47,7 @@
 
  @param authInfoRequestHandler SBDAuthInfoRequestHandler handler.
  @param completionHandler completion handler.
- @since 3.0.108
+ @since 3.0.109
  */
 + (void)authenticateWithAuthInfoRequestHandler:(SBDAuthInfoRequestHandler * _Nullable)authInfoRequestHandler
                       completionHandler:(nullable void (^)(SBDUser * _Nullable user, SBDError * _Nullable error))completionHandler;
@@ -57,7 +57,7 @@
 
  @param delegate Delegate to be added.
  @param identifier ID of delegate to be added.
- @since 3.0.108
+ @since 3.0.109
  */
 + (void)addNetworkDelegate:(id<SBDNetworkDelegate> _Nonnull)delegate
                 identifier:(NSString * _Nonnull)identifier;
@@ -66,13 +66,13 @@
  Removes a network delegate. The deleted delegate no longer be notified.
 
  @param identifier ID of delegate to be removed.
- @since 3.0.108
+ @since 3.0.109
  */
 + (void)removeNetworkDelegateForIdentifier:(NSString * _Nonnull)identifier;
 
 /**
  Removes all network delegates added by `addNetworkDelegate:identifier:`.
- @since 3.0.108
+ @since 3.0.109
  */
 + (void)removeAllNetworkDelegates;
 

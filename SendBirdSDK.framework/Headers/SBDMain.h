@@ -61,7 +61,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  Sets the authentication timeout managed by `authenticateWithAuthInfoRequestHandler:completionHandler:` of `SBDConnectionManager`. The default value is 10 seconds.
 
  @param timeout Timeout in seconds. It must be greater than 0. Otherwhise, the default value (10 seconds) will be set.
- @since 3.0.108
+ @since 3.0.109
  */
 + (void)setAuthenticationTimeout:(NSInteger)timeout;
 
