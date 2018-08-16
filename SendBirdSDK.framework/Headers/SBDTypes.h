@@ -453,5 +453,4 @@ typedef NS_ENUM(NSUInteger, SBDMentionType) {
     SBDMentionTypeChannel = 1,
 };
 
-
 #endif /* SBDTypes_h */

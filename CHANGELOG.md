@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.108(Aug 16, 2018)
+ * Improved connection management.
+
 ### v3.0.107(Aug 3, 2018)
  * Added `invitedAt` in `SBDGroupChannel`.
 
