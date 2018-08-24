@@ -840,6 +840,22 @@ DEPRECATED_ATTRIBUTE;
         completionHandler:(nullable void (^)(SBDUserMessage * _Nullable userMessage, SBDError * _Nullable error))completionHandler;
 
 /**
+ *  Updates a user message. The text message, data, custom type from user message params can be updated.
+ *
+ *  @param messageId            The message ID of the message to be updated.
+ *  @param params               The user message params that has updating fields.
+ *  @param completionHandler    The handler block to be executed after update.
+ *                              This block has no return value and takes two argument.
+ *                              the one is updated message type of SBDUserMessage. the other is an error made when there is something wrong to process.
+ *
+ *
+ *  @since 3.0.110
+ */
+- (void)updateUserMessageWithMessageId:(long long)messageId
+                     userMessageParams:(nonnull SBDUserMessageParams *)params
+                     completionHandler:(nullable void (^)(SBDUserMessage * _Nullable message, SBDError * _Nullable error))completionHandler;
+
+/**
  *  Updates a file message. The data and custom type can be updated.
  *
  *  @param fileMessage       The file message to be updated.
@@ -851,6 +867,22 @@ DEPRECATED_ATTRIBUTE;
                      data:(NSString * _Nullable)data
                customType:(NSString * _Nullable)customType
         completionHandler:(nullable void (^)(SBDFileMessage * _Nullable fileMessage, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Updates a file message. The data, custom type from file message params can be updated.
+ *
+ *  @param messageId            The message ID of the message to be updated.
+ *  @param params               The file message params that has updating fields.
+ *  @param completionHandler    The handler block to be executed after update.
+ *                              This block has no return value and takes two argument.
+ *                              the one is updated message type of SBDFileMessage. the other is an error made when there is something wrong to process.
+ *
+ *
+ *  @since 3.0.110
+ */
+- (void)updateFileMessageWithMessageId:(long long)messageId
+                     fileMessageParams:(nonnull SBDFileMessageParams *)params
+                     completionHandler:(nullable void (^)(SBDFileMessage * _Nullable message, SBDError * _Nullable error))completionHandler;
 
 /**
  *  Checks the channel type.

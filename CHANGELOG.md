@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.110(Aug 24, 2018)
+* Added `updateUserMessageWithMessageId:userMessageParams:completionHandler:` with `SBDUserMessageParams` in `SBDBaseChannel`.
+* Added `updateFileMessageWithMessageId:fileMessageParams:completionHandler:` with `SBDFileMessageParams` in `SBDBaseChannel`.
+* Minor bug fixed.
+
 ### v3.0.109(Aug 16, 2018)
  * Improved connection management.
 
