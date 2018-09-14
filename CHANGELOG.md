@@ -1,6 +1,6 @@
 # Change Log
 
-### v3.0.113(Sep 14, 2018)
+### v3.0.114(Sep 14, 2018)
 * Minor bug fixed.  
 
 ### v3.0.112(Sep 10, 2018)
