@@ -63,7 +63,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  @param timeout Timeout in seconds. It must be greater than 0. Otherwhise, the default value (10 seconds) will be set.
  @since 3.0.109
  */
-+ (void)setAuthenticationTimeout:(NSInteger)timeout;
++ (void)setAuthenticationTimeout:(NSTimeInterval)timeout;
 
 @end
 

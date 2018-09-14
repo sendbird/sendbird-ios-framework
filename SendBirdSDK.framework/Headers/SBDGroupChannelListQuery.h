@@ -98,6 +98,13 @@ DEPRECATED_ATTRIBUTE;
 @property (nonatomic, copy, nullable) NSString *customTypeStartsWithFilter;
 
 /**
+ Sets to filter channels by the unread messages. The default value is `SBDUnreadChannelFilterAll`.
+ 
+ @since 3.0.113
+ */
+@property (nonatomic) SBDUnreadChannelFilter unreadChannelFilter;
+
+/**
  *  DO NOT USE this initializer. Use `[SBDGroupChannel createMyGroupChannelListQuery]` instead.
  */
 #pragma clang diagnostic push

@@ -29,28 +29,45 @@
 @end
 
 /**
- @since 3.0.109
+ @since 3.0.113
  */
-@interface SBDAuthInfoRequestHandler : NSObject
+@protocol SBDAuthenticateDelegate <NSObject>
 
-@property (nonatomic, copy, nullable) void (^userAuthenticationWithHostInfoBlock)(void (^ _Nullable completionHandler)(NSString * _Nullable userId, NSString * _Nullable accessToken, NSString * _Nullable apiHost, NSString * _Nullable wsHost));
-@property (nonatomic, copy, nullable) void (^userAuthenticationBlock)(void (^ _Nullable completionHandler)(NSString * _Nullable userId, NSString * _Nullable accessToken));
+@required
 
-- (nullable instancetype)init;
+/**
+ A delegate method for the user authentication. Implements this method to get the user ID, the access token, the API host, and the WS host from the customer's side. The `completionHandler()` has to be invoked when the user authentication is completed. The `completionHandler()` will invoke `didFinishAuthenticationWithUser:error:` to return the user object and the error.
+
+ @param completionHandler The completion handler to notify SendBird SDK of the completion of the user authentication.
+ */
+- (void)shouldHandleAuthInfoWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nullable userId, NSString * _Nullable accessToken, NSString * _Nullable apiHost, NSString * _Nullable wsHost))completionHandler;
+
+/**
+ A delegate method for the completion of the user authentication. This delegate is invoked by the `completionHandler` of 'shouldHandleAuthInfoWithCompletionHandler:`.
+
+ @param user The current user object.
+ @param error The error object. If an error has occurred while connecting to SendBird, the `error` isn't nil.
+ */
+- (void)didFinishAuthenticationWithUser:(SBDUser * _Nullable)user error:(SBDError * _Nullable)error;
 
 @end
 
 @interface SBDConnectionManager : NSObject
 
 /**
- Authenticate must be invoked before authentication timeout. To set the timeout, use `setAuthenticationTimeout:` of `SBDOptions`.
+ Sets the `SBDAuthenticateDelegate`.
 
- @param authInfoRequestHandler SBDAuthInfoRequestHandler handler.
- @param completionHandler completion handler.
- @since 3.0.109
+ @param delegate `SBDAuthenticateDelegate` delegate.
+ @since 3.0.113
  */
-+ (void)authenticateWithAuthInfoRequestHandler:(SBDAuthInfoRequestHandler * _Nullable)authInfoRequestHandler
-                      completionHandler:(nullable void (^)(SBDUser * _Nullable user, SBDError * _Nullable error))completionHandler;
++ (void)setAuthenticateDelegate:(id<SBDAuthenticateDelegate> _Nullable)delegate;
+
+/**
+ The authentication must be completed before authentication timeout. To set the timeout, use `setAuthenticationTimeout:` of `SBDOptions`.
+
+ @since 3.0.113
+ */
++ (void)authenticate;
 
 /**
  Adds a network delegate. All added delegates will be notified when events occurs.

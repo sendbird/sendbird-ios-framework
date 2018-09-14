@@ -453,4 +453,17 @@ typedef NS_ENUM(NSUInteger, SBDMentionType) {
     SBDMentionTypeChannel = 1,
 };
 
+/**
+ The enum type to filter my group channels.
+
+ - SBDUnreadChannelFilterAll: Shows all my group channels.
+ - SBDUnreadChannelFilterUnreadMessage: Shows my group channels that have unread messages.
+ 
+ @since 3.0.113
+ */
+typedef NS_ENUM(NSUInteger, SBDUnreadChannelFilter) {
+    SBDUnreadChannelFilterAll = 0,
+    SBDUnreadChannelFilterUnreadMessage = 1,
+};
+
 #endif /* SBDTypes_h */
