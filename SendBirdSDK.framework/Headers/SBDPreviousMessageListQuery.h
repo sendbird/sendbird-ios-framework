@@ -28,26 +28,26 @@
 /**
  *  Sets the message type to filter messages. The default value is `SBDMessageTypeFilterAll`.
  *
- *  @param messageType Message type to filter messages.
  *  @since 3.0.106
+ *  @see Combined with `setMessageTypeFilter:`.
  */
-- (void)setMessageTypeFilter:(SBDMessageTypeFilter)messageType;
+@property (nonatomic) SBDMessageTypeFilter messageTypeFilter;
 
 /**
  *  Sets the custom type to filter messages.
  *
- *  @param customType Custom type to filter messages.
  *  @since 3.0.106
+ *  @see Combined with `setCustomTypeFilter:`.
  */
-- (void)setCustomTypeFilter:(NSString * _Nullable)customType;
+@property (copy, nonatomic, nullable) NSString *customTypeFilter;
 
 /**
  *  Sets the senders' user IDs filter.
  *
- *  @param senderUserIds The senders' user IDs.
  *  @since 3.0.106
+ *  @see Combined with `setSenderUserIdsFilter:`.
  */
-- (void)setSenderUserIdsFilter:(NSArray<NSString *> * _Nullable)senderUserIds;
+@property (copy, nonatomic, nullable) NSArray <NSString *> *senderUserIdsFilter;
 
 /**
  *  DO NOT USE this initializer. Use `[SBDBaseChannel createPreviousMessageListQuery]` instead.

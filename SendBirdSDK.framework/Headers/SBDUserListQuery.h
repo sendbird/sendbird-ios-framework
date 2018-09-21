@@ -44,6 +44,9 @@
  */
 @property (atomic, readonly) BOOL hasNext;
 
+@property (copy, nonatomic, readonly, nullable) NSString *metaDataKey;
+@property (copy, nonatomic, readonly, nullable) NSArray <NSString *> *metaDataValues;
+
 /**
  *  DO NOT USE this initializer. Use `[SBDMain createBlockedUserListQuery]` instead.
  */

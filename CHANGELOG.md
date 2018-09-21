@@ -1,5 +1,19 @@
 # Change Log
 
+### v3.0.115(Sep 21, 2018)
+* Added a method `getReadStatusIncludingAllMembers:` that gets readStatus in the group channel.
+* Added a method `getReadMembersWithMessage:includeAllMembers:` that returns a list of members who read the message in the group channel.   
+* Added a method `getUnreadMembersWithMessage:includeAllMembers:` that returns a list of members who did not read the message in the group channel.  
+* Enabled to use `isEqual:` in Channel classes(`SBDBaseChannel`, `SBDGroupChannel`, `SBDOpenChannel`), Message classes(`SBDBaseMessage`, `SBDUserMessage`, `SBDFileMessage`, `SBDAdminMessage`), User classes(`SBDUser`, `SBDMember`) to compare deep-equality with other instance.
+* Fixed connection method(ex. `connectWithUserId:accessToken:completionHandler:`) so that can receive call-back with an error when `disconnectWithCompletionHandler:` was called while connecting to SendBird.
+* Changed setters of filter in query class(`SBDGroupChannelListQuery`, `SBDGroupChannelMemberListQuery`, `SBDOpenChannelListQuery`, `SBDPreviousMessageListQuery`, `SBDPublicGroupChannelListQuery`, `SBDUserListQuery`) into properties.
+* Minor bug fixed.  
+* Deprecated some feature.  
+  * Deprecated method `getReadMembersWithMessage:` in `SBDGroupChannel`.  
+  * Deprecated method `getUnreadMembersWithMessage:` in `SBDGroupChannel`.  
+  * Deprecated method `getReadStatus` in `SBDGroupChannel`.  
+  * Deprecated enum `SBDWebSocketClosing` in `SBDWebSocketConnectionState`.
+
 ### v3.0.114(Sep 14, 2018)
 * Minor bug fixed.  
 

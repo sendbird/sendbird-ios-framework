@@ -35,68 +35,80 @@
 
 /**
  *  If the value is YES, the channel list includes empty channel.
+ *  The property determines if including an empty channel, or not.
  *
- *  @param includeEmptyChannel  the flag to determine including an empty channel, or not.
+ *  @see Combined with `setIncludeEmptyChannel:`.
  */
-- (void)setIncludeEmptyChannel:(BOOL)includeEmptyChannel;
+@property (nonatomic) BOOL includeEmptyChannel;
 
 /**
  *  If the value is YES, the channel list includes their members.
+ *  The property determines including channel's members.
  *
- *  @param includeMemberList    the flag to determine including channel's members.
+ *  @see Combined with `setIncludeMemberList:`.
  */
-- (void)setIncludeMemberList:(BOOL)includeMemberList;
+@property (nonatomic) BOOL includeMemberList;
 
 /**
  *  Sets the order of the list. The order is defined in `SBDPublicGroupChannelListOrder`.
  *  SBDPublicGroupChannelListOrderChronological by default.
  *
- *  @param order    the type to order a query result.
+ *  @see Combined with `setOrder:`.
  */
-- (void)setOrder:(SBDPublicGroupChannelListOrder)order;
+@property (nonatomic) SBDPublicGroupChannelListOrder order;
 
 /**
  *  Sets to filter super channel.
  *  SBDGroupChannelSuperChannelFilterAll by default.
+ *  The property filters super group channels.
  *
- *  @param superChannelFilter   the type to filter super group channels.
+ *  @see Combined with `setSuperChannelFilter:`.
  */
-- (void)setSuperChannelFilter:(SBDGroupChannelSuperChannelFilter)superChannelFilter;
+@property (nonatomic) SBDGroupChannelSuperChannelFilter superChannelFilter;
 
 /**
- *  Sets <code>SBDGroupChannel</code> URLs filter. <code>SBDGroupChannel</code> list containing only and exactly the passed <code>SBDGroupChannel</code> URLs will be returned. This does not cooperate with other filters.
+ *  Sets <code>SBDGroupChannel</code> URLs filter.
+ *  <code>SBDGroupChannel</code> list containing only and exactly the passed <code>SBDGroupChannel</code> URLs will be returned.
+ *  This does not cooperate with other filters.
  *
- *  @param publicMembershipFilter   the type to filter channels joined with me.
+ *  @see Combined with `setPublicMembershipFilter:`.
  */
-- (void)setPublicMembershipFilter:(SBDPublicGroupChannelMembershipFilter)publicMembershipFilter;
+@property (nonatomic) SBDPublicGroupChannelMembershipFilter publicMembershipFilter;
 
 /**
  *  Sets the custom types filter.
+ *  The property filters channels which have one of custom types.
  *
- *  @param customTypes  the list to filter which have this custom type.
+ *  @see Combined with `setCustomTypesFilter:`.
  */
-- (void)setCustomTypesFilter:(nullable NSArray <NSString *> *)customTypes;
+@property (copy, nonatomic, nullable) NSArray <NSString *> *customTypesFilter;
 
 /**
  *  Sets to filter channels by custom type that starts with.
+ *  The property filters custom type that starts with this string.
  *
- *  @param customTypeStartsWithFilter   a string to filter custom type that starts with this string.
+ *  @see Combined with `setCustomTypeStartsWithFilter:`.
  */
-- (void)setCustomTypeStartsWithFilter:(nullable NSString *)customTypeStartsWithFilter;
+@property (copy, nonatomic, nullable) NSString *customTypeStartsWithFilter;
 
 /**
- *  Sets <code>SBDGroupChannel</code> URLs filter. <code>SBDGroupChannel</code> list containing only and exactly the passed <code>SBDGroupChannel</code> URLs will be returned. This does not cooperate with other filters.
+ *  Sets <code>SBDGroupChannel</code> URLs filter.
+ *  <code>SBDGroupChannel</code> list containing only and exactly the passed <code>SBDGroupChannel</code> URLs will be returned.
+ *  This does not cooperate with other filters.
  *
- *  @param channelUrls  the list to filter group channles that have this channel url.
+ *  @see Combined with `setChannelUrlsFilter:`.
  */
-- (void)setChannelUrlsFilter:(nullable NSArray <NSString *> *)channelUrls;
+@property (copy, nonatomic, nullable) NSArray <NSString *> *channelUrlsFilter;
 
 /**
- *  Sets <code>SBDGroupChannel</code> names filter. <code>SBDGroupChannel</code> list containing only and exactly the passed <code>SBDGroupChannel</code> name will be returned. This does not cooperate with other filters.
+ *  Sets <code>SBDGroupChannel</code> names filter.
+ *  <code>SBDGroupChannel</code> list containing only and exactly the passed <code>SBDGroupChannel</code> name will be returned.
+ *  This does not cooperate with other filters.
+ *  The property filters channel name that contains this string.
  *
- *  @param channelNameContainsFilter    a string to filter channel name that contains this string.
+ *  @see Combined with `setChannelNameContainsFilter:`.
  */
-- (void)setChannelNameContainsFilter:(nullable NSString *)channelNameContainsFilter;
+@property (copy, nonatomic, nullable) NSString *channelNameContainsFilter;
 
 /**
  *  Gets the list of channels. If this method is repeatedly called, it will retrieve the following pages of the channel list.

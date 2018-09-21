@@ -699,8 +699,22 @@ DEPRECATED_ATTRIBUTE;
  *  @param message The message.
  *
  *  @return Members who read the message.
+ *
+ *  @deprecated in 3.0.115.
  */
-- (nullable NSArray<SBDMember *> *)getReadMembersWithMessage:(SBDBaseMessage * _Nonnull)message;
+- (nullable NSArray<SBDMember *> *)getReadMembersWithMessage:(SBDBaseMessage * _Nonnull)message
+DEPRECATED_ATTRIBUTE;
+
+/**
+ Returns the <span>members</span> who read the message.
+
+ @param message The message.
+ @param includeAllMembers If YES, the return value includes the current user and the sender of the message.
+ @return Members who read the message.
+ @since 3.0.115
+ */
+- (nonnull NSArray<SBDMember *> *)getReadMembersWithMessage:(SBDBaseMessage * _Nonnull)message
+                                          includeAllMembers:(BOOL)includeAllMembers;
 
 /**
  *  Returns the <span>members</span> who didn't read the message.
@@ -708,13 +722,29 @@ DEPRECATED_ATTRIBUTE;
  *  @param message The message.
  *
  *  @return Members who don't read the message.
+ *
+ *  @deprecated in 3.0.115.
  */
-- (nullable NSArray<SBDMember *> *)getUnreadMembersWithMessage:(SBDBaseMessage * _Nonnull)message;
+- (nullable NSArray<SBDMember *> *)getUnreadMembersWithMessage:(SBDBaseMessage * _Nonnull)message
+DEPRECATED_ATTRIBUTE;
+
+/**
+ Returns the <span>members</span> who didn't read the message.
+
+ @param message The message.
+ @param includeAllMembers If YES, the return value includes the current user and the sender of the message.
+ @return Members who don't read the message.
+ @since 3.0.115
+ */
+- (nonnull NSArray<SBDMember *> *)getUnreadMembersWithMessage:(SBDBaseMessage * _Nonnull)message
+                                            includeAllMembers:(BOOL)includeAllMembers;
 
 /**
  *  Returns the read status.
  *
  *  @return The read status. If there's no data, it will be nil.
+ *
+ *  @deprecated in 3.0.115
  *
  *  ***The returned dictionary's structure***
  *
@@ -731,7 +761,32 @@ DEPRECATED_ATTRIBUTE;
  *
  *  `USER_ID` is the user ID as a key. Each `USER_ID` has a `NSDictionary` which includes `SBDUser` object and `NSNUmber` object. The "user" is a key of `SBDUser` object and the "last_seen_at" is a key of `NSNumber` object. The `NSNumber` object has a 64-bit integer value for the timestamp in millisecond.
  */
-- (nullable NSDictionary<NSString *, NSDictionary<NSString *, NSObject *> *> *)getReadStatus;
+- (nullable NSDictionary<NSString *, NSDictionary<NSString *, NSObject *> *> *)getReadStatus
+DEPRECATED_ATTRIBUTE;
+
+/**
+ Returns the read status.
+
+ @param includeAllMembers If YES, the return value includes the current user and the sender of the message.
+ @return The read status. If there's no data, it will be an empty dictionary.
+ @since 3.0.115
+ 
+ ***The returned dictionary's structure***
+ 
+ <pre>
+ {
+ &nbsp;&nbsp;USER_ID:
+ &nbsp;&nbsp;&nbsp;&nbsp;{
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"user": <span>SBDUser</span> object,
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"last_seen_at": <span>NSNumber</span> object,
+ &nbsp;&nbsp;&nbsp;&nbsp;},
+ &nbsp;&nbsp;...
+ }
+ </pre>
+ 
+ `USER_ID` is the user ID as a key. Each `USER_ID` has a `NSDictionary` which includes `SBDUser` object and `NSNUmber` object. The "user" is a key of `SBDUser` object and the "last_seen_at" is a key of `NSNumber` object. The `NSNumber` object has a 64-bit integer value for the timestamp in millisecond.
+ */
+- (nonnull NSDictionary<NSString *, NSDictionary<NSString *, NSObject *> *> *)getReadStatusIncludingAllMembers:(BOOL)includeAllMembers;
 
 /**
  *  If other users are typing in the channel, YES is returned.

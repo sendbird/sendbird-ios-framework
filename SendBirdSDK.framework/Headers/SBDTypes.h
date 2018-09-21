@@ -85,6 +85,7 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     // SDK Internal Errors
     SBDErrorInvalidInitialization = 800100,
     SBDErrorConnectionRequired = 800101,
+    SBDErrorConnectionCanceled = 800102,
     SBDErrorInvalidParameter = 800110,
     SBDErrorNetworkError = 800120,
     SBDErrorNetworkRoutingError = 800121,
@@ -116,13 +117,13 @@ typedef NS_ENUM(NSUInteger, SBDWebSocketConnectionState) {
      */
     SBDWebSocketOpen = 1,
     /**
-     *  Closing
-     */
-    SBDWebSocketClosing = 2,
-    /**
      *  Closed
      */
     SBDWebSocketClosed = 3,
+    /**
+     *  Closing
+     */
+    SBDWebSocketClosing __attribute__((deprecated)) = SBDWebSocketClosed,
 };
 
 /**

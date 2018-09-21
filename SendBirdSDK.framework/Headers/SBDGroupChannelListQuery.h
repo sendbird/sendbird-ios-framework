@@ -51,26 +51,20 @@
 /**
  *  Sets the custom type filter.
  *
- *  @deprecated in 3.0.64. Use `setCustomTypeFilter:` instead.
+ *  @deprecated in 3.0.64. Use `customTypesFilter` instead.
  */
 @property (strong, nonatomic, nullable) NSString *customTypeFilter
 DEPRECATED_ATTRIBUTE;
 
 /**
  *  Sets the member state filter.
- *
- *  @deprecated in 3.0.64. Use `setMemberStateFilter:` instead.
  */
-@property (nonatomic) SBDMemberStateFilter memberStateFilter
-DEPRECATED_ATTRIBUTE;
+@property (nonatomic) SBDMemberStateFilter memberStateFilter;
 
 /**
  *  Sets <code>SBDGroupChannel</code> URLs filter. <code>SBDGroupChannel</code> list containing only and exactly the passed <code>SBDGroupChannel</code> URLs will be returned. This does not cooperate with other filters.
- *
- *  @deprecated in 3.0.64. Use `setChannelUrlsFilter:` instead.
  */
-@property (strong, nonatomic, nullable) NSArray<NSString *> *channelUrlsFilter
-DEPRECATED_ATTRIBUTE;
+@property (copy, nonatomic, nullable) NSArray<NSString *> *channelUrlsFilter;
 
 /**
  *  Sets a filter to return only channels that contains the specified group channel name.
@@ -94,8 +88,46 @@ DEPRECATED_ATTRIBUTE;
 
 /**
  *  Sets to filter channels by custom type that starts with.
+ *
+ *  @see Combined with `setCustomTypeStartsWithFilter:`.
  */
-@property (nonatomic, copy, nullable) NSString *customTypeStartsWithFilter;
+@property (copy, nonatomic, nullable) NSString *customTypeStartsWithFilter;
+
+/**
+ * Sets the custom types filter. The custom types to search.
+ *
+ *  @see Combined with `setCustomTypesFilter:`.
+ */
+@property (copy, nonatomic, nullable) NSArray <NSString *> *customTypesFilter;
+
+/**
+ *  Sets the filter with nickname. The group channels which have the member that has nickname are returned by `loadNextPageWithCompletionHandler:`(LIKE search).
+ *
+ *  @see Combined with `setNicknameContainsFilter:`.
+ */
+@property (copy, nonatomic, nullable) NSString *nicknameContainsFilter;
+
+/**
+ *  Sets the filter with user IDs. The group channels which have the members that contain user IDs are returned by `loadNextPageWithCompletionHandler:`.
+ *
+ *  @see Use `setUserIdsIncludeFilter:queryType:` to set the property.
+ */
+@property (copy, nonatomic, readonly, nullable) NSArray <NSString *> *userIdsIncludeFilter;
+
+/**
+ *  Sets the filter with user IDs. The group channels which have the members that have user IDs are returned by `loadNextPageWithCompletionHandler:`. The channels have the `userIds` members only.
+ *
+ *  @see Combined with `setUserIdsExactFilter:`.
+ */
+@property (copy, nonatomic, nullable) NSArray <NSString *> *userIdsExactFilter;
+
+/**
+ * Sets a filter to return only channels that contains the specified group channel name.
+ * The channel name to search. The query will return the channels include `channelName`.
+ *
+ *  @see Combined with `setChannelNameContainsFilter:`.
+ */
+@property (copy, nonatomic, nullable) NSString *channelNameContainsFilter;
 
 /**
  Sets to filter channels by the unread messages. The default value is `SBDUnreadChannelFilterAll`.
@@ -120,13 +152,6 @@ DEPRECATED_ATTRIBUTE;
 - (BOOL)isLoading;
 
 /**
- *  Sets the filter with nickname. The group channels which have the member that has nickname are returned by `loadNextPageWithCompletionHandler:`(LIKE search).
- *
- *  @param nickname Nickname to search.
- */
-- (void)setNicknameContainsFilter:(NSString * _Nullable)nickname;
-
-/**
  *  Sets the filter with user IDs. The group channels which have the members that have user IDs are returned by `loadNextPageWithCompletionHandler:`.
  *
  *  @param userIds    User IDs to search.
@@ -143,16 +168,11 @@ DEPRECATED_ATTRIBUTE;
  *
  *  @param userIds    User IDs to search.
  *  @param queryType Logical condition applied to filter. If you pass `SBDGroupChannelListQueryTypeAnd` to `queryType` and A, B to `userIds`, the channels whose members containing A and B will be returned. If `SBDGroupChannelListQueryTypeOr` is set, the members of the queried channels will be A or B.
+ *
+ *  @see `userIdsIncludeFilter`, `queryType`.
  */
 - (void)setUserIdsIncludeFilter:(NSArray<NSString *>* _Nonnull)userIds
                       queryType:(SBDGroupChannelListQueryType)queryType;
-
-/**
- *  Sets the filter with user IDs. The group channels which have the members that have user IDs are returned by `loadNextPageWithCompletionHandler:`. The channels have the `userIds` members only.
- *
- *  @param userIds    User IDs to search.
- */
-- (void)setUserIdsExactFilter:(NSArray<NSString *>* _Nonnull)userIds;
 
 /**
  Sets the custom type filter.
@@ -163,36 +183,6 @@ DEPRECATED_ATTRIBUTE;
  */
 - (void)setCustomTypeFilter:(NSString * _Nullable)customType
 DEPRECATED_ATTRIBUTE;
-
-/**
- Sets the custom types filter.
- 
- @param customTypes The custom types to search.
- */
-- (void)setCustomTypesFilter:(NSArray<NSString *> * _Nullable)customTypes;
-
-/**
- Sets the member state filter.
-
- @param memberStateFilter The member state to search.
- */
-- (void)setMemberStateFilter:(SBDMemberStateFilter)memberStateFilter;
-
-
-/**
- Sets <code>SBDGroupChannel</code> URLs filter. <code>SBDGroupChannel</code> list containing only and exactly the passed <code>SBDGroupChannel</code> URLs will be returned. This does not cooperate with other filters.
-
- @param channelUrls The channel urls to search.
- */
-- (void)setChannelUrlsFilter:(NSArray<NSString *> * _Nullable)channelUrls;
-
-
-/**
- Sets a filter to return only channels that contains the specified group channel name.
-
- @param channelName The channel name to search. The query will return the channels include `channelName`.
- */
-- (void)setChannelNameContainsFilter:(NSString * _Nullable)channelName;
 
 /**
  *  Gets the list of channels. If this method is repeatedly called, it will retrieve the following pages of the channel list.

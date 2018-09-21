@@ -65,18 +65,17 @@ DEPRECATED_ATTRIBUTE;
 /**
  *  Sets a filter to query muted member list.
  *
- *  @param filter  The filter about muted/unmuted members.
- *
  *  @since 3.0.89
+ *  @see Combined with `setMutedMemberFilter:`.
  */
-- (void)setMutedMemberFilter:(SBDGroupChannelMutedMemberFilter)filter;
+@property (nonatomic) SBDGroupChannelMutedMemberFilter mutedMemberFilter;
 
 /**
- Sets a filter to query member list with member state.
-
- @param filter The filter about member state.
+ * Sets a filter to query member list with member state.
+ *
+ *  @see Combined with `setMemberStateFilter:`.
  */
-- (void)setMemberStateFilter:(SBDMemberStateFilter)filter;
+@property (nonatomic) SBDMemberStateFilter memberStateFilter;
 
 /**
  *  Gets the list of member in group channel. If this method is repeatedly called, it will retrieve the following pages of the member list.
