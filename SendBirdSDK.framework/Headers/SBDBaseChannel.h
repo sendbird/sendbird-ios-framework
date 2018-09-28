@@ -306,7 +306,7 @@
 @property (atomic) NSUInteger createdAt;
 
 /**
- *  The custom date of the channel.
+ *  The custom data of the channel.
  */
 @property (strong, nonatomic, nullable) NSString *data;
 
