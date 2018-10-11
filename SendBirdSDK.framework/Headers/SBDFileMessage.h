@@ -104,19 +104,9 @@
 @property (strong, nonatomic, readonly, nonnull) NSString *type;
 
 /**
- *  The custom data for file.
- */
-@property (strong, nonatomic, readonly, nonnull) NSString *data;
-
-/**
  *  Request ID for ACK.
  */
 @property (strong, nonatomic, readonly, nullable) NSString *requestId;
-
-/**
- *  Custom message type.
- */
-@property (strong, nonatomic, readonly, nullable) NSString *customType;
 
 /**
  Image thumbnails.
@@ -135,8 +125,9 @@
  *  @param sender     Sender of the message.
  *  @param channel    The channel which the file message is sent.
  *  @param customType Custom message type.
- *
  *  @return File message object with request ID.
+ *
+ *  @deprecated in 3.0.116 DO NOT USE THIS METHOD.
  */
 + (nullable NSMutableDictionary<NSString *, NSObject *> *)buildWithFileUrl:(NSString * _Nonnull)url
                                                                       name:(NSString * _Nullable)name
@@ -146,7 +137,8 @@
                                                                  requestId:(NSString * _Nullable)requestId
                                                                     sender:(SBDUser * _Nonnull)sender
                                                                    channel:(SBDBaseChannel * _Nonnull)channel
-                                                                customType:(NSString * _Nullable)customType;
+                                                                customType:(NSString * _Nullable)customType
+DEPRECATED_ATTRIBUTE;
 
 /**
  *  Builds file message with the information which is releated to file.
@@ -161,8 +153,9 @@
  *  @param channel    The channel which the file message is sent.
  *  @param customType Custom message type.
  *  @param thumbnailSizes Thumbnail sizes to require.
- *
  *  @return File message object with request ID.
+ *
+ *  @deprecated in 3.0.116 DO NOT USE THIS METHOD.
  */
 + (nullable NSMutableDictionary<NSString *, NSObject *> *)buildWithFileUrl:(NSString * _Nonnull)url
                                                                       name:(NSString * _Nullable)name
@@ -173,7 +166,8 @@
                                                                     sender:(SBDUser * _Nonnull)sender
                                                                    channel:(SBDBaseChannel * _Nonnull)channel
                                                                 customType:(NSString * _Nullable)customType
-                                                            thumbnailSizes:(NSArray<SBDThumbnailSize *> * _Nullable)thumbnailSizes;
+                                                            thumbnailSizes:(NSArray<SBDThumbnailSize *> * _Nullable)thumbnailSizes
+DEPRECATED_ATTRIBUTE;
 
 /**
  Returns url

@@ -87,6 +87,13 @@
 @property (nonatomic, copy, nullable) NSArray <NSString *> *operatorUserIds;
 
 /**
+ *  A string that allows access to the public group channel. ONLY use for public group channel.
+ *
+ *  @since 3.0.116
+ */
+@property (nonatomic, copy, nullable) NSString *accessCode;
+
+/**
  *  Add user with SBDUser class to be member of the group channel.
  *
  *  @param user     The user to be member of a group channel.

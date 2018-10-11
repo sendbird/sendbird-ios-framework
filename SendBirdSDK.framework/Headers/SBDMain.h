@@ -340,7 +340,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  
  @param block Block to run.
  */
-+ (void)performComletionHandlerDelegateQueueBlock:(dispatch_block_t _Nullable)block;
++ (void)performCompletionHandlerDelegateQueueBlock:(dispatch_block_t _Nullable)block;
 
 /**
  *  Creates `SBDUserListQuery` instance for getting a list of all users of this application.
@@ -655,6 +655,58 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  */
 + (void)markAsReadWithChannelUrls:(NSArray <NSString *> * _Nonnull)channelUrls
                 completionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler;
+
+#pragma mark - Group Channel
+/**
+ *  Gets the number of group channel with the filter.
+ *
+ *  @param memberStateFilter The member state of the current user in the channels that are counted.
+ *  @param completionHandler The handler block to execute.
+ *
+ *  @since 3.0.116
+ */
++ (void)getChannelCountWithMemberStateFilter:(SBDMemberStateFilter)memberStateFilter
+                           completionHandler:(nonnull void (^)(NSUInteger groupChannelCount, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Gets the total unread channel count of all group channels.
+ *
+ *  @param completionHandler The handler block to execute. The `unreadCount` is the total count of unread channels in all of group channel which the current is a member.
+ *
+ *  @since 3.0.116
+ */
++ (void)getTotalUnreadChannelCountWithCompletionHandler:(nonnull void (^)(NSUInteger unreadCount, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Gets the number of unread messages in group channels.
+ *
+ *  @param completionHandler The handler block to execute. The `unreadCount` is the total count of unread messages in all of group channel which the current is a member.
+ *
+ *  @since 3.0.116
+ */
++ (void)getTotalUnreadMessageCountWithCompletionHandler:(nullable void (^)(NSUInteger unreadCount, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Gets the total unread message count of the channels with filters of params.
+ *
+ *  @param params             The instance of parameters to filter.
+ *  @param completionHandler  The handler block to be executed after getting total unread message count. This block has no return value and takes two argument, the one is the number of unread message and the other is error.
+ *
+ *  @since 3.0.116
+ */
++ (void)getTotalUnreadMessageCountWithParams:(nonnull SBDGroupChannelTotalUnreadMessageCountParams *)params
+                           completionHandler:(nonnull void (^)(NSUInteger unreadCount, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Get unread counts of message and invitation counts in super and non_super channels.
+ *
+ *  @param key  bitmask key composed of super/non_super unread message count, super/non_super invitation count.
+ *  @param completionHandler  The handler block to be executed after getting unread item count. This block has no return value and takes two argument. the one is type of SBDUnreadItemCount that contains unsinged interger for count you requested. the other is an error made when there is something wrong to response.
+ *
+ *  @since 3.0.116
+ */
++ (void)getUnreadItemCountWithKey:(SBDUnreadItemKey)key
+                completionHandler:(nonnull void(^)(SBDUnreadItemCount * _Nullable count, SBDError * _Nullable error))completionHandler;
 
 @end
 

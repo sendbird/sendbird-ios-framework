@@ -20,16 +20,6 @@
 @property (strong, nonatomic, readonly, nullable) NSString *message;
 
 /**
- *  Data of <span>message</span>.
- */
-@property (strong, nonatomic, readonly, nullable) NSString *data;
-
-/**
- *  Custom message type.
- */
-@property (strong, nonatomic, readonly, nullable) NSString *customType;
-
-/**
  Serializes message object.
  
  @return Serialized <span>data</span>.

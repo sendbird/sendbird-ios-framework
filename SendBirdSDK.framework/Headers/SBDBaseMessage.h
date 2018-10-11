@@ -55,6 +55,26 @@
 @property (atomic) long long updatedAt;
 
 /**
+ Meta array.
+ @since 3.0.116
+ */
+@property (nonatomic, nonnull, readonly, getter=getAllMetaArray) NSDictionary<NSString *, NSArray<NSString *> *> *metaArray;
+
+/**
+ *  The custom data for file.
+ *
+ *  @see Moved from `SBDUserMessage`, `SBDFileMessage`, `SBDAdminMessage`.
+ */
+@property (strong, nonatomic, readonly, nullable) NSString *data;
+
+/**
+ *  Custom message type.
+ *
+ *  @see Moved from `SBDUserMessage`, `SBDFileMessage`, `SBDAdminMessage`.
+ */
+@property (strong, nonatomic, readonly, nullable) NSString *customType;
+
+/**
  *  Initializes a message object.
  *
  *  @param dict Dictionary data for a message.
@@ -91,5 +111,14 @@
  @return Serialized <span>data</span>.
  */
 - (nullable NSData *)serialize;
+
+/**
+ Returns meta array for the keys.
+
+ @param keys Keys of the meta array.
+ @return Meta array of the keys.
+ @since 3.0.116
+ */
+- (nonnull NSDictionary<NSString *, NSArray<NSString *> *> *)getMetaArrayWithKeys:(NSArray<NSString *> * _Nonnull)keys;
 
 @end

@@ -36,6 +36,12 @@
 @property (atomic) SBDPushNotificationDeliveryOption pushNotificationDeliveryOption;
 
 /**
+ Meta array keys.
+ @since 3.0.116
+ */
+@property (copy, nonatomic, nullable) NSArray<NSString *> *metaArrayKeys;
+
+/**
  *
  *  @since 3.0.103
  */

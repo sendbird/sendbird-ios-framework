@@ -24,11 +24,6 @@
 @property (strong, nonatomic, readonly, nullable) NSString *message;
 
 /**
- *  Data of <span>message</span>.
- */
-@property (strong, nonatomic, readonly, nullable) NSString *data;
-
-/**
  *  Sender of the <span>message</span>. This is represented by `SBDUser` class.
  */
 @property (strong, nonatomic, nullable, getter = sender) SBDUser *sender;
@@ -37,11 +32,6 @@
  *  Request ID for checking ACK.
  */
 @property (strong, nonatomic, readonly, nullable) NSString *requestId;
-
-/**
- *  Custom message type.
- */
-@property (strong, nonatomic, readonly, nullable) NSString *customType;
 
 /**
  *  Translated <span>message</span> text.

@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.116(Oct 11, 2018)
+* Improved stability.
+
 ### v3.0.115(Sep 21, 2018)
 * Added a method `getReadStatusIncludingAllMembers:` that gets readStatus in the group channel.
 * Added a method `getReadMembersWithMessage:includeAllMembers:` that returns a list of members who read the message in the group channel.   

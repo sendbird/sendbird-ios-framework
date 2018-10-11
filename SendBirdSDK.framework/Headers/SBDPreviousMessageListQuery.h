@@ -50,6 +50,12 @@
 @property (copy, nonatomic, nullable) NSArray <NSString *> *senderUserIdsFilter;
 
 /**
+ If YES, the messages to be returned by `loadPreviousMessagesWithLimit:reverse:completionHandler:` have meta array.
+ @since 3.0.116
+ */
+@property (nonatomic) BOOL includeMetaArray;
+
+/**
  *  DO NOT USE this initializer. Use `[SBDBaseChannel createPreviousMessageListQuery]` instead.
  */
 #pragma clang diagnostic push
