@@ -250,6 +250,15 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 + (nullable SBDUser *)getCurrentUser;
 
 /**
+ *  Gets the current user's latest connection millisecond time(UTC). If the connection state is not open, returns 0.
+ *
+ *  @return  latest connected millisecond time stamp.
+ *
+ *  @since 3.0.117
+ */
++ (long long)getLastConnectedAt;
+
+/**
  *  Disconnects from SendBird. If this method is invoked, the current user will be invalidated.
  *
  *  @param completionHandler The handler block to execute.

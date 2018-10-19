@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.117(Oct 19, 2018)
+* Added a getter `getLastConnectedAt` that returns the current user's latest connection time.
+
 ### v3.0.116(Oct 11, 2018)
 * Improved stability.
 
