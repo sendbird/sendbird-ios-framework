@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.118(Oct 26, 2018)
+* Added duration and a description to user mute.
+* Added an ordering group channel with meta data value of specific key.
+* Minor bug fixed. 
+
 ### v3.0.117(Oct 19, 2018)
 * Added a getter `getLastConnectedAt` that returns the current user's latest connection time.
 

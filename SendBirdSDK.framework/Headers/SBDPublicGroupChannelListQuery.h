@@ -111,6 +111,12 @@
 @property (copy, nonatomic, nullable) NSString *channelNameContainsFilter;
 
 /**
+ Sets a key for ordering by value in the metadata. This is valid when the `order` is `SBDPublicGroupChannelListOrderChannelMetaDataValueAlphabetical` only.
+ @since 3.0.118
+ */
+@property (copy, nonatomic, nullable) NSString *metaDataOrderKeyFilter;
+
+/**
  *  Gets the list of channels. If this method is repeatedly called, it will retrieve the following pages of the channel list.
  *
  *  @param completionHandler The handler block to execute. The `channels` is the array of `SBDGroupChannel` instances.

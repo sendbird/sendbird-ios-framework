@@ -137,6 +137,12 @@ DEPRECATED_ATTRIBUTE;
 @property (nonatomic) SBDUnreadChannelFilter unreadChannelFilter;
 
 /**
+ Sets a key for ordering by value in the metadata. This is valid when the `order` is `SBDGroupChannelListOrderChannelMetaDataValueAlphabetical` only.
+ @since 3.0.118
+ */
+@property (copy, nonatomic, nullable) NSString *metaDataOrderKeyFilter;
+
+/**
  *  DO NOT USE this initializer. Use `[SBDGroupChannel createMyGroupChannelListQuery]` instead.
  */
 #pragma clang diagnostic push

@@ -31,6 +31,11 @@ typedef NS_ENUM(NSInteger, SBDGroupChannelListOrder) {
      *  Alphabetical name order for group channel.
      */
     SBDGroupChannelListOrderChannelNameAlphabetical = 2,
+    
+    /**
+     *  Alphabetical value order of a selected key in meta data for group channel.
+     */
+    SBDGroupChannelListOrderChannelMetaDataValueAlphabetical = 3,
 };
 
 /**
@@ -45,6 +50,11 @@ typedef NS_ENUM(NSUInteger, SBDPublicGroupChannelListOrder) {
      *  Alphabetical name order for public group channel.
      */
     SBDPublicGroupChannelListOrderChannelNameAlphabetical = 2,
+    
+    /**
+     *  Alphabetical value order of a selected key in meta data for public group channel.
+     */
+    SBDPublicGroupChannelListOrderChannelMetaDataValueAlphabetical = 3,
 };
 
 /**
