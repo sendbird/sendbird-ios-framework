@@ -1,5 +1,13 @@
 # Change Log
 
+### v3.0.119(Oct 31, 2018)
+* Added `SBDScheduledUserMessage` feature to send `SBDUserMessage` at the time specified by a user.
+  * Added `SBDScheduledUserMessage` that is a scheduled `SBDUserMessage`.
+  * Added `SBDScheduledUserMessageParams` to be delivered as a parameter to register scheduled `SBDUserMessage`.
+  * Added `registerScheduledUserMessageWithParams:completionHandler:` in `SBDGroupChannel` to register scheduled `SBDUserMessage`.
+* Improved stability.
+* Minor bug fixed
+
 ### v3.0.118(Oct 26, 2018)
 * Added duration and a description to user mute.
 * Added an ordering group channel with meta data value of specific key.

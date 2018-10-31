@@ -84,8 +84,8 @@ DEPRECATED_ATTRIBUTE;
  *  Creates an open channel with properties.
  *
  *  @param name              The name of the channel.
- *  @param coverImage        The cover image data of group channel.
- *  @param coverImageName    The cover image file name of group channel.
+ *  @param coverImage        The cover image data of open channel.
+ *  @param coverImageName    The cover image file name of open channel.
  *  @param data              The data for channel.
  *  @param operatorUsers     The operator users of channel.
  *  @param progressHandler   The handler block to monitor progression. `bytesSent` is the number of bytes sent since the last time this method was called. `totalBytesSent` is the total number of bytes sent so far. `totalBytesExpectedToSend` is the expected length of the body <span>data</span>. These parameters are the same to the declaration of [`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:`](https://developer.apple.com/reference/foundation/nsurlsessiontaskdelegate/1408299-urlsession?language=objc).
@@ -106,8 +106,8 @@ DEPRECATED_ATTRIBUTE;
  *  Updates an open channel with properties.
  *
  *  @param name              The name of the channel.
- *  @param coverImage        The cover image data of group channel.
- *  @param coverImageName    The cover image file name of group channel.
+ *  @param coverImage        The cover image data of open channel.
+ *  @param coverImageName    The cover image file name of open channel.
  *  @param data              The data for channel.
  *  @param operatorUsers     The operator users of channel.
  *  @param progressHandler   The handler block to monitor progression. `bytesSent` is the number of bytes sent since the last time this method was called. `totalBytesSent` is the total number of bytes sent so far. `totalBytesExpectedToSend` is the expected length of the body <span>data</span>. These parameters are the same to the declaration of [`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:`](https://developer.apple.com/reference/foundation/nsurlsessiontaskdelegate/1408299-urlsession?language=objc).
@@ -172,8 +172,6 @@ DEPRECATED_ATTRIBUTE;
  *  @param operatorUserIds   The operator user IDs of channel.
  *  @param customType        The custom type for channel.
  *  @param completionHandler The handler block to execute. `channel` is the open channel instance which is created.
- *
- *  @deprecated in 3.0.116 Use `createChannelWithName:channelUrl:coverImage:coverImageName:data:operatorUserIds:customType:progressHandler:completionHandler:` instead.
  */
 + (void)createChannelWithName:(NSString * _Nullable)name
                    channelUrl:(NSString * _Nullable)channelUrl
@@ -181,8 +179,7 @@ DEPRECATED_ATTRIBUTE;
                          data:(NSString * _Nullable)data
               operatorUserIds:(NSArray<NSString *> * _Nullable)operatorUserIds
                    customType:(NSString * _Nullable)customType
-            completionHandler:(nonnull void (^)(SBDOpenChannel * _Nullable channel, SBDError * _Nullable error))completionHandler
-DEPRECATED_ATTRIBUTE;
+            completionHandler:(nonnull void (^)(SBDOpenChannel * _Nullable channel, SBDError * _Nullable error))completionHandler;
 
 /**
  *  Updates an open channel.
@@ -226,8 +223,8 @@ DEPRECATED_ATTRIBUTE;
  *  Creates an open channel.
  *
  *  @param name              The name of the channel.
- *  @param coverImage        The cover image data of group channel.
- *  @param coverImageName    The cover image file name of group channel.
+ *  @param coverImage        The cover image data of open channel.
+ *  @param coverImageName    The cover image file name of open channel.
  *  @param data              The data for channel.
  *  @param operatorUserIds   The operator user IDs of channel.
  *  @param progressHandler   The handler block to monitor progression. `bytesSent` is the number of bytes sent since the last time this method was called. `totalBytesSent` is the total number of bytes sent so far. `totalBytesExpectedToSend` is the expected length of the body <span>data</span>. These parameters are the same to the declaration of [`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:`](https://developer.apple.com/reference/foundation/nsurlsessiontaskdelegate/1408299-urlsession?language=objc).
@@ -248,8 +245,8 @@ DEPRECATED_ATTRIBUTE;
  *  Creates an open channel.
  *
  *  @param name              The name of the channel.
- *  @param coverImage        The cover image data of group channel.
- *  @param coverImageName    The cover image file name of group channel.
+ *  @param coverImage        The cover image data of open channel.
+ *  @param coverImageName    The cover image file name of open channel.
  *  @param data              The data for channel.
  *  @param operatorUserIds   The operator user IDs of channel.
  *  @param customType        The custom type for channel.
@@ -273,8 +270,8 @@ DEPRECATED_ATTRIBUTE;
  *
  *  @param name              The name of the channel.
  *  @param channelUrl        The channel URL. If nil, channel url will be determined randomly.
- *  @param coverImage        The cover image data of group channel.
- *  @param coverImageName    The cover image file name of group channel.
+ *  @param coverImage        The cover image data of open channel.
+ *  @param coverImageName    The cover image file name of open channel.
  *  @param data              The data for channel.
  *  @param operatorUserIds   The operator user IDs of channel.
  *  @param customType        The custom type for channel.
@@ -295,7 +292,7 @@ DEPRECATED_ATTRIBUTE;
  *  Creates an open channel.
  *
  *  @param name              The name of the channel.
- *  @param coverImageFilePath        The cover image file path of group channel.
+ *  @param coverImageFilePath        The cover image file path of open channel.
  *  @param data              The data for channel.
  *  @param operatorUserIds   The operator user IDs of channel.
  *  @param customType        The custom type for channel.
@@ -318,7 +315,7 @@ DEPRECATED_ATTRIBUTE;
  *
  *  @param name              The name of the channel.
  *  @param channelUrl        The channel URL. If nil, channel url will be determined randomly.
- *  @param coverImageFilePath        The cover image file path of group channel.
+ *  @param coverImageFilePath        The cover image file path of open channel.
  *  @param data              The data for channel.
  *  @param operatorUserIds   The operator user IDs of channel.
  *  @param customType        The custom type for channel.
@@ -341,8 +338,8 @@ DEPRECATED_ATTRIBUTE;
  *  Updates an open channel.
  *
  *  @param name              The name of the channel.
- *  @param coverImage        The cover image data of group channel.
- *  @param coverImageName    The cover image file name of group channel.
+ *  @param coverImage        The cover image data of open channel.
+ *  @param coverImageName    The cover image file name of open channel.
  *  @param data              The data for channel.
  *  @param operatorUserIds   The operator user IDs of channel.
  *  @param progressHandler   The handler block to monitor progression. `bytesSent` is the number of bytes sent since the last time this method was called. `totalBytesSent` is the total number of bytes sent so far. `totalBytesExpectedToSend` is the expected length of the body <span>data</span>. These parameters are the same to the declaration of [`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:`](https://developer.apple.com/reference/foundation/nsurlsessiontaskdelegate/1408299-urlsession?language=objc).
@@ -363,8 +360,8 @@ DEPRECATED_ATTRIBUTE;
  *  Updates an open channel.
  *
  *  @param name              The name of the channel.
- *  @param coverImage        The cover image data of group channel.
- *  @param coverImageName    The cover image file name of group channel.
+ *  @param coverImage        The cover image data of open channel.
+ *  @param coverImageName    The cover image file name of open channel.
  *  @param data              The data for channel.
  *  @param operatorUserIds   The operator user IDs of channel.
  *  @param customType        The custom type for channel.
@@ -384,7 +381,7 @@ DEPRECATED_ATTRIBUTE;
  *  Updates an open channel.
  *
  *  @param name              The name of the channel.
- *  @param coverImageFilePath        The cover image file path of group channel.
+ *  @param coverImageFilePath        The cover image file path of open channel.
  *  @param data              The data for channel.
  *  @param operatorUserIds   The operator user IDs of channel.
  *  @param customType        The custom type for channel.
@@ -507,6 +504,34 @@ DEPRECATED_ATTRIBUTE;
  */
 - (void)muteUserWithUserId:(NSString * _Nonnull)userId
          completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
+ Mute the user with additional options. Muted user cannot send any messages to the open channel.
+ 
+ @param user The user to be muted
+ @param seconds The user cannot send any messages for this time.
+ @param description The description that explains the reason why the user is muted.
+ @param completionHandler The handler block to be executed after mute. This block has no return value and takes an argument that is an error made when there is something wrong to mute the user.
+ @since 3.0.118
+ */
+- (void)muteUser:(nonnull SBDUser *)user
+         seconds:(NSInteger)seconds
+     description:(nullable NSString *)description
+completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;;
+
+/**
+ Mute the user with additional options. Muted user cannot send any messages to the open channel.
+ 
+ @param userId The user ID to be muted
+ @param seconds The user cannot send any messages for this time.
+ @param description The description that explains the reason why the user is muted.
+ @param completionHandler The handler block to be executed after mute. This block has no return value and takes an argument that is an error made when there is something wrong to mute the user.
+ @since 3.0.118
+ */
+- (void)muteUserWithUserId:(nonnull NSString *)userId
+                   seconds:(NSInteger)seconds
+               description:(nullable NSString *)description
+         completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;;
 
 /**
  *  Unmutes a user with the user object.

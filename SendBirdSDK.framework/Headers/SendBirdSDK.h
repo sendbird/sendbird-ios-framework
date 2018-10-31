@@ -45,6 +45,9 @@
 
 #import "SBDConnectionManager.h"
 
+#import "SBDScheduledUserMessage.h"
+#import "SBDScheduledUserMessageParams.h"
+
 //! Project version number for SendBirdSDK.
 FOUNDATION_EXPORT double SendBirdSDKVersionNumber;
 

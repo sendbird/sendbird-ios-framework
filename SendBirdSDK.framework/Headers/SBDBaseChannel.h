@@ -15,6 +15,8 @@
 #import "SBDFileMessage.h"
 #import "SBDError.h"
 #import "SBDMember.h"
+#import "SBDScheduledUserMessage.h"
+#import "SBDScheduledUserMessageParams.h"
 
 @class SBDPreviousMessageListQuery, SBDOperatorListQuery;
 @class SBDThumbnailSize;
@@ -1524,5 +1526,13 @@ DEPRECATED_ATTRIBUTE;
 - (void)removeMessageMetaArrayValuesWithMessage:(nonnull SBDBaseMessage *)message
                                       keyValues:(nonnull NSDictionary<NSString *, NSArray<NSString *> *> *)keyValues
                               completionHandler:(nullable void (^)(SBDBaseMessage * _Nullable message, SBDError * _Nullable error))completionHandler;
+
+/**
+ Gets the current user's muted informatio in this channel.
+
+ @param completionHandler The handler block to be executed.
+ @since 3.0.118
+ */
+- (void)getMyMutedInfoWithCompletionHandler:(nullable void (^)(BOOL isMuted, NSString * _Nonnull description, long long startAt, long long endAt, long long remainingDuration, SBDError * _Nullable error))completionHandler;
 
 @end

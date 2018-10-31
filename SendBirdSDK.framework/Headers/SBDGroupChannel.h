@@ -1101,6 +1101,34 @@ DEPRECATED_ATTRIBUTE;
 - (void)muteUser:(nonnull SBDUser *)user completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
 /**
+ Mute the user with additional options. Muted user cannot send any messages to the group channel.
+
+ @param user The user to be muted
+ @param seconds The user cannot send any messages for this time.
+ @param description The description that explains the reason why the user is muted.
+ @param completionHandler The handler block to be executed after mute. This block has no return value and takes an argument that is an error made when there is something wrong to mute the user.
+ @since 3.0.118
+ */
+- (void)muteUser:(nonnull SBDUser *)user
+          seconds:(NSInteger)seconds
+      description:(nullable NSString *)description
+completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;;
+
+/**
+ Mute the user with additional options. Muted user cannot send any messages to the group channel.
+ 
+ @param userId The user ID to be muted
+ @param seconds The user cannot send any messages for this time.
+ @param description The description that explains the reason why the user is muted.
+ @param completionHandler The handler block to be executed after mute. This block has no return value and takes an argument that is an error made when there is something wrong to mute the user.
+ @since 3.0.118
+ */
+- (void)muteUserWithUserId:(nonnull NSString *)userId
+                   seconds:(NSInteger)seconds
+               description:(nullable NSString *)description
+         completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;;
+
+/**
  *  Turn off mute the user.
  *
  *  @param userId            The user Id to be turned off mute.
@@ -1172,5 +1200,15 @@ DEPRECATED_ATTRIBUTE;
  */
 - (void)setMyCountPreference:(SBDCountPreference)myCountPreference
            completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
+ Registers a scheduled user message. The message will be sent at the specified time in `params`.
+ 
+ @param params The instance of `SBDScheduledUserMessageParams` that can has parameters related with a text message. It has also the specified time to send a user message.
+ @param completionHandler The handler block to be executed.
+ @since 3.0.119
+ */
+- (void)registerScheduledUserMessageWithParams:(nonnull SBDScheduledUserMessageParams *)params
+                             completionHandler:(nullable void (^)(SBDScheduledUserMessage * _Nullable scheduledUserMessage, SBDError * _Nullable error))completionHandler;
 
 @end

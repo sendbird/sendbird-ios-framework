@@ -61,7 +61,7 @@
 @property (nonatomic, nonnull, readonly, getter=getAllMetaArray) NSDictionary<NSString *, NSArray<NSString *> *> *metaArray;
 
 /**
- *  The custom data for file.
+ *  The custom data for message.
  *
  *  @see Moved from `SBDUserMessage`, `SBDFileMessage`, `SBDAdminMessage`.
  */

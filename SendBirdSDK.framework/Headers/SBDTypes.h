@@ -477,4 +477,11 @@ typedef NS_ENUM(NSUInteger, SBDUnreadChannelFilter) {
     SBDUnreadChannelFilterUnreadMessage = 1,
 };
 
+typedef NS_ENUM(NSUInteger, SBDScheduledUserMessageStatus) {
+    SBDScheduledUserMessageStatusScheduled = 0,
+    SBDScheduledUserMessageStatusSent = 1,
+    SBDScheduledUserMessageStatusCanceled = 2,
+    SBDScheduledUserMessageStatusFailed = 3,
+};
+
 #endif /* SBDTypes_h */

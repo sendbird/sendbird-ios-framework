@@ -717,5 +717,9 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 + (void)getUnreadItemCountWithKey:(SBDUnreadItemKey)key
                 completionHandler:(nonnull void(^)(SBDUnreadItemCount * _Nullable count, SBDError * _Nullable error))completionHandler;
 
++ (NSInteger)getSubscribedTotalUnreadMessageCount;
++ (NSInteger)getSubscribedCustomTypeTotalUnreadMessageCount;
++ (NSInteger)getSubscribedCustomTypeUnreadMessageCountWithCustomType:(nonnull NSString *)customType;
+
 @end
 
