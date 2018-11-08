@@ -8,7 +8,9 @@
 
 #import "SBDBaseChannel.h"
 #import "SBDUser.h"
-#import "SBDUserListQuery.h"
+#import "SBDParticipantListQuery.h"
+#import "SBDMutedUserListQuery.h"
+#import "SBDBannedUserListQuery.h"
 
 @class SBDOpenChannel;
 @class SBDOpenChannelListQuery;
@@ -427,21 +429,21 @@ DEPRECATED_ATTRIBUTE;
  *
  *  @return SBDUserListQuery instance for the participant list of the channel instance.
  */
-- (nullable SBDUserListQuery *)createParticipantListQuery;
+- (nullable SBDParticipantListQuery *)createParticipantListQuery;
 
 /**
  *  Creates a query instance for getting muted user list of the channel instance.
  *
  *  @return SBDUserListQuery instance for the muted user list.
  */
-- (nullable SBDUserListQuery *)createMutedUserListQuery;
+- (nullable SBDMutedUserListQuery *)createMutedUserListQuery;
 
 /**
  *  Creates a query instance for getting banned user list of the channel instance.
  *
  *  @return SBDUserListQuery instance for the banned user list.
  */
-- (nullable SBDUserListQuery *)createBannedUserListQuery;
+- (nullable SBDBannedUserListQuery *)createBannedUserListQuery;
 
 /**
  *  Refreshes the channel information.

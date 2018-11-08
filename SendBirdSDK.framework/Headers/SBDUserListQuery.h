@@ -44,8 +44,15 @@
  */
 @property (atomic, readonly) BOOL hasNext;
 
-@property (copy, nonatomic, readonly, nullable) NSString *metaDataKey;
-@property (copy, nonatomic, readonly, nullable) NSArray <NSString *> *metaDataValues;
+/**
+ @deprecated in 3.0.120
+ */
+@property (copy, nonatomic, readonly, nullable) NSString *metaDataKey DEPRECATED_ATTRIBUTE;
+
+/**
+ @deprecated in 3.0.120
+ */
+@property (copy, nonatomic, readonly, nullable) NSArray <NSString *> *metaDataValues DEPRECATED_ATTRIBUTE;
 
 /**
  *  DO NOT USE this initializer. Use `[SBDMain createBlockedUserListQuery]` instead.
@@ -60,9 +67,10 @@
 
  @param key The key of the meta data to use for filter.
  @param values The values of the meta data to use for filter.
+ @deprecated in 3.0.120
  */
 - (void)setMetaDataFilterWithKey:(NSString * _Nonnull)key
-                          values:(NSArray<NSString *> * _Nonnull)values;
+                          values:(NSArray<NSString *> * _Nonnull)values DEPRECATED_ATTRIBUTE;
 
 /**
  *  Shows if the query is loading.

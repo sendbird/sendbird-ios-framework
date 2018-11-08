@@ -17,6 +17,8 @@
 #import "SBDUserListQuery.h"
 #import "SBDInternalTypes.h"
 #import "SBDFriendListQuery.h"
+#import "SBDApplicationUserListQuery.h"
+#import "SBDBlockedUserListQuery.h"
 
 typedef void(^SBDBackgroundSessionBlock)(void);
 
@@ -355,8 +357,9 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  Creates `SBDUserListQuery` instance for getting a list of all users of this application.
  *
  *  @return `SBDUserListQuery` instance.
+ *  @deprecated in 3.0.120. Use `createApplicationUserListQuery`.
  */
-+ (nullable SBDUserListQuery *)createAllUserListQuery;
++ (nullable SBDUserListQuery *)createAllUserListQuery DEPRECATED_ATTRIBUTE;
 
 /**
  *  Creates `SBDUserListQuery` instance for gettting a list of users of this application with user IDs.
@@ -364,15 +367,24 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  @param userIds The user IDs to get user objects.
  *
  *  @return `SBDUserListQuery` instance.
+ *  @deprecated in 3.0.120. Use `createApplicationUserListQuery` and `userIdsFilter` of `SBDApplicationUserListQuery`.
  */
-+ (nullable SBDUserListQuery *)createUserListQueryWithUserIds:(NSArray<NSString *> * _Nonnull)userIds;
++ (nullable SBDUserListQuery *)createUserListQueryWithUserIds:(NSArray<NSString *> * _Nonnull)userIds DEPRECATED_ATTRIBUTE;
 
 /**
- *  Creates `SBDUserListQuery` instance for getting a list of blocked users by the current user.
- *
- *  @return `SBDUserListQuery` instance.
+ Creates `SBDApplicationUserListQuery` instance for getting a list of all users of this application.
+
+ @return `SBDApplicationUserListQuery` instance
+ @since 3.0.120
  */
-+ (nullable SBDUserListQuery *)createBlockedUserListQuery;
++ (nullable SBDApplicationUserListQuery *)createApplicationUserListQuery;
+
+/**
+ *  Creates `SBDBlockedUserListQuery` instance for getting a list of blocked users by the current user.
+ *
+ *  @return `SBDBlockedUserListQuery` instance.
+ */
++ (nullable SBDBlockedUserListQuery *)createBlockedUserListQuery;
 
 #pragma mark - For Current User
 /**

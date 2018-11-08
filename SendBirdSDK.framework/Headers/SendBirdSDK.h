@@ -16,6 +16,7 @@
 #import "SBDTypes.h"
 #import "SBDInternalTypes.h"
 #import "SBDError.h"
+#import "SBDConstants.h"
 
 #import "SBDUser.h"
 
@@ -47,6 +48,12 @@
 
 #import "SBDScheduledUserMessage.h"
 #import "SBDScheduledUserMessageParams.h"
+
+#import "SBDApplicationUserListQuery.h"
+#import "SBDBlockedUserListQuery.h"
+#import "SBDParticipantListQuery.h"
+#import "SBDBannedUserListQuery.h"
+#import "SBDMutedUserListQuery.h"
 
 //! Project version number for SendBirdSDK.
 FOUNDATION_EXPORT double SendBirdSDKVersionNumber;

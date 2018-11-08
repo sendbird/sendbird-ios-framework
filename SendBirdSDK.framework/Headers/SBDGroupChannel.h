@@ -12,6 +12,7 @@
 #import "SBDUser.h"
 #import "SBDMember.h"
 #import "SBDTypes.h"
+#import "SBDBannedUserListQuery.h"
 
 @class SBDUser, SBDMember;
 @class SBDGroupChannel, SBDGroupChannelParams, SBDGroupChannelTotalUnreadMessageCountParams;
@@ -186,7 +187,7 @@
  *  @return SBDUserListQuery The instance for the banned user list. Query only banned user list.
  *  @since 3.0.89
  */
-- (nullable SBDUserListQuery *)createBannedUserListQuery;
+- (nullable SBDBannedUserListQuery *)createBannedUserListQuery;
 
 /**
  *  Creates a group channel with user objects.

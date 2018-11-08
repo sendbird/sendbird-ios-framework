@@ -93,6 +93,7 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     SBDErrorInternalServerError = 500901,
     
     // SDK Internal Errors
+    SBDErrorUnknownError = 800000,
     SBDErrorInvalidInitialization = 800100,
     SBDErrorConnectionRequired = 800101,
     SBDErrorConnectionCanceled = 800102,

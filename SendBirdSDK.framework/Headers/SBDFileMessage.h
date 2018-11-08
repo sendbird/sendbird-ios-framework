@@ -13,7 +13,7 @@
 /**
  The `SBDThumbnailSize` class represents the thumbnail size of thumbnail.
  */
-@interface SBDThumbnailSize : NSObject
+@interface SBDThumbnailSize : NSObject <NSCopying>
 
 /**
  The max size of the thumbnail.
