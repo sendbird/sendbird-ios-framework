@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.0.121 (Nov 15, 2018)
+* Changed type of `sender` property in `SBDUserMessage` and `SBDFileMessage` from `SBDUser` to a new class `SBDSender` which extends `SBDUser`.
+  * `SBDSender` has `isBlockedByMe` property which indicates that the message sender is blocked by the current user (default: false).
+  * `isBlockedByMe` is valid in `SBDGroupChannel` only.
+  * Message from blocked users is delivered only when `block_mode` in `Application` is set to `explicit` mode. Otherwise, it's not visible nor delivered.
+* Minor bug fixed.
+
 ### v3.0.120 (Nov 8, 2018)
 * Separated `SBDUserListQuery` into the following query classes according to its specific role.
   * Added `SBDApplicationUserList` as a substitute for `SBDUserListQuery` (Recommended).

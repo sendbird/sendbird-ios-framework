@@ -82,7 +82,7 @@
 + (nullable instancetype)buildFromSerializedData:(NSData * _Nonnull)data;
 
 /**
- Serializes message object.
+ Serializes a user object.
  
  @return Serialized <span>data</span>.
  */

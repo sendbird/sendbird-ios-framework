@@ -19,6 +19,8 @@
 #import "SBDConstants.h"
 
 #import "SBDUser.h"
+#import "SBDMember.h"
+#import "SBDSender.h"
 
 #import "SBDBaseChannel.h"
 #import "SBDOpenChannel.h"

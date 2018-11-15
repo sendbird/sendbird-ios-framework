@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SBDBaseMessage.h"
 #import "SBDBaseChannel.h"
+#import "SBDSender.h"
 
 @class SBDCommand;
 @class SBDBaseChannel;
@@ -24,9 +25,9 @@
 @property (strong, nonatomic, readonly, nullable) NSString *message;
 
 /**
- *  Sender of the <span>message</span>. This is represented by `SBDUser` class.
+ *  Sender of the <span>message</span>. This is represented by `SBDSender` class.
  */
-@property (strong, nonatomic, nullable, getter = sender) SBDUser *sender;
+@property (strong, nonatomic, nullable, getter = sender) SBDSender *sender;
 
 /**
  *  Request ID for checking ACK.
@@ -50,6 +51,6 @@
  
  @return Sender of the message.
  */
-- (nonnull SBDUser *)sender;
+- (nonnull SBDSender *)sender;
 
 @end

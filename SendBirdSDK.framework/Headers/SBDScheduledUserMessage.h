@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SBDUser.h"
+#import "SBDSender.h"
 #import "SBDTypes.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -79,9 +80,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonnull, readonly) NSString *channelUrl;
 
 /**
- Sender of the <span>message</span>. This is represented by `SBDUser` class.
+ Sender of the <span>message</span>. This is represented by `SBDSender` class.
  */
-@property (strong, nullable, readonly) SBDUser *sender;
+@property (strong, nullable, readonly) SBDSender *sender;
 
 /**
  <span>Message</span> text.
