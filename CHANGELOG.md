@@ -1,5 +1,24 @@
 # Change Log
 
+### v3.0.122 (Nov 22, 2018)
+* Added `createDistinctChannelIfNotExistWithParams:completionHandler:` method in `SBDGroupChannel`.
+   * It creates distinct channel and gets the channel with `isCreated` in `completionHandler` which represents whether the channel is actually created or not.
+* Added `getMessageChangeLogsByTimestamp:completionHandler:` method in `SBDBaseChannel`.
+   * It retrieves message change logs since the given timestamp.
+* Added `hiddenState` type of `SBDGroupChannelHiddenState` property in `SBDGroupChannel` to get channel's hidden state.
+   * `SBDGroupChannelHiddenStateUnhidden`: It's not hidden channel.
+   * `SBDGroupChannelHiddenStateHiddenAllowAutoUnhide`: It's hidden channel which is automatically unhidden when new message comes in.
+   * `SBDGroupChannelHiddenStateHiddenPreventAutoUnhide`: It's hidden channel which is not unhidden when new message comes in.
+ * Added `hideChannelWithHidePreviousMessages:allowAutoUnhide:completionHandler:` method to allow automatic unhide on new message in `SBDGroupChannel`.
+ * Added `unhideChannelWithCompletionHandler:` method in `SBDGroupChannel` to unhide manually the channel.
+ * Added `channelHiddenStateFilter` property type of `SBDChannelHiddenStateFilter` in `SBDGroupChannelListQuery` to filter by `hiddenState`.
+   * `SBDChannelHiddenStateFilterUnhiddenOnly`: Get all unhidden channels. (default)
+   * `SBDChannelHiddenStateFilterHiddenOnly`: Get all hidden channels which `hiddenState` is `SBDGroupChannelHiddenStateHiddenAllowAutoUnhide` or `SBDGroupChannelHiddenStateHiddenPreventAutoUnhide`.
+   * `SBDChannelHiddenStateFilterHiddenAllowAutoUnhide`: Get channels which `hiddenState` is `SBDGroupChannelHiddenStateHiddenAllowAutoUnhide`.
+   * `SBDChannelHiddenStateFilterHiddenPreventAutoUnhide`: Get channels which `hiddenState` is `SBDGroupChannelHiddenStateHiddenPreventAutoUnhide`.
+  * `SBDGroupChannelParams` conforms `NSCopying`.
+  * Minor bug fixed
+
 ### v3.0.121 (Nov 15, 2018)
 * Changed type of `sender` property in `SBDUserMessage` and `SBDFileMessage` from `SBDUser` to a new class `SBDSender` which extends `SBDUser`.
   * `SBDSender` has `isBlockedByMe` property which indicates that the message sender is blocked by the current user (default: false).

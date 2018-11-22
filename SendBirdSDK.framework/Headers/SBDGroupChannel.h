@@ -137,6 +137,13 @@
 @property (atomic, readonly) long long invitedAt;
 
 /**
+ The hidden state of the channel.
+ 
+ @since 3.0.122
+ */
+@property (atomic, readonly) SBDGroupChannelHiddenState hiddenState;
+
+/**
  *  DO NOT USE this initializer. You can only get an instance type of `SBDGroupChannel` from SDK.
  */
 #pragma clang diagnostic push
@@ -500,13 +507,23 @@ DEPRECATED_ATTRIBUTE;
 DEPRECATED_ATTRIBUTE;
 
 /**
- *  Create a group channel with `SBDGroupChannelParams` class.
+ *  Creates a group channel with `SBDGroupChannelParams` class.
  *
  *  @param params               The parameter instance of SBDGroupChannelParams what has properties to create group channel.
  *  @param completionHandler    The handler block to execute. `channel` is the group channel instance which has the `userIds` as <span>members</span>.
  */
 + (void)createChannelWithParams:(nonnull SBDGroupChannelParams *)params
               completionHandler:(nonnull void(^)(SBDGroupChannel * _Nullable channel, SBDError * _Nullable error))completionHandler;
+
+/**
+ Creates a group channel with `SBDGroupChannelParams` class. The `completionHandlerWithInfo` returns `isCreated`, which notifies the `channel` instance is created now.
+
+ @param params The parameter instance of SBDGroupChannelParams what has properties to create group channel. The channel that is created by this method is always a distinct channel regardless of the `isDistinct` value of the `params`.
+ @param completionHandler The handler block to be executed. If the `channel` instance is new, then `isCreated` is YES.
+ @since 3.0.122
+ */
++ (void)createDistinctChannelIfNotExistWithParams:(nonnull SBDGroupChannelParams *)params
+      completionHandler:(nonnull void(^)(SBDGroupChannel * _Nullable channel, BOOL isCreated, SBDError * _Nullable error))completionHandler;
 
 /**
  *  Updates a group channel with user IDs.
@@ -675,7 +692,28 @@ DEPRECATED_ATTRIBUTE;
  *  @param hidePreviousMessages The option to hide the previous message of this channel when the channel will be appeared again.
  *  @param completionHandler The handler block to execute.
  */
-- (void)hideChannelWithHidePreviousMessages:(BOOL)hidePreviousMessages completionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler;
+- (void)hideChannelWithHidePreviousMessages:(BOOL)hidePreviousMessages
+                          completionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler;
+
+/**
+ Hides the group channrl with the auto unhide option. The channel will be hid from the channel list. If the `allowAutoUnhide` is YES, the channel will be appeared again when the other user send a message in the channel. However, if the `allowAutoUnhide` is NO, the channel will be appeared by `unhideChannelWithCompletionHandler:` method.
+
+ @param hidePreviousMessages The option to hide the previous message of this channel when the channel will be appeared again.
+ @param allowAutoUnhide The auto unhide option.
+ @param completionHandler THe handle block to be executed.
+ @since 3.0.122
+ */
+- (void)hideChannelWithHidePreviousMessages:(BOOL)hidePreviousMessages
+                            allowAutoUnhide:(BOOL)allowAutoUnhide
+                          completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
+ Unhides the group channel.
+
+ @param completionHandler THe handle block to be executed.
+ @since 3.0.122
+ */
+- (void)unhideChannelWithCompletionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler;
 
 /**
  *  Leaves the group channel. The channel will be disappeared from the channel list. If join the channel, the invitation is required.

@@ -11,10 +11,15 @@
 
 #import <Foundation/Foundation.h>
 
-@class SBDOpenChannel, SBDFileMessage, SBDError;
+@class SBDOpenChannel, SBDBaseMessage, SBDFileMessage, SBDError;
 
 typedef void (^SBDOpenChannelHandler)(SBDOpenChannel * _Nullable channel, SBDError * _Nullable error);
 typedef void (^SBDFileMessageHandler)(SBDFileMessage * _Nullable message, SBDError * _Nullable error);
 typedef void (^SBDBinaryProgressHandler)(int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend);
+typedef void (^SBDMessageChangeLogsHandler)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages,
+                                            NSArray<NSNumber *> * _Nullable deletedMessageIds,
+                                            BOOL hasMore,
+                                            NSString * _Nullable token,
+                                            SBDError * _Nullable error);
 
 #endif /* SBDConstants_h */

@@ -143,6 +143,12 @@ DEPRECATED_ATTRIBUTE;
 @property (copy, nonatomic, nullable) NSString *metaDataOrderKeyFilter;
 
 /**
+ Sets to filter channels by the hidden state. The default value is `SBDChannelHiddenStateFilterUnhiddenOnly`.
+ @since 3.0.122
+ */
+@property (atomic) SBDChannelHiddenStateFilter channelHiddenStateFilter;
+
+/**
  *  DO NOT USE this initializer. Use `[SBDGroupChannel createMyGroupChannelListQuery]` instead.
  */
 #pragma clang diagnostic push

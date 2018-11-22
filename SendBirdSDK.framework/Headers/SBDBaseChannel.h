@@ -1480,6 +1480,38 @@ DEPRECATED_ATTRIBUTE;
                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages, NSArray<NSNumber *> * _Nullable deletedMessageIds, BOOL hasMore, NSString * _Nullable token, SBDError * _Nullable error))completionHandler;
 
 /**
+ *  Requests updated messages and deleted message IDs by the timestamp in this channel.
+ *
+ *  @param timestamp  The number of milli-seconds(msec). Requests changelogs by that time. This value must not be negative.
+ *  @param completionHandler  The handler block to execute. The `updatedMessages` is the messages that were updated. The `deletedMessageIds` is the list of the deleted message IDs. If there are more changelogs, but doesn't returned, then the `hasMore` is YES. The `token` can be used to get next more changedlogs.
+ *
+ *  @since 3.0.122
+ */
+- (void)getMessageChangeLogsByTimestamp:(long long)timestamp
+                      completionHandler:(nonnull void (^)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages,
+                                                          NSArray<NSNumber *> * _Nullable deletedMessageIds,
+                                                          BOOL hasMore,
+                                                          NSString * _Nullable token,
+                                                          SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Requests updated messages contains metaarray and deleted message IDs by the timestamp in this channel.
+ *
+ *  @param timestamp  The number of milli-seconds(msec). Requests changelogs by that time. This value must not be negative.
+ *  @param includeMetaArray If YES, the `updatedMessages` has meta array.
+ *  @param completionHandler  The handler block to execute. The `updatedMessages` is the messages that were updated. The `deletedMessageIds` is the list of the deleted message IDs. If there are more changelogs, but doesn't returned, then the `hasMore` is YES. The `token` can be used to get next more changedlogs.
+ *
+ *  @since 3.0.122
+ */
+- (void)getMessageChangeLogsByTimestamp:(long long)timestamp
+                       includeMetaArray:(BOOL)includeMetaArray
+                      completionHandler:(nonnull void (^)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages,
+                                                          NSArray<NSNumber *> * _Nullable deletedMessageIds,
+                                                          BOOL hasMore,
+                                                          NSString * _Nullable token,
+                                                          SBDError * _Nullable error))completionHandler;
+
+/**
  Creates keys of meta array for the message.
 
  @param message The message object. This method creates `keys` in it.

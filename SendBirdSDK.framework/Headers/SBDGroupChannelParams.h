@@ -19,7 +19,7 @@
  *
  */
 
-@interface SBDGroupChannelParams : NSObject
+@interface SBDGroupChannelParams : NSObject<NSCopying>
 
 /**
  *  Represents the channel is to be updated.

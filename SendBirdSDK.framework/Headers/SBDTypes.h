@@ -485,4 +485,36 @@ typedef NS_ENUM(NSUInteger, SBDScheduledUserMessageStatus) {
     SBDScheduledUserMessageStatusFailed = 3,
 };
 
+/**
+ The enum type for the hidden state of a group channel.
+
+ - SBDGroupChannelHiddenStateUnhidden: Shows the channel is unhidden.
+ - SBDGroupChannelHiddenStateHiddenAllowAutoUnhide: Shows the channel will be unhidden automatically when there is a new message in the channel.
+ - SBDGroupChannelHiddenStateHiddenPreventAutoUnhide: Shows the channel will not be unhidden automatically.
+ 
+ @since 3.0.122
+ */
+typedef NS_ENUM(NSUInteger, SBDGroupChannelHiddenState) {
+    SBDGroupChannelHiddenStateUnhidden = 0,
+    SBDGroupChannelHiddenStateHiddenAllowAutoUnhide   = 1,
+    SBDGroupChannelHiddenStateHiddenPreventAutoUnhide = 2,
+};
+
+/**
+ The enum type to filter my group channels with the hidden state.
+
+ - SBDChannelHiddenStateFilterUnhiddenOnly: Shows the unhidden channels only.
+ - SBDChannelHiddenStateFilterHiddenOnly: Shows the hidden channels only.
+ - SBDChannelHiddenStateFilterHiddenAllowAutoUnhide: Shows the channels will be unhidden automatically when there is a new message in the channel.
+ - SBDChannelHiddenStateFilterHiddenPreventAutoUnhide: Shows the channels will not be unhidden automatically.
+ 
+ @since 3.0.122
+ */
+typedef NS_ENUM(NSUInteger, SBDChannelHiddenStateFilter) {
+    SBDChannelHiddenStateFilterUnhiddenOnly = 0,
+    SBDChannelHiddenStateFilterHiddenOnly   = 1,
+    SBDChannelHiddenStateFilterHiddenAllowAutoUnhide = 2,
+    SBDChannelHiddenStateFilterHiddenPreventAutoUnhide = 3,
+};
+
 #endif /* SBDTypes_h */
