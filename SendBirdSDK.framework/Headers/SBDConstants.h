@@ -11,7 +11,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class SBDOpenChannel, SBDBaseMessage, SBDFileMessage, SBDError;
+@class SBDGroupChannel, SBDOpenChannel;
+@class SBDBaseMessage, SBDFileMessage;
+@class SBDError;
 
 typedef void (^SBDOpenChannelHandler)(SBDOpenChannel * _Nullable channel, SBDError * _Nullable error);
 typedef void (^SBDFileMessageHandler)(SBDFileMessage * _Nullable message, SBDError * _Nullable error);
@@ -21,5 +23,10 @@ typedef void (^SBDMessageChangeLogsHandler)(NSArray<SBDBaseMessage *> * _Nullabl
                                             BOOL hasMore,
                                             NSString * _Nullable token,
                                             SBDError * _Nullable error);
+typedef void(^SBDChannelChangeLogsHandler)(NSArray <SBDGroupChannel *> * _Nullable updatedChannels,
+                                           NSArray <NSString *> * _Nullable deletedChannelUrls,
+                                           BOOL hasMore,
+                                           NSString * _Nullable token,
+                                           SBDError * _Nullable error);
 
 #endif /* SBDConstants_h */

@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.123 (Nov 30, 2018)
+* Fixed bug that updates unchanged properties of channel or message.
+
 ### v3.0.122 (Nov 22, 2018)
 * Added `createDistinctChannelIfNotExistWithParams:completionHandler:` method in `SBDGroupChannel`.
    * It creates distinct channel and gets the channel with `isCreated` in `completionHandler` which represents whether the channel is actually created or not.

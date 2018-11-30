@@ -33,7 +33,7 @@
 /**
  The push notification delivery option that determines how to deliver the push notification when sending a user or a file message. The default value is `SBDPushNotificationDeliveryOptionDefault`.
  */
-@property (atomic) SBDPushNotificationDeliveryOption pushNotificationDeliveryOption;
+@property (nonatomic) SBDPushNotificationDeliveryOption pushNotificationDeliveryOption;
 
 /**
  Meta array keys.
@@ -45,7 +45,7 @@
  *
  *  @since 3.0.103
  */
-@property (atomic) SBDMentionType mentionType;
+@property (nonatomic) SBDMentionType mentionType;
 
 /**
  *  Can mention to specific users.

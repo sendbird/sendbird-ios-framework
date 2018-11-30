@@ -733,5 +733,32 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 + (NSInteger)getSubscribedCustomTypeTotalUnreadMessageCount;
 + (NSInteger)getSubscribedCustomTypeUnreadMessageCountWithCustomType:(nonnull NSString *)customType;
 
+#pragma mark - channel change logs
+/**
+ *  Requests updated channels and deleted channel URLs with token in the all my group channels.
+ *
+ *  @param token  The token used to get next pagination of changelogs.
+ *  @param customTypes  The list of custom types to request. If not set, requests all of my group channels.
+ *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
+ *
+ *  @since 3.0.123
+ */
++ (void)getMyGroupChannelChangeLogsByToken:(nullable NSString *)token
+                               customTypes:(nullable NSArray <NSString *> *)customTypes
+                         completionHandler:(nonnull SBDChannelChangeLogsHandler)completionHandler;
+
+/**
+ *  Requests updated channels and deleted channel URLs by timestamp in the all my group channels.
+ *
+ *  @param timestamp  The number of milli-seconds(msec). Requests changelogs from that time. This value must not be negative.
+ *  @param customTypes  The list of custom types to request. If not set, requests all of my group channels.
+ *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
+ *
+ *  @since 3.0.123
+ */
++ (void)getMyGroupChannelChangeLogsByTimestamp:(long long)timestamp
+                                   customTypes:(nullable NSArray <NSString *> *)customTypes
+                             completionHandler:(nonnull SBDChannelChangeLogsHandler)completionHandler;
+
 @end
 

@@ -13,6 +13,7 @@
 #import "SBDMember.h"
 #import "SBDTypes.h"
 #import "SBDBannedUserListQuery.h"
+#import "SBDConstants.h"
 
 @class SBDUser, SBDMember;
 @class SBDGroupChannel, SBDGroupChannelParams, SBDGroupChannelTotalUnreadMessageCountParams;
