@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.124 (Dec 3, 2018)
+* Fixed bug that can't toggle distinct channel.
+
 ### v3.0.123 (Nov 30, 2018)
 * Fixed bug that updates unchanged properties of channel or message.
 
