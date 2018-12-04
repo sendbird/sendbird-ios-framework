@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.125 (Dec 4, 2018)
+* Fixed bug about unread message count subscription.
+
 ### v3.0.124 (Dec 3, 2018)
 * Fixed bug that can't toggle distinct channel.
 
