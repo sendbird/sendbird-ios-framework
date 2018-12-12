@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.126 (Dec 12, 2018)
+* Bitcode support for Xcode 9.
+
 ### v3.0.125 (Dec 4, 2018)
 * Fixed bug about unread message count subscription.
 

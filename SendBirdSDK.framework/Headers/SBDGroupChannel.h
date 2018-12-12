@@ -943,7 +943,7 @@ DEPRECATED_ATTRIBUTE;
  *
  *  @param customTypes The array of the custom types. If the array is nil or the length of the array is zero, the total unread message count will be the same result of the `getTotalUnreadMessageCountWithCompletionHandler:`.
  *  @param completionHandler The handler block to execute. The `unreadCount` is the total unread message count of the channels that have the specific custom types. If there isn't any error, the `error` will be nil.
- *  @deprecated in 3.0.116  Use `[SBDMain getTotalUnreadMessageCountWithParams:(:completionHandler:]` instead.
+ *  @deprecated in 3.0.116  Use `[SBDMain getTotalUnreadMessageCountWithParams:completionHandler:]` instead.
  */
 + (void)getTotalUnreadMessageCountWithChannelCustomTypes:(NSArray<NSString *> * _Nullable)customTypes
                                        completionHandler:(nullable void (^)(NSUInteger unreadCount, SBDError * _Nullable error))completionHandler
@@ -956,7 +956,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param completionHandler  The handler block to be executed after getting total unread message count. This block has no return value and takes two argument, the one is the number of unread message and the other is error.
  *
  *  @since 3.0.97
- *  @deprecated in 3.0.116  Use `[SBDMain getTotalUnreadMessageCountWithParams:(:completionHandler:]` instead.
+ *  @deprecated in 3.0.116  Use `[SBDMain getTotalUnreadMessageCountWithParams:completionHandler:]` instead.
  */
 + (void)getTotalUnreadMessageCountWithParams:(nonnull SBDGroupChannelTotalUnreadMessageCountParams *)params
                            completionHandler:(nonnull void (^)(NSUInteger unreadCount, SBDError * _Nullable error))completionHandler
