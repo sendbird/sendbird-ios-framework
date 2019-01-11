@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.127 (Jan 11, 2019)
+* Fixed bug of connection.
+
 ### v3.0.126 (Dec 12, 2018)
 * Bitcode support for Xcode 9.
 
