@@ -1,5 +1,14 @@
 # Change Log
 
+### v3.0.128 (Jan 17, 2019)
+* Divide push options for the detail triggers.
+  * New enum type of push trigger option, `SBDPushTriggerOption` and `SBDGroupChannelPushTriggerOption`.
+  * Added `[SBDMain setPushTriggerOption:completionHandler:]` and `[SBDMain getPushTriggerOptionWithCompletionHandler:]` class methods to set/get whether the current user receives remote push notification in the whole group channel.
+  * Added `setMyPushTriggerOption:completionHandler:` and `getMyPushTriggerOptionWithCompletionHandler:` instance methods in `SBDGroupChannel`. It sets/gets whether the current user receives remote push notification in the group channel.
+* Snooze or Stop snooze remote push notification in specific duration.
+  * Added `[SBDMain setSnoozePeriodEnable:startTimestamp:endTimestamp:completionHandler:]` class methods to start or stop snooze period.
+  * Added `[SBDMain getSnoozePeriod:]` class methods to get snooze period.
+
 ### v3.0.127 (Jan 11, 2019)
 * Fixed bug of connection.
 

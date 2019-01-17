@@ -100,8 +100,18 @@
 
 /**
  *  Represents push notification is on or off. If true, push notification is on.
+ *  @see use `myPushTriggerOption` instead.
+ *
+ *  @deprecated in v3.0.128
  */
-@property (atomic, readonly) BOOL isPushEnabled;
+@property (atomic, readonly) BOOL isPushEnabled DEPRECATED_ATTRIBUTE;
+
+/**
+ *  Represents which push notification for the current user to receive in a group channel.
+ *
+ *  @since 3.0.128
+ */
+@property (atomic, readonly) SBDGroupChannelPushTriggerOption myPushTriggerOption;
 
 /**
  *  Represents this channel is hidden or not.
@@ -917,6 +927,28 @@ DEPRECATED_ATTRIBUTE;
  */
 - (void)getPushPreferenceWithCompletionHandler:(nullable void (^)(BOOL pushOn, SBDError *_Nullable error))completionHandler
 DEPRECATED_ATTRIBUTE;
+
+/**
+ *  Changes a setting that decides which push notification for the current user to receive in the group channel.
+ *  If a value of option is `SBDGroupChannelPushTriggerOptionDefault`, a push trigger option in this group channel follows a push trigger option of the current user.
+ *  It is related with `[SBDMain setPushTriggerOption:completionHandler:]`.
+ *
+ *  @param pushTriggerOption  The options to choose which push notification for the current user to receive.
+ *  @param completionHandler  The handler block to execute when setting a push trigger option of the current user is completed.
+ *
+ *  @since 3.0.128
+ */
+- (void)setMyPushTriggerOption:(SBDGroupChannelPushTriggerOption)pushTriggerOption
+             completionHandler:(nullable SBDErrorHandler)completionHandler;
+
+/**
+ *  Requests a setting that decides which push notification for the current user to receive in the group channel.
+ *
+ *  @param completionHandler  The handler block to execute when getting a push trigger option of the current user is completed.
+ *
+ *  @since 3.0.128
+ */
+- (void)getMyPushTriggerOptionWithCompletionHandler:(nonnull SBDGroupChannelPushTriggerOptionHandler)completionHandler;
 
 /**
  *  Gets the total unread message count of all group channels.

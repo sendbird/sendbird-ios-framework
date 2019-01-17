@@ -502,7 +502,7 @@ typedef NS_ENUM(NSUInteger, SBDGroupChannelHiddenState) {
 
 /**
  The enum type to filter my group channels with the hidden state.
-
+ 
  - SBDChannelHiddenStateFilterUnhiddenOnly: Shows the unhidden channels only.
  - SBDChannelHiddenStateFilterHiddenOnly: Shows the hidden channels only.
  - SBDChannelHiddenStateFilterHiddenAllowAutoUnhide: Shows the channels will be unhidden automatically when there is a new message in the channel.
@@ -515,6 +515,38 @@ typedef NS_ENUM(NSUInteger, SBDChannelHiddenStateFilter) {
     SBDChannelHiddenStateFilterHiddenOnly   = 1,
     SBDChannelHiddenStateFilterHiddenAllowAutoUnhide = 2,
     SBDChannelHiddenStateFilterHiddenPreventAutoUnhide = 3,
+};
+
+/**
+ The options to choose which push notification for the current user to receive.
+ 
+ - SBDPushTriggerOptionAll: Receive all of remote push notification.
+ - SBDPushTriggerOptionOff: Do NOT receive any remote push notification.
+ - SBDPushTriggerOptionMentionOnly: Receive only mentioned messages's notification.
+ 
+ @since 3.0.128
+ */
+typedef NS_ENUM(NSUInteger, SBDPushTriggerOption) {
+    SBDPushTriggerOptionAll = 0,
+    SBDPushTriggerOptionOff,
+    SBDPushTriggerOptionMentionOnly,
+};
+
+/**
+ The options to choose which push notification for the current user to receive in a group channel.
+ 
+ - SBDGroupChannelPushTriggerOptionDefault: Follow the push trigger of current user. See `SBDPushTriggerOption`.
+ - SBDGroupChannelPushTriggerOptionAll: Receive all of remote push notification.
+ - SBDGroupChannelPushTriggerOptionOff: Do NOT receive any remote push notification.
+ - SBDGroupChannelPushTriggerOptionMentionOnly: Receive only mentioned messages's notification.
+ 
+ @since 3.0.128
+ */
+typedef NS_ENUM(NSUInteger, SBDGroupChannelPushTriggerOption) {
+    SBDGroupChannelPushTriggerOptionDefault = 0,
+    SBDGroupChannelPushTriggerOptionAll,
+    SBDGroupChannelPushTriggerOptionOff,
+    SBDGroupChannelPushTriggerOptionMentionOnly
 };
 
 #endif /* SBDTypes_h */

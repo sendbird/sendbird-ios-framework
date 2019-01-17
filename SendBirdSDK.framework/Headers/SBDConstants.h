@@ -10,6 +10,7 @@
 #define SBDConstants_h
 
 #import <Foundation/Foundation.h>
+#import "SBDError.h"
 
 @class SBDGroupChannel, SBDOpenChannel;
 @class SBDBaseMessage, SBDFileMessage;
@@ -28,5 +29,14 @@ typedef void(^SBDChannelChangeLogsHandler)(NSArray <SBDGroupChannel *> * _Nullab
                                            BOOL hasMore,
                                            NSString * _Nullable token,
                                            SBDError * _Nullable error);
+typedef void(^SBDSnoozePeriodHandler)(BOOL enabled,
+                                      long long startTimestamp,
+                                      long long endTimestamp,
+                                      SBDError * _Nullable error);
+typedef void(^SBDPushTriggerOptionHandler)(SBDPushTriggerOption pushTriggerOption,
+                                           SBDError * _Nullable error);
+typedef void(^SBDGroupChannelPushTriggerOptionHandler)(SBDGroupChannelPushTriggerOption pushTriggerOption,
+                                                       SBDError * _Nullable error);
+typedef void(^SBDErrorHandler)(SBDError * _Nullable error);
 
 #endif /* SBDConstants_h */

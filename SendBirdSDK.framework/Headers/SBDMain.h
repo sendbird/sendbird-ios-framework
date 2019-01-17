@@ -526,8 +526,11 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 + (void)unblockUser:(SBDUser * _Nonnull)user
   completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
+#pragma mark - push preference
 /**
  *  Sets Do-not-disturb.
+ *  This method make snooze(or stop snooze) repeatedly.
+ *  If you want to snooze specific period, use `setSnoozePeriodEnable:startTimestamp:endTimestamp:completionHandler:]`.
  *
  *  @param enable            Enables or not.
  *  @param startHour         Start hour.
@@ -551,6 +554,53 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  @param completionHandler The handler block to execute.
  */
 + (void)getDoNotDisturbWithCompletionHandler:(nullable void (^)(BOOL isDoNotDisturbOn, int startHour, int startMin, int endHour, int endMin, NSString * _Nonnull timezone, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Makes a current user snooze/receive remote push notification in specific duration.
+ *  If you use `[SBDMain setDoNotDisturbWithEnable:startHour:startMin:endHour:endMin:timezone:completionHandler:]` method as well, both methods are applied together.
+ *  Keep in mind snoozing(or stop snoozing) is applied from this method *only once*, not repeatedly.
+ *  If you want to snooze(do not disturb) repeatedly, use `[SBDMain setDoNotDisturbWithEnable:startHour:startMin:endHour:endMin:timezone:completionHandler:]`.
+ *
+ *  @param enabled  Enabled means snooze remote push notification in duration. If set to disabled, current user can receive remote push notification.
+ *  @param startTimestamp Unix timestamp to start snooze.
+ *  @param endTimestamp  Unix timestamp to end snooze.
+ *  @param completionHandler  The handler block to execute when setting notification snoozed is complete.
+ *
+ *  @since 3.0.128
+ */
++ (void)setSnoozePeriodEnable:(BOOL)enabled
+               startTimestamp:(long long)startTimestamp
+                 endTimestamp:(long long)endTimestamp
+            completionHandler:(nullable SBDErrorHandler)completionHandler;
+
+/**
+ *  Requests whether the current user snooze remote push notification.
+ *
+ *  @param completionHandler  The handler block to execute when setting notification snoozed is complete.
+ *
+ *  @since 3.0.128
+ */
++ (void)getSnoozePeriod:(nonnull SBDSnoozePeriodHandler)completionHandler;
+
+/**
+ *  Changes a setting that decides which push notification for the current user to receive in all of the group channel.
+ *
+ *  @param pushTriggerOption  The options to choose which push notification for the current user to receive.
+ *  @param completionHandler  The handler block to execute when setting a push trigger option of the current user is completed.
+ *
+ *  @since 3.0.128
+ */
++ (void)setPushTriggerOption:(SBDPushTriggerOption)pushTriggerOption
+           completionHandler:(nullable SBDErrorHandler)completionHandler;
+
+/**
+ *  Requests a setting that decides which push notification for the current user to receive in all of the group channel.
+ *
+ *  @param completionHandler  The handler block to execute when getting a push trigger of the current user is completed.
+ *
+ *  @since 3.0.128
+ */
++ (void)getPushTriggerOptionWithCompletionHandler:(nonnull SBDPushTriggerOptionHandler)completionHandler;
 
 /**
  Sets push sound
