@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.129 (Jan 19, 2019)
+* Removed LLVM instrumentation.
+
 ### v3.0.128 (Jan 17, 2019)
 * Divide push options for the detail triggers.
   * New enum type of push trigger option, `SBDPushTriggerOption` and `SBDGroupChannelPushTriggerOption`.
