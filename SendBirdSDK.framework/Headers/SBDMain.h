@@ -62,10 +62,18 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 /**
  Sets the authentication timeout managed by `authenticateWithAuthInfoRequestHandler:completionHandler:` of `SBDConnectionManager`. The default value is 10 seconds.
 
- @param timeout Timeout in seconds. It must be greater than 0. Otherwhise, the default value (10 seconds) will be set.
+ @param timeout Timeout in seconds. It must be greater than 0. Otherwise, the default value (10 seconds) will be set.
  @since 3.0.109
  */
 + (void)setAuthenticationTimeout:(NSTimeInterval)timeout;
+
+/**
+ Sets the timeout for file transfer. This value affects the methods that send a binary data including sending file messages, creating and updating channels.
+
+ @param timeout Timeout in seconds. It must be greater than 0. Otherwise, the default value (60 seconds) will be set.
+ @since 3.0.130
+ */
++ (void)setFileTransferTimeout:(NSInteger)timeout;
 
 @end
 
