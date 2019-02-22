@@ -707,7 +707,7 @@ DEPRECATED_ATTRIBUTE;
                           completionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler;
 
 /**
- Hides the group channrl with the auto unhide option. The channel will be hid from the channel list. If the `allowAutoUnhide` is YES, the channel will be appeared again when the other user send a message in the channel. However, if the `allowAutoUnhide` is NO, the channel will be appeared by `unhideChannelWithCompletionHandler:` method.
+ Hides the group channel with the auto unhide option. The channel will be hid from the channel list. If the `allowAutoUnhide` is YES, the channel will be appeared again when the other user send a message in the channel. However, if the `allowAutoUnhide` is NO, the channel will be appeared by `unhideChannelWithCompletionHandler:` method.
 
  @param hidePreviousMessages The option to hide the previous message of this channel when the channel will be appeared again.
  @param allowAutoUnhide The auto unhide option.

@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.131 (Feb 22, 2019)
+* Fixed minor bug.
+
 ### v3.0.130 (Jan 31, 2019)
 * Added `setFileTransferTimeout:` in `SBDOptions` class to set timeout for file transfer.
 
