@@ -43,5 +43,5 @@ Now you can see installed SendBird framework by inspecting YOUR_PROJECT.xcworksp
  * Local cache integrated: store channel/message data in local storage for fast view loading.  
  * Event-driven data handling: subscribe channel/message event like `insert`, `update`, `remove` at a single spot in order to apply data event to view.  
   
-Check out [iOS Sample with SyncManager](https://github.com/smilefam/SendBird-iOS/syncmanager) which is same as [iOS Sample](https://github.com/smilefam/SendBird-iOS) with [SyncManager](https://github.com/smilefam/sendbird-syncmanager-ios) integrated.    
+Check out [iOS Sample with SyncManager](https://github.com/smilefam/SendBird-iOS/tree/master/syncmanager) which is same as [iOS Sample](https://github.com/smilefam/SendBird-iOS) with [SyncManager](https://github.com/smilefam/sendbird-syncmanager-ios) integrated.    
 For more information about [SyncManager](https://github.com/smilefam/sendbird-syncmanager-ios) integrated, please refer to [SyncManager README](https://github.com/smilefam/sendbird-syncmanager-ios/blob/master/README.md). 
