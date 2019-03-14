@@ -203,4 +203,20 @@ DEPRECATED_ATTRIBUTE;
  */
 - (void)loadNextPageWithCompletionHandler:(nullable void (^)(NSArray<SBDGroupChannel *> * _Nullable channels, SBDError *_Nullable error))completionHandler;
 
+#pragma mark - serailzation
+/**
+ *  Returns my group channel list query from given binary data.
+ *
+ *  @param data The binary data from `serialize`. Must not be nil.
+ *  @return SBDGroupChannelListQuery The query instance from which to deserialized data. Can be nil if an internal error occurs.
+ */
++ (nullable instancetype)buildFromSerializedData:(NSData * _Nonnull)data;
+
+/**
+ *  Returns a serialized binary data from a query.
+ *
+ *  @return A serialized binary data from query, or nil if an internal error occurs.
+ */
+- (nullable NSData *)serialize;
+
 @end

@@ -500,6 +500,47 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 + (void)unregisterAllPushTokenWithCompletionHandler:(nullable void (^)(NSDictionary * _Nullable response, SBDError * _Nullable error))completionHandler;
 
 /**
+ *  Gets the pending push token for PushKit.
+ *
+ *  @return Returns the pending push token for PushKit.
+ *
+ *  @since 3.0.132
+ */
++ (nullable NSData *)getPendingPushKitToken;
+
+/**
+ *  Registers the current device token for PushKit to SendBird.
+ *
+ *  @param devToken          Device token for PushKit.
+ *  @param unique            If YES, register device token after removing exsiting all device tokens of the current user. If NO, just add the device token.
+ *  @param completionHandler The handler block to execute. `status` is the status for push token registration. It is defined in `SBDPushTokenRegistrationStatus`. `SBDPushTokenRegistrationStatusSuccess` represents the `devToken` is registered. `SBDPushTokenRegistrationStatusPending` represents the `devToken` is not registered because the connection is not established, so this method has to be invoked with `getPendingPushToken` method after the connection. The `devToken` is retrived by `getPendingPushToken`. `SBDPushTokenRegistrationStatusError` represents the push token registration is failed.
+ *  @since 3.0.132
+ */
++ (void)registerDevicePushKitToken:(NSData * _Nonnull)devToken
+                            unique:(BOOL)unique
+                 completionHandler:(nullable void (^)(SBDPushTokenRegistrationStatus status, SBDError * _Nullable error))completionHandler;
+
+/**
+*  Unregisters the current device token for PushKit from SendBird.
+*
+*  @param devToken          Device token for PushKit.
+*  @param completionHandler The handler block to execute.
+*
+*  @since 3.0.132
+*/
++ (void)unregisterPushKitToken:(NSData * _Nonnull)devToken
+             completionHandler:(nullable void (^)(NSDictionary * _Nullable response, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Unregisters all device tokens for PushKit for the current user from SendBird.
+ *
+ *  @param completionHandler The handler block to execute.
+ *
+ *  @since 3.0.132
+ */
++ (void)unregisterAllPushKitTokenWithCompletionHandler:(nullable void (^)(NSDictionary * _Nullable response, SBDError * _Nullable error))completionHandler;
+
+/**
  *  Blocks the specified user.
  *
  *  @param userId            The user ID to be blocked.

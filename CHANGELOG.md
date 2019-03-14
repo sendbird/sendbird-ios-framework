@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.132 (Mar 14, 2019)
+* Fixed minor bug.
+
 ### v3.0.131 (Feb 22, 2019)
 * Fixed minor bug.
 
