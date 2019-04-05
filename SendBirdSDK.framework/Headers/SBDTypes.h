@@ -549,4 +549,23 @@ typedef NS_ENUM(NSUInteger, SBDGroupChannelPushTriggerOption) {
     SBDGroupChannelPushTriggerOptionMentionOnly
 };
 
+/**
+ Constants of type for device push token.
+ 
+ - SBDPushTokenTypeNone: No type.
+ - SBDPushTokenTypeGCM: Token from Android device.
+ - SBDPushTokenTypeAPNS: Normal Token from iOS device.
+ - SBDPushTokenTypeAPNSVoIP: Token used for VoIP from iOS device.
+ 
+ @since 3.0.134
+ */
+
+typedef NS_ENUM(NSUInteger, SBDPushTokenType) {
+    SBDPushTokenTypeNone = 0,
+    SBDPushTokenTypeGCM,
+    SBDPushTokenTypeAPNS,
+    SBDPushTokenTypeAPNSVoIP,
+};
+
+
 #endif /* SBDTypes_h */

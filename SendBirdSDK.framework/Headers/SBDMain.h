@@ -443,6 +443,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
                           progressHandler:(nullable void (^)(int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend))progressHandler
                         completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
+#pragma mark - push token
 /**
  *  Gets the pending push token.
  *
@@ -540,6 +541,20 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  */
 + (void)unregisterAllPushKitTokenWithCompletionHandler:(nullable void (^)(NSDictionary * _Nullable response, SBDError * _Nullable error))completionHandler;
 
+/**
+ *  Requests device push tokens list of current user after the token.
+ *
+ *  @param token  The token used to get next pagination of deive push tokens.
+ *  @param pushTokenType  The enum type to represent the type of push token.
+ *  @param completionHandler  The handler block to be executed after requests. This block has no return value and takes 5 arguments that are device push token list, push token type you are requesting, boolean that indicates having next pagination, token to be used next pagination and error.
+ *
+ *  @since 3.0.134
+ */
++ (void)getMyPushTokensByToken:(nullable NSString *)token
+                 pushTokenType:(SBDPushTokenType)pushTokenType
+             completionHandler:(nonnull SBDGetPushTokensHandler)completionHandler;
+
+#pragma mark - block
 /**
  *  Blocks the specified user.
  *

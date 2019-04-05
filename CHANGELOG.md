@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.134 (Apr 5, 2019)
+* Improved stability.
+
 ### v3.0.133 (Mar 21, 2019)
 * Improved stability.
 

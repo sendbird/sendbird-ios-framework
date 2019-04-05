@@ -11,6 +11,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SBDError.h"
+#import "SBDTypes.h"
 
 @class SBDGroupChannel, SBDOpenChannel;
 @class SBDBaseMessage, SBDFileMessage;
@@ -35,6 +36,11 @@ typedef void(^SBDSnoozePeriodHandler)(BOOL enabled,
                                       SBDError * _Nullable error);
 typedef void(^SBDPushTriggerOptionHandler)(SBDPushTriggerOption pushTriggerOption,
                                            SBDError * _Nullable error);
+typedef void(^SBDGetPushTokensHandler)(NSArray<NSString *> * _Nonnull pushTokens,
+                                       SBDPushTokenType pushTokenType,
+                                       BOOL hasMore,
+                                       NSString * _Nullable token,
+                                       SBDError * _Nullable error);
 typedef void(^SBDGroupChannelPushTriggerOptionHandler)(SBDGroupChannelPushTriggerOption pushTriggerOption,
                                                        SBDError * _Nullable error);
 typedef void(^SBDErrorHandler)(SBDError * _Nullable error);
