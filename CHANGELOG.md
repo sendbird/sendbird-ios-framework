@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.135 (Apr 11, 2019)
+* Improved stability.
+* Fixed connection minor issue.
+
 ### v3.0.134 (Apr 5, 2019)
 * Improved stability.
 
