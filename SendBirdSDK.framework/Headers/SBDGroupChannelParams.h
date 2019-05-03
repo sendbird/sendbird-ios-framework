@@ -55,6 +55,15 @@
 @property (nonatomic, setter=setEphemeral:) BOOL isEphemeral;
 
 /**
+ *  Represents a boolean whether the public group channel is discoverable.
+ *  It is only for creating or updating a public group channel. If the value is YES(true) and `isPublic` is NO(false), you will get an error from call-back of creating/updateing channel.
+ *  The default value is YES(true).
+ *
+ *  @since 3.0.136
+ */
+@property (nonatomic, getter=isDiscoverable) BOOL discoverable;
+
+/**
  *  Represents the custom type of group channel.
  */
 @property (nonatomic, copy, nullable) NSString *customType;

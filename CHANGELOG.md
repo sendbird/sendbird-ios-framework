@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.136 (MAY 3, 2019)
+* Added `discoverable` property to `SBDGroupChannel` and `SBDGroupChannelParams`.
+  * if `discoverable` of a public group channel is set to false(NO), then the channel will not appear during querying with `SBDPublicGroupChannelListQuery`. The default value of `discoverable` is true(YES).
+
 ### v3.0.135 (Apr 11, 2019)
 * Improved stability.
 * Fixed connection minor issue.

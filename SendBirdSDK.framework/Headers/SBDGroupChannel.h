@@ -65,6 +65,15 @@
 @property (atomic) BOOL isDistinct;
 
 /**
+ *  Represents a boolean whether the public group channel is discoverable.
+ *  It is only for a public group channel. If the channel is not a public group channel, the value is YES(true).
+ *  The default value is YES(true).
+ *
+ *  @since 3.0.136
+ */
+@property (nonatomic, readonly, getter=isDiscoverable) BOOL discoverable;
+
+/**
  *  Unread message count of the channel.
  */
 @property (nonatomic) NSUInteger unreadMessageCount;
