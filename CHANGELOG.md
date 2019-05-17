@@ -1,6 +1,9 @@
 # Change Log
 
-### v3.0.136 (MAY 3, 2019)
+### v3.0.137 (May 17, 2019)
+* Added `deleteChannelWithCompletionHandler:` in `SBDGroupChannel`.
+
+### v3.0.136 (May 3, 2019)
 * Added `discoverable` property to `SBDGroupChannel` and `SBDGroupChannelParams`.
   * if `discoverable` of a public group channel is set to false(NO), then the channel will not appear during querying with `SBDPublicGroupChannelListQuery`. The default value of `discoverable` is true(YES).
 

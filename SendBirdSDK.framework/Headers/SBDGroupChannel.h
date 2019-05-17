@@ -66,8 +66,9 @@
 
 /**
  *  Represents a boolean whether the public group channel is discoverable.
- *  It is only for a public group channel. If the channel is not a public group channel, the value is YES(true).
- *  The default value is YES(true).
+ *  It is only for a public group channel.
+ *  The default value is YES(true) if the channel is a public group channel.
+ *  If the channel is not a public group channel, the default value is NO(false).
  *
  *  @since 3.0.136
  */
@@ -741,6 +742,14 @@ DEPRECATED_ATTRIBUTE;
  *  @param completionHandler The handler block to execute.
  */
 - (void)leaveChannelWithCompletionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler;
+
+/**
+ Deletes the group channel. The user has to be an operator of the channel.
+
+ @param completionHandler The handler block to execute.
+ @since 3.0.137
+ */
+- (void)deleteChannelWithCompletionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler;
 
 /**
  *  Marks as read all group channels of the current user.

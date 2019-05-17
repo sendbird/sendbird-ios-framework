@@ -1,11 +1,11 @@
 # [SendBird](https://sendbird.com) - Messaging and Chat API for Mobile Apps and Websites
 [SendBird](https://sendbird.com) provides the chat API and SDK for your app enabling real-time communication among your users.
 
-[![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://cocoapods.org/pods/SendBirdSDK)
-[![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/smilefam/sendbird-ios-framework)
-[![CocoaPods](https://img.shields.io/badge/pod-v3.0.136-green.svg)](https://cocoapods.org/pods/SendBirdSDK)
+[![Platform](https://img.shields.io/badge/Platform-iOS-orange.svg)](https://cocoapods.org/pods/SendBirdSDK)
+[![Languages](https://img.shields.io/badge/Language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/smilefam/sendbird-ios-framework)
+[![CocoaPods](https://img.shields.io/badge/CocoaPods-compatible-green.svg)](https://cocoapods.org/pods/SendBirdSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Commercial License](https://img.shields.io/badge/license-Commercial-brightgreen.svg)](https://github.com/smilefam/sendbird-ios-framework/blob/master/LICENSE.md)
+[![Commercial License](https://img.shields.io/badge/License-Commercial-brightgreen.svg)](https://github.com/smilefam/sendbird-ios-framework/blob/master/LICENSE.md)
 
 ## Documentation
 https://docs.sendbird.com/
