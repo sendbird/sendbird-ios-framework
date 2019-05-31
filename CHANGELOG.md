@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.138 (May 31, 2019)
+* Fixed the change of `invitedAt` of ` SBDGroupChannel`.
+* Bug fix and stability improvement of WebSocket module.
+
 ### v3.0.137 (May 17, 2019)
 * Added `deleteChannelWithCompletionHandler:` in `SBDGroupChannel`.
 
