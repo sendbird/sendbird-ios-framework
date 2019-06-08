@@ -165,6 +165,13 @@
 @property (atomic, readonly) SBDGroupChannelHiddenState hiddenState;
 
 /**
+ A last read information for the current user.
+ 
+ @since 3.0.138
+ */
+@property (nonatomic, readonly) long long myLastRead;
+
+/**
  *  DO NOT USE this initializer. You can only get an instance type of `SBDGroupChannel` from SDK.
  */
 #pragma clang diagnostic push
