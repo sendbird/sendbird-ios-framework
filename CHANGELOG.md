@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.140 (Jun 11, 2019)
+* Message request API with `inclusiveTimestamp` in `SBDBaseChannel`
+* Improved stability
+
 ### v3.0.139 (Jun 8, 2019)
 * Added `myLastRead` property to `SBDGroupChannel`.
 

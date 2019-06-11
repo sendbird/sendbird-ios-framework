@@ -19,6 +19,7 @@
 
 typedef void (^SBDOpenChannelHandler)(SBDOpenChannel * _Nullable channel, SBDError * _Nullable error);
 typedef void (^SBDFileMessageHandler)(SBDFileMessage * _Nullable message, SBDError * _Nullable error);
+typedef void (^SBDGetMessagesHandler)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error);
 typedef void (^SBDBinaryProgressHandler)(int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend);
 typedef void (^SBDMessageChangeLogsHandler)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages,
                                             NSArray<NSNumber *> * _Nullable deletedMessageIds,
