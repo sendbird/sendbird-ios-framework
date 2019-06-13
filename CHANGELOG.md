@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.141 (Jun 13, 2019)
+* Fixed minor bug.
+
 ### v3.0.140 (Jun 11, 2019)
 * Message request API with `inclusiveTimestamp` in `SBDBaseChannel`
 * Improved stability
