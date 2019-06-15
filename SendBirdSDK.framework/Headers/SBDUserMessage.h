@@ -40,6 +40,16 @@
 @property (strong, nonatomic, readonly, nullable) NSDictionary *translations;
 
 /**
+ *  Represents the dispatch state of the message.
+ *  If message is not dispatched completely to the SendBird server, the value is `SBDMessageRequestStatePending`.
+ *  If failed to send the message, the value is `SBDMessageRequestStateFailed`.
+ *  And if success to send the message, the value is `SBDMessageRequestStateSucceeded`.
+ *
+ *  @since 3.0.141
+ */
+@property (assign, nonatomic, readonly) SBDMessageRequestState requestState;
+
+/**
  Serializes message object.
  
  @return Serialized <span>data</span>.

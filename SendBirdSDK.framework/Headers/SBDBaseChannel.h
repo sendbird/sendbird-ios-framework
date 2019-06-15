@@ -452,6 +452,17 @@ DEPRECATED_ATTRIBUTE;
                                     completionHandler:(nullable void (^)(SBDUserMessage * _Nullable userMessage, SBDError * _Nullable error))completionHandler;
 
 /**
+ *  Attempts to resend a user message with a message from the failed callback. A failed message should be passed and should not be passed to a succeeded message or a pending message
+ *
+ *  @param failedMessage  A message to send. A failed message is passed to the callback when fails to send a message
+ *  @param completionHandler  The handler block to be executed after the message is sent. This block has no return value and takes two arguments. One is a user message. If the message is successfully sent, the complete message instance is delivered. If the message fails to be sent, a failed message based on the pending message is delivered. Another factor is errors. If the message fails to be sent, a message error is dispatched
+ *
+ *  @since 3.0.141
+ */
+- (void)resendUserMessageWithMessage:(nonnull SBDUserMessage *)failedMessage
+                   completionHandler:(nullable SBDUserMessageHandler)completionHandler;
+
+/**
  *  Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to SendBird file storage and a URL of the file will be generated.
  *
  *  @param file              File <span>data</span>.

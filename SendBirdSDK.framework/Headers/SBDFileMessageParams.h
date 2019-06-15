@@ -69,7 +69,7 @@
  */
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wnullability"
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 #pragma clang diagnostic pop
 
 /**

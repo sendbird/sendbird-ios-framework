@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.0.142 (Jun 14, 2019)
+* Added `resendUserMessage:completionHandler` to resend a failed message in `SBDBaseChannel`.
+* New enum and property to represent message request state `SBDMessageRequestState` in `SBDUserMessage`, `SBDFileMessage`. Enum `SBDMessageRequestStateNone`, `SBDMessageRequestStatePending`, `SBDMessageRequestStateFailed`, `SBDMessageRequestStateMessage`.
+* `SBDBaseMessage` conforms `NSCopying`.
+* Improved connection stability.
+* Fixed minor bug.
+
 ### v3.0.141 (Jun 13, 2019)
 * Fixed minor bug.
 
