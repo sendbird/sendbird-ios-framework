@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.143 (Jun 27, 2019)
+* Fixed a bug of internal timer.
+
 ### v3.0.142 (Jun 14, 2019)
 * Added `resendUserMessage:completionHandler` to resend a failed message in `SBDBaseChannel`.
 * New enum and property to represent message request state `SBDMessageRequestState` in `SBDUserMessage`, `SBDFileMessage`. Enum `SBDMessageRequestStateNone`, `SBDMessageRequestStatePending`, `SBDMessageRequestStateFailed`, `SBDMessageRequestStateMessage`.
