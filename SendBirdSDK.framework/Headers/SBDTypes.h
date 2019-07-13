@@ -585,5 +585,18 @@ typedef NS_ENUM(NSUInteger, SBDMessageRequestState) {
     SBDMessageRequestStateSucceeded,
 };
 
+/**
+ Filter types to query with `SBDGroupChannelListQuery`. You can combine search fields to query.
+ @see used for -setSearchFilter:fields: of `SBDGroupChannelListQuery`
+ @since 3.0.144
+ */
+typedef NS_OPTIONS(NSUInteger, SBDGroupChannelListQuerySearchField) {
+    /* filter type to query for member nickname */
+    SBDGroupChannelListQuerySearchFieldMemberNickname   = (1 << 0),
+    /* filter type to query for member nickname */
+    SBDGroupChannelListQuerySearchFieldChannelName      = (1 << 1),
+};
+
+
 
 #endif /* SBDTypes_h */

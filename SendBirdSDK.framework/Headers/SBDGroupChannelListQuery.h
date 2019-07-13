@@ -149,6 +149,20 @@ DEPRECATED_ATTRIBUTE;
 @property (atomic) SBDChannelHiddenStateFilter channelHiddenStateFilter;
 
 /**
+ The query property of the query specified by `setSearchFilterQuery:fields:`
+ 
+ @since 3.0.144
+ */
+@property (copy, nonatomic, nullable, readonly) NSString *searchQuery;
+
+/**
+ The fields properties of the query specified by `setSearchFilterQuery:fields:`
+ 
+ @since 3.0.144
+ */
+@property (nonatomic, readonly) SBDGroupChannelListQuerySearchField searchFields;
+
+/**
  *  DO NOT USE this initializer. Use `[SBDGroupChannel createMyGroupChannelListQuery]` instead.
  */
 #pragma clang diagnostic push
@@ -195,6 +209,29 @@ DEPRECATED_ATTRIBUTE;
  */
 - (void)setCustomTypeFilter:(NSString * _Nullable)customType
 DEPRECATED_ATTRIBUTE;
+
+/**
+ Sets the search query and search fields of the query specified a given query and a given fields.
+ 
+ @param query  The query to request for `searchFields`.
+ @param fields  The fields to request query for `searchQuery` that MUST be `SBDGroupChannelListQuerySearchField`.
+ @code
+ SBDGroupChannelListQuery *query = [SBDGroupChannel createMyGroupChannelListQuery];
+ NSString *filter = @"sendbird";
+ SBDGroupChannelListQuerySearchField fields = SBDGroupChannelListQuerySearchFieldChannelName |
+                                              SBDGroupChannelListQuerySearchFieldMemberNickname;
+ [query setSearchFilter:filter fields:fields];
+ 
+ [query loadNextPageWithCompletionHandler:^(NSArray<SBDGroupChannel *> *channels, SBDError *error) {
+    if (error != nil) { handle error }
+    else { do something }
+ }];
+ @endcode
+ @remark fields MUST be an array with 'SBDGroupChannelListQuerySearchField'.
+ 
+ @since 3.0.144
+ */
+- (void)setSearchFilter:(nonnull NSString *)query fields:(SBDGroupChannelListQuerySearchField)fields;
 
 /**
  *  Gets the list of channels. If this method is repeatedly called, it will retrieve the following pages of the channel list.
