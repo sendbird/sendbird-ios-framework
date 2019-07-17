@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.145 (Jul 17, 2019)
+* Fixed minor bug.
+* Improved connection stability.
+
 ### v3.0.144 (Jul 13, 2019)
 * New filter `searchFilter` of `SBDGroupChannelListQuery`. When you want to query a string for `channel name` or `member nickname`, use this filter.
 * Improved stability.
