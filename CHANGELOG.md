@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.146 (Jul 22, 2019)
+* Improved stability.
+
 ### v3.0.145 (Jul 17, 2019)
 * Fixed minor bug.
 * Improved connection stability.
