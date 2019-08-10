@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.147 (Aug 10, 2019)
+* Fixed a bug of network reachability.
+
 ### v3.0.146 (Jul 22, 2019)
 * Improved stability.
 
