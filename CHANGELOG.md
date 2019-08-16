@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.0.148 (Aug 16, 2019)
+* On-demand translation that translate a text message into target languages.
+* Improved `MetaArray` feature with `SBDMessageMetaArray` class.
+  * Add/remove meta array with an array of `SBDMessageMetaArray`.
+  * Message has new property `metaArrays` that consists of an array of `SBDMessageMetaArray`. 
+* Enable to create group channel strictly. `SBDGroupChannelParams` has new property boolean type of `strict` that can cause an error if any of users is not valid when creating a channel.
+
 ### v3.0.147 (Aug 10, 2019)
 * Fixed a bug of network reachability.
 

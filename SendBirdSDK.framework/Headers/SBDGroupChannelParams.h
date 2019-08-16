@@ -64,6 +64,13 @@
 @property (nonatomic, getter=isDiscoverable) BOOL discoverable;
 
 /**
+ The boolean that can cause an error if any of the users is not valid when creating the channel. If you have two valid users and 'strict` is true, the channel is created successfully when you create a channel with users. If one valid user, one invalid user, and `strict` are true, you will get an error creating the channel. However, if you have one valid user, one invalid user, and `strict` is false, you can create a channel without errors without a user.
+ 
+ @since 3.0.148
+ */
+@property (nonatomic, getter=isStrict) BOOL strict;
+
+/**
  *  Represents the custom type of group channel.
  */
 @property (nonatomic, copy, nullable) NSString *customType;

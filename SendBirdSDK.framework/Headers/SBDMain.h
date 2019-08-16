@@ -342,7 +342,6 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *
  *  - `SBDWebSocketConnecting` - Connecting to the chat server
  *  - `SBDWebSocketOpen` - Connected to the chat server
- *  - `SBDWebSocketClosing` - Disconnecting from the chat server
  *  - `SBSWebSocketClosed` - Disconnected from the chat server
  */
 + (SBDWebSocketConnectionState)getConnectState;

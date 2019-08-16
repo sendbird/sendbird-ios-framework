@@ -35,6 +35,7 @@
 #import "SBDBaseMessageParams.h"
 #import "SBDUserMessageParams.h"
 #import "SBDFileMessageParams.h"
+#import "SBDMessageMetaArray.h"
 
 #import "SBDUserListQuery.h"
 #import "SBDOpenChannelListQuery.h"

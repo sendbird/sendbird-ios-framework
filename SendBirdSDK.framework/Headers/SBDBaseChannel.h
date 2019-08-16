@@ -868,6 +868,7 @@ DEPRECATED_ATTRIBUTE;
  */
 - (void)deleteAllMetaDataWithCompletionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
+#pragma mark - Delete message
 /**
  *  Deletes a message. The message's sender has to be the current user.
  *
@@ -877,7 +878,7 @@ DEPRECATED_ATTRIBUTE;
 - (void)deleteMessage:(SBDBaseMessage * _Nonnull)message
     completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
-
+#pragma mark - Update message
 /**
  *  Updates a user message. The message text, data, and custom type can be updated.
  *
@@ -935,6 +936,32 @@ DEPRECATED_ATTRIBUTE;
 - (void)updateFileMessageWithMessageId:(long long)messageId
                      fileMessageParams:(nonnull SBDFileMessageParams *)params
                      completionHandler:(nullable void (^)(SBDFileMessage * _Nullable message, SBDError * _Nullable error))completionHandler;
+
+/**
+ Requests to translate the text message into the target languages. You can get a user message with the `translations` property after the request, but the request does not trigger an update event on the message and does not get the message by `getMessageChangeLogsWithToken:`. If you request a message through methods such as `getPreivousMessage:` or `getNextMessage:`, you will get a translated message.
+ A translation request can affect not only your message, but also other people's messages.
+ 
+ @param message  The string type of the message of the user message instance will be translated.
+ @param targetLanguages   The target languages that the message will be translated into. e.g. @"en", @"es", @"ch"
+ @param completionHandler  The handler block to be executed after translation. This block has no return value and takes two arguments. One is a user message. If succeeded to translate text of the message, the message instance with translations is delivered. If failed to translate, nil is delivered. Another factor is an error. If failed to request, an error is dispatched.
+ 
+ @since 3.0.148
+ @code
+ SBDUserMessage *userMessage; // received from event or get from API (`getPreviousMessages:`)
+ [channel translateUserMessage:userMessage targerLanguages:target_languages completionHandler:^(SBDUserMessage * _Nullable message, SBDError * _Nullable error) {
+    if (error != nil) {
+        // handle error
+        return;
+    }
+ 
+    NSDictionary *translations = message.translations;
+    // do somthing.
+ }];
+ @endcode
+ */
+- (void)translateUserMessage:(nonnull SBDUserMessage *)message
+             targetLanguages:(nonnull NSArray<NSString *> *)targetLanguages
+           completionHandler:(nullable SBDUserMessageHandler)completionHandler;
 
 /**
  *  Checks the channel type.
@@ -1027,7 +1054,7 @@ DEPRECATED_ATTRIBUTE;
                  completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
 
 /**
- *  Request to next messages by the timestamp with filters of inclusive timestamp, limit, reverse, message type, custom type, sender user ids, include meta array.
+ *  Requests to next messages by the timestamp with filters of inclusive timestamp, limit, reverse, message type, custom type, sender user ids, include meta array.
  
  *  @param timestamp The standard timestamp to load messages.
  *  @param inclusiveTimestamp Whether the response has messages including timestamp or not. If true (YES), results contain messages that created at the timestamp. If false (NO), results have messages that created after the timestamp
@@ -1127,7 +1154,7 @@ DEPRECATED_ATTRIBUTE;
                      completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
 
 /**
- *  Request to previous messages by the timestamp with filters of inclusive timestamp, limit, reverse, message type, custom type, sender user ids, include meta array.
+ *  Requests to previous messages by the timestamp with filters of inclusive timestamp, limit, reverse, message type, custom type, sender user ids, include meta array.
  *
  *  @param timestamp The standard timestamp to load messages.
  *  @param inclusiveTimestamp Whether the response has messages including timestamp or not. If true (YES), results contain messages that created at the timestamp. If false (NO), results have messages that created before the timestamp
@@ -1573,6 +1600,7 @@ DEPRECATED_ATTRIBUTE;
                                                           NSString * _Nullable token,
                                                           SBDError * _Nullable error))completionHandler;
 
+#pragma mark - Meta Arrays
 /**
  Creates keys of meta array for the message.
 
@@ -1604,10 +1632,43 @@ DEPRECATED_ATTRIBUTE;
  @param keyValues Pairs of key-value to be added.
  @param completionHandler The handler block to execute.
  @since 3.0.116
+ @see use `addMessageMetaArrayValuesWithMessage:metaArrays:completionHandler:` as possible.
  */
 - (void)addMessageMetaArrayValuesWithMessage:(nonnull SBDBaseMessage *)message
                                    keyValues:(nonnull NSDictionary<NSString *, NSArray<NSString *> *> *)keyValues
                            completionHandler:(nullable void (^)(SBDBaseMessage * _Nullable message, SBDError * _Nullable error))completionHandler;
+
+/**
+ Adds the array of meta array into the message.
+ 
+ @param message The message instance. The metaArrays will added into the message.
+ @param metaArrays An array of message meta array will be added into the message.
+ the string of the value in the metaArray SHOULD NOT exist with same key.
+ @param completionHandler The handler block to execute after adding message meta arrays.
+ The `message` of the handler is updated message.
+ If failed to add message meta arrays, the `error` of the handler is not nil(null).
+ @discussion The `metaArrays` are upserted into the message.
+ If a key in the metaArrays is new, the key will be inserted with the value.
+ If a key in the metaArrays is already created,
+ the value of the messageMetaArray will be inserted so strings in the value SHOULD be new one.
+ @code
+ SBDGroupChannel *channel;
+ SBDUserMessageParams *params = [[SBDUserMessageParams alloc] initWithMessage:message];
+ params.metaArrayKeys = key_array;
+ [channel sendUserMessageWithParams:params completionHandler:^(SBDUserMessage * _Nullable message, SBDError * _Nullable error) {
+   // message has metaArrays
+ 
+   NSArray<SBDMessageMetaArray *> *metaArrays = adding_meta_arrays;
+   [channel addMessageMetaArrayValuesWithMessage:message metaArrays:metaArrays completionHandler:^(SBDBaseMessage * _Nullable message, SBDError * _Nullable error) {
+     // added metaArrays into the message.
+   }];
+ }];
+ @endcode
+ @since 3.0.148
+ */
+- (void)addMessageMetaArrayValuesWithMessage:(nonnull SBDBaseMessage *)message
+                                  metaArrays:(nonnull NSArray<SBDMessageMetaArray *> *)metaArrays
+                           completionHandler:(nullable SBDBaseMessageHandler)completionHandler;
 
 /**
  Removes meta array from the message.
@@ -1616,13 +1677,46 @@ DEPRECATED_ATTRIBUTE;
  @param keyValues Pairs of key-value to be removed.
  @param completionHandler The handler block to execute.
  @since 3.0.116
+ @see use `removeMessageMetaArrayValuesWithMessage:metaArrays:completionHandler:` as possible.
  */
 - (void)removeMessageMetaArrayValuesWithMessage:(nonnull SBDBaseMessage *)message
                                       keyValues:(nonnull NSDictionary<NSString *, NSArray<NSString *> *> *)keyValues
                               completionHandler:(nullable void (^)(SBDBaseMessage * _Nullable message, SBDError * _Nullable error))completionHandler;
 
 /**
- Gets the current user's muted informatio in this channel.
+ Removes the array of meta array from the message.
+ 
+ @param message The message instance. The metaArrays will removed from the message.
+ @param metaArrays An array of message meta array will be removed from the message.
+ the string of the value in the metaArray SHOULD exist with same key.
+ @param completionHandler The handler block to execute after removing message meta arrays.
+ The `message` of the handler is removed message.
+ If failed to remove message meta arrays, the `error` of the handler is not nil(null).
+ @discussion The `metaArrays` are removed from the message.
+ If a key in the metaArrays has an emtpy array of the value, the key will be removed.
+ If not, the value of the messageMetaArray will be removed from the message.
+ The order of the meta array is guaranteed.
+ @code
+ SBDGroupChannel *channel;
+ SBDUserMessageParams *params = [[SBDUserMessageParams alloc] initWithMessage:message];
+ params.metaArrayKeys = key_array;
+ [channel sendUserMessageWithParams:params completionHandler:^(SBDUserMessage * _Nullable message, SBDError * _Nullable error) {
+   // message has metaArrays
+ 
+   NSArray<SBDMessageMetaArray *> *metaArrays = removing_meta_arrays;
+   [channel removeMessageMetaArrayValuesWithMessage:message metaArrays:metaArrays completionHandler:^(SBDBaseMessage * _Nullable message, SBDError * _Nullable error) {
+     // removed metaArrays into the message.
+   }];
+ }];
+ @endcode
+ @since 3.0.148
+ */
+- (void)removeMessageMetaArrayValuesWithMessage:(nonnull SBDBaseMessage *)message
+                                     metaArrays:(nonnull NSArray<SBDMessageMetaArray *> *)metaArrays
+                              completionHandler:(nullable SBDBaseMessageHandler)completionHandler;
+
+/**
+ Gets the current user's muted information in this channel.
 
  @param completionHandler The handler block to be executed.
  @since 3.0.118
