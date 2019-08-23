@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.149 (Aug 23, 2019)
+* Improved conection stability.
+* Fixed bug of thread management.
+
 ### v3.0.148 (Aug 16, 2019)
 * On-demand translation that translate a text message into target languages.
 * Improved `MetaArray` feature with `SBDMessageMetaArray` class.
