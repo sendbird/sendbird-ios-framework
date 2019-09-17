@@ -571,7 +571,7 @@ typedef NS_ENUM(NSUInteger, SBDPushTokenType) {
 /**
  Constants of type to describe message's request state
  
- - SBDMessageRequestStateNone: SHOULD NOT BE. If you got a message instance from SDK, the message can't have this value.
+ - SBDMessageRequestStateNone: MUST NOT BE. If you got a message instance from SDK, the message can't have this value.
  - SBDMessageRequestStatePending: Indicates the state of the message returned when trying to send a message. The message with the pending state means that is not dispatched completely to the SendBird server. The pending message should be replaced with a message (failed or succeeded) from the callback.
  - SBDMessageRequestStateFailed: Indicates the state of the message that failed to send the message.
  - SBDMessageRequestStateSucceeded: Indicates the state of the message that success to send the message.

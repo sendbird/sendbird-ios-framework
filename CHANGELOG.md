@@ -1,7 +1,16 @@
 # Change Log
 
+### v3.0.150 (Sep 18, 2019)
+* Fixed a bug of registering remote push token in iOS 13
+* New method to resend a file message in channel.
+  * `resendFileMessageWithMessage:binaryData:progressHandler:completionHandler:`
+  *  `resendFileMessageWithMessage:binaryData:completionHandler:`
+* New property to show requested mention user ids in user message, file message.
+  * `requestedMentionUserIds`
+* Improved connection stability.
+
 ### v3.0.149 (Aug 23, 2019)
-* Improved conection stability.
+* Improved connection stability.
 * Fixed bug of thread management.
 
 ### v3.0.148 (Aug 16, 2019)

@@ -46,7 +46,7 @@
 /**
  The `SBDThumbnail` class represents the thumbnail in the file message.
  */
-@interface SBDThumbnail : NSObject
+@interface SBDThumbnail : NSObject <NSCopying>
 
 /**
  The url of the thumbnail.
@@ -123,6 +123,16 @@
  *  @since 3.0.141
  */
 @property (assign, nonatomic, readonly) SBDMessageRequestState requestState;
+
+/**
+ Represents target user ids to mention when success to send the message.
+ This value is valid only when the message is a pending message or failed message.
+ If the message is a succeeded message, see `mentionedUserIds`
+ 
+ @since 3.0.147
+ @see see `mentionedUserIds` when the message is a succeeded message.
+ */
+@property (strong, nonatomic, readonly, nonnull) NSArray<NSString *> *requestedMentionUserIds;
 
 /**
  *  Builds file message with the information which is releated to file.
