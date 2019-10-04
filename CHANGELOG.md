@@ -1,6 +1,9 @@
 # Change Log
 
-### v3.0.152 (Oct 4, 2019)
+### v3.0.153 (Oct 4, 2019)
+* Improved stability.
+
+### v3.0.152 (Oct 4, 2019) DEPRECATED
 * Fixed bug of updating channel metadata.
 * Improved stability.
 
