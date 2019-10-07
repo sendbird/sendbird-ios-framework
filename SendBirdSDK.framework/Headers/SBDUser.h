@@ -19,6 +19,16 @@
 
 - (void)didDiscoverFriends:(NSArray<SBDUser *> * _Nullable)friends;
 
+/**
+ *   Invoked when total unread message count has been updated
+ *
+ *   @param totalCount New total unread count
+ *   @param totalCountByCustomType Dictionary with key of custom tyeps and value of unread count
+ *   @since 3.0.154
+ */
+- (void)didUpdateTotalUnreadMessageCount:(int32_t)totalCount
+                   totalCountByCustomType:(nullable NSDictionary<NSString *, NSNumber *> *)totalCountByCustomType;
+
 @end
 
 /**

@@ -1880,4 +1880,45 @@ DEPRECATED_ATTRIBUTE;
  */
 - (void)getMyMutedInfoWithCompletionHandler:(nullable void (^)(BOOL isMuted, NSString * _Nonnull description, long long startAt, long long endAt, long long remainingDuration, SBDError * _Nullable error))completionHandler;
 
+# pragma mark - Report
+/**
+Reports a user in a channel of inappropriate activities.
+
+@param offendingUser The user who is being reported.
+@param reportCategory The category in which the report is being submitted. Valid choices are 'suspicious', 'harassing', 'spam', and 'inappropriate'.
+@param reportDescription An open ended description for why the report is being submitted.
+@param completionHandler The handler block to execute.
+@since 3.0.154
+*/
+- (void)reportUser:(nonnull SBDUser *)offendingUser
+    reportCategory:(SBDReportCategory)reportCategory
+ reportDescription:(nullable NSString *)reportDescription
+ completionHandler:(nullable SBDErrorHandler)completionHandler;
+
+/**
+Reports current channel instance of inappropriate activities.
+
+@param reportCategory The category in which the report is being submitted. Valid choices are 'suspicious', 'harassing', 'spam', and 'inappropriate'.
+@param reportDescription An open ended description for why the report is being submitted.
+@param completionHandler The handler block to execute.
+@since 3.0.154
+*/
+- (void)reportChannelWithCategory:(SBDReportCategory)reportCategory
+                reportDescription:(nullable NSString *)reportDescription
+                completionHandler:(nullable SBDErrorHandler)completionHandler;
+
+/**
+Reports a malicious message in the channel
+
+@param message The message object which is being reported.
+@param reportCategory The category in which the report is being submitted. Valid choices are 'suspicious', 'harassing', 'spam', and 'inappropriate'.
+@param reportDescription An open ended description for why the report is being submitted.
+@param completionHandler The handler block to execute.
+@since 3.0.154
+*/
+- (void)reportMessage:(nonnull SBDBaseMessage *)message
+       reportCategory:(SBDReportCategory)reportCategory
+    reportDescription:(nullable NSString *)reportDescription
+    completionHandler:(nullable SBDErrorHandler)completionHandler;
+
 @end

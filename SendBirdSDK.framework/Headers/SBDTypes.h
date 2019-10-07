@@ -598,5 +598,21 @@ typedef NS_OPTIONS(NSUInteger, SBDGroupChannelListQuerySearchField) {
 };
 
 
+/**
+ Categories of reporting reasons
+ 
+ - SBDReportCategorySuspicious: Report suspicious content
+ - SBDReportCategoryHarassing: Report harassing content.
+ - SBDReportCategorySpam: Report spam content
+ - SBDReportCategoryInappropriate: Report inappropriate content
+ 
+ @since 3.0.154
+ */
+typedef NS_ENUM(NSUInteger, SBDReportCategory) {
+    SBDReportCategorySuspicious = 0,
+    SBDReportCategoryHarassing,
+    SBDReportCategorySpam,
+    SBDReportCategoryInappropriate,
+};
 
 #endif /* SBDTypes_h */

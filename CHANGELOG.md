@@ -1,5 +1,13 @@
 # Change Log
 
+### v3.0.154 (Oct 7, 2019)
+* Reporting APIs.
+  * `reportUser:reportCategory:reportDescription:completionHandler:`
+  * `reportChannelWithCategory:reportDescription:completionHandler:`
+  * `reportMessage:reportCategory:reportDescription:completionHandler:`
+* New user event of `didUpdateTotalUnreadMessageCount:totalCountByCustomType:` to handle total unread message count.
+* Improved stability.
+
 ### v3.0.153 (Oct 4, 2019)
 * Improved stability.
 
