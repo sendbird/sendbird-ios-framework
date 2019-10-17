@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.155 (Oct 17, 2019)
+* Improved connection stability.
+
 ### v3.0.154 (Oct 7, 2019)
 * Reporting APIs.
   * `reportUser:reportCategory:reportDescription:completionHandler:`

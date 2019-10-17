@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 #import "SBDUser.h"
 #import "SBDBaseChannel.h"
 #import "SBDGroupChannel.h"

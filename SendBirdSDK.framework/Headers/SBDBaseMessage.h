@@ -56,13 +56,14 @@
 
 /**
  Meta array is key-value property, a key is a string and a value is an array with a string.
- ex. @{@"key1":@[@"str1", @"str2", ... ], @"key2":@[@"str3", @"str4", ... ]}
+ ex. @{@"key1":@[@"str1", @"str2", ... ], @"key2":@[@"str3", @"str4", ... ]}  
  If you want to get a sorted meta array, refer to -metaArrays
  
  @since 3.0.116
  @deprecated 3.0.148
  */
-@property (nonatomic, nonnull, readonly, getter=getAllMetaArray) NSDictionary<NSString *, NSArray<NSString *> *> *metaArray DEPRECATED_MSG_ATTRIBUTE("Use -metaArrays");
+@property (nonatomic, nonnull, readonly, getter=getAllMetaArray) NSDictionary<NSString *, NSArray<NSString *> *> *metaArray
+DEPRECATED_ATTRIBUTE;
 
 /**
  Gets an array of meta arrays sorted by chronological order.
@@ -139,11 +140,12 @@
  
  @param keys Keys of the meta array.
  @return An Array of meta array with keys.
+ @since 3.0.148
+ 
  @code
  NSArray<NSString *> *keys = meta_array_keys;
  NSArray<SBDMessageMetaArray *> *subMetaArrays = [message metaArraysWithKeys:keys];
  @endcode
- @since 3.0.148
  */
 - (nonnull NSArray<SBDMessageMetaArray *> *)metaArraysWithKeys:(nonnull NSArray<NSString *> *)keys;
 

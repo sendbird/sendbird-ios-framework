@@ -106,10 +106,12 @@
 
 /**
  Meta array.
+ If you want to get a sorted meta array, refer to -metaArrays 
  
  @deprecated 3.0.148
  */
-@property (nonatomic, nonnull, readonly, getter=getAllMetaArray) NSDictionary<NSString *, NSArray<NSString *> *> *metaArray DEPRECATED_MSG_ATTRIBUTE("Use -metaArrays");
+@property (nonatomic, nonnull, readonly, getter=getAllMetaArray) NSDictionary<NSString *, NSArray<NSString *> *> *metaArray
+DEPRECATED_ATTRIBUTE;
 
 /**
  Gets an array of meta arrays sorted by chronological order.
@@ -148,11 +150,12 @@ DEPRECATED_MSG_ATTRIBUTE("Use -metaArraysWithKeys:");
  
  @param keys Keys of the meta array.
  @return An Array of meta array with keys.
+ @since 3.0.148
+ 
  @code
  NSArray<NSString *> *keys = meta_array_keys;
  NSArray<SBDMessageMetaArray *> *subMetaArrays = [message metaArraysWithKeys:keys];
  @endcode
- @since 3.0.148
  */
 - (nonnull NSArray<SBDMessageMetaArray *> *)metaArraysWithKeys:(nonnull NSArray<NSString *> *)keys;
 

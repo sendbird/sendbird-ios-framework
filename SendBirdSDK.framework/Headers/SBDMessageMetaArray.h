@@ -33,6 +33,7 @@
  @param key  A string type of key.
  @return Message meta array instance.
  @since 3.0.148
+ 
  @code
  SBDMessageMetaArray *metaArray = [[SBDMessageMetaArray alloc] initWithKey:string_key];
  @endcode
@@ -45,6 +46,7 @@
  @param value  The value consists of a string.
  @return Message meta array instance.
  @since 3.0.148
+ 
  @code
  SBDMessageMetaArray *metaArray = [[SBDMessageMetaArray alloc] initWithKey:string_key value:array_value];
  @endcode
@@ -62,6 +64,7 @@ NS_DESIGNATED_INITIALIZER;
  Adds an set type of the value to the receiver’s value field.
  @param value  The value consists of a string.
  @since 3.0.148
+ 
  @code
  [metaArray addValue:set_value];
  @endcode
@@ -72,6 +75,7 @@ NS_DESIGNATED_INITIALIZER;
  Adds an array type of the value to the receiver’s value field.
  @param array  The array consists of a string.
  @since 3.0.148
+
  @code
  [metaArray addValueWithArray:array_value];
  @endcode
@@ -81,8 +85,9 @@ NS_DESIGNATED_INITIALIZER;
 /**
  Removes an set type of the value from the receiver’s value field.
  @param value  The value consists of a string.
- @since 3.0.148
  @discussion Nonexistent string value are not ignored.
+ @since 3.0.148
+
  @code
  [metaArray removeValue:set_value];
  @endcode
@@ -92,8 +97,9 @@ NS_DESIGNATED_INITIALIZER;
 /**
  Removes an array type of the value from the receiver’s value field.
  @param array  The value consists of a string.
- @since 3.0.148
  @discussion Nonexistent string value are not ignored.
+ @since 3.0.148
+
  @code
  [metaArray removeValueWithArray:array_value];
  @endcode

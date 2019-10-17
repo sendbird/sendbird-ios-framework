@@ -10,6 +10,7 @@
 #import "SBDBaseMessage.h"
 #import "SBDBaseChannel.h"
 #import "SBDSender.h"
+#import <CoreGraphics/CGGeometry.h>
 
 /**
  The `SBDThumbnailSize` class represents the thumbnail size of thumbnail.

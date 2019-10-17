@@ -215,6 +215,9 @@ DEPRECATED_ATTRIBUTE;
  
  @param query  The query to request for `searchFields`.
  @param fields  The fields to request query for `searchQuery` that MUST be `SBDGroupChannelListQuerySearchField`.
+ @see fields MUST be an array with 'SBDGroupChannelListQuerySearchField'.
+ @since 3.0.144
+ 
  @code
  SBDGroupChannelListQuery *query = [SBDGroupChannel createMyGroupChannelListQuery];
  NSString *filter = @"sendbird";
@@ -227,9 +230,6 @@ DEPRECATED_ATTRIBUTE;
     else { do something }
  }];
  @endcode
- @remark fields MUST be an array with 'SBDGroupChannelListQuerySearchField'.
- 
- @since 3.0.144
  */
 - (void)setSearchFilter:(nonnull NSString *)query fields:(SBDGroupChannelListQuerySearchField)fields;
 

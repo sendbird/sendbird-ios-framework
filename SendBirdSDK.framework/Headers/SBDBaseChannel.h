@@ -483,8 +483,8 @@ DEPRECATED_ATTRIBUTE;
  
  @param failedMessage  A message to send. A failed message is passed to the callback when fails to send a message
  @param completionHandler  The handler block to be executed after the message is sent. This block has no return value and takes two arguments. One is a user message. If the message is successfully sent, the complete message instance is delivered. If the message fails to be sent, a failed message based on the pending message is delivered. Another factor is errors. If the message fails to be sent, a message error is dispatched
- 
  @since 3.0.141
+ 
  @code
  SBDUserMessageParams *params = [[SBDUserMessageParams alloc] initWithMessage:text_message];
  // set some properties of params
@@ -824,8 +824,8 @@ DEPRECATED_ATTRIBUTE;
  @param failedMessage  A message to send. A failed message is passed to the callback when fails to send a message
  @param binaryData Data to resend. If the failed message has a file URL, the method will not send binary data. If the failed message does not have a file URL, the method will send binary data first and send a file message command with file url.
  @param completionHandler  The handler block to be executed after the message is sent. This block has no return value and takes two arguments. One is a file message. If the message is successfully sent, the complete message instance is delivered. If the message fails to be sent, a failed message based on the pending message is delivered except invalid parameter error. If failed because of invalid parameter, message is nil. Another factor is errors. If the message fails to be sent, a message error is dispatched.
- 
  @since 3.0.147
+ 
  @code
  SBDFileMessageParams *params = [[SBDFileMessageParams alloc] initWithFile:binaryData];
  // set some properties of params
@@ -854,8 +854,8 @@ DEPRECATED_ATTRIBUTE;
  @param binaryData Data to resend. If the failed message has a file URL, the method will not send binary data. If the failed message does not have a file URL, the method will send binary data first and send a file message command with file url.
  @param progressHandler      The handler block to be used to monitor progression. `bytesSent` is the number of bytes sent since this method was called. `totalBytesSent` is the total number of bytes sent so far. `totalBytesExpectedToSend` is the expected length of the body data. These parameters are the same to the declaration of [`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:`](https://developer.apple.com/reference/foundation/nsurlsessiontaskdelegate/1408299-urlsession?language=objc).
  @param completionHandler  The handler block to be executed after the message is sent. This block has no return value and takes two arguments. One is a file message. If the message is successfully sent, the complete message instance is delivered. If the message fails to be sent, a failed message based on the pending message is delivered except invalid parameter error. If failed because of invalid parameter, message is nil. Another factor is errors. If the message fails to be sent, a message error is dispatched.
- 
  @since 3.0.147
+ 
  @code
  SBDFileMessageParams *params = [[SBDFileMessageParams alloc] initWithFile:binaryData];
  // set some properties of params
@@ -1101,8 +1101,8 @@ DEPRECATED_ATTRIBUTE;
  @param message  The string type of the message of the user message instance will be translated.
  @param targetLanguages   The target languages that the message will be translated into. e.g. @"en", @"es", @"ch"
  @param completionHandler  The handler block to be executed after translation. This block has no return value and takes two arguments. One is a user message. If succeeded to translate text of the message, the message instance with translations is delivered. If failed to translate, nil is delivered. Another factor is an error. If failed to request, an error is dispatched.
- 
  @since 3.0.148
+ 
  @code
  SBDUserMessage *userMessage; // received from event or get from API (`getPreviousMessages:`)
  [channel translateUserMessage:userMessage targerLanguages:target_languages completionHandler:^(SBDUserMessage * _Nullable message, SBDError * _Nullable error) {
@@ -1212,7 +1212,6 @@ DEPRECATED_ATTRIBUTE;
 
 /**
  *  Requests to next messages by the timestamp with filters of inclusive timestamp, limit, reverse, message type, custom type, sender user ids, include meta array.
- 
  *  @param timestamp The standard timestamp to load messages.
  *  @param inclusiveTimestamp Whether the response has messages including timestamp or not. If true (YES), results contain messages that created at the timestamp. If false (NO), results have messages that created after the timestamp
  *  @param limit The limit for the number of messages. The returned messages could be more than this number if there are messages which have the same timestamp.
@@ -1808,6 +1807,8 @@ DEPRECATED_ATTRIBUTE;
  If a key in the metaArrays is new, the key will be inserted with the value.
  If a key in the metaArrays is already created,
  the value of the messageMetaArray will be inserted so strings in the value MUST be new one.
+ @since 3.0.148
+ 
  @code
  SBDGroupChannel *channel;
  SBDUserMessageParams *params = [[SBDUserMessageParams alloc] initWithMessage:message];
@@ -1821,7 +1822,6 @@ DEPRECATED_ATTRIBUTE;
    }];
  }];
  @endcode
- @since 3.0.148
  */
 - (void)addMessageMetaArrayValuesWithMessage:(nonnull SBDBaseMessage *)message
                                   metaArrays:(nonnull NSArray<SBDMessageMetaArray *> *)metaArrays
@@ -1853,6 +1853,8 @@ DEPRECATED_ATTRIBUTE;
  If a key in the metaArrays has an emtpy array of the value, the key will be removed.
  If not, the value of the messageMetaArray will be removed from the message.
  The order of the meta array is guaranteed.
+ @since 3.0.148 
+ 
  @code
  SBDGroupChannel *channel;
  SBDUserMessageParams *params = [[SBDUserMessageParams alloc] initWithMessage:message];
@@ -1866,7 +1868,6 @@ DEPRECATED_ATTRIBUTE;
    }];
  }];
  @endcode
- @since 3.0.148
  */
 - (void)removeMessageMetaArrayValuesWithMessage:(nonnull SBDBaseMessage *)message
                                      metaArrays:(nonnull NSArray<SBDMessageMetaArray *> *)metaArrays
