@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.156 (Oct 20, 2019)
+* Improved stability.
+
 ### v3.0.155 (Oct 17, 2019)
 * Improved connection stability.
 
