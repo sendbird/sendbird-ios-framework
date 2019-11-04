@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.157 (Nov 4, 2019)
+* New property `messageOffsetTimestamp` that tells the current user's message offset of `SBDGroupChannel`. 
+
 ### v3.0.156 (Oct 20, 2019)
 * Improved stability.
 

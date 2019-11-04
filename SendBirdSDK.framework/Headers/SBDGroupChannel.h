@@ -172,6 +172,12 @@
 @property (nonatomic, readonly) long long myLastRead;
 
 /**
+ Message offset of a channel. User can only see messages after this offset.
+ 
+ @since 3.0.157
+ */
+@property (atomic, readonly) long long messageOffsetTimestamp;
+/**
  *  DO NOT USE this initializer. You can only get an instance type of `SBDGroupChannel` from SDK.
  */
 #pragma clang diagnostic push
