@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.158 (Nov 8, 2019)
+* Progress handler can be executed on the specific thread.
+
 ### v3.0.157 (Nov 4, 2019)
 * New property `messageOffsetTimestamp` that tells the current user's message offset of `SBDGroupChannel`. 
 
