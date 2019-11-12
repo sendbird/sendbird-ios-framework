@@ -441,6 +441,15 @@ typedef void(^SBDBackgroundSessionBlock)(void);
                           progressHandler:(nullable void (^)(int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend))progressHandler
                         completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
+/**
+ *  Updates the current user's preferred languages
+ *
+ *  @param preferredLanguages   New array of preferred languages
+ *  @param completionHandler    The handler block to execute.
+ */
++ (void)updateCurrentUserInfoWithPreferredLanguages:(nonnull NSArray<NSString *> *)preferredLanguages
+                                  completionHandler:(nullable SBDErrorHandler)completionHandler;
+
 #pragma mark - push token
 /**
  *  Gets the pending push token.

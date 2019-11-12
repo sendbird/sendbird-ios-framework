@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.159 (Nov 12, 2019)
+* Improved stability.
+
 ### v3.0.158 (Nov 8, 2019)
 * Progress handler can be executed on the specific thread.
 

@@ -74,6 +74,14 @@
 
 @property (strong, nullable) NSString *friendName;
 
+
+/**
+ * User's preferred language. Used for translating messages.
+ *
+ * @since 3.0.159
+ */
+@property (nonatomic, strong, nullable, readonly) NSArray<NSString *> *preferredLanguages;
+    
 /**
  *  Internal use only.
  *
