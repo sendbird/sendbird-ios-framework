@@ -36,6 +36,19 @@ Now you can see installed SendBird framework by inspecting YOUR_PROJECT.xcworksp
 1. Add `github "sendbird/sendbird-ios-framework"` to your `Cartfile`.
 2. Run `carthage update`.
 3. Go to your Xcode project's "General" settings. Open `<YOUR_XCODE_PROJECT_DIRECTORY>/Carthage/Build/iOS` in Finder and drag `SendBirdSDK.framework` to the "Embedded Binaries" section in Xcode. Make sure `Copy items if needed` is selected and click `Finish`.
+4. On your application targets’ `Build Phases` settings tab, click the + icon and choose `New Run Script` Phase. Create a Run Script in which you specify your shell (ex: `/bin/sh`), add the following contents to the script area below the shell:
+```
+/usr/local/bin/carthage copy-frameworks
+```
+* Add the paths to the frameworks you want to use under “Input Files". For example:
+```
+$(SRCROOT)/Carthage/Build/iOS/SendBirdSDK.framework
+```
+* Add the paths to the copied frameworks to the “Output Files”. For example:
+```
+$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SendBirdSDK.framework
+```
+For an in depth guide, read on from [Adding frameworks to an application](https://github.com/Carthage/Carthage#quick-start)
 
 ## [SyncManager](https://github.com/sendbird/sendbird-syncmanager-ios)
 [SyncManager SDK](https://github.com/sendbird/sendbird-syncmanager-ios) is a support add-on for [SendBird SDK](https://github.com/sendbird/sendbird-ios-framework). Major benefits of [SyncManager](https://github.com/sendbird/sendbird-syncmanager-ios) are,  
