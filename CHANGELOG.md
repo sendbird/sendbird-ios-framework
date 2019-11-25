@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.160 (Nov 25, 2019)
+* Fixed bug of lost items while copying files.
+
 ### v3.0.159 (Nov 12, 2019)
 * Improved stability.
 
