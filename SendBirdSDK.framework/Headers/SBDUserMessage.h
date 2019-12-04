@@ -60,6 +60,23 @@
 @property (strong, nonatomic, readonly, nonnull) NSArray<NSString *> *requestedMentionUserIds;
 
 /**
+ The error code of file.
+ This value generated only when message send fails.
+ 
+ @since 3.0.161
+*/
+@property (assign, nonatomic, readonly) NSUInteger errorCode;
+
+/**
+ *  Checks message can resend.
+ *  The message can only resend if the problem is due to network related error.
+ *
+ *  @return If YES, this message can resend.
+ *  @since 3.0.161
+*/
+- (BOOL)isResendable;
+
+/**
  Serializes message object.
  
  @return Serialized <span>data</span>.

@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.161 (Dec 4, 2019)
+* Added a method `isResendable` in `SBDUserMessage` and `SBDFileMessage`.
+  * `resendUserMessage` and `resendFileMessage` work only when `isResendable` is `true`.
+* Added a property named `errorCode` in `SBDUserMessage` and `SBDFileMessage`.
+
 ### v3.0.160 (Nov 25, 2019)
 * Fixed bug of lost items while copying files.
 
