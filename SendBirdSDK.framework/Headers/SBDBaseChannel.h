@@ -89,6 +89,15 @@
 - (void)channelDidUpdateReadReceipt:(SBDGroupChannel * _Nonnull)sender;
 
 /**
+ *  A callback when delivery receipts updated.
+ *
+ *  @param sender The group channel where the delivery receipt updated.
+ *
+ *  @since 3.0.162
+ */
+- (void)channelDidUpdateDeliveryReceipt:(SBDGroupChannel * _Nonnull)sender;
+
+/**
  *  A callback when user sends typing status.
  *
  *  @param sender The group channel where the typing status updated.

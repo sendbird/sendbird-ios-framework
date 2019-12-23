@@ -854,6 +854,15 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 + (NSInteger)getSubscribedCustomTypeTotalUnreadMessageCount;
 + (NSInteger)getSubscribedCustomTypeUnreadMessageCountWithCustomType:(nonnull NSString *)customType;
 
+/**
+ * Marks as delivered a group channel of the current user.
+ *
+ * @param channelUrl The channel URL.
+ *
+ * @since 3.0.162
+ */
++ (void)markAsDeliveredWithChannelUrl:(nonnull NSString *)channelUrl;
+
 #pragma mark - channel change logs
 /**
  *  Requests updated channels and deleted channel URLs since a certain time. A certain time is decided by a token. And the results contain empty channels.

@@ -778,6 +778,12 @@ DEPRECATED_ATTRIBUTE;
 - (void)markAsRead;
 
 /**
+ *  Sends mark as delivered. The other <span>members</span> in the channel will receive an event. The event will be received in `channelDidUpdateDeliveryReceipt:` of `SBDChannelDelegate`.
+ *  @since 3.0.162
+ */
+- (void)markAsDelivered;
+
+/**
  *  Starts typing. The other <span>members</span> in the channel will receive an event. The event will be received in `channelDidUpdateTypingStatus:` of `SBDChannelDelegate`.
  */
 - (void)startTyping;
@@ -925,6 +931,17 @@ DEPRECATED_ATTRIBUTE;
  `USER_ID` is the user ID as a key. Each `USER_ID` has a `NSDictionary` which includes `SBDUser` object and `NSNUmber` object. The "user" is a key of `SBDUser` object and the "last_seen_at" is a key of `NSNumber` object. The `NSNumber` object has a 64-bit integer value for the timestamp in millisecond.
  */
 - (nonnull NSDictionary<NSString *, NSDictionary<NSString *, NSObject *> *> *)getReadStatusIncludingAllMembers:(BOOL)includeAllMembers;
+
+/**
+ *  Returns how many <span>members</span> haven't been delivery the given message yet.
+ *
+ *  @param message The message.
+ *
+ *  @return Number of undelivered member count. Zero if all <span>members</span> delivered the message.
+ *
+ *  @since 3.0.162
+ */
+- (int)getDeliveryReceipt:(SBDBaseMessage * _Nonnull)message;
 
 /**
  *  If other users are typing in the channel, YES is returned.

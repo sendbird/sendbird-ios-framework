@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.162 (Dec 23, 2019)
+* Added **Delivery receipt** feature.
+  * added methods `markAsDelivered` in `SBDGroupChannel` and `markAsDeliveredWithChannelUrl:` in `SBDMain` to sending delivered state to channel.
+  * added `channelDidUpdateDeliveryReceipt:` delegate to receive user’s message delivery confirms.
+  * added `getDeliveryReceipt:` method to get undelivered member counts.
+
 ### v3.0.161 (Dec 4, 2019)
 * Added a method `isResendable` in `SBDUserMessage` and `SBDFileMessage`.
   * `resendUserMessage` and `resendFileMessage` work only when `isResendable` is `true`.
