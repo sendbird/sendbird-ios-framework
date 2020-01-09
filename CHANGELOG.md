@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.163 (Jan 9, 2020)
+* Modified increasing unread message count on super group channel.
+
 ### v3.0.162 (Dec 23, 2019)
 * Added **Delivery receipt** feature.
   * added methods `markAsDelivered` in `SBDGroupChannel` and `markAsDeliveredWithChannelUrl:` in `SBDMain` to sending delivered state to channel.
