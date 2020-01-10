@@ -38,6 +38,7 @@
 #import "SBDOpenChannelListQuery.h"
 #import "SBDGroupChannelListQuery.h"
 #import "SBDMessageListQuery.h"
+#import "SBDMessageSearchQuery.h"
 #import "SBDPreviousMessageListQuery.h"
 #import "SBDGroupChannelMemberListQuery.h"
 #import "SBDPublicGroupChannelListQuery.h"

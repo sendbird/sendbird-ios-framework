@@ -616,4 +616,17 @@ typedef NS_ENUM(NSUInteger, SBDReportCategory) {
     SBDReportCategoryInappropriate,
 };
 
+/**
+ The order type for `SBDMessageSearchQuery`.
+ 
+ - SBDMessageSearchQueryOrderScore: Score type returns the result as by their matching score.
+ - SBDMessageSearchQueryOrderTimeStamp: Timestamp type returns the result as by `SBDBaseMessage`'s timestamp.
+ @since 3.0.162
+ */
+typedef NS_ENUM(NSUInteger, SBDMessageSearchQueryOrder) {
+    SBDMessageSearchQueryOrderScore = 0,
+    SBDMessageSearchQueryOrderTimeStamp,
+};
+
+
 #endif /* SBDTypes_h */

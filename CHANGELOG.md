@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.164 (Jan 10, 2020)
+* Added Message search feature.
+  * added class `SBDMessageSearchQuery` to search messages and create query.
+  * added builder class `SBDMessageSearchQueryBuilder` to build a `SBDMessageSearchQuery`.
+
 ### v3.0.163 (Jan 9, 2020)
 * Modified increasing unread message count on super group channel.
 
