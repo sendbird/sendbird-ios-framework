@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.165 (Jan 15, 2020)
+* Add forceUpdateLastMessage property to force set the message as the last message of a channel when true.
+* Improved parsing stability.
+
 ### v3.0.164 (Jan 10, 2020)
 * Added Message search feature.
   * added class `SBDMessageSearchQuery` to search messages and create query.
