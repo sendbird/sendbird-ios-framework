@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.166 (Feb 4, 2020)
+* Improved stability and fixed bug of webSocket
+
 ### v3.0.165 (Jan 15, 2020)
 * Add forceUpdateLastMessage property to force set the message as the last message of a channel when true.
 * Improved parsing stability.
