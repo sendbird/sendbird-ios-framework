@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.167 (Feb 7, 2020)
+* Fixed bug about can't receive specific channelDelegate(leave, remove).
+* Improved stability.
+
 ### v3.0.166 (Feb 4, 2020)
 * Improved stability and fixed bug of webSocket
 
