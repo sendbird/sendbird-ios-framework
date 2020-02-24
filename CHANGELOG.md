@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.168 (Feb 24, 2020)
+* Fixed group channel update bug.
+
 ### v3.0.167 (Feb 7, 2020)
 * Fixed bug about can't receive specific channelDelegate(leave, remove).
 * Improved stability.
