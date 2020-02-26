@@ -56,6 +56,12 @@
 @property (nonatomic) BOOL includeMetaArray;
 
 /**
+ If YES, the messages to be returned by `loadPreviousMessagesWithLimit:reverse:completionHandler:` have reactions.
+ @since 3.0.168
+ */
+@property (nonatomic) BOOL includeReactions;
+
+/**
  *  DO NOT USE this initializer. Use `[SBDBaseChannel createPreviousMessageListQuery]` instead.
  */
 #pragma clang diagnostic push

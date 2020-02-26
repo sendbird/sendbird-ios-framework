@@ -628,5 +628,16 @@ typedef NS_ENUM(NSUInteger, SBDMessageSearchQueryOrder) {
     SBDMessageSearchQueryOrderTimeStamp,
 };
 
+#pragma mark - Reactions
+
+/**
+ The SBDReactionEvent action state.
+
+ @since 3.0.169
+*/
+typedef NS_ENUM(NSUInteger, SBDReactionEventAction) {
+    SBDReactionEventActionAdd = 0,
+    SBDReactionEventActionDelete = 1,
+};
 
 #endif /* SBDTypes_h */

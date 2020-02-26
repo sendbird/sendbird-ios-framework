@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "SBDUser.h"
+#import "SBDReaction.h"
+#import "SBDReactionEvent.h"
 
 @class SBDBaseChannel, SBDMessageMetaArray;
 
@@ -86,6 +88,8 @@ DEPRECATED_ATTRIBUTE;
  */
 @property (strong, nonatomic, readonly, nullable) NSString *customType;
 
+@property (strong, nonatomic, nonnull, readonly, getter=getReactions) NSArray<SBDReaction *> *reactions;
+
 /**
  *  Initializes a message object.
  *
@@ -148,5 +152,7 @@ DEPRECATED_ATTRIBUTE;
  @endcode
  */
 - (nonnull NSArray<SBDMessageMetaArray *> *)metaArraysWithKeys:(nonnull NSArray<NSString *> *)keys;
+
+- (BOOL)applyReactionEvent:(nonnull SBDReactionEvent *)reactionEvent;
 
 @end

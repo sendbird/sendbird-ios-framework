@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.169 (Feb 26, 2020)
+* Added Reaction API.
+
 ### v3.0.168 (Feb 24, 2020)
 * Fixed group channel update bug.
 

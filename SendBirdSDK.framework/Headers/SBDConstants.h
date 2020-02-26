@@ -17,6 +17,7 @@
 @class SBDBaseMessage, SBDUserMessage, SBDFileMessage;
 @class SBDUser;
 @class SBDError;
+@class SBDReactionEvent;
 
 typedef void (^SBDOpenChannelHandler)(SBDOpenChannel * _Nullable channel, SBDError * _Nullable error);
 typedef void (^SBDUserMessageHandler)(SBDUserMessage * _Nullable message, SBDError * _Nullable error);
