@@ -34,6 +34,14 @@
 @property (nonatomic, setter=setSuper:) BOOL isSuper;
 
 /**
+ *  Represents the channel is broadcast channel or not.
+ *  NO by default.
+ *
+ *  @since 3.0.171
+ */
+@property (nonatomic, setter=setBroadcast:) BOOL isBroadcast;
+
+/**
  *  Represents the channel is public channel or not.
  *  NO by default, a.k.a. private.
  */
