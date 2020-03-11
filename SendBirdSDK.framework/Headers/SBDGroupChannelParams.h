@@ -12,13 +12,9 @@
 
 /**
  *  The `SBDGroupChannelParams` class contain parameters for `group channel`. When you want to create a group channel or update a group channel, use this class. Add what you want to create with, add which properties you want to update, and pass this class to `SBDGroupChannel`. You can use this class with apis that are `[SBDGroupChannel createChannel:completionHandler:]` or `[SBDGroupChannel updateChannel:completionHandler:]`.
- *
- *  *
- *
  *  For more information, see [Group Channel](https://docs.sendbird.com/ios#group_channel).
  *
  */
-
 @interface SBDGroupChannelParams : NSObject<NSCopying>
 
 /**
@@ -116,6 +112,11 @@
  *  @since 3.0.116
  */
 @property (nonatomic, copy, nullable) NSString *accessCode;
+
+/// A value that sets the message survival time in seconds. In the channel that is created or updated with this option, the read messages are automatically deleted after a determined amount of time. The default value is `-1` that represents the disappearing message is disabled.
+/// @discussion This feature is available in a 1-on-1 group channel.
+/// @since 3.0.172
+@property (nonatomic, setter=setMessageSurvivalSeconds:) NSInteger messageSurvivalSeconds;
 
 /**
  *  Add user with SBDUser class to be member of the group channel.

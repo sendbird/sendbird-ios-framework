@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.172 (Mar 11, 2020)
+* Fixed minor bug.
+
 ### v3.0.171 (Mar 5, 2020)
 * Improved stability.
 

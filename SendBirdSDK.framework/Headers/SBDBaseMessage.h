@@ -90,6 +90,8 @@ DEPRECATED_ATTRIBUTE;
 
 @property (strong, nonatomic, nonnull, readonly, getter=getReactions) NSArray<SBDReaction *> *reactions;
 
+@property (atomic, readonly) NSInteger messageSurvivalSeconds;
+
 /**
  *  Initializes a message object.
  *

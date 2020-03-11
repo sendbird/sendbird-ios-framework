@@ -185,6 +185,12 @@
  @since 3.0.157
  */
 @property (atomic, readonly) long long messageOffsetTimestamp;
+
+/// A value that sets the message survival time in seconds. In the channel that is created or updated with this option, the read messages are automatically deleted after a determined amount of time. The default value is `-1` that represents the disappearing message is disabled.
+/// @discussion This feature is available in a 1-on-1 group channel.
+/// @since 3.0.172
+@property (atomic, readonly) NSInteger messageSurvivalSeconds;
+
 /**
  *  DO NOT USE this initializer. You can only get an instance type of `SBDGroupChannel` from SDK.
  */
@@ -1338,5 +1344,10 @@ DEPRECATED_ATTRIBUTE;
  */
 - (void)registerScheduledUserMessageWithParams:(nonnull SBDScheduledUserMessageParams *)params
                              completionHandler:(nullable void (^)(SBDScheduledUserMessage * _Nullable scheduledUserMessage, SBDError * _Nullable error))completionHandler;
+
+/// Notifies the current user took a screenshot in this channel. The server is going to send an admin message to notify this in the group channel.
+/// @param completionHandler The handler block to be executed.
+/// @since 3.0.172
+- (void)notifyScreenshotWasTakenWithCompletionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
 @end
