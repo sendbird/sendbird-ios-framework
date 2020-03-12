@@ -122,8 +122,19 @@
  *  And if success to send the message, the value is `SBDMessageRequestStateSucceeded`.
  *
  *  @since 3.0.141
+ *  @deprecated 3.0.173. Use `sendingStatus` instead.
  */
-@property (assign, nonatomic, readonly) SBDMessageRequestState requestState;
+ @property (assign, nonatomic, readonly, getter=getRequestState) SBDMessageRequestState requestState DEPRECATED_ATTRIBUTE;
+
+/**
+ *  Represents the dispatch state of the message.
+ *  If message is not dispatched completely to the SendBird server, the value is `SBDMessageSendingStatusPending`.
+ *  If failed to send the message, the value is `SBDMessageSendingStatusFailed`.
+ *  And if success to send the message, the value is `SBDMessageSendingStatusSucceeded`.
+ *
+ *  @since 3.0.173
+ */
+@property (assign, nonatomic, readonly) SBDMessageSendingStatus sendingStatus;
 
 /**
  Represents target user ids to mention when success to send the message.

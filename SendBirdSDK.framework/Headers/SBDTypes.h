@@ -578,12 +578,32 @@ typedef NS_ENUM(NSUInteger, SBDPushTokenType) {
  - SBDMessageRequestStateSucceeded: Indicates the state of the message that success to send the message.
  
  @since 3.0.141
+ @deprecated 3.0.173. Use `SBDMessageSendingStatus` instead.
  */
 typedef NS_ENUM(NSUInteger, SBDMessageRequestState) {
     SBDMessageRequestStateNone = 0,
     SBDMessageRequestStatePending,
     SBDMessageRequestStateFailed,
     SBDMessageRequestStateSucceeded,
+};
+
+/**
+ Constants of type to describe message's sending status.
+ 
+ - SBDMessageSendingStatusNone: MUST NOT BE. If you got a message instance from SDK, the message can't have this value.
+ - SBDMessageSendingStatusPending: Indicates the status of the message returned when trying to send a message. The message with the pending status means that is not dispatched completely to the SendBird server. The pending message should be replaced with a message (failed or succeeded) from the callback.
+ - SBDMessageSendingStatusFailed: Indicates the status of the message that failed to send the message.
+ - SBDMessageSendingStatusSucceeded: Indicates the status of the message that success to send the message.
+ - SBDMessageSendingStatusCanceled: Indicates the status of the message that is canceled.
+ 
+ @since 3.0.173
+ */
+typedef NS_ENUM(NSUInteger, SBDMessageSendingStatus) {
+    SBDMessageSendingStatusNone = 0,
+    SBDMessageSendingStatusPending,
+    SBDMessageSendingStatusFailed,
+    SBDMessageSendingStatusSucceeded,
+    SBDMessageSendingStatusCanceled,
 };
 
 /**

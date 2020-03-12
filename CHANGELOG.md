@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.173 (Mar 12, 2020)
+* Deprecated `requestState` of `SBDUserMessage` and `SBDFileMessage`.
+* Deprecated `SBDMessageRequestState`.
+* Added `sendingStatus` to `SBDUserMessage` and `SBDFileMessage`.
+* Added `SBDMessageSendingStatus`.
+
 ### v3.0.172 (Mar 11, 2020)
 * Fixed minor bug.
 
