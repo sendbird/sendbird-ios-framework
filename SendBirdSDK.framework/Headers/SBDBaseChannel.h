@@ -53,6 +53,7 @@
  *  * Receives an event when meta counters in the [`SBDBaseChannel`](../Classes/SBDBaseChannel.html) were changed.
  *  * Receives an event when a group channel was hidden.
  *  * Receives an event when a reaction of message in a group channel was updated.
+ *  * Receives an event when operators are updated
  */
 @protocol SBDChannelDelegate <NSObject>
 
@@ -284,6 +285,13 @@
 /// @param sender The channel that the reaction was updated.
 /// @param reactionEvent The updated reaction event.
 - (void)channel:(SBDBaseChannel * _Nonnull)sender updatedReaction:(SBDReactionEvent * _Nonnull)reactionEvent;
+
+/// A callback when operators were updated in the channel.
+/// @param sender The channel that the operators was updated.
+///
+/// @since 3.0.174
+- (void)channelDidUpdateOperators:(SBDBaseChannel * _Nonnull)sender;
+
 
 @end
 

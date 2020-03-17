@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.174 (Mar 17, 2020)
+* Added `channelDidUpdateOperators:` in SBDChannelDelegate
+* Added `role` in SBDMember
+* Improved stability.
+
 ### v3.0.173 (Mar 12, 2020)
 * Deprecated `requestState` of `SBDUserMessage` and `SBDFileMessage`.
 * Deprecated `SBDMessageRequestState`.

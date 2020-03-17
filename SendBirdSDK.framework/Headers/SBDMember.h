@@ -24,6 +24,12 @@
 
 @property (atomic) BOOL isBlockingMe;
 
+/// The role of current user in the channel.
+///
+/// @since 3.0.174
+@property (atomic, readonly) SBDRole role;
+
+
 /**
  *  DO NOT USE this initializer. You can only get an instance type of `SBDMember` from SDK.
  */

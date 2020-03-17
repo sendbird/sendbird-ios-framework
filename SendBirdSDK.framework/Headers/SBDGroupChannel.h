@@ -477,11 +477,14 @@ DEPRECATED_ATTRIBUTE;
  *  @param coverUrl          The cover image url of group channel.
  *  @param data              The custom data of group channel.
  *  @param completionHandler The handler block to execute. `channel` is the group channel instance which has the `userIds` as <span>members</span>.
+ *
+ *  @deprecated in 3.0.116 Use `updateChannelWithParams:completionHandler:` instead.
  */
 - (void)updateChannelWithName:(NSString * _Nullable)name
                      coverUrl:(NSString * _Nullable)coverUrl
                          data:(NSString * _Nullable)data
-            completionHandler:(nonnull void (^)(SBDGroupChannel * _Nullable channel, SBDError * _Nullable error))completionHandler;
+            completionHandler:(nonnull void (^)(SBDGroupChannel * _Nullable channel, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /**
  *  Creates a group channel with user IDs.
