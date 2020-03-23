@@ -1612,6 +1612,7 @@ DEPRECATED_ATTRIBUTE;
  @param includeReactions If YES, the `messages` has reactions.
  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
  @since 3.0.169
+ @deprecated 3.0.175
  */
 - (void)getNextMessagesByMessageId:(long long)messageId
                              limit:(NSInteger)limit
@@ -1621,8 +1622,34 @@ DEPRECATED_ATTRIBUTE;
                      senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
                   includeMetaArray:(BOOL)includeMetaArray
                   includeReactions:(BOOL)includeReactions
-                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
+/**
+ Gets the next messages by the message ID with filters of limit, reverse, message type, custom type, sender user ids, include meta array, and include reactions.
+
+ @param messageId The standard message ID to load messages.
+ @param inclusiveTimestamp Whether the response has messages including timestamp or not. If true (YES), results contain messages that created at the timestamp. If false (NO), results have messages that created after the timestamp
+ @param limit The limit for the number of messages. The returned messages could be more than this number if there are messages which have the same timestamp.
+ @param reverse If YES, the latest message is the index 0.
+ @param messageType Message type to filter messages.
+ @param customType Custom type to filter messages. If filtering isn't required, set nil.
+ @param senderUserIds Returns messages whose sender user id matches sender user ids.
+ @param includeMetaArray If YES, the `messages` has meta array.
+ @param includeReactions If YES, the `messages` has reactions.
+ @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
+ @since 3.0.175
+ */
+- (void)getNextMessagesByMessageId:(long long)messageId
+                inclusiveTimestamp:(BOOL)inclusiveTimestamp
+                             limit:(NSInteger)limit
+                           reverse:(BOOL)reverse
+                       messageType:(SBDMessageTypeFilter)messageType
+                        customType:(NSString * _Nullable)customType
+                     senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
+                  includeMetaArray:(BOOL)includeMetaArray
+                  includeReactions:(BOOL)includeReactions
+                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
 /**
  *  Gets the previous messages by the message ID with a limit and ordering.
  *
@@ -1713,8 +1740,36 @@ DEPRECATED_ATTRIBUTE;
  @param includeReactions If YES, the `messages` has reactions.
  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
  @since 3.0.169
+ @deprecated 3.0.175
  */
 - (void)getPreviousMessagesByMessageId:(long long)messageId
+                                 limit:(NSInteger)limit
+                               reverse:(BOOL)reverse
+                           messageType:(SBDMessageTypeFilter)messageType
+                            customType:(NSString * _Nullable)customType
+                         senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
+                      includeMetaArray:(BOOL)includeMetaArray
+                      includeReactions:(BOOL)includeReactions
+                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
+
+/**
+ Gets the previous messages by the message ID with filters of prev limit, next limit, reverse, message type, custom type, sender user ids, include meta array, and include reactions.
+
+ @param messageId The standard message ID to load messages.
+ @param inclusiveTimestamp Whether the response has messages including timestamp or not. If true (YES), results contain messages that created at the timestamp. If false (NO), results have messages that created after the timestamp
+ @param limit The limit for the number of messages. The returned messages could be more than this number if there are messages which have the same timestamp.
+ @param reverse If YES, the latest message is the index 0.
+ @param messageType Message type to filter messages.
+ @param customType Custom type to filter messages. If filtering isn't required, set nil.
+ @param senderUserIds Returns messages whose sender user id matches sender user ids.
+ @param includeMetaArray If YES, the `messages` has meta array.
+ @param includeReactions If YES, the `messages` has reactions.
+ @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
+ @since 3.0.175
+ */
+- (void)getPreviousMessagesByMessageId:(long long)messageId
+                    inclusiveTimestamp:(BOOL)inclusiveTimestamp
                                  limit:(NSInteger)limit
                                reverse:(BOOL)reverse
                            messageType:(SBDMessageTypeFilter)messageType

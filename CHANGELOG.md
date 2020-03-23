@@ -1,5 +1,13 @@
 # Change Log
 
+### v3.0.175 (Mar 23, 2020)
+* Defined a few errors for the failed message as resendable errors.
+  * `SBDErrorInternalServerError`(500901)
+  * `SBDErrorRateLimitExceeded`(500910)
+  * `SBDErrorMessagesRateLimitExceeded`(900200)
+* Improved stability.
+* Added new methods to get messages with message ID and inclusiveTimestamp option.
+
 ### v3.0.174 (Mar 17, 2020)
 * Added `channelDidUpdateOperators:` in SBDChannelDelegate
 * Added `role` in SBDMember

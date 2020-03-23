@@ -91,6 +91,7 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     SBDErrorInvalidJsonBody = 400403,
     
     SBDErrorInternalServerError = 500901,
+    SBDErrorRateLimitExceeded = 500910,
     
     // SDK Internal Errors
     SBDErrorUnknownError = 800000,
@@ -112,9 +113,12 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     SBDErrorRequestFailed = 800220,
     SBDErrorFileUploadCancelFailed = 800230,
     SBDErrorFileUploadCancelled = 800240,
-	SBDErrorFileUploadTimeout = 800250,
+    SBDErrorFileUploadTimeout = 800250,
     SBDErrorTimerWasExpired = 800301,
     SBDErrorTimerWasAlreadyDone = 800302,
+    
+    // WS Error
+    SBDErrorMessagesRateLimitExceeded = 900200,
 };
 
 /**
