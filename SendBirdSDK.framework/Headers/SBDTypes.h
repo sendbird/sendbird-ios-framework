@@ -112,7 +112,7 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     SBDErrorWebSocketConnectionFailed = 800210,
     SBDErrorRequestFailed = 800220,
     SBDErrorFileUploadCancelFailed = 800230,
-    SBDErrorFileUploadCancelled = 800240,
+    SBDErrorFileUploadCanceled = 800240,
     SBDErrorFileUploadTimeout = 800250,
     SBDErrorTimerWasExpired = 800301,
     SBDErrorTimerWasAlreadyDone = 800302,

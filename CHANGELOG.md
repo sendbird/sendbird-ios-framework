@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.176 (Apr 1, 2020)
+* Renamed an enum value.
+  * `SBDErrorFileUploadCancelled` -> `SBDErrorFileUploadCanceled`
+* Improved stability.
+
 ### v3.0.175 (Mar 23, 2020)
 * Defined a few errors for the failed message as resendable errors.
   * `SBDErrorInternalServerError`(500901)
