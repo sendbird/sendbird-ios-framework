@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.177 (Apr 13, 2020)
+* Added `show_delivery_receipt` parameters.
+* `resendUserMessage()`, `resendFileMessage()` returns the corresponding messages with `PENDING` state.
+* Fixed minor bug.
+* Improved stability.
+
 ### v3.0.176 (Apr 1, 2020)
 * Renamed an enum value.
   * `SBDErrorFileUploadCancelled` -> `SBDErrorFileUploadCanceled`

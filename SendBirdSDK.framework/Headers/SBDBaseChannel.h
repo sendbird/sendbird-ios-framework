@@ -504,6 +504,8 @@ DEPRECATED_ATTRIBUTE;
  
  @param failedMessage  A message to send. A failed message is passed to the callback when fails to send a message
  @param completionHandler  The handler block to be executed after the message is sent. This block has no return value and takes two arguments. One is a user message. If the message is successfully sent, the complete message instance is delivered. If the message fails to be sent, a failed message based on the pending message is delivered. Another factor is errors. If the message fails to be sent, a message error is dispatched
+ 
+ @return Returns a temporary user message being sent to the SendBird server.
  @since 3.0.141
  
  @code
@@ -523,8 +525,8 @@ DEPRECATED_ATTRIBUTE;
  }];
  @endcode
  */
-- (void)resendUserMessageWithMessage:(nonnull SBDUserMessage *)failedMessage
-                   completionHandler:(nullable SBDUserMessageHandler)completionHandler;
+- (nonnull SBDUserMessage *)resendUserMessageWithMessage:(nonnull SBDUserMessage *)failedMessage
+                                       completionHandler:(nullable SBDUserMessageHandler)completionHandler;
 
 /**
  Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to SendBird file storage and a URL of the file will be generated.
@@ -845,6 +847,8 @@ DEPRECATED_ATTRIBUTE;
  @param failedMessage  A message to send. A failed message is passed to the callback when fails to send a message
  @param binaryData Data to resend. If the failed message has a file URL, the method will not send binary data. If the failed message does not have a file URL, the method will send binary data first and send a file message command with file url.
  @param completionHandler  The handler block to be executed after the message is sent. This block has no return value and takes two arguments. One is a file message. If the message is successfully sent, the complete message instance is delivered. If the message fails to be sent, a failed message based on the pending message is delivered except invalid parameter error. If failed because of invalid parameter, message is nil. Another factor is errors. If the message fails to be sent, a message error is dispatched.
+ 
+ @return Returns a temporary file message being sent to the SendBird server.
  @since 3.0.147
  
  @code
@@ -864,9 +868,9 @@ DEPRECATED_ATTRIBUTE;
  }];
  @endcode
  */
-- (void)resendFileMessageWithMessage:(nonnull SBDFileMessage *)failedMessage
-                          binaryData:(nullable NSData *)binaryData
-                   completionHandler:(nullable SBDFileMessageHandler)completionHandler;
+- (nonnull SBDFileMessage *)resendFileMessageWithMessage:(nonnull SBDFileMessage *)failedMessage
+                                              binaryData:(nullable NSData *)binaryData
+                                       completionHandler:(nullable SBDFileMessageHandler)completionHandler;
 
 /**
  Attempts to resend a failed file message received by the failure callback. Only failed message MUST be passed, not a succeeded message or a pending message. If the failed message has a file URL, it means the failed message was created after failure of sending a file message command. So the method retries to send a file message command. If the failed message does not have a file URL, it means the failed message was created from failure of uploading a binary data. So the method retries to upload a binary data frist.
@@ -875,6 +879,8 @@ DEPRECATED_ATTRIBUTE;
  @param binaryData Data to resend. If the failed message has a file URL, the method will not send binary data. If the failed message does not have a file URL, the method will send binary data first and send a file message command with file url.
  @param progressHandler      The handler block to be used to monitor progression. `bytesSent` is the number of bytes sent since this method was called. `totalBytesSent` is the total number of bytes sent so far. `totalBytesExpectedToSend` is the expected length of the body data. These parameters are the same to the declaration of [`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:`](https://developer.apple.com/reference/foundation/nsurlsessiontaskdelegate/1408299-urlsession?language=objc).
  @param completionHandler  The handler block to be executed after the message is sent. This block has no return value and takes two arguments. One is a file message. If the message is successfully sent, the complete message instance is delivered. If the message fails to be sent, a failed message based on the pending message is delivered except invalid parameter error. If failed because of invalid parameter, message is nil. Another factor is errors. If the message fails to be sent, a message error is dispatched.
+ 
+ @return Returns a temporary file message being sent to the SendBird server.
  @since 3.0.147
  
  @code
@@ -896,10 +902,10 @@ DEPRECATED_ATTRIBUTE;
  }];
  @endcode
  */
-- (void)resendFileMessageWithMessage:(nonnull SBDFileMessage *)failedMessage
-                          binaryData:(nullable NSData *)binaryData
-                     progressHandler:(nullable SBDBinaryProgressHandler)progressHandler
-                   completionHandler:(nullable SBDFileMessageHandler)completionHandler;
+- (nonnull SBDFileMessage *)resendFileMessageWithMessage:(nonnull SBDFileMessage *)failedMessage
+                                              binaryData:(nullable NSData *)binaryData
+                                         progressHandler:(nullable SBDBinaryProgressHandler)progressHandler
+                                       completionHandler:(nullable SBDFileMessageHandler)completionHandler;
 
 #pragma mark - Load message list
 /**
