@@ -920,5 +920,21 @@ typedef void(^SBDBackgroundSessionBlock)(void);
                            includeEmptyChannel:(BOOL)includeEmptyChannel
                              completionHandler:(nonnull SBDChannelChangeLogsHandler)completionHandler;
 
+
+#pragma mark - For Extension SDK
+
+/**
+ * SendBird user agent information getter.
+ */
++ (nonnull NSString *)getSBUserAgent;
+
+/**
+ * Used to set the version information of the SendBird SDK extension.
+ *
+ * @param key Extension sdk's hidden key
+ * @param version Extension sdk's version string
+ */
++ (void)addExtension:(nonnull NSString *)key version:(nonnull NSString *)version;
+
 @end
 

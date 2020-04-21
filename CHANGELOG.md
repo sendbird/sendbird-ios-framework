@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.178 (Apr 21, 2020)
+* Added `addExtension` for UIKit
+
 ### v3.0.177 (Apr 13, 2020)
 * Added `show_delivery_receipt` parameters.
 * `resendUserMessage()`, `resendFileMessage()` returns the corresponding messages with `PENDING` state.
