@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.0.179 (Apr 29, 2020)
+* Added `deleteMessageWithMessageId:completionHandler:` in `SBDBaseChannel`
+* Fixed push register/unregister when no connection
+* Deprecated `metaArrayKeys` in `SBDBaseMessageParams`
+* Added `metaArrays` in `SBDBaseMessageParams`
+
+
 ### v3.0.178 (Apr 21, 2020)
 * Added `addExtension` for UIKit
 

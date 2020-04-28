@@ -1062,6 +1062,17 @@ DEPRECATED_ATTRIBUTE;
 - (void)deleteMessage:(SBDBaseMessage * _Nonnull)message
     completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
+/**
+ *  Deletes a message. The message's sender has to be the current user.
+ *
+ *  @param messageId           The message id to be deleted.
+ *  @param completionHandler The handler block to execute.
+ *
+ *  @since 3.0.179
+ */
+- (void)deleteMessageWithMessageId:(long long)messageId
+                 completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
 #pragma mark - Update message
 /**
  *  Updates a user message. The message text, data, and custom type can be updated.
