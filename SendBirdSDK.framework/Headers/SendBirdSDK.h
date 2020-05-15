@@ -18,6 +18,7 @@
 #import "SBDBlockedUserListQuery.h"
 #import "SBDConnectionManager.h"
 #import "SBDConstants.h"
+#import "SBDEmoji.h"
 #import "SBDError.h"
 #import "SBDFileMessage.h"
 #import "SBDFileMessageParams.h"

@@ -13,29 +13,29 @@
 #import <CoreGraphics/CGGeometry.h>
 
 /**
- The `SBDThumbnailSize` class represents the thumbnail size of thumbnail.
+ * The `SBDThumbnailSize` class represents the thumbnail size of thumbnail.
  */
 @interface SBDThumbnailSize : NSObject <NSCopying>
 
 /**
- The max size of the thumbnail.
+ * The max size of the thumbnail.
  */
 @property (nonatomic, readonly) CGSize maxSize;
 
 /**
- Makes `SBDThumbnailSize` object with `CGSize`.
-
- @param size The max size of the thumbnail.
- @return `SBDThumbnailSize` object.
+ * Makes `SBDThumbnailSize` object with `CGSize`.
+ *
+ * @param size The max size of the thumbnail.
+ * @return `SBDThumbnailSize` object.
  */
 + (nullable instancetype)makeWithMaxCGSize:(CGSize)size;
 
 /**
- Makes `SBDThumbnailSize` object with width and height.
-
- @param width The max width of the thumbnail.
- @param height The max height of the thumbnail.
- @return `SBDThumbnailSize` object.
+ * Makes `SBDThumbnailSize` object with width and height.
+ *
+ * @param width The max width of the thumbnail.
+ * @param height The max height of the thumbnail.
+ * @return `SBDThumbnailSize` object.
  */
 + (nullable instancetype)makeWithMaxWidth:(CGFloat)width
                                 maxHeight:(CGFloat)height;
@@ -45,31 +45,31 @@
 
 
 /**
- The `SBDThumbnail` class represents the thumbnail in the file message.
+ * The `SBDThumbnail` class represents the thumbnail in the file message.
  */
 @interface SBDThumbnail : NSObject <NSCopying>
 
 /**
- The url of the thumbnail.
+ * The url of the thumbnail.
  */
 @property (strong, nonatomic, readonly, nonnull, getter = url) NSString *url;
 
 
 /**
- The maximum size of the thumbnail.
+ * The maximum size of the thumbnail.
  */
 @property (nonatomic, readonly) CGSize maxSize;
 
 
 /**
- The real size of the thumbnail.
+ * The real size of the thumbnail.
  */
 @property (nonatomic, readonly) CGSize realSize;
 
 /**
- Returns url
- 
- @return Image url.
+ * Returns url
+ *
+ * @return Image url.
  */
 - (nonnull NSString *)url;
 
@@ -137,28 +137,28 @@
 @property (assign, nonatomic, readonly) SBDMessageSendingStatus sendingStatus;
 
 /**
- Represents target user ids to mention when success to send the message.
- This value is valid only when the message is a pending message or failed message.
- If the message is a succeeded message, see `mentionedUserIds`
- 
- @since 3.0.147
- @see see `mentionedUserIds` when the message is a succeeded message.
+ * Represents target user ids to mention when success to send the message.
+ * This value is valid only when the message is a pending message or failed message.
+ * If the message is a succeeded message, see `mentionedUserIds`
+ *
+ * @since 3.0.147
+ * @see see `mentionedUserIds` when the message is a succeeded message.
  */
 @property (strong, nonatomic, readonly, nonnull) NSArray<NSString *> *requestedMentionUserIds;
 
 /**
- The error code of file.
- This value generated only when message send fails.
- 
- @since 3.0.161
-*/
+ * The error code of file.
+ * This value generated only when message send fails.
+ *
+ * @since 3.0.161
+ */
 @property (assign, nonatomic, readonly) NSUInteger errorCode;
 
 /**
  *  Checks message can resend.
  *  The message can only resend if the problem is due to network related error.
  *
- *  @return If YES, this message can resend.
+ *  @return YES if this message can resend, otherwise NO.
  *  @since 3.0.161
  */
 - (BOOL)isResendable;
@@ -220,23 +220,23 @@ DEPRECATED_ATTRIBUTE;
 DEPRECATED_ATTRIBUTE;
 
 /**
- Returns url
- 
- @return Image url.
+ * Returns url
+ *
+ * @return Image url.
  */
 - (nonnull NSString *)url;
 
 /**
- Serializes message object.
- 
- @return Serialized <span>data</span>.
+ * Serializes message object.
+ *
+ * @return Serialized <span>data</span>.
  */
 - (nullable NSData *)serialize;
 
 /**
- Returns sender.
- 
- @return Sender of the message.
+ * Returns sender.
+ *
+ * @return Sender of the message.
  */
 - (nonnull SBDSender *)sender;
 

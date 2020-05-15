@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SBDUser.h"
 #import "SBDBaseChannel.h"
+#import "SBDEmoji.h"
 #import "SBDGroupChannel.h"
 #import "SBDOpenChannelListQuery.h"
 #import "SBDGroupChannelListQuery.h"
@@ -18,6 +19,7 @@
 #import "SBDFriendListQuery.h"
 #import "SBDApplicationUserListQuery.h"
 #import "SBDBlockedUserListQuery.h"
+#import "SBDAppInfo.h"
 
 typedef void(^SBDBackgroundSessionBlock)(void);
 
@@ -147,6 +149,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  The number of URLSessionDidFinishEventsForBackgroundURLSession.
  */
 @property (atomic) int URLSessionDidFinishEventsForBackgroundURLSession;
+
 
 /**
  *  Retrieves the SDK version.
@@ -920,6 +923,38 @@ typedef void(^SBDBackgroundSessionBlock)(void);
                            includeEmptyChannel:(BOOL)includeEmptyChannel
                              completionHandler:(nonnull SBDChannelChangeLogsHandler)completionHandler;
 
+#pragma mark - Emoji
+
+/**
+ *  Requests a emoji container which contains hash and list of emoji category.
+ *
+ *  @param completionHandler The handler block to execute after request is completed
+ *
+ *  @since 3.0.180
+ */
++ (void)getAllEmojis:(nullable void (^)(SBDEmojiContainer * _Nullable container, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Requests updated channels and deleted channel URLs since the timestamp.
+ *
+ *  @param emojiKey The emoji key
+ *  @param completionHandler The handler block to execute after request is completed
+ *
+ *  @since 3.0.180
+ */
++ (void)getEmoji:(nonnull NSString *)emojiKey
+completionHandler:(nullable void (^)(SBDEmoji * _Nullable emoji, SBDError * _Nullable error))completionHandler;
+
+/**
+ *  Requests updated channels and deleted channel URLs since the timestamp.
+ *
+ *  @param categoryId The category id
+ *  @param completionHandler The handler block to execute after request is completed
+ *
+ *  @since 3.0.180
+*/
++ (void)getEmojiCategory:(long long)categoryId
+       completionHandler:(nullable void (^)(SBDEmojiCategory * _Nullable category, SBDError * _Nullable error))completionHandler;
 
 #pragma mark - For Extension SDK
 
@@ -935,6 +970,15 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  * @param version Extension sdk's version string
  */
 + (void)addExtension:(nonnull NSString *)key version:(nonnull NSString *)version;
+
+
+#pragma mark - Application Info
+/**
+ * Gets information set in the Application.
+ *
+ * @since 3.0.180
+ */
++ (nullable SBDAppInfo *)getAppInfo;
 
 @end
 

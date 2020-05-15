@@ -1,4 +1,10 @@
 # Change Log
+### v3.0.180 (May 19, 2020)
+* Added `deleteChannel` method in open channel
+* Added `AppInfo` class
+* Added emoji feature with `Emoji`, `EmojiCategory`, `EmojiContainer` class 
+* Fixed type comparison in init methods
+* Fixed to add `errorCode` in message's init methods
 
 ### v3.0.179 (Apr 29, 2020)
 * Added `deleteMessageWithMessageId:completionHandler:` in `SBDBaseChannel`

@@ -61,21 +61,21 @@
 @property (assign, nonatomic, readonly) SBDMessageSendingStatus sendingStatus;
 
 /**
- Represents target user ids to mention when success to send the message.
- This value is valid only when the message is a pending message or failed message.
- If the message is a succeeded message, see `mentionedUserIds`
- 
- @since 3.0.147
- @see see `mentionedUserIds` when the message is a succeeded message.
+ * Represents target user ids to mention when success to send the message.
+ * This value is valid only when the message is a pending message or failed message.
+ * If the message is a succeeded message, see `mentionedUserIds`
+ *
+ * @since 3.0.147
+ * @see see `mentionedUserIds` when the message is a succeeded message.
  */
 @property (strong, nonatomic, readonly, nonnull) NSArray<NSString *> *requestedMentionUserIds;
 
 /**
- The error code of file.
- This value generated only when message send fails.
- 
- @since 3.0.161
-*/
+ * The error code of file.
+ * This value generated only when message send fails.
+ *
+ * @since 3.0.161
+ */
 @property (assign, nonatomic, readonly) NSUInteger errorCode;
 
 /**
@@ -84,20 +84,20 @@
  *
  *  @return If YES, this message can resend.
  *  @since 3.0.161
-*/
+ */
 - (BOOL)isResendable;
 
 /**
- Serializes message object.
- 
- @return Serialized <span>data</span>.
+ * Serializes message object.
+ *
+ * @return Serialized <span>data</span>.
  */
 - (nullable NSData *)serialize;
 
 /**
- Returns sender.
- 
- @return Sender of the message.
+ * Returns sender.
+ *
+ * @return Sender of the message.
  */
 - (nonnull SBDSender *)sender;
 

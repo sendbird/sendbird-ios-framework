@@ -402,6 +402,14 @@ DEPRECATED_ATTRIBUTE;
 DEPRECATED_ATTRIBUTE;
 
 /**
+ *  Deletes open channel
+ *
+ *  @param completionHandler The handler block to execute. `channel` is the open channel instance which is deleted.
+ *  @since 3.0.180
+ */
+- (void)deleteChannelWithCompletionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/**
  *  Gets an open channel instance from channel URL.
  *
  *  @param channelUrl        The channel URL.
