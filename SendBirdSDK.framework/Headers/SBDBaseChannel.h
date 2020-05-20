@@ -17,6 +17,8 @@
 #import "SBDScheduledUserMessage.h"
 #import "SBDScheduledUserMessageParams.h"
 #import "SBDConstants.h"
+#import "SBDThreadInfoUpdateEvent.h"
+#import "SBDMessageChangeLogsParams.h"
 
 @class SBDPreviousMessageListQuery, SBDOperatorListQuery;
 @class SBDThumbnailSize;
@@ -292,6 +294,11 @@
 /// @since 3.0.174
 - (void)channelDidUpdateOperators:(SBDBaseChannel * _Nonnull)sender;
 
+/// Invoked when the thread information is updated.
+/// @param channel The channel that has the message thread.
+/// @param threadInfoUpdateEvent The [`SBDThreadInfoUpdateEvent`](../Classes/SBDThreadInfoUpdateEvent.html) object that has the latest information about the thread.
+/// @since 3.0.181
+- (void)channel:(nonnull SBDBaseChannel *)channel didUpdateThreadInfo:(nonnull SBDThreadInfoUpdateEvent *)threadInfoUpdateEvent;
 
 @end
 
@@ -1181,7 +1188,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param reverse           If yes, the latest message is the index 0.
  *  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
  *
- *  @deprecated in v3.0.40.
+ *  @deprecated 3.0.40 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
  */
 - (void)getNextMessagesByTimestamp:(long long)timestamp
                              limit:(NSInteger)limit
@@ -1259,9 +1266,8 @@ DEPRECATED_ATTRIBUTE;
  *  @param senderUserIds Returns messages whose sender user id matches sender user ids.
  *  @param includeMetaArray If YES, the `messages` has meta array.
  *  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
- *
  *  @since 3.0.140
- *  @deprecated 3.0.169
+ *  @deprecated 3.0.169 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
  */
 - (void)getNextMessagesByTimestamp:(long long)timestamp
                 inclusiveTimestamp:(BOOL)inclusiveTimestamp
@@ -1306,8 +1312,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param limit             The limit for the number of messages. The returned messages could be more than this number if there are messages which have the same timestamp.
  *  @param reverse           If yes, the latest message is the index 0.
  *  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
- *
- *  @deprecated in v3.0.40.
+ *  @deprecated 3.0.40 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
  */
 - (void)getPreviousMessagesByTimestamp:(long long)timestamp
                                  limit:(NSInteger)limit
@@ -1386,9 +1391,8 @@ DEPRECATED_ATTRIBUTE;
  *  @param senderUserIds Returns messages whose sender user id matches sender user ids.
  *  @param includeMetaArray If YES, the `messages` has meta array.
  *  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
- *
  *  @since 3.0.140
- *  @deprecated in 3.0.169
+ *  @deprecated in 3.0.169 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
  */
 - (void)getPreviousMessagesByTimestamp:(long long)timestamp
                     inclusiveTimestamp:(BOOL)inclusiveTimestamp
@@ -1414,7 +1418,6 @@ DEPRECATED_ATTRIBUTE;
  *  @param includeMetaArray If YES, the `messages` has meta array.
  *  @param includeReactions If YES, the `messages` has reactions.
  *  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
- *
  *  @since 3.0.169
  */
 - (void)getPreviousMessagesByTimestamp:(long long)timestamp
@@ -1436,8 +1439,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param nextLimit         The next limit for the number of messages. The returned messages could be more than this number if there are messages which have the same timestamp.
  *  @param reverse           If yes, the latest message is the index 0.
  *  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
- *
- *  @deprecated in v3.0.40.
+ *  @deprecated 3.0.40 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
  */
 - (void)getPreviousAndNextMessagesByTimestamp:(long long)timestamp
                                     prevLimit:(NSInteger)prevLimit
@@ -1547,7 +1549,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param reverse           If yes, the latest message is the index 0.
  *  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
  *
- *  @deprecated in v3.0.40.
+ *  @deprecated 3.0.40 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
  */
 - (void)getNextMessagesByMessageId:(long long)messageId
                              limit:(NSInteger)limit
@@ -1604,7 +1606,7 @@ DEPRECATED_ATTRIBUTE;
  @param includeMetaArray If YES, the `messages` has meta array.
  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
  @since 3.0.116
- @deprecated in 3.0.169.
+ @deprecated 3.0.169 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
  */
 - (void)getNextMessagesByMessageId:(long long)messageId
                              limit:(NSInteger)limit
@@ -1629,7 +1631,7 @@ DEPRECATED_ATTRIBUTE;
  @param includeReactions If YES, the `messages` has reactions.
  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
  @since 3.0.169
- @deprecated 3.0.175
+ @deprecated 3.0.175 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
  */
 - (void)getNextMessagesByMessageId:(long long)messageId
                              limit:(NSInteger)limit
@@ -1732,7 +1734,7 @@ DEPRECATED_ATTRIBUTE;
  @param includeMetaArray If YES, the `messages` has meta array.
  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
  @since 3.0.116
- @deprecated in 3.0.169
+ @deprecated 3.0.169 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
  */
 - (void)getPreviousMessagesByMessageId:(long long)messageId
                                  limit:(NSInteger)limit
@@ -1757,7 +1759,7 @@ DEPRECATED_ATTRIBUTE;
  @param includeReactions If YES, the `messages` has reactions.
  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
  @since 3.0.169
- @deprecated 3.0.175
+ @deprecated 3.0.175 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
  */
 - (void)getPreviousMessagesByMessageId:(long long)messageId
                                  limit:(NSInteger)limit
@@ -1805,7 +1807,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param reverse           If yes, the latest message is the index 0.
  *  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
  *
- *  @deprecated in v3.0.40.
+ *  @deprecated 3.0.40. (Use `getMessagesByMessageId:params:completionHandler:` instead.)
  */
 - (void)getPreviousAndNextMessagesByMessageId:(long long)messageId
                                     prevLimit:(NSInteger)prevLimit
@@ -1868,7 +1870,7 @@ DEPRECATED_ATTRIBUTE;
  @param includeMetaArray If YES, the `messages` has meta array.
  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
  @since 3.0.116
- @deprecated in 3.0.169
+ @deprecated 3.0.169 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
  */
 - (void)getPreviousAndNextMessagesByMessageId:(long long)messageId
                                     prevLimit:(NSInteger)prevLimit
@@ -1905,7 +1907,25 @@ DEPRECATED_ATTRIBUTE;
                                 senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
                              includeMetaArray:(BOOL)includeMetaArray
                              includeReactions:(BOOL)includeReactions
-                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;;
+                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+
+/// Retrieves previous or next messages based on a specified timestamp in the channel.
+/// @param timestamp Specifies the timestamp to be the reference point for messages to retrieve, in Unix milliseconds format. Messages sent before or after the timestamp can be retrieved.
+/// @param params Contains a set of parameters you can set regarding the messages in the results.
+/// @param completionHandler The handler block to be executed. The `messages` is the messages of the channel. The `error` indicates whether there is an error. If there is no error, the value is null.
+/// @since 3.0.181
+- (void)getMessagesByTimestamp:(long long)timestamp
+                        params:(nonnull SBDMessageListParams *)params
+             completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+
+/// Retrieves previous or next messages based on their message ID in a specific channel.
+/// @param messageId Specifies the message ID to be the reference point for messages to retrieve. Messages sent before or after the message with the matching message ID can be retrieved.
+/// @param params Contains a set of parameters you can set regarding the messages in the results.
+/// @param completionHandler The handler block to be executed. The `messages` is the messages of the channel. The `error` indicates whether there is an error. If there is no error, the value is null.
+/// @since 3.0.181
+- (void)getMessagesByMessageId:(long long)messageId
+                        params:(nonnull SBDMessageListParams *)params
+             completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
 
 /**
  Builds a base channel object from serialized <span>data</span>.
@@ -1966,7 +1986,11 @@ DEPRECATED_ATTRIBUTE;
  @param completionHandler The handler block to execute. The `updatedMessages` is the messages that were updated. The `deletedMessageIds` is the list of the deleted message IDs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  */
 - (void)getMessageChangeLogsWithToken:(NSString * _Nullable)token
-                    completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages, NSArray<NSNumber *> * _Nullable deletedMessageIds, BOOL hasMore, NSString * _Nullable token, SBDError * _Nullable error))completionHandler;
+                    completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages,
+                                                         NSArray<NSNumber *> * _Nullable deletedMessageIds,
+                                                         BOOL hasMore,
+                                                         NSString * _Nullable token,
+                                                         SBDError * _Nullable error))completionHandler;
 
 /**
  Gets the changelogs of the messages with token and meta array
@@ -1978,7 +2002,12 @@ DEPRECATED_ATTRIBUTE;
  */
 - (void)getMessageChangeLogsWithToken:(NSString * _Nullable)token
                      includeMetaArray:(BOOL)includeMetaArray
-                    completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages, NSArray<NSNumber *> * _Nullable deletedMessageIds, BOOL hasMore, NSString * _Nullable token, SBDError * _Nullable error))completionHandler;
+                    completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages,
+                                                         NSArray<NSNumber *> * _Nullable deletedMessageIds,
+                                                         BOOL hasMore,
+                                                         NSString * _Nullable token,
+                                                         SBDError * _Nullable error))completionHandler;
+
 /**
  Gets the changelogs of the messages with token, meta array, and reactions.
 
@@ -2047,6 +2076,32 @@ DEPRECATED_ATTRIBUTE;
                                                           BOOL hasMore,
                                                           NSString * _Nullable token,
                                                           SBDError * _Nullable error))completionHandler;
+
+/// Retrieves the changelogs since a specified token regarding the updated messages or the unique IDs of deleted messages in the channel.
+/// @param token Specifies the token to be the reference point for the changelogs to retrieve.
+/// @param params Contains a set of parameters you can set regarding the messages in the results.
+/// @param completionHandler The handler block to execute. The `updatedMessages` retrieves the updated messages. The `deletedMessageIds` retrieves the unique ID of deleted messages. The `hasMore` indicates whether there are more changelogs to be retrieved. The `token` retrieves the token of the last changelog in the results. The `error` indicates whether there is an error. If there is no error, the value is `nil`.
+/// @since 3.0.181
+- (void)getMessageChangeLogsSinceToken:(nullable NSString *)token
+                                params:(nonnull SBDMessageChangeLogsParams *)params
+                     completionHandler:(nonnull void (^)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages,
+                                                         NSArray<NSNumber *> * _Nullable deletedMessageIds,
+                                                         BOOL hasMore,
+                                                         NSString * _Nullable token,
+                                                         SBDError * _Nullable error))completionHandler;
+
+/// Retrieves the changelogs since a specified timestamp, in Unix milliseconds format, regarding the updated messages or the unique IDs of deleted messages in the channel.
+/// @param timestamp Specifies the timestamp to be the reference point for changelogs to retrieve, in Unix milliseconds format.
+/// @param params Contains a set of parameters you can set regarding the messages in the results.
+/// @param completionHandler The handler block to execute. The `updatedMessages` retrieves the updated messages. The `deletedMessageIds` retrieves the unique ID of deleted messages. The `hasMore` indicates whether there are more changelogs to be retrieved. The `token` retrieves the token of the last changelog in the results. The `error` indicates whether there is an error. If there is no error, the value is `nil`.
+/// @since 3.0.181
+- (void)getMessageChangeLogsSinceTimestamp:(long long)timestamp
+                                    params:(nonnull SBDMessageChangeLogsParams *)params
+                         completionHandler:(nonnull void (^)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages,
+                                                             NSArray<NSNumber *> * _Nullable deletedMessageIds,
+                                                             BOOL hasMore,
+                                                             NSString * _Nullable token,
+                                                             SBDError * _Nullable error))completionHandler;
 
 #pragma mark - Meta Arrays
 /**

@@ -1,4 +1,8 @@
 # Change Log
+
+### v3.0.181 (May 20, 2020)
+* Fixed reaction bug.
+
 ### v3.0.180 (May 19, 2020)
 * Added `deleteChannel` method in open channel
 * Added `AppInfo` class

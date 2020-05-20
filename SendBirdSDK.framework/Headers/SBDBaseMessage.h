@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBDMessageListParams.h"
+#import "SBDThreadInfo.h"
 #import "SBDUser.h"
 #import "SBDReaction.h"
 #import "SBDReactionEvent.h"
+#import "SBDThreadedMessageListParams.h"
+#import "SBDThreadInfoUpdateEvent.h"
+#import "SBDMessageRetrievalParams.h"
 
 @class SBDBaseChannel, SBDMessageMetaArray;
 
@@ -55,6 +60,19 @@
  Message updated time in millisecond(UTC).
  */
 @property (atomic) long long updatedAt;
+
+/// The unique ID of the parent message. If the message object is a parent message or a single message without any reply, the value of this property is 0. If the object is a reply, the value is the unique ID of its parent message.
+/// @note The default value is `0`.
+/// @since 3.0.181
+@property (atomic, readonly) long long parentMessageId;
+
+/// The written text of the message object’s parent message. If the message object is a parent message, the value of this property is `nil`. If the object is a reply to a parent message and the type of the parent message is [`SBDUserMessage`](../Classes/SBDUserMessage.html), the value is [`message`](../Classes/SBDUserMessage.html#//api/name/message). If it is [`SBDFileMessage`](../Classes/SBDFileMessage.html), the value is the [`name`](../Classes/SBDFileMessage.html#//api/name/name) of the uploaded file.
+/// @since 3.0.181
+@property (strong, readonly, nullable) NSString *parentMessageText;
+
+/// The thread info that belongs to this message object.
+/// @since 3.0.181
+@property (strong, readonly, nonnull) SBDThreadInfo *threadInfo;
 
 /**
  Meta array is key-value property, a key is a string and a value is an array with a string.
@@ -156,5 +174,29 @@ DEPRECATED_ATTRIBUTE;
 - (nonnull NSArray<SBDMessageMetaArray *> *)metaArraysWithKeys:(nonnull NSArray<NSString *> *)keys;
 
 - (BOOL)applyReactionEvent:(nonnull SBDReactionEvent *)reactionEvent;
+
+/// Retrieves a message with a specified message ID.
+/// @param params Contains a set of parameters you can set regarding the messages in the results.
+/// @param completionHandler The handler block to be executed. The `message` retrieves the message with the matching message ID. A value of `nil` indicates that there is no message with the specified message ID. The `error` Indicates whether there is an error. If there is no error, the value is `nil`.
+/// @since 3.0.181
++ (void)getMessageWithParams:(nonnull SBDMessageRetrievalParams *)params
+           completionHandler:(nullable void (^)(SBDBaseMessage * _Nullable message, SBDError * _Nullable error))completionHandler;
+
+/// Retrieves the threaded replies of the current message depending on the timestamp. If the current message doesn’t have replies, the result is `nil`.
+/// @param timestamp Specifies the timestamp to be the reference point of the retrieval, in Unix milliseconds format.
+/// @param params Contains a set of parameters you can set regarding the messages in the results.
+/// @param completionHandler The handler block to be executed. The `parentMessage` retrieves the parent message of the thread. The `threadedReplies` retrieves the threaded replies in the thread. The `error` indicates whether there is an error. If there is no error, the value is `nil`.
+/// @since 3.0.181
+- (void)getThreadedMessagesByTimestamp:(long long)timestamp
+                                params:(nonnull SBDThreadedMessageListParams *)params
+                     completionHandler:(nullable void (^)(SBDBaseMessage * _Nullable parentMessage,
+                                                          NSArray<SBDBaseMessage *> * _Nullable threadedReplies,
+                                                          SBDError * _Nullable error))completionHandler;
+
+/// Applies the update of the thread information to the message object. This method has to be called when the [`channel:didUpdateThreadInfo:`](../Protocols/SBDChannelDelegate.html#//api/name/channel:didUpdateThreadInfo:) event returns the [`SBDThreadInfoUpdateEvent`](../Classes/SBDThreadInfoUpdateEvent.html) object.
+/// @param threadInfoUpdateEvent The event object that is applied to.
+/// @return Returns If the `threadInfoUpdateEvent` parameter is `nil` or the [`targetMessageId`](../Classes/SBDThreadInfoUpdateEvent.html#//api/name/targetMessageId) included in the parameter doesn’t match any message, this method returns `NO`.
+/// @since 3.0.181
+- (BOOL)applyThreadInfoUpdateEvent:(nonnull SBDThreadInfoUpdateEvent *)threadInfoUpdateEvent;
 
 @end

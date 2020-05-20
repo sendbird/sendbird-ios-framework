@@ -71,4 +71,9 @@
  */
 - (void)setMentionedUsers:(nonnull NSArray <SBDUser *> *)mentionedUsers;
 
+/// The unique ID of a parent message. A parent message is a message that has a thread of replies. If the message sent through the [`sendUserMessageWithParams:completionHandler:`](../Classes/SBDBaseChannel.html#//api/name/sendUserMessageWithParams:completionHandler:) or [`sendFileMessageWithParams:completionHandler:`](../Classes/SBDBaseChannel.html#//api/name/sendFileMessageWithParams:completionHandler:) method is a parent message, the value of this property is 0. If the message is a reply to a parent message, the value is the message ID of the parent message.
+/// @note The default value is `0`.
+/// @since 3.0.181
+@property (atomic) long long parentMessageId;
+
 @end
