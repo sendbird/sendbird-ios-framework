@@ -29,6 +29,12 @@
 @property (atomic) BOOL includeEmptyChannel;
 
 /**
+ *  If the value is YES, the channel list includes frozen channel. Default is YES
+ *  @since 3.0.182
+ */
+@property (atomic) BOOL includeFrozenChannel;
+
+/**
  *  If the value is YES, the channel object of the list includes members list.
  */
 @property (atomic) BOOL includeMemberList;

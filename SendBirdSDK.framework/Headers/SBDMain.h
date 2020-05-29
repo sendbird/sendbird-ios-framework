@@ -11,6 +11,7 @@
 #import "SBDBaseChannel.h"
 #import "SBDEmoji.h"
 #import "SBDGroupChannel.h"
+#import "SBDGroupChannelChangeLogsParams.h"
 #import "SBDOpenChannelListQuery.h"
 #import "SBDGroupChannelListQuery.h"
 #import "SBDTypes.h"
@@ -23,60 +24,7 @@
 
 typedef void(^SBDBackgroundSessionBlock)(void);
 
-/**
- Represents operation options.
- */
-@interface SBDOptions : NSObject
 
-/**
- Gets the value whether the sender information of `sender` of `SBDUserMessage` or `SBDFileMessage` such as nickname and profile url will be returned as the latest user's or not.
- 
- @return If YES, the sender is the latest information.
- */
-+ (BOOL)useMemberAsMessageSender;
-
-/**
- If set <code>YES</code>, the sender information of `sender` of `SBDUserMessage` or `SBDFileMessage` such as nickname and profile url will be returned as the latest user's. Otherwise, the information will be the value of the message creation time.
- 
- @param tf <code>YES</code> or <code>NO</code>.
- */
-+ (void)setUseMemberAsMessageSender:(BOOL)tf;
-
-
-/**
- Sets the timeout for connection. If there is a timeout error frequently, set the longer timeout than default value. The default is 10 seconds.
- 
- @param timeout The timeout for connection.
- */
-+ (void)setConnectionTimeout:(NSInteger)timeout;
-
-/**
- *  Sets a term of typing indicator throttling in group channel.
- *  After this throttling interval from typing indicator started (or ended), You can re-start (or re-end) typing indicator.
- *  If you call start (or end) again in this interval, the call will be ignored.
- *
- *  @param interval  A time interval that can renew typing indicator. can be RANGE from 1.0 to 9.0.
- *  @since 3.0.100
- */
-+ (void)setTypingIndicatorThrottle:(NSTimeInterval)interval;
-
-/**
- Sets the authentication timeout managed by `authenticateWithAuthInfoRequestHandler:completionHandler:` of `SBDConnectionManager`. The default value is 10 seconds.
-
- @param timeout Timeout in seconds. It must be greater than 0. Otherwise, the default value (10 seconds) will be set.
- @since 3.0.109
- */
-+ (void)setAuthenticationTimeout:(NSTimeInterval)timeout;
-
-/**
- Sets the timeout for file transfer. This value affects the methods that send a binary data including sending file messages, creating and updating channels.
-
- @param timeout Timeout in seconds. It must be greater than 0. Otherwise, the default value (60 seconds) will be set.
- @since 3.0.130
- */
-+ (void)setFileTransferTimeout:(NSInteger)timeout;
-
-@end
 
 /**
  *  An object that adopts the `SBDConnectionDelegate` protocol is responsible for managing the connection statuses. This delegate includes three statuses: reconnection start, reconnection succession, and reconnection failure. The `SBDConnectionDelegate` can be added by [`addConnectionDelegate:identifier:`](../Classes/SBDMain.html#//api/name/addConnectionDelegate:identifier:) in `SBDMain`. Every `SBDConnectionDelegate` method which is added is going to manage the statues.
@@ -875,10 +823,11 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.123
+ *  @deprecated in 3.0.182
  */
 + (void)getMyGroupChannelChangeLogsByToken:(nullable NSString *)token
                                customTypes:(nullable NSArray <NSString *> *)customTypes
-                         completionHandler:(nonnull SBDChannelChangeLogsHandler)completionHandler;
+                         completionHandler:(nonnull SBDChannelChangeLogsHandler)completionHandler DEPRECATED_ATTRIBUTE;
 
 /**
  *  Requests updated channels and deleted channel URLs since a certain time. A certain time is decided by a token.
@@ -889,10 +838,24 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.131
+ *  @deprecated in 3.0.182
  */
 + (void)getMyGroupChannelChangeLogsByToken:(nullable NSString *)token
                                customTypes:(nullable NSArray<NSString *> *)customTypes
                        includeEmptyChannel:(BOOL)includeEmptyChannel
+                         completionHandler:(nonnull SBDChannelChangeLogsHandler)completionHandler DEPRECATED_ATTRIBUTE;
+
+/**
+ *  Requests updated channels and deleted channel URLs since a certain time. A certain time is decided by a token.
+ *
+ *  @param token  The token used to get next pagination of changelogs.
+ *  @param params  the parameter object that filters a result .
+ *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
+ *
+ *  @since 3.0.182
+ */
++ (void)getMyGroupChannelChangeLogsByToken:(nullable NSString *)token
+                                    params:(nullable SBDGroupChannelChangeLogsParams *)params
                          completionHandler:(nonnull SBDChannelChangeLogsHandler)completionHandler;
 
 /**
@@ -903,10 +866,11 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.123
+ *  @deprecated in 3.0.182
  */
 + (void)getMyGroupChannelChangeLogsByTimestamp:(long long)timestamp
                                    customTypes:(nullable NSArray <NSString *> *)customTypes
-                             completionHandler:(nonnull SBDChannelChangeLogsHandler)completionHandler;
+                             completionHandler:(nonnull SBDChannelChangeLogsHandler)completionHandler DEPRECATED_ATTRIBUTE;
 
 /**
  *  Requests updated channels and deleted channel URLs since the timestamp.
@@ -917,10 +881,24 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.131
+ *  @deprecated in 3.0.182
  */
 + (void)getMyGroupChannelChangeLogsByTimestamp:(long long)timestamp
                                    customTypes:(nullable NSArray <NSString *> *)customTypes
                            includeEmptyChannel:(BOOL)includeEmptyChannel
+                             completionHandler:(nonnull SBDChannelChangeLogsHandler)completionHandler DEPRECATED_ATTRIBUTE;
+
+/**
+ *  Requests updated channels and deleted channel URLs since the timestamp.
+ *
+ *  @param timestamp  The number of milli-seconds(msec). Requests changelogs from that time. This value must not be negative.
+ *  @param params  the parameter object that filters a result .
+ *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
+ *
+ *  @since 3.0.182
+ */
++ (void)getMyGroupChannelChangeLogsByTimestamp:(long long)timestamp
+                                        params:(nullable SBDGroupChannelChangeLogsParams *)params
                              completionHandler:(nonnull SBDChannelChangeLogsHandler)completionHandler;
 
 #pragma mark - Emoji

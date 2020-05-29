@@ -622,7 +622,6 @@ typedef NS_OPTIONS(NSUInteger, SBDGroupChannelListQuerySearchField) {
     SBDGroupChannelListQuerySearchFieldChannelName      = (1 << 1),
 };
 
-
 /**
  Categories of reporting reasons
  

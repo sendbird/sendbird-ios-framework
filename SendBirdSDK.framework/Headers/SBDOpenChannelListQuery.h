@@ -21,6 +21,13 @@
 @property (atomic) NSUInteger limit;
 
 /**
+ *  Whether the result contains frozen channel or not. Default is YES
+ *  @since 3.0.182
+ */
+@property (atomic) BOOL includeFrozenChannel;
+
+
+/**
  *  Shows if there is a next page.
  */
 @property (atomic, readonly) BOOL hasNext;

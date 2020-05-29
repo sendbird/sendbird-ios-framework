@@ -1025,14 +1025,14 @@ DEPRECATED_ATTRIBUTE;
  *  @param completionHandler The handler block to execute. `metaData` is the meta <span>data</span> which are set on SendBird server.
  */
 - (void)getMetaDataWithKeys:(NSArray<NSString *> * _Nullable)keys
-          completionHandler:(nullable void (^)(NSDictionary<NSString *, NSObject *> * _Nullable metaData, SBDError * _Nullable error))completionHandler;
+          completionHandler:(nullable void (^)(NSDictionary<NSString *, NSString *> * _Nullable metaData, SBDError * _Nullable error))completionHandler;
 
 /**
  *  Gets all meta <span>data</span> for the channel.
  *
  *  @param completionHandler The handler block to execute. `metaData` is the meta <span>data</span> which are set on SendBird server.
  */
-- (void)getAllMetaDataWithCompletionHandler:(nullable void (^)(NSDictionary<NSString *, NSObject *> * _Nullable metaData, SBDError * _Nullable error))completionHandler;
+- (void)getAllMetaDataWithCompletionHandler:(nullable void (^)(NSDictionary<NSString *, NSString *> * _Nullable metaData, SBDError * _Nullable error))completionHandler;
 
 /**
  *  Updates the meta <span>data</span> for the channel.
@@ -1041,7 +1041,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param completionHandler The handler block to execute. `metaData` is the meta counters which are updated on SendBird server.
  */
 - (void)updateMetaData:(NSDictionary<NSString *, NSString *> * _Nonnull)metaData
-     completionHandler:(nullable void (^)(NSDictionary<NSString *, NSObject *> * _Nullable metaData, SBDError * _Nullable error))completionHandler;
+     completionHandler:(nullable void (^)(NSDictionary<NSString *, NSString *> * _Nullable metaData, SBDError * _Nullable error))completionHandler;
 
 /**
  *  Deletes meta <span>data</span> with key for the channel.

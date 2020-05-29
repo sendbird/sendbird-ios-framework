@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.0.182 (May 29, 2020)
+* Added `SBDGroupChannelChangeLogsParams`
+* Added `getMyGroupChannelChangeLogsByToken:params:completionHandler:`
+* Deprecated `getMyGroupChannelChangeLogsByToken:customType:completionHandler:` and `getMyGroupChannelChangeLogsByToken:customType:includeEmptyChannel:completionHandler`
+* Added `includeFronzeChannel` in `SBDOpenChannelListQuery`
+* Fixed meta data completion type
+
 ### v3.0.181 (May 20, 2020)
 * Fixed reaction bug.
 
