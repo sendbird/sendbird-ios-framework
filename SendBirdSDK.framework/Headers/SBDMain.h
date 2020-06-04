@@ -58,7 +58,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 @end
 
 /**
- *  The `SBDMain` is the core class for SendBird. This class is singletone instance which is initialized by Application ID.
+ *  The `SBDMain` is the core class for Sendbird. This class is singletone instance which is initialized by Application ID.
  *  This class provides the methods for overall. The methods include `SBDChannelDelegate` registration for receiving events are related to channels, `SBDConnectionDelegate` for managing the connection status, updating the current user's information, registration for APNS push notification and blocking other users.
  */
 @interface SBDMain : NSObject
@@ -149,9 +149,9 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 + (BOOL)isInitialized;
 
 /**
- *  Initializes `SBDMain` singleton instance with SendBird Application ID. The Application ID is on SendBird dashboard. This method has to be run first in order to user SendBird.
+ *  Initializes `SBDMain` singleton instance with Sendbird Application ID. The Application ID is on Sendbird dashboard. This method has to be run first in order to user Sendbird.
  *
- *  @param applicationId The Applicatin ID of SendBird. It can be founded on SendBird Dashboard.
+ *  @param applicationId The Applicatin ID of Sendbird. It can be founded on Sendbird Dashboard.
  *
  *  @return If YES, the applicationId is set.
  */
@@ -166,7 +166,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 + (void)setSharedContainerIdentifier:(nonnull NSString *)identifier;
 
 /**
- *  Performs a connection to SendBird with the user ID.
+ *  Performs a connection to Sendbird with the user ID.
  *
  *  @param userId            The user ID.
  *  @param completionHandler The handler block to execute. `user` is the object to represent the current user.
@@ -175,7 +175,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
         completionHandler:(nullable void (^)(SBDUser * _Nullable user, SBDError * _Nullable error))completionHandler;
 
 /**
- *  Performs a connection to SendBird with the user ID and the access token.
+ *  Performs a connection to Sendbird with the user ID and the access token.
  *
  *  @param userId            The user ID.
  *  @param accessToken       The access token. If the user doesn't have access token, set nil.
@@ -186,7 +186,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
         completionHandler:(nullable void (^)(SBDUser * _Nullable user, SBDError * _Nullable error))completionHandler;
 
 /**
- *  Performs a connection to SendBird with the user ID and the access token.
+ *  Performs a connection to Sendbird with the user ID and the access token.
  *
  *  @param userId userId
  *  @param accessToken accessToken
@@ -219,7 +219,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 + (long long)getLastConnectedAt;
 
 /**
- *  Disconnects from SendBird. If this method is invoked, the current user will be invalidated.
+ *  Disconnects from Sendbird. If this method is invoked, the current user will be invalidated.
  *
  *  @param completionHandler The handler block to execute.
  */
@@ -410,7 +410,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 + (nullable NSData *)getPendingPushToken;
 
 /**
- *  Registers the current device token to SendBird.
+ *  Registers the current device token to Sendbird.
  *
  *  @param devToken          Device token for APNS.
  *  @param unique            If YES, register device token after removing exsiting all device tokens of the current user. If NO, just add the device token.
@@ -421,7 +421,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
               completionHandler:(nullable void (^)(SBDPushTokenRegistrationStatus status, SBDError * _Nullable error))completionHandler;
 
 /**
- *  Registers the current device token to SendBird.
+ *  Registers the current device token to Sendbird.
  *
  *  @param devToken          Device token for APNS.
  *  @param completionHandler The handler block to execute. `status` is the status for push token registration. It is defined in `SBDPushTokenRegistrationStatus`. `SBDPushTokenRegistrationStatusSuccess` represents the `devToken` is registered. `SBDPushTokenRegistrationStatusPending` represents the `devToken` is not registered because the connection is not established, so this method has to be invoked with `getPendingPushToken` method after the connection. The `devToken` is retrived by `getPendingPushToken`. `SBDPushTokenRegistrationStatusError` represents the push token registration is failed.
@@ -432,7 +432,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
               completionHandler:(nullable void (^)(SBDPushTokenRegistrationStatus status, SBDError * _Nullable error))completionHandler DEPRECATED_ATTRIBUTE;
 
 /**
- *  Registers the current device token to SendBird.
+ *  Registers the current device token to Sendbird.
  *
  *  @param devToken          Device token for APNS.
  *  @param completionHandler The handler block to execute.
@@ -443,7 +443,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
         completionHandler:(nullable void (^)(NSDictionary * _Nullable response, SBDError * _Nullable error))completionHandler DEPRECATED_ATTRIBUTE;
 
 /**
- *  Unregisters the current device token from SendBird.
+ *  Unregisters the current device token from Sendbird.
  *
  *  @param devToken          Device token for APNS.
  *  @param completionHandler The handler block to execute.
@@ -452,7 +452,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
           completionHandler:(nullable void (^)(NSDictionary * _Nullable response, SBDError * _Nullable error))completionHandler;
 
 /**
- *  Unregisters all device tokens for the current user from SendBird.
+ *  Unregisters all device tokens for the current user from Sendbird.
  *
  *  @param completionHandler The handler block to execute.
  */
@@ -468,7 +468,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 + (nullable NSData *)getPendingPushKitToken;
 
 /**
- *  Registers the current device token for PushKit to SendBird.
+ *  Registers the current device token for PushKit to Sendbird.
  *
  *  @param devToken          Device token for PushKit.
  *  @param unique            If YES, register device token after removing exsiting all device tokens of the current user. If NO, just add the device token.
@@ -480,7 +480,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
                  completionHandler:(nullable void (^)(SBDPushTokenRegistrationStatus status, SBDError * _Nullable error))completionHandler;
 
 /**
-*  Unregisters the current device token for PushKit from SendBird.
+*  Unregisters the current device token for PushKit from Sendbird.
 *
 *  @param devToken          Device token for PushKit.
 *  @param completionHandler The handler block to execute.
@@ -491,7 +491,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
              completionHandler:(nullable void (^)(NSDictionary * _Nullable response, SBDError * _Nullable error))completionHandler;
 
 /**
- *  Unregisters all device tokens for PushKit for the current user from SendBird.
+ *  Unregisters all device tokens for PushKit for the current user from Sendbird.
  *
  *  @param completionHandler The handler block to execute.
  *
@@ -823,7 +823,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.123
- *  @deprecated in 3.0.182
+ *  @deprecated in 3.0.182 Use `getMyGroupChannelChangeLogsByToken:params:completionHandler` instead
  */
 + (void)getMyGroupChannelChangeLogsByToken:(nullable NSString *)token
                                customTypes:(nullable NSArray <NSString *> *)customTypes
@@ -838,7 +838,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.131
- *  @deprecated in 3.0.182
+ *  @deprecated in 3.0.182 Use `getMyGroupChannelChangeLogsByToken:params:completionHandler` instead
  */
 + (void)getMyGroupChannelChangeLogsByToken:(nullable NSString *)token
                                customTypes:(nullable NSArray<NSString *> *)customTypes
@@ -849,7 +849,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  Requests updated channels and deleted channel URLs since a certain time. A certain time is decided by a token.
  *
  *  @param token  The token used to get next pagination of changelogs.
- *  @param params  the parameter object that filters a result .
+ *  @param params  the parameter object that filters a result. See `SBDGroupChannelChangeLogsParams` for more detail
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.182
@@ -866,7 +866,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.123
- *  @deprecated in 3.0.182
+ *  @deprecated in 3.0.182 Use `getMyGroupChannelChangeLogsByTimestamp:params:completionHandler` instead
  */
 + (void)getMyGroupChannelChangeLogsByTimestamp:(long long)timestamp
                                    customTypes:(nullable NSArray <NSString *> *)customTypes
@@ -881,7 +881,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.131
- *  @deprecated in 3.0.182
+ *  @deprecated in 3.0.182 Use `getMyGroupChannelChangeLogsByTimestamp:params:completionHandler` instead
  */
 + (void)getMyGroupChannelChangeLogsByTimestamp:(long long)timestamp
                                    customTypes:(nullable NSArray <NSString *> *)customTypes
@@ -892,7 +892,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  Requests updated channels and deleted channel URLs since the timestamp.
  *
  *  @param timestamp  The number of milli-seconds(msec). Requests changelogs from that time. This value must not be negative.
- *  @param params  the parameter object that filters a result .
+ *  @param params  the parameter object that filters a result. See `SBDGroupChannelChangeLogsParams` for more detail
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.182
@@ -937,12 +937,12 @@ completionHandler:(nullable void (^)(SBDEmoji * _Nullable emoji, SBDError * _Nul
 #pragma mark - For Extension SDK
 
 /**
- * SendBird user agent information getter.
+ * Sendbird user agent information getter.
  */
 + (nonnull NSString *)getSBUserAgent;
 
 /**
- * Used to set the version information of the SendBird SDK extension.
+ * Used to set the version information of the Sendbird SDK extension.
  *
  * @param key Extension sdk's hidden key
  * @param version Extension sdk's version string
@@ -957,6 +957,19 @@ completionHandler:(nullable void (^)(SBDEmoji * _Nullable emoji, SBDError * _Nul
  * @since 3.0.180
  */
 + (nullable SBDAppInfo *)getAppInfo;
+
+#pragma mark - App Group Support.
+/// Sets the app group.
+/// @param appGroup The app group.
+/// @since 3.0.183
++ (void)setAppGroup:(nonnull NSString *)appGroup;
+
+/// Marks as delivered with the payload of the remote notification.
+/// @param payload The remote notification payload
+/// @param completionHandler The handler block to execute
+/// @since 3.0.183
++ (void)markAsDeliveredWithRemoteNotificationPayload:(nonnull NSDictionary *)payload
+                                   completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
 @end
 

@@ -41,7 +41,7 @@
 
 /**
  *  Represents the dispatch state of the message.
- *  If message is not dispatched completely to the SendBird server, the value is `SBDMessageRequestStatePending`.
+ *  If message is not dispatched completely to the Sendbird server, the value is `SBDMessageRequestStatePending`.
  *  If failed to send the message, the value is `SBDMessageRequestStateFailed`.
  *  And if success to send the message, the value is `SBDMessageRequestStateSucceeded`.
  *
@@ -52,7 +52,7 @@
 
 /**
  *  Represents the dispatch state of the message.
- *  If message is not dispatched completely to the SendBird server, the value is `SBDMessageSendingStatusPending`.
+ *  If message is not dispatched completely to the Sendbird server, the value is `SBDMessageSendingStatusPending`.
  *  If failed to send the message, the value is `SBDMessageSendingStatusFailed`.
  *  And if success to send the message, the value is `SBDMessageSendingStatusSucceeded`.
  *

@@ -45,7 +45,7 @@
 /**
  *  Creates an open channel.
  *
- *  @param completionHandler The handler block to execute. `channel` is the open channel instance which is created. The name and cover URL of the channel are generated in SendBird server.
+ *  @param completionHandler The handler block to execute. `channel` is the open channel instance which is created. The name and cover URL of the channel are generated in Sendbird server.
  */
 + (void)createChannelWithCompletionHandler:(nonnull void (^)(SBDOpenChannel * _Nullable channel, SBDError * _Nullable error))completionHandler;
 

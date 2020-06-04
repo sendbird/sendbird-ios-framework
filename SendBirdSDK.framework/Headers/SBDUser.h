@@ -115,7 +115,7 @@
  *  Creates the meta <span>data</span> for the current user.
  *
  *  @param metaData          The meta <span>data</span> to be set.
- *  @param completionHandler The handler block to execute. `metaData` is the meta <span>data</span> which are set on SendBird server.
+ *  @param completionHandler The handler block to execute. `metaData` is the meta <span>data</span> which are set on Sendbird server.
  */
 - (void)createMetaData:(NSDictionary<NSString *, NSString *> * _Nonnull)metaData
      completionHandler:(nullable void (^)(NSDictionary<NSString *, NSString *> * _Nullable metaData, SBDError * _Nullable error))completionHandler;
@@ -124,7 +124,7 @@
  *  Updates the meta <span>data</span> for the current user.
  *
  *  @param metaData          The meta <span>data</span> to be updated.
- *  @param completionHandler The handler block to execute. `metaData` is the meta counters which are updated on SendBird server.
+ *  @param completionHandler The handler block to execute. `metaData` is the meta counters which are updated on Sendbird server.
  */
 - (void)updateMetaData:(NSDictionary<NSString *, NSString *> * _Nonnull)metaData
      completionHandler:(nullable void (^)(NSDictionary<NSString *, NSString *> * _Nullable metaData, SBDError * _Nullable error))completionHandler;

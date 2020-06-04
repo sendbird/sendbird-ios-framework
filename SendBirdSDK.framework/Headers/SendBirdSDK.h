@@ -2,7 +2,7 @@
 //  SendBirdSDK.h
 //  SendBirdSDK
 //
-//  Created by SendBird Developers on 2015. 3. 1. in San Francisco, CA.
+//  Created by Sendbird Developers on 2015. 3. 1. in San Francisco, CA.
 //  Copyright (c) 2015 SENDBIRD.COM. All rights reserved.
 //
 

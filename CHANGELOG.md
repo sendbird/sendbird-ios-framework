@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.183 (Jun 4, 2020)
+* Improved delivery receipt
+
 ### v3.0.182 (May 29, 2020)
 * Added `SBDGroupChannelChangeLogsParams`
 * Added `getMyGroupChannelChangeLogsByToken:params:completionHandler:`

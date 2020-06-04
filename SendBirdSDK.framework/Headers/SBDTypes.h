@@ -577,7 +577,7 @@ typedef NS_ENUM(NSUInteger, SBDPushTokenType) {
  Constants of type to describe message's request state
  
  - SBDMessageRequestStateNone: MUST NOT BE. If you got a message instance from SDK, the message can't have this value.
- - SBDMessageRequestStatePending: Indicates the state of the message returned when trying to send a message. The message with the pending state means that is not dispatched completely to the SendBird server. The pending message should be replaced with a message (failed or succeeded) from the callback.
+ - SBDMessageRequestStatePending: Indicates the state of the message returned when trying to send a message. The message with the pending state means that is not dispatched completely to the Sendbird server. The pending message should be replaced with a message (failed or succeeded) from the callback.
  - SBDMessageRequestStateFailed: Indicates the state of the message that failed to send the message.
  - SBDMessageRequestStateSucceeded: Indicates the state of the message that success to send the message.
  
@@ -595,7 +595,7 @@ typedef NS_ENUM(NSUInteger, SBDMessageRequestState) {
  Constants of type to describe message's sending status.
  
  - SBDMessageSendingStatusNone: MUST NOT BE. If you got a message instance from SDK, the message can't have this value.
- - SBDMessageSendingStatusPending: Indicates the status of the message returned when trying to send a message. The message with the pending status means that is not dispatched completely to the SendBird server. The pending message should be replaced with a message (failed or succeeded) from the callback.
+ - SBDMessageSendingStatusPending: Indicates the status of the message returned when trying to send a message. The message with the pending status means that is not dispatched completely to the Sendbird server. The pending message should be replaced with a message (failed or succeeded) from the callback.
  - SBDMessageSendingStatusFailed: Indicates the status of the message that failed to send the message.
  - SBDMessageSendingStatusSucceeded: Indicates the status of the message that success to send the message.
  - SBDMessageSendingStatusCanceled: Indicates the status of the message that is canceled.

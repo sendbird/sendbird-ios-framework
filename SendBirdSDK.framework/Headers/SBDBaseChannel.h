@@ -372,9 +372,9 @@
  Sends a user message without <span>data</span>.
  
  @param message           The message text.
- @param completionHandler The handler block to execute. `userMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @param completionHandler The handler block to execute. `userMessage` is a user message which is returned from the Sendbird server. The message has a message ID.
  
- @return Returns a temporary user message being sent to the SendBird server.
+ @return Returns a temporary user message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -388,9 +388,9 @@
  
  @param message           The message text.
  @param targetLanguages   The target languages that the message will be translated into.
- @param completionHandler The handler block to execute. `userMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @param completionHandler The handler block to execute. `userMessage` is a user message which is returned from the Sendbird server. The message has a message ID.
  
- @return Returns a temporary user message being sent to the SendBird server.
+ @return Returns a temporary user message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -408,9 +408,9 @@ DEPRECATED_ATTRIBUTE;
  
  @param message        The message text.
  @param data           The message <span>data</span>.
- @param completionHandler The handler block to execute. `userMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @param completionHandler The handler block to execute. `userMessage` is a user message which is returned from the Sendbird server. The message has a message ID.
  
- @return Returns a temporary user message being sent to the SendBird server.
+ @return Returns a temporary user message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -429,9 +429,9 @@ DEPRECATED_ATTRIBUTE;
  @param message        The message text.
  @param data           The message <span>data</span>.
  @param targetLanguages   The target languages that the message will be translated into.
- @param completionHandler The handler block to execute. `userMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @param completionHandler The handler block to execute. `userMessage` is a user message which is returned from the Sendbird server. The message has a message ID.
  
- @return Returns a temporary user message being sent to the SendBird server.
+ @return Returns a temporary user message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -451,9 +451,9 @@ DEPRECATED_ATTRIBUTE;
  @param message        The message text.
  @param data           The message <span>data</span>.
  @param customType     Custom message type.
- @param completionHandler The handler block to execute. `userMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @param completionHandler The handler block to execute. `userMessage` is a user message which is returned from the Sendbird server. The message has a message ID.
  
- @return Returns a temporary user message being sent to the SendBird server.
+ @return Returns a temporary user message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -474,9 +474,9 @@ DEPRECATED_ATTRIBUTE;
  @param data           The message <span>data</span>.
  @param customType     Custom message type.
  @param targetLanguages   The target languages that the message will be translated into.
- @param completionHandler The handler block to execute. `userMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @param completionHandler The handler block to execute. `userMessage` is a user message which is returned from the Sendbird server. The message has a message ID.
  
- @return Returns a temporary user message being sent to the SendBird server.
+ @return Returns a temporary user message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -497,7 +497,7 @@ DEPRECATED_ATTRIBUTE;
  @param params               The instance of SBDUserMessageParams that can has parameters related with string message.
  @param completionHandler    The handler block to be executed after the message was sent. This block has no return value and takes two argument, one is a file message was sent and other is an error made when there is something wrong to message.
  
- @return Returns a temporary user message being sent to the SendBird server.
+ @return Returns a temporary user message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -512,7 +512,7 @@ DEPRECATED_ATTRIBUTE;
  @param failedMessage  A message to send. A failed message is passed to the callback when fails to send a message
  @param completionHandler  The handler block to be executed after the message is sent. This block has no return value and takes two arguments. One is a user message. If the message is successfully sent, the complete message instance is delivered. If the message fails to be sent, a failed message based on the pending message is delivered. Another factor is errors. If the message fails to be sent, a message error is dispatched
  
- @return Returns a temporary user message being sent to the SendBird server.
+ @return Returns a temporary user message being sent to the Sendbird server.
  @since 3.0.141
  
  @code
@@ -536,16 +536,16 @@ DEPRECATED_ATTRIBUTE;
                                        completionHandler:(nullable SBDUserMessageHandler)completionHandler;
 
 /**
- Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to SendBird file storage and a URL of the file will be generated.
+ Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to Sendbird file storage and a URL of the file will be generated.
  
  @param file              File <span>data</span>.
  @param filename          File<span>name</span>.
  @param type              The mime type of file.
  @param size              File size.
  @param data              Custom <span>data</span>.
- @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the SendBird server. The message has a message ID and an URL.
+ @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the Sendbird server. The message has a message ID and an URL.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -559,7 +559,7 @@ DEPRECATED_ATTRIBUTE;
                                         completionHandler:(nullable void (^)(SBDFileMessage * _Nullable fileMessage, SBDError * _Nullable error))completionHandler;
 
 /**
- Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to SendBird file storage and a URL of the file will be generated.
+ Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to Sendbird file storage and a URL of the file will be generated.
  
  @param file              File <span>data</span>.
  @param filename          File<span>name</span>.
@@ -567,9 +567,9 @@ DEPRECATED_ATTRIBUTE;
  @param size              File size.
  @param data              Custom <span>data</span>.
  @param customType        Custom message type.
- @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the SendBird server. The message has a message ID and an URL.
+ @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the Sendbird server. The message has a message ID and an URL.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -593,9 +593,9 @@ DEPRECATED_ATTRIBUTE;
  @param type              The type of file.
  @param size              File size.
  @param data              Custom <span>data</span>.
- @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the Sendbird server. The message has a message ID.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -618,9 +618,9 @@ DEPRECATED_ATTRIBUTE;
  @param type              The type of file.
  @param size              File size.
  @param data              Custom <span>data</span>.
- @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the Sendbird server. The message has a message ID.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -641,9 +641,9 @@ DEPRECATED_ATTRIBUTE;
  @param size              File size.
  @param data              Custom <span>data</span>.
  @param customType        Custom message type.
- @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the Sendbird server. The message has a message ID.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -668,9 +668,9 @@ DEPRECATED_ATTRIBUTE;
  @param size              File size.
  @param data              Custom <span>data</span>.
  @param customType        Custom message type.
- @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the Sendbird server. The message has a message ID.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -685,7 +685,7 @@ DEPRECATED_ATTRIBUTE;
                                  completionHandler:(nullable void (^)(SBDFileMessage * _Nullable fileMessage, SBDError * _Nullable error))completionHandler;
 
 /**
- Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to SendBird file storage and a URL of the file will be generated. The uploading progress callback can be implemented.
+ Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to Sendbird file storage and a URL of the file will be generated. The uploading progress callback can be implemented.
  
  @param file              File <span>data</span>.
  @param filename          File<span>name</span>.
@@ -693,9 +693,9 @@ DEPRECATED_ATTRIBUTE;
  @param size              File size.
  @param data              Custom <span>data</span>.
  @param progressHandler   The handler block to monitor progression.  `bytesSent` is the number of bytes sent since the last time this method was called. `totalBytesSent` is the total number of bytes sent so far. `totalBytesExpectedToSend` is the expected length of the body <span>data</span>. These parameters are the same to the declaration of [`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:`](https://developer.apple.com/reference/foundation/nsurlsessiontaskdelegate/1408299-urlsession?language=objc).
- @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the SendBird server. The message has a message ID and an URL.
+ @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the Sendbird server. The message has a message ID and an URL.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -713,7 +713,7 @@ DEPRECATED_ATTRIBUTE;
 DEPRECATED_ATTRIBUTE;
 
 /**
- Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to SendBird file storage and a URL of the file will be generated. The uploading progress callback can be implemented.
+ Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to Sendbird file storage and a URL of the file will be generated. The uploading progress callback can be implemented.
  
  @param file              File <span>data</span>.
  @param filename          File<span>name</span>.
@@ -722,9 +722,9 @@ DEPRECATED_ATTRIBUTE;
  @param data              Custom <span>data</span>.
  @param customType        Custom message type.
  @param progressHandler   The handler block to monitor progression.  `bytesSent` is the number of bytes sent since the last time this method was called. `totalBytesSent` is the total number of bytes sent so far. `totalBytesExpectedToSend` is the expected length of the body <span>data</span>. These parameters are the same to the declaration of [`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:`](https://developer.apple.com/reference/foundation/nsurlsessiontaskdelegate/1408299-urlsession?language=objc).
- @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the SendBird server. The message has a message ID and an URL.
+ @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the Sendbird server. The message has a message ID and an URL.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -743,7 +743,7 @@ DEPRECATED_ATTRIBUTE;
 DEPRECATED_ATTRIBUTE;
 
 /**
- Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to SendBird file storage and a URL of the file will be generated. The uploading progress callback can be implemented.
+ Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to Sendbird file storage and a URL of the file will be generated. The uploading progress callback can be implemented.
  
  @param file              File <span>data</span>.
  @param filename          File<span>name</span>.
@@ -753,9 +753,9 @@ DEPRECATED_ATTRIBUTE;
  @param data              Custom <span>data</span>.
  @param customType        Custom message type.
  @param progressHandler   The handler block to monitor progression.  `bytesSent` is the number of bytes sent since the last time this method was called. `totalBytesSent` is the total number of bytes sent so far. `totalBytesExpectedToSend` is the expected length of the body <span>data</span>. These parameters are the same to the declaration of [`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:`](https://developer.apple.com/reference/foundation/nsurlsessiontaskdelegate/1408299-urlsession?language=objc).
- @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the SendBird server. The message has a message ID and an URL.
+ @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the Sendbird server. The message has a message ID and an URL.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -772,7 +772,7 @@ DEPRECATED_ATTRIBUTE;
                                         completionHandler:(nullable void (^)(SBDFileMessage * _Nullable fileMessage, SBDError * _Nullable error))completionHandler;
 
 /**
- Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to SendBird file storage and a URL of the file will be generated. The uploading progress callback can be implemented.
+ Sends a file message with binary <span>data</span>. The binary <span>data</span> is uploaded to Sendbird file storage and a URL of the file will be generated. The uploading progress callback can be implemented.
  
  @param filepath          File path to be sent.
  @param type              The mime type of file.
@@ -780,9 +780,9 @@ DEPRECATED_ATTRIBUTE;
  @param data              Custom <span>data</span>.
  @param customType        Custom message type.
  @param progressHandler   The handler block to monitor progression.  `bytesSent` is the number of bytes sent since the last time this method was called. `totalBytesSent` is the total number of bytes sent so far. `totalBytesExpectedToSend` is the expected length of the body <span>data</span>. These parameters are the same to the declaration of [`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:`](https://developer.apple.com/reference/foundation/nsurlsessiontaskdelegate/1408299-urlsession?language=objc).
- @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the SendBird server. The message has a message ID and an URL.
+ @param completionHandler The handler block to execute. `fileMessage` is a user message which is returned from the Sendbird server. The message has a message ID and an URL.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -802,7 +802,7 @@ DEPRECATED_ATTRIBUTE;
  @param params               The instance of SBDFileMessageParams that can has parameters related with file.
  @param completionHandler    The handler block to be executed after the message was sent. This block has no return value and takes two argument, one is a file message was sent and other is an error made when there is something wrong to message.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -818,7 +818,7 @@ DEPRECATED_ATTRIBUTE;
  @param progressHandler      The handler block to be used to monitor progression. `bytesSent` is the number of bytes sent since this method was called. `totalBytesSent` is the total number of bytes sent so far. `totalBytesExpectedToSend` is the expected length of the body data. These parameters are the same to the declaration of [`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:`](https://developer.apple.com/reference/foundation/nsurlsessiontaskdelegate/1408299-urlsession?language=objc).
  @param completionHandler    The handler block to be executed after the message was sent. This block has no return value and takes two argument, one is a file message was sent and other is an error made when there is something wrong to message.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -836,7 +836,7 @@ DEPRECATED_ATTRIBUTE;
  @param sentMessageHandler    The handler block to be executed after each message was sent. This block has no return value and takes two argument, one is a file message was sent and other is an error made when there is something wrong to message.
  @param completionHandler    The handler block to be executed after every message was sent. This block has no return value and takes an error. If the sending message can't start at all because of the connection issue, the error isn't nil.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  The message has a request ID instead of a message ID.
  The request status of the message is pending.
  If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
@@ -855,7 +855,7 @@ DEPRECATED_ATTRIBUTE;
  @param binaryData Data to resend. If the failed message has a file URL, the method will not send binary data. If the failed message does not have a file URL, the method will send binary data first and send a file message command with file url.
  @param completionHandler  The handler block to be executed after the message is sent. This block has no return value and takes two arguments. One is a file message. If the message is successfully sent, the complete message instance is delivered. If the message fails to be sent, a failed message based on the pending message is delivered except invalid parameter error. If failed because of invalid parameter, message is nil. Another factor is errors. If the message fails to be sent, a message error is dispatched.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  @since 3.0.147
  
  @code
@@ -887,7 +887,7 @@ DEPRECATED_ATTRIBUTE;
  @param progressHandler      The handler block to be used to monitor progression. `bytesSent` is the number of bytes sent since this method was called. `totalBytesSent` is the total number of bytes sent so far. `totalBytesExpectedToSend` is the expected length of the body data. These parameters are the same to the declaration of [`URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:`](https://developer.apple.com/reference/foundation/nsurlsessiontaskdelegate/1408299-urlsession?language=objc).
  @param completionHandler  The handler block to be executed after the message is sent. This block has no return value and takes two arguments. One is a file message. If the message is successfully sent, the complete message instance is delivered. If the message fails to be sent, a failed message based on the pending message is delivered except invalid parameter error. If failed because of invalid parameter, message is nil. Another factor is errors. If the message fails to be sent, a message error is dispatched.
  
- @return Returns a temporary file message being sent to the SendBird server.
+ @return Returns a temporary file message being sent to the Sendbird server.
  @since 3.0.147
  
  @code
@@ -944,7 +944,7 @@ DEPRECATED_ATTRIBUTE;
  *  Creates the meta counters for the channel.
  *
  *  @param metaCounters      The meta counters to be set.
- *  @param completionHandler The handler block to execute. `metaCounters` is the meta counters which are set on SendBird server.
+ *  @param completionHandler The handler block to execute. `metaCounters` is the meta counters which are set on Sendbird server.
  */
 - (void)createMetaCounters:(NSDictionary<NSString *, NSNumber *> * _Nonnull)metaCounters
          completionHandler:(nullable void (^)(NSDictionary<NSString *, NSNumber *> * _Nullable metaCounters, SBDError * _Nullable error))completionHandler;
@@ -953,7 +953,7 @@ DEPRECATED_ATTRIBUTE;
  *  Gets the meta counters with keys for the channel.
  *
  *  @param keys              The keys to get meta counters.
- *  @param completionHandler The handler block to execute. `metaCounters` is the meta counters which are set on SendBird server.
+ *  @param completionHandler The handler block to execute. `metaCounters` is the meta counters which are set on Sendbird server.
  */
 - (void)getMetaCountersWithKeys:(NSArray<NSString *> * _Nullable)keys
               completionHandler:(nullable void (^)(NSDictionary<NSString *, NSNumber *> * _Nullable metaCounters, SBDError * _Nullable error))completionHandler;
@@ -961,7 +961,7 @@ DEPRECATED_ATTRIBUTE;
 /**
  *  Gets all meta counters for the channel.
  *
- *  @param completionHandler The handler block to execute. `metaCounters` is the meta counters which are returned from SendBird server.
+ *  @param completionHandler The handler block to execute. `metaCounters` is the meta counters which are returned from Sendbird server.
  */
 - (void)getAllMetaCountersWithCompletionHandler:(nullable void (^)(NSDictionary<NSString *, NSNumber *> * _Nullable metaCounters, SBDError * _Nullable error))completionHandler;
 
@@ -969,7 +969,7 @@ DEPRECATED_ATTRIBUTE;
  *  Updates the meta counters for the channel.
  *
  *  @param metaCounters      The meta counters to be updated.
- *  @param completionHandler The handler block to execute. `metaCounters` is the meta counters which are updated on SendBird server.
+ *  @param completionHandler The handler block to execute. `metaCounters` is the meta counters which are updated on Sendbird server.
  */
 - (void)updateMetaCounters:(NSDictionary<NSString *, NSNumber *> * _Nonnull)metaCounters
          completionHandler:(nullable void (^)(NSDictionary<NSString *, NSNumber *> * _Nullable metaCounters, SBDError * _Nullable error))completionHandler;
@@ -978,7 +978,7 @@ DEPRECATED_ATTRIBUTE;
  *  Increases the meta counters for the channel.
  *
  *  @param metaCounters      The meta counters to be increased.
- *  @param completionHandler The handler block to execute. `metaCounters` is the meta counters which are increased on SendBird server.
+ *  @param completionHandler The handler block to execute. `metaCounters` is the meta counters which are increased on Sendbird server.
  */
 - (void)increaseMetaCounters:(NSDictionary<NSString *, NSNumber *> * _Nonnull)metaCounters
            completionHandler:(nullable void (^)(NSDictionary<NSString *, NSNumber *> * _Nullable metaCounters, SBDError * _Nullable error))completionHandler;
@@ -987,7 +987,7 @@ DEPRECATED_ATTRIBUTE;
  *  Decreases the meta counters for the channel.
  *
  *  @param metaCounters      The meta counters to be decreased.
- *  @param completionHandler The handler block to execute. `metaCounters` is the meta counters which are decreased on SendBird server.
+ *  @param completionHandler The handler block to execute. `metaCounters` is the meta counters which are decreased on Sendbird server.
  */
 - (void)decreaseMetaCounters:(NSDictionary<NSString *, NSNumber *> * _Nonnull)metaCounters
            completionHandler:(nullable void (^)(NSDictionary<NSString *, NSNumber *> * _Nullable metaCounters, SBDError * _Nullable error))completionHandler;
@@ -1013,7 +1013,7 @@ DEPRECATED_ATTRIBUTE;
  *  Creates the meta <span>data</span> for the channel.
  *
  *  @param metaData          The meta <span>data</span> to be set.
- *  @param completionHandler The handler block to execute. `metaData` is the meta <span>data</span> which are set on SendBird server.
+ *  @param completionHandler The handler block to execute. `metaData` is the meta <span>data</span> which are set on Sendbird server.
  */
 - (void)createMetaData:(NSDictionary<NSString *, NSString *> * _Nonnull)metaData
      completionHandler:(nullable void (^)(NSDictionary<NSString *, NSString *> * _Nullable metaData, SBDError * _Nullable error))completionHandler;
@@ -1022,7 +1022,7 @@ DEPRECATED_ATTRIBUTE;
  *  Gets the meta <span>data</span> for the channel.
  *
  *  @param keys              The keys to get meta <span>data</span>.
- *  @param completionHandler The handler block to execute. `metaData` is the meta <span>data</span> which are set on SendBird server.
+ *  @param completionHandler The handler block to execute. `metaData` is the meta <span>data</span> which are set on Sendbird server.
  */
 - (void)getMetaDataWithKeys:(NSArray<NSString *> * _Nullable)keys
           completionHandler:(nullable void (^)(NSDictionary<NSString *, NSString *> * _Nullable metaData, SBDError * _Nullable error))completionHandler;
@@ -1030,7 +1030,7 @@ DEPRECATED_ATTRIBUTE;
 /**
  *  Gets all meta <span>data</span> for the channel.
  *
- *  @param completionHandler The handler block to execute. `metaData` is the meta <span>data</span> which are set on SendBird server.
+ *  @param completionHandler The handler block to execute. `metaData` is the meta <span>data</span> which are set on Sendbird server.
  */
 - (void)getAllMetaDataWithCompletionHandler:(nullable void (^)(NSDictionary<NSString *, NSString *> * _Nullable metaData, SBDError * _Nullable error))completionHandler;
 
@@ -1038,7 +1038,7 @@ DEPRECATED_ATTRIBUTE;
  *  Updates the meta <span>data</span> for the channel.
  *
  *  @param metaData          The meta <span>data</span> to be updated.
- *  @param completionHandler The handler block to execute. `metaData` is the meta counters which are updated on SendBird server.
+ *  @param completionHandler The handler block to execute. `metaData` is the meta counters which are updated on Sendbird server.
  */
 - (void)updateMetaData:(NSDictionary<NSString *, NSString *> * _Nonnull)metaData
      completionHandler:(nullable void (^)(NSDictionary<NSString *, NSString *> * _Nullable metaData, SBDError * _Nullable error))completionHandler;
@@ -1957,7 +1957,7 @@ DEPRECATED_ATTRIBUTE;
 
  @param message User message object.
  @param targetChannel Target channel object.
- @param completionHandler The handler block to execute. The `userMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @param completionHandler The handler block to execute. The `userMessage` is a user message which is returned from the Sendbird server. The message has a message ID.
  @return Returns the temporary user message with a request ID. It doesn't have a message ID.
  */
 - (nonnull SBDUserMessage *)copyUserMessage:(SBDUserMessage * _Nonnull)message
@@ -1970,7 +1970,7 @@ DEPRECATED_ATTRIBUTE;
 
  @param message File message object.
  @param targetChannel Target channel object.
- @param completionHandler The handler block to execute. The `fileMessage` is a user message which is returned from the SendBird server. The message has a message ID.
+ @param completionHandler The handler block to execute. The `fileMessage` is a user message which is returned from the Sendbird server. The message has a message ID.
  @return Returns the temporary file message with a request ID. It doesn't have a message ID.
  */
 - (nonnull SBDFileMessage *)copyFileMessage:(SBDFileMessage * _Nonnull)message

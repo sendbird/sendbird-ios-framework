@@ -38,7 +38,7 @@
 /**
  A delegate method for the user authentication. Implements this method to get the user ID, the access token, the API host, and the WS host from the customer's side. The `completionHandler()` has to be invoked when the user authentication is completed. The `completionHandler()` will invoke `didFinishAuthenticationWithUser:error:` to return the user object and the error.
 
- @param completionHandler The completion handler to notify SendBird SDK of the completion of the user authentication.
+ @param completionHandler The completion handler to notify Sendbird SDK of the completion of the user authentication.
  */
 - (void)shouldHandleAuthInfoWithCompletionHandler:(void (^ _Nonnull)(NSString * _Nullable userId, NSString * _Nullable accessToken, NSString * _Nullable apiHost, NSString * _Nullable wsHost))completionHandler;
 
@@ -46,7 +46,7 @@
  A delegate method for the completion of the user authentication. This delegate is invoked by the `completionHandler` of 'shouldHandleAuthInfoWithCompletionHandler:`.
 
  @param user The current user object.
- @param error The error object. If an error has occurred while connecting to SendBird, the `error` isn't nil.
+ @param error The error object. If an error has occurred while connecting to Sendbird, the `error` isn't nil.
  */
 - (void)didFinishAuthenticationWithUser:(SBDUser * _Nullable)user error:(SBDError * _Nullable)error;
 

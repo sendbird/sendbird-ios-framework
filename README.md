@@ -1,5 +1,5 @@
-# [SendBird](https://sendbird.com) - Messaging and Chat API for Mobile Apps and Websites
-[SendBird](https://sendbird.com) provides the chat API and SDK for your app enabling real-time communication among your users.
+# [Sendbird](https://sendbird.com) - Messaging and Chat API for Mobile Apps and Websites
+[Sendbird](https://sendbird.com) provides the chat API and SDK for your app enabling real-time communication among your users.
 
 [![Platform](https://img.shields.io/badge/Platform-iOS-orange.svg)](https://cocoapods.org/pods/SendBirdSDK)
 [![Languages](https://img.shields.io/badge/Language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/sendbird/sendbird-ios-framework)
@@ -10,7 +10,7 @@
 ## Documentation
 https://docs.sendbird.com/
 
-## Install SendBird Framework from CocoaPods
+## Install Sendbird Framework from CocoaPods
 
 Add below into your Podfile on Xcode.
 
@@ -23,15 +23,15 @@ target YOUR_PROJECT_TARGET do
 end
 ```
 
-Install SendBird Framework through CocoaPods.
+Install Sendbird Framework through CocoaPods.
 
 ```
 pod install
 ```
 
-Now you can see installed SendBird framework by inspecting YOUR_PROJECT.xcworkspace.
+Now you can see installed Sendbird framework by inspecting YOUR_PROJECT.xcworkspace.
 
-## Install SendBird Framework from Carthage
+## Install Sendbird Framework from Carthage
 
 1. Add `github "sendbird/sendbird-ios-framework"` to your `Cartfile`.
 2. Run `carthage update`.
@@ -51,7 +51,7 @@ $(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SendBirdSDK.framework
 For an in depth guide, read on from [Adding frameworks to an application](https://github.com/Carthage/Carthage#quick-start)
 
 ## [SyncManager](https://github.com/sendbird/sendbird-syncmanager-ios)
-[SyncManager SDK](https://github.com/sendbird/sendbird-syncmanager-ios) is a support add-on for [SendBird SDK](https://github.com/sendbird/sendbird-ios-framework). Major benefits of [SyncManager](https://github.com/sendbird/sendbird-syncmanager-ios) are,  
+[SyncManager SDK](https://github.com/sendbird/sendbird-syncmanager-ios) is a support add-on for [Sendbird SDK](https://github.com/sendbird/sendbird-ios-framework). Major benefits of [SyncManager](https://github.com/sendbird/sendbird-syncmanager-ios) are,  
   
  * Local cache integrated: store channel/message data in local storage for fast view loading.  
  * Event-driven data handling: subscribe channel/message event like `insert`, `update`, `remove` at a single spot in order to apply data event to view.  

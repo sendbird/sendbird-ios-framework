@@ -11,7 +11,7 @@
 #import "SBDTypes.h"
 
 /**
- *  SendBird error class.
+ *  Sendbird error class.
  */
 @interface SBDError : NSError
 
