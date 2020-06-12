@@ -110,6 +110,11 @@ DEPRECATED_ATTRIBUTE;
 
 @property (atomic, readonly) NSInteger messageSurvivalSeconds;
 
+/// Whether the message is silent or not
+/// @note If the message is silent,  last message won't be changed and `channelWasChanged:` will not get called on receiver's sidel
+/// @since 3.0.184
+@property (atomic, readonly, getter=isSilent) BOOL silent;
+
 /**
  *  Initializes a message object.
  *
