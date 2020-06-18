@@ -361,14 +361,6 @@
 @property (nonatomic, readonly) BOOL isEphemeral;
 
 /**
- *  Internal use only.
- *
- *  @param dict dict
- *  @warning *Important*: DON'T use this method. This method will be unavailable.
- */
-- (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict;
-
-/**
  Sends a user message without <span>data</span>.
  
  @param message           The message text.

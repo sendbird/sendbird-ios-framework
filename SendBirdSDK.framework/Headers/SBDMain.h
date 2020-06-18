@@ -805,14 +805,13 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 + (NSInteger)getSubscribedCustomTypeTotalUnreadMessageCount;
 + (NSInteger)getSubscribedCustomTypeUnreadMessageCountWithCustomType:(nonnull NSString *)customType;
 
-/**
- * Marks as delivered a group channel of the current user.
- *
- * @param channelUrl The channel URL.
- *
- * @since 3.0.162
- */
-+ (void)markAsDeliveredWithChannelUrl:(nonnull NSString *)channelUrl;
+/// Marks as delivered a group channel of the current user.
+/// @param channelUrl The channel URL.
+/// @since 3.0.162
+/// @deprecated 3.0.185
+/// @note The client doesn't have to call this method any longer.
++ (void)markAsDeliveredWithChannelUrl:(nonnull NSString *)channelUrl
+DEPRECATED_ATTRIBUTE;
 
 #pragma mark - channel change logs
 /**

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class SBDGroupChannelListQuery;
+
 NS_ASSUME_NONNULL_BEGIN
 
 /// An object that represents the parameters for the The method returns channels according to the properties in this object.
@@ -28,6 +30,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// @note The default value is `YES`.
 /// @since 3.0.182
 @property (atomic) BOOL includeFrozenChannel;
+
+
+/// Create `SBDGroupChannelChangeLogsParams` from a given SBDGroupChannelListQuery instance.
+/// @param query group channel list query
+/// @return A created instance of `SBDGroupChannelChangeLogsParams`
+/// @since 3.0.185
++ (SBDGroupChannelChangeLogsParams *)createWithGroupChannelListQuery:(SBDGroupChannelListQuery *)query;
 
 @end
 

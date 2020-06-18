@@ -207,15 +207,6 @@
 - (void)refreshWithCompletionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
 /**
- *  Initializes this channel instance with dictionary of group channel.
- *
- *  @param dict The dictionary of group channel.
- *
- *  @return The instance of group channel.
- */
-- (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict;
-
-/**
  *  Creates a query for my group channel list.
  *
  *  @return SBDGroupChannelListQuery instance for the current user.
@@ -794,11 +785,12 @@ DEPRECATED_ATTRIBUTE;
  */
 - (void)markAsRead;
 
-/**
- *  Sends mark as delivered. The other <span>members</span> in the channel will receive an event. The event will be received in `channelDidUpdateDeliveryReceipt:` of `SBDChannelDelegate`.
- *  @since 3.0.162
- */
-- (void)markAsDelivered;
+/// Sends mark as delivered. The other <span>members</span> in the channel will receive an event. The event will be received in `channelDidUpdateDeliveryReceipt:` of `SBDChannelDelegate`.
+/// @since 3.0.162
+/// @deprecated 3.0.185
+/// @note The client doesn't have to call this method any longer.
+- (void)markAsDelivered
+DEPRECATED_ATTRIBUTE;
 
 /**
  *  Starts typing. The other <span>members</span> in the channel will receive an event. The event will be received in `channelDidUpdateTypingStatus:` of `SBDChannelDelegate`.
@@ -821,14 +813,18 @@ DEPRECATED_ATTRIBUTE;
 + (SBDGroupChannel * _Nullable)getChannelFromCacheWithChannelUrl:(NSString * _Nonnull)channelUrl
 DEPRECATED_ATTRIBUTE;
 
-/**
- *  Returns how many <span>members</span> haven't been read the given message yet.
- *
- *  @param message The message.
- *
- *  @return Number of unread member count. Zero if all <span>members</span> read the message.
- */
-- (int)getReadReceiptOfMessage:(SBDBaseMessage * _Nonnull)message;
+/// Returns how many <span>members</span> haven't been read the given message yet.
+/// @param message The message.
+/// @return Number of unread member count. Zero if all <span>members</span> read the message.
+/// @deprecated 3.0.185 Use `getUnreadMemberCount:` instead.
+- (int)getReadReceiptOfMessage:(SBDBaseMessage * _Nonnull)message
+DEPRECATED_ATTRIBUTE;
+
+/// Returns how many <span>members</span> haven't been read the given message yet.
+/// @param message The message.
+/// @return Number of unread member count. Zero if all <span>members</span> read the message.
+/// @since 3.0.185
+- (int)getUnreadMemberCount:(nonnull SBDBaseMessage *)message;
 
 /**
  *  Returns the timestamp of the last seen at the channel by user.
@@ -949,16 +945,19 @@ DEPRECATED_ATTRIBUTE;
  */
 - (nonnull NSDictionary<NSString *, NSDictionary<NSString *, NSObject *> *> *)getReadStatusIncludingAllMembers:(BOOL)includeAllMembers;
 
-/**
- *  Returns how many <span>members</span> haven't been delivery the given message yet.
- *
- *  @param message The message.
- *
- *  @return Number of undelivered member count. Zero if all <span>members</span> delivered the message.
- *
- *  @since 3.0.162
- */
-- (int)getDeliveryReceipt:(SBDBaseMessage * _Nonnull)message;
+/// Returns how many <span>members</span> haven't been delivery the given message yet.
+/// @param message The message.
+/// @return Number of undelivered member count. Zero if all <span>members</span> delivered the message.
+/// @since 3.0.162
+/// @deprecated 3.0.185 Use `getUndeliveredMemberCount:` instead.
+- (int)getDeliveryReceipt:(SBDBaseMessage * _Nonnull)message
+DEPRECATED_ATTRIBUTE;
+
+/// Returns how many <span>members</span> haven't been delivery the given message yet.
+/// @param message The message.
+/// @return Number of undelivered member count. Zero if all <span>members</span> delivered the message.
+/// @since 3.0.185
+- (int)getUndeliveredMemberCount:(nonnull SBDBaseMessage *)message;
 
 /**
  *  If other users are typing in the channel, YES is returned.

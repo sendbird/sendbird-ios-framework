@@ -31,11 +31,6 @@
 @property (strong, nonatomic, readonly, nullable) NSMutableArray<SBDUser *> *operators;
 
 /**
- *  DO NOT USE this initializer. You can only get an instance type of `SBDOpenChannel` from SDK.
- */
-- (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict;
-
-/**
  *  Creates a query instance for open channel list.
  *
  *  @return The query instance for open channel list.

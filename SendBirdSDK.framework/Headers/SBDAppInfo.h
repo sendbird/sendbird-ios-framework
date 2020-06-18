@@ -40,10 +40,6 @@
  */
 @property (assign, atomic, readonly) BOOL useReaction;
 
-
-- (nullable instancetype)initWithDictionary:(nonnull NSDictionary *)dict;
-
-
 /**
  * This function can check if Emoji information needs to be updated to date.
  *

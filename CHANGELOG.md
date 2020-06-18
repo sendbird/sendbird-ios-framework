@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.0.185 (Jun 18, 2020)
+* Added functions that creates a `SBDMessageChangeLogsParams` object with `SBDPreviousMessageListQuery` and `SBDMessageListParams` information.
+* Added a function that creates a `SBDGroupChannelChangeLogsParams` object with `SBDGroupChannelListQuery` information.
+* Added `getUnreadMemberCount:` and `getUndeliveredMemberCount:`.
+* Improved stability.
+* Fixed reconnection issue.
+
 ### v3.0.184 (Jun 11, 2020)
 * Improved stability 
 

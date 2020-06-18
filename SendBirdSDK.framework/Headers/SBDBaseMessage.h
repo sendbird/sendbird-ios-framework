@@ -116,15 +116,6 @@ DEPRECATED_ATTRIBUTE;
 @property (atomic, readonly, getter=isSilent) BOOL silent;
 
 /**
- *  Initializes a message object.
- *
- *  @param dict Dictionary data for a message.
- *
- *  @return SBDBaseMessage object.
- */
-- (nullable instancetype)initWithDictionary:(NSDictionary * _Nonnull)dict;
-
-/**
  *  Checks the channel type is open channel or not.
  *
  *  @return Returns YES, when this is open channel.

@@ -30,14 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 */
 @property (strong, readonly) NSString *url;
 
-/**
- *  Initializes a emoji object.
- *
- *  @param dict Dictionary data for a Emoji.
- *  @return SBDEmoji object
- *  @since 3.0.180
- */
-- (instancetype)initWithDictionary:(NSDictionary *)dict;
 @end
 
 
@@ -72,14 +64,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (strong, readonly) NSArray<SBDEmoji *> *emojis;
 
-/**
- *  Initializes a emoji category object.
- *
- *  @param dict Dictionary data for a Emoji category.
- *  @return SBDEmojiCategory object
- *  @since 3.0.180.
- */
-- (instancetype)initWithDictionary:(NSDictionary *)dict;
 @end
 
 @interface SBDEmojiContainer : NSObject
@@ -97,14 +81,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (strong, readonly) NSArray<SBDEmojiCategory *> *categories;
 
-/**
- *  Initializes a emoji container object.
- *
- *  @param dict Dictionary data for a Emoji container.
- *  @return SBDEmojiContainer object
- *  @since 3.0.180.
- */
-- (instancetype)initWithDictionary:(NSDictionary *)dict;
 @end
 
 NS_ASSUME_NONNULL_END
