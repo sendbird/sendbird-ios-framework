@@ -13,7 +13,7 @@
 /**
  *  The `SBDFileMessageParams` class is used to send a file message in `SBDBaseChannel`. This is a child class of `SBDBaseMessageParams`.
  */
-@interface SBDFileMessageParams : SBDBaseMessageParams
+@interface SBDFileMessageParams : SBDBaseMessageParams <NSCopying>
 
 /**
  *  Binary file data.

@@ -15,7 +15,7 @@
  *  For more information, see [Group Channel](https://docs.sendbird.com/ios#group_channel).
  *
  */
-@interface SBDGroupChannelParams : NSObject<NSCopying>
+@interface SBDGroupChannelParams : NSObject <NSCopying>
 
 /**
  *  Represents the channel is to be updated.

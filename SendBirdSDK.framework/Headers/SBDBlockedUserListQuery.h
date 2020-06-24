@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
  The `SBDBlockedUserListQuery` class is a query class for getting the list of blocked users by the current user. This instance is created by `createBlockedUserListQuery` of `SBDMain`.
  @since 3.0.120
  */
-@interface SBDBlockedUserListQuery : SBDUserListQuery
+@interface SBDBlockedUserListQuery : SBDUserListQuery <NSCopying>
 
 /**
  Sets the user IDs filter.

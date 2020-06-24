@@ -16,8 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @note This class is available 3.0.182
 @interface SBDGroupChannelChangeLogsParams : NSObject
 
-/// Determines whether to include the empty channels in the results.
-/// @note The default value is `YES`.
+/// Sets the custom types filter.
+/// The property filters channels which have one of custom types.
 /// @since 3.0.182
 @property (nonatomic) NSArray<NSString *> *customTypes;
 

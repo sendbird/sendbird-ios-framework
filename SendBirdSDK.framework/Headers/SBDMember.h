@@ -13,7 +13,7 @@
 /**
  The `SBDMember` class represents a member of a group channel. This class has a property to show the state for invitation.
  */
-@interface SBDMember : SBDUser
+@interface SBDMember : SBDUser <NSCopying>
 
 /**
  The state for invitation. The values of the property are `invited` and `joined`. The `invited` means that the user doesn't accept the invitation yet and the `joined` means that the user accepted the invitation manually or automatically.

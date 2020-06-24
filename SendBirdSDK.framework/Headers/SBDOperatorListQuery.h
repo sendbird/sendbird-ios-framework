@@ -14,7 +14,7 @@
  *  The `SBDOperatorListQuery` class is a query class for getting the list of operators in channel.
  *  The instance of this class is created by [`createOperatorListQuery`](../Classes/SBDBaseChannel.html#//api/name/createOperatorListQuery) in `SBDBaseChannel` class.
  */
-@interface SBDOperatorListQuery : NSObject
+@interface SBDOperatorListQuery : NSObject <NSCopying>
 
 /**
  *  Sets the number of channels per page.

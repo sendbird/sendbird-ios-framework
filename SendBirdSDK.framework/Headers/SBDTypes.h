@@ -118,7 +118,33 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     SBDErrorTimerWasAlreadyDone = 800302,
     
     // WS Error
-    SBDErrorMessagesRateLimitExceeded = 900200,
+    SBDErrorSocketLoginRequired = 900010,
+    SBDErrorSocketUserNotMember = 900020,
+    SBDErrorSocketUserDeactivated = 900021,
+    SBDErrorSocketUserNotOwnerOfMessage = 900022,
+    SBDErrorSocketUserSendMessageNotAllowed = 900023,
+    SBDErrorSocketInvalidMentionForMessage = 900025,
+    SBDErrorSocketInvalidPushOptionForMessage = 900026,
+    SBDErrorSocketTooManyMetaKeyForMessage = 900027,
+    SBDErrorSocketTooManyMetaValueForMessage = 900028,
+    SBDErrorSocketTooManyMetaArrayForMessage = 900029,
+    SBDErrorSocketGuestNotAllowed = 900030,
+    SBDErrorSocketMutedUserInApplicationSendMessageNotAllowed = 900040,
+    SBDErrorSocketMutedUserInChannelSendMessageNotAllowed = 900041,
+    SBDErrorSocketChannelFrozen = 900050,
+    SBDErrorSocketProfanityMessageBlocked = 900060,
+    SBDErrorSocketBannedUrlsBlocked = 900061,
+    SBDErrorSocketRestrictedDomainBlocked = 900065,
+    SBDErrorSocketModeratedFileBlocked = 900066,
+    SBDErrorSocketEnterDeletedChannel = 900070,
+    SBDErrorSocketBlockedUserReceiveMessageNotAllowed = 900080,
+    SBDErrorSocketDeactivatedUserReceiveMessageNotAllowed = 900081,
+    SBDErrorSocketWrongChannelType = 900090,
+    SBDErrorSocketBannedUserSendMessageNotAllowed = 900100,
+    SBDErrorSocketTooManyMessages = 900200,
+    SBDErrorSocketMessageNotFound = 900300,
+    SBDErrorSocketTooManyParticipants = 900400,
+    SBDErrorSocketChannelNotFound = 900500
 };
 
 /**

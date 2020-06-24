@@ -132,7 +132,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *
  *  @return If YES, this instance is debug mode.
  */
-+ (BOOL)getDebugMode;
++ (BOOL)getDebugMode DEPRECATED_ATTRIBUTE;
 
 /**
  *  Gets a singleton instance of `SBDMain`.
@@ -701,6 +701,8 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 + (void)getChannelInvitationPreferenceAutoAcceptWithCompletionHandler:(nullable void (^)(BOOL autoAccept, SBDError * _Nullable error))completionHandler;
 
 #pragma mark - User Event
++ (nullable id<SBDUserEventDelegate>)userEventDelegateForIdentifier:(NSString * _Nonnull)identifier;
+
 + (void)addUserEventDelegate:(id<SBDUserEventDelegate> _Nonnull)delegate
                   identifier:(NSString * _Nonnull)identifier;
 

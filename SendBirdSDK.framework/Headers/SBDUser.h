@@ -33,7 +33,7 @@
 /**
  *  The `SBDUser` class represents a user. The user is identified by the `userId`, so the `userId` has to be unique. The `userId`, `nickname` and `profileUrl` are valid in every `SBDUser` instance, however the `connectionStatus` and `lastSeenAt` is valid in `SBDUser` instance from `SBDUserListQuery`.
  */
-@interface SBDUser : NSObject
+@interface SBDUser : NSObject <NSCopying>
 
 /**
  *  User ID. This has to be unique.

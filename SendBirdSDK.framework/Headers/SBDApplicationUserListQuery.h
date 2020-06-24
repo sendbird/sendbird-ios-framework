@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
  The `SBDApplicationUserListQuery` class is a query class for getting the list of all users of the current application. This instance is created by `createApplicationUserListQuery` of `SBDMain`.
  @since 3.0.120
  */
-@interface SBDApplicationUserListQuery : SBDUserListQuery
+@interface SBDApplicationUserListQuery : SBDUserListQuery <NSCopying>
 
 /**
  Sets the user IDs filter.

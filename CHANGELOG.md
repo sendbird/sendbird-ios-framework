@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.186 (Jun 24, 2020)
+* Refactored `SBDBaseMessage` properties that need common access
+* Supported `NSCopying` protocol for common objects
+* Improved stability
+
 ### v3.0.185 (Jun 18, 2020)
 * Added functions that creates a `SBDMessageChangeLogsParams` object with `SBDPreviousMessageListQuery` and `SBDMessageListParams` information.
 * Added a function that creates a `SBDGroupChannelChangeLogsParams` object with `SBDGroupChannelListQuery` information.

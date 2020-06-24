@@ -82,4 +82,9 @@ typedef NS_OPTIONS(NSUInteger, SBDChannelQueryIncludeOption) {
     SBDChannelQueryIncludeOptionDeliveryReceipt         = (1 << 5)
 };
 
+typedef NS_ENUM(NSInteger, SBDApiRequestType) {
+    SBDApiRequestTypePassive = 0,
+    SBDApiRequestTypeActive = 1,
+};
+
 #endif /* SBDInternalTypes_h */

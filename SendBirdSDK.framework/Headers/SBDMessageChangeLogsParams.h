@@ -13,7 +13,7 @@
 
 /// An object that represents the parameters for the [`getMessageChangeLogsSinceTimestamp:params:completionHandler:`](../Classes/SBDBaseChannel.html#//api/name/getMessageChangeLogsSinceTimestamp:params:completionHandler:) and the [`getMessageChangeLogsSinceToken:params:completionHandler:`](../Classes/SBDBaseChannel.html#//api/name/getMessageChangeLogsSinceToken:params:completionHandler:) methods. The methods return updated messages and the IDs of deleted messages along with additional data according to the properties in this object.
 /// @note This class is available from 3.0.181
-@interface SBDMessageChangeLogsParams : NSObject
+@interface SBDMessageChangeLogsParams : NSObject <NSCopying>
 
 /// Determines whether to include the metaarray information of the updated messages in the results.
 /// @note The default value is `NO`.

@@ -11,6 +11,8 @@
 #import "SBDSender.h"
 #import "SBDTypes.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class SBDMessageMetaArray;
 
 /**
@@ -160,3 +162,5 @@ DEPRECATED_MSG_ATTRIBUTE("Use -metaArraysWithKeys:");
 - (nonnull NSArray<SBDMessageMetaArray *> *)metaArraysWithKeys:(nonnull NSArray<NSString *> *)keys;
 
 @end
+
+NS_ASSUME_NONNULL_END

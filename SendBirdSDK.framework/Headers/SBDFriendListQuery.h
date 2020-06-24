@@ -10,7 +10,7 @@
 #import "SBDUser.h"
 #import "SBDTypes.h"
 
-@interface SBDFriendListQuery : NSObject
+@interface SBDFriendListQuery : NSObject <NSCopying>
 
 /**
  *  Sets the number of friends per page.

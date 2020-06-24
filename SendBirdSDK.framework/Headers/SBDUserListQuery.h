@@ -22,7 +22,7 @@
  *  * The query for the banned users is created by [`createBannedUserListQuery`](../Classes/SBDOpenChannel.html#//api/name/createBannedUserListQuery) of the `SBDOpenChannel` instance.
  *
  */
-@interface SBDUserListQuery : NSObject
+@interface SBDUserListQuery : NSObject <NSCopying>
 
 /**
  *  The channel instance related to query.

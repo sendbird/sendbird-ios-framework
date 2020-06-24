@@ -15,7 +15,7 @@
  *  The `SBDGroupChannelMemberListQuery` class is a query class for getting the list member in group channels. 
  *  The instance of this class is created by [`createMemberListQuery`](../Classes/SBDGroupChannel.html#//api/name/createMemberListQuery) in `SBDGroupChannel` class.
  */
-@interface SBDGroupChannelMemberListQuery : NSObject
+@interface SBDGroupChannelMemberListQuery : NSObject <NSCopying>
 
 /**
  *  Don't use this initializer. Use `createGroupChannelListQuery` of `SBDGroupChannel` instead.

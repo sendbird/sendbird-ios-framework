@@ -11,7 +11,7 @@
 
 /// An object that represents the parameters for the [`getMessageWithParams:completionHandler:`](../Classes/SBDBaseMessage.html#//api/name/getMessageWithParams:completionHandler:) method. The method returns the message defined by the properties in this object.
 /// @note This class is available from 3.0.181
-@interface SBDMessageRetrievalParams : NSObject
+@interface SBDMessageRetrievalParams : NSObject <NSCopying>
 
 /// Specifies the URL of the channel to retrieve the message.
 /// @since 3.0.181

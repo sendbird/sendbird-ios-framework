@@ -13,7 +13,7 @@
 /**
  *  The `SBDOpenChannelListQuery` class is a query class for getting the list of open channels. The instance of this class is created by [`createOpenChannelListQuery`](../Classes/SBDOpenChannel.html#//api/name/createOpenChannelListQuery) in `SBDOpenChannel` class.
  */
-@interface SBDOpenChannelListQuery : NSObject
+@interface SBDOpenChannelListQuery : NSObject <NSCopying>
 
 /**
  *  Sets the number of channels per page.

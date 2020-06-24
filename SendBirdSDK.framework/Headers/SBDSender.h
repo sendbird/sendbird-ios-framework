@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
  The `SBDSender` class represents a sender of a user message and a file message.
  @since 3.0.121
  */
-@interface SBDSender : SBDUser
+@interface SBDSender : SBDUser <NSCopying>
 
 /**
  If YES, the current user blocked the sender.

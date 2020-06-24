@@ -16,7 +16,7 @@
 /**
  *  The `SBDGroupChannelListQuery` class is a query class for getting the list of group channels. The instance of this class is created by [`createMyGroupChannelListQuery`](../Classes/SBDGroupChannel.html#//api/name/createMyGroupChannelListQuery) in `SBDGroupChannel` class.
  */
-@interface SBDGroupChannelListQuery : NSObject
+@interface SBDGroupChannelListQuery : NSObject <NSCopying>
 
 /**
  *  Sets the number of channels per page.

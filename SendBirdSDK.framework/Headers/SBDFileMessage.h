@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "SBDBaseMessage.h"
 #import "SBDBaseChannel.h"
-#import "SBDSender.h"
 #import <CoreGraphics/CGGeometry.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  * The `SBDThumbnailSize` class represents the thumbnail size of thumbnail.
@@ -28,7 +29,7 @@
  * @param size The max size of the thumbnail.
  * @return `SBDThumbnailSize` object.
  */
-+ (nullable instancetype)makeWithMaxCGSize:(CGSize)size;
++ (instancetype)makeWithMaxCGSize:(CGSize)size;
 
 /**
  * Makes `SBDThumbnailSize` object with width and height.
@@ -37,7 +38,7 @@
  * @param height The max height of the thumbnail.
  * @return `SBDThumbnailSize` object.
  */
-+ (nullable instancetype)makeWithMaxWidth:(CGFloat)width
++ (instancetype)makeWithMaxWidth:(CGFloat)width
                                 maxHeight:(CGFloat)height;
 
 
@@ -52,7 +53,7 @@
 /**
  * The url of the thumbnail.
  */
-@property (strong, nonatomic, readonly, nonnull, getter = url) NSString *url;
+@property (strong, nonatomic, readonly) NSString *url;
 
 
 /**
@@ -71,7 +72,7 @@
  *
  * @return Image url.
  */
-- (nonnull NSString *)url;
+- (NSString *)url;
 
 @end
 
@@ -81,19 +82,14 @@
 @interface SBDFileMessage : SBDBaseMessage
 
 /**
- *  Sender of the message. This is represented by `SBDSender` class.
- */
-@property (strong, nonatomic, nullable, getter = sender) SBDSender *sender;
-
-/**
  *  The file URL.
  */
-@property (strong, nonatomic, readonly, nonnull, getter = url) NSString *url;
+@property (strong, nonatomic, readonly) NSString *url;
 
 /**
  *  The name of file.
  */
-@property (strong, nonatomic, readonly, nonnull) NSString *name;
+@property (strong, nonatomic, readonly) NSString *name;
 
 /**
  *  The size of file.
@@ -103,12 +99,7 @@
 /**
  *  The type of file.
  */
-@property (strong, nonatomic, readonly, nonnull) NSString *type;
-
-/**
- *  Request ID for ACK.
- */
-@property (strong, nonatomic, readonly, nullable) NSString *requestId;
+@property (strong, nonatomic, readonly) NSString *type;
 
 /**
  Image thumbnails.
@@ -127,43 +118,6 @@
  @property (assign, nonatomic, readonly, getter=getRequestState) SBDMessageRequestState requestState DEPRECATED_ATTRIBUTE;
 
 /**
- *  Represents the dispatch state of the message.
- *  If message is not dispatched completely to the Sendbird server, the value is `SBDMessageSendingStatusPending`.
- *  If failed to send the message, the value is `SBDMessageSendingStatusFailed`.
- *  And if success to send the message, the value is `SBDMessageSendingStatusSucceeded`.
- *
- *  @since 3.0.173
- */
-@property (assign, nonatomic, readonly) SBDMessageSendingStatus sendingStatus;
-
-/**
- * Represents target user ids to mention when success to send the message.
- * This value is valid only when the message is a pending message or failed message.
- * If the message is a succeeded message, see `mentionedUserIds`
- *
- * @since 3.0.147
- * @see see `mentionedUserIds` when the message is a succeeded message.
- */
-@property (strong, nonatomic, readonly, nonnull) NSArray<NSString *> *requestedMentionUserIds;
-
-/**
- * The error code of file.
- * This value generated only when message send fails.
- *
- * @since 3.0.161
- */
-@property (assign, nonatomic, readonly) NSUInteger errorCode;
-
-/**
- *  Checks message can resend.
- *  The message can only resend if the problem is due to network related error.
- *
- *  @return YES if this message can resend, otherwise NO.
- *  @since 3.0.161
- */
-- (BOOL)isResendable;
-
-/**
  *  Builds file message with the information which is releated to file.
  *
  *  @param url        The file URL.
@@ -179,7 +133,7 @@
  *
  *  @deprecated in 3.0.116 DO NOT USE THIS METHOD.
  */
-+ (nullable NSMutableDictionary<NSString *, NSObject *> *)buildWithFileUrl:(NSString * _Nonnull)url
++ (NSMutableDictionary<NSString *, NSObject *> *)buildWithFileUrl:(NSString * _Nonnull)url
                                                                       name:(NSString * _Nullable)name
                                                                       size:(NSUInteger)size
                                                                       type:(NSString * _Nonnull)type
@@ -207,16 +161,16 @@ DEPRECATED_ATTRIBUTE;
  *
  *  @deprecated in 3.0.116 DO NOT USE THIS METHOD.
  */
-+ (nullable NSMutableDictionary<NSString *, NSObject *> *)buildWithFileUrl:(NSString * _Nonnull)url
-                                                                      name:(NSString * _Nullable)name
-                                                                      size:(NSUInteger)size
-                                                                      type:(NSString * _Nonnull)type
-                                                                      data:(NSString * _Nullable)data
-                                                                 requestId:(NSString * _Nullable)requestId
-                                                                    sender:(SBDUser * _Nonnull)sender
-                                                                   channel:(SBDBaseChannel * _Nonnull)channel
-                                                                customType:(NSString * _Nullable)customType
-                                                            thumbnailSizes:(NSArray<SBDThumbnailSize *> * _Nullable)thumbnailSizes
++ (NSMutableDictionary<NSString *, NSObject *> *)buildWithFileUrl:(NSString * _Nonnull)url
+                                                             name:(NSString * _Nullable)name
+                                                             size:(NSUInteger)size
+                                                             type:(NSString * _Nonnull)type
+                                                             data:(NSString * _Nullable)data
+                                                        requestId:(NSString * _Nullable)requestId
+                                                           sender:(SBDUser * _Nonnull)sender
+                                                          channel:(SBDBaseChannel * _Nonnull)channel
+                                                       customType:(NSString * _Nullable)customType
+                                                   thumbnailSizes:(NSArray<SBDThumbnailSize *> * _Nullable)thumbnailSizes
 DEPRECATED_ATTRIBUTE;
 
 /**
@@ -224,20 +178,8 @@ DEPRECATED_ATTRIBUTE;
  *
  * @return Image url.
  */
-- (nonnull NSString *)url;
-
-/**
- * Serializes message object.
- *
- * @return Serialized <span>data</span>.
- */
-- (nullable NSData *)serialize;
-
-/**
- * Returns sender.
- *
- * @return Sender of the message.
- */
-- (nonnull SBDSender *)sender;
+- (NSString *)url;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -96,6 +96,7 @@
 
 /**
  *  Channel <span>members</span>.
+ *  Note: Number of member for SuperGroupChannel is limited to 10
  */
 @property (strong, nonatomic, readonly, nullable) NSMutableArray<SBDMember *> *members;
 
@@ -1262,7 +1263,7 @@ completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandl
 - (void)muteUserWithUserId:(nonnull NSString *)userId
                    seconds:(NSInteger)seconds
                description:(nullable NSString *)description
-         completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;;
+         completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
 /**
  *  Turn off mute the user.

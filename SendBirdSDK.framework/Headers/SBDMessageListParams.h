@@ -11,7 +11,7 @@
 
 /// An object that represents the parameters for the [`getMessagesByTimestamp:params:completionHandler:`](../Classes/SBDBaseChannel.html#//api/name/getMessagesByTimestamp:params:completionHandler:) and the [`getMessagesByMessageId:params:completionHandler:`](../Classes/SBDBaseChannel.html#//api/name/getMessagesByMessageId:params:completionHandler:) methods. The methods return messages according to the properties in this object.
 /// @note This class is available from 3.0.181
-@interface SBDMessageListParams : NSObject
+@interface SBDMessageListParams : NSObject <NSCopying>
 
 /// The number of messages to retrieve that were sent before the specified timestamp or message ID.
 /// @note The default value is `0`.
