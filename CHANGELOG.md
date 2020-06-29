@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.187 (Jun 30, 2020)
+* Fixed `markAsRead` unreadMessageCount bug
+
 ### v3.0.186 (Jun 24, 2020)
 * Refactored `SBDBaseMessage` properties that need common access
 * Supported `NSCopying` protocol for common objects
