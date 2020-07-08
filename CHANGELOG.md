@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.188 (Jul 8, 2020)
+* Supported open graph tag if a message contains a url
+* Added `SBDOGMetaData`, `SBDOGImage` in `SBDUserMessage`
+* Improved stability
+* Fixed minor bug
+
 ### v3.0.187 (Jun 30, 2020)
 * Fixed `markAsRead` unreadMessageCount bug
 

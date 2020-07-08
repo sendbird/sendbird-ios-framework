@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param query group channel list query
 /// @return A created instance of `SBDGroupChannelChangeLogsParams`
 /// @since 3.0.185
-+ (SBDGroupChannelChangeLogsParams *)createWithGroupChannelListQuery:(SBDGroupChannelListQuery *)query;
++ (nonnull SBDGroupChannelChangeLogsParams *)createWithGroupChannelListQuery:(nullable SBDGroupChannelListQuery *)query;
 
 @end
 
