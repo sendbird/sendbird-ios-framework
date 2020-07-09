@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.189 (Jul 8, 2020)
+* Added `addOperatorsWithUserIds:completionHandler:` to add operators to channel.
+* Added `removeOperatorsWithUserIds:completionHandler:` and `removeAllOperatorsWithCompletionHandler:` to remove operators from channel.
+* Improved stability
+* Fixed minor bug
+
 ### v3.0.187 (Jun 30, 2020)
 * Fixed `markAsRead` unreadMessageCount bug
 

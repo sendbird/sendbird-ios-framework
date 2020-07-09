@@ -2286,4 +2286,24 @@ Reports a malicious message in the channel
                               key:(nonnull NSString *)key
                 completionHandler:(nullable void (^)(SBDReactionEvent * _Nullable reactionEvent, SBDError * _Nullable error))completionHandler;
 
+#pragma mark - Operator
+/// Adds operators to the channel.
+/// @param userIds The user IDs to be operators.
+/// @param completionHandler The handler block to be executed.
+/// @since 3.0.189
+- (void)addOperatorsWithUserIds:(nonnull NSArray<NSString *> *)userIds
+              completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/// Removes operators from the channel.
+/// @param userIds The user IDs to be removed from the operators.
+/// @param completionHandler The handler block to be executed.
+/// @since 3.0.189
+- (void)removeOperatorsWithUserIds:(nonnull NSArray<NSString *> *)userIds
+                 completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/// Removes all operators from the channel.
+/// @param completionHandler The handler block to be executed.
+/// @since 3.0.189
+- (void)removeAllOperatorsWithCompletionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
 @end

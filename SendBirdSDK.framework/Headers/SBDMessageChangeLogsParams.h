@@ -45,13 +45,13 @@
 /// @param query previous message list query
 /// @return A created instance of `SBDMessageChangeLogsParams`
 /// @since 3.0.185
-+ (SBDMessageChangeLogsParams *)createWithPreviousMessageListQuery:(SBDPreviousMessageListQuery *)query;
++ (nonnull SBDMessageChangeLogsParams *)createWithPreviousMessageListQuery:(nullable SBDPreviousMessageListQuery *)query;
 
 /// Create `SBDMessageListParams` from a given SBDMessageListParams instance.
 /// @param params previous message list query
 /// @return A created instance of `SBDMessageChangeLogsParams`
 /// @since 3.0.185
-+ (SBDMessageChangeLogsParams *)createWithMessageListParams:(SBDMessageListParams *)params;
++ (nonnull SBDMessageChangeLogsParams *)createWithMessageListParams:(nullable SBDMessageListParams *)params;
 
 
 @end
