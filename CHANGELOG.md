@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.190 (Jul 14, 2020)
+* Fixed delegate validation mismatched
+
 ### v3.0.189 (Jul 8, 2020)
 * Added `addOperatorsWithUserIds:completionHandler:` to add operators to channel.
 * Added `removeOperatorsWithUserIds:completionHandler:` and `removeAllOperatorsWithCompletionHandler:` to remove operators from channel.
