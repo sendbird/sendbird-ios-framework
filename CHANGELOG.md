@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.192 (Jul 18, 2020)
+* Improved stability
+
 ### v3.0.191 (Jul 18, 2020)
 * Improved stability
 
