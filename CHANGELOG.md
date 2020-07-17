@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.191 (Jul 18, 2020)
+* Improved stability
+
 ### v3.0.190 (Jul 14, 2020)
 * Fixed delegate validation mismatched
 
