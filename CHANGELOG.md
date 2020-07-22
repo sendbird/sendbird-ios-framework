@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.193 (Jul 22, 2020)
+* Added open graph feature along with `SBDOGMetaData` and `SBDOGImage` class
+* Added `ogMetaData` property in `SBDBaseMessage` 
+* Fixed bug in `markAsDeliveredWithRemoteNotificationPayload:completion`
+ 
 ### v3.0.192 (Jul 18, 2020)
 * Improved stability
 
