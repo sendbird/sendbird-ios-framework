@@ -972,5 +972,11 @@ completionHandler:(nullable void (^)(SBDEmoji * _Nullable emoji, SBDError * _Nul
 + (void)markAsDeliveredWithRemoteNotificationPayload:(nonnull NSDictionary *)payload
                                    completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
+#pragma mark - Key for file encryption
+/// Gets the key to authenticate the file URL. This has to be put into the HTTP header when the client needs to access it.
+/// @return The key to authenticate the file URL
+/// @since 3.0.194
++ (nullable NSString *)ekey;
+
 @end
 

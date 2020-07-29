@@ -55,6 +55,10 @@
  */
 @property (strong, nonatomic, nullable) NSString *originalProfileUrl;
 
+/// The profile image URL without the `ekey`.
+/// @since 3.0.194
+@property (strong, nonatomic, readonly, nullable) NSString *plainProfileImageUrl;
+
 /**
  *  User connection status. This is defined in `SBDUserConnectionStatus`.
  */
@@ -73,7 +77,6 @@
 @property (strong, nullable) NSString *friendDiscoveryKey;
 
 @property (strong, nullable) NSString *friendName;
-
 
 /**
  * User's preferred language. Used for translating messages.

@@ -67,6 +67,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly) CGSize realSize;
 
+/// The file URL without the ekey.
+/// @since 3.0.194
+@property (nonatomic, readonly, nullable) NSString *plainUrl;
+
 /**
  * Returns url
  *
@@ -85,6 +89,10 @@ NS_ASSUME_NONNULL_BEGIN
  *  The file URL.
  */
 @property (strong, nonatomic, readonly) NSString *url;
+
+/// The file URL without the ekey.
+/// @since 3.0.194
+@property (nonatomic, readonly, nullable) NSString *plainUrl;
 
 /**
  *  The name of file.

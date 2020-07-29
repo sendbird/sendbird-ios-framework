@@ -29,7 +29,7 @@
 @property (assign, atomic, readonly) long long uploadSizeLimit;
 
 /**
- * This is the premium feature list using on your ApplicationID.
+ * This is the premium feature list using on your Application ID.
  * @since 3.0.180
  */
 @property (strong, nonatomic, readonly, nullable) NSArray<NSString *> *premiumFeatureList;
@@ -39,6 +39,12 @@
  * @since 3.0.180
  */
 @property (assign, atomic, readonly) BOOL useReaction;
+
+/**
+ * This is the application attributes list using on your Application ID.
+ * @since [NEXT_VERSION]
+ */
+@property (strong, nonatomic, readonly, nullable) NSArray<NSString *> *applicationAttributes;
 
 /**
  * This function can check if Emoji information needs to be updated to date.
