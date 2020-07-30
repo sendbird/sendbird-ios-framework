@@ -1,8 +1,9 @@
 # Change Log
 
+### v3.0.195 (Jul 30, 2020)
+* Improved stability
+
 ### v3.0.194 (Jul 29, 2020)
-* Added `is_muted` property in `SBDMember` class
-* Added `applicationAttributes` property in `SBDAppInfo` class
 * Improved stability
 
 ### v3.0.193 (Jul 22, 2020)

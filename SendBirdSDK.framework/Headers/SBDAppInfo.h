@@ -41,12 +41,6 @@
 @property (assign, atomic, readonly) BOOL useReaction;
 
 /**
- * This is the application attributes list using on your Application ID.
- * @since [NEXT_VERSION]
- */
-@property (strong, nonatomic, readonly, nullable) NSArray<NSString *> *applicationAttributes;
-
-/**
  * This function can check if Emoji information needs to be updated to date.
  *
  * @param prevEmojiHash Emoji hash value in use
