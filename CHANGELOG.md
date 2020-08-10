@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.197 (Aug 8, 2020)
+* Improved stability
+
 ### v3.0.196 (Aug 5, 2020)
 * Fixed memory allocation bug
 
