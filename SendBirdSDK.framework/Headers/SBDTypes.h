@@ -689,4 +689,14 @@ typedef NS_ENUM(NSUInteger, SBDReactionEventAction) {
     SBDReactionEventActionDelete = 1,
 };
 
+/**
+ The order type for member list query.
+
+ @since 3.0.198
+*/
+typedef NS_ENUM(NSUInteger, SBDMemberListOrder) {
+    SBDMemberListOrderNicknameAlphabetical = 0,
+    SBDMemberListOrderOperatorThenMemberNicknameAlphabetical = 1,
+};
+
 #endif /* SBDTypes_h */

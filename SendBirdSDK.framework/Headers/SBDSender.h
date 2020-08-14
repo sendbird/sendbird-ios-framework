@@ -21,6 +21,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (atomic, readonly) BOOL isBlockedByMe;
 
+/// The role of the sender in the channel.
+///
+/// @since 3.0.198
+@property (atomic, readonly) SBDRole role;
+
 /**
  Builds a sender object from serialized data.
  

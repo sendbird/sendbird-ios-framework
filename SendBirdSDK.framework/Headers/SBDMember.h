@@ -24,6 +24,11 @@
 
 @property (atomic) BOOL isBlockingMe;
 
+/// The muted state of the member in the channel.
+///
+/// @since 3.0.198
+@property (atomic) BOOL isMuted;
+
 /// The role of current user in the channel.
 ///
 /// @since 3.0.174

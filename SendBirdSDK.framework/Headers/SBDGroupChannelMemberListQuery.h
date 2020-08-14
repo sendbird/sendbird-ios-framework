@@ -52,15 +52,12 @@
 @property (copy, atomic, nullable) NSString *nicknameStartsWithFilter;
 
 /**
- *  Sets a filter to query operators.
- *
- *  @param filter  The filter about members as operator.
+ *  Sets a filter to query operators. 
  *
  *  @since 3.0.89
- *  @deprecated 3.0.94
+ *  @see Combined with `setOperatorFilter:`.
  */
-- (void)setOperatorFilter:(SBDGroupChannelOperatorFilter)filter
-DEPRECATED_ATTRIBUTE;
+@property (nonatomic) SBDGroupChannelOperatorFilter operatorFilter;
 
 /**
  *  Sets a filter to query muted member list.
@@ -76,6 +73,11 @@ DEPRECATED_ATTRIBUTE;
  *  @see Combined with `setMemberStateFilter:`.
  */
 @property (nonatomic) SBDMemberStateFilter memberStateFilter;
+
+/// Sets how the query result should be ordered. If the `order` is `SBDMemberListOrderNicknameAlphabetical`, the result will be ordered by the nickname in alphabetical order.
+/// If the `order` is `SBDMemberListOrderOperatorThenMemberNicknameAlphabetical`, then the result will contain the operators first, and then the members. The two groups (operators and members) will be ordered by the nickname in alphabetical order. The default value is `SBDMemberListOrderNicknameAlphabetical`.
+/// @since 3.0.198
+@property (atomic) SBDMemberListOrder order;
 
 /**
  *  Gets the list of member in group channel. If this method is repeatedly called, it will retrieve the following pages of the member list.

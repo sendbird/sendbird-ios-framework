@@ -125,6 +125,10 @@ DEPRECATED_ATTRIBUTE;
 /// @since 3.0.193
 @property (nonatomic, strong, readonly, nullable) SBDOGMetaData *ogMetaData;
 
+/// Represents whether this message was created by an operator.
+/// @since 3.0.198
+@property (atomic, readonly) BOOL isOperatorMessage;
+
 /// Checks the channel type is open channel or not.
 ///
 /// @return Returns YES, when this is open channel.

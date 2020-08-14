@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.0.198 (Aug 14, 2020)
+* Added - `SBDMemberListOrder` for the member list query.
+* Added - `isMuted` property in `SBDMember` class
+* Added - `applicationAttributes` property in `SBDAppInfo` class
+* Activated - `operationFilter` in `SBDGroupChannelMemberListQuery`
+* Improved stability
+
 ### v3.0.197 (Aug 8, 2020)
 * Improved stability
 
