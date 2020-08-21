@@ -61,5 +61,12 @@
  */
 + (void)setFileTransferTimeout:(NSInteger)timeout;
 
+/// Sets the websocket response timeout used in sending/receiving commmands by websocket.
+/// The value should be between 5 seconds and 300 seconds (5 minutes).
+/// The default value is 10 seconds.
+/// @param timeout Timeout in seconds.
+/// @since 3.0.199
++ (void)setWebSocketResponseTimeout:(NSInteger)timeout;
+
 @end
 

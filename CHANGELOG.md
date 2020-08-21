@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.199 (Aug 21, 2020)
+* Added `creator` property in `SBDBaseChannel`
+* Added `setWebSocketResponseTimeout:` to `SBDOptions` class to set the response timeout value.
+
 ### v3.0.198 (Aug 14, 2020)
 * Added - `SBDMemberListOrder` for the member list query.
 * Added - `isMuted` property in `SBDMember` class
