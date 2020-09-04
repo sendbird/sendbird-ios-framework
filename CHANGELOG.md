@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.201 (Sep 4, 2020)
+* Fixed unread count bug.
+* Improved stability.
+
 ### v3.0.200 (Aug 25, 2020)
 * Fixed copying message bug
 * Fixed `myMutedState` is always muted issue
