@@ -971,8 +971,18 @@ DEPRECATED_ATTRIBUTE;
  *  Returns the <span>members</span> who are typing now.
  *
  *  @return The <span>members</span> who are typing now.
+ *  @deprecated 3.0.202 Use `getTypingUsers` instead.
  */
-- (nullable NSArray<SBDMember *> *)getTypingMembers;
+- (nullable NSArray<SBDMember *> *)getTypingMembers
+DEPRECATED_ATTRIBUTE;
+
+/**
+ *  Returns the users who are typing now.
+ *
+ *  @return The users who are typing now.
+ *  @since 3.0.202
+ */
+- (nullable NSArray<SBDUser *> *)getTypingUsers;
 
 /**
  *  Sets push notification on or off on the channel.

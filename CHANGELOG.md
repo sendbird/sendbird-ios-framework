@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.202 (Sep 15, 2020)
+* Fixed a bug that the `isMuted` of a group channel member wasn't updated.
+* Added `getTypingUsers` method in `SBDGroupChannel` class.
+* Deprecated `getTypingMembers` method in `SBDGroupChannel` class.
+
 ### v3.0.201 (Sep 4, 2020)
 * Fixed unread count bug.
 * Improved stability.
