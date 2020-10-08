@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.203 (Oct 8, 2020)
+* Improved stability.
+* Added `buildFromSerializedData:desiredState:` in `SBDBaseMessage`.
+
 ### v3.0.202 (Sep 15, 2020)
 * Fixed a bug that the `isMuted` of a group channel member wasn't updated.
 * Added `getTypingUsers` method in `SBDGroupChannel` class.

@@ -68,5 +68,15 @@
 /// @since 3.0.199
 + (void)setWebSocketResponseTimeout:(NSInteger)timeout;
 
+/// Enable TLS13 if possible
+/// @param enabled boolean indicate whether TLS13 is enabled or not
+/// @since 3.0.203
++ (void)enableTLS13:(BOOL)enabled;
+
+/// Get TLS13 enabled flag
+/// @return YES if enabled otherwise NO
+/// @since 3.0.203
++ (BOOL)isTLS13Enabled;
+    
 @end
 

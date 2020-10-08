@@ -65,6 +65,9 @@
 #import "SBDUserMessage.h"
 #import "SBDUserMessageParams.h"
 
+//Protocol with predefine class need to be complied later
+#import "SBDComparator.h"
+
 //! Project version number for SendBirdSDK.
 FOUNDATION_EXPORT double SendBirdSDKVersionNumber;
 

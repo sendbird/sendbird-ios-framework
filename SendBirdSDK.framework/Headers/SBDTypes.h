@@ -116,6 +116,7 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     SBDErrorFileUploadTimeout = 800250,
     SBDErrorTimerWasExpired = 800301,
     SBDErrorTimerWasAlreadyDone = 800302,
+    SBDErrorPendingError = 800400,
     
     // WS Error
     SBDErrorSocketLoginRequired = 900010,

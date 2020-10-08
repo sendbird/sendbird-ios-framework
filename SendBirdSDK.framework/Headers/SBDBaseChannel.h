@@ -30,7 +30,6 @@
 @class SBDOpenChannel;
 @class SBDUserMessageParams, SBDFileMessageParams;
 
-
 /// An object that adopts the `SBDChannelDelegate` protocol is responsible for receiving the events in the channel. Some of delegate methods are common for the `SBDBaseChannel`. However, there are delegate methods for the `SBDOpenChannel` and `SBDGroupChannel` exclusive. The `SBDChannelDelegate` can be added by [`addChannelDelegate:identifier:`](../Classes/SBDMain.html#//api/name/addChannelDelegate:identifier:) in `SBDMain`. Every `SBDChannelDelegate` method which is added is going to receive events.
 /// @warning If the object that adopts the `SBDChannelDelegate` protocol is invalid, the delegate has to be removed by the identifier via [`removeChannelDelegateForIdentifier:`](../Classes/SBDMain.html#//api/name/removeChannelDelegateForIdentifier:) in `SBDMain`. If you miss this, it will cause the crash.
 
@@ -217,7 +216,7 @@
 
 @end
 
-
+@protocol SBDComparator;
 /// The `SBDBaseChannel` class represents the channel where users chat each other. The `SBDOpenChannel` and the `SBDGroupChannel` are derived from this class. This class provides the common methods for the `SBDOpenChannel` and the `SBDGroupChannel`.
 /// * Send a user message to the channel.
 /// * Send a file message to the channel.

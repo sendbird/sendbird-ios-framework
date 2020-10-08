@@ -148,9 +148,18 @@ DEPRECATED_ATTRIBUTE;
 
 /// Builds a message object from serialized <span>data</span>.
 ///
-///  @param data Serialized <span>data</span>.
-///  @return SBDBaseMessage object.
+/// @param data Serialized <span>data</span>.
+/// @return SBDBaseMessage object.
 + (nullable instancetype)buildFromSerializedData:(NSData * _Nonnull)data;
+
+/// Builds a message object from serialized <span>data</span>.
+///
+/// @param data Serialized <span>data</span>.
+/// @param desiredState The sending status that a message object will have.
+/// @return SBDBaseMessage object.
+/// @since 3.0.203
++ (nullable instancetype)buildFromSerializedData:(NSData * _Nonnull)data
+                                    desiredState:(SBDMessageSendingStatus)desiredState;
 
 ///  Serializes message object.
 ///
