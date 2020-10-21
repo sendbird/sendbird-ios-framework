@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.204 (Oct 21, 2020)
+* Improved stability.
+* Added SubChannel related properties
+  * `showSubChannelMessageOnly` property in `SBDMessageListParams` class
+  * `showSubChannelMessageOnly` property in `SBDPreviousMessageListQuery` class
+
 ### v3.0.203 (Oct 8, 2020)
 * Improved stability.
 * Added `buildFromSerializedData:desiredState:` in `SBDBaseMessage`.

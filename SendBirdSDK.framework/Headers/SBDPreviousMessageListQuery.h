@@ -76,6 +76,13 @@
 /// @since 3.0.181
 @property (atomic) BOOL includeThreadInfo;
 
+/// Determines whether to include only messages from the subChannel to which you belong in the results.
+/// @note The default value is `NO`.
+/// @warning This value is only used in open channels.
+/// @since 3.0.204
+@property (atomic) BOOL showSubChannelMessagesOnly;
+
+
 /**
  *  DO NOT USE this initializer. Use `[SBDBaseChannel createPreviousMessageListQuery]` instead.
  */
