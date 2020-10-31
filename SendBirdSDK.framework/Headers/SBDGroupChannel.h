@@ -1259,7 +1259,7 @@ DEPRECATED_ATTRIBUTE;
 - (void)muteUser:(nonnull SBDUser *)user
           seconds:(NSInteger)seconds
       description:(nullable NSString *)description
-completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;;
+completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
 /**
  Mute the user with additional options. Muted user cannot send any messages to the group channel.

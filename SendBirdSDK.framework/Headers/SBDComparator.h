@@ -9,6 +9,10 @@
 #ifndef SBDComparator_h
 #define SBDComparator_h
 
+#import "SBDBaseMessage.h"
+#import "SBDGroupChannel.h"
+#import "SBDGroupChannelListQuery.h"
+
 @class SBDBaseMessage;
 @class SBDGroupChannel;
 @class SBDGroupChannelListQuery;

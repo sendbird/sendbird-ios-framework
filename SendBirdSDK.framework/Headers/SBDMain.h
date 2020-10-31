@@ -7,24 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SBDUser.h"
+
+#import "SBDAppInfo.h"
+#import "SBDApplicationUserListQuery.h"
 #import "SBDBaseChannel.h"
+#import "SBDBlockedUserListQuery.h"
 #import "SBDEmoji.h"
+#import "SBDFriendListQuery.h"
 #import "SBDGroupChannel.h"
 #import "SBDGroupChannelChangeLogsParams.h"
-#import "SBDOpenChannelListQuery.h"
 #import "SBDGroupChannelListQuery.h"
-#import "SBDTypes.h"
-#import "SBDUserListQuery.h"
 #import "SBDInternalTypes.h"
-#import "SBDFriendListQuery.h"
-#import "SBDApplicationUserListQuery.h"
-#import "SBDBlockedUserListQuery.h"
-#import "SBDAppInfo.h"
+#import "SBDOpenChannelListQuery.h"
+#import "SBDSessionDelegate.h"
+#import "SBDTypes.h"
+#import "SBDUser.h"
+#import "SBDUserListQuery.h"
 
 typedef void(^SBDBackgroundSessionBlock)(void);
-
-
 
 /**
  *  An object that adopts the `SBDConnectionDelegate` protocol is responsible for managing the connection statuses. This delegate includes three statuses: reconnection start, reconnection succession, and reconnection failure. The `SBDConnectionDelegate` can be added by [`addConnectionDelegate:identifier:`](../Classes/SBDMain.html#//api/name/addConnectionDelegate:identifier:) in `SBDMain`. Every `SBDConnectionDelegate` method which is added is going to manage the statues.
@@ -713,6 +713,16 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 #pragma mark - Friend List
 + (nullable SBDFriendListQuery *)createFriendListQuery;
 
+/// Sets current user to be discoverable by others
+/// @param allow if YES, current user will be set to discoverable by others
+/// @since 3.0.205
++ (void)setAllowFriendDiscovery:(BOOL)allow
+              completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/// Gets a flag whether current user is discoverable or not by others
+/// @since 3.0.205
++ (void)getAllowFriendDiscoveryWithCompletionHandler:(nullable void (^)(BOOL allowed, SBDError * _Nullable error))completionHandler;
+
 + (void)addFriendsWithUserIds:(NSArray<NSString *> * _Nonnull)userIds
             completionHandler:(nullable void (^)(NSArray<SBDUser *> * _Nullable users, SBDError * _Nullable error))completionHandler;
 
@@ -977,6 +987,10 @@ completionHandler:(nullable void (^)(SBDEmoji * _Nullable emoji, SBDError * _Nul
 /// @return The key to authenticate the file URL
 /// @since 3.0.194
 + (nullable NSString *)ekey;
+
+#pragma mark - Session Expiration
++ (void)setSessionDelegate:(id<SBDSessionDelegate> _Nonnull)delegate;
++ (void)removeSessionDelegate;
 
 @end
 

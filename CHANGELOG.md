@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.205 (Oct 31, 2020)
+* Added `setAllowFriendDiscovery:completionHandler:`
+* Added `getAllowFriendDiscoveryWithCompletionHandler:`
+* When sending a file message with binary data, SDK will calculate the file size internally.
+* Improved stability.
+
 ### v3.0.204 (Oct 21, 2020)
 * Improved stability.
 * Added SubChannel related properties
