@@ -152,3 +152,44 @@ Connect a user to Sendbird server by using a unique user ID or with a user ID an
     }
 }];
 ```
+
+##### B. Connect with a user ID and an access token
+
+By using Chat Platform API, you can [create a user](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user) and issue a unique access token to each user, or [issue an access token](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user) for an existing user. Once an access token is issued, a user is required to provide the access token to log in to the Sendbird application.
+
+1. Using the [Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user), create a Sendbird user account with the information submitted when a user signs up or signs in to your service.
+2. Save the user ID along with the issued access token to your securely managed persistent storage. 
+3. When a user attempts to log in to the application, load the user ID and access token from the storage, and then pass them to `connectWithUserId:accessToken:completionHandler:` method.
+4. Periodically replacing the user's access token is recommended for account security.
+
+```objectivec
+[SBDMain connectWithUserId:USER_ID accessToken:ACCESS_TOKEN completionHandler:^(SBDUser * _Nullable user, SBDError * _Nullable error) {
+    if (error != nil) { // Error.
+        return;
+    }
+}];
+```
+
+##### Tips for secure user login
+
+To manage who can access your Sendbird application, go to **Settings** > **Application** > **Security** > **Access token permission setting** on your dashboard. You can change settings to prevent users without an access token from logging in to your application or restrict their access to read and write messages.
+For security reasons, you can also use a session token when a user logs in to Sendbird server instead of an access token. Go to the [Access token vs. Session token](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user-3-access-token-vs-session-token) section from the Chat Platform API guide to learn more.
+
+#### Step 3: Create a new open channel
+
+Create an [open channel](https://sendbird.com/docs/chat/v3/ios/guides/open-channel#2-create-a-channel). Once created, all users in your Sendbird application can easily participate in the channel.
+
+You can also create a [group channel](https://sendbird.com/docs/chat/v3/ios/guides/group-channel#2-create-a-channel) by [inviting users as new members](https://sendbird.com/docs/chat/v3/ios/guides/group-channel#2-invite-users-as-members) to the channel.
+
+> Note: The majority of the methods used in the following steps are all asynchronous except initWithApplicationId:. This means with asynchronous methods, your client app must receive success callbacks from Sendbird server through completion handlers  before moving on to the next step.  
+
+A good way to do this is the nesting of methods: Go to Step 4: Enter the channel to learn more about how to nest the `enterChannelWithCompletionHandler:` in the `getChannelWithUrl:completionHandler:` method.
+
+#### Step 4: Enter the channel
+
+Enter the channel to send and receive messages.
+
+#### Step 5: Send a message to the channel 
+
+Finally, send a message to the channel. There are three types of [messages](https://sendbird.com/docs/chat/v3/platform-api/guides/messages#-3-resource-representation): a user message in a plain text, a file message in a binary file, such as an image or PDF, and an admin message in a plain text sent through the [dashboard](https://dashboard.sendbird.com/auth/signin) or [Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-send-a-message).
+
