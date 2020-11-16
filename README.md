@@ -142,7 +142,7 @@ Here are the steps to sending your first message using Chat SDK:
 
 ### Step 1: Initialize the Chat SDK
 
-Initializing the Chat SDK allows the Chat SDK to respond to the connection and state changes in your client app. Pass the `APP_ID` of your Sendbird application as an argument to a parameter in the `initWithApplicationId:`. The `initWithApplicationId:` creates a `SBDMain` instance, thus should be called a single time across your client app. It is recommended that the code for initialization be implemented in the user login view. The Chat SDK should be initialized in the `application:didFinishLaunchingWithOptions:` method of the AppDelegate instance. 
+Initializing the Chat SDK allows the Chat SDK to respond to the connection and state changes in your client app. Pass the `APP_ID` of your Sendbird application as an argument to a parameter in the `initWithApplicationId:`. The `initWithApplicationId:` creates a `SBDMain` instance, thus should be called a single time across your client app. It is recommended that the code for initialization be implemented in the user login view. The Chat SDK should be initialized in the `application:didFinishLaunchingWithOptions:` method of the `AppDelegate` instance. 
 
 ```objectivec
 [SBDMain initWithApplicationId:APP_ID];
