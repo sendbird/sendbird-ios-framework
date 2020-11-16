@@ -9,9 +9,9 @@
 ## Table of Contents
 
   1. [Introduction](#introduction)
-  1. [Before getting started](#initialization)
-  1. [Getting started](#authentication)
-  1. [Send your first message](#setting-customer-customfields)
+  1. [Before getting started](#before-getting-started)
+  1. [Getting started](#getting-started)
+  1. [Send your first message](#send-your-first-message)
 
 <br />
 
