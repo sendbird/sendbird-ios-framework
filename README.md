@@ -1,6 +1,4 @@
-# [Sendbird](https://sendbird.com) Chat SDK for iOS (Swift)
-
-[Sendbird](https://sendbird.com) provides the chat API and SDK for your app enabling real-time communication among your users.
+# [Sendbird](https://sendbird.com) Chat SDK for iOS (Objective-C)
 
 [![Platform](https://img.shields.io/badge/Platform-iOS-orange.svg)](https://cocoapods.org/pods/SendBirdSDK)
 [![Languages](https://img.shields.io/badge/Language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/sendbird/sendbird-ios-framework)
@@ -10,11 +8,46 @@
 
 ## Introduction
 
+### What it is
+
+Through Chat SDK for iOS, you can efficiently integrate real-time chat into your client app. On the client-side implementation, you can initialize, configure and build the chat with minimal effort. On the server-side, Sendbird ensures reliable infra-management services for your chat within the app. This **read.me** provides the Chat SDK’s structure, supplementary features, and the installation steps. 
+
+### How it works
+
+It is simple to implement chat in your client app with the Chat SDK: a user logs in, sees a list of channels, selects or creates an [open channel](https://sendbird.com/docs/chat/v3/ios/guides/open-channel) or a [group channel](https://sendbird.com/docs/chat/v3/ios/guides/group-channel), and, through the use of the [channel event delegates](https://sendbird.com/docs/chat/v3/ios/guides/event-delegate), sends messages to the channel, while also receiving them from other users within the channel. 
+
+### More about Sendbird Chat SDK for iOS
+
+Find out more about Sendbird Chat for iOS on [Chat SDK for iOS doc](https://sendbird.com/docs/chat/v3/ios/getting-started/about-chat-sdk). 
 
 
-https://docs.sendbird.com/
+## Before getting started
 
-## Install Sendbird Framework from CocoaPods
+This section shows you the prerequisites you need for testing Sendbird Calls for iOS sample app.
+
+### Requirements
+
+The minimum requirements for Chat SDK for iOS sample are:
+
+- Mac OS with developer mode enabled
+- Xcode
+- At least one physical iOS device running iOS 9.0 and later
+- Swift 4.0 and later
+
+### Add-ons for Sendbird Chat SDK 
+
+Try building your Sendbird application with these two add-ons.  
+
+- [Sendbird UIKit for iOS](https://github.com/sendbird/UIKit-iOS-Swift): a development kit with an user interface that enables an easy and fast integration of standard chat features into new or existing client apps.
+
+- [Sendbird SyncManager for iOS](https://github.com/sendbird/SyncManager-iOS-Swift): a Chat SDK add-on that optimizes the user caching experience by interlinking the synchronization of the local data storage with the chat data in Sendbird server through an event-driven structure. 
+
+## Getting started
+
+### Try the sample app
+
+The fastest way to test Chat SDK is to build your chat app on top of our sample app. To create a project for the sample app, download the app from our GitHub repository.
+
 
 Add below into your Podfile on Xcode.
 
