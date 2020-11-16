@@ -181,7 +181,7 @@ By using Chat Platform API, you can [create a user](https://sendbird.com/docs/ch
 
 #### - Tips for secure user login
 
-To manage who can access your Sendbird application, go to **Settings** > **Application** > **Security** > **Access token permission setting** on your dashboard. You can change settings to prevent users without an access token from logging in to your application or restrict their access to read and write messages.
+To manage who can access your Sendbird application, go to **Settings** > **Application** > **Security** > **Access token permission** setting on your dashboard. You can change settings to prevent users without an access token from logging in to your application or restrict their access to read and write messages.
 For security reasons, you can also use a session token when a user logs in to Sendbird server instead of an access token. Go to the [Access token vs. Session token](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user-3-access-token-vs-session-token) section from the Chat Platform API guide to learn more.
 
 ### Step 3: Create a new open channel
