@@ -130,3 +130,25 @@ The [Interacting with Objective-C APIs in Swift](https://developer.apple.com/doc
 In order to use the features of the Chat SDK for iOS written in `Objective-C`, you should initiate the `SBDMain` instance through user authentication with Sendbird server. This instance communicates and interacts with the server based on an authenticated user account, and then the user’s client app can use the Chat SDK's features. 
 
 Here are the steps to sending your first message using Chat SDK:
+
+#### Step 1: Initialize the Chat SDK
+
+Initializing the Chat SDK allows the Chat SDK to respond to the connection and state changes in your client app. Pass the `APP_ID` of your Sendbird application as an argument to a parameter in the `initWithApplicationId:`. The `initWithApplicationId:` creates a `SBDMain` instance, thus should be called a single time across your client app. It is recommended that the code for initialization be implemented in the user login view. The Chat SDK should be initialized in the `application:didFinishLaunchingWithOptions:` method of the AppDelegate instance. 
+
+```objectivec
+[SBDMain initWithApplicationId:APP_ID];
+```
+
+#### Step 2: Connect to Sendbird server
+
+##### A. Connect with a user ID
+
+Connect a user to Sendbird server by using a unique user ID or with a user ID and an access token. To connect to the Sendbird server, a user is required to log in with a unique ID. A new user can authenticate with any untaken user ID, which gets automatically registered to the Sendbird system. An existing ID can log in directly. The ID must be unique within a Sendbird application to be distinguished from others, such as a hashed email address or phone number in your service.
+
+```objectivec
+[SBDMain connectWithUserId:USER_ID completionHandler:^(SBDUser * _Nullable user, SBDError * _Nullable error) {
+    if (error != nil) { // Error.
+        return;
+    }
+}];
+```
