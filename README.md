@@ -66,16 +66,19 @@ Only one Sendbird application can be integrated per app for your service regardl
 
 ### Step 2: Install SDK via CocoaPods or Carthage
 
-Installing the Chat SDK is a simple process if you’re familiar with using external libraries or SDK’s in your projects. You can install the Chat SDK using [CocoaPods](https://cocoapods.org/) or [Carthage](https://github.com/Carthage/Carthage) like the following.
+Installing the Chat SDK is a simple process if you’re familiar with using external libraries or SDK’s in your projects. You can install the Chat SDK using [`CocoaPods`](https://cocoapods.org/) or [`Carthage`](https://github.com/Carthage/Carthage) like the following.
 
 #### - CocoaPod
 
 Open a terminal window. Navigate to the project directory, and then open the `Podfile` by running the following command:
 
-
-Add below into your Podfile on Xcode.
-
+```bash
+$ pod init
 ```
+
+On `Podfile`, add the following lines: 
+
+```bash
 platform :ios, '8.0'
 use_frameworks!
 
@@ -84,38 +87,46 @@ target YOUR_PROJECT_TARGET do
 end
 ```
 
-Install Sendbird Framework through CocoaPods.
+Install the `SendBird` framework through `CocoaPods`.
 
+```bash
+$ pod install
 ```
-pod install
-```
 
-Now you can see installed Sendbird framework by inspecting YOUR_PROJECT.xcworkspace.
+Now you can run your project with the `SendBird` framework by opening `*YOUR_PROJECT*.xcworkspace`. If you don't want to use `CocoaPods`, check out the [manual installation guide](https://help.sendbird.com/s/article/iOS-How-can-I-install-SendBird-Framework-without-using-CocoaPods).
 
-## Install Sendbird Framework from Carthage
+#### - Carthage
 
 1. Add `github "sendbird/sendbird-ios-framework"` to your `Cartfile`.
 2. Run `carthage update`.
-3. Go to your Xcode project's "General" settings. Open `<YOUR_XCODE_PROJECT_DIRECTORY>/Carthage/Build/iOS` in Finder and drag `SendBirdSDK.framework` to the "Embedded Binaries" section in Xcode. Make sure `Copy items if needed` is selected and click `Finish`.
-4. On your application targets’ `Build Phases` settings tab, click the + icon and choose `New Run Script` Phase. Create a Run Script in which you specify your shell (ex: `/bin/sh`), add the following contents to the script area below the shell:
-```
-/usr/local/bin/carthage copy-frameworks
-```
-* Add the paths to the frameworks you want to use under “Input Files". For example:
-```
-$(SRCROOT)/Carthage/Build/iOS/SendBirdSDK.framework
-```
-* Add the paths to the copied frameworks to the “Output Files”. For example:
-```
-$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SendBirdSDK.framework
-```
-For an in depth guide, read on from [Adding frameworks to an application](https://github.com/Carthage/Carthage#quick-start)
+3. Go to your Xcode project's General settings tab. Open the `<YOUR_XCODE_PROJECT_DIRECTORY>/Carthage/Build/iOS` in the Finder window and drag `SendBirdSDK.framework` to the Embedded Binaries section in Xcode. Make sure the `Copy items if needed` option is selected and click `Finish`.
+4. On your application targets’ Build Phases settings tab, click the **+** icon and choose **New Run Script Phase**. Create a **Run Script** in which you specify your shell (ex: /bin/sh), add the following contents to the script area below the shell: `/usr/local/bin/carthage copy-frameworks`
+5. Add the paths to the frameworks you want to use under **Input Files**.  For example: `$(SRCROOT)/Carthage/Build/iOS/SendBirdSDK.framework`
+6. Add the paths to the copied frameworks to the **Output Files**. For example: `$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SendBirdSDK.framework`
 
-## [SyncManager](https://github.com/sendbird/sendbird-syncmanager-ios)
-[SyncManager SDK](https://github.com/sendbird/sendbird-syncmanager-ios) is a support add-on for [Sendbird SDK](https://github.com/sendbird/sendbird-ios-framework). Major benefits of [SyncManager](https://github.com/sendbird/sendbird-syncmanager-ios) are,  
-  
- * Local cache integrated: store channel/message data in local storage for fast view loading.  
- * Event-driven data handling: subscribe channel/message event like `insert`, `update`, `remove` at a single spot in order to apply data event to view.  
-  
-Check out [iOS Sample with SyncManager](https://github.com/sendbird/SendBird-iOS/tree/master/syncmanager) which is same as [iOS Sample](https://github.com/sendbird/SendBird-iOS) with [SyncManager](https://github.com/sendbird/sendbird-syncmanager-ios) integrated.    
-For more information about [SyncManager](https://github.com/sendbird/sendbird-syncmanager-ios) integrated, please refer to [SyncManager README](https://github.com/sendbird/sendbird-syncmanager-ios/blob/master/README.md). 
+For an in depth guide, read on from [Adding frameworks to an application](https://github.com/Carthage/Carthage#quick-start).
+
+#### Turn on ARC
+
+To use the `SendBird` framework, you should turn on the ARC (Automatic Reference Counting). To do that, go to your project's **Build Settings**, and then set the value of Objective-C Automatic Reference Counting to Yes (in `Swift`, **Yes** by default).
+If you don't want to turn on ARC in a project-wide scope, then navigate to the **Build Phases - Compile Sources** and add `-fobjc-arc` to the **Compiler Flags** in the source file that the `SendBird` framework uses. This means that ARC is turned on only that file.
+
+### Step 3: Use the Chat SDK in Objective-C
+
+You can use all classes and methods just with the following one import statement, without a bridging header file, in both `Objective-C` and `Swift`.
+
+```bash
+#import <SendBirdSDK/SendBirdSDK.h>
+```
+
+The [Interacting with Objective-C APIs in Swift](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis) helps you with understanding how to use the Chat SDK in Swift syntax.
+
+<br />
+
+## Send your first message
+
+### Authentication
+
+In order to use the features of the Chat SDK for iOS written in `Objective-C`, you should initiate the `SBDMain` instance through user authentication with Sendbird server. This instance communicates and interacts with the server based on an authenticated user account, and then the user’s client app can use the Chat SDK's features. 
+
+Here are the steps to sending your first message using Chat SDK:
