@@ -17,8 +17,6 @@
 
 ## Introduction
 
-### What it is
-
 Through Chat SDK for iOS, you can efficiently integrate real-time chat into your client app. On the client-side implementation, you can initialize, configure and build the chat with minimal effort. On the server-side, Sendbird ensures reliable infra-management services for your chat within the app. This **read.me** provides the Chat SDK’s structure, supplementary features, and the installation steps. 
 
 ### How it works
