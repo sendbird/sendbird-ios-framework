@@ -8,18 +8,10 @@
 
 ## Table of Contents
 
-  1. [Introduction](#installation)
+  1. [Introduction](#introduction)
   1. [Before getting started](#initialization)
-  1. [Authentication](#authentication)
-  1. [Setting customer customFields](#setting-customer-customfields)
-  1. [Creating a new ticket](#creating-a-new-ticket)
-  1. [Setting Related Channels](#related-channels)
-  1. [Count of opened tickets](#count-of-opened-tickets)
-  1. [Loading ticket list](#loading-ticket-list)
-  1. [Confirming end of chat](#confirming-end-of-chat)
-  1. [Ticket Feedback](#ticket-feedback)
-  1. [Handling ticket event](#handling-ticket-event)
-  1. [Rich messages](#rich-messages)
+  1. [Getting started](#authentication)
+  1. [Send your first message](#setting-customer-customfields)
 
 <br />
 
