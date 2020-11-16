@@ -20,6 +20,7 @@ It is simple to implement chat in your client app with the Chat SDK: a user logs
 
 Find out more about Sendbird Chat for iOS on [Chat SDK for iOS doc](https://sendbird.com/docs/chat/v3/ios/getting-started/about-chat-sdk). 
 
+<br />
 
 ## Before getting started
 
@@ -41,6 +42,8 @@ Try building your Sendbird application with these two add-ons.
 - [Sendbird UIKit for iOS](https://github.com/sendbird/UIKit-iOS-Swift): a development kit with an user interface that enables an easy and fast integration of standard chat features into new or existing client apps.
 
 - [Sendbird SyncManager for iOS](https://github.com/sendbird/SyncManager-iOS-Swift): a Chat SDK add-on that optimizes the user caching experience by interlinking the synchronization of the local data storage with the chat data in Sendbird server through an event-driven structure. 
+
+<br />
 
 ## Getting started
 
