@@ -1,4 +1,5 @@
-# [Sendbird](https://sendbird.com) - Messaging and Chat API for Mobile Apps and Websites
+# [Sendbird](https://sendbird.com) Chat SDK for iOS
+
 [Sendbird](https://sendbird.com) provides the chat API and SDK for your app enabling real-time communication among your users.
 
 [![Platform](https://img.shields.io/badge/Platform-iOS-orange.svg)](https://cocoapods.org/pods/SendBirdSDK)
