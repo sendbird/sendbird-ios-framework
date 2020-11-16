@@ -131,7 +131,7 @@ In order to use the features of the Chat SDK for iOS written in `Objective-C`, y
 
 Here are the steps to sending your first message using Chat SDK:
 
-#### Step 1: Initialize the Chat SDK
+### Step 1: Initialize the Chat SDK
 
 Initializing the Chat SDK allows the Chat SDK to respond to the connection and state changes in your client app. Pass the `APP_ID` of your Sendbird application as an argument to a parameter in the `initWithApplicationId:`. The `initWithApplicationId:` creates a `SBDMain` instance, thus should be called a single time across your client app. It is recommended that the code for initialization be implemented in the user login view. The Chat SDK should be initialized in the `application:didFinishLaunchingWithOptions:` method of the AppDelegate instance. 
 
@@ -139,9 +139,9 @@ Initializing the Chat SDK allows the Chat SDK to respond to the connection and s
 [SBDMain initWithApplicationId:APP_ID];
 ```
 
-#### Step 2: Connect to Sendbird server
+### Step 2: Connect to Sendbird server
 
-##### A. Connect with a user ID
+#### A. Connect with a user ID
 
 Connect a user to Sendbird server by using a unique user ID or with a user ID and an access token. To connect to the Sendbird server, a user is required to log in with a unique ID. A new user can authenticate with any untaken user ID, which gets automatically registered to the Sendbird system. An existing ID can log in directly. The ID must be unique within a Sendbird application to be distinguished from others, such as a hashed email address or phone number in your service.
 
@@ -153,7 +153,7 @@ Connect a user to Sendbird server by using a unique user ID or with a user ID an
 }];
 ```
 
-##### B. Connect with a user ID and an access token
+#### B. Connect with a user ID and an access token
 
 By using Chat Platform API, you can [create a user](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user) and issue a unique access token to each user, or [issue an access token](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user) for an existing user. Once an access token is issued, a user is required to provide the access token to log in to the Sendbird application.
 
@@ -170,12 +170,12 @@ By using Chat Platform API, you can [create a user](https://sendbird.com/docs/ch
 }];
 ```
 
-##### Tips for secure user login
+#### Tips for secure user login
 
 To manage who can access your Sendbird application, go to **Settings** > **Application** > **Security** > **Access token permission setting** on your dashboard. You can change settings to prevent users without an access token from logging in to your application or restrict their access to read and write messages.
 For security reasons, you can also use a session token when a user logs in to Sendbird server instead of an access token. Go to the [Access token vs. Session token](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user-3-access-token-vs-session-token) section from the Chat Platform API guide to learn more.
 
-#### Step 3: Create a new open channel
+### Step 3: Create a new open channel
 
 Create an [open channel](https://sendbird.com/docs/chat/v3/ios/guides/open-channel#2-create-a-channel). Once created, all users in your Sendbird application can easily participate in the channel.
 
@@ -185,11 +185,11 @@ You can also create a [group channel](https://sendbird.com/docs/chat/v3/ios/guid
 
 A good way to do this is the nesting of methods: Go to Step 4: Enter the channel to learn more about how to nest the `enterChannelWithCompletionHandler:` in the `getChannelWithUrl:completionHandler:` method.
 
-#### Step 4: Enter the channel
+### Step 4: Enter the channel
 
 Enter the channel to send and receive messages.
 
-#### Step 5: Send a message to the channel 
+### Step 5: Send a message to the channel 
 
 Finally, send a message to the channel. There are three types of [messages](https://sendbird.com/docs/chat/v3/platform-api/guides/messages#-3-resource-representation): a user message in a plain text, a file message in a binary file, such as an image or PDF, and an admin message in a plain text sent through the [dashboard](https://dashboard.sendbird.com/auth/signin) or [Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-send-a-message).
 
