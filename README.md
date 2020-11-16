@@ -28,7 +28,7 @@ This section shows you the prerequisites you need for testing Sendbird Calls for
 
 ### Requirements
 
-The minimum requirements for Chat SDK for iOS sample are:
+The minimum requirements for Chat SDK for iOS are:
 
 - Mac OS with developer mode enabled
 - Xcode
@@ -50,6 +50,27 @@ Try building your Sendbird application with these two add-ons.
 ### Try the sample app
 
 The fastest way to test Chat SDK is to build your chat app on top of our sample app. To create a project for the sample app, download the app from our GitHub repository.
+
+
+### Step 1: Create a Sendbird application from your dashboard
+
+A Sendbird application comprises everything required in a chat service including users, message, and channels. To create an application:
+
+1. Go to the [Sendbird Dashboard](https://dashboard.sendbird.com/auth/signup) and enter your email and password, and create a new account. You can also sign up with a Google account.
+2. When prompted by the setup wizard, enter your organization information to manage Sendbird applications.
+3. Lastly, when your dashboard home appears after completing setup, click **Create +** at the top-right corner.
+
+Only one Sendbird application can be integrated per app for your service regardless of the platform. All users within your Sendbird application can communicate with each other across all platforms. This means that your iOS, Android, and web client app users can all send and receive messages with one another without any further setup.
+
+> Note: All data is limited to the scope of a single application, and users in different Sendbird applications can't chat with each other.
+
+### Step 2: Install SDK via CocoaPods or Carthage
+
+Installing the Chat SDK is a simple process if you’re familiar with using external libraries or SDK’s in your projects. You can install the Chat SDK using [CocoaPods](https://cocoapods.org/) or [Carthage](https://github.com/Carthage/Carthage) like the following.
+
+#### - CocoaPod
+
+Open a terminal window. Navigate to the project directory, and then open the `Podfile` by running the following command:
 
 
 Add below into your Podfile on Xcode.
