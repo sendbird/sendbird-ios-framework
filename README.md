@@ -115,7 +115,7 @@ If you don't want to turn on ARC in a project-wide scope, then navigate to the *
 
 You can use all classes and methods just with the following one import statement, without a bridging header file, in both `Objective-C` and `Swift`.
 
-```bash
+```objectivec
 #import <SendBirdSDK/SendBirdSDK.h>
 ```
 
