@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.206 (Nov 17, 2020)
+* Fixed a bug of resending message.
+* Added `SBDOpenChannelParams` class
+* Added channel create and update functions with parameters in `SBDOpenChannel` class.
+* Modified the openChannelParams related test codes.
+
 ### v3.0.205 (Oct 31, 2020)
 * Added `setAllowFriendDiscovery:completionHandler:`
 * Added `getAllowFriendDiscoveryWithCompletionHandler:`

@@ -45,6 +45,7 @@
 #import "SBDOGMetaData.h"
 #import "SBDOGProtocol.h"
 #import "SBDOpenChannel.h"
+#import "SBDOpenChannelParams.h"
 #import "SBDOpenChannelListQuery.h"
 #import "SBDOperatorListQuery.h"
 #import "SBDOptions.h"
