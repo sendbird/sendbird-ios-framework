@@ -135,6 +135,8 @@ The [Interacting with Objective-C APIs in Swift](https://developer.apple.com/doc
 
 ## Sending your first message
 
+Follow the step-by-step instructions below to authenticate and send your first message.
+
 ### Authentication
 
 In order to use the features of the Chat SDK for iOS written in `Objective-C`, you should initiate the `SBDMain` instance through user authentication with Sendbird server. This instance communicates and interacts with the server based on an authenticated user account, and then the user’s client app can use the Chat SDK's features. 
