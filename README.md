@@ -44,7 +44,7 @@ The minimum requirements for Chat SDK for iOS are:
 
 ### Add-ons for Sendbird Chat SDK 
 
-Try building your Sendbird application with these two add-ons.  
+Try building your Sendbird application with these two add-ons:
 
 - [Sendbird UIKit for iOS](https://github.com/sendbird/UIKit-iOS-Swift): a development kit with an user interface that enables an easy and fast integration of standard chat features into new or existing client apps.
 
