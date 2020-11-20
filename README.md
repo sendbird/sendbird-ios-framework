@@ -203,8 +203,6 @@ You can also create a [group channel](https://sendbird.com/docs/chat/v3/ios/guid
 
 > Note: The majority of the methods used in the following steps are all asynchronous except initWithApplicationId:. This means with asynchronous methods, your client app must receive success callbacks from Sendbird server through completion handlers  before moving on to the next step.  
 
-A good way to do this is the nesting of methods: [Go to Step 4: Enter the channel](#step-4-enter-the-channel) to learn more about how to nest the `enterChannelWithCompletionHandler:` in the `getChannelWithUrl:completionHandler:` method.
-
 ### Step 4: Enter the channel
 
 Enter the channel to send and receive messages.
