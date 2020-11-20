@@ -11,7 +11,7 @@
   1. [Introduction](#introduction)
   1. [Before getting started](#before-getting-started)
   1. [Getting started](#getting-started)
-  1. [Send your first message](#send-your-first-message)
+  1. [Sending your first message](#sending-your-first-message)
 
 <br />
 
@@ -133,7 +133,7 @@ The [Interacting with Objective-C APIs in Swift](https://developer.apple.com/doc
 
 <br />
 
-## Send your first message
+## Sending your first message
 
 ### Authentication
 
