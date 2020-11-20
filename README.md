@@ -31,7 +31,7 @@ Find out more about Sendbird Chat for iOS on [Chat SDK for iOS doc](https://send
 
 ## Before getting started
 
-This section shows you the prerequisites you need to check for using Sendbird Chat SDK for iOS.
+This section shows you the prerequisites you need to check for using Sendbird Chat SDK for iOS. 
 
 ### Requirements
 
@@ -54,14 +54,13 @@ Try building your Sendbird application with these two add-ons:
 
 ## Getting started
 
-This section gives you information you need to get started with Sendbird Chat SDK for iOS.
+This section gives you information you need to get started with Sendbird Chat SDK for iOS. Follow the simple steps below to build the Chat SDK into your client app.
 
 ### Try the sample app
 
 The fastest way to test Chat SDK is to build your chat app on top of our sample app. To create a project for the sample app, download the app from our GitHub repository. The link is down below. 
 
 - https://github.com/sendbird/Sendbird-iOS
-
 
 ### Step 1: Create a Sendbird application from your dashboard
 
