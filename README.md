@@ -153,7 +153,7 @@ Initializing the Chat SDK allows the Chat SDK to respond to the connection and s
 
 ### Step 2: Connect to Sendbird server
 
-#### A. Connect with a user ID
+#### A. Using a unique user ID
 
 Connect a user to Sendbird server by using a unique user ID or with a user ID and an access token. To connect to the Sendbird server, a user is required to log in with a unique ID. A new user can authenticate with any untaken user ID, which gets automatically registered to the Sendbird system. An existing ID can log in directly. The ID must be unique within a Sendbird application to be distinguished from others, such as a hashed email address or phone number in your service.
 
@@ -165,7 +165,7 @@ Connect a user to Sendbird server by using a unique user ID or with a user ID an
 }];
 ```
 
-#### B. Connect with a user ID and an access token
+#### B. Using a unique user ID and an access token
 
 By using Chat Platform API, you can [create a user](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user) and issue a unique access token to each user, or [issue an access token](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user) for an existing user. Once an access token is issued, a user is required to provide the access token to log in to the Sendbird application.
 
