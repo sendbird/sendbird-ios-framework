@@ -31,7 +31,7 @@ Find out more about Sendbird Chat for iOS on [Chat SDK for iOS doc](https://send
 
 ## Before getting started
 
-This section shows you the prerequisites you need for testing Sendbird Calls for iOS sample app.
+This section shows you the prerequisites you need to check for using Sendbird Chat SDK for iOS.
 
 ### Requirements
 
@@ -53,6 +53,8 @@ Try building your Sendbird application with these two add-ons.
 <br />
 
 ## Getting started
+
+This section gives you information you need to get started with Sendbird Chat SDK for iOS.
 
 ### Try the sample app
 
