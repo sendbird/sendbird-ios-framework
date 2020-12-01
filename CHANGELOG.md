@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.207 (Dec 1, 2020)
+* Deprecated `setPushPreferenceWithPushOn:completionHandler:`
+* Fixed channel cover image bug.
+
 ### v3.0.206 (Nov 17, 2020)
 * Fixed a bug of resending message.
 * Added `SBDOpenChannelParams` class

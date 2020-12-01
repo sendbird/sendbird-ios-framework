@@ -989,9 +989,11 @@ DEPRECATED_ATTRIBUTE;
  *
  *  @param pushOn            Sets push on/off.
  *  @param completionHandler The handler block to execute.
+ *  @deprecated 3.0.207 Use `setMyPushTriggerOption:completionHandler:` instead.
  */
 - (void)setPushPreferenceWithPushOn:(BOOL)pushOn
-                  completionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler;
+                  completionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /**
  *  Gets push notification on off on the channel.
