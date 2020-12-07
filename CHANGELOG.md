@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.208 (Dec 7, 2020)
+* Fixed bug of setting the host for the connection.
+
 ### v3.0.207 (Dec 1, 2020)
 * Deprecated `setPushPreferenceWithPushOn:completionHandler:`
 * Fixed channel cover image bug.
