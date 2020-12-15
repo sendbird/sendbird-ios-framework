@@ -1,4 +1,7 @@
 # Change Log
+### v3.0.209 (Dec 15, 2020)
+* Improved console logging.
+* Generated an error for file size limit before sending file message.
 
 ### v3.0.208 (Dec 7, 2020)
 * Fixed bug of setting the host for the connection.

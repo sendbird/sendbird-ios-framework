@@ -115,6 +115,7 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     SBDErrorFileUploadCancelFailed = 800230,
     SBDErrorFileUploadCanceled = 800240,
     SBDErrorFileUploadTimeout = 800250,
+    SBDErrorFileSizeLimitExceeded = 800260,
     SBDErrorTimerWasExpired = 800301,
     SBDErrorTimerWasAlreadyDone = 800302,
     SBDErrorPendingError = 800400,
@@ -702,6 +703,13 @@ typedef NS_ENUM(NSUInteger, SBDReactionEventAction) {
 typedef NS_ENUM(NSUInteger, SBDMemberListOrder) {
     SBDMemberListOrderNicknameAlphabetical = 0,
     SBDMemberListOrderOperatorThenMemberNicknameAlphabetical = 1,
+};
+
+typedef NS_ENUM(NSInteger, SBDLogLevel) {
+    SBDLogLevelNone         = (1 << 0),
+    SBDLogLevelError        = (1 << 1),
+    SBDLogLevelWarning      = (1 << 2),
+    SBDLogLevelInfo         = (1 << 3),
 };
 
 #endif /* SBDTypes_h */

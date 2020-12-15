@@ -64,13 +64,6 @@ typedef NS_ENUM(NSUInteger, SBDUserListQueryType) {
     SBDUserListQueryTypeFilteredUsers = 6,
 };
 
-typedef NS_ENUM(NSInteger, SBDLogLevel) {
-    SBDLogLevelNone = 0,
-    SBDLogLevelError = 1,
-    SBDLogLevelWarning = 2,
-    SBDLogLevelInfo = 3,
-};
-
 typedef NS_OPTIONS(NSUInteger, SBDChannelQueryIncludeOption) {
     SBDChannelQueryIncludeOptionNone                    = (1 << 0),
     SBDChannelQueryIncludeOptionEmptyChannel            = (1 << 1),
