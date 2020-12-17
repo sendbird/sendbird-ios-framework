@@ -705,11 +705,11 @@ typedef NS_ENUM(NSUInteger, SBDMemberListOrder) {
     SBDMemberListOrderOperatorThenMemberNicknameAlphabetical = 1,
 };
 
-typedef NS_ENUM(NSInteger, SBDLogLevel) {
-    SBDLogLevelNone         = (1 << 0),
-    SBDLogLevelError        = (1 << 1),
-    SBDLogLevelWarning      = (1 << 2),
-    SBDLogLevelInfo         = (1 << 3),
+typedef NS_OPTIONS(NSInteger, SBDLogLevel) {
+    SBDLogLevelNone         = 0,
+    SBDLogLevelError        = (1 << 0),
+    SBDLogLevelWarning      = (1 << 1),
+    SBDLogLevelInfo         = (1 << 2),
 };
 
 #endif /* SBDTypes_h */

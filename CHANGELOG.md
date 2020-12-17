@@ -1,4 +1,8 @@
 # Change Log
+
+### v3.0.211 (Dec 16, 2020)
+* Fixed minor bug.
+
 ### v3.0.210 (Dec 15, 2020)
 * Improved console logging.
 * Generated an error for file size limit before sending file message.
