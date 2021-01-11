@@ -42,6 +42,14 @@
 @property (copy, nonatomic, nullable) NSString *customTypeFilter;
 
 /**
+ *  Sets the custom types to filter messages.
+ *
+ *  @since 3.0.213
+ *  @see Combined with `setCustomTypesFilter:`.
+ */
+@property (copy, nonatomic, nullable) NSArray<NSString *> *customTypesFilter;
+
+/**
  *  Sets the senders' user IDs filter.
  *
  *  @since 3.0.106

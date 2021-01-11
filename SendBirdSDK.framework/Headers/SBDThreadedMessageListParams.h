@@ -64,4 +64,9 @@
 /// @since 3.0.181
 @property (atomic) BOOL includeParentMessageText;
 
+/// Restricts the search scope only to retrieve the messages with the multiple specified custom message types. When the custom type filtering is not needed, the value should be set to `nil`.
+/// @note The default value is `nil`.
+/// @since 3.0.213
+@property (strong, nonatomic, nullable) NSArray<NSString *> *customTypes;
+
 @end
