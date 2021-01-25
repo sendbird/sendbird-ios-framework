@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.214 (Jan 25, 2021)
+* Fixed member count bug of group channel. 
+
 ### v3.0.213 (Jan 11, 2021)
 * Improved stability 
 
