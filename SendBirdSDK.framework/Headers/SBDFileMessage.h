@@ -142,14 +142,14 @@ NS_ASSUME_NONNULL_BEGIN
  *  @deprecated in 3.0.116 DO NOT USE THIS METHOD.
  */
 + (NSMutableDictionary<NSString *, NSObject *> *)buildWithFileUrl:(NSString * _Nonnull)url
-                                                                      name:(NSString * _Nullable)name
-                                                                      size:(NSUInteger)size
-                                                                      type:(NSString * _Nonnull)type
-                                                                      data:(NSString * _Nullable)data
-                                                                 requestId:(NSString * _Nullable)requestId
-                                                                    sender:(SBDUser * _Nonnull)sender
-                                                                   channel:(SBDBaseChannel * _Nonnull)channel
-                                                                customType:(NSString * _Nullable)customType
+                                                             name:(NSString * _Nullable)name
+                                                             size:(NSUInteger)size
+                                                             type:(NSString * _Nonnull)type
+                                                             data:(NSString * _Nullable)data
+                                                        requestId:(NSString * _Nullable)requestId
+                                                           sender:(SBDUser * _Nonnull)sender
+                                                          channel:(SBDBaseChannel * _Nonnull)channel
+                                                       customType:(NSString * _Nullable)customType
 DEPRECATED_ATTRIBUTE;
 
 /**

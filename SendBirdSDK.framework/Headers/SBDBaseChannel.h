@@ -278,7 +278,7 @@
 /// The request status of the message is pending.
 /// If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
 /// You can perform a validation of pending message by checking for the existence of the request ID.
-/// @deprecated in 3.0.116 Use `sendUserMessageWithParams:completionHandler:` instead.
+/// @deprecated 3.0.116 (Use `sendUserMessageWithParams:completionHandler:` instead.)
 - (nonnull SBDUserMessage *)sendUserMessage:(NSString * _Nullable)message
                             targetLanguages:(NSArray<NSString *> * _Nullable)targetLanguages
                           completionHandler:(nullable void (^)(SBDUserMessage * _Nullable userMessage, SBDError * _Nullable error))completionHandler
@@ -293,7 +293,7 @@ DEPRECATED_ATTRIBUTE;
 /// The request status of the message is pending.
 /// If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
 /// You can perform a validation of pending message by checking for the existence of the request ID.
-/// @deprecated in 3.0.116 Use `sendUserMessageWithParams:completionHandler:` instead.
+/// @deprecated 3.0.116 (Use `sendUserMessageWithParams:completionHandler:` instead.)
 - (nonnull SBDUserMessage *)sendUserMessage:(NSString * _Nullable)message
                                        data:(NSString * _Nullable)data
                           completionHandler:(nullable void (^)(SBDUserMessage * _Nullable userMessage, SBDError * _Nullable error))completionHandler
@@ -309,7 +309,7 @@ DEPRECATED_ATTRIBUTE;
 /// The request status of the message is pending.
 /// If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
 /// You can perform a validation of pending message by checking for the existence of the request ID.
-/// @deprecated in 3.0.116 Use `sendUserMessageWithParams:completionHandler:` instead.
+/// @deprecated 3.0.116 (Use `sendUserMessageWithParams:completionHandler:` instead.)
 - (nonnull SBDUserMessage *)sendUserMessage:(NSString * _Nullable)message
                                        data:(NSString * _Nullable)data
                             targetLanguages:(NSArray<NSString *> * _Nullable)targetLanguages
@@ -326,7 +326,7 @@ DEPRECATED_ATTRIBUTE;
 /// The request status of the message is pending.
 /// If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
 /// You can perform a validation of pending message by checking for the existence of the request ID.
-/// @deprecated in 3.0.116 Use `sendUserMessageWithParams:completionHandler:` instead.
+/// @deprecated 3.0.116 (Use `sendUserMessageWithParams:completionHandler:` instead.)
 - (nonnull SBDUserMessage *)sendUserMessage:(NSString * _Nullable)message
                                        data:(NSString * _Nullable)data
                                  customType:(NSString * _Nullable)customType
@@ -344,7 +344,7 @@ DEPRECATED_ATTRIBUTE;
 /// The request status of the message is pending.
 /// If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
 /// You can perform a validation of pending message by checking for the existence of the request ID.
-/// @deprecated in 3.0.116 Use `sendUserMessageWithParams:completionHandler:` instead.
+/// @deprecated 3.0.116 (Use `sendUserMessageWithParams:completionHandler:` instead.)
 - (nonnull SBDUserMessage *)sendUserMessage:(NSString * _Nullable)message
                                        data:(NSString * _Nullable)data
                                  customType:(NSString * _Nullable)customType
@@ -419,7 +419,7 @@ DEPRECATED_ATTRIBUTE;
 /// The request status of the message is pending.
 /// If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
 /// You can perform a validation of pending message by checking for the existence of the request ID.
-/// @deprecated in 3.0.116 Use `sendFileMessageWithParams:completionHandler:` instead.
+/// @deprecated 3.0.116 (Use `sendFileMessageWithParams:progressHandler:completionHandler:` instead.)
 - (nonnull SBDFileMessage *)sendFileMessageWithBinaryData:(NSData * _Nonnull)file
                                                  filename:(NSString * _Nonnull)filename
                                                      type:(NSString * _Nonnull)type
@@ -440,7 +440,7 @@ DEPRECATED_ATTRIBUTE;
 /// The request status of the message is pending.
 /// If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
 /// You can perform a validation of pending message by checking for the existence of the request ID.
-/// @deprecated in 3.0.29.
+/// @deprecated 3.0.29. (Use `sendFileMessageWithParams:progressHandler:completionHandler:` instead.)
 - (nonnull SBDFileMessage *)sendFileMessageWithUrl:(NSString * _Nonnull)url
                                               size:(NSUInteger)size
                                               type:(NSString * _Nonnull)type
@@ -479,7 +479,7 @@ DEPRECATED_ATTRIBUTE;
 /// The request status of the message is pending.
 /// If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
 /// You can perform a validation of pending message by checking for the existence of the request ID.
-/// @deprecated in 3.0.29.
+/// @deprecated 3.0.29. (Use `sendFileMessageWithParams:progressHandler:completionHandler:` instead.)
 - (nonnull SBDFileMessage *)sendFileMessageWithUrl:(NSString * _Nonnull)url
                                               size:(NSUInteger)size
                                               type:(NSString * _Nonnull)type
@@ -523,7 +523,7 @@ DEPRECATED_ATTRIBUTE;
 /// If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
 /// You can perform a validation of pending message by checking for the existence of the request ID.
 ///
-/// @deprecated in 3.0.116 Use `sendFileMessageWithParams:completionHandler:` instead.
+/// @deprecated 3.0.116 (Use `sendFileMessageWithParams:progressHandler:completionHandler:` instead.)
 - (nonnull SBDFileMessage *)sendFileMessageWithBinaryData:(NSData * _Nonnull)file
                                                  filename:(NSString * _Nonnull)filename
                                                      type:(NSString * _Nonnull)type
@@ -547,7 +547,7 @@ DEPRECATED_ATTRIBUTE;
 /// The request status of the message is pending.
 /// If you try to send a message with an invalid parameter, the returned message is a user message with no properties.
 /// You can perform a validation of pending message by checking for the existence of the request ID.
-/// @deprecated in 3.0.116 Use `sendFileMessageWithParams:completionHandler:` instead.
+/// @deprecated 3.0.116 (Use `sendFileMessageWithParams:progressHandler:completionHandler:` instead.)
 - (nonnull SBDFileMessage *)sendFileMessageWithBinaryData:(NSData * _Nonnull)file
                                                  filename:(NSString * _Nonnull)filename
                                                      type:(NSString * _Nonnull)type
@@ -715,7 +715,7 @@ DEPRECATED_ATTRIBUTE;
 
 /// Creates `SBDMessageListQuery` instance for getting the previous messages list of the channel.
 /// @return Returns the message list of the channel.
-/// @deprecated in 3.0.28.
+/// @deprecated 3.0.28. (Use `createPreviousMessageListQuery`, `getMessagesByTimestamp:params:completionHandler:`, or `getMessagesByMessageId:params:completionHandler:` instead.)
 - (nullable SBDMessageListQuery *)createMessageListQuery DEPRECATED_ATTRIBUTE;
 
 
@@ -1086,7 +1086,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param includeMetaArray If YES, the `messages` has meta array.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.140
-/// @deprecated in 3.0.169 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
+/// @deprecated 3.0.169 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
 - (void)getPreviousMessagesByTimestamp:(long long)timestamp
                     inclusiveTimestamp:(BOOL)inclusiveTimestamp
                                  limit:(NSInteger)limit
@@ -1183,7 +1183,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param senderUserIds Returns messages whose sender user id matches sender user ids.
 /// @param includeMetaArray If YES, the `messages` has meta array.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
-/// @since 3.0.116
+/// @since 3.0.116 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
 - (void)getPreviousAndNextMessagesByTimestamp:(long long)timestamp
                                     prevLimit:(NSInteger)prevLimit
                                     nextLimit:(NSInteger)nextLimit
@@ -1337,7 +1337,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param limit             The limit for the number of messages. The returned messages could be more than this number if there are messages which have the same timestamp.
 /// @param reverse           If yes, the latest message is the index 0.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
-/// @deprecated in v3.0.40.
+/// @deprecated 3.0.40. (Use `getMessagesByMessageId:params:completionHandler:` instead.)
 - (void)getPreviousMessagesByMessageId:(long long)messageId
                                  limit:(NSInteger)limit
                                reverse:(BOOL)reverse

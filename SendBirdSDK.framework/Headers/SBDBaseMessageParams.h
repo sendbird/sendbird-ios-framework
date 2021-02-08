@@ -38,7 +38,7 @@
 
 /**
  Meta array keys.
- @deprecated in 3.0.179 Use `metaArrays` instead
+ @deprecated 3.0.179. (Use `metaArrays` instead)
  */
 @property (copy, nonatomic, nullable) NSArray<NSString *> *metaArrayKeys DEPRECATED_ATTRIBUTE;
 

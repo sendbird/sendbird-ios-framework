@@ -57,7 +57,7 @@
 /**
  *  Sets the custom type filter.
  *
- *  @deprecated in 3.0.64. Use `customTypesFilter` instead.
+ *  @deprecated 3.0.64. (Use `customTypesFilter` instead.)
  */
 @property (strong, nonatomic, nullable) NSString *customTypeFilter
 DEPRECATED_ATTRIBUTE;
@@ -75,7 +75,7 @@ DEPRECATED_ATTRIBUTE;
 /**
  *  Sets a filter to return only channels that contains the specified group channel name.
  *
- *  @deprecated in 3.0.64. Use `setChannelNameContainsFilter:` instead.
+ *  @deprecated 3.0.64. (Use `setChannelNameContainsFilter:` instead.)
  */
 @property (strong, nonatomic, nullable) NSString *channelNameFilter
 DEPRECATED_ATTRIBUTE;
@@ -189,7 +189,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param userIds    User IDs to search.
  *  @param exactMatch If YES, the group channels which have the `userIds` only are returned. If NO, the group channels which contain the `userIds` are returned. 
  *
- *  @deprecated in 3.0.19
+ *  @deprecated 3.0.19.
  */
 - (void)setUserIdsFilter:(NSArray<NSString *> * _Nonnull)userIds
               exactMatch:(BOOL)exactMatch
@@ -211,7 +211,7 @@ DEPRECATED_ATTRIBUTE;
 
  @param customType The custom type to search.
  
- @deprecated in v3.0.79.
+ @deprecated 3.0.79.
  */
 - (void)setCustomTypeFilter:(NSString * _Nullable)customType
 DEPRECATED_ATTRIBUTE;

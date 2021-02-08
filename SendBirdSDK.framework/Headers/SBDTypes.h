@@ -171,7 +171,7 @@ typedef NS_ENUM(NSUInteger, SBDWebSocketConnectionState) {
     SBDWebSocketClosed = 3,
     /**
      *  Closing
-     *  @deprecated Has been replaced by SBDWebSocketClosed
+     *  @deprecated 3.0.115. Has been replaced by SBDWebSocketClosed
      */
     SBDWebSocketClosing DEPRECATED_ATTRIBUTE = SBDWebSocketClosed,
 };

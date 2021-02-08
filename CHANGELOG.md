@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.0.215 (Feb 8, 2021)
+* Added the methods below to `SBDGroupChannel` class.
+  * `createChannelWithParams:progressHandler:completionHandler:`
+  * `createDistinctChannelIfNotExistWithParams:progressHandler:completionHandler:`
+  * `updateChannelWithParams:progressHandler:completionHandler:`
+* Fixed bug of `requestId` in `SBDBaseMessage` object.
+
 ### v3.0.214 (Jan 25, 2021)
 * Fixed member count bug of group channel. 
 

@@ -35,7 +35,7 @@
 /**
  *  Sets the keyword to search channel url.
  *
- *  @deprecated in 3.0.64. Use `setChannelUrlFilter:` instead.
+ *  @deprecated 3.0.64. (Use `setChannelUrlFilter:` instead.)
  */
 @property (strong, nonatomic, nullable) NSString *urlKeyword
 DEPRECATED_ATTRIBUTE;
@@ -43,7 +43,7 @@ DEPRECATED_ATTRIBUTE;
 /**
  *  Sets the keyword to search channel name.
  *
- *  @deprecated in 3.0.64. Use `setChannelNameFilter:` instead.
+ *  @deprecated 3.0.64. (Use `setChannelNameFilter:` instead.)
  */
 @property (strong, nonatomic, nullable) NSString *nameKeyword
 DEPRECATED_ATTRIBUTE;

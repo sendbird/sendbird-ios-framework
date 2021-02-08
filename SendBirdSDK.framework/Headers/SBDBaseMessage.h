@@ -90,7 +90,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// If you want to get a sorted meta array, refer to -metaArrays
 ///
 ///  @since 3.0.116
-///  @deprecated 3.0.148
+///  @deprecated 3.0.148. (Use `metaArrays` instead.)
 @property (nonatomic, readonly, getter=getAllMetaArray) NSDictionary<NSString *, NSArray<NSString *> *> *metaArray
 DEPRECATED_ATTRIBUTE;
 

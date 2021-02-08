@@ -314,7 +314,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  Creates `SBDUserListQuery` instance for getting a list of all users of this application.
  *
  *  @return `SBDUserListQuery` instance.
- *  @deprecated in 3.0.120. Use `createApplicationUserListQuery`.
+ *  @deprecated 3.0.120. (Use `createApplicationUserListQuery` instead.)
  */
 + (nullable SBDUserListQuery *)createAllUserListQuery DEPRECATED_ATTRIBUTE;
 
@@ -324,7 +324,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  @param userIds The user IDs to get user objects.
  *
  *  @return `SBDUserListQuery` instance.
- *  @deprecated in 3.0.120. Use `createApplicationUserListQuery` and `userIdsFilter` of `SBDApplicationUserListQuery`.
+ *  @deprecated 3.0.120. (Use `createApplicationUserListQuery` and `userIdsFilter` of `SBDApplicationUserListQuery` instead.)
  */
 + (nullable SBDUserListQuery *)createUserListQueryWithUserIds:(NSArray<NSString *> * _Nonnull)userIds DEPRECATED_ATTRIBUTE;
 
@@ -426,7 +426,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  @param devToken          Device token for APNS.
  *  @param completionHandler The handler block to execute. `status` is the status for push token registration. It is defined in `SBDPushTokenRegistrationStatus`. `SBDPushTokenRegistrationStatusSuccess` represents the `devToken` is registered. `SBDPushTokenRegistrationStatusPending` represents the `devToken` is not registered because the connection is not established, so this method has to be invoked with `getPendingPushToken` method after the connection. The `devToken` is retrived by `getPendingPushToken`. `SBDPushTokenRegistrationStatusError` represents the push token registration is failed.
  *
- *  @deprecated in 3.0.22
+ *  @deprecated 3.0.22. (Use `registerDevicePushToken:unique:completionHandler:` instead.)
  */
 + (void)registerDevicePushToken:(NSData * _Nonnull)devToken
               completionHandler:(nullable void (^)(SBDPushTokenRegistrationStatus status, SBDError * _Nullable error))completionHandler DEPRECATED_ATTRIBUTE;
@@ -437,7 +437,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
  *  @param devToken          Device token for APNS.
  *  @param completionHandler The handler block to execute.
  *
- *  @deprecated in 3.0.9
+ *  @deprecated 3.0.9. (Use `registerDevicePushToken:unique:completionHandler:` instead.)
  */
 + (void)registerPushToken:(NSData * _Nonnull)devToken
         completionHandler:(nullable void (^)(NSDictionary * _Nullable response, SBDError * _Nullable error))completionHandler DEPRECATED_ATTRIBUTE;
@@ -820,7 +820,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 /// Marks as delivered a group channel of the current user.
 /// @param channelUrl The channel URL.
 /// @since 3.0.162
-/// @deprecated 3.0.185
+/// @deprecated 3.0.185.
 /// @note The client doesn't have to call this method any longer.
 + (void)markAsDeliveredWithChannelUrl:(nonnull NSString *)channelUrl
 DEPRECATED_ATTRIBUTE;
@@ -834,7 +834,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.123
- *  @deprecated in 3.0.182 Use `getMyGroupChannelChangeLogsByToken:params:completionHandler` instead
+ *  @deprecated 3.0.182 Use `getMyGroupChannelChangeLogsByToken:params:completionHandler` instead
  */
 + (void)getMyGroupChannelChangeLogsByToken:(nullable NSString *)token
                                customTypes:(nullable NSArray <NSString *> *)customTypes
@@ -849,7 +849,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.131
- *  @deprecated in 3.0.182 Use `getMyGroupChannelChangeLogsByToken:params:completionHandler` instead
+ *  @deprecated 3.0.182. (Use `getMyGroupChannelChangeLogsByToken:params:completionHandler` instead.)
  */
 + (void)getMyGroupChannelChangeLogsByToken:(nullable NSString *)token
                                customTypes:(nullable NSArray<NSString *> *)customTypes
@@ -877,7 +877,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.123
- *  @deprecated in 3.0.182 Use `getMyGroupChannelChangeLogsByTimestamp:params:completionHandler` instead
+ *  @deprecated 3.0.182. (Use `getMyGroupChannelChangeLogsByTimestamp:params:completionHandler` instead.)
  */
 + (void)getMyGroupChannelChangeLogsByTimestamp:(long long)timestamp
                                    customTypes:(nullable NSArray <NSString *> *)customTypes
@@ -892,7 +892,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param completionHandler  The handler type of `SBDChannelChangeLogsHandler` block to execute. The `updatedChannels` is the channels that were updated. The `deletedChannelUrls` is the list of the deleted channel URLs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
  *
  *  @since 3.0.131
- *  @deprecated in 3.0.182 Use `getMyGroupChannelChangeLogsByTimestamp:params:completionHandler` instead
+ *  @deprecated 3.0.182. (Use `getMyGroupChannelChangeLogsByTimestamp:params:completionHandler` instead.)
  */
 + (void)getMyGroupChannelChangeLogsByTimestamp:(long long)timestamp
                                    customTypes:(nullable NSArray <NSString *> *)customTypes

@@ -45,12 +45,12 @@
 @property (atomic, readonly) BOOL hasNext;
 
 /**
- @deprecated in 3.0.120
+ @deprecated 3.0.120.
  */
 @property (copy, nonatomic, readonly, nullable) NSString *metaDataKey DEPRECATED_ATTRIBUTE;
 
 /**
- @deprecated in 3.0.120
+ @deprecated 3.0.120.
  */
 @property (copy, nonatomic, readonly, nullable) NSArray <NSString *> *metaDataValues DEPRECATED_ATTRIBUTE;
 
@@ -67,7 +67,7 @@
 
  @param key The key of the meta data to use for filter.
  @param values The values of the meta data to use for filter.
- @deprecated in 3.0.120
+ @deprecated 3.0.120.
  */
 - (void)setMetaDataFilterWithKey:(NSString * _Nonnull)key
                           values:(NSArray<NSString *> * _Nonnull)values DEPRECATED_ATTRIBUTE;

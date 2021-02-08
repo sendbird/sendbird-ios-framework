@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  And if success to send the message, the value is `SBDMessageRequestStateSucceeded`.
  *
  *  @since 3.0.141
- *  @deprecated 3.0.173. Use `sendingStatus` instead.
+ *  @deprecated 3.0.173. (Use `sendingStatus` instead.)
  */
 @property (assign, nonatomic, readonly, getter=getRequestState) SBDMessageRequestState requestState DEPRECATED_ATTRIBUTE;
 

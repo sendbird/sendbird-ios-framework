@@ -14,7 +14,7 @@
 /**
  *  The `SBDMessageListQuery` class is a query class for getting messages from the given channel. The instance of this class is created by [`createMessageListQuery`](../Classes/SBDBaseChannel.html#//api/name/createMessageListQuery) in `SBDBaseChannel` class.
  *
- *  @deprecated in 3.0.28.
+ *  @deprecated 3.0.28.
  */
 __attribute__ ((deprecated))
 @interface SBDMessageListQuery : NSObject
@@ -33,7 +33,7 @@ __attribute__ ((deprecated))
  *
  *  @return Returns YES if the query is loading, otherwise returns NO.
  *
- *  @deprecated in 3.0.28.
+ *  @deprecated 3.0.28.
  */
 - (BOOL)isLoading
 DEPRECATED_ATTRIBUTE;
@@ -46,7 +46,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param reverse           If yes, the latest message is the index 0.
  *  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
  *
- *  @deprecated in 3.0.28.
+ *  @deprecated 3.0.28.
  */
 - (void)loadNextMessagesFromTimestamp:(long long)timestamp
                                 limit:(NSInteger)limit
@@ -62,7 +62,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param reverse           If yes, the latest message is the index 0.
  *  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
  *
- *  @deprecated in 3.0.28.
+ *  @deprecated 3.0.28.
  */
 - (void)loadPreviousMessagesFromTimestamp:(long long)timestamp
                                     limit:(NSInteger)limit
@@ -79,7 +79,7 @@ DEPRECATED_ATTRIBUTE;
  *  @param reverse           If yes, the latest message is the index 0.
  *  @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
  *
- *  @deprecated in 3.0.28.
+ *  @deprecated 3.0.28.
  */
 - (void)loadMessagesFromTimestamp:(long long)timestamp
                         prevLimit:(NSInteger)prevLimit
