@@ -1881,4 +1881,7 @@ DEPRECATED_ATTRIBUTE;
 /// @since 3.0.189
 - (void)removeAllOperatorsWithCompletionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
+/// Return cached channel meta data
+/// @since 3.0.216
+- (nonnull NSDictionary<NSString *, NSString *> *)getCachedMetaData;
 @end

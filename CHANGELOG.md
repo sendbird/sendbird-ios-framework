@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.216 (Feb 24, 2021)
+* Added `getCachedMetaData` in `SBDBaseChannel`.
+* Added `includeMetaData` in `SBDGroupChannelListQuery`, `SBDPublicGroupChannelListQuery`, `SBDOpenChannelListQuery`.
+* Fixed a bug that the message object in the search result was `SBDBaseMessage` class and the `sender` of the message object was `nil`.
+* Improved stability.
+
 ### v3.0.215 (Feb 8, 2021)
 * Added the methods below to `SBDGroupChannel` class.
   * `createChannelWithParams:progressHandler:completionHandler:`

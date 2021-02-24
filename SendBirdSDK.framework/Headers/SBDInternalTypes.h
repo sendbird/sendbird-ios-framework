@@ -70,7 +70,8 @@ typedef NS_OPTIONS(NSUInteger, SBDChannelQueryIncludeOption) {
     SBDChannelQueryIncludeOptionMemberList              = (1 << 2),
     SBDChannelQueryIncludeOptionFrozenChannel           = (1 << 3),
     SBDChannelQueryIncludeOptionReadReceipt             = (1 << 4),
-    SBDChannelQueryIncludeOptionDeliveryReceipt         = (1 << 5)
+    SBDChannelQueryIncludeOptionDeliveryReceipt         = (1 << 5),
+    SBDChannelQueryIncludeOptionMetaData                = (1 << 6)
 };
 
 typedef NS_OPTIONS(NSUInteger, SBDMessageQueryIncludeOption) {
