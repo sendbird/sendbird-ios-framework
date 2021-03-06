@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.217 (Mar 5, 2021)
+* Improved stability
+
 ### v3.0.216 (Feb 24, 2021)
 * Added `getCachedMetaData` in `SBDBaseChannel`.
 * Added `includeMetaData` in `SBDGroupChannelListQuery`, `SBDPublicGroupChannelListQuery`, `SBDOpenChannelListQuery`.
