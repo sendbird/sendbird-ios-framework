@@ -85,6 +85,16 @@
 /// @param sender The group channel where the typing status updated.
 - (void)channelDidUpdateTypingStatus:(SBDGroupChannel * _Nonnull)sender;
 
+/// A callback when member count has been changed for broadcast channel
+/// @param channels The group channel that member count has been updated
+/// @since 3.0.219
+- (void)channelDidChangeMemberCount:(nonnull NSArray<SBDGroupChannel *> *)channels;
+
+/// A callback when participant count has been changed for open channel
+/// @param channels The open channel that member count has been updated
+/// @since 3.0.219
+- (void)channelDidChangeParticipantCount:(nonnull NSArray<SBDOpenChannel *> *)channels;
+
 /// A callback when users are invited by inviter.
 /// @param sender The group channel where the invitation is occured.
 /// @param inviter Inviter. It can be nil.
@@ -101,7 +111,6 @@
 /// @param sender The group channel.
 /// @param user   The new user joined to the channel.
 - (void)channel:(SBDGroupChannel * _Nonnull)sender userDidJoin:(SBDUser * _Nonnull)user;
-
 
 /// A callback when current member left from the group channel.
 /// @param sender The group channel.

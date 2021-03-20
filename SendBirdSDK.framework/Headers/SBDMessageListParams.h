@@ -39,6 +39,7 @@
 @property (atomic) SBDMessageTypeFilter messageType;
 
 /// Restricts the search scope only to retrieve the messages with the specified custom message type. When the custom type filtering is not needed, the value should be set to `nil`.
+/// If the `customTypes` is set, this property is ignored.
 /// @note The default value is `nil`.
 /// @since 3.0.181
 @property (strong, nullable) NSString *customType;

@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   }
   s.source       = { :git => "https://github.com/sendbird/sendbird-ios-framework.git", :tag => "v#{s.version}" }
   s.requires_arc = true
-  s.platform = :ios, "8.0"
+  s.platform = :ios, "9.0"
   s.documentation_url = 'https://docs.sendbird.com/'
   s.ios.vendored_frameworks = 'SendBirdSDK.framework'
   s.ios.frameworks = ["UIKit", "CFNetwork", "Security", "Foundation", "MobileCoreServices", "SystemConfiguration", "CoreFoundation"]
