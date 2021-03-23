@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.220 (Mar 23, 2021)
+* Enabled bitcode.
+
 ### v3.0.219 (Mar 20, 2021)
 * The minimum deployment target is 9.0.
 * Added new delegates(`channelDidChangeMemberCount:` and `channelDidChangeParticipantCount:`) to `SBDChannelDelegate` to receive the events that the member count and the participant count have been changed.
