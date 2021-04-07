@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.221 (Apr 7, 2021)
+* Supports xcframework and Swift Package Manager.
+* Added new parameter for Apple Critical Alert to `SBDBaseMessageParams` class.
+
 ### v3.0.220 (Mar 23, 2021)
 * Enabled bitcode.
 

@@ -89,7 +89,7 @@ $ pod init
 On `Podfile`, add the following lines: 
 
 ```bash
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
 target YOUR_PROJECT_TARGET do
