@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/SBDAppInfo.h</key>
 		<data>
-		VOrCFxP9SVQ5qs3CTFW+K7gf5SU=
+		srHG/d+LHOtaqKuj30j9cQfeYkM=
 		</data>
 		<key>Headers/SBDAppleCriticalAlertOptions.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Headers/SBDMessageSearchQuery.h</key>
 		<data>
-		wx9MLb/jpLm9YbxdwdjqIlQpMnk=
+		4xNhb6HM/R+dAwVqhCvXpykFveg=
 		</data>
 		<key>Headers/SBDMutedUserListQuery.h</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>Headers/SBDOptions.h</key>
 		<data>
-		8gBP/Rlgvf+OAYZcjS7AIOyz0g8=
+		QE2EjRB7qP5ubO2q1hT12e5o5Ts=
 		</data>
 		<key>Headers/SBDParticipantListQuery.h</key>
 		<data>
@@ -246,11 +246,11 @@
 		</data>
 		<key>Headers/SendBirdSDK.h</key>
 		<data>
-		VMg8Bt3+aQQD08bBtEB8iL45odk=
+		v5Kw8Z8O57i8Az/EdtZvvaCZUg8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MjJejspKYtL2Alpj88o4N1E53CA=
+		Bc0Tnw9AJbp74RazSBisMGpHFcs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -274,11 +274,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VOrCFxP9SVQ5qs3CTFW+K7gf5SU=
+			srHG/d+LHOtaqKuj30j9cQfeYkM=
 			</data>
 			<key>hash2</key>
 			<data>
-			WrJrYLVcN9b3obgwNh5k+DSZy2boPXakhC3CVFKX+DI=
+			/8Jf6AP6q7/g3nvzx7Je8DxSQ72Jd7xjPqpMlAxZ174=
 			</data>
 		</dict>
 		<key>Headers/SBDAppleCriticalAlertOptions.h</key>
@@ -604,11 +604,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wx9MLb/jpLm9YbxdwdjqIlQpMnk=
+			4xNhb6HM/R+dAwVqhCvXpykFveg=
 			</data>
 			<key>hash2</key>
 			<data>
-			59HojKxIgTS0oU3sencMIBC/+92FZu0ECHVlCcMxmxQ=
+			JXVLiBUC35E1XyHGnZ73Ejj0ZvroKo2onmy4ppS3UDU=
 			</data>
 		</dict>
 		<key>Headers/SBDMutedUserListQuery.h</key>
@@ -703,11 +703,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8gBP/Rlgvf+OAYZcjS7AIOyz0g8=
+			QE2EjRB7qP5ubO2q1hT12e5o5Ts=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZVvVP8y2DhnchDRME3ASw3p8c/WL1f1f5WOqD9G8wwQ=
+			B4PuSmKuukhmGLqIJXSkt8giZEkjZsvEN7/+ZCty9rU=
 			</data>
 		</dict>
 		<key>Headers/SBDParticipantListQuery.h</key>
@@ -923,11 +923,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VMg8Bt3+aQQD08bBtEB8iL45odk=
+			v5Kw8Z8O57i8Az/EdtZvvaCZUg8=
 			</data>
 			<key>hash2</key>
 			<data>
-			S7VXaEyx2f1yU+Et2E2q9gCoap6kJ2O1GhpAnkLo5V8=
+			bw0g6RTh7ADEXg34vqTKdxB1V3YBPBRxe9ytozaCfIg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

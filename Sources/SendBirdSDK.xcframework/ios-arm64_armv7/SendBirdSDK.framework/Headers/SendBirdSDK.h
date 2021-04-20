@@ -70,6 +70,11 @@
 #import "SBDUserMessage.h"
 #import "SBDUserMessageParams.h"
 
+//To use swift in objective c, class has to be public..?
+//#import "SBDWebSocketEngine.h"
+//#import "SBDWebSocketDelegate.h"
+//#import "SBDWebSocketTypes.h"
+
 //! Project version number for SendBirdSDK.
 FOUNDATION_EXPORT double SendBirdSDKVersionNumber;
 

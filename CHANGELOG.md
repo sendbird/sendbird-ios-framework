@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.222 (Apr 20, 2021)
+* Improved network latency issue
+* Improved stability
+
 ### v3.0.221 (Apr 7, 2021)
 * Supports xcframework and Swift Package Manager.
 * Added new parameter for Apple Critical Alert to `SBDBaseMessageParams` class.
