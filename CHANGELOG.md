@@ -1,5 +1,10 @@
 # Change Log
 
+### v3.0.223 (Apr 28, 2021)
+* Added 'nicknameStartsWithFilter` property in `ApplicationUserListQuery` 
+* Exposed `initWithDictionary:` methods for SBD classes
+* Improved stability 
+
 ### v3.0.222 (Apr 20, 2021)
 * Used the native socket implementation NSURLSessionWebSocketTask by default for iOS 13 and above. The prior versions of SDK use SocketRocket implementation for websocket communication. We are moving to native framework due to better support. If there is a problem experienced with this release, please contact Sendbird support because this change can be overwritten by server side configuration. Sendbird support team will change the setting setting for you per application.
 * Improved network latency issue

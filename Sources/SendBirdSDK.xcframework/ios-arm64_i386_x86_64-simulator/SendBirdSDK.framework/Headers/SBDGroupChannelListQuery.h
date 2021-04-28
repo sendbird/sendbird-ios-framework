@@ -9,6 +9,7 @@
 #import "SBDError.h"
 #import "SBDTypes.h"
 #import "SBDUser.h"
+#import "SBDMappable.h"
 
 @class SBDGroupChannel;
 @class SBDUser;
@@ -17,7 +18,7 @@
 /// The `SBDGroupChannelListQuery` class is a query class for getting the list of group channels.
 /// The instance of this class is created by [`createMyGroupChannelListQuery`]
 /// (../Classes/SBDGroupChannel.html#//api/name/createMyGroupChannelListQuery) in `SBDGroupChannel` class.
-@interface SBDGroupChannelListQuery : NSObject <NSCopying>
+@interface SBDGroupChannelListQuery : NSObject <NSCopying, SBDMappable>
 
 /// Sets the number of channels per page.
 @property (atomic) NSUInteger limit;

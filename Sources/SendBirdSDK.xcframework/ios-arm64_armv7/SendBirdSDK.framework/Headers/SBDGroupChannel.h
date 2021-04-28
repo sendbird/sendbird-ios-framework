@@ -14,6 +14,7 @@
 #import "SBDTypes.h"
 #import "SBDBannedUserListQuery.h"
 #import "SBDConstants.h"
+#import "SBDMappable.h"
 
 @class SBDUser, SBDMember;
 @class SBDGroupChannel, SBDGroupChannelParams, SBDGroupChannelTotalUnreadMessageCountParams;
@@ -33,7 +34,7 @@
  *  For more information, see [Group Channel](https://docs.sendbird.com/ios#group_channel).
  *
  */
-@interface SBDGroupChannel : SBDBaseChannel
+@interface SBDGroupChannel : SBDBaseChannel <SBDMappable>
 
 /**
  *  Last message of the channel.

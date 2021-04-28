@@ -10,10 +10,11 @@
 #import "SBDTypes.h"
 #import "SBDUser.h"
 #import "SBDThreadedMessageListParams.h"
+#import "SBDMappable.h"
 
 /// An object that represents the information about threaded messages, whose properties show how many replies the thread has received, who left the replies, and when the last reply was added.
 /// @note This class is available from 3.0.181
-@interface SBDThreadInfo : NSObject
+@interface SBDThreadInfo : NSObject <SBDMappable>
 
 /// The total number of replies in a specific thread. A value of 0 indicates there is no reply in the thread.
 /// @since 3.0.181

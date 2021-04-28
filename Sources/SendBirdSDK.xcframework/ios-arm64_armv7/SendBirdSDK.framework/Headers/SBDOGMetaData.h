@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBDMappable.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Represents OpenGraph information
 /// @since 3.0.193
-@interface SBDOGMetaData : NSObject
+@interface SBDOGMetaData : NSObject <SBDMappable>
 
 /// The title of object as it should appear within the graph
 @property (nonatomic, copy, readonly, nullable) NSString *title;

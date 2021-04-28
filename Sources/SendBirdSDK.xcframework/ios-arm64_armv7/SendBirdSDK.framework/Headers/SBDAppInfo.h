@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBDMappable.h"
 
 /// This class contains application information.
 ///
 /// @note This class is available from 3.0.180
-@interface SBDAppInfo : NSObject
+@interface SBDAppInfo : NSObject <SBDMappable>
 
 
 /// This is the latest hash value for Emoji.

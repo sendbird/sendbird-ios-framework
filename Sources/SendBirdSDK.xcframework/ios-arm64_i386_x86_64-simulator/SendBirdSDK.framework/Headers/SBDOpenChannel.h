@@ -11,6 +11,7 @@
 #import "SBDParticipantListQuery.h"
 #import "SBDMutedUserListQuery.h"
 #import "SBDBannedUserListQuery.h"
+#import "SBDMappable.h"
 
 @class SBDOpenChannel, SBDOpenChannelParams;
 @class SBDOpenChannelListQuery;
@@ -18,7 +19,7 @@
 /**
  *  The `SBDOpenChannel` class represents a public chat. This is a channel type which anyone can participate without a permission. It can handle thousands of users in one channel. This channel has participants instead of members of `SBDGroupChannel` and every participant is always online. A user can be included as an operator when a channel is created. The operator has a permission to mute, unmute, ban and unban participants. The muted user can see the messages in the channel, but can't say anything. The unbanned user can't enter the channel. If a user who is in the channel is banned, the user will be kicked from the channel.
  */
-@interface SBDOpenChannel : SBDBaseChannel
+@interface SBDOpenChannel : SBDBaseChannel <SBDMappable>
 
 /**
  *  The number of participants in this channel.

@@ -69,6 +69,7 @@
 #import "SBDUserListQuery.h"
 #import "SBDUserMessage.h"
 #import "SBDUserMessageParams.h"
+#import "SBDMappable.h"
 
 //To use swift in objective c, class has to be public..?
 //#import "SBDWebSocketEngine.h"

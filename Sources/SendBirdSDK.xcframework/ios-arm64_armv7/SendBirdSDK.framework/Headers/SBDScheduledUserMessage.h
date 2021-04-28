@@ -10,6 +10,7 @@
 #import "SBDUser.h"
 #import "SBDSender.h"
 #import "SBDTypes.h"
+#import "SBDMappable.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  Represents a scheduled user message.
  @since 3.0.119
  */
-@interface SBDScheduledUserMessage : NSObject
+@interface SBDScheduledUserMessage : NSObject <SBDMappable>
 
 /**
  The scheduled message ID.

@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "SBDOGMetaData.h"
 #import "SBDOGProtocol.h"
+#import "SBDMappable.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// Represents OpenGraph Image information
 /// @since 3.0.193
-@interface SBDOGImage : NSObject <SBDOGMedia, SBDOGDisplayableMedia>
+@interface SBDOGImage : NSObject <SBDOGMedia, SBDOGDisplayableMedia, SBDMappable>
 
 /// An image url
 @property (nonatomic, copy, readonly, nullable) NSString *url;

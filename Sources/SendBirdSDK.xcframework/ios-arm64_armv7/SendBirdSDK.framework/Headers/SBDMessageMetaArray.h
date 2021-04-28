@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBDMappable.h"
 
 /**
  The `SBDMessageMetaArray` instance has a string type of key and an array type of value.
  The value consists of a string.
  It usually can be used for 'vote' or 'reaction' for the message.
  */
-@interface SBDMessageMetaArray : NSObject <NSCopying>
+@interface SBDMessageMetaArray : NSObject <NSCopying, SBDMappable>
 
 /**
  A string type of key.

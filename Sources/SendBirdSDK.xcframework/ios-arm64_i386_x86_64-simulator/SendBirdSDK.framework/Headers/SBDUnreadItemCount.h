@@ -8,13 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "SBDTypes.h"
+#import "SBDMappable.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  *  The `SBDUnreadItemCount` class represents counts of messages. The instance of this class is returned from completion handler in `getUnreadItemCountWithKey:completionHandler:]`.
  */
-@interface SBDUnreadItemCount : NSObject
+@interface SBDUnreadItemCount : NSObject <SBDMappable>
 
 /**
  *  The count of unread message in all of group channels.

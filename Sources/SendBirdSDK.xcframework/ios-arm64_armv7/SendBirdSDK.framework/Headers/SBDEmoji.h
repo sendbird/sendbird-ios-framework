@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "SBDMappable.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  * Class to represent emoji
  * @note This class is available from 3.0.180
  */
-@interface SBDEmoji : NSObject
+@interface SBDEmoji : NSObject <SBDMappable>
 
 /**
  * Emoji's key
@@ -38,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
  * Class to represent emoji cateogry
  * @note This class is available from 3.0.180
  */
-@interface SBDEmojiCategory : NSObject
+@interface SBDEmojiCategory : NSObject <SBDMappable>
 
 /**
  * Emoji category's key
@@ -66,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface SBDEmojiContainer : NSObject
+@interface SBDEmojiContainer : NSObject <SBDMappable>
 
 /**
  * A hash value that represnts any changes on emojis

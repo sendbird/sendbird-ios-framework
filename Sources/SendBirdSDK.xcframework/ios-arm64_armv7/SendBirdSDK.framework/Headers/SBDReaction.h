@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBDMappable.h"
 
 /// Class to store the reaction info. The `SBDBaseMessage` object can have the `SBDReaction` object in `reactions` property.
 /// @note This class is available in 3.0.169
-@interface SBDReaction : NSObject
+@interface SBDReaction : NSObject <SBDMappable>
 
 /// The reaction key.
 /// @since 3.0.169

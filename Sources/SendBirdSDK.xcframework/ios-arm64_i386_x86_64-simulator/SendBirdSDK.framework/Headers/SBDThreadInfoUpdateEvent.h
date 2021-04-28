@@ -10,10 +10,11 @@
 
 #import "SBDThreadInfo.h"
 #import "SBDTypes.h"
+#import "SBDMappable.h"
 
 /// An object that is returned through the event handler when a threaded reply is added or deleted. This object should be applied to the parent message.
 /// @note This class is available from 3.0.181
-@interface SBDThreadInfoUpdateEvent : NSObject
+@interface SBDThreadInfoUpdateEvent : NSObject <SBDMappable>
 
 /// An object that has the information about threaded messages.
 /// @since 3.0.181

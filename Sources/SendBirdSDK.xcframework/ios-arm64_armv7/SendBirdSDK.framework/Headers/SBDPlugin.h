@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBDMappable.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// A object to represent a plugin
 /// @since 3.0.207
-@interface SBDPlugin : NSObject
+@interface SBDPlugin : NSObject <SBDMappable>
 
 /// String indicates a plugin type
 @property (nonatomic, copy, readonly, nullable) NSString *type;
