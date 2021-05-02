@@ -1,7 +1,7 @@
 # Change Log
 
 ### v3.0.223 (Apr 28, 2021)
-* Added 'nicknameStartsWithFilter` property in `ApplicationUserListQuery` 
+* Added `nicknameStartsWithFilter` property in `SBDApplicationUserListQuery` 
 * Exposed `initWithDictionary:` methods for SBD classes
 * Improved stability 
 
