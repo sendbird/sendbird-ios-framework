@@ -1,5 +1,11 @@
 # Change Log
 
+### v3.0.225 (Jun 3, 2021)
+* Added serialization for emoji class
+* Fixed cached meta data eviction crash
+* Changed native socket minimum requirement for iOS 14 and above due to Apple's Network framework bug in iOS 13
+* Improved stability 
+
 ### v3.0.224 (May 7, 2021)
 * Removed `sharedApplication` usage
 * Set `Require only app-extension-safe api` flag to true

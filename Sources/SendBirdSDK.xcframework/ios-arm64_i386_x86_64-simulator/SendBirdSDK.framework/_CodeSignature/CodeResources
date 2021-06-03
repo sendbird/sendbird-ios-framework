@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/SBDEmoji.h</key>
 		<data>
-		RrT9P8WtoFlY7wJtIpWo2zaY9oQ=
+		SK6LMBNY2mzkVw/Nvhe1NxCYM9s=
 		</data>
 		<key>Headers/SBDError.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/SBDGroupChannel.h</key>
 		<data>
-		WA0wkU1RIF1iFZXTrjv5yxTDoAA=
+		VOGp9v//9aAKsSpGtaxz0xusizo=
 		</data>
 		<key>Headers/SBDGroupChannelChangeLogsParams.h</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		m/jEUpVLHyWA51Xe6imOdbiuJlA=
+		++n84R9Uxxqof7PYArBPpNkBQVA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -399,11 +399,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RrT9P8WtoFlY7wJtIpWo2zaY9oQ=
+			SK6LMBNY2mzkVw/Nvhe1NxCYM9s=
 			</data>
 			<key>hash2</key>
 			<data>
-			qcQYxmr509a1/A6UZ1rueZrP1NLR38WUdEU4vYQQH+Y=
+			aaevnRHUTUx1EUNUMFNXN6gkvnOYj6lJi1EKz0yA08M=
 			</data>
 		</dict>
 		<key>Headers/SBDError.h</key>
@@ -454,11 +454,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WA0wkU1RIF1iFZXTrjv5yxTDoAA=
+			VOGp9v//9aAKsSpGtaxz0xusizo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ucw7Qnkv77zVURpg2AbZoXVp5QnpzwQEeKuLjKmQzVU=
+			40UBS29bD56g6l32XuUI3N4ANgC4EzqYaOpcfEnZzHg=
 			</data>
 		</dict>
 		<key>Headers/SBDGroupChannelChangeLogsParams.h</key>

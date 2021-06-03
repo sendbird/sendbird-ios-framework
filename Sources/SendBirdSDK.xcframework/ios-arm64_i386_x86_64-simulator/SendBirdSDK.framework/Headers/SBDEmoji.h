@@ -82,6 +82,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (strong, readonly) NSArray<SBDEmojiCategory *> *categories;
 
+/// Builds a emoji container object from serialized <span>data</span>.
+/// @param data Serialized <span>data</span>.
+/// @return SBDEmojiContainer object.
+/// @since 3.0.225
++ (nullable instancetype)buildFromSerializedData:(NSData * _Nonnull)data;
+
+/// Serializes emoji container object.
+/// @return Serialized <span>data</span>.
+/// @since 3.0.225
+- (nullable NSData *)serialize;
+
 @end
 
 NS_ASSUME_NONNULL_END

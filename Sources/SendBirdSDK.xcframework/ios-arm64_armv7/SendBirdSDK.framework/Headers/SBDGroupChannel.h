@@ -111,6 +111,10 @@
  */
 @property (atomic, readonly) NSUInteger joinedMemberCount;
 
+/// Timestamp when current user joined
+/// @since 3.0.224
+@property (atomic, assign, readonly) long long joinedAt;
+
 /**
  *  The flag for sending mark as read.
  *
