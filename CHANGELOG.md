@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.226 (Jun 25, 2021)
+* Fixed cached meta data mutation issue
+* Improved stability
+
 ### v3.0.225 (Jun 3, 2021)
 * Added serialization for emoji class
 * Fixed cached meta data eviction crash
