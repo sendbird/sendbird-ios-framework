@@ -1118,7 +1118,7 @@ DEPRECATED_ATTRIBUTE;
  @param data Serialized <span>data</span>.
  @return SBDGroupChannel object.
  */
-+ (nullable instancetype)buildFromSerializedData:(NSData * _Nonnull)data;
+//+ (nullable instancetype)buildFromSerializedData:(NSData * _Nonnull)data;
 
 /**
  Serializes group channel object.
@@ -1402,5 +1402,20 @@ DEPRECATED_ATTRIBUTE;
 /// @param completionHandler The handler block to be executed.
 /// @since 3.0.172
 - (void)notifyScreenshotWasTakenWithCompletionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/// Debugging
+/// @param channelUrl Channel URL
+/// @param completionHandler The handler block to be executed.
++ (void)fetchChannelWithChannelUrl:(nonnull NSString *)channelUrl
+                 completionHandler:(nullable void (^)(SBDGroupChannel * _Nullable channel))completionHandler;
+
+/// Compares two channel objects with the channel list order.
+/// @param channelA First channel object.
+/// @param channelB Second channel obejct.
+/// @param order Order.
+/// @since 3.0.227
++ (NSComparisonResult)compareWithChannelA:(nonnull SBDGroupChannel *)channelA
+                                 channelB:(nonnull SBDGroupChannel *)channelB
+                                    order:(SBDGroupChannelListOrder)order;
 
 @end

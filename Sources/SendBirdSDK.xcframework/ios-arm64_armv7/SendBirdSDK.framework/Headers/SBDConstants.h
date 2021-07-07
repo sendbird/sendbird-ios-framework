@@ -52,4 +52,12 @@ typedef void(^SBDErrorHandler)(SBDError * _Nullable error);
 typedef void(^SBDVoidHandler)(void);
 typedef void(^SBDUserHandler)(SBDUser * _Nullable user, SBDError * _Nullable error);
 
+/// Posted immediately after a change in the channel collection object.
+/// @since 3.0.227
+extern NSString * _Nonnull const SBDChannelCollectionChangeNotification;
+
+/// Posted immediately after a change in the message collection object.
+/// @since 3.0.227
+extern NSString * _Nonnull const SBDMessageCollectionChangeNotification;
+
 #endif /* SBDConstants_h */

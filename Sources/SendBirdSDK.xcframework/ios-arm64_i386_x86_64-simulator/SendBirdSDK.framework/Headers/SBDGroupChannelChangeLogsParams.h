@@ -31,7 +31,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @since 3.0.182
 @property (atomic) BOOL includeFrozenChannel;
 
-
 /// Create `SBDGroupChannelChangeLogsParams` from a given SBDGroupChannelListQuery instance.
 /// @param query group channel list query
 /// @return A created instance of `SBDGroupChannelChangeLogsParams`

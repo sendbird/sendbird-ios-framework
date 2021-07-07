@@ -15,9 +15,13 @@
 #import "SBDApplicationUserListQuery.h"
 #import "SBDBannedUserListQuery.h"
 #import "SBDBaseChannel.h"
+#import "SBDBaseCollection.h"
 #import "SBDBaseMessage.h"
 #import "SBDBaseMessageParams.h"
 #import "SBDBlockedUserListQuery.h"
+#import "SBDChannelCollection.h"
+#import "SBDChannelCollectionDelegate.h"
+#import "SBDChannelContext.h"
 #import "SBDComparator.h"
 #import "SBDConnectionManager.h"
 #import "SBDConstants.h"
@@ -34,8 +38,12 @@
 #import "SBDGroupChannelTotalUnreadMessageCountParams.h"
 #import "SBDInternalTypes.h"
 #import "SBDMain.h"
+#import "SBDMappable.h"
 #import "SBDMember.h"
 #import "SBDMessageChangeLogsParams.h"
+#import "SBDMessageCollection.h"
+#import "SBDMessageCollectionDelegate.h"
+#import "SBDMessageContext.h"
 #import "SBDMessageListParams.h"
 #import "SBDMessageListQuery.h"
 #import "SBDMessageMetaArray.h"
@@ -60,6 +68,7 @@
 #import "SBDScheduledUserMessageParams.h"
 #import "SBDSender.h"
 #import "SBDSessionDelegate.h"
+#import "SBDSource.h"
 #import "SBDThreadInfo.h"
 #import "SBDThreadInfoUpdateEvent.h"
 #import "SBDThreadedMessageListParams.h"
@@ -69,12 +78,6 @@
 #import "SBDUserListQuery.h"
 #import "SBDUserMessage.h"
 #import "SBDUserMessageParams.h"
-#import "SBDMappable.h"
-
-//To use swift in objective c, class has to be public..?
-//#import "SBDWebSocketEngine.h"
-//#import "SBDWebSocketDelegate.h"
-//#import "SBDWebSocketTypes.h"
 
 //! Project version number for SendBirdSDK.
 FOUNDATION_EXPORT double SendBirdSDKVersionNumber;

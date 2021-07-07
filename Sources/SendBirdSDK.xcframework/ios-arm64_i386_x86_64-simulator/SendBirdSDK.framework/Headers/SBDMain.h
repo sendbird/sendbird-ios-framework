@@ -24,213 +24,157 @@
 #import "SBDUser.h"
 #import "SBDUserListQuery.h"
 
+@class SBDDatabase;
+
 typedef void(^SBDBackgroundSessionBlock)(void);
 
-/**
- *  An object that adopts the `SBDConnectionDelegate` protocol is responsible for managing the connection statuses. This delegate includes three statuses: reconnection start, reconnection succession, and reconnection failure. The `SBDConnectionDelegate` can be added by [`addConnectionDelegate:identifier:`](../Classes/SBDMain.html#//api/name/addConnectionDelegate:identifier:) in `SBDMain`. Every `SBDConnectionDelegate` method which is added is going to manage the statues.
- *
- *  @warning If the object that adopts the `SBDConnectionDelegate` protocol is invalid, the delegate has to be removed by the identifier via [`removeConnectionDelegateForIdentifier:`](../Classes/SBDMain.html#//api/name/removeConnectionDelegateForIdentifier:) in `SBDMain`. If you miss this, it will cause the crash.
- */
+/// An object that adopts the `SBDConnectionDelegate` protocol is responsible for managing the connection statuses.
+/// This delegate includes three statuses: reconnection start, reconnection succession, and reconnection failure.
+/// The `SBDConnectionDelegate` can be added by
+/// [`addConnectionDelegate:identifier:`](../Classes/SBDMain.html#//api/name/addConnectionDelegate:identifier:) in `SBDMain`.
+///  Every `SBDConnectionDelegate` method which is added is going to manage the statues.
+/// @warning If the object that adopts the `SBDConnectionDelegate` protocol is invalid, the delegate has to be removed by
+/// the identifier via [`removeConnectionDelegateForIdentifier:`](../Classes/SBDMain.html#//api/name/removeConnectionDelegateForIdentifier:)
+/// in `SBDMain`. If you miss this, it will cause the crash.
 @protocol SBDConnectionDelegate <NSObject>
 
 @optional
 
-/**
- *  Invoked when reconnection starts.
- */
+/// Invoked when reconnection starts.
 - (void)didStartReconnection;
 
-/**
- *  Invoked when reconnection is succeeded.
- */
+/// Invoked when reconnection is succeeded.
 - (void)didSucceedReconnection;
 
-/**
- *  Invoked when reconnection is failed.
- */
+/// Invoked when reconnection is failed.
 - (void)didFailReconnection;
 
-/**
- *  Invoked when reconnection is cancelled.
- */
+/// Invoked when reconnection is cancelled.
 - (void)didCancelReconnection;
 
 @end
 
-/**
- *  The `SBDMain` is the core class for Sendbird. This class is singletone instance which is initialized by Application ID.
- *  This class provides the methods for overall. The methods include `SBDChannelDelegate` registration for receiving events are related to channels, `SBDConnectionDelegate` for managing the connection status, updating the current user's information, registration for APNS push notification and blocking other users.
- */
+/// The `SBDMain` is the core class for Sendbird. This class is singletone instance which is initialized by Application ID.
+/// This class provides the methods for overall. The methods include `SBDChannelDelegate` registration for receiving events
+/// are related to channels, `SBDConnectionDelegate` for managing the connection status, updating the current user's information,
+/// registration for APNS push notification and blocking other users.
 @interface SBDMain : NSObject
 
-/**
- *  Shows the current log level.
- */
+/// Shows the current log level.
 @property (atomic) SBDLogLevel logLevel;
 
-/**
- *  Manages registered `SBDConnectionDelegate`.
- */
+/// Manages registered `SBDConnectionDelegate`.
 @property (nonatomic, strong, readonly, nullable) NSMapTable<NSString *, id<SBDConnectionDelegate>> *connectionDelegatesDictionary;
 
-/**
- *  Manages registered `SBDChannelDelegate`.
- */
+/// Manages registered `SBDChannelDelegate`.
 @property (nonatomic, strong, readonly, nullable) NSMapTable<NSString *, id<SBDChannelDelegate>> *channelDelegatesDictionary;
 
-/**
- *  Manages registered `SBDUserEventlDelegate`.
- */
+/// Manages registered `SBDUserEventlDelegate`.
 @property (nonatomic, strong, readonly, nullable) NSMapTable<NSString *, id<SBDUserEventDelegate>> *userEventDelegatesDictionary;
 
-/**
- *  The completion handler of background session.
- */
+/// The completion handler of background session.
 @property (nonatomic, strong, nullable) SBDBackgroundSessionBlock backgroundSessionCompletionHandler;
 
-/**
- *  The list of tasks in background.
- */
+/// The list of tasks in background.
 @property (strong, nonatomic, nonnull) NSMutableArray <SBDBackgroundSessionBlock> *backgroundTaskBlock;
 
-/**
- *  The number of URLSessionDidFinishEventsForBackgroundURLSession.
- */
+/// The number of URLSessionDidFinishEventsForBackgroundURLSession.
 @property (atomic) int URLSessionDidFinishEventsForBackgroundURLSession;
 
-
-/**
- *  Retrieves the SDK version.
- *
- *  @return The SDK version.
- */
+/// Retrieves the SDK version.
+/// @return The SDK version.
 + (nonnull NSString *)getSDKVersion;
 
-/**
- *  Retrieves the log level.
- *
- *  @return Log level.
- */
+/// Retrieves the log level.
+/// @return Log level.
 + (SBDLogLevel)getLogLevel;
 
-/**
- *  Gets the Application ID which was used for initialization.
- *
- *  @return The Application ID.
- */
+/// Gets the Application ID which was used for initialization.
+/// @return The Application ID.
 + (nullable NSString *)getApplicationId;
 
-/**
- *  Sets the log level. The log level is defined by `SBDLogLevel`.
- *
- *  @param logLevel Log level.
- */
+/// Sets the log level. The log level is defined by `SBDLogLevel`.
+/// @param logLevel Log level.
 + (void)setLogLevel:(SBDLogLevel)logLevel;
 
-/**
- *  Gets the current debug mode.
- *
- *  @return If YES, this instance is debug mode.
- */
+/// Gets the current debug mode.
+/// @return If YES, this instance is debug mode.
 + (BOOL)getDebugMode DEPRECATED_ATTRIBUTE;
 
-/**
- *  Gets a singleton instance of `SBDMain`.
- *
- *  @return a singleton instance for `SBDMain`.
- */
+/// Gets a singleton instance of `SBDMain`.
+/// @return a singleton instance for `SBDMain`.
 + (nonnull SBDMain *)sharedInstance;
 
-/**
- *  Gets initializing state.
- *
- *  @return If YES, `SBDMain` instance is initialized.
- */
+/// Gets initializing state.
+/// @return If YES, `SBDMain` instance is initialized.
 + (BOOL)isInitialized;
 
-/**
- *  Initializes `SBDMain` singleton instance with Sendbird Application ID. The Application ID is on Sendbird dashboard. This method has to be run first in order to user Sendbird.
- *
- *  @param applicationId The Applicatin ID of Sendbird. It can be founded on Sendbird Dashboard.
- *
- *  @return If YES, the applicationId is set.
- */
+/// Initializes `SBDMain` singleton instance with Sendbird Application ID. The Application ID is on Sendbird dashboard. This method has to be run first in order to user Sendbird.
+/// @param applicationId The Applicatin ID of Sendbird. It can be founded on Sendbird Dashboard.
+/// @return If YES, the applicationId is set.
 + (BOOL)initWithApplicationId:(NSString * _Nonnull)applicationId;
 
-/**
- *  Initialize `sharedContainerIdentifier` of NSURLSessionConfiguration to use background session.
- *  Important! If you use `App Extension` and use upload file message in extension, you MUST set thie field.
- *
- *  @param identifier   The identifier to set background session configuraion.
- */
+/// Initializes `SBDMain` singleton instance with Sendbird Application ID. The Application ID is on Sendbird dashboard. This method has to be run first in order to user Sendbird.
+/// @param applicationId The Applicatin ID of Sendbird. It can be founded on Sendbird Dashboard.
+/// @param useCaching If YES, the local cache is set.
+/// @param migrationStartHandler // TODO:
+/// @param completionHandler // TODO:
+/// @return If YES, the applicationId is set.
+/// @since 3.0.227
++ (BOOL)initWithApplicationId:(nullable NSString *)applicationId
+                   useCaching:(BOOL)useCaching
+        migrationStartHandler:(nullable void (^)(void))migrationStartHandler
+            completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/// Initialize `sharedContainerIdentifier` of NSURLSessionConfiguration to use background session.
+/// Important! If you use `App Extension` and use upload file message in extension, you MUST set thie field.
+/// @param identifier   The identifier to set background session configuraion.
 + (void)setSharedContainerIdentifier:(nonnull NSString *)identifier;
 
-/**
- *  Performs a connection to Sendbird with the user ID.
- *
- *  @param userId            The user ID.
- *  @param completionHandler The handler block to execute. `user` is the object to represent the current user.
- */
+/// Performs a connection to Sendbird with the user ID.
+/// @param userId            The user ID.
+/// @param completionHandler The handler block to execute. `user` is the object to represent the current user.
 + (void)connectWithUserId:(NSString * _Nonnull)userId
         completionHandler:(nullable void (^)(SBDUser * _Nullable user, SBDError * _Nullable error))completionHandler;
 
-/**
- *  Performs a connection to Sendbird with the user ID and the access token.
- *
- *  @param userId            The user ID.
- *  @param accessToken       The access token. If the user doesn't have access token, set nil.
- *  @param completionHandler The handler block to execute. `user` is the object to represent the current user.
- */
+/// Performs a connection to Sendbird with the user ID and the access token.
+/// @param userId            The user ID.
+/// @param accessToken       The access token. If the user doesn't have access token, set nil.
+/// @param completionHandler The handler block to execute. `user` is the object to represent the current user.
 + (void)connectWithUserId:(NSString * _Nonnull)userId
               accessToken:(NSString * _Nullable)accessToken
         completionHandler:(nullable void (^)(SBDUser * _Nullable user, SBDError * _Nullable error))completionHandler;
 
-/**
- *  Performs a connection to Sendbird with the user ID and the access token.
- *
- *  @param userId userId
- *  @param accessToken accessToken
- *  @param apiHost apiHost
- *  @param wsHost wsHost
- *  @param completionHandler completionHandler
- *  @see -connectWithUserId:accessToken:completionHandler:
- *  @warning *Important*: DON'T use this method. This method will be unavailable.
- */
+/// Performs a connection to Sendbird with the user ID and the access token.
+/// @param userId userId
+/// @param accessToken accessToken
+/// @param apiHost apiHost
+/// @param wsHost wsHost
+/// @param completionHandler completionHandler
+/// @see -connectWithUserId:accessToken:completionHandler:
+/// @warning *Important*: DON'T use this method. This method will be unavailable.
 + (void)connectWithUserId:(NSString * _Nonnull)userId
               accessToken:(NSString * _Nullable)accessToken
                   apiHost:(NSString * _Nullable)apiHost
                    wsHost:(NSString * _Nullable)wsHost
         completionHandler:(nullable void (^)(SBDUser * _Nullable user, SBDError * _Nullable error))completionHandler;
 
-/**
- *  Gets the current user object. The object is valid when the connection succeeded.
- *
- *  @return The current user object.
- */
+/// Gets the current user object. The object is valid when the connection succeeded.
+/// @return The current user object.
 + (nullable SBDUser *)getCurrentUser;
 
-/**
- *  Gets the current user's latest connection millisecond time(UTC). If the connection state is not open, returns 0.
- *
- *  @return  latest connected millisecond time stamp.
- *
- *  @since 3.0.117
- */
+/// Gets the current user's latest connection millisecond time(UTC). If the connection state is not open, returns 0.
+/// @return  latest connected millisecond time stamp.
+/// @since 3.0.117
 + (long long)getLastConnectedAt;
 
-/**
- *  Disconnects from Sendbird. If this method is invoked, the current user will be invalidated.
- *
- *  @param completionHandler The handler block to execute.
- */
+/// Disconnects from Sendbird. If this method is invoked, the current user will be invalidated.
+/// @param completionHandler The handler block to execute.
 + (void)disconnectWithCompletionHandler:(nullable void (^)(void))completionHandler;
 
-/**
- *  Adds the `SBDConnectionDelegate`.
- *
- *  @param delegate   `SBDConnectionDelegate` delegate.
- *  @param identifier The identifier for the delegate.
- */
+/// Adds the `SBDConnectionDelegate`.
+/// @param delegate   `SBDConnectionDelegate` delegate.
+/// @param identifier The identifier for the delegate.
 + (void)addConnectionDelegate:(id<SBDConnectionDelegate> _Nonnull)delegate
                    identifier:(NSString * _Nonnull)identifier;
 
@@ -991,6 +935,11 @@ completionHandler:(nullable void (^)(SBDEmoji * _Nullable emoji, SBDError * _Nul
 #pragma mark - Session Expiration
 + (void)setSessionDelegate:(id<SBDSessionDelegate> _Nonnull)delegate;
 + (void)removeSessionDelegate;
+
+
+#pragma mark - Local Cache
++ (BOOL)isUsingLocalCaching;
++ (void)clearCachedData;
 
 @end
 

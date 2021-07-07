@@ -16,7 +16,7 @@
 @interface SBDError : NSError
 
 /**
- *  Create error object with NSDictionary.
+ *  Creates error object with NSDictionary.
  *
  *  @param dict Error data.
  *
@@ -25,7 +25,7 @@
 + (nonnull SBDError *)errorWithDictionary:(NSDictionary * _Nonnull)dict;
 
 /**
- *  Create error object with NSError object.
+ *  Creates error object with NSError object.
  *
  *  @param error NSError object.
  *

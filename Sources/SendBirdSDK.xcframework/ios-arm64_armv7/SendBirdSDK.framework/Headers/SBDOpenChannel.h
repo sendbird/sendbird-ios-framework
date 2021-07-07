@@ -366,7 +366,7 @@ completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandl
  @param data Serialized <span>data</span>.
  @return SBDOpenChannel object.
  */
-+ (nullable instancetype)buildFromSerializedData:(NSData * _Nonnull)data;
+//+ (nullable instancetype)buildFromSerializedData:(NSData * _Nonnull)data;
 
 /**
  Serializes open channel object.

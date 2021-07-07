@@ -43,9 +43,8 @@
 /// Sets the order of the list. The order is defined in `SBDGroupChannelListOrder`.
 @property (atomic) SBDGroupChannelListOrder order;
 
-
 /// Shows if there is a next page
-@property (atomic, readonly) BOOL hasNext;
+@property (nonatomic, readonly) BOOL hasNext;
 
 
 /// Sets query type for `includeMemberList`.
@@ -60,7 +59,6 @@ DEPRECATED_ATTRIBUTE;
 /// Sets the member state filter.
 @property (nonatomic) SBDMemberStateFilter memberStateFilter;
 
-
 /// Sets <code>SBDGroupChannel</code> URLs filter. <code>SBDGroupChannel</code> list containing
 /// only and exactly the passed <code>SBDGroupChannel</code> URLs will be returned.
 /// This does not cooperate with other filters.
@@ -71,7 +69,6 @@ DEPRECATED_ATTRIBUTE;
 /// @deprecated 3.0.64. (Use `setChannelNameContainsFilter:` instead.)
 @property (strong, nonatomic, nullable) NSString *channelNameFilter
 DEPRECATED_ATTRIBUTE;
-
 
 /// Sets to filter super channel.
 /// 
@@ -162,7 +159,6 @@ DEPRECATED_ATTRIBUTE;
 /// @deprecated in 3.0.79.
 - (void)setCustomTypeFilter:(NSString * _Nullable)customType DEPRECATED_ATTRIBUTE;
 
-
 /// Sets the search query and search fields of the query specified a given query and a given fields.
 ///
 /// @param query  The query to request for `searchFields`.
@@ -202,5 +198,11 @@ DEPRECATED_ATTRIBUTE;
 ///
 /// @return A serialized binary data from query, or nil if an internal error occurs.
 - (nullable NSData *)serialize;
+
+#pragma mark - Local Cache
+/// Checks whether the channel belongs to this query or not.
+/// @param channel Channel object.
+/// @since 3.0.227
+- (BOOL)belongsTo:(nonnull SBDGroupChannel *)channel;
 
 @end

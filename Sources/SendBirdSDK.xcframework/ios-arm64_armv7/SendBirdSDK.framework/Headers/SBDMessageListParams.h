@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "SBDTypes.h"
 
+@class SBDBaseMessage;
+
 /// An object that represents the parameters for the [`getMessagesByTimestamp:params:completionHandler:`](../Classes/SBDBaseChannel.html#//api/name/getMessagesByTimestamp:params:completionHandler:) and the [`getMessagesByMessageId:params:completionHandler:`](../Classes/SBDBaseChannel.html#//api/name/getMessagesByMessageId:params:completionHandler:) methods. The methods return messages according to the properties in this object.
 /// @note This class is available from 3.0.181
 @interface SBDMessageListParams : NSObject <NSCopying>
@@ -84,5 +86,7 @@
 /// @note The default value is `nil`.
 /// @since 3.0.213
 @property (strong, nonatomic, nullable) NSArray<NSString *> *customTypes;
+
+- (BOOL)belongsTo:(nonnull SBDBaseMessage *)message;
 
 @end

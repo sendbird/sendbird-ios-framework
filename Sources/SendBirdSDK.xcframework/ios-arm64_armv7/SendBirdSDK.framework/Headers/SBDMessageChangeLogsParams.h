@@ -40,7 +40,6 @@
 /// @since 3.0.181
 @property (atomic) BOOL includeThreadInfo;
 
-
 /// Create `SBDPreviousMessageListQuery` from a given SBDPreviousMessageListQuery instance.
 /// @param query previous message list query
 /// @return A created instance of `SBDMessageChangeLogsParams`
