@@ -32,7 +32,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 /// This delegate includes three statuses: reconnection start, reconnection succession, and reconnection failure.
 /// The `SBDConnectionDelegate` can be added by
 /// [`addConnectionDelegate:identifier:`](../Classes/SBDMain.html#//api/name/addConnectionDelegate:identifier:) in `SBDMain`.
-///  Every `SBDConnectionDelegate` method which is added is going to manage the statues.
+///  Every `SBDConnectionDelegate` method added will manage the statues.
 /// @warning If the object that adopts the `SBDConnectionDelegate` protocol is invalid, the delegate has to be removed by
 /// the identifier via [`removeConnectionDelegateForIdentifier:`](../Classes/SBDMain.html#//api/name/removeConnectionDelegateForIdentifier:)
 /// in `SBDMain`. If you miss this, it will cause the crash.
@@ -54,10 +54,7 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 
 @end
 
-/// The `SBDMain` is the core class for Sendbird. This class is singletone instance which is initialized by Application ID.
-/// This class provides the methods for overall. The methods include `SBDChannelDelegate` registration for receiving events
-/// are related to channels, `SBDConnectionDelegate` for managing the connection status, updating the current user's information,
-/// registration for APNS push notification and blocking other users.
+/// The `SBDMain` is the core class for Sendbird. This class is singletone instance which is initialized by Application ID.  This class provides the methods for overall operations. The methods include `SBDChannelDelegate` registration for receiving events that are related to channels, `SBDConnectionDelegate` for managing the connection status, updating the current user's information, registration for APNS push notification and blocking other users.
 @interface SBDMain : NSObject
 
 /// Shows the current log level.

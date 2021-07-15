@@ -1,8 +1,8 @@
 BCSymbolMap Version: 2.0
-Apple clang version 12.0.5 (clang-1205.0.22.9)
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.5.sdk
-iPhoneSimulator14.5.sdk
-/Users/jedgyeong/Library/Developer/Xcode/DerivedData/SendBirdSDK-hixhuqjxcnpbpzgkmdzuzvdruxxn/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphonesimulator/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk
+iPhoneOS14.5.sdk
+/Users/jedgyeong/Library/Developer/Xcode/DerivedData/SendBirdSDK-hixhuqjxcnpbpzgkmdzuzvdruxxn/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphoneos/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
 /Users/jedgyeong/git/messaging-ios
 -[SBDChannelSyncManager init]
 -[SBDChannelSyncManager dealloc]
@@ -177,7 +177,7 @@ __destroy_helper_block_e8_32s
 __copy_helper_block_e8_32s
 __37-[SBDChannelSyncManager syncChannels]_block_invoke
 __39+[SBDChannelSyncManager sharedInstance]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.5.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/usr/include/dispatch/once.h
 -[SBDPair initWithFirstObject:secondObject:]
 -[SBDPair first]
 -[SBDPair setFirst:]
@@ -2801,14 +2801,14 @@ __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke_2
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke.352
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke
 CFSwapInt64BigToHost
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
 CFSwapInt16BigToHost
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke.328
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke_2
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke
 validate_dispatch_data_partial_string
 NSMakeRange
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __56-[SendBird_SRWebSocket _readUntilBytes:length:callback:]_block_invoke
 __46-[SendBird_SRWebSocket _cleanupSelfReference:]_block_invoke
 __36-[SendBird_SRWebSocket _pumpWriting]_block_invoke.290
@@ -3143,9 +3143,9 @@ __OBJC_$_CATEGORY_NSString_$_SendBirdSDK
 /Users/jedgyeong/git/messaging-ios/SendBirdSDK/NSString+SBDMessage.m
 SendBirdSDK/NSString+SBDMessage.m
 CFStringGetCharacterFromInlineBuffer
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
 CFRangeMake
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
 CFStringInitInlineBuffer
 +[SBDUtils infersMimeTypeFromData:]
 +[SBDUtils infersMimeTypeFromFileName:andFile:]
@@ -3701,6 +3701,7 @@ ___38+[SBDMessageDataSource sharedInstance]_block_invoke
 -[SBDMessageDataSource getOldestMessage]
 -[SBDMessageDataSource loadMessagesFromCacheWithChannel:timestamp:params:]
 -[SBDMessageDataSource clearAll]
+_OBJC_CLASSLIST_REFERENCES_$_.6
 __OBJC_$_CLASS_METHODS_SBDMessageDataSource
 __OBJC_METACLASS_RO_$_SBDMessageDataSource
 __OBJC_$_INSTANCE_METHODS_SBDMessageDataSource
@@ -3990,7 +3991,6 @@ ___40+[SendBird_SRRunLoopThread sharedThread]_block_invoke
 _sharedThread.thread
 _sharedThread.onceToken
 _OBJC_IVAR_$_SendBird_SRRunLoopThread._waitGroup
-_OBJC_CLASSLIST_REFERENCES_$_.6
 _OBJC_IVAR_$_SendBird_SRRunLoopThread._runLoop
 __OBJC_$_CLASS_METHODS_SendBird_SRRunLoopThread
 __OBJC_METACLASS_RO_$_SendBird_SRRunLoopThread
@@ -5862,9 +5862,6 @@ ___38+[SBDChannelDataSource sharedInstance]_block_invoke
 -[SBDChannelDataSource channelCache]
 -[SBDChannelDataSource setChannelCache:]
 -[SBDChannelDataSource .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.35
-_OBJC_CLASSLIST_REFERENCES_$_.40
-_OBJC_CLASSLIST_REFERENCES_$_.84
 __OBJC_$_CLASS_METHODS_SBDChannelDataSource
 __OBJC_METACLASS_RO_$_SBDChannelDataSource
 __OBJC_$_INSTANCE_METHODS_SBDChannelDataSource
@@ -6278,8 +6275,6 @@ ___29-[SBDGroupChannel comparator]_block_invoke
 +[SBDGroupChannel getChannelFromCacheWithChannelUrl:]
 +[SBDGroupChannel getCachedChannels]
 +[SBDGroupChannel makeCacheDirty]
-+[SBDGroupChannel fetchChannelWithChannelUrl:completionHandler:]
-___64+[SBDGroupChannel fetchChannelWithChannelUrl:completionHandler:]_block_invoke
 +[SBDGroupChannel compareWithChannelA:channelB:order:]
 -[SBDGroupChannel lastMessage]
 -[SBDGroupChannel setLastMessage:]
@@ -6514,10 +6509,7 @@ _OBJC_SELECTOR_REFERENCES_.762
 _OBJC_SELECTOR_REFERENCES_.764
 _OBJC_SELECTOR_REFERENCES_.766
 ___block_descriptor_40_e8_32s_e45_q24?0"SBDGroupChannel"8"SBDGroupChannel"16l
-_OBJC_CLASSLIST_REFERENCES_$_.770
-_OBJC_SELECTOR_REFERENCES_.772
-_OBJC_SELECTOR_REFERENCES_.774
-_OBJC_SELECTOR_REFERENCES_.776
+_OBJC_SELECTOR_REFERENCES_.771
 _OBJC_IVAR_$_SBDGroupChannel._sendMarkAsReadEnable
 _OBJC_IVAR_$_SBDGroupChannel._markAsDeliveredTimer
 _OBJC_IVAR_$_SBDGroupChannel._needRequestMarkAsDelivered
@@ -6531,7 +6523,6 @@ __OBJC_CLASS_RO_$_SBDGroupChannel
 /Users/jedgyeong/git/messaging-ios/SendBirdSDK/SBDGroupChannel.m
 SendBirdSDK/SBDGroupChannel.m
 SendBirdSDK/SBDGroupChannel.h
-__64+[SBDGroupChannel fetchChannelWithChannelUrl:completionHandler:]_block_invoke
 __29-[SBDGroupChannel comparator]_block_invoke
 __65-[SBDGroupChannel notifyScreenshotWasTakenWithCompletionHandler:]_block_invoke_2
 __65-[SBDGroupChannel notifyScreenshotWasTakenWithCompletionHandler:]_block_invoke
@@ -6699,6 +6690,7 @@ __90+[SBDGroupChannel createChannelWithName:isDistinct:users:coverUrl:data:compl
 -[SBDMessageListParams customTypes]
 -[SBDMessageListParams setCustomTypes:]
 -[SBDMessageListParams .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.35
 __OBJC_CLASS_PROTOCOLS_$_SBDMessageListParams
 __OBJC_METACLASS_RO_$_SBDMessageListParams
 __OBJC_$_INSTANCE_METHODS_SBDMessageListParams
@@ -7417,6 +7409,7 @@ ___56-[SBDCommandProcessor response:error:completionHandler:]_block_invoke
 -[SBDCommandProcessor .cxx_destruct]
 ___block_descriptor_64_e8_32s40s48s56bs_e18_v16?0"SBDError"8l
 ___block_descriptor_56_e8_32s40s48bs_e18_v16?0"SBDError"8l
+_OBJC_CLASSLIST_REFERENCES_$_.84
 _OBJC_CLASSLIST_REFERENCES_$_.163
 _OBJC_CLASSLIST_REFERENCES_$_.164
 _OBJC_CLASSLIST_REFERENCES_$_.167
@@ -7784,6 +7777,7 @@ _OBJC_IVAR_$_SBDFileMessageParams._fileUrl
 _OBJC_IVAR_$_SBDFileMessageParams._fileSize
 _OBJC_IVAR_$_SBDFileMessageParams._fileName
 _OBJC_IVAR_$_SBDFileMessageParams._mimeType
+_OBJC_CLASSLIST_REFERENCES_$_.40
 _OBJC_IVAR_$_SBDFileMessageParams._file
 _OBJC_CLASSLIST_REFERENCES_$_.93
 __OBJC_CLASS_PROTOCOLS_$_SBDFileMessageParams
@@ -8683,7 +8677,7 @@ __67-[SBDHTTPClient runRequestWithSharedSession:uri:completionHandler:]_block_in
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke_2
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke
 __CGSizeEqualToSize
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke.215
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke
 __89-[SBDHTTPClient URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]_block_invoke

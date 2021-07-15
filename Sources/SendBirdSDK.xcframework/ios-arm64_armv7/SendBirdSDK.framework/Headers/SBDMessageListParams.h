@@ -61,7 +61,7 @@
 /// @since 3.0.181
 @property (atomic) BOOL includeReactions;
 
-/// Determines whether to include the reactions to the messages in the results.
+/// Determines whether to include the replies to the messages in the results.
 /// @note The default value is `NO`.
 /// @since 3.0.181
 @property (atomic) BOOL includeReplies;
