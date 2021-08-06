@@ -2336,6 +2336,7 @@ __85-[SBDMessageListQuery loadNextMessagesFromTimestamp:limit:reverse:completion
 __85-[SBDMessageListQuery loadNextMessagesFromTimestamp:limit:reverse:completionHandler:]_block_invoke
 -[SBDAppInfo initWithDictionary:]
 -[SBDAppInfo isEmojiUpdateNeeded:]
+-[SBDAppInfo isMACKDisabledInSuperGroupChannel]
 -[SBDAppInfo emojiHash]
 -[SBDAppInfo setEmojiHash:]
 -[SBDAppInfo uploadSizeLimit]
@@ -2348,12 +2349,15 @@ __85-[SBDMessageListQuery loadNextMessagesFromTimestamp:limit:reverse:completion
 -[SBDAppInfo setApplicationAttributes:]
 -[SBDAppInfo useNativeWS]
 -[SBDAppInfo setUseNativeWS:]
+-[SBDAppInfo disableSupergroupMACK]
+-[SBDAppInfo setDisableSupergroupMACK:]
 -[SBDAppInfo .cxx_destruct]
 __OBJC_CLASS_PROTOCOLS_$_SBDAppInfo
 __OBJC_METACLASS_RO_$_SBDAppInfo
 __OBJC_$_INSTANCE_METHODS_SBDAppInfo
 _OBJC_IVAR_$_SBDAppInfo._useReaction
 _OBJC_IVAR_$_SBDAppInfo._useNativeWS
+_OBJC_IVAR_$_SBDAppInfo._disableSupergroupMACK
 _OBJC_IVAR_$_SBDAppInfo._emojiHash
 _OBJC_IVAR_$_SBDAppInfo._premiumFeatureList
 _OBJC_IVAR_$_SBDAppInfo._applicationAttributes
@@ -7393,11 +7397,12 @@ ___59-[SBDCommandProcessor processSentFromCurrentDevice:sender:]_block_invoke
 -[SBDCommandProcessor processNewMessage:sender:]
 ___48-[SBDCommandProcessor processNewMessage:sender:]_block_invoke
 ___48-[SBDCommandProcessor processNewMessage:sender:]_block_invoke_2
+___copy_helper_block_e4_20s24s28s32s36r
 ___copy_helper_block_e4_20s24s28s32r
 -[SBDCommandProcessor processUpdatedMessage:sender:]
 ___52-[SBDCommandProcessor processUpdatedMessage:sender:]_block_invoke
 ___52-[SBDCommandProcessor processUpdatedMessage:sender:]_block_invoke_2
-___52-[SBDCommandProcessor processUpdatedMessage:sender:]_block_invoke.255
+___52-[SBDCommandProcessor processUpdatedMessage:sender:]_block_invoke.263
 -[SBDCommandProcessor processDeletedMessage:]
 ___45-[SBDCommandProcessor processDeletedMessage:]_block_invoke
 ___45-[SBDCommandProcessor processDeletedMessage:]_block_invoke_2
@@ -7452,56 +7457,53 @@ _OBJC_CLASSLIST_REFERENCES_$_.84
 _OBJC_CLASSLIST_REFERENCES_$_.163
 _OBJC_CLASSLIST_REFERENCES_$_.164
 _OBJC_CLASSLIST_REFERENCES_$_.167
+_OBJC_CLASSLIST_REFERENCES_$_.181
+_OBJC_CLASSLIST_REFERENCES_$_.184
 _OBJC_CLASSLIST_REFERENCES_$_.187
-_OBJC_CLASSLIST_REFERENCES_$_.190
-_OBJC_CLASSLIST_REFERENCES_$_.214
-_OBJC_CLASSLIST_REFERENCES_$_.215
-___block_descriptor_40_e4_20s24s28s32r_e39_v16?0"SBDBaseChannel"4c8"SBDError"12l
+_OBJC_CLASSLIST_REFERENCES_$_.223
+___block_descriptor_44_e4_20s24s28s32s36r_e39_v16?0"SBDBaseChannel"4c8"SBDError"12l
 ___block_descriptor_36_e4_20s24s28s32r_e5_v4?0l
 ___block_descriptor_36_e4_20s24s28s32r_e39_v16?0"SBDBaseChannel"4c8"SBDError"12l
-_OBJC_CLASSLIST_REFERENCES_$_.254
 ___block_descriptor_32_e4_20s24s28r_e36_v12?0"SBDOpenChannel"4"SBDError"8l
-_OBJC_CLASSLIST_REFERENCES_$_.267
+_OBJC_CLASSLIST_REFERENCES_$_.275
 ___block_descriptor_40_e8_20s36r_e39_v16?0"SBDBaseChannel"4c8"SBDError"12l
-_OBJC_CLASSLIST_REFERENCES_$_.281
-_OBJC_CLASSLIST_REFERENCES_$_.288
-_OBJC_CLASSLIST_REFERENCES_$_.293
-_OBJC_CLASSLIST_REFERENCES_$_.320
-_OBJC_SELECTOR_REFERENCES_.326
+_OBJC_CLASSLIST_REFERENCES_$_.284
+_OBJC_CLASSLIST_REFERENCES_$_.289
+_OBJC_CLASSLIST_REFERENCES_$_.296
+_OBJC_CLASSLIST_REFERENCES_$_.301
+_OBJC_CLASSLIST_REFERENCES_$_.328
 _OBJC_SELECTOR_REFERENCES_.340
-___block_descriptor_33_e4_20s24s28r_e37_v12?0"SBDGroupChannel"4"SBDError"8l
-_OBJC_CLASSLIST_REFERENCES_$_.342
+_OBJC_SELECTOR_REFERENCES_.342
 _OBJC_SELECTOR_REFERENCES_.344
 _OBJC_SELECTOR_REFERENCES_.346
-_OBJC_SELECTOR_REFERENCES_.350
+___block_descriptor_33_e4_20s24s28r_e37_v12?0"SBDGroupChannel"4"SBDError"8l
+_OBJC_CLASSLIST_REFERENCES_$_.350
+_OBJC_SELECTOR_REFERENCES_.352
 ___block_descriptor_32_e4_20s24s28r_e37_v12?0"SBDGroupChannel"4"SBDError"8l
-_OBJC_CLASSLIST_REFERENCES_$_.351
+_OBJC_CLASSLIST_REFERENCES_$_.359
+_OBJC_SELECTOR_REFERENCES_.361
+_OBJC_CLASSLIST_REFERENCES_$_.364
 ___block_descriptor_32_e4_20s24s28r_e39_v16?0"SBDBaseChannel"4c8"SBDError"12l
-_OBJC_CLASSLIST_REFERENCES_$_.361
-_OBJC_SELECTOR_REFERENCES_.365
-_OBJC_CLASSLIST_REFERENCES_$_.378
+_OBJC_CLASSLIST_REFERENCES_$_.386
 _OBJC_SELECTOR_REFERENCES_.394
 _OBJC_SELECTOR_REFERENCES_.398
 _OBJC_SELECTOR_REFERENCES_.404
-_OBJC_CLASSLIST_REFERENCES_$_.434
-_OBJC_SELECTOR_REFERENCES_.438
-_OBJC_SELECTOR_REFERENCES_.442
+_OBJC_SELECTOR_REFERENCES_.422
+_OBJC_CLASSLIST_REFERENCES_$_.423
+_OBJC_CLASSLIST_REFERENCES_$_.442
 _OBJC_SELECTOR_REFERENCES_.446
 _OBJC_SELECTOR_REFERENCES_.448
 _OBJC_SELECTOR_REFERENCES_.450
 _OBJC_SELECTOR_REFERENCES_.452
-___block_descriptor_28_e4_20s24s_e25_v16?0"SBDMember"4I8^c12l
-_OBJC_CLASSLIST_REFERENCES_$_.462
 _OBJC_SELECTOR_REFERENCES_.464
-_OBJC_SELECTOR_REFERENCES_.466
+___block_descriptor_28_e4_20s24s_e25_v16?0"SBDMember"4I8^c12l
+_OBJC_CLASSLIST_REFERENCES_$_.468
 _OBJC_SELECTOR_REFERENCES_.470
 _OBJC_SELECTOR_REFERENCES_.472
 _OBJC_SELECTOR_REFERENCES_.474
 _OBJC_SELECTOR_REFERENCES_.476
 _OBJC_SELECTOR_REFERENCES_.478
-_OBJC_CLASSLIST_REFERENCES_$_.483
-_OBJC_SELECTOR_REFERENCES_.487
-_OBJC_SELECTOR_REFERENCES_.489
+_OBJC_CLASSLIST_REFERENCES_$_.489
 _OBJC_SELECTOR_REFERENCES_.491
 _OBJC_SELECTOR_REFERENCES_.493
 _OBJC_SELECTOR_REFERENCES_.495
@@ -7515,6 +7517,8 @@ _OBJC_SELECTOR_REFERENCES_.515
 _OBJC_SELECTOR_REFERENCES_.517
 _OBJC_SELECTOR_REFERENCES_.549
 _OBJC_SELECTOR_REFERENCES_.553
+_OBJC_SELECTOR_REFERENCES_.575
+_OBJC_SELECTOR_REFERENCES_.587
 __OBJC_METACLASS_RO_$_SBDCommandProcessor
 __OBJC_$_INSTANCE_METHODS_SBDCommandProcessor
 _OBJC_IVAR_$_SBDCommandProcessor._ackTimerBoard
@@ -7540,10 +7544,11 @@ __destroy_helper_block_e8_20s36r
 __copy_helper_block_e8_20s36r
 __45-[SBDCommandProcessor processDeletedMessage:]_block_invoke_2
 __45-[SBDCommandProcessor processDeletedMessage:]_block_invoke
-__52-[SBDCommandProcessor processUpdatedMessage:sender:]_block_invoke.255
+__52-[SBDCommandProcessor processUpdatedMessage:sender:]_block_invoke.263
 __52-[SBDCommandProcessor processUpdatedMessage:sender:]_block_invoke_2
 __52-[SBDCommandProcessor processUpdatedMessage:sender:]_block_invoke
 __copy_helper_block_e4_20s24s28s32r
+__copy_helper_block_e4_20s24s28s32s36r
 __48-[SBDCommandProcessor processNewMessage:sender:]_block_invoke_2
 __48-[SBDCommandProcessor processNewMessage:sender:]_block_invoke
 __59-[SBDCommandProcessor processSentFromCurrentDevice:sender:]_block_invoke
@@ -7684,6 +7689,7 @@ _enteredChannels
 ___block_descriptor_24_e4_20bs_e36_v12?0"SBDOpenChannel"4"SBDError"8l
 _OBJC_CLASSLIST_REFERENCES_$_.133
 _OBJC_CLASSLIST_REFERENCES_$_.213
+_OBJC_CLASSLIST_REFERENCES_$_.214
 ___block_descriptor_20_e40_v16?0"NSString"4"SBDOpenChannel"8^c12l
 ___block_descriptor_20_e16_8?0"SBDUser"4l
 ___block_literal_global.265
@@ -8341,10 +8347,9 @@ ___40-[SBDGroupChannelListQuery loadNextPage]_block_invoke
 -[SBDGroupChannelListQuery queue]
 -[SBDGroupChannelListQuery setQueue:]
 -[SBDGroupChannelListQuery .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.181
-_OBJC_CLASSLIST_REFERENCES_$_.184
 _OBJC_CLASSLIST_REFERENCES_$_.185
 _OBJC_CLASSLIST_REFERENCES_$_.204
+_OBJC_CLASSLIST_REFERENCES_$_.215
 _OBJC_CLASSLIST_REFERENCES_$_.229
 _OBJC_CLASSLIST_REFERENCES_$_.306
 _OBJC_CLASSLIST_REFERENCES_$_.309
@@ -8859,20 +8864,19 @@ _OBJC_CLASSLIST_REFERENCES_$_.191
 _OBJC_CLASSLIST_REFERENCES_$_.194
 _OBJC_CLASSLIST_REFERENCES_$_.205
 _OBJC_CLASSLIST_REFERENCES_$_.243
-_OBJC_CLASSLIST_REFERENCES_$_.275
 _OBJC_CLASSLIST_REFERENCES_$_.286
 _OBJC_SELECTOR_REFERENCES_.296
 _OBJC_SELECTOR_REFERENCES_.318
 _OBJC_SELECTOR_REFERENCES_.320
-_OBJC_SELECTOR_REFERENCES_.342
+_OBJC_SELECTOR_REFERENCES_.326
+_OBJC_SELECTOR_REFERENCES_.350
 _OBJC_CLASSLIST_REFERENCES_$_.357
 _OBJC_SELECTOR_REFERENCES_.359
-_OBJC_SELECTOR_REFERENCES_.361
+_OBJC_SELECTOR_REFERENCES_.365
 _OBJC_CLASSLIST_REFERENCES_$_.368
 _OBJC_CLASSLIST_REFERENCES_$_.373
 _OBJC_CLASSLIST_REFERENCES_$_.381
 _OBJC_SELECTOR_REFERENCES_.416
-_OBJC_SELECTOR_REFERENCES_.422
 _OBJC_SELECTOR_REFERENCES_.424
 _OBJC_SELECTOR_REFERENCES_.426
 _OBJC_CLASSLIST_REFERENCES_$_.427
