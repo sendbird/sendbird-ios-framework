@@ -932,12 +932,14 @@ DEPRECATED_ATTRIBUTE;
 /// @param messageType       Message type to filter messages.
 /// @param customType        Custom type to filter messages. If filtering isn't required, set nil.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
+/// @deprecated 3.0.231 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
 - (void)getNextMessagesByTimestamp:(long long)timestamp
                              limit:(NSInteger)limit
                            reverse:(BOOL)reverse
                        messageType:(SBDMessageTypeFilter)messageType
                         customType:(NSString * _Nullable)customType
-                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the next messages by the timestamp with a limit and ordering.
 /// @param timestamp         The standard timestamp to load messages.
@@ -948,13 +950,15 @@ DEPRECATED_ATTRIBUTE;
 /// @param senderUserIds     Returns messages whose sender user id matches sender user ids.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.106
+/// @deprecated 3.0.231 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
 - (void)getNextMessagesByTimestamp:(long long)timestamp
                              limit:(NSInteger)limit
                            reverse:(BOOL)reverse
                        messageType:(SBDMessageTypeFilter)messageType
                         customType:(NSString * _Nullable)customType
                      senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
-                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the next messages by the timestamp. The messages can have meta array.
 /// @param timestamp The standard timestamp to load messages.
@@ -966,6 +970,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param includeMetaArray If YES, the `messages` has meta array.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.116
+/// @deprecated 3.0.231 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
 - (void)getNextMessagesByTimestamp:(long long)timestamp
                              limit:(NSInteger)limit
                            reverse:(BOOL)reverse
@@ -973,7 +978,8 @@ DEPRECATED_ATTRIBUTE;
                         customType:(NSString * _Nullable)customType
                      senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
                   includeMetaArray:(BOOL)includeMetaArray
-                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Requests to next messages by the timestamp with filters of inclusive timestamp, limit, reverse, message type, custom type, sender user ids, include meta array.
 /// @param timestamp The standard timestamp to load messages.
@@ -1010,6 +1016,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param includeReactions If YES, the `messages` has reactions.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.169
+/// @deprecated 3.0.231 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
 - (void)getNextMessagesByTimestamp:(long long)timestamp
                 inclusiveTimestamp:(BOOL)inclusiveTimestamp
                              limit:(NSInteger)limit
@@ -1019,7 +1026,8 @@ DEPRECATED_ATTRIBUTE;
                      senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
                   includeMetaArray:(BOOL)includeMetaArray
                   includeReactions:(BOOL)includeReactions
-                 completionHandler:(nullable SBDGetMessagesHandler)completionHandler;
+                 completionHandler:(nullable SBDGetMessagesHandler)completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the previous messages by the timestamp with a limit and ordering.
 /// @param timestamp         The standard timestamp to load messages.
@@ -1041,12 +1049,14 @@ DEPRECATED_ATTRIBUTE;
 /// @param messageType       Message type to filter messages.
 /// @param customType        Custom type to filter messages. If filtering isn't required, set nil.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
+/// @deprecated 3.0.231 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
 - (void)getPreviousMessagesByTimestamp:(long long)timestamp
                                  limit:(NSInteger)limit
                                reverse:(BOOL)reverse
                            messageType:(SBDMessageTypeFilter)messageType
                             customType:(NSString * _Nullable)customType
-                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the previous messages by the timestamp with a limit and ordering.
 /// @param timestamp         The standard timestamp to load messages.
@@ -1057,13 +1067,15 @@ DEPRECATED_ATTRIBUTE;
 /// @param senderUserIds     Returns messages whose sender user id matches sender user ids.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.106
+/// @deprecated 3.0.231 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
 - (void)getPreviousMessagesByTimestamp:(long long)timestamp
                                  limit:(NSInteger)limit
                                reverse:(BOOL)reverse
                            messageType:(SBDMessageTypeFilter)messageType
                             customType:(NSString * _Nullable)customType
                          senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
-                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the previous messages by the timestamp. The messages can have meta array.
 /// @param timestamp The standard timestamp to load messages.
@@ -1075,6 +1087,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param includeMetaArray If YES, the `messages` has meta array.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.116
+/// @deprecated 3.0.231 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
 - (void)getPreviousMessagesByTimestamp:(long long)timestamp
                                  limit:(NSInteger)limit
                                reverse:(BOOL)reverse
@@ -1082,7 +1095,8 @@ DEPRECATED_ATTRIBUTE;
                             customType:(NSString * _Nullable)customType
                          senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
                       includeMetaArray:(BOOL)includeMetaArray
-                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Requests to previous messages by the timestamp with filters of inclusive timestamp, limit, reverse, message type, custom type, sender user ids, include meta array.
 /// @param timestamp The standard timestamp to load messages.
@@ -1120,6 +1134,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param includeReactions If YES, the `messages` has reactions.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.169
+/// @deprecated 3.0.231 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
 - (void)getPreviousMessagesByTimestamp:(long long)timestamp
                     inclusiveTimestamp:(BOOL)inclusiveTimestamp
                                  limit:(NSInteger)limit
@@ -1129,7 +1144,8 @@ DEPRECATED_ATTRIBUTE;
                          senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
                       includeMetaArray:(BOOL)includeMetaArray
                       includeReactions:(BOOL)includeReactions
-                     completionHandler:(nullable SBDGetMessagesHandler)completionHandler;
+                     completionHandler:(nullable SBDGetMessagesHandler)completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the previous and next message by the timestamp with a limit and ordering.
 /// @param timestamp         The standard timestamp to load messages.
@@ -1153,13 +1169,15 @@ DEPRECATED_ATTRIBUTE;
 /// @param messageType       Message type to filter messages.
 /// @param customType        Custom type to filter messages. If filtering isn't required, set nil.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
+/// @deprecated 3.0.231 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
 - (void)getPreviousAndNextMessagesByTimestamp:(long long)timestamp
                                     prevLimit:(NSInteger)prevLimit
                                     nextLimit:(NSInteger)nextLimit
                                       reverse:(BOOL)reverse
                                   messageType:(SBDMessageTypeFilter)messageType
                                    customType:(NSString * _Nullable)customType
-                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 
 /// Gets the previous and next message by the timestamp with a limit and ordering.
@@ -1172,6 +1190,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param senderUserIds     Returns messages whose sender user id matches sender user ids.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.106
+/// @deprecated 3.0.231 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
 - (void)getPreviousAndNextMessagesByTimestamp:(long long)timestamp
                                     prevLimit:(NSInteger)prevLimit
                                     nextLimit:(NSInteger)nextLimit
@@ -1179,7 +1198,8 @@ DEPRECATED_ATTRIBUTE;
                                   messageType:(SBDMessageTypeFilter)messageType
                                    customType:(NSString * _Nullable)customType
                                 senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
-                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 
 /// Gets the previous and next messages by the timestamp. The messages can have meta array.
@@ -1216,6 +1236,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param includeReactions If YES, the `messages` has reactions.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.169
+/// @deprecated 3.0.231 (Use `getMessagesByTimestamp:params:completionHandler:` instead.)
 - (void)getPreviousAndNextMessagesByTimestamp:(long long)timestamp
                                     prevLimit:(NSInteger)prevLimit
                                     nextLimit:(NSInteger)nextLimit
@@ -1225,7 +1246,8 @@ DEPRECATED_ATTRIBUTE;
                                 senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
                              includeMetaArray:(BOOL)includeMetaArray
                              includeReactions:(BOOL)includeReactions
-                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 #pragma mark - Get messages by message ID.
 
@@ -1248,12 +1270,14 @@ DEPRECATED_ATTRIBUTE;
 /// @param messageType       Message type to filter messages.
 /// @param customType        Custom type to filter messages. If filtering isn't required, set nil.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
+/// @deprecated 3.0.231 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
 - (void)getNextMessagesByMessageId:(long long)messageId
                              limit:(NSInteger)limit
                            reverse:(BOOL)reverse
                        messageType:(SBDMessageTypeFilter)messageType
                         customType:(NSString * _Nullable)customType
-                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the next messages by the message ID with a limit and ordering.
 /// @param messageId         The standard message ID to load messages.
@@ -1264,13 +1288,15 @@ DEPRECATED_ATTRIBUTE;
 /// @param senderUserIds     Returns messages whose sender user id matches sender user ids.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.106
+/// @deprecated 3.0.231 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
 - (void)getNextMessagesByMessageId:(long long)messageId
                              limit:(NSInteger)limit
                            reverse:(BOOL)reverse
                        messageType:(SBDMessageTypeFilter)messageType
                         customType:(NSString * _Nullable)customType
                      senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
-                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the next messages by the message ID. The messages can have meta array.
 /// @param messageId The standard message ID to load messages.
@@ -1330,6 +1356,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param includeReactions If YES, the `messages` has reactions.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.175
+/// @deprecated 3.0.231 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
 - (void)getNextMessagesByMessageId:(long long)messageId
                 inclusiveTimestamp:(BOOL)inclusiveTimestamp
                              limit:(NSInteger)limit
@@ -1339,7 +1366,8 @@ DEPRECATED_ATTRIBUTE;
                      senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
                   includeMetaArray:(BOOL)includeMetaArray
                   includeReactions:(BOOL)includeReactions
-                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                 completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the previous messages by the message ID with a limit and ordering.
 /// @param messageId         The standard message ID to load messages.
@@ -1360,12 +1388,14 @@ DEPRECATED_ATTRIBUTE;
 /// @param messageType       Message type to filter messages.
 /// @param customType        Custom type to filter messages. If filtering isn't required, set nil.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
+/// @deprecated 3.0.231 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
 - (void)getPreviousMessagesByMessageId:(long long)messageId
                                  limit:(NSInteger)limit
                                reverse:(BOOL)reverse
                            messageType:(SBDMessageTypeFilter)messageType
                             customType:(NSString * _Nullable)customType
-                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the previous messages by the message ID with a limit and ordering.
 /// @param messageId         The standard message ID to load messages.
@@ -1376,13 +1406,15 @@ DEPRECATED_ATTRIBUTE;
 /// @param senderUserIds     Returns messages whose sender user id matches sender user ids.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.106
+/// @deprecated 3.0.231 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
 - (void)getPreviousMessagesByMessageId:(long long)messageId
                                  limit:(NSInteger)limit
                                reverse:(BOOL)reverse
                            messageType:(SBDMessageTypeFilter)messageType
                             customType:(NSString * _Nullable)customType
                          senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
-                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the previous messages by the message ID. The messages can have meta array.
 /// @param messageId The standard message ID to load messages.
@@ -1440,6 +1472,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param includeReactions If YES, the `messages` has reactions.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.175
+/// @deprecated 3.0.231 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
 - (void)getPreviousMessagesByMessageId:(long long)messageId
                     inclusiveTimestamp:(BOOL)inclusiveTimestamp
                                  limit:(NSInteger)limit
@@ -1449,7 +1482,8 @@ DEPRECATED_ATTRIBUTE;
                          senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
                       includeMetaArray:(BOOL)includeMetaArray
                       includeReactions:(BOOL)includeReactions
-                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the previous and next message by the message ID with a limit and ordering.
 /// @param messageId         The standard message ID to load messages.
@@ -1474,13 +1508,15 @@ DEPRECATED_ATTRIBUTE;
 /// @param messageType       Message type to filter messages.
 /// @param customType        Custom type to filter messages. If filtering isn't required, set nil.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
+/// @deprecated 3.0.231 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
 - (void)getPreviousAndNextMessagesByMessageId:(long long)messageId
                                     prevLimit:(NSInteger)prevLimit
                                     nextLimit:(NSInteger)nextLimit
                                       reverse:(BOOL)reverse
                                   messageType:(SBDMessageTypeFilter)messageType
                                    customType:(NSString * _Nullable)customType
-                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the previous and next message by the message ID with a limit and ordering.
 /// @param messageId         The standard message ID to load messages.
@@ -1492,6 +1528,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param senderUserIds     Returns messages whose sender user id matches sender user ids.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.106
+/// @deprecated 3.0.231 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
 - (void)getPreviousAndNextMessagesByMessageId:(long long)messageId
                                     prevLimit:(NSInteger)prevLimit
                                     nextLimit:(NSInteger)nextLimit
@@ -1499,7 +1536,8 @@ DEPRECATED_ATTRIBUTE;
                                   messageType:(SBDMessageTypeFilter)messageType
                                    customType:(NSString * _Nullable)customType
                                 senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
-                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the previous and next message by the message ID with a limit and ordering.
 /// @param messageId The standard message ID to load messages.
@@ -1537,6 +1575,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param includeReactions If YES, the `messages` has reactions.
 /// @param completionHandler The handler block to execute. The `messages` is the array of `SBDBaseMessage` instances.
 /// @since 3.0.169
+/// @deprecated 3.0.231 (Use `getMessagesByMessageId:params:completionHandler:` instead.)
 - (void)getPreviousAndNextMessagesByMessageId:(long long)messageId
                                     prevLimit:(NSInteger)prevLimit
                                     nextLimit:(NSInteger)nextLimit
@@ -1546,7 +1585,8 @@ DEPRECATED_ATTRIBUTE;
                                 senderUserIds:(NSArray<NSString *> * _Nullable)senderUserIds
                              includeMetaArray:(BOOL)includeMetaArray
                              includeReactions:(BOOL)includeReactions
-                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler;
+                            completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable messages, SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Retrieves previous or next messages based on a specified timestamp in the channel.
 /// @param timestamp Specifies the timestamp to be the reference point for messages to retrieve, in Unix milliseconds format. Messages sent before or after the timestamp can be retrieved.
@@ -1603,25 +1643,29 @@ DEPRECATED_ATTRIBUTE;
 /// Gets the changelogs of the messages with token.
 /// @param token The token that is used to get more changelogs.
 /// @param completionHandler The handler block to execute. The `updatedMessages` is the messages that were updated. The `deletedMessageIds` is the list of the deleted message IDs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
+/// @deprecated 3.0.231 (Use `getMessageChangeLogsSinceToken:params:completionHandler:` instead.)
 - (void)getMessageChangeLogsWithToken:(NSString * _Nullable)token
                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages,
                                                          NSArray<NSNumber *> * _Nullable deletedMessageIds,
                                                          BOOL hasMore,
                                                          NSString * _Nullable token,
-                                                         SBDError * _Nullable error))completionHandler;
+                                                         SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Gets the changelogs of the messages with token and meta array
 /// @param token The token that is used to get more changelogs.
 /// @param includeMetaArray If YES, the `updatedMessages` has meta array.
 /// @param completionHandler The handler block to execute. The `updatedMessages` is the messages that were updated. The `deletedMessageIds` is the list of the deleted message IDs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
 /// @since 3.0.116
+/// @deprecated 3.0.231 (Use `getMessageChangeLogsSinceToken:params:completionHandler:` instead.)
 - (void)getMessageChangeLogsWithToken:(NSString * _Nullable)token
                      includeMetaArray:(BOOL)includeMetaArray
                     completionHandler:(nullable void (^)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages,
                                                          NSArray<NSNumber *> * _Nullable deletedMessageIds,
                                                          BOOL hasMore,
                                                          NSString * _Nullable token,
-                                                         SBDError * _Nullable error))completionHandler;
+                                                         SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 
 /// Gets the changelogs of the messages with token, meta array, and reactions.
@@ -1630,6 +1674,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param includeReactions If YES, the `updatedMessages` has reactions.
 /// @param completionHandler The handler block to execute. The `updatedMessages` is the messages that were updated. The `deletedMessageIds` is the list of the deleted message IDs. If there are more changelogs that are not returned yet, the `hasMore` is YES. The `token` can be used to get more changedlogs.
 /// @since 3.0.169
+/// @deprecated 3.0.231 (Use `getMessageChangeLogsSinceToken:params:completionHandler:` instead.)
 - (void)getMessageChangeLogsWithToken:(NSString * _Nullable)token
                      includeMetaArray:(BOOL)includeMetaArray
                      includeReactions:(BOOL)includeReactions
@@ -1637,31 +1682,36 @@ DEPRECATED_ATTRIBUTE;
                                                          NSArray<NSNumber *> * _Nullable deletedMessageIds,
                                                          BOOL hasMore,
                                                          NSString * _Nullable token,
-                                                         SBDError * _Nullable error))completionHandler;
+                                                         SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Requests updated messages and deleted message IDs by the timestamp in this channel.
 /// @param timestamp  The number of milli-seconds(msec). Requests changelogs by that time. This value must not be negative.
 /// @param completionHandler  The handler block to execute. The `updatedMessages` is the messages that were updated. The `deletedMessageIds` is the list of the deleted message IDs. If there are more changelogs, but doesn't returned, then the `hasMore` is YES. The `token` can be used to get next more changedlogs.
 /// @since 3.0.122
+/// @deprecated 3.0.231 (Use `getMessageChangeLogsSinceTimestamp: params:completionHandler:`)
 - (void)getMessageChangeLogsByTimestamp:(long long)timestamp
                       completionHandler:(nonnull void (^)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages,
                                                           NSArray<NSNumber *> * _Nullable deletedMessageIds,
                                                           BOOL hasMore,
                                                           NSString * _Nullable token,
-                                                          SBDError * _Nullable error))completionHandler;
+                                                          SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Requests updated messages contains metaarray and deleted message IDs by the timestamp in this channel.
 /// @param timestamp  The number of milli-seconds(msec). Requests changelogs by that time. This value must not be negative.
 /// @param includeMetaArray If YES, the `updatedMessages` has meta array.
 /// @param completionHandler  The handler block to execute. The `updatedMessages` is the messages that were updated. The `deletedMessageIds` is the list of the deleted message IDs. If there are more changelogs, but doesn't returned, then the `hasMore` is YES. The `token` can be used to get next more changedlogs.
 /// @since 3.0.122
+/// @deprecated 3.0.231 (Use `getMessageChangeLogsSinceTimestamp: params:completionHandler:`)
 - (void)getMessageChangeLogsByTimestamp:(long long)timestamp
                        includeMetaArray:(BOOL)includeMetaArray
                       completionHandler:(nonnull void (^)(NSArray<SBDBaseMessage *> * _Nullable updatedMessages,
                                                           NSArray<NSNumber *> * _Nullable deletedMessageIds,
                                                           BOOL hasMore,
                                                           NSString * _Nullable token,
-                                                          SBDError * _Nullable error))completionHandler;
+                                                          SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 
 /// Requests updated messages contains metaarray and reactions, and deleted message IDs by the timestamp in this channel.
@@ -1670,6 +1720,7 @@ DEPRECATED_ATTRIBUTE;
 /// @param includeReactions If YES, the `updatedMessages` has reactions.
 /// @param completionHandler  The handler block to execute. The `updatedMessages` is the messages that were updated. The `deletedMessageIds` is the list of the deleted message IDs. If there are more changelogs, but doesn't returned, then the `hasMore` is YES. The `token` can be used to get next more changedlogs.
 /// @since 3.0.169
+/// @deprecated 3.0.231 (Use `getMessageChangeLogsSinceTimestamp: params:completionHandler:`)
 - (void)getMessageChangeLogsByTimestamp:(long long)timestamp
                        includeMetaArray:(BOOL)includeMetaArray
                        includeReactions:(BOOL)includeReactions
@@ -1677,7 +1728,8 @@ DEPRECATED_ATTRIBUTE;
                                                           NSArray<NSNumber *> * _Nullable deletedMessageIds,
                                                           BOOL hasMore,
                                                           NSString * _Nullable token,
-                                                          SBDError * _Nullable error))completionHandler;
+                                                          SBDError * _Nullable error))completionHandler
+DEPRECATED_ATTRIBUTE;
 
 /// Retrieves the changelogs since a specified token regarding the updated messages or the unique IDs of deleted messages in the channel.
 /// @param token Specifies the token to be the reference point for the changelogs to retrieve.

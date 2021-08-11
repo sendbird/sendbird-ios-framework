@@ -320,6 +320,10 @@ typedef NS_ENUM(NSUInteger, SBDGroupChannelSuperChannelFilter) {
      * Filter non-super group channel.
      */
     SBDGroupChannelSuperChannelFilterNonSuper  = 2,
+    /**
+     * Filter only broadcast group channel.
+     */
+    SBDGroupChannelSuperChannelFilterBroadcastOnly = 3,
 };
 
 /**

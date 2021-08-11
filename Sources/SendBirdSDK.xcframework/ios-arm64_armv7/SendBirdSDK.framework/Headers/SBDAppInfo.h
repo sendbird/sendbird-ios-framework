@@ -50,6 +50,11 @@
 /// @since 3.0.222
 @property (assign, atomic, readonly) BOOL useNativeWS;
 
+/// @since 3.0.231
+@property (atomic, readonly) NSInteger concurrentCallLimit;
+
+/// @since 3.0.231
+@property (atomic, readonly) float backOffDelay;
 
 /// This function can check if Emoji information needs to be updated to date.
 ///

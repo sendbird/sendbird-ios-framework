@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/SBDAppInfo.h</key>
 		<data>
-		LpklELn/HOhESe9JxIkC/w5UwYQ=
+		j5CGmpbD6qW8oVO0fGzr/z3wquc=
 		</data>
 		<key>Headers/SBDAppleCriticalAlertOptions.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/SBDBaseChannel.h</key>
 		<data>
-		Fa+TVtQaRnDznp3nFXebfGcFPbc=
+		eQgRbA1g8bjrWaYtFoHFVwQpmBA=
 		</data>
 		<key>Headers/SBDBaseCollection.h</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Headers/SBDMain.h</key>
 		<data>
-		ZxqPZooTUev1J8I7BXDBKzGyphQ=
+		VLJQ3HJ8a4GU+G9j0izvpiwxG/E=
 		</data>
 		<key>Headers/SBDMappable.h</key>
 		<data>
@@ -258,7 +258,7 @@
 		</data>
 		<key>Headers/SBDTypes.h</key>
 		<data>
-		ZkA1Xs82jqi2LgPx9Ag/ApRRMUI=
+		btCg8CsSg8kWpFPDAf6b1MRraw4=
 		</data>
 		<key>Headers/SBDUnreadItemCount.h</key>
 		<data>
@@ -286,7 +286,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BmGCytyeuW3YI0RSzhkOQET5oFo=
+		OezgzW/dxlmR5/8BZusplbgHxFc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -310,11 +310,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LpklELn/HOhESe9JxIkC/w5UwYQ=
+			j5CGmpbD6qW8oVO0fGzr/z3wquc=
 			</data>
 			<key>hash2</key>
 			<data>
-			rehFSj3uUnbfXktk8FRAzGr68aUdKPbbuhlD1wtQAdU=
+			d2IolAmXnFUSD75myxAJEss51bD+Gwu27gBYns/n+BQ=
 			</data>
 		</dict>
 		<key>Headers/SBDAppleCriticalAlertOptions.h</key>
@@ -354,11 +354,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Fa+TVtQaRnDznp3nFXebfGcFPbc=
+			eQgRbA1g8bjrWaYtFoHFVwQpmBA=
 			</data>
 			<key>hash2</key>
 			<data>
-			aXtwVpP3rqq0zWWX/ud8WqabL5j0lfxMZGyJKI5ia98=
+			kUng8nyXekA/QQtcTPX7YE03mKF71Rb8Z1FbONUGHbg=
 			</data>
 		</dict>
 		<key>Headers/SBDBaseCollection.h</key>
@@ -607,11 +607,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZxqPZooTUev1J8I7BXDBKzGyphQ=
+			VLJQ3HJ8a4GU+G9j0izvpiwxG/E=
 			</data>
 			<key>hash2</key>
 			<data>
-			f33PtYz/Dsip2z7kr6ZsnJfXh6CoutCkFSO35RtouYY=
+			Xcw6lyH1MYy139CvKclHpKjnuokRmF8T3bCQZMuaWq8=
 			</data>
 		</dict>
 		<key>Headers/SBDMappable.h</key>
@@ -992,11 +992,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZkA1Xs82jqi2LgPx9Ag/ApRRMUI=
+			btCg8CsSg8kWpFPDAf6b1MRraw4=
 			</data>
 			<key>hash2</key>
 			<data>
-			bTcoRm14FFD+n1TtBR59Q99Xc7LksVl/5xDNIVDysC0=
+			26333+Pte0wxEDfkUIC+qLArio+O5XACEdDmAzu8EPY=
 			</data>
 		</dict>
 		<key>Headers/SBDUnreadItemCount.h</key>

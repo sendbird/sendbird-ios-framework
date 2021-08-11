@@ -1,5 +1,35 @@
 # Deprecated classes, methods, properties
 
+## v3.0.231
+| Old class | Old method | New class | New method |
+| --------- | ---------- | --------- | ---------- |
+|`SBDBaseChannel`|`getNextMessagesByTimestamp:limit:reverse:messageType:customType:completionHandler:`|`SBDBaseChannel`|`getMessagesByTimestamp:params:completionHandler:`|
+|`SBDBaseChannel`|`getNextMessagesByTimestamp:limit:reverse:messageType:customType:senderUserIds:completionHandler:`|`SBDBaseChannel`|`getMessagesByTimestamp:params:completionHandler:`|
+|`SBDBaseChannel`|`getNextMessagesByTimestamp:limit:reverse:messageType:customType:senderUserIds:includeMetaArray:completionHandler:`|`SBDBaseChannel`|`getMessagesByTimestamp:params:completionHandler:`|
+|`SBDBaseChannel`|`getNextMessagesByTimestamp:inclusiveTimestamp:limit:reverse:messageType:customType:senderUserIds:includeMetaArray:includeReactions:completionHandler:`|`SBDBaseChannel`|`getMessagesByTimestamp:params:completionHandler:`|
+|`SBDBaseChannel`|`getPreviousMessagesByTimestamp:limit:reverse:messageType:customType:completionHandler:`|`SBDBaseChannel`|`getMessagesByTimestamp:params:completionHandler:`|
+|`SBDBaseChannel`|`getPreviousMessagesByTimestamp:limit:reverse:messageType:customType:senderUserIds:completionHandler:`|`SBDBaseChannel`|`getMessagesByTimestamp:params:completionHandler:`|
+|`SBDBaseChannel`|`getPreviousMessagesByTimestamp:limit:reverse:messageType:customType:senderUserIds:includeMetaArray:completionHandler:`|`SBDBaseChannel`|`getMessagesByTimestamp:params:completionHandler:`|
+|`SBDBaseChannel`|`getPreviousMessagesByTimestamp:inclusiveTimestamp:limit:reverse:messageType:customType:senderUserIds:includeMetaArray:includeReactions:completionHandler:`|`SBDBaseChannel`|`getMessagesByTimestamp:params:completionHandler:`|
+|`SBDBaseChannel`|`getPreviousAndNextMessagesByTimestamp:prevLimit:nextLimit:reverse:messageType:customType:completionHandler:`|`SBDBaseChannel`|`getMessagesByTimestamp:params:completionHandler:`|
+|`SBDBaseChannel`|`getPreviousAndNextMessagesByTimestamp:prevLimit:nextLimit:reverse:messageType:customType:senderUserIds:completionHandler:`|`SBDBaseChannel`|`getMessagesByTimestamp:params:completionHandler:`|
+|`SBDBaseChannel`|`getPreviousAndNextMessagesByTimestamp:prevLimit:nextLimit:reverse:messageType:customType:senderUserIds:includeMetaArray:includeReactions:completionHandler:`|`SBDBaseChannel`|`getMessagesByTimestamp:params:completionHandler:`|
+|`SBDBaseChannel`|`getNextMessagesByMessageId:limit:reverse:messageType:customType:completionHandler:`|`SBDBaseChannel`|`getMessagesByMessageId:params:completionHandler:`|
+|`SBDBaseChannel`|`getNextMessagesByMessageId:limit:reverse:messageType:customType:senderUserIds:completionHandler:`|`SBDBaseChannel`|`getMessagesByMessageId:params:completionHandler:`|
+|`SBDBaseChannel`|`getNextMessagesByMessageId:inclusiveTimestamp:limit:reverse:messageType:customType:senderUserIds:includeMetaArray:includeReactions:completionHandler:`|`SBDBaseChannel`|`getMessagesByMessageId:params:completionHandler:`|
+|`SBDBaseChannel`|`getPreviousMessagesByMessageId:limit:reverse:messageType:customType:completionHandler:`|`SBDBaseChannel`|`getMessagesByMessageId:params:completionHandler:`|
+|`SBDBaseChannel`|`getPreviousMessagesByMessageId:limit:reverse:messageType:customType:senderUserIds:completionHandler:`|`SBDBaseChannel`|`getMessagesByMessageId:params:completionHandler:`|
+|`SBDBaseChannel`|`getPreviousMessagesByMessageId:inclusiveTimestamp:limit:reverse:messageType:customType:senderUserIds:includeMetaArray:includeReactions:completionHandler:`|`SBDBaseChannel`|`getMessagesByMessageId:params:completionHandler:`|
+|`SBDBaseChannel`|`getPreviousAndNextMessagesByMessageId:prevLimit:nextLimit:reverse:messageType:customType:completionHandler:`|`SBDBaseChannel`|`getMessagesByMessageId:params:completionHandler:`|
+|`SBDBaseChannel`|`getPreviousAndNextMessagesByMessageId:prevLimit:nextLimit:reverse:messageType:customType:senderUserIds:completionHandler:`|`SBDBaseChannel`|`getMessagesByMessageId:params:completionHandler:`|
+|`SBDBaseChannel`|`getPreviousAndNextMessagesByMessageId:prevLimit:nextLimit:reverse:messageType:customType:senderUserIds:includeMetaArray:includeReactions:completionHandler:`|`SBDBaseChannel`|`getMessagesByMessageId:params:completionHandler:`|
+|`SBDBaseChannel`|`getMessageChangeLogsWithToken:completionHandler:`|`SBDBaseChannel`|`getMessageChangeLogsSinceToken:params:completionHandler:`|
+|`SBDBaseChannel`|`getMessageChangeLogsWithToken:includeMetaArray:completionHandler:`|`SBDBaseChannel`|`getMessageChangeLogsSinceToken:params:completionHandler:`|
+|`SBDBaseChannel`|`getMessageChangeLogsWithToken:includeMetaArray:includeReactions:completionHandler:`|`SBDBaseChannel`|`getMessageChangeLogsSinceToken:params:completionHandler:`|
+|`SBDBaseChannel`|`getMessageChangeLogsByTimestamp:completionHandler:`|`SBDBaseChannel`|`getMessageChangeLogsSinceTimestamp:params:completionHandler:`|
+|`SBDBaseChannel`|`getMessageChangeLogsByTimestamp:includeMetaArray:completionHandler:`|`SBDBaseChannel`|`getMessageChangeLogsSinceTimestamp: params:completionHandler:`|
+|`SBDBaseChannel`|`getMessageChangeLogsByTimestamp:includeMetaArray:includeReactions:completionHandler:`|`SBDBaseChannel`|`getMessageChangeLogsSinceTimestamp: params:completionHandler:`|
+
 ## v3.0.207
 
 ### Methods

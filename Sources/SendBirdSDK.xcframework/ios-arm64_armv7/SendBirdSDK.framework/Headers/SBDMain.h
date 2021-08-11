@@ -54,7 +54,10 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 
 @end
 
-/// The `SBDMain` is the core class for Sendbird. This class is singletone instance which is initialized by Application ID.  This class provides the methods for overall operations. The methods include `SBDChannelDelegate` registration for receiving events that are related to channels, `SBDConnectionDelegate` for managing the connection status, updating the current user's information, registration for APNS push notification and blocking other users.
+/// The `SBDMain` is the core class for Sendbird. This class is singletone instance which is initialized by Application ID.
+/// This class provides the methods for overall operations. The methods include `SBDChannelDelegate` registration for receiving events
+/// that are related to channels, `SBDConnectionDelegate` for managing the connection status, updating the current user's information,
+/// registration for APNS push notification and blocking other users.
 @interface SBDMain : NSObject
 
 /// Shows the current log level.

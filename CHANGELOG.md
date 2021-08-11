@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.0.231 (Aug 11, 2021)
+* Deprecated methods. See [DEPRECATED.md](https://github.com/sendbird/sendbird-ios-framework/blob/master/DEPRECATED.md) for more details.
+  *  `getMessagesByTimestamp:params:completionHandler:`
+  * `getMessagesById:params:completionHandler:`
+  * all `getMessageChangeLogsWithToken ...`
+  * all `getMessageChangeLogsByTimestamp ...`
+
 ### v3.0.230 (Aug 6, 2021)
 * Optimized Supergroup protocol handling to improve performance for specific use cases.
 
