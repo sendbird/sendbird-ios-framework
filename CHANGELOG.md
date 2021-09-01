@@ -1,5 +1,9 @@
 # Change Log
 
+
+### v3.0.233 (Sep 1, 2021)
+* Fixed typo.
+
 ### v3.0.232 (Sep 1, 2021)
 * Added `metaDataKeyFilter`, `metaDataValuesFilter`, `metaDataValueStartsWithFilter`, `setMetaDataFilterWithKey:values:` and `setMetaDataFilterWithKey:valueStartsWith:` in `SBDGroupChannelListQuery` and `SBDPublicGroupChannelListQuery` class.
 * Fixed a bug on `belongsTo:` in `SBDMessageListParams` class.

@@ -96,7 +96,7 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
 
     SBDErrorInternalServerError = 500901,
     SBDErrorRateLimitExceeded = 500910,
-    SBDErrerServiceUnavailable = 503000,
+    SBDErrorServiceUnavailable = 503000,
     
     // SDK Internal Errors
     SBDErrorUnknownError = 800000,
