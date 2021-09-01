@@ -77,6 +77,7 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     SBDErrorUnusableCharacterIncluded = 400151,
     SBDErrorNotFoundInDatabase = 400201,
     SBDErrorDuplicatedData = 400202,
+    SBDErrorReachedMaxCount = 400203,
     
     SBDErrorUserDeactivated = 400300,
     SBDErrorUserNotExist = 400301,
@@ -91,8 +92,11 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     SBDErrorParameterMissing = 400402,
     SBDErrorInvalidJsonBody = 400403,
     
+    SBDErrorConflict = 409000,
+
     SBDErrorInternalServerError = 500901,
     SBDErrorRateLimitExceeded = 500910,
+    SBDErrerServiceUnavailable = 503000,
     
     // SDK Internal Errors
     SBDErrorUnknownError = 800000,
@@ -151,7 +155,8 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     SBDErrorSocketTooManyMessages = 900200,
     SBDErrorSocketMessageNotFound = 900300,
     SBDErrorSocketTooManyParticipants = 900400,
-    SBDErrorSocketChannelNotFound = 900500
+    SBDErrorSocketChannelNotFound = 900500,
+    SBDErrorSocketPollNotFound = 901200,
 };
 
 /**
@@ -715,6 +720,21 @@ typedef NS_OPTIONS(NSInteger, SBDLogLevel) {
     SBDLogLevelError        = (1 << 0),
     SBDLogLevelWarning      = (1 << 1),
     SBDLogLevelInfo         = (1 << 2),
+};
+
+/// Poll action type
+/// @since 3.0.232
+typedef NS_ENUM(NSUInteger, SBDPollVoteAction) {
+    SBDPollVoteActionCast,
+    SBDPollVoteActionCancel
+};
+
+/// Poll status
+/// @since 3.0.232
+typedef NS_ENUM(NSUInteger, SBDPollStatus) {
+    SBDPollStatusOpen,
+    SBDPollStatusClosed,
+    SBDPollStatusRemoved
 };
 
 /// The policy for the message collection initialization.

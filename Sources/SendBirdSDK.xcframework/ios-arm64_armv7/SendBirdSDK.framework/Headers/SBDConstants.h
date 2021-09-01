@@ -18,6 +18,7 @@
 @class SBDUser;
 @class SBDError;
 @class SBDReactionEvent;
+@class SBDPoll, SBDPollOption;
 
 typedef void (^SBDOpenChannelHandler)(SBDOpenChannel * _Nullable channel, SBDError * _Nullable error);
 typedef void (^SBDUserMessageHandler)(SBDUserMessage * _Nullable message, SBDError * _Nullable error);
@@ -51,6 +52,15 @@ typedef void(^SBDGroupChannelPushTriggerOptionHandler)(SBDGroupChannelPushTrigge
 typedef void(^SBDErrorHandler)(SBDError * _Nullable error);
 typedef void(^SBDVoidHandler)(void);
 typedef void(^SBDUserHandler)(SBDUser * _Nullable user, SBDError * _Nullable error);
+typedef void(^SBDPollHandler)(SBDPoll * _Nullable poll, SBDError * _Nullable error);
+typedef void(^SBDPollListHandler)(NSArray <SBDPoll *> * _Nullable polls,
+                                  NSString * _Nullable token,
+                                  SBDError * _Nullable error);
+typedef void(^SBDPollOptionHandler)(SBDPollOption * _Nullable poll, SBDError * _Nullable error);
+typedef void(^SBDVoterListHandler)(NSArray <SBDUser *> * _Nullable users,
+                                  NSInteger voteCount,
+                                  NSString * _Nullable token,
+                                  SBDError * _Nullable error);
 
 /// Posted immediately after a change in the channel collection object.
 /// @since 3.0.227

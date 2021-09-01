@@ -80,12 +80,14 @@ typedef NS_OPTIONS(NSUInteger, SBDMessageQueryIncludeOption) {
     SBDMessageQueryIncludeOptionReaction                = (1 << 2),
     SBDMessageQueryIncludeOptionReplies                 = (1 << 3),
     SBDMessageQueryIncludeOptionParentMessageText       = (1 << 4),
-    SBDMessageQueryIncludeOptionThreadInfo              = (1 << 5)
+    SBDMessageQueryIncludeOptionThreadInfo              = (1 << 5),
+    SBDMessageQueryIncludeOptionPoll                    = (1 << 6)
 };
 
 typedef NS_ENUM(NSInteger, SBDApiRequestType) {
     SBDApiRequestTypePassive = 0,
     SBDApiRequestTypeActive = 1,
 };
+
 
 #endif /* SBDInternalTypes_h */

@@ -25,6 +25,7 @@
 #import "SBDUserListQuery.h"
 
 @class SBDDatabase;
+@class SBDPollListQuery, SBDPollVoterListQuery;
 
 typedef void(^SBDBackgroundSessionBlock)(void);
 

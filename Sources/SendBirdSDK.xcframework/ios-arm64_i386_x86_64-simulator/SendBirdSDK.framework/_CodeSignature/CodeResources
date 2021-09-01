@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/SBDBaseChannel.h</key>
 		<data>
-		eQgRbA1g8bjrWaYtFoHFVwQpmBA=
+		WVPNRg9ZAxekQum30G/Fv6JjtME=
 		</data>
 		<key>Headers/SBDBaseCollection.h</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Headers/SBDBaseMessage.h</key>
 		<data>
-		cT+Zuv0RoP2Nnhc2IjC5i0KWV/g=
+		ipiaPZ1E9aVDjRYBUyW62jPFMog=
 		</data>
 		<key>Headers/SBDBaseMessageParams.h</key>
 		<data>
-		cfoNGIzZHsb/C+M7GkGTBfiv4sk=
+		DN3/wL2G+s3xIboS4Ked2NvuXi0=
 		</data>
 		<key>Headers/SBDBlockedUserListQuery.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/SBDConstants.h</key>
 		<data>
-		x7Xpu9YyMENnumR9P4UNB0oivJI=
+		Ak1GRSPmMrMmpT//pqQz9W+/BBw=
 		</data>
 		<key>Headers/SBDEmoji.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Headers/SBDGroupChannelListQuery.h</key>
 		<data>
-		p073+ClRkzOryZNph/kWXsZBX78=
+		gMg47Kfa6DZFiq+deimkHj/oni0=
 		</data>
 		<key>Headers/SBDGroupChannelMemberListQuery.h</key>
 		<data>
@@ -114,11 +114,11 @@
 		</data>
 		<key>Headers/SBDInternalTypes.h</key>
 		<data>
-		AMxJPf0nAaLYDamTAG8lfErKQTw=
+		ghmqc4+2kf1NjN7hyX/hVVq/p1U=
 		</data>
 		<key>Headers/SBDMain.h</key>
 		<data>
-		VLJQ3HJ8a4GU+G9j0izvpiwxG/E=
+		eBdif2G4SjzYIA1tOTEShvLpmH8=
 		</data>
 		<key>Headers/SBDMappable.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Headers/SBDMessageChangeLogsParams.h</key>
 		<data>
-		7VRajOMb1yiBHN4vMm9Cc4kCzoU=
+		jKDLnbGog+WnTFGYVoBsQYsAOro=
 		</data>
 		<key>Headers/SBDMessageCollection.h</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>Headers/SBDMessageListParams.h</key>
 		<data>
-		PcE1YzCg/jUM+fG6ueSjXHqxaaM=
+		CTkclqTGjH/wyqWfQmRUMIoQIGo=
 		</data>
 		<key>Headers/SBDMessageListQuery.h</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Headers/SBDMessageRetrievalParams.h</key>
 		<data>
-		eO/F12CRhWc8YJf01ccl9dlu+4c=
+		zPH1Z6Snr6IcQZsClPJ/viXJb5E=
 		</data>
 		<key>Headers/SBDMessageSearchQuery.h</key>
 		<data>
@@ -198,7 +198,7 @@
 		</data>
 		<key>Headers/SBDOptions.h</key>
 		<data>
-		QE2EjRB7qP5ubO2q1hT12e5o5Ts=
+		g0pKs66TzZaXUb5taZIU0lMnwp8=
 		</data>
 		<key>Headers/SBDParticipantListQuery.h</key>
 		<data>
@@ -206,15 +206,59 @@
 		</data>
 		<key>Headers/SBDPlugin.h</key>
 		<data>
-		zi0MIxb0ocJjuACQivZjUhmvCXE=
+		IFF4SrQwCDeIuquJeTNg5u8llfU=
+		</data>
+		<key>Headers/SBDPoll.h</key>
+		<data>
+		h9fgBjbYqHn4hV/4LWO38DtwaS8=
+		</data>
+		<key>Headers/SBDPollData.h</key>
+		<data>
+		7xCAnB7z/qioFD0fqQCGSBf252A=
+		</data>
+		<key>Headers/SBDPollDetails.h</key>
+		<data>
+		HAcfdikY6ACAe0cp5gqUMKzi5uU=
+		</data>
+		<key>Headers/SBDPollListQuery.h</key>
+		<data>
+		9ZIgnrp1AkycbTJr5aWsshxXXPU=
+		</data>
+		<key>Headers/SBDPollOption.h</key>
+		<data>
+		GRwH0cax06cJ7AwxuTQuDHs5QUI=
+		</data>
+		<key>Headers/SBDPollOptionVoterResult.h</key>
+		<data>
+		DGhM1mN6aCrI6uibJV9eZW1xcYs=
+		</data>
+		<key>Headers/SBDPollParams.h</key>
+		<data>
+		VTIxv7WzGjBGrKX9w0+Bwqp2dww=
+		</data>
+		<key>Headers/SBDPollRetrievalParams.h</key>
+		<data>
+		hLz+OQoGiC6wXRhVQueykt3DSfk=
+		</data>
+		<key>Headers/SBDPollUpdateEvent.h</key>
+		<data>
+		rPsIbHtNcHkwgXbv8NwcuAtIfiw=
+		</data>
+		<key>Headers/SBDPollVoteEvent.h</key>
+		<data>
+		ye+AF3knXADuQS6IEhGxh5dXm/o=
+		</data>
+		<key>Headers/SBDPollVoterListQuery.h</key>
+		<data>
+		cKdQ4P15Xzpn0e2mdgfTWllL3pc=
 		</data>
 		<key>Headers/SBDPreviousMessageListQuery.h</key>
 		<data>
-		7tLu9GvxF2anT+1J+HKSRnKq/JU=
+		v8528cq4WpY8uD71ck9se1BpIqQ=
 		</data>
 		<key>Headers/SBDPublicGroupChannelListQuery.h</key>
 		<data>
-		O3vBGFNE2KepjtQcnGF8k27MWm4=
+		2g9Fd8jiUA2pOyNu9R8/i+53Xp8=
 		</data>
 		<key>Headers/SBDReaction.h</key>
 		<data>
@@ -258,11 +302,15 @@
 		</data>
 		<key>Headers/SBDTypes.h</key>
 		<data>
-		btCg8CsSg8kWpFPDAf6b1MRraw4=
+		lchA1/vht5ycq0ndVcaHj+jcHZU=
 		</data>
 		<key>Headers/SBDUnreadItemCount.h</key>
 		<data>
 		AK+x1MzvYa2tBBvQivXCU4KtcTo=
+		</data>
+		<key>Headers/SBDUpdatedVoteCount.h</key>
+		<data>
+		MiVpkr7HSo7cAUHYnXjYzhmxVPk=
 		</data>
 		<key>Headers/SBDUser.h</key>
 		<data>
@@ -274,19 +322,19 @@
 		</data>
 		<key>Headers/SBDUserMessage.h</key>
 		<data>
-		LVkuyAw4RK3ut6lrBAzs/dTiVpU=
+		S/VaBLAP+bLZEl3xvr1cvcKUZyI=
 		</data>
 		<key>Headers/SBDUserMessageParams.h</key>
 		<data>
-		4lmv5r+ENxJ+3jSftE32FKyjTEY=
+		MZgCKQALglEnAR5Sa0R1x0TgsEA=
 		</data>
 		<key>Headers/SendBirdSDK.h</key>
 		<data>
-		175Eq82e6XRxc+1rMEXtFSBMVNs=
+		pxcn64WhPS9mUaDrrF1KK6uuDec=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OezgzW/dxlmR5/8BZusplbgHxFc=
+		sFzAUwwuOKC7nSFD2vGQhY+Teag=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -354,11 +402,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eQgRbA1g8bjrWaYtFoHFVwQpmBA=
+			WVPNRg9ZAxekQum30G/Fv6JjtME=
 			</data>
 			<key>hash2</key>
 			<data>
-			kUng8nyXekA/QQtcTPX7YE03mKF71Rb8Z1FbONUGHbg=
+			AGwmeOtz+c2UFAHyozmZYxfMvrnDzRLPD5DcMfyI4TM=
 			</data>
 		</dict>
 		<key>Headers/SBDBaseCollection.h</key>
@@ -376,22 +424,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cT+Zuv0RoP2Nnhc2IjC5i0KWV/g=
+			ipiaPZ1E9aVDjRYBUyW62jPFMog=
 			</data>
 			<key>hash2</key>
 			<data>
-			+uj2nSB+2Hvx5HVRK8XgrxbNFNh+ZydWhu/eB6DeFlA=
+			Y7CYiawVbZMwLwOMxzo0/gT1zrFNeIa3utUGHo+eibU=
 			</data>
 		</dict>
 		<key>Headers/SBDBaseMessageParams.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cfoNGIzZHsb/C+M7GkGTBfiv4sk=
+			DN3/wL2G+s3xIboS4Ked2NvuXi0=
 			</data>
 			<key>hash2</key>
 			<data>
-			sFFIsZhDRsc6PKCHHI72UYb2TGDchdDBjGLoCCmAlT8=
+			0u1UVpflRdMt/ZHTvfqR9QrrB1OF5t441wBXHuGppXo=
 			</data>
 		</dict>
 		<key>Headers/SBDBlockedUserListQuery.h</key>
@@ -464,11 +512,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x7Xpu9YyMENnumR9P4UNB0oivJI=
+			Ak1GRSPmMrMmpT//pqQz9W+/BBw=
 			</data>
 			<key>hash2</key>
 			<data>
-			7l9duxj4YVBitdNwwLwr8noa2lvfQtHXqNc881OOUNc=
+			ARci+spka/U/gwCnuapDgsZK7k4wn+XOAoAfg5QFkuY=
 			</data>
 		</dict>
 		<key>Headers/SBDEmoji.h</key>
@@ -552,11 +600,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p073+ClRkzOryZNph/kWXsZBX78=
+			gMg47Kfa6DZFiq+deimkHj/oni0=
 			</data>
 			<key>hash2</key>
 			<data>
-			E682LErVg/Aam1AwnnocRzgUEYjh7y/tUcq9psaZPi8=
+			PKKUAUrkKKsYh7ievV9IZ6XVly2EoQSJbMnPGLp4tw0=
 			</data>
 		</dict>
 		<key>Headers/SBDGroupChannelMemberListQuery.h</key>
@@ -596,22 +644,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AMxJPf0nAaLYDamTAG8lfErKQTw=
+			ghmqc4+2kf1NjN7hyX/hVVq/p1U=
 			</data>
 			<key>hash2</key>
 			<data>
-			hXoIDV30eZBLFro/lhIqbK2zxpGZFx6dUbBCY0+zqgs=
+			EZU46oCc3msAsUZtGjrf0pEdMEPzWMZywoVHOufVMio=
 			</data>
 		</dict>
 		<key>Headers/SBDMain.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VLJQ3HJ8a4GU+G9j0izvpiwxG/E=
+			eBdif2G4SjzYIA1tOTEShvLpmH8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xcw6lyH1MYy139CvKclHpKjnuokRmF8T3bCQZMuaWq8=
+			S7tvU5yl7UQDJJ/oAUASmf8V1bgfJOkXeB+Hqu7WwWM=
 			</data>
 		</dict>
 		<key>Headers/SBDMappable.h</key>
@@ -640,11 +688,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7VRajOMb1yiBHN4vMm9Cc4kCzoU=
+			jKDLnbGog+WnTFGYVoBsQYsAOro=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uia/Rod819u92SyclW9b8fqB1z+kJ1NQzym2aVbUufM=
+			mb2os80msSUzE474iZt+VWbu/P00/ywsxC1BH34F+/I=
 			</data>
 		</dict>
 		<key>Headers/SBDMessageCollection.h</key>
@@ -684,11 +732,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PcE1YzCg/jUM+fG6ueSjXHqxaaM=
+			CTkclqTGjH/wyqWfQmRUMIoQIGo=
 			</data>
 			<key>hash2</key>
 			<data>
-			XbNEPyGeci8GWphe9RwtyH8LosM9FEkT/pJ0Au8cOEU=
+			bAZDAWLacy4ECoy/81uZzVzr1u/GuuzDGOyclmwT1y8=
 			</data>
 		</dict>
 		<key>Headers/SBDMessageListQuery.h</key>
@@ -717,11 +765,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eO/F12CRhWc8YJf01ccl9dlu+4c=
+			zPH1Z6Snr6IcQZsClPJ/viXJb5E=
 			</data>
 			<key>hash2</key>
 			<data>
-			FwoKol0lZQqajHs98H0qEqOzaTVlIXRGPneT4/wWPEE=
+			LN6V7eAuiYZKSm9w5omoYjfT9cylspTDDSUaOqEf4Y8=
 			</data>
 		</dict>
 		<key>Headers/SBDMessageSearchQuery.h</key>
@@ -827,11 +875,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QE2EjRB7qP5ubO2q1hT12e5o5Ts=
+			g0pKs66TzZaXUb5taZIU0lMnwp8=
 			</data>
 			<key>hash2</key>
 			<data>
-			B4PuSmKuukhmGLqIJXSkt8giZEkjZsvEN7/+ZCty9rU=
+			4Rw23Bn2jD5k9zoxaT0vFSGECvxmijF5gxo5Nxbings=
 			</data>
 		</dict>
 		<key>Headers/SBDParticipantListQuery.h</key>
@@ -849,33 +897,154 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zi0MIxb0ocJjuACQivZjUhmvCXE=
+			IFF4SrQwCDeIuquJeTNg5u8llfU=
 			</data>
 			<key>hash2</key>
 			<data>
-			rqhxlk6sxskejCXfTcWq0q29uPoqoxjb8RYFLv/84Hk=
+			ZWrrFyY/GUuvwWLgT3x7yK3kd3GB7ste26EtZExF2xQ=
+			</data>
+		</dict>
+		<key>Headers/SBDPoll.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			h9fgBjbYqHn4hV/4LWO38DtwaS8=
+			</data>
+			<key>hash2</key>
+			<data>
+			gkyKR90kjVFzPiAvM51zGMPnMOrbcpcVlHphNMzyg4U=
+			</data>
+		</dict>
+		<key>Headers/SBDPollData.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7xCAnB7z/qioFD0fqQCGSBf252A=
+			</data>
+			<key>hash2</key>
+			<data>
+			C7q0l69HBLxPcHyR8oLYDQgbYBIVd7TeWvv0qhWAp1o=
+			</data>
+		</dict>
+		<key>Headers/SBDPollDetails.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HAcfdikY6ACAe0cp5gqUMKzi5uU=
+			</data>
+			<key>hash2</key>
+			<data>
+			sOEKiLfJVcgaWaFFVZTIBy54lHd+8fQo1P8jsu6uPhY=
+			</data>
+		</dict>
+		<key>Headers/SBDPollListQuery.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9ZIgnrp1AkycbTJr5aWsshxXXPU=
+			</data>
+			<key>hash2</key>
+			<data>
+			EXYZHo3XmnnVgn9YbubnSCuM17syJGbnZF2DHhMZUPs=
+			</data>
+		</dict>
+		<key>Headers/SBDPollOption.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GRwH0cax06cJ7AwxuTQuDHs5QUI=
+			</data>
+			<key>hash2</key>
+			<data>
+			PuBkCbnjH2BCFXcK/gpj+9cxYBktoz2bTKxqok96hH0=
+			</data>
+		</dict>
+		<key>Headers/SBDPollOptionVoterResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DGhM1mN6aCrI6uibJV9eZW1xcYs=
+			</data>
+			<key>hash2</key>
+			<data>
+			JpGe5274LSLaA/C6cwXPT2qz5i5RpO/UEYOwYUwPj+4=
+			</data>
+		</dict>
+		<key>Headers/SBDPollParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VTIxv7WzGjBGrKX9w0+Bwqp2dww=
+			</data>
+			<key>hash2</key>
+			<data>
+			zxKxayOIpFD93hWzTUye2NiJwwEDG3S4m2bUfis3+qM=
+			</data>
+		</dict>
+		<key>Headers/SBDPollRetrievalParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hLz+OQoGiC6wXRhVQueykt3DSfk=
+			</data>
+			<key>hash2</key>
+			<data>
+			rpQ/l91ZXtml98S7qSXdoH6DpMv5maHuMOHz9JMZWDw=
+			</data>
+		</dict>
+		<key>Headers/SBDPollUpdateEvent.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rPsIbHtNcHkwgXbv8NwcuAtIfiw=
+			</data>
+			<key>hash2</key>
+			<data>
+			3Rt4+tqw5xp9UOEI+hNAN5pbOozarcF+HhajRzYVM5E=
+			</data>
+		</dict>
+		<key>Headers/SBDPollVoteEvent.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ye+AF3knXADuQS6IEhGxh5dXm/o=
+			</data>
+			<key>hash2</key>
+			<data>
+			hl3Rx5y/J60ss6qUryUdrYq/emjdfj4HMV9qqY7I3uc=
+			</data>
+		</dict>
+		<key>Headers/SBDPollVoterListQuery.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cKdQ4P15Xzpn0e2mdgfTWllL3pc=
+			</data>
+			<key>hash2</key>
+			<data>
+			vytIEs9xx/IZuQtBltJuDgTSArFg19ndLzW6EQazWN8=
 			</data>
 		</dict>
 		<key>Headers/SBDPreviousMessageListQuery.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7tLu9GvxF2anT+1J+HKSRnKq/JU=
+			v8528cq4WpY8uD71ck9se1BpIqQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			0GgUCPMu6rS7enc49+Zrw3GZ4LQ0g41BbTg6GqDCKhI=
+			Gffs1zoo6jP3+FRw7qxc7J8yby0ruQVL+42lS96PouI=
 			</data>
 		</dict>
 		<key>Headers/SBDPublicGroupChannelListQuery.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O3vBGFNE2KepjtQcnGF8k27MWm4=
+			2g9Fd8jiUA2pOyNu9R8/i+53Xp8=
 			</data>
 			<key>hash2</key>
 			<data>
-			qojy1ADcmkQKWcC73/eNhVAS8OSpKHOlFGMRJgTyQco=
+			uunr0pqABKa1ui8C2XUfGxLUhp5at/5X/vQu5G9Leik=
 			</data>
 		</dict>
 		<key>Headers/SBDReaction.h</key>
@@ -992,11 +1161,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			btCg8CsSg8kWpFPDAf6b1MRraw4=
+			lchA1/vht5ycq0ndVcaHj+jcHZU=
 			</data>
 			<key>hash2</key>
 			<data>
-			26333+Pte0wxEDfkUIC+qLArio+O5XACEdDmAzu8EPY=
+			5Hv5Qbs6jSPgOI8RLgeEC5hp8cA3yQI0MBtvHTU3TIs=
 			</data>
 		</dict>
 		<key>Headers/SBDUnreadItemCount.h</key>
@@ -1008,6 +1177,17 @@
 			<key>hash2</key>
 			<data>
 			8zJpCzjU0NrNdDjaRWyCpEzp+m4W/S5I9vTVemKdU8c=
+			</data>
+		</dict>
+		<key>Headers/SBDUpdatedVoteCount.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MiVpkr7HSo7cAUHYnXjYzhmxVPk=
+			</data>
+			<key>hash2</key>
+			<data>
+			q4us/IVs1rGYbqxCkLr3U/07+slpu3PEYjNkdvwuJ5c=
 			</data>
 		</dict>
 		<key>Headers/SBDUser.h</key>
@@ -1036,33 +1216,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LVkuyAw4RK3ut6lrBAzs/dTiVpU=
+			S/VaBLAP+bLZEl3xvr1cvcKUZyI=
 			</data>
 			<key>hash2</key>
 			<data>
-			0e5E3FeYL4VV9LIZCzERRCB4P8iHV2wWeMoNArrTRMM=
+			2rz11AbHtUAh5/CyoBV0j8XMYGvs+gHx/nLra8tADR0=
 			</data>
 		</dict>
 		<key>Headers/SBDUserMessageParams.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4lmv5r+ENxJ+3jSftE32FKyjTEY=
+			MZgCKQALglEnAR5Sa0R1x0TgsEA=
 			</data>
 			<key>hash2</key>
 			<data>
-			1QC88RXRRBpOjjwZRNyyd14ZF8y7yigO5lQGjoSkq6w=
+			QY8sND3SgjAfD8M3bQJlGs0YyxEMmHfqhBTD1vviYHU=
 			</data>
 		</dict>
 		<key>Headers/SendBirdSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			175Eq82e6XRxc+1rMEXtFSBMVNs=
+			pxcn64WhPS9mUaDrrF1KK6uuDec=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ld1578W0EtATUinyvYAWSlXMPyMEgX4UkG227XzBOR4=
+			pCtcIiG4uBs/jComaxtIDsszpYEZpSFajB9JAHlV2do=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

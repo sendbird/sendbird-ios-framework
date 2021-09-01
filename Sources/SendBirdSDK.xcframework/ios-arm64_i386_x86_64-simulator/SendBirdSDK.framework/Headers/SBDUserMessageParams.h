@@ -27,6 +27,10 @@
  */
 @property (copy, nonatomic, nullable) NSArray <NSString *> *targetLanguages;
 
+/// Links a poll with message, to unlink set it -1l
+/// @since 3.0.232
+@property (atomic, assign) long long pollId;
+
 /**
  *  Don't use this initializer.
  *  Initializes an instance of a user message params.

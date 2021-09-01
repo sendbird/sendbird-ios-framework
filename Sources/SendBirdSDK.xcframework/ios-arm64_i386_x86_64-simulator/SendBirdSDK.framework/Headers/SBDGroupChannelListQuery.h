@@ -112,6 +112,19 @@ DEPRECATED_ATTRIBUTE;
 /// @since 3.0.118
 @property (copy, nonatomic, nullable) NSString *metaDataOrderKeyFilter;
 
+/// Searches for group channels with metadata containing an item with the specified value as its key
+/// @since 3.0.232
+@property (copy, nonatomic, nullable) NSString *metaDataKeyFilter;
+
+/// Searches for group channels with metadata containing an item with the key specified by the metaDataKey
+/// @since 3.0.232
+@property (copy, nonatomic, nullable) NSArray<NSString *> *metaDataValuesFilter;
+
+/// Searches for group channels with metadata containing an item with the key specified by the metaDataKey
+/// and the values of that item start with the specified value
+/// @since 3.0.232
+@property (copy, nonatomic, nullable) NSString *metaDataValueStartsWithFilter;
+
 /// Sets to filter channels by the hidden state. The default value is `SBDChannelHiddenStateFilterUnhiddenOnly`.
 /// @since 3.0.122
 @property (atomic) SBDChannelHiddenStateFilter channelHiddenStateFilter;
@@ -179,6 +192,22 @@ DEPRECATED_ATTRIBUTE;
 /// }];
 /// @endcode
 - (void)setSearchFilter:(nonnull NSString *)query fields:(SBDGroupChannelListQuerySearchField)fields;
+
+/// Sets meta data filter.
+///
+/// @param key The key of the meta data to use for filter.
+/// @param values The values of the meta data to use for filter.
+/// @since 3.0.232
+- (void)setMetaDataFilterWithKey:(nonnull NSString *)key
+                          values:(nonnull NSArray<NSString *> *)values;
+
+/// Sets meta data filter with startsWith.
+///
+/// @param key The key of the meta data to use for filter.
+/// @param valueStartsWith The values of the meta data to use for filter.
+/// @since 3.0.232
+- (void)setMetaDataFilterWithKey:(nonnull NSString *)key
+                 valueStartsWith:(nonnull NSString *)valueStartsWith;
 
 /// Gets the list of channels. 
 ///

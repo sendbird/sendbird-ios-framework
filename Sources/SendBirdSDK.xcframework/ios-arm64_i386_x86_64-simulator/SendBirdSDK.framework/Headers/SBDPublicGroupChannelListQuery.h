@@ -91,6 +91,33 @@
 /// @since 3.0.118
 @property (copy, nonatomic, nullable) NSString *metaDataOrderKeyFilter;
 
+/// Searches for group channels with metadata containing an item with the specified value as its key
+/// @since 3.0.232
+@property (copy, nonatomic, nullable) NSString *metaDataKeyFilter;
+
+/// Searches for group channels with metadata containing an item with the key specified by the metaDataKey
+/// @since 3.0.232
+@property (copy, nonatomic, nullable) NSArray<NSString *> *metaDataValuesFilter;
+
+/// Searches for group channels with metadata containing an item with the key specified by the metaDataKey
+/// and the values of that item start with the specified value
+/// @since 3.0.232
+@property (copy, nonatomic, nullable) NSString *metaDataValueStartsWithFilter;
+
+/// Sets meta data filter.
+///
+/// @param key The key of the meta data to use for filter.
+/// @param values The values of the meta data to use for filter.
+- (void)setMetaDataFilterWithKey:(nonnull NSString *)key
+                          values:(nonnull NSArray<NSString *> *)values;
+
+/// Sets meta data filter with startsWith.
+///
+/// @param key The key of the meta data to use for filter.
+/// @param valueStartsWith The values of the meta data to use for filter.
+- (void)setMetaDataFilterWithKey:(nonnull NSString *)key
+                 valueStartsWith:(nonnull NSString *)valueStartsWith;
+
 /// Gets the list of channels. If this method is repeatedly called, it will retrieve the following pages of the channel list.
 /// @param completionHandler The handler block to execute. The `channels` is the array of `SBDGroupChannel` instances.
 - (void)loadNextPageWithCompletionHandler:(nullable void (^)(NSArray<SBDGroupChannel *> * _Nullable channels, SBDError *_Nullable error))completionHandler;

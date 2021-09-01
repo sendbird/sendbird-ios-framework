@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.232 (Sep 1, 2021)
+* Added `metaDataKeyFilter`, `metaDataValuesFilter`, `metaDataValueStartsWithFilter`, `setMetaDataFilterWithKey:values:` and `setMetaDataFilterWithKey:valueStartsWith:` in `SBDGroupChannelListQuery` and `SBDPublicGroupChannelListQuery` class.
+* Fixed a bug on `belongsTo:` in `SBDMessageListParams` class.
+
 ### v3.0.231 (Aug 11, 2021)
 * Deprecated methods. See [DEPRECATED.md](https://github.com/sendbird/sendbird-ios-framework/blob/master/DEPRECATED.md) for more details.
   *  `getMessagesByTimestamp:params:completionHandler:`

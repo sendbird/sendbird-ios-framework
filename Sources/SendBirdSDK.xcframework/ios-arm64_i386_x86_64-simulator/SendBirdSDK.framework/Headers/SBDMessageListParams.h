@@ -76,17 +76,27 @@
 /// @since 3.0.181
 @property (atomic) BOOL includeThreadInfo;
 
+/// Determines whether to include poll information of the message in the results
+/// @note The default value is `NO`
+/// @since 3.0.232
+@property (atomic) BOOL includePollDetails;
+
 /// Determines whether to include only messages from the subChannel to which you belong in the results.
 /// @note The default value is `NO`.
 /// @warning This value is only used in open channels.
 /// @since 3.0.204
 @property (atomic) BOOL showSubChannelMessagesOnly;
 
+
 /// Restricts the search scope only to retrieve the messages with the multiple specified custom message types. When the custom type filtering is not needed, the value should be set to `nil`.
 /// @note The default value is `nil`.
 /// @since 3.0.213
 @property (strong, nonatomic, nullable) NSArray<NSString *> *customTypes;
 
+/// Checks that the message belongs to the `SBDMessageListParams` object.
+/// @param message The message object to be checked.
+/// @return If YES, the message belongs to the `SBDMessageListParams` object.
+/// @since 3.0.232
 - (BOOL)belongsTo:(nonnull SBDBaseMessage *)message;
 
 @end

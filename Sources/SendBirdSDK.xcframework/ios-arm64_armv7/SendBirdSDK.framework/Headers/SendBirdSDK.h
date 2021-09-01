@@ -78,6 +78,20 @@
 #import "SBDUserListQuery.h"
 #import "SBDUserMessage.h"
 #import "SBDUserMessageParams.h"
+#import "SBDMappable.h"
+#import "SBDPoll.h"
+#import "SBDPollDetails.h"
+#import "SBDPollOption.h"
+#import "SBDPollOptionVoterResult.h"
+#import "SBDPollData.h"
+#import "SBDPollParams.h"
+#import "SBDPollRetrievalParams.h"
+#import "SBDPollUpdateEvent.h"
+#import "SBDPollVoteEvent.h"
+#import "SBDPollListQuery.h"
+#import "SBDPollVoterListQuery.h"
+#import "SBDUpdatedVoteCount.h"
+#import "SBDPollOptionVoterResult.h"
 
 //! Project version number for SendBirdSDK.
 FOUNDATION_EXPORT double SendBirdSDKVersionNumber;

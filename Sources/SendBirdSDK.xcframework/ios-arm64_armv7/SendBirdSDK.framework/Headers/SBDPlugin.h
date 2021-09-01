@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// String indicates a vendor who provides this plugin
 @property (nonatomic, copy, readonly, nullable) NSString *vendor;
 
-/// Dictionary contains detail of this plugin
+/// Dictionary contains details of this plugin
 /// Key is string and value is any object
 @property (nonatomic, strong, readonly, nullable) NSDictionary<NSString *, NSObject *> *detail;
 
