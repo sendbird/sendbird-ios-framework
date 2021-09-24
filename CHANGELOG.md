@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.234 (Sep 24, 2021)
+* Added  `markAsReadWithCompletionHandler:`.
+* Deprecated `markAsRead`.
+* Fixed a bug that the result of  `getMyGroupChannelChangeLogsWithToken:byTimestamp:params:completionHandler:` didn't include the read receipt data.
 
 ### v3.0.233 (Sep 1, 2021)
 * Fixed typo.

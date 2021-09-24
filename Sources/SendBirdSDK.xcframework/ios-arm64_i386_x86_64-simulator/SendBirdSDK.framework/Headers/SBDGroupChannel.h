@@ -822,10 +822,15 @@ DEPRECATED_ATTRIBUTE;
 + (void)markAsReadAllWithCompletionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler
 DEPRECATED_ATTRIBUTE;
 
-/**
- *  Sends mark as read. The other <span>members</span> in the channel will receive an event. The event will be received in `channelDidUpdateReadReceipt:` of `SBDChannelDelegate`.
- */
-- (void)markAsRead;
+/// Sends mark as read. The other <span>members</span> in the channel will receive an event. The event will be received in `channelDidUpdateReadReceipt:` of `SBDChannelDelegate`.
+/// @deprecated 3.0.234. Use `markAsReadWithCompletionHandler:` instead.
+- (void)markAsRead
+DEPRECATED_ATTRIBUTE;
+
+/// Sends mark as read. The other <span>members</span> in the channel will receive an event. The event will be received in `channelDidUpdateReadReceipt:` of `SBDChannelDelegate`.
+/// @param completionHandler The handler block to execute.
+/// @since 3.0.234
+- (void)markAsReadWithCompletionHandler:(nullable void (^)(SBDError *_Nullable error))completionHandler;
 
 /// Sends mark as delivered. The other <span>members</span> in the channel will receive an event. The event will be received in `channelDidUpdateDeliveryReceipt:` of `SBDChannelDelegate`.
 /// @since 3.0.162

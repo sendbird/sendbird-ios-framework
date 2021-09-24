@@ -1,5 +1,10 @@
 # Deprecated classes, methods, properties
 
+## v3.0.234
+| Old class | Old method | New class | New method |
+| --------- | ---------- | --------- | ---------- |
+|`SBDGroupChannel`|`markAsRead`|`SBDGroupChannel`|`markAsReadWithCompletionHandler:`|
+
 ## v3.0.231
 | Old class | Old method | New class | New method |
 | --------- | ---------- | --------- | ---------- |
