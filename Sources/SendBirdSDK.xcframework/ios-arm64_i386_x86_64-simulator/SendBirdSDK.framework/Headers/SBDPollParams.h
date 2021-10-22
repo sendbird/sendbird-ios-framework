@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class SBDPollOption;
+@class SBDPollData;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// An additional text to accompany the poll.
 /// Can be used to provide explanations for incorrect quiz answers
-@property (nonatomic, strong, nullable) NSString *data;
+@property (nonatomic, strong, nullable) NSString *text;
 
 /// Possible options for which a user can vote
 /// @note this property is only valid when creating a poll, ignored when updating a poll

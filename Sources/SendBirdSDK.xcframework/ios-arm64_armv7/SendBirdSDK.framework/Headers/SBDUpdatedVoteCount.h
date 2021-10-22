@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (atomic, assign, readonly) long long optionId;
 @property (atomic, assign, readonly) NSUInteger voteCount;
 
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 @end
 
 NS_ASSUME_NONNULL_END

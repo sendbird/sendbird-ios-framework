@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Users who casted the vote on this option, this field is only available when you fetch poll with `showPartialVoters` option
 @property (nonatomic, strong, nullable, readonly) NSArray<SBDUser *> *partialVoters;
 
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 /// Gets an option with id
 /// @param pollId poll id

@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// First page Voters list - could be partial
 @property (nonatomic, strong, readonly) NSArray<SBDUser *> *voters;
 
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 @end
 

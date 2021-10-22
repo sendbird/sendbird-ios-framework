@@ -18,8 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @since 3.0.232
 @interface SBDPollDetails : NSObject <SBDMappable, NSCopying>
 
-/// An additional text to accompany the poll.
-/// Can be used to provide explanations for incorrect quiz answers
+/// An additional data to accompany the poll.
 @property (nonatomic, strong, readonly, nullable) SBDPollData *data;
 
 /// Number of voters who casted a vote on the poll
@@ -55,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Whether the poll is closed
 @property (nonatomic, assign, readonly) SBDPollStatus status;
 
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 - (void)overwriteWithDetail:(nonnull SBDPollDetails *)otherDetails;
 

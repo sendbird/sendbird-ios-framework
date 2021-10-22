@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @note this property can be nil if `includePollDetails` option is NO when fetching message list
 @property (nonatomic, strong, readonly, nullable) SBDPollDetails *details;
 
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 /// Creates a poll with given params
 /// @param completionHandler completion block

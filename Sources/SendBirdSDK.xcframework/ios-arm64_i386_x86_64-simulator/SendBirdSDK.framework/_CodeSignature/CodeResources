@@ -146,7 +146,7 @@
 		</data>
 		<key>Headers/SBDMessageListParams.h</key>
 		<data>
-		CTkclqTGjH/wyqWfQmRUMIoQIGo=
+		osDiwO8diczDXEfha1zHiPndg94=
 		</data>
 		<key>Headers/SBDMessageListQuery.h</key>
 		<data>
@@ -210,15 +210,15 @@
 		</data>
 		<key>Headers/SBDPoll.h</key>
 		<data>
-		h9fgBjbYqHn4hV/4LWO38DtwaS8=
+		Y1LiG+WFscsDr7NKKo49sKO5pQI=
 		</data>
 		<key>Headers/SBDPollData.h</key>
 		<data>
-		7xCAnB7z/qioFD0fqQCGSBf252A=
+		TRUt4rdLPVz85GuF+50sHpoof0E=
 		</data>
 		<key>Headers/SBDPollDetails.h</key>
 		<data>
-		HAcfdikY6ACAe0cp5gqUMKzi5uU=
+		z+7toP7BxC6+HtwedVoU8BLu5AI=
 		</data>
 		<key>Headers/SBDPollListQuery.h</key>
 		<data>
@@ -226,15 +226,15 @@
 		</data>
 		<key>Headers/SBDPollOption.h</key>
 		<data>
-		GRwH0cax06cJ7AwxuTQuDHs5QUI=
+		z+BKI0vlO5PTQdJoVvRMSgIv5eA=
 		</data>
 		<key>Headers/SBDPollOptionVoterResult.h</key>
 		<data>
-		DGhM1mN6aCrI6uibJV9eZW1xcYs=
+		HXgTcWL4KFf8vuFaIn4E7qRfGoY=
 		</data>
 		<key>Headers/SBDPollParams.h</key>
 		<data>
-		VTIxv7WzGjBGrKX9w0+Bwqp2dww=
+		XQmKph5JTrED2gO3i949uIH99vM=
 		</data>
 		<key>Headers/SBDPollRetrievalParams.h</key>
 		<data>
@@ -242,11 +242,11 @@
 		</data>
 		<key>Headers/SBDPollUpdateEvent.h</key>
 		<data>
-		rPsIbHtNcHkwgXbv8NwcuAtIfiw=
+		D6da76McZ9MiWf26GwsuHdjDxr0=
 		</data>
 		<key>Headers/SBDPollVoteEvent.h</key>
 		<data>
-		ye+AF3knXADuQS6IEhGxh5dXm/o=
+		RiwT1OfnjlQxIYbyyHAdeG/dH4I=
 		</data>
 		<key>Headers/SBDPollVoterListQuery.h</key>
 		<data>
@@ -310,7 +310,7 @@
 		</data>
 		<key>Headers/SBDUpdatedVoteCount.h</key>
 		<data>
-		MiVpkr7HSo7cAUHYnXjYzhmxVPk=
+		vHVoeaWJdBKv6jzIOthWQ3k5PEI=
 		</data>
 		<key>Headers/SBDUser.h</key>
 		<data>
@@ -334,7 +334,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uQ8eWJUz/oYeNMP3b45wI56AgIo=
+		TJfejVJA6K4EypE0Ce772FLNCrY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -732,11 +732,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CTkclqTGjH/wyqWfQmRUMIoQIGo=
+			osDiwO8diczDXEfha1zHiPndg94=
 			</data>
 			<key>hash2</key>
 			<data>
-			bAZDAWLacy4ECoy/81uZzVzr1u/GuuzDGOyclmwT1y8=
+			jrTIjhcv60Ge53oYuIj0T1mf9CrAu6fjIX9lV9Uu/VE=
 			</data>
 		</dict>
 		<key>Headers/SBDMessageListQuery.h</key>
@@ -908,33 +908,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h9fgBjbYqHn4hV/4LWO38DtwaS8=
+			Y1LiG+WFscsDr7NKKo49sKO5pQI=
 			</data>
 			<key>hash2</key>
 			<data>
-			gkyKR90kjVFzPiAvM51zGMPnMOrbcpcVlHphNMzyg4U=
+			dGGAbBWfDBc+tqkwlWJWYXI0lL5HQVc1UDHDSD95msA=
 			</data>
 		</dict>
 		<key>Headers/SBDPollData.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7xCAnB7z/qioFD0fqQCGSBf252A=
+			TRUt4rdLPVz85GuF+50sHpoof0E=
 			</data>
 			<key>hash2</key>
 			<data>
-			C7q0l69HBLxPcHyR8oLYDQgbYBIVd7TeWvv0qhWAp1o=
+			HlG27cDyW7O9/AUns69QA0e3G6P6pYz2OBkzHG0dsKs=
 			</data>
 		</dict>
 		<key>Headers/SBDPollDetails.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HAcfdikY6ACAe0cp5gqUMKzi5uU=
+			z+7toP7BxC6+HtwedVoU8BLu5AI=
 			</data>
 			<key>hash2</key>
 			<data>
-			sOEKiLfJVcgaWaFFVZTIBy54lHd+8fQo1P8jsu6uPhY=
+			ak9Z6Pw40zq7H17ki1rpoeFmK2SNH7OBuY9cLkCQOjs=
 			</data>
 		</dict>
 		<key>Headers/SBDPollListQuery.h</key>
@@ -952,33 +952,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GRwH0cax06cJ7AwxuTQuDHs5QUI=
+			z+BKI0vlO5PTQdJoVvRMSgIv5eA=
 			</data>
 			<key>hash2</key>
 			<data>
-			PuBkCbnjH2BCFXcK/gpj+9cxYBktoz2bTKxqok96hH0=
+			1ctObDcnyroj8/nFGJzPNkgB+1ALkxfmfhh2FR/ZkUE=
 			</data>
 		</dict>
 		<key>Headers/SBDPollOptionVoterResult.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DGhM1mN6aCrI6uibJV9eZW1xcYs=
+			HXgTcWL4KFf8vuFaIn4E7qRfGoY=
 			</data>
 			<key>hash2</key>
 			<data>
-			JpGe5274LSLaA/C6cwXPT2qz5i5RpO/UEYOwYUwPj+4=
+			oO/BMJoRe5mmAtbR1IGLRluE45pHm651K56z3cXmW3A=
 			</data>
 		</dict>
 		<key>Headers/SBDPollParams.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VTIxv7WzGjBGrKX9w0+Bwqp2dww=
+			XQmKph5JTrED2gO3i949uIH99vM=
 			</data>
 			<key>hash2</key>
 			<data>
-			zxKxayOIpFD93hWzTUye2NiJwwEDG3S4m2bUfis3+qM=
+			9Xl78ECpLUTHShdnhCRgHc7+r86dpRaXuzxSVMnkaH0=
 			</data>
 		</dict>
 		<key>Headers/SBDPollRetrievalParams.h</key>
@@ -996,22 +996,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rPsIbHtNcHkwgXbv8NwcuAtIfiw=
+			D6da76McZ9MiWf26GwsuHdjDxr0=
 			</data>
 			<key>hash2</key>
 			<data>
-			3Rt4+tqw5xp9UOEI+hNAN5pbOozarcF+HhajRzYVM5E=
+			6FAoNoQPwty9nHFD+yiaxAmT2Y0/eVkxmhhN8QpTS3E=
 			</data>
 		</dict>
 		<key>Headers/SBDPollVoteEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ye+AF3knXADuQS6IEhGxh5dXm/o=
+			RiwT1OfnjlQxIYbyyHAdeG/dH4I=
 			</data>
 			<key>hash2</key>
 			<data>
-			hl3Rx5y/J60ss6qUryUdrYq/emjdfj4HMV9qqY7I3uc=
+			T+FXdhMaGMiuZZIB5QB4BZYENnp7QzH+TrdF0rVM+lY=
 			</data>
 		</dict>
 		<key>Headers/SBDPollVoterListQuery.h</key>
@@ -1183,11 +1183,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MiVpkr7HSo7cAUHYnXjYzhmxVPk=
+			vHVoeaWJdBKv6jzIOthWQ3k5PEI=
 			</data>
 			<key>hash2</key>
 			<data>
-			q4us/IVs1rGYbqxCkLr3U/07+slpu3PEYjNkdvwuJ5c=
+			GYz3TrQBx7BUHmrH0UQOtz4wB4V3B8+xZMoN5F8nHBs=
 			</data>
 		</dict>
 		<key>Headers/SBDUser.h</key>

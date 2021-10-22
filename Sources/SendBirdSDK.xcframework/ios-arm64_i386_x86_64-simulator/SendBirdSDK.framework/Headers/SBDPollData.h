@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Text representation
 @property (nonatomic, strong, readonly) NSString *text;
 
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 @end
 

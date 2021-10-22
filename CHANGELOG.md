@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.0.235 (Oct 22, 2021)
+* Removed Network.framework and replaced it with legacy Reachability
+* Improved stability 
+ 
 ### v3.0.234 (Sep 24, 2021)
 * Added  `markAsReadWithCompletionHandler:`.
 * Deprecated `markAsRead`.

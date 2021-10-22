@@ -10,6 +10,7 @@
 #import "SBDTypes.h"
 
 @class SBDBaseMessage;
+@class SBDBaseMessageParams;
 
 /// An object that represents the parameters for the [`getMessagesByTimestamp:params:completionHandler:`](../Classes/SBDBaseChannel.html#//api/name/getMessagesByTimestamp:params:completionHandler:) and the [`getMessagesByMessageId:params:completionHandler:`](../Classes/SBDBaseChannel.html#//api/name/getMessagesByMessageId:params:completionHandler:) methods. The methods return messages according to the properties in this object.
 /// @note This class is available from 3.0.181
@@ -99,4 +100,5 @@
 /// @since 3.0.232
 - (BOOL)belongsTo:(nonnull SBDBaseMessage *)message;
 
+- (BOOL)belongsToMessageParams:(nonnull SBDBaseMessageParams *)params;
 @end

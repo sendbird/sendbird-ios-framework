@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Timestamps when this event occurs 
 @property (atomic, assign, readonly) long long timestamp;
 
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 @end
 

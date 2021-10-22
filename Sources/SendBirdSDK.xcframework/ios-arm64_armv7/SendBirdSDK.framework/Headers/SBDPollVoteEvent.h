@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Timestamp for this vote event
 @property (atomic, assign, readonly) long long timestamp;
 
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 @end
 
