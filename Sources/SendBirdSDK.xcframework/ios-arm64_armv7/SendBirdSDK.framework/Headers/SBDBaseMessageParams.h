@@ -12,6 +12,7 @@
 #import "SBDMessageMetaArray.h"
 #import "SBDTypes.h"
 
+
 @class SBDUser;
 
 /**
@@ -82,5 +83,10 @@
 /// The default value is `nil`.
 /// @since 3.0.221
 @property (strong, nullable) SBDAppleCriticalAlertOptions *appleCriticalAlertOptions;
+
+/// A boolean property that determines if a threaded message is also replied to the channel.
+/// The default value is `NO`.
+/// @since 3.0.236
+@property (atomic) BOOL isReplyToChannel;
 
 @end

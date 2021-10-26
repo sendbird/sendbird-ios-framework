@@ -32,7 +32,9 @@
 /// Determines whether to include the parent message text in the results when the message is a reply in a thread. If the type of the parent message is `SBDUserMessage`, the value is a [`message`](../Classes/SBDUserMessage.html#//api/name/message). If it is [`SBDFileMessage`](../Classes/SBDFileMessage.html), the value is the [`name`](../Classes/SBDFileMessage.html#//api/name/name) of the uploaded file.
 /// @note The default value is `NO`.
 /// @since 3.0.181
-@property (atomic) BOOL includeParentMessageText;
+/// @deprecated 3.0.236
+@property (nonatomic) BOOL includeParentMessageText
+DEPRECATED_ATTRIBUTE;
 
 /// Determines whether to include the thread information of the message when it is a parent message.
 /// @note The default value is `NO`.
@@ -43,5 +45,9 @@
 /// @note The default value is `NO`
 /// @since 3.0.232
 @property (atomic) BOOL includePollDetails;
+
+
+/// @since 3.0.236
+@property (atomic) BOOL includeParentMessageInfo;
 
 @end

@@ -79,7 +79,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The written text of the message object’s parent message. If the message object is a parent message, the value of this property is `nil`. If the object is a reply to a parent message and the type of the parent message is [`SBDUserMessage`](../Classes/SBDUserMessage.html), the value is [`message`](../Classes/SBDUserMessage.html#//api/name/message). If it is [`SBDFileMessage`](../Classes/SBDFileMessage.html), the value is the [`name`](../Classes/SBDFileMessage.html#//api/name/name) of the uploaded file.
 /// @since 3.0.181
-@property (strong, readonly, nullable) NSString *parentMessageText;
+/// @deprecated 3.0.236  (Use `parentMessageInfo` instead.)
+@property (strong, readonly, nullable) NSString *parentMessageText
+DEPRECATED_ATTRIBUTE;
 
 /// The thread info that belongs to this message object.
 /// @since 3.0.181
@@ -133,6 +135,32 @@ DEPRECATED_ATTRIBUTE;
 /// Represents whether this message was created by an operator.
 /// @since 3.0.198
 @property (atomic, readonly) BOOL isOperatorMessage;
+
+/// Current message's parent message object.
+/// When `parentMessage` is `SBDUserMessage`
+/// it only has 3 properties:
+/// - NSString message
+/// - SBDSender sender
+/// - long long createdAt
+/// When parentMessage is `SBDAdminMessage`
+/// it only has 3 properties:
+/// - NSString message
+/// - SBDSender sender
+/// - long long createdAt
+/// When parentMessage is `SBDFileMessage`
+/// it only has 6 properties:
+/// - NSString message
+/// - SBDSender sender
+/// - long long createdAt
+/// - NSString name
+/// - NSString url
+/// - NSString type
+/// @since 3.0.236
+@property (atomic, nullable) SBDBaseMessage *parentMessage;
+
+/// Determines whether current message is also shown on channel.
+/// @since 3.0.236
+@property (atomic) BOOL isReplyToChannel;
 
 /// Checks the channel type is open channel or not.
 ///

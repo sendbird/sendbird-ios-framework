@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.0.236 (Oct 26, 2021) 
+* Added `SBDRestrictionInfo` which contains information for users who are either muted or banned. 
+* Added `SBDRestrictedUser` for muted or banned users, which contains `SBDRestrictionInfo`. 
+* `SBDMutedUserListQuery loadNextPageWithCompletionHandler:` and `SBDBannedUserListQuery loadNextPageWithCompletionHandler:` will give a `NSArray<SBDRestrictedUser *>`.
+* `SBDChannelDelegate channel: userWasMuted:` and `SBDChannelDelegate channel: userWasBanned:` will give a `SBDRestrictedUser` object. 
+* Added `restrictionInfo` property in `SBDMember`.
+
 ### v3.0.235 (Oct 22, 2021)
 * Removed Network.framework and replaced it with legacy Reachability
 * Improved stability 

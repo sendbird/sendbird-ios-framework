@@ -33,7 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 /// Called when session key is expired.
 /// @since 3.0.205
-- (void)sessionWasExpired;
+/// @deprecated 3.0.236
+- (void)sessionWasExpired
+DEPRECATED_ATTRIBUTE;
 
 /// Called when SDK refreshed the session key.
 /// @since 3.0.205

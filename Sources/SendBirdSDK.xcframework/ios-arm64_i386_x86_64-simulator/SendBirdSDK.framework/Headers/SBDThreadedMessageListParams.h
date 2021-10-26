@@ -62,11 +62,16 @@
 /// Determines whether to include the parent message text in the results when the messages are replies in a thread. If the type of the parent message is [`SBDUserMessage`](../Classes/SBDUserMessage.html), the value is a [`message`](../Classes/SBDUserMessage.html#//api/name/message). If it is [`SBDFileMessage`](../Classes/SBDFileMessage.html), the value is the [`name`](../Classes/SBDFileMessage.html#//api/name/name) of the uploaded file.
 /// @note The default value is `NO`.
 /// @since 3.0.181
-@property (atomic) BOOL includeParentMessageText;
+/// @deprecated 3.0.236  (Use `includeParentMessageInfo` instead.)
+@property (nonatomic) BOOL includeParentMessageText
+DEPRECATED_ATTRIBUTE;
 
 /// Restricts the search scope only to retrieve the messages with the multiple specified custom message types. When the custom type filtering is not needed, the value should be set to `nil`.
 /// @note The default value is `nil`.
 /// @since 3.0.213
 @property (strong, nonatomic, nullable) NSArray<NSString *> *customTypes;
+
+/// @since 3.0.236
+@property (atomic) BOOL includeParentMessageInfo;
 
 @end

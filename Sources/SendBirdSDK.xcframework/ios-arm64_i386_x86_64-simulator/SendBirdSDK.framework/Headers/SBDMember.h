@@ -10,6 +10,8 @@
 #import "SBDTypes.h"
 #import "SBDMappable.h"
 
+@class SBDRestrictionInfo;
+
 /**
  The `SBDMember` class represents a member of a group channel. This class has a property to show the state for invitation.
  */
@@ -33,6 +35,12 @@
 ///
 /// @since 3.0.174
 @property (atomic, readonly) SBDRole role;
+
+/// Restriction information of a muted member.
+/// This property is nil for an unmuted member.
+///
+/// @since 3.0.236
+@property (atomic, nullable, readonly) SBDRestrictionInfo *restrictionInfo;
 
 
 /**

@@ -87,6 +87,7 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     SBDErrorAuthUserIdTooLong = 400305,
     SBDErrorAuthPlanQuotaExceeded = 400306,
     SBDErrorSessionKeyExpired = 400309,
+    SBDErrorSessionKeyRevoked = 400310,
     
     SBDErrorInvalidApiToken = 400401,
     SBDErrorParameterMissing = 400402,
@@ -741,6 +742,21 @@ typedef NS_ENUM(NSUInteger, SBDPollStatus) {
 /// @since 3.0.227
 typedef NS_ENUM(NSUInteger, SBDInitPolicy) {
     SBDInitPolicyCacheAndReplaceByApi = 0,
+};
+
+/// Restriction type of SBDRestrictionInfo.
+/// @since 3.0.236
+typedef NS_ENUM(NSUInteger, SBDRestrictionType) {
+    SBDRestrictionTypeMuted = 0,
+    SBDRestrictionTypeBanned = 1,
+};
+
+/// Filter for deciding which reply types to include in a result.
+/// @since 3.0.236
+typedef NS_ENUM(NSUInteger, SBDReplyType) {
+    SBDReplyTypeNone = 0,
+    SBDReplyTypeAll = 1,
+    SBDReplyTypeOnlyReplyToChannel = 2,
 };
 
 #endif /* SBDTypes_h */

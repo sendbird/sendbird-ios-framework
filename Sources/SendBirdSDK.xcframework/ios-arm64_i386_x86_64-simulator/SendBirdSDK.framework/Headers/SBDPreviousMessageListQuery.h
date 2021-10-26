@@ -34,6 +34,13 @@
 @property (nonatomic) SBDMessageTypeFilter messageTypeFilter;
 
 /**
+ Sets the reply type to filter messages. The default value is `SBDReplyTypeNone`.
+ @since 3.0.236
+ */
+@property (nonatomic) SBDReplyType replyType;
+
+
+/**
  *  Sets the custom type to filter messages.
  *
  *  @since 3.0.106
@@ -72,12 +79,16 @@
 /// Determines whether replies are included in the results.
 /// @note The default value is `NO`.
 /// @since 3.0.181
-@property (atomic) BOOL includeReplies;
+/// @deprecated 3.0.236 (Use `replyType` instead.)
+@property (atomic) BOOL includeReplies
+DEPRECATED_ATTRIBUTE;
 
 /// Determines whether to include the parent message text in the results when the messages are replies in a thread. If the type of the parent message is [`SBDUserMessage`](../Classes/SBDUserMessage.html), the value is a [`message`](../Classes/SBDUserMessage.html#//api/name/message). If it is [`SBDFileMessage`](../Classes/SBDFileMessage.html), the value is the [`name`](../Classes/SBDFileMessage.html#//api/name/name) of the uploaded file.
 /// @note The default value is `NO`.
 /// @since 3.0.181
-@property (atomic) BOOL includeParentMessageText;
+/// @deprecated 3.0.236 (Use `includeParentMessageInfo` instead.)
+@property (atomic) BOOL includeParentMessageText
+DEPRECATED_ATTRIBUTE;
 
 /// Determines whether to include the thread information of the messages in the results when the results contain parent messages.
 /// @note The default value is `NO`.
@@ -95,7 +106,10 @@
 /// @since 3.0.204
 @property (atomic) BOOL showSubChannelMessagesOnly;
 
-
+/// Determines whether to include parent message information of the messages in the results when the results contain reply messages.
+/// @note The default value is `NO`.
+/// @since 3.0.236
+@property (atomic) BOOL includeParentMessageInfo;
 
 
 /**
