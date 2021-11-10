@@ -47,7 +47,14 @@ DEPRECATED_ATTRIBUTE;
 @property (atomic) BOOL includePollDetails;
 
 
+/// Determines whether to include parent message info in the results when the message is a reply in a thread.
+/// @note The default value is `NO`.
 /// @since 3.0.236
 @property (atomic) BOOL includeParentMessageInfo;
+
+/// Determines wheter to include reactions in the results.
+/// @note The default value is `NO`.
+/// @since 3.0.237
+@property (atomic) BOOL includeReactions;
 
 @end

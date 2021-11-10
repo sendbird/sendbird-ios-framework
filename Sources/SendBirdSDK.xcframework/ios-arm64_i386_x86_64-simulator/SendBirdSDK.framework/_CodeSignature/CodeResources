@@ -146,7 +146,7 @@
 		</data>
 		<key>Headers/SBDMessageListParams.h</key>
 		<data>
-		vKRyDv2Y/ztAhkf4WYwCR9gHf0U=
+		IhF8Zgu3sypyTi57JwgZeDl9DrU=
 		</data>
 		<key>Headers/SBDMessageListQuery.h</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Headers/SBDMessageRetrievalParams.h</key>
 		<data>
-		QJUet/W8GdkKVDKGyOyCq9xbBig=
+		ybpz567P1wqiCDhoXnF+E/UfyF8=
 		</data>
 		<key>Headers/SBDMessageSearchQuery.h</key>
 		<data>
@@ -342,7 +342,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DRzXf3codXOmfti9sVhLFiWP6sU=
+		PAZncUwdA+2caBwhIzeVN+p8hyA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -740,11 +740,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vKRyDv2Y/ztAhkf4WYwCR9gHf0U=
+			IhF8Zgu3sypyTi57JwgZeDl9DrU=
 			</data>
 			<key>hash2</key>
 			<data>
-			CWL+Y2wmviNJrL9+BcNfBY5DT/b7QOLD/rMgSRKXtGA=
+			wUa94bfXKSiomvG2p9dHwBmqSXxsIbG7dAVcdegORhU=
 			</data>
 		</dict>
 		<key>Headers/SBDMessageListQuery.h</key>
@@ -773,11 +773,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QJUet/W8GdkKVDKGyOyCq9xbBig=
+			ybpz567P1wqiCDhoXnF+E/UfyF8=
 			</data>
 			<key>hash2</key>
 			<data>
-			62aQJMyXveNuBt0/nW9pf99cC1sjhjaqoA7Ju0uWs+g=
+			aLUVTzt7WjiLYh5+JURTXVYsE/yNlKNIIN8gn7W/xm0=
 			</data>
 		</dict>
 		<key>Headers/SBDMessageSearchQuery.h</key>

@@ -112,5 +112,9 @@ DEPRECATED_ATTRIBUTE;
 /// @since 3.0.232
 - (BOOL)belongsTo:(nonnull SBDBaseMessage *)message;
 
+/// Checks that the messageParams belongs to the `SBDMessageListParams` object.
+/// @param params The messageParams object to be checked.
+/// @return If YES, the messageParams belongs to the `SBDMessageListParams` object.
+/// @since 3.0.232
 - (BOOL)belongsToMessageParams:(nonnull SBDBaseMessageParams *)params;
 @end
