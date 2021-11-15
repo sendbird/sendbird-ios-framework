@@ -1,4 +1,7 @@
 # Change Log
+### v3.0.238 (Nov 15, 2021)
+* Removed excluded architecture. 
+
 ### v3.0.237 (Nov 10, 2021)
 * Added `includeReactions` field in `SBDMessageRetrievalParams`.
 * Fixed messageType not being copied in `SBDMessageListParams`.

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SendBirdSDK"
-  s.version      = "3.0.237"
+  s.version      = "3.0.238"
   s.summary      = "SendBird iOS Framework"
   s.description  = "Messaging and Chat API for Mobile Apps and Websites"
   s.homepage     = "https://sendbird.com"
@@ -17,6 +17,4 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'Sources/SendBirdSDK.xcframework'
   s.ios.frameworks = ["UIKit", "CFNetwork", "Security", "Foundation", "Network", "MobileCoreServices", "SystemConfiguration", "CoreFoundation"]
   s.ios.library   = "icucore"
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
