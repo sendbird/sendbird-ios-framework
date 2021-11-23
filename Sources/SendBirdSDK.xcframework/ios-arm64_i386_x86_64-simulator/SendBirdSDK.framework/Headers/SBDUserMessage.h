@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SBDBaseMessage.h"
 #import "SBDBaseChannel.h"
+#import "SBDUserMessageParams.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -52,6 +53,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return boolean if event is successfuly applied all
 /// @since 3.0.232
 - (BOOL)applyPollVoteEvent:(nonnull SBDPollVoteEvent *)event;
+
+/// @since 3.1.0
+- (nullable SBDUserMessageParams *)getUserMessageParams;
 
 @end
 

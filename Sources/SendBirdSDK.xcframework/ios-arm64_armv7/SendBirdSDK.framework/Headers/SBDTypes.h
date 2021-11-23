@@ -740,8 +740,8 @@ typedef NS_ENUM(NSUInteger, SBDPollStatus) {
 
 /// The policy for the message collection initialization.
 /// @since 3.0.227
-typedef NS_ENUM(NSUInteger, SBDInitPolicy) {
-    SBDInitPolicyCacheAndReplaceByApi = 0,
+typedef NS_ENUM(NSUInteger, SBDMessageCollectionInitPolicy) {
+    SBDMessageCollectionInitPolicyCacheAndReplaceByApi = 0,
 };
 
 /// Restriction type of SBDRestrictionInfo.

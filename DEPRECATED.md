@@ -1,5 +1,18 @@
 # Deprecated classes, methods, properties
 
+## v3.1.0
+| Old class | Old property | New class | New property |
+| --------- | ---------- | --------- | ---------- |
+|`SBDBaseMessage`|`parentMessageText`|`SBDBaseMessage`|`parentMessage`|
+|`SBDMessageListParams`|`includeReplies`|`SBDMessageListParams`|`replyType`|
+|`SBDMessageChangeLogsParams`|`includeReplies`|`SBDMessageChangeLogsParams`|`replyType`|
+|`SBDPreviousMessageListQuery`|`includeReplies`|`SBDPreviousMessageListQuery`|`replyType`|
+|`SBDMessageListParams`|`includeParentMessageText`|`SBDMessageListParams`|`includeParentMessageInfo`|
+|`SBDMessageChangeLogsParams`|`includeParentMessageText`|`SBDMessageChangeLogsParams`|`includeParentMessageInfo`|
+|`SBDMessageRetrievalParams`|`includeParentMessageText`|`SBDPreviousMessageListQuery`|`includeParentMessageInfo`|
+|`SBDPreviousMessageListQuery`|`includeParentMessageText`|`SBDPreviousMessageListQuery`|`includeParentMessageInfo`|
+
+
 ## v3.0.234
 | Old class | Old method | New class | New method |
 | --------- | ---------- | --------- | ---------- |

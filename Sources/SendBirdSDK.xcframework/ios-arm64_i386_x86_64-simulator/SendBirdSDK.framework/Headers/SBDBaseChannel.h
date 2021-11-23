@@ -137,7 +137,6 @@
 /// A callback when a user was unmuted in the channel.
 /// @param sender The channel.
 /// @param user   The user who was unmuted.
-
 - (void)channel:(SBDBaseChannel * _Nonnull)sender userWasUnmuted:(SBDUser * _Nonnull)user;
 
 /// A callback when a user was banned in the channel.

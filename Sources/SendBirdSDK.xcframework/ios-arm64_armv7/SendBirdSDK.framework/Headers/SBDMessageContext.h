@@ -8,15 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
-#import "SBDSource.h"
+#import "SBDCollectionEventSource.h"
+#import "SBDTypes.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// Represents what happened to the messages.
-/// @since 3.0.227
+/// @since 3.1.0
 @interface SBDMessageContext : NSObject
 
-@property (atomic) SBDSource source;
+/// @since 3.1.0
+@property (atomic) SBDCollectionEventSource source;
+
+/// @since 3.1.0
+@property (atomic) SBDMessageSendingStatus messageSendingStatus;
+
+/// Checks whether the context is from an event or not.
+/// @return If YES, the context is from an event.
+/// @since 3.1.0
+- (BOOL)isFromEvent;
 
 @end
 

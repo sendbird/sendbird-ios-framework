@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Shows if there is a next page
 @property (atomic, readonly) BOOL hasNext;
 
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 /// Shows if the query is loading.
 ///

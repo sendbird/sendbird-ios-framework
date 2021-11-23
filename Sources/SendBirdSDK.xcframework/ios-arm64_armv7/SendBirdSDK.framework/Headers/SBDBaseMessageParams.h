@@ -18,7 +18,7 @@
 /**
  *  The `SBDBaseMessageParams` class represents the base class which has parameters to create a channel or update a channel. The `SBDUserMessageParams`, the `SBDFileMessageParams` are derived from this class.
  */
-@interface SBDBaseMessageParams : NSObject <NSCopying>
+@interface SBDBaseMessageParams : NSObject <NSCopying, SBDMappable>
 
 /**
  *  Message data. The default value is nil.

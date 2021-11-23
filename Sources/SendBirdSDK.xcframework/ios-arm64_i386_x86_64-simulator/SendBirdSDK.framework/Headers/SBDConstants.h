@@ -64,7 +64,7 @@ typedef void(^SBDVoterListHandler)(NSArray <SBDUser *> * _Nullable users,
 
 /// Posted immediately after a change in the channel collection object.
 /// @since 3.0.227
-extern NSString * _Nonnull const SBDChannelCollectionChangeNotification;
+extern NSString * _Nonnull const SBDGroupChannelCollectionChangeNotification;
 
 /// Posted immediately after a change in the message collection object.
 /// @since 3.0.227

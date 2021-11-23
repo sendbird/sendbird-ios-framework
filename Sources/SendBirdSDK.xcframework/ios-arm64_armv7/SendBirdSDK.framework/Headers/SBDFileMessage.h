@@ -6,17 +6,19 @@
 //  Copyright © 2016 SENDBIRD.COM. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "SBDBaseMessage.h"
-#import "SBDBaseChannel.h"
 #import <CoreGraphics/CGGeometry.h>
+#import <Foundation/Foundation.h>
+
+#import "SBDBaseChannel.h"
+#import "SBDBaseMessage.h"
+#import "SBDFileMessageParams.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  * The `SBDThumbnailSize` class represents the thumbnail size of thumbnail.
  */
-@interface SBDThumbnailSize : NSObject <NSCopying>
+@interface SBDThumbnailSize : NSObject <NSCopying, SBDMappable>
 
 /**
  * The max size of the thumbnail.
@@ -187,6 +189,9 @@ DEPRECATED_ATTRIBUTE;
  * @return Image url.
  */
 - (NSString *)url;
+
+/// @since 3.1.0
+- (nullable SBDFileMessageParams *)getFileMessageParams;
 
 @end
 

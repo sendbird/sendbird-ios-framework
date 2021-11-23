@@ -7,15 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBDBaseMessageParams.h"
+#import "SBDMappable.h"
 #import "SBDMessageListParams.h"
-#import "SBDThreadInfo.h"
-#import "SBDUser.h"
+#import "SBDMessageRetrievalParams.h"
 #import "SBDReaction.h"
 #import "SBDReactionEvent.h"
 #import "SBDThreadedMessageListParams.h"
+#import "SBDThreadInfo.h"
 #import "SBDThreadInfoUpdateEvent.h"
-#import "SBDMessageRetrievalParams.h"
-#import "SBDMappable.h"
+#import "SBDUser.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -135,6 +136,10 @@ DEPRECATED_ATTRIBUTE;
 /// Represents whether this message was created by an operator.
 /// @since 3.0.198
 @property (atomic, readonly) BOOL isOperatorMessage;
+
+/// An object that was used to resend this message. This property is valid when the sendingStatus is `SBDMessageSendingStatusPending` or `SBDMessageSendingStatusFailed`. When this message is trying to be resent, this property will be used as well. If the message object is `SBDUserMessage` class, then the `messageParams` has to be casted to `SBDUserMessageParams` class. If the message object is `SBDFileMessage` class, then the `messageParams` has to be casted to `SBDFileMessageParams` class.
+/// @since 3.1.0
+@property (strong, nonatomic, nullable) SBDBaseMessageParams *messageParams;
 
 /// Current message's parent message object.
 /// When `parentMessage` is `SBDUserMessage`

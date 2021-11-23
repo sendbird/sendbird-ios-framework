@@ -939,8 +939,19 @@ completionHandler:(nullable void (^)(SBDEmoji * _Nullable emoji, SBDError * _Nul
 
 
 #pragma mark - Local Cache
+
+/// @since 3.1.0
 + (BOOL)isUsingLocalCaching;
-+ (void)clearCachedData;
+
+/// @since 3.1.0
++ (void)clearCachedDataWithCompletionHandler:(nullable void (^)(void))completionHandler;
+
+/// @since 3.1.0
++ (NSUInteger)getCachedDataSize;
+
+/// @since 3.1.0
++ (void)clearCachedMessages:(nonnull NSString *)channelUrl
+          completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
 
 @end
 

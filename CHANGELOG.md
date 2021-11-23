@@ -1,4 +1,26 @@
 # Change Log
+
+### v3.1.0 (Nov 23, 2021) 
+* Local caching support. See [Local Caching](https://sendbird.com/docs/chat/v3/ios/guides/local-caching) for details.
+  * Added `SBDMessageContext` class.
+  * Added `SBDCollectionEventSource` enum.
+  * Added `SBDMessageCollectionDelegate` protocol.
+  * Added `SBDMessageCollection` class.
+  * Added `SBDChannelContext` class.
+  * Added `SBDGroupChannelCollection` class.
+  * Added `SBDGroupChannelCollectionDelegate` protocol.
+  * Added `SBDMessageCollectionInitPolicy` enum.
+* Added Reply to Channel feature. 
+  * Added enum `SBDReplyType` for loading messages with respect to message's reply messages.
+  * Added `replyType` property in `SBDMessageListParams`, `SBDMessageChangeLogsParams` and `SBDPreviousMessageListQuery`.
+  * Deprecated `includeReplies` in `SBDMessageListParams`, `SBDMessageChangeLogsParams` and `SBDPreviousMessageListQuery`.
+  * Added `parentMessage` property in `SBDBaseMessage`
+  * Deprecated `includeParentMessageText` in `SBDMessageListParams`, `SBDMessageChangeLogsParams`, `SBDMessageRetrievalParams` and `SBDPreviousMessageListQuery`.
+  * Deprecated `parentMessageText` in `SBDBaseMessage`.
+  * Added `isReplyToChannel` in `SBDBaseMessage`
+  * Added `isReplyToChannel` property in `SBDBaseMessageParams` .
+  * Added `belongsToMessageParams:` method in `SBDMessageListParams`.
+
 ### v3.0.238 (Nov 15, 2021)
 * Removed excluded architecture. 
 

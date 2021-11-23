@@ -12,8 +12,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// The root class of the `SBDMessageCollection` and the `SBDChannelCollection`.
-/// @since 3.0.227
+/// The root class of the `SBDMessageCollection` and the `SBDGroupChannelCollection`.
+/// @since 3.1.0
 @interface SBDBaseCollection : NSObject
 
 @end

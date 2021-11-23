@@ -21,7 +21,7 @@
  *
  *  @since 3.0.90
  */
-@property (copy, nonatomic, nullable) NSData *file;
+@property (strong, nonatomic, nullable) NSData *file;
 
 /**
  *  File URL.
@@ -36,7 +36,7 @@
  *
  *  @since 3.0.90
  */
-@property (copy, nonatomic, nullable) NSArray <SBDThumbnailSize *> *thumbnailSizes;
+@property (copy, nonatomic, nullable) NSArray<SBDThumbnailSize *> *thumbnailSizes;
 
 /**
  *  File name.
