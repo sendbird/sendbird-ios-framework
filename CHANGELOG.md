@@ -1,4 +1,6 @@
 # Change Log
+### v3.1.2 (Jan 5, 2022)
+* Improved stability.
 
 ### v3.1.1 (Dec 9, 2021)
 * Fixed a bug that the reply message isn't received when the network is reconnected.

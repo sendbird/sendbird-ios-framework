@@ -122,7 +122,7 @@
 		</data>
 		<key>Headers/SBDMain.h</key>
 		<data>
-		T3j/rPZWouoOnjcz+kgltW4MBJw=
+		Q/kJz1uvNIal5bXOLpwICNRXFts=
 		</data>
 		<key>Headers/SBDMappable.h</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>Headers/SBDOptions.h</key>
 		<data>
-		g0pKs66TzZaXUb5taZIU0lMnwp8=
+		K+UKNV6D6MAm7qTl7aAxhO7afwk=
 		</data>
 		<key>Headers/SBDParticipantListQuery.h</key>
 		<data>
@@ -342,7 +342,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NMRucUQGr1M2PbkGTF5ZwIeu7cg=
+		iKe4Sekojo9z14KTuycRVCcP2Kw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -674,11 +674,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T3j/rPZWouoOnjcz+kgltW4MBJw=
+			Q/kJz1uvNIal5bXOLpwICNRXFts=
 			</data>
 			<key>hash2</key>
 			<data>
-			0Fh3rOnHDXGHx0g0aRdd812U+4/SzLtCINg4BC9+s48=
+			K2lPCizjYvlUnasVRctrBAcldS+zmWLv6Hf2z+rxpwQ=
 			</data>
 		</dict>
 		<key>Headers/SBDMappable.h</key>
@@ -894,11 +894,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g0pKs66TzZaXUb5taZIU0lMnwp8=
+			K+UKNV6D6MAm7qTl7aAxhO7afwk=
 			</data>
 			<key>hash2</key>
 			<data>
-			4Rw23Bn2jD5k9zoxaT0vFSGECvxmijF5gxo5Nxbings=
+			eJEV+4G94NzRSU79gbM9qAtWoEx+1BuUSAQLid8HX3o=
 			</data>
 		</dict>
 		<key>Headers/SBDParticipantListQuery.h</key>

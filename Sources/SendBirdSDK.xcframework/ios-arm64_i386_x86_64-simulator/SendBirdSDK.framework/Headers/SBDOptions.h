@@ -73,5 +73,8 @@
 /// @since 3.0.232
 + (void)setIncludePollDetails:(BOOL)value;
     
+
++ (void)setAlwaysCallChannelChangeWhenMarkAsRead:(BOOL)value;
+
 @end
 

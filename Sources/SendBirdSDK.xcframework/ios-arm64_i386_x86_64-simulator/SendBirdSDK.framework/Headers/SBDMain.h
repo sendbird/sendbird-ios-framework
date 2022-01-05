@@ -147,13 +147,13 @@ typedef void(^SBDBackgroundSessionBlock)(void);
         completionHandler:(nullable void (^)(SBDUser * _Nullable user, SBDError * _Nullable error))completionHandler;
 
 /// Performs a connection to Sendbird with the user ID and the access token.
+/// Internal use only.
 /// @param userId userId
 /// @param accessToken accessToken
 /// @param apiHost apiHost
 /// @param wsHost wsHost
 /// @param completionHandler completionHandler
 /// @see -connectWithUserId:accessToken:completionHandler:
-/// @warning *Important*: DON'T use this method. This method will be unavailable.
 + (void)connectWithUserId:(NSString * _Nonnull)userId
               accessToken:(NSString * _Nullable)accessToken
                   apiHost:(NSString * _Nullable)apiHost
