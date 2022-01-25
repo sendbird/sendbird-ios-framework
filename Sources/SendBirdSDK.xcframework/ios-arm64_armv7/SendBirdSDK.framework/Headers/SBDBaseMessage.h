@@ -253,6 +253,12 @@ DEPRECATED_ATTRIBUTE;
 /// @since 3.0.181
 - (BOOL)applyThreadInfoUpdateEvent:(nonnull SBDThreadInfoUpdateEvent *)threadInfoUpdateEvent;
 
+/// Applies the message to the current message object as a parent message.
+/// If the `parentMessageId` is different with the message ID of the `parentMessage`, then `NO` will be returned.
+/// @param parentMessage The parent message object to be updated.
+/// @since 3.1.3
+- (BOOL)applyParentMessage:(nonnull SBDBaseMessage *)parentMessage;
+
 @end
 
 NS_ASSUME_NONNULL_END

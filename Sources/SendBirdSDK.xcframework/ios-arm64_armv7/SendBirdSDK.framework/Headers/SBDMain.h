@@ -102,6 +102,11 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 /// @return If YES, this instance is debug mode.
 + (BOOL)getDebugMode DEPRECATED_ATTRIBUTE;
 
+/// Sets the version of the app that uses the Sendbird SDK. The version will be used when the debugging is needed.
+/// @param appVersion The version of the app.
+/// @since 3.1.3
++ (void)setAppVersion:(nullable NSString *)appVersion;
+
 /// Gets a singleton instance of `SBDMain`.
 /// @return a singleton instance for `SBDMain`.
 + (nonnull SBDMain *)sharedInstance;

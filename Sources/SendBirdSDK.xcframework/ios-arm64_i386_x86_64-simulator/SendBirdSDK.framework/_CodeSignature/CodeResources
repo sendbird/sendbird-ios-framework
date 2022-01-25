@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/SBDBaseMessage.h</key>
 		<data>
-		WfUGFqbe0ubMqsOqS0Q5NsUZUR0=
+		NdpnhIyC3uNThSTlHKnu95eN1qM=
 		</data>
 		<key>Headers/SBDBaseMessageParams.h</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Headers/SBDMain.h</key>
 		<data>
-		Q/kJz1uvNIal5bXOLpwICNRXFts=
+		RKoMWbRkplMPYdv78prl1AE0NBY=
 		</data>
 		<key>Headers/SBDMappable.h</key>
 		<data>
@@ -310,7 +310,7 @@
 		</data>
 		<key>Headers/SBDTypes.h</key>
 		<data>
-		IniXtZzTb/uNDIhYGkMhgNW8kpI=
+		oe5MsVkUidQRoGEl9WhjOui882g=
 		</data>
 		<key>Headers/SBDUnreadItemCount.h</key>
 		<data>
@@ -342,7 +342,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iKe4Sekojo9z14KTuycRVCcP2Kw=
+		FdH7FX0e2VFRnRC1Ox6kLVy1TO8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -432,11 +432,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WfUGFqbe0ubMqsOqS0Q5NsUZUR0=
+			NdpnhIyC3uNThSTlHKnu95eN1qM=
 			</data>
 			<key>hash2</key>
 			<data>
-			H/fhhaVKSO4fKli6hPJPyT7XP8l+y9lScPUbsgriGBk=
+			LhtfNJsOGcFuIkDm61yhq0WWiu19vmJXsKX7IyaGuJA=
 			</data>
 		</dict>
 		<key>Headers/SBDBaseMessageParams.h</key>
@@ -674,11 +674,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q/kJz1uvNIal5bXOLpwICNRXFts=
+			RKoMWbRkplMPYdv78prl1AE0NBY=
 			</data>
 			<key>hash2</key>
 			<data>
-			K2lPCizjYvlUnasVRctrBAcldS+zmWLv6Hf2z+rxpwQ=
+			iMKFlIxQ71ePJ46FDBafrETv8H88jbuXhguXwQVFC5E=
 			</data>
 		</dict>
 		<key>Headers/SBDMappable.h</key>
@@ -1191,11 +1191,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IniXtZzTb/uNDIhYGkMhgNW8kpI=
+			oe5MsVkUidQRoGEl9WhjOui882g=
 			</data>
 			<key>hash2</key>
 			<data>
-			mryzC+VgaOLz1PpWjos/YGpcKdV5SAxrMg/mkYZs+P4=
+			V62JavNQVKBdGPV9bXr2OlgU0dQFQmOFvssRU0sPbS4=
 			</data>
 		</dict>
 		<key>Headers/SBDUnreadItemCount.h</key>

@@ -87,7 +87,7 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     SBDErrorAuthUserIdTooLong = 400305,
     SBDErrorAuthPlanQuotaExceeded = 400306,
     SBDErrorSessionKeyExpired = 400309,
-    SBDErrorSessionKeyRevoked = 400310,
+    SBDErrorSessionTokenRevoked = 400310,
     
     SBDErrorInvalidApiToken = 400401,
     SBDErrorParameterMissing = 400402,
