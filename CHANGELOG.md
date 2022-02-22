@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.1.4 (Feb 22, 2022)
+* Fixed issue with channel sync where channels created in the background did not properly load.
+* Deprecated `SBDAuthenticateDelegate` and `SBDConnectionManager`.
+
 ### v3.1.3 (Jan 25, 2022)
 * Added `applyParentMessage:` method to update a parent message object in the child messages.
 * Fixed a bug where child messages' parent message wasn’t being updated.

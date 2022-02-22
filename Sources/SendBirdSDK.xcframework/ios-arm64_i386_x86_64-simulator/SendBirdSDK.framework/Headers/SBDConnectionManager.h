@@ -31,6 +31,7 @@
 /**
  @since 3.0.113
  */
+__attribute__ ((deprecated))
 @protocol SBDAuthenticateDelegate <NSObject>
 
 @required
@@ -52,6 +53,7 @@
 
 @end
 
+__attribute__ ((deprecated))
 @interface SBDConnectionManager : NSObject
 
 /**

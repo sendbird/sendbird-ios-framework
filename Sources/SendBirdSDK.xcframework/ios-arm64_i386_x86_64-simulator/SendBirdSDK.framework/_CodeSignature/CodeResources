@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/SBDBaseChannel.h</key>
 		<data>
-		i8jgsoE+BgmepUhpSXHCiaIIEII=
+		cXty0nJWVUpUZIQIHreY/uqYWOA=
 		</data>
 		<key>Headers/SBDBaseCollection.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/SBDConnectionManager.h</key>
 		<data>
-		szYrMmu6zaKvTQvI2KSegkCZatw=
+		IVBRRrok7tcnc17AXXw8Vh737RM=
 		</data>
 		<key>Headers/SBDConstants.h</key>
 		<data>
@@ -342,7 +342,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FdH7FX0e2VFRnRC1Ox6kLVy1TO8=
+		9g+iGGQtS5qwUbo/gLxgg3aE0Qk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -410,11 +410,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i8jgsoE+BgmepUhpSXHCiaIIEII=
+			cXty0nJWVUpUZIQIHreY/uqYWOA=
 			</data>
 			<key>hash2</key>
 			<data>
-			sCx9LDDC+32NoGWphGPbJ/jala6xJDmsklxXNB4iNoM=
+			YNdtO+RQXSy1Pehiowi6Q6vuIrmx/gTnQwgGUFrG1Q4=
 			</data>
 		</dict>
 		<key>Headers/SBDBaseCollection.h</key>
@@ -498,11 +498,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			szYrMmu6zaKvTQvI2KSegkCZatw=
+			IVBRRrok7tcnc17AXXw8Vh737RM=
 			</data>
 			<key>hash2</key>
 			<data>
-			M8g+k3pBsQ883OePX0Vak6p264RZJCYZaN+VuRq3E+A=
+			R9NIm8pm7A75YMuIx8txM422jTOijtyxDB5umT7EwS0=
 			</data>
 		</dict>
 		<key>Headers/SBDConstants.h</key>

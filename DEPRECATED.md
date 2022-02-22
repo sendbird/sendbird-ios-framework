@@ -1,5 +1,11 @@
 # Deprecated classes, methods, properties
 
+## v3.1.4
+| Old class | Old property | New class | New property |
+| --------- | ---------- | --------- | ---------- |
+|SBDAuthenticateDelegate||*No Alternative*||
+|SBDConnectionManager||*No Alternative*||
+
 ## v3.1.0
 | Old class | Old property | New class | New property |
 | --------- | ---------- | --------- | ---------- |

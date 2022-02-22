@@ -758,7 +758,6 @@ DEPRECATED_ATTRIBUTE;
 - (nonnull SBDPollVoterListQuery *)createPollVoterListQueryWithPollId:(long long)pollId
                                                              optionId:(long long)optionId;
 
-- (nonnull SBDPollVoterListQuery *)createVoterQuery;
 #pragma mark - Meta Counters
 
 /// Creates the meta counters for the channel.
