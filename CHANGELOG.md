@@ -1,4 +1,6 @@
 # Change Log
+### v3.1.5 (Feb 24, 2022)
+* Fixed a bug where ACK_TIMEOUT(800180) errors were incorrectly being sent.
 
 ### v3.1.4 (Feb 22, 2022)
 * Fixed issue with channel sync where channels created in the background did not properly load.
