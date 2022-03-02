@@ -1,4 +1,7 @@
 # Change Log
+### v3.1.6 (Mar 2, 2022)
+* Fix issue with local caching where messages were loading slowly.
+
 ### v3.1.5 (Feb 24, 2022)
 * Fixed a bug where ACK_TIMEOUT(800180) errors were incorrectly being sent.
 
