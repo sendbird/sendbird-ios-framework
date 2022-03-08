@@ -1,8 +1,8 @@
 BCSymbolMap Version: 2.0
 Apple clang version 13.0.0 (clang-1300.0.29.30)
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk
-iPhoneSimulator15.2.sdk
-/Users/ernest.hong/Library/Developer/Xcode/DerivedData/SendBirdSDK-chevnknyjulbvsctylkaeemlwlad/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphonesimulator/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk
+iPhoneOS15.2.sdk
+/Users/ernest.hong/Library/Developer/Xcode/DerivedData/SendBirdSDK-chevnknyjulbvsctylkaeemlwlad/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphoneos/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
 /Users/ernest.hong/Dev/messaging-ios
 -[SBDChannelSyncManager init]
 -[SBDChannelSyncManager dealloc]
@@ -179,7 +179,7 @@ __destroy_helper_block_e8_32s
 __copy_helper_block_e8_32s
 __37-[SBDChannelSyncManager syncChannels]_block_invoke
 __39+[SBDChannelSyncManager sharedInstance]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/usr/include/dispatch/once.h
 -[SBDPollRetrievalParams init]
 -[SBDPollRetrievalParams channelUrl]
 -[SBDPollRetrievalParams setChannelUrl:]
@@ -1237,9 +1237,10 @@ ___66+[SBDMain getChannelCountWithMemberStateFilter:completionHandler:]_block_in
 ___66+[SBDMain getChannelCountWithMemberStateFilter:completionHandler:]_block_invoke_2
 ___66+[SBDMain getChannelCountWithMemberStateFilter:completionHandler:]_block_invoke_3
 +[SBDMain getTotalUnreadChannelCountWithCompletionHandler:]
-___59+[SBDMain getTotalUnreadChannelCountWithCompletionHandler:]_block_invoke
-___59+[SBDMain getTotalUnreadChannelCountWithCompletionHandler:]_block_invoke_2
-___59+[SBDMain getTotalUnreadChannelCountWithCompletionHandler:]_block_invoke_3
++[SBDMain getTotalUnreadChannelCountWithParams:completionHandler:]
+___66+[SBDMain getTotalUnreadChannelCountWithParams:completionHandler:]_block_invoke
+___66+[SBDMain getTotalUnreadChannelCountWithParams:completionHandler:]_block_invoke_2
+___66+[SBDMain getTotalUnreadChannelCountWithParams:completionHandler:]_block_invoke_3
 +[SBDMain getTotalUnreadMessageCountWithCompletionHandler:]
 +[SBDMain getTotalUnreadMessageCountWithParams:completionHandler:]
 ___66+[SBDMain getTotalUnreadMessageCountWithParams:completionHandler:]_block_invoke
@@ -1808,7 +1809,7 @@ _OBJC_SELECTOR_REFERENCES_.906
 _OBJC_SELECTOR_REFERENCES_.908
 _OBJC_SELECTOR_REFERENCES_.912
 _OBJC_SELECTOR_REFERENCES_.914
-_OBJC_SELECTOR_REFERENCES_.918
+_OBJC_SELECTOR_REFERENCES_.916
 _OBJC_CLASSLIST_REFERENCES_$_.919
 _OBJC_SELECTOR_REFERENCES_.921
 _OBJC_SELECTOR_REFERENCES_.923
@@ -1992,9 +1993,9 @@ __55+[SBDMain getUnreadItemCountWithKey:completionHandler:]_block_invoke
 __66+[SBDMain getTotalUnreadMessageCountWithParams:completionHandler:]_block_invoke_3
 __66+[SBDMain getTotalUnreadMessageCountWithParams:completionHandler:]_block_invoke_2
 __66+[SBDMain getTotalUnreadMessageCountWithParams:completionHandler:]_block_invoke
-__59+[SBDMain getTotalUnreadChannelCountWithCompletionHandler:]_block_invoke_3
-__59+[SBDMain getTotalUnreadChannelCountWithCompletionHandler:]_block_invoke_2
-__59+[SBDMain getTotalUnreadChannelCountWithCompletionHandler:]_block_invoke
+__66+[SBDMain getTotalUnreadChannelCountWithParams:completionHandler:]_block_invoke_3
+__66+[SBDMain getTotalUnreadChannelCountWithParams:completionHandler:]_block_invoke_2
+__66+[SBDMain getTotalUnreadChannelCountWithParams:completionHandler:]_block_invoke
 __66+[SBDMain getChannelCountWithMemberStateFilter:completionHandler:]_block_invoke_3
 __66+[SBDMain getChannelCountWithMemberStateFilter:completionHandler:]_block_invoke_2
 __66+[SBDMain getChannelCountWithMemberStateFilter:completionHandler:]_block_invoke
@@ -3218,14 +3219,14 @@ __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke_2
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke.352
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke
 CFSwapInt64BigToHost
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
 CFSwapInt16BigToHost
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke.328
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke_2
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke
 validate_dispatch_data_partial_string
 NSMakeRange
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __56-[SendBird_SRWebSocket _readUntilBytes:length:callback:]_block_invoke
 __46-[SendBird_SRWebSocket _cleanupSelfReference:]_block_invoke
 __36-[SendBird_SRWebSocket _pumpWriting]_block_invoke.290
@@ -3627,9 +3628,9 @@ __OBJC_$_CATEGORY_NSString_$_SendBirdSDK
 /Users/ernest.hong/Dev/messaging-ios/SendBirdSDK/NSString+SBDMessage.m
 SendBirdSDK/NSString+SBDMessage.m
 CFStringGetCharacterFromInlineBuffer
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
 CFRangeMake
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
 CFStringInitInlineBuffer
 +[SBDUtils infersMimeTypeFromData:]
 +[SBDUtils infersMimeTypeFromFileName:andFile:]
@@ -4673,6 +4674,22 @@ __59-[SBDGroupChannelCollection loadMoreWithCompletionHandler:]_block_invoke.76
 __copy_helper_block_e8_32b40w
 __59-[SBDGroupChannelCollection loadMoreWithCompletionHandler:]_block_invoke
 __43-[SBDGroupChannelCollection initWithQuery:]_block_invoke
+-[SBDGroupChannelTotalUnreadChannelCountParams init]
+-[SBDGroupChannelTotalUnreadChannelCountParams customTypesFilter]
+-[SBDGroupChannelTotalUnreadChannelCountParams setCustomTypesFilter:]
+-[SBDGroupChannelTotalUnreadChannelCountParams superChannelFilter]
+-[SBDGroupChannelTotalUnreadChannelCountParams setSuperChannelFilter:]
+-[SBDGroupChannelTotalUnreadChannelCountParams .cxx_destruct]
+__OBJC_METACLASS_RO_$_SBDGroupChannelTotalUnreadChannelCountParams
+__OBJC_$_INSTANCE_METHODS_SBDGroupChannelTotalUnreadChannelCountParams
+_OBJC_IVAR_$_SBDGroupChannelTotalUnreadChannelCountParams._customTypesFilter
+_OBJC_IVAR_$_SBDGroupChannelTotalUnreadChannelCountParams._superChannelFilter
+__OBJC_$_INSTANCE_VARIABLES_SBDGroupChannelTotalUnreadChannelCountParams
+__OBJC_$_PROP_LIST_SBDGroupChannelTotalUnreadChannelCountParams
+__OBJC_CLASS_RO_$_SBDGroupChannelTotalUnreadChannelCountParams
+/Users/ernest.hong/Dev/messaging-ios/SendBirdSDK/SBDGroupChannelTotalUnreadChannelCountParams.m
+SendBirdSDK/SBDGroupChannelTotalUnreadChannelCountParams.m
+SendBirdSDK/SBDGroupChannelTotalUnreadChannelCountParams.h
 +[SBDValidators isValidCompletionHandler:]
 +[SBDValidators shouldHaltSystemEventWithEvent:error:]
 +[SBDValidators shouldHaltWithCommand:error:]
@@ -5165,6 +5182,7 @@ ___72-[SBDBaseChannel sendUserMessageWithParams:requestId:completionHandler:]_bl
 ___72-[SBDBaseChannel sendUserMessageWithParams:requestId:completionHandler:]_block_invoke_5
 ___72-[SBDBaseChannel sendUserMessageWithParams:requestId:completionHandler:]_block_invoke.135
 ___72-[SBDBaseChannel sendUserMessageWithParams:requestId:completionHandler:]_block_invoke_2.138
+___72-[SBDBaseChannel sendUserMessageWithParams:requestId:completionHandler:]_block_invoke_3.146
 -[SBDBaseChannel sendFileMessageWithBinaryData:filename:type:size:data:completionHandler:]
 -[SBDBaseChannel sendFileMessageWithBinaryData:filename:type:size:data:customType:completionHandler:]
 -[SBDBaseChannel sendFileMessageWithUrl:size:type:data:completionHandler:]
@@ -5181,32 +5199,32 @@ ___132-[SBDBaseChannel sendFileMessageWithBinaryData:filename:type:size:thumbnai
 -[SBDBaseChannel sendFileMessageWithParams:progressHandler:completionHandler:]
 ___78-[SBDBaseChannel sendFileMessageWithParams:progressHandler:completionHandler:]_block_invoke
 ___78-[SBDBaseChannel sendFileMessageWithParams:progressHandler:completionHandler:]_block_invoke_2
-___78-[SBDBaseChannel sendFileMessageWithParams:progressHandler:completionHandler:]_block_invoke.190
-___78-[SBDBaseChannel sendFileMessageWithParams:progressHandler:completionHandler:]_block_invoke_2.191
+___78-[SBDBaseChannel sendFileMessageWithParams:progressHandler:completionHandler:]_block_invoke.201
+___78-[SBDBaseChannel sendFileMessageWithParams:progressHandler:completionHandler:]_block_invoke_2.202
 -[SBDBaseChannel sendFileMessageWithParams:requestId:progressHandler:completionHandler:]
 -[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]
 ___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke
 ___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2
 ___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_3
-___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.213
-___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.217
-___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2.222
+___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.224
+___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.228
+___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2.233
 ___copy_helper_block_e8_32s40s48s56b64r
-___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.231
-___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2.232
+___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.242
+___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2.243
 ___copy_helper_block_e8_32s40s48b56r
 ___copy_helper_block_e8_32s40s48s56s64b72r
 ___destroy_helper_block_e8_32s40s48s56s64s72r
 ___copy_helper_block_e8_32b40s48s56w
-___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.246
+___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.257
 ___copy_helper_block_e8_32b40s48s56s64r
-___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.283
-___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2.292
-___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_3.293
+___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.291
+___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2.300
+___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_3.301
 ___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_4
 ___copy_helper_block_e8_32s40s48s56b64r72r
 ___destroy_helper_block_e8_32s40s48s56s64r72r
-___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.308
+___104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.315
 ___copy_helper_block_e8_32s40s48s56b64w
 ___destroy_helper_block_e8_32s40s48s56s64w
 -[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]
@@ -5214,9 +5232,9 @@ ___98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHand
 ___98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke_2
 ___98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke_3
 ___copy_helper_block_e8_32b40r
-___98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke.326
-___98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke_2.327
-___98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke_3.328
+___98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke.333
+___98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke_2.334
+___98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke_3.335
 ___copy_helper_block_e8_32b40b48r56r64r
 ___destroy_helper_block_e8_32s40s48r56r64r
 -[SBDBaseChannel resendFileMessageWithMessage:binaryData:completionHandler:]
@@ -5235,10 +5253,17 @@ ___85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completio
 ___85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_2
 ___85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_3
 ___85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_4
-___85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke.341
-___85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_2.362
-___85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_3.363
-___85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_4.370
+___copy_helper_block_e8_32s40s48s56s64s72b
+___destroy_helper_block_e8_32s40s48s56s64s72s
+___85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke.350
+___85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_2.367
+___85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_3.368
+___85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_4.375
+-[SBDBaseChannel sendFileMessageFallbackAPIWithCommand:channel:params:sender:wsError:pendingMessage:completionHandler:]
+___119-[SBDBaseChannel sendFileMessageFallbackAPIWithCommand:channel:params:sender:wsError:pendingMessage:completionHandler:]_block_invoke
+___119-[SBDBaseChannel sendFileMessageFallbackAPIWithCommand:channel:params:sender:wsError:pendingMessage:completionHandler:]_block_invoke_2
+___119-[SBDBaseChannel sendFileMessageFallbackAPIWithCommand:channel:params:sender:wsError:pendingMessage:completionHandler:]_block_invoke_3
+___copy_helper_block_e8_32s40s48b56s
 -[SBDBaseChannel createPreviousMessageListQuery]
 -[SBDBaseChannel createMessageListQuery]
 -[SBDBaseChannel createOperatorListQuery]
@@ -5477,7 +5502,7 @@ ___58-[SBDBaseChannel removeAllOperatorsWithCompletionHandler:]_block_invoke_2
 +[SBDBaseChannel getChannelWithUrl:channelType:completionHandler:]
 +[SBDBaseChannel getChannelFromServerWithUrl:channelType:]
 ___58+[SBDBaseChannel getChannelFromServerWithUrl:channelType:]_block_invoke
-___58+[SBDBaseChannel getChannelFromServerWithUrl:channelType:]_block_invoke.664
+___58+[SBDBaseChannel getChannelFromServerWithUrl:channelType:]_block_invoke.669
 +[SBDBaseChannel refreshChannelWithUrl:channelType:completionHandler:]
 +[SBDBaseChannel buildFromSerializedData:]
 -[SBDBaseChannel serialize]
@@ -5525,125 +5550,135 @@ _OBJC_CLASSLIST_REFERENCES_$_.111
 _OBJC_CLASSLIST_REFERENCES_$_.120
 _OBJC_CLASSLIST_REFERENCES_$_.123
 ___block_descriptor_56_e8_32s40s48bs_e35_v24?0"NSDictionary"8"SBDError"16l
+_OBJC_CLASSLIST_REFERENCES_$_.139
+___block_descriptor_56_e8_32bs40s48s_e21_v24?08"SBDError"16l
+___block_descriptor_56_e8_32s40s48bs_e33_v24?0"SBDCommand"8"SBDError"16l
+_OBJC_CLASSLIST_REFERENCES_$_.173
+_OBJC_CLASSLIST_REFERENCES_$_.180
+_OBJC_CLASSLIST_REFERENCES_$_.195
 ___block_descriptor_40_e8_32bs_e37_v24?0"SBDFileMessage"8"SBDError"16l
-_OBJC_CLASSLIST_REFERENCES_$_.216
+_OBJC_CLASSLIST_REFERENCES_$_.227
 ___block_descriptor_72_e8_32s40s48s56bs64r_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.233
 ___block_descriptor_64_e8_32s40s48bs56r_e37_v24?0"SBDFileMessage"8"SBDError"16l
 ___block_descriptor_80_e8_32s40s48s56s64bs72r_e5_v8?0l
 ___block_descriptor_64_e8_32bs40s48s56w_e58_v32?0"SBDCommand"8"SBDFileMessageParams"16"SBDError"24l
-_OBJC_CLASSLIST_REFERENCES_$_.265
+_OBJC_CLASSLIST_REFERENCES_$_.276
 ___block_descriptor_72_e8_32bs40s48s56s64r_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.278
-_OBJC_CLASSLIST_REFERENCES_$_.296
-_OBJC_SELECTOR_REFERENCES_.298
-_OBJC_SELECTOR_REFERENCES_.307
+_OBJC_SELECTOR_REFERENCES_.288
+_OBJC_SELECTOR_REFERENCES_.290
+_OBJC_CLASSLIST_REFERENCES_$_.304
 ___block_descriptor_80_e8_32s40s48s56bs64r72r_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.309
-_OBJC_SELECTOR_REFERENCES_.311
-_OBJC_SELECTOR_REFERENCES_.313
+_OBJC_CLASSLIST_REFERENCES_$_.316
 ___block_descriptor_72_e8_32s40s48s56bs64w_e5_v8?0l
 ___block_descriptor_72_e8_32bs40r_e5_v8?0l
 ___block_descriptor_48_e8_32bs40r_e14_v32?0q8q16q24l
 ___block_descriptor_72_e8_32bs40bs48r56r64r_e37_v24?0"SBDFileMessage"8"SBDError"16l
-___block_descriptor_48_e8_32s40bs_e33_v24?0"SBDCommand"8"SBDError"16l
+___block_descriptor_80_e8_32s40s48s56s64s72bs_e33_v24?0"SBDCommand"8"SBDError"16l
+_OBJC_SELECTOR_REFERENCES_.352
 ___block_descriptor_56_e8_32s40bs48s_e21_v24?08"SBDError"16l
-_OBJC_CLASSLIST_REFERENCES_$_.373
-_OBJC_SELECTOR_REFERENCES_.375
-_OBJC_CLASSLIST_REFERENCES_$_.376
-_OBJC_CLASSLIST_REFERENCES_$_.377
+___block_descriptor_64_e8_32s40s48bs56s_e21_v24?08"SBDError"16l
 _OBJC_CLASSLIST_REFERENCES_$_.378
 _OBJC_CLASSLIST_REFERENCES_$_.381
+_OBJC_CLASSLIST_REFERENCES_$_.382
+_OBJC_CLASSLIST_REFERENCES_$_.383
+_OBJC_CLASSLIST_REFERENCES_$_.386
+_OBJC_SELECTOR_REFERENCES_.392
+_OBJC_SELECTOR_REFERENCES_.394
+_OBJC_SELECTOR_REFERENCES_.396
 _OBJC_SELECTOR_REFERENCES_.398
-_OBJC_SELECTOR_REFERENCES_.400
-_OBJC_SELECTOR_REFERENCES_.404
-_OBJC_SELECTOR_REFERENCES_.410
+_OBJC_SELECTOR_REFERENCES_.405
+_OBJC_SELECTOR_REFERENCES_.415
+_OBJC_SELECTOR_REFERENCES_.417
+_OBJC_SELECTOR_REFERENCES_.419
 ___block_descriptor_56_e8_32s40bs48w_e35_v24?0"NSDictionary"8"SBDError"16l
-_OBJC_SELECTOR_REFERENCES_.416
-_OBJC_SELECTOR_REFERENCES_.422
+_OBJC_SELECTOR_REFERENCES_.421
+_OBJC_SELECTOR_REFERENCES_.425
+_OBJC_SELECTOR_REFERENCES_.427
 ___block_descriptor_48_e8_32bs40w_e35_v24?0"NSDictionary"8"SBDError"16l
-_OBJC_SELECTOR_REFERENCES_.424
-_OBJC_SELECTOR_REFERENCES_.428
-_OBJC_SELECTOR_REFERENCES_.432
-_OBJC_SELECTOR_REFERENCES_.442
-_OBJC_SELECTOR_REFERENCES_.444
+_OBJC_SELECTOR_REFERENCES_.429
+_OBJC_SELECTOR_REFERENCES_.431
+_OBJC_SELECTOR_REFERENCES_.433
+_OBJC_SELECTOR_REFERENCES_.435
+_OBJC_SELECTOR_REFERENCES_.437
+_OBJC_SELECTOR_REFERENCES_.439
+_OBJC_SELECTOR_REFERENCES_.443
+_OBJC_SELECTOR_REFERENCES_.447
+_OBJC_SELECTOR_REFERENCES_.449
 ___block_descriptor_56_e8_32bs40s48s_e33_v24?0"SBDCommand"8"SBDError"16l
-_OBJC_SELECTOR_REFERENCES_.448
-_OBJC_SELECTOR_REFERENCES_.450
+_OBJC_SELECTOR_REFERENCES_.453
 ___block_descriptor_48_e8_32bs40s_e21_v24?08"SBDError"16l
-_OBJC_SELECTOR_REFERENCES_.456
-_OBJC_CLASSLIST_REFERENCES_$_.457
+_OBJC_SELECTOR_REFERENCES_.461
+_OBJC_CLASSLIST_REFERENCES_$_.462
 _OBJC_CLASSLIST_REFERENCES_$_.463
 _OBJC_SELECTOR_REFERENCES_.465
-_OBJC_SELECTOR_REFERENCES_.467
-_OBJC_SELECTOR_REFERENCES_.469
-_OBJC_SELECTOR_REFERENCES_.477
-_OBJC_SELECTOR_REFERENCES_.479
-_OBJC_SELECTOR_REFERENCES_.483
-_OBJC_SELECTOR_REFERENCES_.485
-_OBJC_SELECTOR_REFERENCES_.487
-_OBJC_CLASSLIST_REFERENCES_$_.488
+_OBJC_CLASSLIST_REFERENCES_$_.468
+_OBJC_SELECTOR_REFERENCES_.470
+_OBJC_SELECTOR_REFERENCES_.472
+_OBJC_SELECTOR_REFERENCES_.474
+_OBJC_SELECTOR_REFERENCES_.476
+_OBJC_SELECTOR_REFERENCES_.478
 _OBJC_SELECTOR_REFERENCES_.490
 _OBJC_SELECTOR_REFERENCES_.492
-___block_descriptor_48_e8_32s40bs_e21_v20?0B8"SBDError"12l
+_OBJC_CLASSLIST_REFERENCES_$_.493
 _OBJC_SELECTOR_REFERENCES_.495
-___block_descriptor_48_e8_32s40bs_e37_v24?0"SBDFileMessage"8"SBDError"16l
-_OBJC_CLASSLIST_REFERENCES_$_.506
+_OBJC_SELECTOR_REFERENCES_.497
+___block_descriptor_48_e8_32s40bs_e21_v20?0B8"SBDError"12l
+_OBJC_SELECTOR_REFERENCES_.500
 _OBJC_SELECTOR_REFERENCES_.508
 _OBJC_SELECTOR_REFERENCES_.510
-_OBJC_CLASSLIST_REFERENCES_$_.515
+___block_descriptor_48_e8_32s40bs_e37_v24?0"SBDFileMessage"8"SBDError"16l
+_OBJC_CLASSLIST_REFERENCES_$_.511
+_OBJC_SELECTOR_REFERENCES_.513
+_OBJC_SELECTOR_REFERENCES_.515
 _OBJC_SELECTOR_REFERENCES_.517
-_OBJC_SELECTOR_REFERENCES_.519
-_OBJC_SELECTOR_REFERENCES_.521
-_OBJC_SELECTOR_REFERENCES_.529
-_OBJC_SELECTOR_REFERENCES_.531
-_OBJC_SELECTOR_REFERENCES_.533
-_OBJC_SELECTOR_REFERENCES_.539
-_OBJC_CLASSLIST_REFERENCES_$_.540
-_OBJC_SELECTOR_REFERENCES_.542
+_OBJC_CLASSLIST_REFERENCES_$_.520
+_OBJC_SELECTOR_REFERENCES_.526
+_OBJC_SELECTOR_REFERENCES_.534
+_OBJC_SELECTOR_REFERENCES_.538
 _OBJC_SELECTOR_REFERENCES_.544
+_OBJC_CLASSLIST_REFERENCES_$_.545
+_OBJC_SELECTOR_REFERENCES_.547
+_OBJC_SELECTOR_REFERENCES_.549
+_OBJC_SELECTOR_REFERENCES_.551
+_OBJC_SELECTOR_REFERENCES_.553
+_OBJC_SELECTOR_REFERENCES_.555
+_OBJC_SELECTOR_REFERENCES_.559
 ___block_descriptor_48_e8_32bs40s_e33_v24?0"SBDCommand"8"SBDError"16l
 ___block_descriptor_73_e8_32bs40s_e5_v8?0l
-_OBJC_SELECTOR_REFERENCES_.576
-_OBJC_CLASSLIST_REFERENCES_$_.577
-_OBJC_SELECTOR_REFERENCES_.593
-_OBJC_SELECTOR_REFERENCES_.595
-_OBJC_CLASSLIST_REFERENCES_$_.608
-_OBJC_SELECTOR_REFERENCES_.618
-_OBJC_SELECTOR_REFERENCES_.622
-_OBJC_SELECTOR_REFERENCES_.638
-_OBJC_SELECTOR_REFERENCES_.640
-_OBJC_SELECTOR_REFERENCES_.642
-_OBJC_SELECTOR_REFERENCES_.644
-_OBJC_SELECTOR_REFERENCES_.648
-_OBJC_SELECTOR_REFERENCES_.650
-_OBJC_SELECTOR_REFERENCES_.652
-_OBJC_SELECTOR_REFERENCES_.654
-_OBJC_SELECTOR_REFERENCES_.656
-_OBJC_SELECTOR_REFERENCES_.658
-_OBJC_SELECTOR_REFERENCES_.660
+_OBJC_SELECTOR_REFERENCES_.571
+_OBJC_SELECTOR_REFERENCES_.575
+_OBJC_CLASSLIST_REFERENCES_$_.582
+_OBJC_SELECTOR_REFERENCES_.584
+_OBJC_SELECTOR_REFERENCES_.586
+_OBJC_SELECTOR_REFERENCES_.588
+_OBJC_SELECTOR_REFERENCES_.592
+_OBJC_SELECTOR_REFERENCES_.594
+_OBJC_SELECTOR_REFERENCES_.598
+_OBJC_SELECTOR_REFERENCES_.600
+_OBJC_SELECTOR_REFERENCES_.610
+_OBJC_CLASSLIST_REFERENCES_$_.613
+_OBJC_SELECTOR_REFERENCES_.627
+_OBJC_SELECTOR_REFERENCES_.637
+_OBJC_SELECTOR_REFERENCES_.639
+_OBJC_SELECTOR_REFERENCES_.645
+_OBJC_SELECTOR_REFERENCES_.647
+_OBJC_SELECTOR_REFERENCES_.657
+_OBJC_SELECTOR_REFERENCES_.665
 ___block_descriptor_56_e8_32s40r48r_e38_v24?0"SBDGroupChannel"8"SBDError"16l
+_OBJC_SELECTOR_REFERENCES_.668
 ___block_descriptor_56_e8_32s40r48r_e37_v24?0"SBDOpenChannel"8"SBDError"16l
-_OBJC_SELECTOR_REFERENCES_.667
-_OBJC_SELECTOR_REFERENCES_.669
-_OBJC_SELECTOR_REFERENCES_.671
-_OBJC_CLASSLIST_REFERENCES_$_.672
 _OBJC_SELECTOR_REFERENCES_.674
-_OBJC_SELECTOR_REFERENCES_.678
-_OBJC_SELECTOR_REFERENCES_.680
-_OBJC_SELECTOR_REFERENCES_.684
-_OBJC_SELECTOR_REFERENCES_.686
-_OBJC_SELECTOR_REFERENCES_.690
-_OBJC_SELECTOR_REFERENCES_.692
-_OBJC_SELECTOR_REFERENCES_.694
-_OBJC_SELECTOR_REFERENCES_.696
-_OBJC_SELECTOR_REFERENCES_.698
-_OBJC_SELECTOR_REFERENCES_.700
-_OBJC_SELECTOR_REFERENCES_.702
-_OBJC_SELECTOR_REFERENCES_.704
-_OBJC_SELECTOR_REFERENCES_.706
-_OBJC_CLASSLIST_REFERENCES_$_.710
-_OBJC_SELECTOR_REFERENCES_.712
+_OBJC_CLASSLIST_REFERENCES_$_.677
+_OBJC_SELECTOR_REFERENCES_.685
+_OBJC_SELECTOR_REFERENCES_.689
+_OBJC_SELECTOR_REFERENCES_.691
+_OBJC_SELECTOR_REFERENCES_.695
+_OBJC_SELECTOR_REFERENCES_.707
+_OBJC_CLASSLIST_REFERENCES_$_.712
+_OBJC_SELECTOR_REFERENCES_.714
+_OBJC_CLASSLIST_REFERENCES_$_.715
+_OBJC_SELECTOR_REFERENCES_.717
+_OBJC_SELECTOR_REFERENCES_.721
 __OBJC_$_CLASS_METHODS_SBDBaseChannel
 __OBJC_METACLASS_RO_$_SBDBaseChannel
 __OBJC_$_INSTANCE_METHODS_SBDBaseChannel
@@ -5668,7 +5703,7 @@ __OBJC_CLASS_RO_$_SBDBaseChannel
 /Users/ernest.hong/Dev/messaging-ios/SendBirdSDK/SBDBaseChannel.m
 SendBirdSDK/SBDBaseChannel.m
 SendBirdSDK/SBDBaseChannel.h
-__58+[SBDBaseChannel getChannelFromServerWithUrl:channelType:]_block_invoke.664
+__58+[SBDBaseChannel getChannelFromServerWithUrl:channelType:]_block_invoke.669
 __58+[SBDBaseChannel getChannelFromServerWithUrl:channelType:]_block_invoke
 __58-[SBDBaseChannel removeAllOperatorsWithCompletionHandler:]_block_invoke_2
 __58-[SBDBaseChannel removeAllOperatorsWithCompletionHandler:]_block_invoke
@@ -5804,10 +5839,16 @@ __60-[SBDBaseChannel getMetaCountersWithKeys:completionHandler:]_block_invoke
 __55-[SBDBaseChannel createMetaCounters:completionHandler:]_block_invoke_3
 __55-[SBDBaseChannel createMetaCounters:completionHandler:]_block_invoke_2
 __55-[SBDBaseChannel createMetaCounters:completionHandler:]_block_invoke
-__85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_4.370
-__85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_3.363
-__85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_2.362
-__85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke.341
+__copy_helper_block_e8_32s40s48b56s
+__119-[SBDBaseChannel sendFileMessageFallbackAPIWithCommand:channel:params:sender:wsError:pendingMessage:completionHandler:]_block_invoke_3
+__119-[SBDBaseChannel sendFileMessageFallbackAPIWithCommand:channel:params:sender:wsError:pendingMessage:completionHandler:]_block_invoke_2
+__119-[SBDBaseChannel sendFileMessageFallbackAPIWithCommand:channel:params:sender:wsError:pendingMessage:completionHandler:]_block_invoke
+__85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_4.375
+__85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_3.368
+__85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_2.367
+__85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke.350
+__destroy_helper_block_e8_32s40s48s56s64s72s
+__copy_helper_block_e8_32s40s48s56s64s72b
 __85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_4
 __85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_3
 __85-[SBDBaseChannel sendFileMessageWithCommand:params:channel:sender:completionHandler:]_block_invoke_2
@@ -5823,43 +5864,44 @@ __92-[SBDBaseChannel resendFileMessageWithMessage:binaryData:progressHandler:com
 __92-[SBDBaseChannel resendFileMessageWithMessage:binaryData:progressHandler:completionHandler:]_block_invoke
 __destroy_helper_block_e8_32s40s48r56r64r
 __copy_helper_block_e8_32b40b48r56r64r
-__98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke_3.328
-__98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke_2.327
-__98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke.326
+__98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke_3.335
+__98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke_2.334
+__98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke.333
 __copy_helper_block_e8_32b40r
 __98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke_3
 __98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke_2
 __98-[SBDBaseChannel sendFileMessagesWithParams:progressHandler:sentMessageHandler:completionHandler:]_block_invoke
 __destroy_helper_block_e8_32s40s48s56s64w
 __copy_helper_block_e8_32s40s48s56b64w
-__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.308
+__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.315
 __destroy_helper_block_e8_32s40s48s56s64r72r
 __copy_helper_block_e8_32s40s48s56b64r72r
 __104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_4
-__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_3.293
-__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2.292
-__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.283
+__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_3.301
+__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2.300
+__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.291
 __copy_helper_block_e8_32b40s48s56s64r
-__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.246
+__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.257
 __copy_helper_block_e8_32b40s48s56w
 __destroy_helper_block_e8_32s40s48s56s64s72r
 __copy_helper_block_e8_32s40s48s56s64b72r
 __copy_helper_block_e8_32s40s48b56r
-__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2.232
-__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.231
+__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2.243
+__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.242
 __copy_helper_block_e8_32s40s48s56b64r
-__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2.222
-__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.217
-__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.213
+__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2.233
+__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.228
+__104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke.224
 __104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_3
 __104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke_2
 __104-[SBDBaseChannel sendFileMessageWithParams:requestId:originalMessage:progressHandler:completionHandler:]_block_invoke
-__78-[SBDBaseChannel sendFileMessageWithParams:progressHandler:completionHandler:]_block_invoke_2.191
-__78-[SBDBaseChannel sendFileMessageWithParams:progressHandler:completionHandler:]_block_invoke.190
+__78-[SBDBaseChannel sendFileMessageWithParams:progressHandler:completionHandler:]_block_invoke_2.202
+__78-[SBDBaseChannel sendFileMessageWithParams:progressHandler:completionHandler:]_block_invoke.201
 __78-[SBDBaseChannel sendFileMessageWithParams:progressHandler:completionHandler:]_block_invoke_2
 __78-[SBDBaseChannel sendFileMessageWithParams:progressHandler:completionHandler:]_block_invoke
 __132-[SBDBaseChannel sendFileMessageWithBinaryData:filename:type:size:thumbnailSizes:data:customType:progressHandler:completionHandler:]_block_invoke
 __94-[SBDBaseChannel sendFileMessageWithUrl:filename:size:type:data:customType:completionHandler:]_block_invoke
+__72-[SBDBaseChannel sendUserMessageWithParams:requestId:completionHandler:]_block_invoke_3.146
 __72-[SBDBaseChannel sendUserMessageWithParams:requestId:completionHandler:]_block_invoke_2.138
 __72-[SBDBaseChannel sendUserMessageWithParams:requestId:completionHandler:]_block_invoke.135
 __72-[SBDBaseChannel sendUserMessageWithParams:requestId:completionHandler:]_block_invoke_5
@@ -6552,7 +6594,7 @@ ___27-[SBDCoreAPIClient prepare]_block_invoke
 -[SBDCoreAPIClient blockUserWithBlockerUserId:targetUserId:completionHandler:]
 -[SBDCoreAPIClient unblockUserWithBlockerUserId:targetUserId:completionHandler:]
 -[SBDCoreAPIClient getTotalUnreadMessageChannelCustomTypes:superChannelFilter:completionHandler:]
--[SBDCoreAPIClient getTotalUnreadChannelCountWithCompletionHandler:]
+-[SBDCoreAPIClient getTotalUnreadChannelCountWithParams:completionHandler:]
 -[SBDCoreAPIClient updateCurrentUserInfoWithPreferredLanguages:completionHandler:]
 -[SBDCoreAPIClient setDoNotDisturbWithEnable:startHour:startMin:endHour:endMin:timezone:completionHandler:]
 -[SBDCoreAPIClient getDoNotDisturbWithCompletionHandler:]
@@ -6656,9 +6698,12 @@ _shared.p
 _shared._sharedObject
 ___block_descriptor_48_e8_32s40r_e18_v16?0"SBDError"8l
 _OBJC_SELECTOR_REFERENCES_.257
-_OBJC_SELECTOR_REFERENCES_.288
+_OBJC_SELECTOR_REFERENCES_.298
 _OBJC_CLASSLIST_REFERENCES_$_.305
+_OBJC_SELECTOR_REFERENCES_.307
 _OBJC_SELECTOR_REFERENCES_.309
+_OBJC_SELECTOR_REFERENCES_.311
+_OBJC_SELECTOR_REFERENCES_.313
 _OBJC_SELECTOR_REFERENCES_.327
 __OBJC_$_CLASS_METHODS_SBDCoreAPIClient
 __OBJC_METACLASS_RO_$_SBDCoreAPIClient
@@ -6706,7 +6751,6 @@ ___38-[SendBird_SRProxyConnect _writeData:]_block_invoke
 ___block_descriptor_48_e8_32s40w_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
 _OBJC_CLASSLIST_REFERENCES_$_.97
 _OBJC_CLASSLIST_REFERENCES_$_.118
-_OBJC_CLASSLIST_REFERENCES_$_.195
 __OBJC_CLASS_PROTOCOLS_$_SendBird_SRProxyConnect
 __OBJC_METACLASS_RO_$_SendBird_SRProxyConnect
 __OBJC_$_INSTANCE_METHODS_SendBird_SRProxyConnect
@@ -7341,53 +7385,59 @@ _OBJC_IVAR_$_SBDGroupChannel._typingStatusLock
 _OBJC_SELECTOR_REFERENCES_.371
 _OBJC_IVAR_$_SBDGroupChannel._memberMapLock
 _OBJC_SELECTOR_REFERENCES_.373
-_OBJC_SELECTOR_REFERENCES_.392
-_OBJC_SELECTOR_REFERENCES_.394
-_OBJC_SELECTOR_REFERENCES_.396
+_OBJC_SELECTOR_REFERENCES_.375
+_OBJC_CLASSLIST_REFERENCES_$_.376
+_OBJC_SELECTOR_REFERENCES_.400
 _OBJC_SELECTOR_REFERENCES_.402
+_OBJC_SELECTOR_REFERENCES_.404
 _OBJC_SELECTOR_REFERENCES_.406
 _OBJC_SELECTOR_REFERENCES_.408
+_OBJC_SELECTOR_REFERENCES_.410
+_OBJC_SELECTOR_REFERENCES_.416
+_OBJC_SELECTOR_REFERENCES_.422
+_OBJC_SELECTOR_REFERENCES_.424
+_OBJC_SELECTOR_REFERENCES_.428
+_OBJC_SELECTOR_REFERENCES_.432
 _OBJC_SELECTOR_REFERENCES_.440
+_OBJC_SELECTOR_REFERENCES_.442
+_OBJC_SELECTOR_REFERENCES_.444
 _OBJC_SELECTOR_REFERENCES_.446
+_OBJC_SELECTOR_REFERENCES_.448
+_OBJC_SELECTOR_REFERENCES_.450
 _OBJC_SELECTOR_REFERENCES_.454
+_OBJC_SELECTOR_REFERENCES_.456
 _OBJC_SELECTOR_REFERENCES_.458
 ___block_descriptor_40_e8_32bs_e38_v24?0"SBDGroupChannel"8"SBDError"16l
-_OBJC_SELECTOR_REFERENCES_.461
 ___block_descriptor_49_e8_32bs40s_e18_v16?0"SBDError"8l
 _OBJC_SELECTOR_REFERENCES_.463
 _OBJC_CLASSLIST_REFERENCES_$_.464
 _OBJC_SELECTOR_REFERENCES_.466
 ___block_descriptor_41_e8_32bs_e5_v8?0l
-_OBJC_SELECTOR_REFERENCES_.470
-_OBJC_SELECTOR_REFERENCES_.472
-_OBJC_SELECTOR_REFERENCES_.476
-_OBJC_SELECTOR_REFERENCES_.478
 _OBJC_CLASSLIST_REFERENCES_$_.483
+_OBJC_SELECTOR_REFERENCES_.485
+_OBJC_SELECTOR_REFERENCES_.487
 _OBJC_SELECTOR_REFERENCES_.489
 _OBJC_SELECTOR_REFERENCES_.493
-_OBJC_SELECTOR_REFERENCES_.497
 _OBJC_SELECTOR_REFERENCES_.499
 _OBJC_SELECTOR_REFERENCES_.511
 _OBJC_SELECTOR_REFERENCES_.523
+_OBJC_SELECTOR_REFERENCES_.529
 _OBJC_CLASSLIST_REFERENCES_$_.546
 _OBJC_SELECTOR_REFERENCES_.556
 _OBJC_SELECTOR_REFERENCES_.560
 _OBJC_SELECTOR_REFERENCES_.568
+_OBJC_SELECTOR_REFERENCES_.576
 _OBJC_SELECTOR_REFERENCES_.582
-_OBJC_SELECTOR_REFERENCES_.584
-_OBJC_SELECTOR_REFERENCES_.586
-_OBJC_SELECTOR_REFERENCES_.588
-_OBJC_SELECTOR_REFERENCES_.594
-_OBJC_SELECTOR_REFERENCES_.600
 _OBJC_SELECTOR_REFERENCES_.602
 _OBJC_SELECTOR_REFERENCES_.604
 _OBJC_SELECTOR_REFERENCES_.606
 _OBJC_SELECTOR_REFERENCES_.608
-_OBJC_SELECTOR_REFERENCES_.610
 _OBJC_SELECTOR_REFERENCES_.612
 _OBJC_SELECTOR_REFERENCES_.614
 _OBJC_SELECTOR_REFERENCES_.616
+_OBJC_SELECTOR_REFERENCES_.618
 _OBJC_SELECTOR_REFERENCES_.620
+_OBJC_SELECTOR_REFERENCES_.622
 _OBJC_SELECTOR_REFERENCES_.624
 _OBJC_SELECTOR_REFERENCES_.626
 _OBJC_SELECTOR_REFERENCES_.628
@@ -7395,10 +7445,10 @@ _OBJC_IVAR_$_SBDGroupChannel._unreadMessageCount
 _OBJC_IVAR_$_SBDGroupChannel._unreadMentionCount
 _lastMarkAsReadAllTimestamp
 _OBJC_CLASSLIST_REFERENCES_$_.635
-_OBJC_SELECTOR_REFERENCES_.637
-_OBJC_SELECTOR_REFERENCES_.639
 ___block_descriptor_48_e8_32s40bs_e18_v16?0"SBDError"8l
 ___block_descriptor_32_e38_v24?0"SBDGroupChannel"8"SBDError"16l
+_OBJC_SELECTOR_REFERENCES_.644
+_OBJC_SELECTOR_REFERENCES_.648
 _OBJC_IVAR_$_SBDGroupChannel._cachedTypingStatus
 _OBJC_IVAR_$_SBDGroupChannel._lastStartTypingTimestamp
 _OBJC_IVAR_$_SBDGroupChannel._lastEndTypingTimestamp
@@ -7407,12 +7457,14 @@ _OBJC_IVAR_$_SBDGroupChannel._hasBeenUpdated
 _OBJC_IVAR_$_SBDGroupChannel._isHidden
 _OBJC_CLASSLIST_REFERENCES_$_.649
 _OBJC_CLASSLIST_REFERENCES_$_.654
+_OBJC_SELECTOR_REFERENCES_.656
 _OBJC_IVAR_$_SBDGroupChannel._lastMessage
 _OBJC_IVAR_$_SBDGroupChannel._isSuper
 _OBJC_IVAR_$_SBDGroupChannel._isBroadcast
 _OBJC_IVAR_$_SBDGroupChannel._isPublic
 _OBJC_IVAR_$_SBDGroupChannel._discoverable
 _OBJC_IVAR_$_SBDGroupChannel._isDistinct
+_OBJC_SELECTOR_REFERENCES_.658
 _OBJC_IVAR_$_SBDGroupChannel._members
 _OBJC_IVAR_$_SBDGroupChannel._memberMap
 _OBJC_CLASSLIST_REFERENCES_$_.659
@@ -7426,11 +7478,14 @@ _OBJC_IVAR_$_SBDGroupChannel._inviter
 _OBJC_IVAR_$_SBDGroupChannel._myMemberState
 _OBJC_IVAR_$_SBDGroupChannel._memberCountUpdatedAt
 _OBJC_IVAR_$_SBDGroupChannel._joinedAt
+_OBJC_SELECTOR_REFERENCES_.667
 _OBJC_IVAR_$_SBDGroupChannel._myRole
+_OBJC_SELECTOR_REFERENCES_.669
 _OBJC_IVAR_$_SBDGroupChannel._myMutedState
 _OBJC_IVAR_$_SBDGroupChannel._myCountPreference
 _OBJC_IVAR_$_SBDGroupChannel._invitedAt
 _OBJC_IVAR_$_SBDGroupChannel._accessCodeRequired
+_OBJC_SELECTOR_REFERENCES_.671
 _OBJC_IVAR_$_SBDGroupChannel._hiddenState
 _OBJC_IVAR_$_SBDGroupChannel._myLastRead
 _OBJC_SELECTOR_REFERENCES_.673
@@ -7438,11 +7493,19 @@ _OBJC_IVAR_$_SBDGroupChannel._messageSurvivalSeconds
 _OBJC_SELECTOR_REFERENCES_.677
 _OBJC_CLASSLIST_REFERENCES_$_.680
 _OBJC_SELECTOR_REFERENCES_.682
+_OBJC_SELECTOR_REFERENCES_.684
+_OBJC_SELECTOR_REFERENCES_.686
 _OBJC_SELECTOR_REFERENCES_.688
+_OBJC_SELECTOR_REFERENCES_.690
+_OBJC_SELECTOR_REFERENCES_.692
 _OBJC_CLASSLIST_REFERENCES_$_.693
+_OBJC_SELECTOR_REFERENCES_.698
+_OBJC_SELECTOR_REFERENCES_.700
+_OBJC_SELECTOR_REFERENCES_.702
+_OBJC_SELECTOR_REFERENCES_.704
+_OBJC_SELECTOR_REFERENCES_.706
 _OBJC_SELECTOR_REFERENCES_.708
 _OBJC_SELECTOR_REFERENCES_.710
-_OBJC_SELECTOR_REFERENCES_.714
 _OBJC_SELECTOR_REFERENCES_.718
 _OBJC_SELECTOR_REFERENCES_.720
 _OBJC_SELECTOR_REFERENCES_.722
@@ -8132,7 +8195,7 @@ ___136-[SBDPlatformAPIClient uploadBinaryData:filename:mimeType:thumbnailSizes:c
 -[SBDPlatformAPIClient blockUserWithBlockerUserId:targetUserId:completionHandler:]
 -[SBDPlatformAPIClient unblockUserWithBlockerUserId:targetUserId:completionHandler:]
 -[SBDPlatformAPIClient getTotalUnreadMessageCountWithUserId:channelCustomTypes:superChannelFilter:completionHandler:]
--[SBDPlatformAPIClient getTotalUnreadChannelCountWithUserId:completionHandler:]
+-[SBDPlatformAPIClient getTotalUnreadChannelCountWithUserId:params:completionHandler:]
 -[SBDPlatformAPIClient updateCurrentUserInfoWithPreferredLanguages:userId:completionHandler:]
 -[SBDPlatformAPIClient setDoNotDisturbWithEnable:startHour:startMin:endHour:endMin:timezone:userId:completionHandler:]
 ___118-[SBDPlatformAPIClient setDoNotDisturbWithEnable:startHour:startMin:endHour:endMin:timezone:userId:completionHandler:]_block_invoke
@@ -8237,31 +8300,33 @@ ___71-[SBDPlatformAPIClient enableReaction:applicationId:completionHandler:]_blo
 -[SBDPlatformAPIClient .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.70
 _OBJC_CLASSLIST_REFERENCES_$_.182
-_OBJC_SELECTOR_REFERENCES_.290
 ___block_descriptor_32_e29_16?0"SBDMessageMetaArray"8l
 ___block_literal_global.312
 ___block_literal_global.319
-_OBJC_SELECTOR_REFERENCES_.431
-_OBJC_SELECTOR_REFERENCES_.433
-_OBJC_SELECTOR_REFERENCES_.447
 _OBJC_SELECTOR_REFERENCES_.451
+_OBJC_SELECTOR_REFERENCES_.467
+_OBJC_SELECTOR_REFERENCES_.477
+_OBJC_SELECTOR_REFERENCES_.479
 _OBJC_SELECTOR_REFERENCES_.481
+_OBJC_SELECTOR_REFERENCES_.483
 _OBJC_CLASSLIST_REFERENCES_$_.504
 _OBJC_SELECTOR_REFERENCES_.506
-_OBJC_SELECTOR_REFERENCES_.534
 _OBJC_CLASSLIST_REFERENCES_$_.535
 _OBJC_SELECTOR_REFERENCES_.537
+_OBJC_SELECTOR_REFERENCES_.539
 ___block_descriptor_40_e8_32s_e24_v32?0"NSValue"8Q16^B24l
 _OBJC_SELECTOR_REFERENCES_.578
-_OBJC_SELECTOR_REFERENCES_.668
-_OBJC_CLASSLIST_REFERENCES_$_.741
-_OBJC_SELECTOR_REFERENCES_.781
-_OBJC_SELECTOR_REFERENCES_.791
-_OBJC_SELECTOR_REFERENCES_.815
+_OBJC_SELECTOR_REFERENCES_.680
+_OBJC_SELECTOR_REFERENCES_.696
+_OBJC_CLASSLIST_REFERENCES_$_.745
+_OBJC_SELECTOR_REFERENCES_.785
+_OBJC_SELECTOR_REFERENCES_.795
+_OBJC_SELECTOR_REFERENCES_.819
 _OBJC_SELECTOR_REFERENCES_.833
-_OBJC_SELECTOR_REFERENCES_.851
-_OBJC_SELECTOR_REFERENCES_.875
+_OBJC_SELECTOR_REFERENCES_.849
+_OBJC_SELECTOR_REFERENCES_.855
 _OBJC_SELECTOR_REFERENCES_.879
+_OBJC_SELECTOR_REFERENCES_.883
 __OBJC_$_CLASS_METHODS_SBDPlatformAPIClient
 __OBJC_METACLASS_RO_$_SBDPlatformAPIClient
 __OBJC_$_INSTANCE_METHODS_SBDPlatformAPIClient
@@ -8503,54 +8568,37 @@ _OBJC_CLASSLIST_REFERENCES_$_.393
 ___block_descriptor_56_e8_32s40s48r_e40_v28?0"SBDBaseChannel"8B16"SBDError"20l
 _OBJC_CLASSLIST_REFERENCES_$_.398
 _OBJC_CLASSLIST_REFERENCES_$_.415
-_OBJC_SELECTOR_REFERENCES_.417
 _OBJC_CLASSLIST_REFERENCES_$_.418
-_OBJC_SELECTOR_REFERENCES_.425
-_OBJC_SELECTOR_REFERENCES_.427
-_OBJC_SELECTOR_REFERENCES_.429
-_OBJC_SELECTOR_REFERENCES_.435
-_OBJC_SELECTOR_REFERENCES_.437
-_OBJC_SELECTOR_REFERENCES_.439
 _OBJC_SELECTOR_REFERENCES_.441
-_OBJC_SELECTOR_REFERENCES_.443
-_OBJC_SELECTOR_REFERENCES_.449
-_OBJC_SELECTOR_REFERENCES_.453
 _OBJC_SELECTOR_REFERENCES_.464
 _OBJC_CLASSLIST_REFERENCES_$_.465
+_OBJC_SELECTOR_REFERENCES_.469
 _OBJC_CLASSLIST_REFERENCES_$_.482
 _OBJC_SELECTOR_REFERENCES_.486
 _OBJC_SELECTOR_REFERENCES_.494
 _OBJC_SELECTOR_REFERENCES_.496
 _OBJC_SELECTOR_REFERENCES_.498
-_OBJC_SELECTOR_REFERENCES_.500
 _OBJC_SELECTOR_REFERENCES_.502
 _OBJC_SELECTOR_REFERENCES_.504
 ___block_descriptor_48_e8_32s40s_e26_v32?0"SBDMember"8Q16^B24l
 _OBJC_CLASSLIST_REFERENCES_$_.508
 _OBJC_SELECTOR_REFERENCES_.518
-_OBJC_SELECTOR_REFERENCES_.526
 _OBJC_CLASSLIST_REFERENCES_$_.529
+_OBJC_SELECTOR_REFERENCES_.531
+_OBJC_SELECTOR_REFERENCES_.533
 _OBJC_SELECTOR_REFERENCES_.535
 _OBJC_SELECTOR_REFERENCES_.545
-_OBJC_SELECTOR_REFERENCES_.547
-_OBJC_SELECTOR_REFERENCES_.549
-_OBJC_SELECTOR_REFERENCES_.551
-_OBJC_SELECTOR_REFERENCES_.553
-_OBJC_SELECTOR_REFERENCES_.555
-_OBJC_SELECTOR_REFERENCES_.559
 _OBJC_SELECTOR_REFERENCES_.561
 _OBJC_SELECTOR_REFERENCES_.563
 _OBJC_SELECTOR_REFERENCES_.565
 _OBJC_SELECTOR_REFERENCES_.567
 _OBJC_SELECTOR_REFERENCES_.569
-_OBJC_SELECTOR_REFERENCES_.571
 _OBJC_SELECTOR_REFERENCES_.573
-_OBJC_SELECTOR_REFERENCES_.575
+_OBJC_SELECTOR_REFERENCES_.593
 _OBJC_SELECTOR_REFERENCES_.599
 _OBJC_SELECTOR_REFERENCES_.601
 _OBJC_SELECTOR_REFERENCES_.603
 _OBJC_SELECTOR_REFERENCES_.617
-_OBJC_SELECTOR_REFERENCES_.627
 _OBJC_SELECTOR_REFERENCES_.633
 _OBJC_SELECTOR_REFERENCES_.635
 __OBJC_METACLASS_RO_$_SBDCommandProcessor
@@ -8720,6 +8768,7 @@ _cachedChannels
 ___block_descriptor_40_e8_32bs_e40_v28?0"SBDOpenChannel"8B16"SBDError"20l
 _enteredChannels
 ___block_descriptor_40_e8_32bs_e37_v24?0"SBDOpenChannel"8"SBDError"16l
+___block_descriptor_48_e8_32s40bs_e33_v24?0"SBDCommand"8"SBDError"16l
 _OBJC_CLASSLIST_REFERENCES_$_.133
 _OBJC_CLASSLIST_REFERENCES_$_.213
 ___block_descriptor_32_e41_v32?0"NSString"8"SBDOpenChannel"16^B24l
@@ -9403,6 +9452,8 @@ ___40-[SBDGroupChannelListQuery loadNextPage]_block_invoke
 -[SBDGroupChannelListQuery queue]
 -[SBDGroupChannelListQuery setQueue:]
 -[SBDGroupChannelListQuery .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.216
+_OBJC_CLASSLIST_REFERENCES_$_.233
 _OBJC_CLASSLIST_REFERENCES_$_.247
 _OBJC_CLASSLIST_REFERENCES_$_.332
 _OBJC_CLASSLIST_REFERENCES_$_.335
@@ -9881,7 +9932,7 @@ __67-[SBDHTTPClient runRequestWithSharedSession:uri:completionHandler:]_block_in
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke_2
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke
 __CGSizeEqualToSize
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke.215
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke
 __89-[SBDHTTPClient URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]_block_invoke
@@ -10039,7 +10090,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.223
 _OBJC_CLASSLIST_REFERENCES_$_.266
 _OBJC_CLASSLIST_REFERENCES_$_.269
 _OBJC_CLASSLIST_REFERENCES_$_.295
-_OBJC_SELECTOR_REFERENCES_.352
+_OBJC_CLASSLIST_REFERENCES_$_.377
 _OBJC_CLASSLIST_REFERENCES_$_.401
 _OBJC_CLASSLIST_REFERENCES_$_.445
 _OBJC_CLASSLIST_REFERENCES_$_.452

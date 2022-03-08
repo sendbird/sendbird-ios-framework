@@ -1,4 +1,7 @@
 # Change Log
+### v3.1.7 (Mar 8, 2022)
+* Add custom type and super mode filter to `getTotalUnreadChannelCount`
+
 ### v3.1.6 (Mar 2, 2022)
 * Fix issue with local caching where messages were loading slowly.
 

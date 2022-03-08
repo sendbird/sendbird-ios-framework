@@ -26,6 +26,7 @@
 
 @class SBDDatabase;
 @class SBDPollListQuery, SBDPollVoterListQuery;
+@class SBDGroupChannelTotalUnreadChannelCountParams;
 
 typedef void(^SBDBackgroundSessionBlock)(void);
 
@@ -726,16 +727,26 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 /**
  *  Gets the total unread channel count of all group channels.
  *
- *  @param completionHandler The handler block to execute. The `unreadCount` is the total count of unread channels in all of group channel which the current is a member.
+ *  @param completionHandler The handler block to execute. The `unreadCount` is the total count of unread group channels of which the current user is a member.
  *
  *  @since 3.0.116
  */
 + (void)getTotalUnreadChannelCountWithCompletionHandler:(nonnull void (^)(NSUInteger unreadCount, SBDError * _Nullable error))completionHandler;
 
 /**
+ *  Gets the total unread channel count of all group channels with filters of params.
+ *
+ *  @param params             The instance of parameters to filter.
+ *  @param completionHandler The handler block to execute. The `unreadCount` is the total count of unread group channels of which the current user is a member, filtered by `params`.
+ *
+ *  @since 3.1.7
+ */
++ (void)getTotalUnreadChannelCountWithParams:(nullable SBDGroupChannelTotalUnreadChannelCountParams *)params completionHandler:(nonnull void (^)(NSUInteger unreadCount, SBDError * _Nullable error))completionHandler;
+
+/**
  *  Gets the number of unread messages in group channels.
  *
- *  @param completionHandler The handler block to execute. The `unreadCount` is the total count of unread messages in all of group channel which the current is a member.
+ *  @param completionHandler The handler block to execute. The `unreadCount` is the total count of unread messages in all of group channel which the current user is a member.
  *
  *  @since 3.0.116
  */
