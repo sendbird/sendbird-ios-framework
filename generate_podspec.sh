@@ -1,14 +1,31 @@
+#!/bin/bash
 
+VERSION=''
+
+while getopts v: flag
+do
+    case "${flag}" in
+        v) VERSION=${OPTARG};;
+        *) error "Unexpected option ${flag}";;
+    esac
+done
+
+echo $VERSION
+
+if [ -z $VERSION ]; then
+    echo 'Version is required'
+fi
+
+TEMPLATE="
 Pod::Spec.new do |s|
   s.name         = 'SendBirdSDK'
-  s.version      = '3.1.7'
+  s.version      = '$VERSION'
   s.summary      = 'Sendbird Chat iOS Framework'
   s.description  = 'Messaging and Chat API for Mobile Apps and Websites'
   s.homepage     = 'https://sendbird.com'
   s.license      = 'Commercial'
   s.authors      = {
     'Jed Gyeong' => 'jed.gyeong@sendbird.com',
-    'Woo' => 'wooyoung.chung@sendbird.com',
     'Celine Moon' => 'celine.moon@sendbird.com',
     'Erenst Hong' => 'ernest.hong@sendbird.com'
   }
@@ -20,4 +37,6 @@ Pod::Spec.new do |s|
   s.ios.frameworks = ['UIKit', 'CFNetwork', 'Security', 'Foundation', 'Network', 'MobileCoreServices', 'SystemConfiguration', 'CoreFoundation']
   s.ios.library   = 'icucore'
 end
+"
 
+echo -e "$TEMPLATE" > SendBirdSDK.podspec
