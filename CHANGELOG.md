@@ -1,4 +1,7 @@
 # Change Log
+### v3.1.8 (Mar 17, 2022)
+* Fixed issue with `getCachedMetadata()` in local caching
+
 ### v3.1.7 (Mar 8, 2022)
 * Add custom type and super mode filter to `getTotalUnreadChannelCount`
 
