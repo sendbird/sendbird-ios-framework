@@ -3753,6 +3753,12 @@ ___46-[SBDMessageCollection didSucceedReconnection]_block_invoke
 -[SBDMessageCollection channel:didFailSendingMessage:pendingMessage:source:]
 -[SBDMessageCollection channel:didCancelMessage:]
 -[SBDMessageCollection channel:didCreatePendingMessage:]
+-[SBDMessageCollection channel:createdMetaData:]
+-[SBDMessageCollection channel:updatedMetaData:]
+-[SBDMessageCollection channel:deletedMetaDataKeys:]
+-[SBDMessageCollection channel:createdMetaCounters:]
+-[SBDMessageCollection channel:updatedMetaCounters:]
+-[SBDMessageCollection channel:deletedMetaCountersKeys:]
 -[SBDMessageCollection delegate]
 -[SBDMessageCollection setDelegate:]
 -[SBDMessageCollection startingPoint]
@@ -3865,6 +3871,9 @@ _OBJC_SELECTOR_REFERENCES_.387
 _OBJC_SELECTOR_REFERENCES_.389
 _OBJC_SELECTOR_REFERENCES_.391
 _OBJC_SELECTOR_REFERENCES_.393
+_OBJC_CLASSLIST_REFERENCES_$_.402
+_OBJC_SELECTOR_REFERENCES_.404
+_OBJC_SELECTOR_REFERENCES_.406
 _OBJC_IVAR_$_SBDMessageCollection._delegate
 _OBJC_IVAR_$_SBDMessageCollection._startingPoint
 _OBJC_IVAR_$_SBDMessageCollection._hasNext
@@ -7410,8 +7419,6 @@ _OBJC_SELECTOR_REFERENCES_.375
 _OBJC_CLASSLIST_REFERENCES_$_.376
 _OBJC_SELECTOR_REFERENCES_.400
 _OBJC_SELECTOR_REFERENCES_.402
-_OBJC_SELECTOR_REFERENCES_.404
-_OBJC_SELECTOR_REFERENCES_.406
 _OBJC_SELECTOR_REFERENCES_.408
 _OBJC_SELECTOR_REFERENCES_.410
 _OBJC_SELECTOR_REFERENCES_.416
