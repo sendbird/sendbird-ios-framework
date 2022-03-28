@@ -1,9 +1,12 @@
 # Change Log
+### v3.1.9 (Mar 18, 2022)
+* Fixed issue with `getCachedMetadata()` in message collection.
+
 ### v3.1.8 (Mar 17, 2022)
-* Fixed issue with `getCachedMetadata()` in local caching
+* Fixed issue with `getCachedMetadata()` in local caching.
 
 ### v3.1.7 (Mar 8, 2022)
-* Add custom type and super mode filter to `getTotalUnreadChannelCount`
+* Add custom type and super mode filter to `getTotalUnreadChannelCount`.
 
 ### v3.1.6 (Mar 2, 2022)
 * Fix issue with local caching where messages were loading slowly.
