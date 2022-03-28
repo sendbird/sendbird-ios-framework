@@ -1,14 +1,13 @@
 
 Pod::Spec.new do |s|
   s.name         = 'SendBirdSDK'
-  s.version      = '3.1.9'
+  s.version      = "3.1.10"
   s.summary      = 'Sendbird Chat iOS Framework'
   s.description  = 'Messaging and Chat API for Mobile Apps and Websites'
   s.homepage     = 'https://sendbird.com'
   s.license      = 'Commercial'
   s.authors      = {
     'Jed Gyeong' => 'jed.gyeong@sendbird.com',
-    'Woo' => 'wooyoung.chung@sendbird.com',
     'Celine Moon' => 'celine.moon@sendbird.com',
     'Erenst Hong' => 'ernest.hong@sendbird.com'
   }

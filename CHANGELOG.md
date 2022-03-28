@@ -1,4 +1,9 @@
 # Change Log
+
+### v3.1.10 (Mar 28, 2022)
+* Fixed error with infinite calls of SBDMain.connect completion.
+* Fixed issue where cachedMetadata is not serialized (not stored in database).
+
 ### v3.1.9 (Mar 18, 2022)
 * Fixed issue with `getCachedMetadata()` in message collection.
 
