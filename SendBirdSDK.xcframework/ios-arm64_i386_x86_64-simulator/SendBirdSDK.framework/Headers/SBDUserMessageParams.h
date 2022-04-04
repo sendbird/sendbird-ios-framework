@@ -31,6 +31,10 @@
 /// @since 3.0.232
 @property (atomic, assign) long long pollId;
 
+/// The template for the message that has the mentioned users.
+/// @since 3.1.11
+@property (strong, nullable) NSString *mentionedMessageTemplate;
+
 /**
  *  Don't use this initializer.
  *  Initializes an instance of a user message params.

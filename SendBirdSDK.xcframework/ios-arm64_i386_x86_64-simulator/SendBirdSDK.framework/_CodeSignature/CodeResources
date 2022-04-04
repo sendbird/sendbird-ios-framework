@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/SBDBaseMessage.h</key>
 		<data>
-		NdpnhIyC3uNThSTlHKnu95eN1qM=
+		4S5Uk2xn99oL1M0m4+Y9dIqVYXc=
 		</data>
 		<key>Headers/SBDBaseMessageParams.h</key>
 		<data>
@@ -334,7 +334,7 @@
 		</data>
 		<key>Headers/SBDUserMessageParams.h</key>
 		<data>
-		MZgCKQALglEnAR5Sa0R1x0TgsEA=
+		olSmwqK8/ZIe27vcIOkSzvUzTuo=
 		</data>
 		<key>Headers/SendBirdSDK.h</key>
 		<data>
@@ -342,7 +342,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		knAhMITvtFt0vYLrUyG6UDNYsVM=
+		7xi/4LUGhmGR2IkKDj8QVj22LvU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -432,11 +432,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NdpnhIyC3uNThSTlHKnu95eN1qM=
+			4S5Uk2xn99oL1M0m4+Y9dIqVYXc=
 			</data>
 			<key>hash2</key>
 			<data>
-			LhtfNJsOGcFuIkDm61yhq0WWiu19vmJXsKX7IyaGuJA=
+			jZiWyFcTqz6NEr2kglE877SmlD9doQvLeixUQsi7prI=
 			</data>
 		</dict>
 		<key>Headers/SBDBaseMessageParams.h</key>
@@ -1257,11 +1257,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MZgCKQALglEnAR5Sa0R1x0TgsEA=
+			olSmwqK8/ZIe27vcIOkSzvUzTuo=
 			</data>
 			<key>hash2</key>
 			<data>
-			QY8sND3SgjAfD8M3bQJlGs0YyxEMmHfqhBTD1vviYHU=
+			zLSjKrMJ9woYCzbmEiSaHGSLgNJNZMxRzcN8uEklZqQ=
 			</data>
 		</dict>
 		<key>Headers/SendBirdSDK.h</key>

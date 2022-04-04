@@ -167,6 +167,10 @@ DEPRECATED_ATTRIBUTE;
 /// @since 3.0.236
 @property (atomic) BOOL isReplyToChannel;
 
+/// The template for the message that has the mentioned users.
+/// @since 3.1.11
+@property (strong, readonly, nullable) NSString *mentionedMessageTemplate;
+
 /// Checks the channel type is open channel or not.
 ///
 /// @return Returns YES, when this is open channel.

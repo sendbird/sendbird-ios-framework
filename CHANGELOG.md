@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.1.11 (Apr 4, 2022)
+* Improved stability.
+
 ### v3.1.10 (Mar 28, 2022)
 * Fixed error with infinite calls of SBDMain.connect completion.
 * Fixed issue where cachedMetadata is not serialized (not stored in database).
