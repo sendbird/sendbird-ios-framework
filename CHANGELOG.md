@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.1.12 (Apr 5, 2022)
+* Improved stability.
+
 ### v3.1.11 (Apr 4, 2022)
 * Improved stability.
 
