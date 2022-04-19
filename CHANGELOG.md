@@ -1,5 +1,9 @@
 # Change Log
 
+### v3.1.13 (Apr 19, 2022)
+* Fixed a crash bug.
+* Fixed a bug that `belongsTo:` of `SBDMessageListParams` returns a wrong value. 
+
 ### v3.1.12 (Apr 5, 2022)
 * Improved stability.
 

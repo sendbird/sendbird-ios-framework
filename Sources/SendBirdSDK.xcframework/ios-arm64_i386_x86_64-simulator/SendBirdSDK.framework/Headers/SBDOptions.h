@@ -73,8 +73,17 @@
 /// @since 3.0.232
 + (void)setIncludePollDetails:(BOOL)value;
     
-
 + (void)setAlwaysCallChannelChangeWhenMarkAsRead:(BOOL)value;
+
+/// Sets the preflight for the faster connection. The default value is `YES`. If the `enable` is NO, the preflight doesn't work when the SDK is initialized.
+/// @param enable If NO, the preflight doesn't work.
+/// @since 3.1.13
++ (void)setPreflightForConnection:(BOOL)enable;
+
+/// Gets the preflight setting for the faster connection.
+/// @return The preflight setting.
+/// @since 3.1.13
++ (BOOL)getPreflightForConnection;
 
 @end
 
