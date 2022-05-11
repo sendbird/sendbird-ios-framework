@@ -557,7 +557,8 @@ typedef NS_ENUM(NSUInteger, SBDGroupChannelHiddenState) {
  - SBDChannelHiddenStateFilterHiddenOnly: Shows the hidden channels only.
  - SBDChannelHiddenStateFilterHiddenAllowAutoUnhide: Shows the channels will be unhidden automatically when there is a new message in the channel.
  - SBDChannelHiddenStateFilterHiddenPreventAutoUnhide: Shows the channels will not be unhidden automatically.
- 
+ - SBDChannelHiddenStateFilterAll: Shows all channels.
+
  @since 3.0.122
  */
 typedef NS_ENUM(NSUInteger, SBDChannelHiddenStateFilter) {
@@ -565,6 +566,7 @@ typedef NS_ENUM(NSUInteger, SBDChannelHiddenStateFilter) {
     SBDChannelHiddenStateFilterHiddenOnly   = 1,
     SBDChannelHiddenStateFilterHiddenAllowAutoUnhide = 2,
     SBDChannelHiddenStateFilterHiddenPreventAutoUnhide = 3,
+    SBDChannelHiddenStateFilterAll = 4,
 };
 
 /**

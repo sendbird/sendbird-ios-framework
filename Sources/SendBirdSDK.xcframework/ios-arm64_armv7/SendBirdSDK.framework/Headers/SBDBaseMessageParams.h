@@ -58,13 +58,19 @@
 @property (nonatomic) SBDMentionType mentionType;
 
 /**
- *  Can mention to specific users.
- *  If sends a message with this field, the message will be arrived to mentioned users.
+ *  Mentions specific users.
+ *  If a message is sent with this field, the message will include the mention users.
  *  The default value is nil.
  *
  *  @since 3.0.90
  */
-@property (copy, nonatomic, nullable) NSArray <NSString *> *mentionedUserIds;
+@property (copy, nonatomic, nonnull) NSArray<NSString *> *mentionedUserIds;
+
+/// Mentions specific users.
+/// If a message is sent with this field, the message will include the mention users.
+/// The default value is nil.
+/// @since 3.1.15
+@property (strong, nonatomic, nonnull) NSArray<SBDUser *> *mentionedUsers;
 
 /**
  *  Can set the `mentionedUserIds` by this method either.

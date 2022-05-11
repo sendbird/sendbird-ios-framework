@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The list of users who was mentioned together with the message.
 /// @since 3.0.90
-@property (strong, nonatomic, readonly) NSArray <SBDUser *> *mentionedUsers;
+@property (strong, nonatomic, readonly) NSArray<SBDUser *> *mentionedUsers;
 
 /// @since 3.0.103
 @property (atomic, readonly) SBDMentionType mentionType;

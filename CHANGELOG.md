@@ -1,4 +1,11 @@
 # Change Log
+
+### v3.1.15 (May 11, 2022)
+* Improved stability.
+* Fixed a bug for filtering public group channels in `SBDGroupChannelCollection`.
+* Added `SBDChannelHiddenStateFilterAll`.
+* Added mentioned users to pending messages.
+
 ### v3.1.14 (May 6, 2022)
 * Removed Network.framework from Podspec.
 
