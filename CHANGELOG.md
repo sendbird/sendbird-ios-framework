@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.1.16 (May 19, 2022)
+* Fixed crash in NSRunLoop.
+
 ### v3.1.15 (May 11, 2022)
 * Improved stability.
 * Fixed a bug for filtering public group channels in `SBDGroupChannelCollection`.
