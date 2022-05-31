@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.1.18 (May 31, 2022)
+* Improved stability.
+
 ### v3.1.17 (May 27, 2022)
 * Fixed a bug that returns the wrong token for changelogs in channel sync.
 
