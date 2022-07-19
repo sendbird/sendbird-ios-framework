@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.1.19 (Jul 19, 2022)
+* Improved console logging when invoking channel change event
+
 ### v3.1.18 (May 31, 2022)
 * Improved stability.
 
