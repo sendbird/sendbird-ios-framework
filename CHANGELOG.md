@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.1.21 (Jul 22, 2022)
+* Fixed objectEnumerator error when invoking channel change event
+
 ### v3.1.20 (Jul 20, 2022)
 * Fixed error in console log when invoking channel change event
 
