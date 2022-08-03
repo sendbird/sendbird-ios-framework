@@ -1,4 +1,8 @@
 # Change Log
+### v3.1.22 (Aug 03, 2022)
+* Added Metadata key filter that was previously missing in belongsTo of SBDGroupChannelListQuery
+* Disabled DB access if local caching is off
+* Fixed WS connection being lost after switching from wifi to LTE
 
 ### v3.1.21 (Jul 22, 2022)
 * Fixed objectEnumerator error when invoking channel change event

@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'SendBirdSDK'
-  s.version      = "3.1.21"
+  s.version      = "3.1.22"
   s.summary      = 'Sendbird Chat iOS Framework'
   s.description  = 'Messaging and Chat API for Mobile Apps and Websites'
   s.homepage     = 'https://sendbird.com'
