@@ -1,5 +1,10 @@
 # Change Log
-### v3.1.22 (Aug 03, 2022)
+
+### v3.1.23 (Aug 8, 2022)
+* Fixed an error where the channel update event was not triggered when receiving a new message using the platform API
+* Improved cleanup process on WebSocket reconnection
+
+### v3.1.22 (Aug 3, 2022)
 * Added Metadata key filter that was previously missing in belongsTo of SBDGroupChannelListQuery
 * Disabled DB access if local caching is off
 * Fixed WS connection being lost after switching from wifi to LTE
