@@ -166,7 +166,7 @@
 		</data>
 		<key>Headers/SBDMessageSearchQuery.h</key>
 		<data>
-		Vg/+ji1wRkNJNL/4LofMFHAWauc=
+		qxgNz69aCv9WtZzgBcIRIzZZrmc=
 		</data>
 		<key>Headers/SBDMutedUserListQuery.h</key>
 		<data>
@@ -310,7 +310,7 @@
 		</data>
 		<key>Headers/SBDTypes.h</key>
 		<data>
-		6E0qJiPG4F6iJAGgPrHgcukHrWY=
+		3hwRSATshsWMdR7FhTTWRDOLfZs=
 		</data>
 		<key>Headers/SBDUnreadItemCount.h</key>
 		<data>
@@ -342,7 +342,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xaL1SyQ1Y71/SNcag06wzTtJfLM=
+		D76oYh+D8MNzwwvhQdx+SCxGWcE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -795,11 +795,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Vg/+ji1wRkNJNL/4LofMFHAWauc=
+			qxgNz69aCv9WtZzgBcIRIzZZrmc=
 			</data>
 			<key>hash2</key>
 			<data>
-			PyCi0fcWU1VoMOWmZLh1CRggjm8SJ3akzwafkv1wH3g=
+			B3sog8nrVzHtejwo7j0GDeWQAstNrqj+TeUIZWw77hk=
 			</data>
 		</dict>
 		<key>Headers/SBDMutedUserListQuery.h</key>
@@ -1191,11 +1191,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6E0qJiPG4F6iJAGgPrHgcukHrWY=
+			3hwRSATshsWMdR7FhTTWRDOLfZs=
 			</data>
 			<key>hash2</key>
 			<data>
-			UefmsCyrrepU4OG8drDXcUHp2ngegAP2vjeq+HUx0Ng=
+			4bs9APbMCpQ9IRp/1ekcKNwQiVH6qCIPZdCza83AhZ4=
 			</data>
 		</dict>
 		<key>Headers/SBDUnreadItemCount.h</key>

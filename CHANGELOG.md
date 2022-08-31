@@ -1,5 +1,10 @@
 # Change Log
 
+### 3.1.24 (Aug 31, 2022)
+* Added MessageSearchQuery's totalCount and made it public
+* Implemented channel membership history where clients can retrieve whether users have joined or left the channel 
+* Removed some logs to improve performance
+
 ### v3.1.23 (Aug 8, 2022)
 * Fixed an error where the channel update event was not triggered when receiving a new message using the platform API
 * Improved cleanup process on WebSocket reconnection

@@ -96,6 +96,11 @@
 /// @return Returns YES if the query has next, otherwise returns NO.
 - (BOOL)hasNext;
 
+/// Shows the total count of results that match the given search.
+/// @return Returns the total count of results that match the given search.
+/// @since 3.1.24
+@property (atomic, readonly) NSInteger totalCount;
+
 #pragma mark - serailzation
 
 /// Returns message search query from given binary data.

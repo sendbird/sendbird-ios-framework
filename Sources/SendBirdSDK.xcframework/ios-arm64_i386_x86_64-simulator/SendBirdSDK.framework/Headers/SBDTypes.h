@@ -308,6 +308,10 @@ typedef NS_ENUM(NSInteger, SBDMemberState) {
      * Filter of members neither joined or invited in a group channel.
      */
     SBDMemberStateNone = 2,
+    /**
+     * Filter of members who have left from a group channel.
+     */
+    SBDMemberStateLeft = 3,
 };
 
 /**
