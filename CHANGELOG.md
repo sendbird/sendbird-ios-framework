@@ -1,4 +1,7 @@
-# Change Log
+# Changelog
+
+### 3.1.25 (Sep 5, 2022)
+* Improved stability
 
 ### 3.1.24 (Aug 31, 2022)
 * Added MessageSearchQuery's totalCount and made it public
