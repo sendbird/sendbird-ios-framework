@@ -1,4 +1,6 @@
 # Changelog
+### 3.1.26 (Sep 14, 2022)
+* Fixed duplicate message being returned in SBDMessageCollection's loadPrevious and loadNext
 
 ### 3.1.25 (Sep 5, 2022)
 * Improved stability
