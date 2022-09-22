@@ -1,4 +1,7 @@
 # Changelog
+### 3.1.27 (Sep 22, 2022)
+* Resolved priority inversion warning
+
 ### 3.1.26 (Sep 14, 2022)
 * Fixed duplicate message being returned in SBDMessageCollection's loadPrevious and loadNext
 
