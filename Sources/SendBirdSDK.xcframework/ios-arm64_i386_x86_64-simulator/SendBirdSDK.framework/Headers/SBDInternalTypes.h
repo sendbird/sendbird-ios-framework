@@ -75,14 +75,14 @@ typedef NS_OPTIONS(NSUInteger, SBDChannelQueryIncludeOption) {
 };
 
 typedef NS_OPTIONS(NSUInteger, SBDMessageQueryIncludeOption) {
-    SBDMessageQueryIncludeOptionNone                    = (1 << 0),
-    SBDMessageQueryIncludeOptionMetaArray               = (1 << 1),
-    SBDMessageQueryIncludeOptionReaction                = (1 << 2),
-    SBDMessageQueryIncludeOptionReplies                 = (1 << 3),
-    SBDMessageQueryIncludeOptionParentMessageText       = (1 << 4),
-    SBDMessageQueryIncludeOptionThreadInfo              = (1 << 5),
-    SBDMessageQueryIncludeOptionPoll                    = (1 << 6),
-    SBDMessageQueryIncludeOptionParentMessageInfo       = (1 << 7),
+    SBDMessageQueryIncludeOptionNone                            = (1 << 0),
+    SBDMessageQueryIncludeOptionMetaArray                       = (1 << 1),
+    SBDMessageQueryIncludeOptionReaction                        = (1 << 2),
+    SBDMessageQueryIncludeOptionReplies                         = (1 << 3),
+    SBDMessageQueryIncludeOptionParentMessageText               = (1 << 4),
+    SBDMessageQueryIncludeOptionThreadInfo                      = (1 << 5),
+    SBDMessageQueryIncludeOptionPoll_not_used_but_reserved      = (1 << 6),
+    SBDMessageQueryIncludeOptionParentMessageInfo               = (1 << 7),
 };
 
 typedef NS_ENUM(NSInteger, SBDApiRequestType) {

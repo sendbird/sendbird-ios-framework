@@ -25,7 +25,6 @@
 #import "SBDUserListQuery.h"
 
 @class SBDDatabase;
-@class SBDPollListQuery, SBDPollVoterListQuery;
 @class SBDGroupChannelTotalUnreadChannelCountParams;
 
 typedef void(^SBDBackgroundSessionBlock)(void);
@@ -132,6 +131,14 @@ typedef void(^SBDBackgroundSessionBlock)(void);
                    useCaching:(BOOL)useCaching
         migrationStartHandler:(nullable void (^)(void))migrationStartHandler
             completionHandler:(nullable void (^)(SBDError * _Nullable error))completionHandler;
+
+/// Synchronoulsy initializes `SBDMain` singleton instance with Sendbird Application ID. The Application ID is on Sendbird dashboard. This method has to be run first in order to user Sendbird.
+/// @param applicationId The Applicatin ID of Sendbird. It can be founded on Sendbird Dashboard.
+/// @param useCaching If YES, the local cache is set.
+/// @return Returns nil if the applicationId is set.
+/// @since 3.1.28
++ (SBDError * _Nullable)initSynchronouslyWithApplicationId:(nullable NSString *)applicationId
+                                                useCaching:(BOOL)useCaching;
 
 /// Initialize `sharedContainerIdentifier` of NSURLSessionConfiguration to use background session.
 /// Important! If you use `App Extension` and use upload file message in extension, you MUST set thie field.

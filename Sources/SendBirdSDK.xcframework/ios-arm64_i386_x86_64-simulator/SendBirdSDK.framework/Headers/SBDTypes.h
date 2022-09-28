@@ -157,7 +157,6 @@ typedef NS_ENUM(NSInteger, SBDErrorCode) {
     SBDErrorSocketMessageNotFound = 900300,
     SBDErrorSocketTooManyParticipants = 900400,
     SBDErrorSocketChannelNotFound = 900500,
-    SBDErrorSocketPollNotFound = 901200,
 };
 
 /**
@@ -727,21 +726,6 @@ typedef NS_OPTIONS(NSInteger, SBDLogLevel) {
     SBDLogLevelError        = (1 << 0),
     SBDLogLevelWarning      = (1 << 1),
     SBDLogLevelInfo         = (1 << 2),
-};
-
-/// Poll action type
-/// @since 3.0.232
-typedef NS_ENUM(NSUInteger, SBDPollVoteAction) {
-    SBDPollVoteActionCast,
-    SBDPollVoteActionCancel
-};
-
-/// Poll status
-/// @since 3.0.232
-typedef NS_ENUM(NSUInteger, SBDPollStatus) {
-    SBDPollStatusOpen,
-    SBDPollStatusClosed,
-    SBDPollStatusRemoved
 };
 
 /// The policy for the message collection initialization.

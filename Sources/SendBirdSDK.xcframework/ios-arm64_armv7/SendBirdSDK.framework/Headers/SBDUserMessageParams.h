@@ -27,10 +27,6 @@
  */
 @property (copy, nonatomic, nullable) NSArray <NSString *> *targetLanguages;
 
-/// Links a poll with message, to unlink set it -1l
-/// @since 3.0.232
-@property (atomic, assign) long long pollId;
-
 /// The template for the message that has the mentioned users.
 /// @since 3.1.11
 @property (strong, nullable) NSString *mentionedMessageTemplate;

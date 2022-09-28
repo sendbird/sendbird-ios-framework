@@ -1,4 +1,10 @@
 # Changelog
+
+### 3.1.28 (Sep 28, 2022)
+* Implemented synchronous initialization for SBDMain
+* Improved stability when sending FILE messages
+* Removed older implementation of polls from v3
+
 ### 3.1.27 (Sep 22, 2022)
 * Resolved priority inversion warning
 

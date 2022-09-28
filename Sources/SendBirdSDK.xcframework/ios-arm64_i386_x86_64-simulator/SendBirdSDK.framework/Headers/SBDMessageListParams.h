@@ -79,11 +79,6 @@ DEPRECATED_ATTRIBUTE;
 /// @since 3.0.181
 @property (atomic) BOOL includeThreadInfo;
 
-/// Determines whether to include poll information of the message in the results
-/// @note The default value is `NO`
-/// @since 3.0.232
-@property (atomic) BOOL includePollDetails;
-
 /// Determines whether to include parent message info.
 /// @note The default value is `NO`
 /// @since 3.0.236

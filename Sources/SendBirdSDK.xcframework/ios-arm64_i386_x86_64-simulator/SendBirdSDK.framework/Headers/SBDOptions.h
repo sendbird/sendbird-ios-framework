@@ -67,11 +67,6 @@
 /// @param timeout Timeout in seconds.
 /// @since 3.0.199
 + (void)setWebSocketResponseTimeout:(NSInteger)timeout;
-
-/// Sets the websocket response to include full  poll representation if it exists in a message
-/// @param value whether poll to be included in a message or not
-/// @since 3.0.232
-+ (void)setIncludePollDetails:(BOOL)value;
     
 + (void)setAlwaysCallChannelChangeWhenMarkAsRead:(BOOL)value;
 

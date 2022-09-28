@@ -29,8 +29,6 @@
 @class SBDGroupChannel;
 @class SBDOpenChannel;
 @class SBDUserMessageParams, SBDFileMessageParams;
-@class SBDPollUpdateEvent, SBDPollVoteEvent;
-@class SBDPollListQuery, SBDPollVoterListQuery;
 
 /// An object that adopts the `SBDChannelDelegate` protocol is responsible for receiving the events in the channel. Some of delegate methods are common for the `SBDBaseChannel`. However, there are delegate methods for the `SBDOpenChannel` and `SBDGroupChannel` exclusive. The `SBDChannelDelegate` can be added by [`addChannelDelegate:identifier:`](../Classes/SBDMain.html#//api/name/addChannelDelegate:identifier:) in `SBDMain`. Every `SBDChannelDelegate` method which is added is going to receive events.
 /// @warning If the object that adopts the `SBDChannelDelegate` protocol is invalid, the delegate has to be removed by the identifier via [`removeChannelDelegateForIdentifier:`](../Classes/SBDMain.html#//api/name/removeChannelDelegateForIdentifier:) in `SBDMain`. If you miss this, it will cause the crash.
@@ -223,16 +221,6 @@
 /// @param threadInfoUpdateEvent The [`SBDThreadInfoUpdateEvent`](../Classes/SBDThreadInfoUpdateEvent.html) object that has the latest information about the thread.
 /// @since 3.0.181
 - (void)channel:(nonnull SBDBaseChannel *)channel didUpdateThreadInfo:(nonnull SBDThreadInfoUpdateEvent *)threadInfoUpdateEvent;
-
-/// A callback when the poll has been updated
-/// @param event event object contains updated poll information
-/// @since 3.0.232
-- (void)didUpdatePoll:(nonnull SBDPollUpdateEvent *)event;
-
-/// A callback when vote has been occurred
-/// @param event event object that contains voting information
-/// @since 3.0.232
-- (void)didVotePoll:(nonnull SBDPollVoteEvent *)event;
 
 @end
 
@@ -743,20 +731,6 @@ DEPRECATED_ATTRIBUTE;
 /// @return The operator list in the channel.
 /// @since  3.0.94
 - (nullable SBDOperatorListQuery *)createOperatorListQuery;
-
-#pragma mark - Poll list
-
-/// Creates `SBDPollListQuery` instance for getting list of poll in this channel
-/// @return poll list query
-/// @since [NEXT VERSION]
-- (nonnull SBDPollListQuery *)createPollListQuery;
-
-/// Creates `SBDPollListQuery` instance for getting list of poll in this channel
-/// @param optionId poll option id
-/// @return poll voter list query
-/// @since [NEXT VERSION]
-- (nonnull SBDPollVoterListQuery *)createPollVoterListQueryWithPollId:(long long)pollId
-                                                             optionId:(long long)optionId;
 
 #pragma mark - Meta Counters
 
