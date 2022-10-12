@@ -1,4 +1,6 @@
 # Changelog
+### 3.1.29 (Oct 12, 2022)
+* Improved stability
 
 ### 3.1.28 (Sep 28, 2022)
 * Implemented synchronous initialization for SBDMain
