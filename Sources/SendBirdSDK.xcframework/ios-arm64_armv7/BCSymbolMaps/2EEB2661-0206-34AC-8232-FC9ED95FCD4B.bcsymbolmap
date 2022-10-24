@@ -1,8 +1,8 @@
 BCSymbolMap Version: 2.0
 Apple clang version 13.0.0 (clang-1300.0.29.30)
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk
-iPhoneSimulator15.2.sdk
-/Users/distiller/Library/Developer/Xcode/DerivedData/SendBirdSDK-btaudkundxlthbcqdxvemfiapmfu/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphonesimulator/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk
+iPhoneOS15.2.sdk
+/Users/distiller/Library/Developer/Xcode/DerivedData/SendBirdSDK-btaudkundxlthbcqdxvemfiapmfu/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphoneos/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
 /Users/distiller/project
 -[SBDChannelSyncManager init]
 -[SBDChannelSyncManager dealloc]
@@ -86,7 +86,7 @@ _OBJC_SELECTOR_REFERENCES_.70
 _OBJC_SELECTOR_REFERENCES_.74
 _OBJC_SELECTOR_REFERENCES_.76
 _OBJC_SELECTOR_REFERENCES_.78
-_OBJC_SELECTOR_REFERENCES_.80
+_OBJC_SELECTOR_REFERENCES_.82
 _OBJC_SELECTOR_REFERENCES_.84
 ___block_descriptor_40_e8_32s_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.88
@@ -180,7 +180,7 @@ __destroy_helper_block_e8_32s
 __copy_helper_block_e8_32s
 __37-[SBDChannelSyncManager syncChannels]_block_invoke
 __39+[SBDChannelSyncManager sharedInstance]_block_invoke
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/usr/include/dispatch/once.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/usr/include/dispatch/once.h
 -[SBDPair initWithFirstObject:secondObject:]
 -[SBDPair first]
 -[SBDPair setFirst:]
@@ -623,7 +623,6 @@ ___68-[SBDUserListQuery loadBannedUserListNextPageWithCompletionHandler:]_block_
 _OBJC_CLASSLIST_REFERENCES_$_.54
 _OBJC_CLASSLIST_REFERENCES_$_.65
 _OBJC_SELECTOR_REFERENCES_.72
-_OBJC_SELECTOR_REFERENCES_.82
 ___block_descriptor_32_e22_16?0"NSDictionary"8l
 _OBJC_SELECTOR_REFERENCES_.87
 _OBJC_SELECTOR_REFERENCES_.93
@@ -776,29 +775,26 @@ __OBJC_$_PROP_LIST_SendBird_SRSecurityPolicy
 __OBJC_CLASS_RO_$_SendBird_SRSecurityPolicy
 /Users/distiller/project/SendBirdSDK/WebSocket/SocketRocket/SendBird_SRSecurityPolicy.m
 SendBirdSDK/WebSocket/SocketRocket/SendBird_SRSecurityPolicy.m
-+[SBDTimer sharedTimerQueue]
-___28+[SBDTimer sharedTimerQueue]_block_invoke
 +[SBDTimer scheduledTimerWithTimeInterval:target:selector:userInfo:repeat:onBoard:]
 +[SBDTimer scheduledTimerWithTimeInterval:target:selector:userInfo:repeat:identifier:onBoard:]
--[SBDTimer initWithTimeInterval:target:selector:userInfo:repeat:identifier:onBoard:]
-___84-[SBDTimer initWithTimeInterval:target:selector:userInfo:repeat:identifier:onBoard:]_block_invoke
+-[SBDTimer initWithTimeInterval:target:selector:userInfo:repeat:identifier:dispatchQueue:onBoard:]
+___98-[SBDTimer initWithTimeInterval:target:selector:userInfo:repeat:identifier:dispatchQueue:onBoard:]_block_invoke
 -[SBDTimer dealloc]
 -[SBDTimer startWithTimeInterval:]
 -[SBDTimer stopWithCompletionHandler:]
-___38-[SBDTimer stopWithCompletionHandler:]_block_invoke
 -[SBDTimer stop]
 -[SBDTimer valid]
 -[SBDTimer invalidate]
 -[SBDTimer removeFromBoard]
 -[SBDTimer timerIsExpired]
-___26-[SBDTimer timerIsExpired]_block_invoke
-___26-[SBDTimer timerIsExpired]_block_invoke_2
-___copy_helper_block_e8_32s40s
 -[SBDTimer forceToExpire]
+___25-[SBDTimer forceToExpire]_block_invoke
 -[SBDTimer userInfo]
 -[SBDTimer setUserInfo:]
 -[SBDTimer identifier]
 -[SBDTimer setIdentifier:]
+-[SBDTimer dispatchQueue]
+-[SBDTimer setDispatchQueue:]
 -[SBDTimer dispatchSource]
 -[SBDTimer setDispatchSource:]
 -[SBDTimer expireTarget]
@@ -814,12 +810,9 @@ ___copy_helper_block_e8_32s40s
 -[SBDTimer wasExpired]
 -[SBDTimer setExpired:]
 -[SBDTimer .cxx_destruct]
-_sharedTimerQueue.sharedTimerQueue
-_sharedTimerQueue.onceToken
 ___block_descriptor_40_e8_32w_e5_v8?0l
-___block_descriptor_48_e8_32s40bs_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.59
-___block_descriptor_56_e8_32s40s_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.37
+_OBJC_CLASSLIST_REFERENCES_$_.58
 __OBJC_$_CLASS_METHODS_SBDTimer
 __OBJC_METACLASS_RO_$_SBDTimer
 __OBJC_$_INSTANCE_METHODS_SBDTimer
@@ -828,6 +821,7 @@ _OBJC_IVAR_$_SBDTimer._done
 _OBJC_IVAR_$_SBDTimer._expired
 _OBJC_IVAR_$_SBDTimer._userInfo
 _OBJC_IVAR_$_SBDTimer._identifier
+_OBJC_IVAR_$_SBDTimer._dispatchQueue
 _OBJC_IVAR_$_SBDTimer._dispatchSource
 _OBJC_IVAR_$_SBDTimer._expireTarget
 _OBJC_IVAR_$_SBDTimer._expireSelector
@@ -838,12 +832,8 @@ __OBJC_CLASS_RO_$_SBDTimer
 /Users/distiller/project/SendBirdSDK/SBDTimer.m
 SendBirdSDK/SBDTimer.m
 SendBirdSDK/SBDTimer.h
-__copy_helper_block_e8_32s40s
-__26-[SBDTimer timerIsExpired]_block_invoke_2
-__26-[SBDTimer timerIsExpired]_block_invoke
-__38-[SBDTimer stopWithCompletionHandler:]_block_invoke
-__84-[SBDTimer initWithTimeInterval:target:selector:userInfo:repeat:identifier:onBoard:]_block_invoke
-__28+[SBDTimer sharedTimerQueue]_block_invoke
+__25-[SBDTimer forceToExpire]_block_invoke
+__98-[SBDTimer initWithTimeInterval:target:selector:userInfo:repeat:identifier:dispatchQueue:onBoard:]_block_invoke
 -[SBDReaction init]
 -[SBDReaction initWithReactionEvent:]
 -[SBDReaction initWithDictionary:]
@@ -862,7 +852,6 @@ __28+[SBDTimer sharedTimerQueue]_block_invoke
 -[SBDReaction setMutableReactionUpdatedAt:]
 -[SBDReaction .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.29
-_OBJC_CLASSLIST_REFERENCES_$_.37
 _OBJC_SELECTOR_REFERENCES_.59
 __OBJC_CLASS_PROTOCOLS_$_SBDReaction
 __OBJC_METACLASS_RO_$_SBDReaction
@@ -911,6 +900,7 @@ ___28+[SBDMain initializeClients]_block_invoke
 +[SBDMain performSendCommandDelayQueueBlock:]
 +[SBDMain addConnectionDelegate:identifier:]
 ___44+[SBDMain addConnectionDelegate:identifier:]_block_invoke
+___copy_helper_block_e8_32s40s
 +[SBDMain removeConnectionDelegateForIdentifier:]
 ___49+[SBDMain removeConnectionDelegateForIdentifier:]_block_invoke
 +[SBDMain removeAllConnectionDelegates]
@@ -1675,6 +1665,7 @@ _OBJC_SELECTOR_REFERENCES_.770
 _OBJC_SELECTOR_REFERENCES_.772
 _OBJC_SELECTOR_REFERENCES_.774
 _OBJC_SELECTOR_REFERENCES_.778
+___block_descriptor_48_e8_32s40bs_e5_v8?0l
 ___block_descriptor_40_e8_32bs_e35_v24?0"NSDictionary"8"SBDError"16l
 _OBJC_SELECTOR_REFERENCES_.781
 _OBJC_SELECTOR_REFERENCES_.783
@@ -2083,6 +2074,7 @@ __copy_helper_block_e8_32r40w
 __43+[SBDMain connectionDelegateForIdentifier:]_block_invoke
 __39+[SBDMain removeAllConnectionDelegates]_block_invoke
 __49+[SBDMain removeConnectionDelegateForIdentifier:]_block_invoke
+__copy_helper_block_e8_32s40s
 __44+[SBDMain addConnectionDelegate:identifier:]_block_invoke
 __28+[SBDMain initializeClients]_block_invoke
 __25+[SBDMain sharedInstance]_block_invoke
@@ -2567,6 +2559,7 @@ ___destroy_helper_block_e8_32s40s48s56r64r
 ___block_descriptor_56_e8_32s40s48r_e5_v8?0l
 ___block_descriptor_64_e8_32s40s48r_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.45
+_OBJC_CLASSLIST_REFERENCES_$_.59
 _OBJC_SELECTOR_REFERENCES_.83
 ___block_descriptor_72_e8_32s40s48s56s64r_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.122
@@ -2702,6 +2695,7 @@ ___31-[SBDDatabase getSqlStatements]_block_invoke
 -[SBDDatabase .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.40
 _OBJC_CLASSLIST_REFERENCES_$_.76
+_OBJC_SELECTOR_REFERENCES_.80
 _OBJC_CLASSLIST_REFERENCES_$_.81
 _OBJC_SELECTOR_REFERENCES_.85
 ___block_descriptor_56_e8_32r40r48r_e35_v32?0"NSString"8"NSObject"16^B24l
@@ -2910,6 +2904,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.134
 _OBJC_SELECTOR_REFERENCES_.136
 _OBJC_SELECTOR_REFERENCES_.138
 _OBJC_SELECTOR_REFERENCES_.157
+___block_descriptor_56_e8_32s40s_e5_v8?0l
 ___block_descriptor_48_e8_32s40s_e90_v18?0"<SBDWebSocketDelegate>"8{SendBird_SRDelegateAvailableMethods=b1b1b1b1b1b1b1b1b1}16l
 _OBJC_SELECTOR_REFERENCES_.173
 _OBJC_CLASSLIST_REFERENCES_$_.186
@@ -3043,14 +3038,14 @@ __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke_2
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke.352
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke
 CFSwapInt64BigToHost
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
 CFSwapInt16BigToHost
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke.328
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke_2
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke
 validate_dispatch_data_partial_string
 NSMakeRange
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __56-[SendBird_SRWebSocket _readUntilBytes:length:callback:]_block_invoke
 __46-[SendBird_SRWebSocket _cleanupSelfReference:]_block_invoke
 __36-[SendBird_SRWebSocket _pumpWriting]_block_invoke.290
@@ -3453,9 +3448,9 @@ __OBJC_$_CATEGORY_NSString_$_SendBirdSDK
 /Users/distiller/project/SendBirdSDK/NSString+SBDMessage.m
 SendBirdSDK/NSString+SBDMessage.m
 CFStringGetCharacterFromInlineBuffer
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
 CFRangeMake
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
 CFStringInitInlineBuffer
 +[SBDUtils infersMimeTypeFromData:]
 +[SBDUtils infersMimeTypeFromFileName:andFile:]
@@ -3788,7 +3783,6 @@ ___24-[SBDChannelEvent users]_block_invoke
 -[SBDChannelEvent restrictionData]
 -[SBDChannelEvent setRestrictionData:]
 -[SBDChannelEvent .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.58
 ___block_descriptor_32_e19_16?0"SBDMember"8l
 ___block_literal_global.73
 __OBJC_CLASS_PROTOCOLS_$_SBDChannelEvent
@@ -4757,6 +4751,11 @@ ___87-[SBDChannelChangeLogsPager requestAllChangeLogsWithTokenDataSource:complet
 ___copy_helper_block_e8_32s40r48r56r64r72r
 ___destroy_helper_block_e8_32s40r48r56r64r72r
 ___87-[SBDChannelChangeLogsPager requestAllChangeLogsWithTokenDataSource:completionHandler:]_block_invoke.66
+___87-[SBDChannelChangeLogsPager requestAllChangeLogsWithTokenDataSource:completionHandler:]_block_invoke_2
+___copy_helper_block_e8_32s40s48s56s64s72r80r88r96r104r
+___destroy_helper_block_e8_32s40s48s56s64s72r80r88r96r104r
+___copy_helper_block_e8_32s40s48r56r64r72r80r
+___destroy_helper_block_e8_32s40s48r56r64r72r80r
 ___copy_helper_block_e8_32b40s48w
 -[SBDChannelChangeLogsPager stop]
 -[SBDChannelChangeLogsPager order]
@@ -4771,6 +4770,8 @@ ___copy_helper_block_e8_32b40s48w
 _OBJC_CLASSLIST_REFERENCES_$_.24
 _OBJC_CLASSLIST_REFERENCES_$_.43
 ___block_descriptor_80_e8_32s40r48r56r64r72r_e58_v44?0"NSArray"8"NSArray"16B24"NSString"28"SBDError"36l
+___block_descriptor_113_e8_32s40s48s56s64s72r80r88r96r104r_e5_v8?0l
+___block_descriptor_88_e8_32s40s48r56r64r72r80r_e58_v44?0"NSArray"8"NSArray"16B24"NSString"28"SBDError"36l
 ___block_descriptor_56_e8_32bs40s48w_e5_v8?0l
 __OBJC_METACLASS_RO_$_SBDChannelChangeLogsPager
 __OBJC_$_INSTANCE_METHODS_SBDChannelChangeLogsPager
@@ -4785,6 +4786,11 @@ __OBJC_CLASS_RO_$_SBDChannelChangeLogsPager
 SendBirdSDK/SBDChannelChangeLogsPager.m
 SendBirdSDK/SBDChannelChangeLogsPager.h
 __copy_helper_block_e8_32b40s48w
+__destroy_helper_block_e8_32s40s48r56r64r72r80r
+__copy_helper_block_e8_32s40s48r56r64r72r80r
+__destroy_helper_block_e8_32s40s48s56s64s72r80r88r96r104r
+__copy_helper_block_e8_32s40s48s56s64s72r80r88r96r104r
+__87-[SBDChannelChangeLogsPager requestAllChangeLogsWithTokenDataSource:completionHandler:]_block_invoke_2
 __87-[SBDChannelChangeLogsPager requestAllChangeLogsWithTokenDataSource:completionHandler:]_block_invoke.66
 __destroy_helper_block_e8_32s40r48r56r64r72r
 __copy_helper_block_e8_32s40r48r56r64r72r
@@ -7649,7 +7655,6 @@ __52-[SBDWebSocketClient sendCommand:completionHandler:]_block_invoke
 __57-[SBDWebSocketClient sendCommand:lazy:completionHandler:]_block_invoke
 __32-[SBDWebSocketClient stopPinger]_block_invoke
 __34-[SBDWebSocketClient stopWatchdog]_block_invoke
--[SBDTimerBoard init]
 -[SBDTimerBoard initWithCapacity:]
 -[SBDTimerBoard firstTimer]
 -[SBDTimerBoard stopAllTimers]
@@ -7661,6 +7666,7 @@ ___26-[SBDTimerBoard addTimer:]_block_invoke
 ___26-[SBDTimerBoard addTimer:]_block_invoke_2
 -[SBDTimerBoard removeTimer:]
 ___29-[SBDTimerBoard removeTimer:]_block_invoke
+-[SBDTimerBoard dispatchQueue]
 -[SBDTimerBoard timerQueue]
 -[SBDTimerBoard setTimerQueue:]
 -[SBDTimerBoard mutableTimers]
@@ -7669,14 +7675,9 @@ ___29-[SBDTimerBoard removeTimer:]_block_invoke
 -[SBDTimerBoard setCapacity:]
 -[SBDTimerBoard .cxx_destruct]
 ___block_descriptor_48_e8_32s40r_e25_v32?0"SBDTimer"8Q16^B24l
-__OBJC_$_PROTOCOL_REFS_SBDTimerBoardDelegate
-__OBJC_$_PROTOCOL_INSTANCE_METHODS_SBDTimerBoardDelegate
-__OBJC_$_PROTOCOL_METHOD_TYPES_SBDTimerBoardDelegate
-__OBJC_PROTOCOL_$_SBDTimerBoardDelegate
-__OBJC_LABEL_PROTOCOL_$_SBDTimerBoardDelegate
-__OBJC_CLASS_PROTOCOLS_$_SBDTimerBoard
 __OBJC_METACLASS_RO_$_SBDTimerBoard
 __OBJC_$_INSTANCE_METHODS_SBDTimerBoard
+_OBJC_IVAR_$_SBDTimerBoard._dispatchQueue
 _OBJC_IVAR_$_SBDTimerBoard._timerQueue
 _OBJC_IVAR_$_SBDTimerBoard._mutableTimers
 _OBJC_IVAR_$_SBDTimerBoard._capacity
@@ -7685,6 +7686,7 @@ __OBJC_$_PROP_LIST_SBDTimerBoard
 __OBJC_CLASS_RO_$_SBDTimerBoard
 /Users/distiller/project/SendBirdSDK/SBDTimerBoard.m
 SendBirdSDK/SBDTimerBoard.m
+SendBirdSDK/SBDTimerBoard.h
 __29-[SBDTimerBoard removeTimer:]_block_invoke
 __26-[SBDTimerBoard addTimer:]_block_invoke_2
 __26-[SBDTimerBoard addTimer:]_block_invoke
@@ -9420,7 +9422,7 @@ __67-[SBDHTTPClient runRequestWithSharedSession:uri:completionHandler:]_block_in
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke_2
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke
 __CGSizeEqualToSize
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke.215
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke
 __89-[SBDHTTPClient URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]_block_invoke

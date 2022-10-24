@@ -82,6 +82,13 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 /// The number of URLSessionDidFinishEventsForBackgroundURLSession.
 @property (atomic) int URLSessionDidFinishEventsForBackgroundURLSession;
 
++ (void)connectWebSocketServerReconnect:(BOOL)reconnect
+                                 userId:(NSString * _Nonnull)userId
+                            accessToken:(NSString * _Nullable)accessToken
+                             sessionKey:(NSString * _Nullable)sessionKey
+                            fromOnError:(BOOL)fromOnError
+                      completionHandler:(nullable void (^)(SBDUser * _Nullable user, SBDError * _Nullable error))completionHandler;
+
 /// Retrieves the SDK version.
 /// @return The SDK version.
 + (nonnull NSString *)getSDKVersion;

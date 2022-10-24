@@ -122,7 +122,7 @@
 		</data>
 		<key>Headers/SBDMain.h</key>
 		<data>
-		6BGgQNdoO2zL4NYbLlD8K+Nil5I=
+		ucQ1AEeIqJKRsHIiZVQdQSSnGLc=
 		</data>
 		<key>Headers/SBDMappable.h</key>
 		<data>
@@ -294,7 +294,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vRp9VkzMTx0yqa3ayFQklvvFSfw=
+		14OFTbbaFZP9/EIWmNWdKB0bjpc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -626,11 +626,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6BGgQNdoO2zL4NYbLlD8K+Nil5I=
+			ucQ1AEeIqJKRsHIiZVQdQSSnGLc=
 			</data>
 			<key>hash2</key>
 			<data>
-			JrJDITq3xDJQXN9ZAaPlk30yKxVVSP3te7g1Qm6LSa4=
+			gPsTqslaLnl1DiiFyx/5mHl3b2B8luduyZ/gN5qMf3A=
 			</data>
 		</dict>
 		<key>Headers/SBDMappable.h</key>
