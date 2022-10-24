@@ -1,5 +1,12 @@
 # Changelog
-### 3.1.29 (Oct 12, 2022)
+
+## v3.1.30 (Oct 24, 2022)
+
+## Improvements
+
+* Fixed timer concurrency issue when reconnecting
+* Fixed an issue that caused the main thread to slow down while using `SBDGroupChannelCollection`
+
 * Improved stability
 
 ### 3.1.28 (Sep 28, 2022)
