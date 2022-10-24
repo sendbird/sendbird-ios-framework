@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://sendbird.com'
   s.license      = 'Commercial'
   s.authors      = {
+    'Sendbird' => 'sha.sdk_deployment@sendbird.com',
     'Jed Gyeong' => 'jed.gyeong@sendbird.com',
     'Celine Moon' => 'celine.moon@sendbird.com',
     'Erenst Hong' => 'ernest.hong@sendbird.com'
