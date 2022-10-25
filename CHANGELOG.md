@@ -2,6 +2,8 @@
 
 ## v3.1.31 (Oct 25, 2022)
 
+**DO NOT USE THIS VERSION**
+
 ## Improvements
 
 * Fixed timer concurrency issue when reconnecting
