@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.1.33 (Oct 27, 2022)
+
+- Fixed metaArrays not being copied when copying a userMessage
+
 ## v3.1.32 (Oct 25, 2022)
 
 ### Improvements
