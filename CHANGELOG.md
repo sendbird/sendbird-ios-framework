@@ -1,5 +1,10 @@
 # Changelog
 
+## v3.1.34 (Nov 17, 2022)
+
+### Improvements
+- Fixed multiple concurrent connections issue
+
 ## v3.1.33 (Oct 27, 2022)
 
 - Fixed metaArrays not being copied when copying a userMessage

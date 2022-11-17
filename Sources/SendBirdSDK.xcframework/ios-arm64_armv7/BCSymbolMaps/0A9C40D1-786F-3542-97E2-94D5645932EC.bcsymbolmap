@@ -2857,7 +2857,6 @@ ___47-[SendBird_SRWebSocket safeHandleEvent:stream:]_block_invoke_2
 -[SendBird_SRWebSocket setDelegate:]
 -[SendBird_SRWebSocket setDelegateDispatchQueue:]
 -[SendBird_SRWebSocket forceStop]
-___33-[SendBird_SRWebSocket forceStop]_block_invoke
 -[SendBird_SRWebSocket start:]
 ___30-[SendBird_SRWebSocket start:]_block_invoke
 ___30-[SendBird_SRWebSocket start:]_block_invoke_2
@@ -3007,6 +3006,7 @@ _OBJC_IVAR_$_SendBird_SRWebSocket._delegateController
 __OBJC_$_INSTANCE_VARIABLES_SendBird_SRWebSocket
 __OBJC_$_PROP_LIST_SendBird_SRWebSocket
 __OBJC_CLASS_RO_$_SendBird_SRWebSocket
+_OBJC_SELECTOR_REFERENCES_.575
 /Users/distiller/project/SendBirdSDK/WebSocket/SocketRocket/SendBird_SRWebSocket.m
 -[SendBird_SRWebSocket start:].cold.1
 SendBirdSDK/WebSocket/SocketRocket/SendBird_SRWebSocket.m
@@ -3031,7 +3031,6 @@ SendBirdSDK/WebSocket/SocketRocket/SendBird_SRWebSocket.h
 __30-[SendBird_SRWebSocket start:]_block_invoke_3
 __30-[SendBird_SRWebSocket start:]_block_invoke_2
 __30-[SendBird_SRWebSocket start:]_block_invoke
-__33-[SendBird_SRWebSocket forceStop]_block_invoke
 __47-[SendBird_SRWebSocket safeHandleEvent:stream:]_block_invoke_2
 __47-[SendBird_SRWebSocket safeHandleEvent:stream:]_block_invoke
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke_2
@@ -4623,8 +4622,8 @@ ___49-[SBDSessionWebSocketEngine sendData:completion:]_block_invoke
 -[SBDSessionWebSocketEngine listen]
 ___35-[SBDSessionWebSocketEngine listen]_block_invoke
 ___35-[SBDSessionWebSocketEngine listen]_block_invoke_2
-___35-[SBDSessionWebSocketEngine listen]_block_invoke.76
-___35-[SBDSessionWebSocketEngine listen]_block_invoke_2.83
+___35-[SBDSessionWebSocketEngine listen]_block_invoke.82
+___35-[SBDSessionWebSocketEngine listen]_block_invoke_2.89
 -[SBDSessionWebSocketEngine reachabilityChanged:]
 ___49-[SBDSessionWebSocketEngine reachabilityChanged:]_block_invoke
 -[SBDSessionWebSocketEngine URLSession:webSocketTask:didOpenWithProtocol:]
@@ -4636,6 +4635,8 @@ ___78-[SBDSessionWebSocketEngine URLSession:webSocketTask:didCloseWithCode:reaso
 -[SBDSessionWebSocketEngine URLSession:task:didReceiveChallenge:completionHandler:]
 -[SBDSessionWebSocketEngine task]
 -[SBDSessionWebSocketEngine setTask:]
+-[SBDSessionWebSocketEngine session]
+-[SBDSessionWebSocketEngine setSession:]
 -[SBDSessionWebSocketEngine request]
 -[SBDSessionWebSocketEngine setRequest:]
 -[SBDSessionWebSocketEngine delegateController]
@@ -4649,10 +4650,10 @@ ___78-[SBDSessionWebSocketEngine URLSession:webSocketTask:didCloseWithCode:reaso
 -[SBDSessionWebSocketEngine .cxx_destruct]
 -[SBDSessionWebSocketEngine start:].cold.1
 _OBJC_CLASSLIST_REFERENCES_$_.2
-_OBJC_CLASSLIST_REFERENCES_$_.41
-_OBJC_CLASSLIST_REFERENCES_$_.61
+_OBJC_CLASSLIST_REFERENCES_$_.47
 ___block_descriptor_40_e8_32bs_e17_v16?0"NSError"8l
 ___block_descriptor_40_e8_32w_e50_v24?0"NSURLSessionWebSocketMessage"8"NSError"16l
+_OBJC_CLASSLIST_REFERENCES_$_.101
 ___block_descriptor_40_e8_32w_e90_v18?0"<SBDWebSocketDelegate>"8{SendBird_SRDelegateAvailableMethods=b1b1b1b1b1b1b1b1b1}16l
 ___block_descriptor_56_e8_32s40w_e90_v18?0"<SBDWebSocketDelegate>"8{SendBird_SRDelegateAvailableMethods=b1b1b1b1b1b1b1b1b1}16l
 __OBJC_$_PROTOCOL_REFS_NSURLSessionDelegate
@@ -4679,6 +4680,7 @@ __OBJC_CLASS_PROTOCOLS_$_SBDSessionWebSocketEngine
 __OBJC_METACLASS_RO_$_SBDSessionWebSocketEngine
 __OBJC_$_INSTANCE_METHODS_SBDSessionWebSocketEngine
 _OBJC_IVAR_$_SBDSessionWebSocketEngine._task
+_OBJC_IVAR_$_SBDSessionWebSocketEngine._session
 _OBJC_IVAR_$_SBDSessionWebSocketEngine._request
 _OBJC_IVAR_$_SBDSessionWebSocketEngine._delegateController
 _OBJC_IVAR_$_SBDSessionWebSocketEngine._readyState
@@ -4694,8 +4696,8 @@ SendBirdSDK/WebSocket/SessionSocket/SBDSessionWebSocketEngine.m
 __78-[SBDSessionWebSocketEngine URLSession:webSocketTask:didCloseWithCode:reason:]_block_invoke
 __74-[SBDSessionWebSocketEngine URLSession:webSocketTask:didOpenWithProtocol:]_block_invoke
 __49-[SBDSessionWebSocketEngine reachabilityChanged:]_block_invoke
-__35-[SBDSessionWebSocketEngine listen]_block_invoke_2.83
-__35-[SBDSessionWebSocketEngine listen]_block_invoke.76
+__35-[SBDSessionWebSocketEngine listen]_block_invoke_2.89
+__35-[SBDSessionWebSocketEngine listen]_block_invoke.82
 __35-[SBDSessionWebSocketEngine listen]_block_invoke_2
 __35-[SBDSessionWebSocketEngine listen]_block_invoke
 __49-[SBDSessionWebSocketEngine sendData:completion:]_block_invoke
@@ -5907,7 +5909,6 @@ SendBirdSDK/NSData+SBDCrypto.m
 -[SBDBaseMessageParams setDidSetParentMessageId:]
 -[SBDBaseMessageParams channelUrl]
 -[SBDBaseMessageParams .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.101
 _OBJC_CLASSLIST_REFERENCES_$_.108
 _OBJC_CLASSLIST_REFERENCES_$_.133
 __OBJC_CLASS_PROTOCOLS_$_SBDBaseMessageParams
@@ -7558,6 +7559,7 @@ __OBJC_CLASS_RO_$_SBDEmojiContainer
 SendBirdSDK/Emojis/SBDEmoji.m
 SendBirdSDK/Emojis/SBDEmoji.h
 -[SBDWebSocketClient initWithHost:timeout:useNative:]
+-[SBDWebSocketClient dealloc]
 +[SBDWebSocketClient createWebSocketClientWithHost:timeout:useNative:]
 -[SBDWebSocketClient restartPinger]
 -[SBDWebSocketClient startWatchdog]
@@ -7617,9 +7619,10 @@ ___52-[SBDWebSocketClient sendCommand:completionHandler:]_block_invoke
 -[SBDWebSocketClient setOnError:]
 -[SBDWebSocketClient .cxx_destruct]
 ___clang_at_available_requires_core_foundation_framework
+_OBJC_CLASSLIST_REFERENCES_$_.66
 ___block_descriptor_40_e8_32w_e18_v16?0"SBDError"8l
 ___block_descriptor_56_e8_32bs40s48s_e18_v16?0"SBDError"8l
-_OBJC_CLASSLIST_REFERENCES_$_.178
+_OBJC_SELECTOR_REFERENCES_.159
 __OBJC_$_CLASS_METHODS_SBDWebSocketClient
 __OBJC_$_PROTOCOL_REFS_SBDWebSocketDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_SBDWebSocketDelegate
@@ -7905,6 +7908,7 @@ ___71-[SBDPlatformAPIClient enableReaction:applicationId:completionHandler:]_blo
 -[SBDPlatformAPIClient uploadSizeLimit]
 -[SBDPlatformAPIClient setUploadSizeLimit:]
 -[SBDPlatformAPIClient .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.41
 _OBJC_CLASSLIST_REFERENCES_$_.182
 ___block_descriptor_32_e29_16?0"SBDMessageMetaArray"8l
 ___block_literal_global.304
@@ -8363,7 +8367,6 @@ ___119-[SBDOpenChannel updateChannelWithName:coverImage:coverImageName:data:oper
 -[SBDOpenChannel setOperators:]
 -[SBDOpenChannel .cxx_destruct]
 _cachedChannels
-_OBJC_CLASSLIST_REFERENCES_$_.47
 ___block_descriptor_40_e8_32bs_e40_v28?0"SBDOpenChannel"8B16"SBDError"20l
 ___block_descriptor_40_e8_32bs_e37_v24?0"SBDOpenChannel"8"SBDError"16l
 ___block_descriptor_48_e8_32s40bs_e33_v24?0"SBDCommand"8"SBDError"16l
@@ -8791,7 +8794,6 @@ ___50-[SBDUser deleteAllMetaDataWithCompletionHandler:]_block_invoke_3
 -[SBDUser setRequireAuth:]
 -[SBDUser .cxx_destruct]
 ___block_descriptor_48_e8_32bs40s_e35_v24?0"NSDictionary"8"SBDError"16l
-_OBJC_SELECTOR_REFERENCES_.159
 _OBJC_CLASSLIST_REFERENCES_$_.202
 __OBJC_$_CLASS_METHODS_SBDUser
 __OBJC_CLASS_PROTOCOLS_$_SBDUser
