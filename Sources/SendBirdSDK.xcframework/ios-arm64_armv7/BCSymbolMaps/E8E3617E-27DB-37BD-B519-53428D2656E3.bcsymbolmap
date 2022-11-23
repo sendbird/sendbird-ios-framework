@@ -1,8 +1,8 @@
 BCSymbolMap Version: 2.0
 Apple clang version 13.0.0 (clang-1300.0.29.30)
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk
-iPhoneOS15.2.sdk
-/Users/distiller/Library/Developer/Xcode/DerivedData/SendBirdSDK-btaudkundxlthbcqdxvemfiapmfu/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphoneos/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk
+iPhoneSimulator15.2.sdk
+/Users/distiller/Library/Developer/Xcode/DerivedData/SendBirdSDK-btaudkundxlthbcqdxvemfiapmfu/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphonesimulator/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
 /Users/distiller/project
 -[SBDChannelSyncManager init]
 -[SBDChannelSyncManager dealloc]
@@ -180,7 +180,7 @@ __destroy_helper_block_e8_32s
 __copy_helper_block_e8_32s
 __37-[SBDChannelSyncManager syncChannels]_block_invoke
 __39+[SBDChannelSyncManager sharedInstance]_block_invoke
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/usr/include/dispatch/once.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/usr/include/dispatch/once.h
 -[SBDPair initWithFirstObject:secondObject:]
 -[SBDPair first]
 -[SBDPair setFirst:]
@@ -3037,14 +3037,14 @@ __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke_2
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke.352
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke
 CFSwapInt64BigToHost
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
 CFSwapInt16BigToHost
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke.328
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke_2
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke
 validate_dispatch_data_partial_string
 NSMakeRange
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __56-[SendBird_SRWebSocket _readUntilBytes:length:callback:]_block_invoke
 __46-[SendBird_SRWebSocket _cleanupSelfReference:]_block_invoke
 __36-[SendBird_SRWebSocket _pumpWriting]_block_invoke.290
@@ -3323,6 +3323,8 @@ ___56+[SBDCallbackBroadcaster notifyReactionUpdated:channel:]_block_invoke_2
 +[SBDCallbackBroadcaster notifyDeliveryReceiptUpdated:]
 ___55+[SBDCallbackBroadcaster notifyDeliveryReceiptUpdated:]_block_invoke
 ___55+[SBDCallbackBroadcaster notifyDeliveryReceiptUpdated:]_block_invoke_2
++[SBDCallbackBroadcaster notifyChannelDidUpdatePinnedMessages:]
+___63+[SBDCallbackBroadcaster notifyChannelDidUpdatePinnedMessages:]_block_invoke
 +[SBDCallbackBroadcaster notifyConnectionReconnectStarted]
 ___58+[SBDCallbackBroadcaster notifyConnectionReconnectStarted]_block_invoke
 +[SBDCallbackBroadcaster notifyConnectionReconnectFailed]
@@ -3348,7 +3350,7 @@ ___48+[SBDCallbackBroadcaster notifySessionWasClosed]_block_invoke
 ___block_descriptor_56_e8_32s40s48w_e5_v8?0l
 ___block_descriptor_64_e8_32s40s48s56w_e5_v8?0l
 ___block_descriptor_52_e8_32s40s_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.125
+_OBJC_CLASSLIST_REFERENCES_$_.127
 _OBJC_SELECTOR_REFERENCES_.129
 ___block_descriptor_41_e8_32s_e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.137
@@ -3368,6 +3370,7 @@ __58+[SBDCallbackBroadcaster notifyConnectionReconnectSucceed]_block_invoke
 __59+[SBDCallbackBroadcaster notifyConnectionReconnectCanceled]_block_invoke
 __57+[SBDCallbackBroadcaster notifyConnectionReconnectFailed]_block_invoke
 __58+[SBDCallbackBroadcaster notifyConnectionReconnectStarted]_block_invoke
+__63+[SBDCallbackBroadcaster notifyChannelDidUpdatePinnedMessages:]_block_invoke
 __55+[SBDCallbackBroadcaster notifyDeliveryReceiptUpdated:]_block_invoke_2
 __55+[SBDCallbackBroadcaster notifyDeliveryReceiptUpdated:]_block_invoke
 __56+[SBDCallbackBroadcaster notifyReactionUpdated:channel:]_block_invoke_2
@@ -3447,9 +3450,9 @@ __OBJC_$_CATEGORY_NSString_$_SendBirdSDK
 /Users/distiller/project/SendBirdSDK/NSString+SBDMessage.m
 SendBirdSDK/NSString+SBDMessage.m
 CFStringGetCharacterFromInlineBuffer
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
 CFRangeMake
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
 CFStringInitInlineBuffer
 +[SBDUtils infersMimeTypeFromData:]
 +[SBDUtils infersMimeTypeFromFileName:andFile:]
@@ -3781,9 +3784,16 @@ ___24-[SBDChannelEvent users]_block_invoke
 -[SBDChannelEvent setGroupChannelHiddenState:]
 -[SBDChannelEvent restrictionData]
 -[SBDChannelEvent setRestrictionData:]
+-[SBDChannelEvent pinnedMessageIds]
+-[SBDChannelEvent setPinnedMessageIds:]
+-[SBDChannelEvent lastPinnedMessage]
+-[SBDChannelEvent setLastPinnedMessage:]
 -[SBDChannelEvent .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.63
+_OBJC_CLASSLIST_REFERENCES_$_.70
 ___block_descriptor_32_e19_16?0"SBDMember"8l
-___block_literal_global.73
+___block_literal_global.84
+_OBJC_CLASSLIST_REFERENCES_$_.99
 __OBJC_CLASS_PROTOCOLS_$_SBDChannelEvent
 __OBJC_METACLASS_RO_$_SBDChannelEvent
 __OBJC_$_INSTANCE_METHODS_SBDChannelEvent
@@ -3796,6 +3806,8 @@ _OBJC_IVAR_$_SBDChannelEvent._participantCount
 _OBJC_IVAR_$_SBDChannelEvent._ts
 _OBJC_IVAR_$_SBDChannelEvent._groupChannelHiddenState
 _OBJC_IVAR_$_SBDChannelEvent._restrictionData
+_OBJC_IVAR_$_SBDChannelEvent._pinnedMessageIds
+_OBJC_IVAR_$_SBDChannelEvent._lastPinnedMessage
 __OBJC_$_INSTANCE_VARIABLES_SBDChannelEvent
 __OBJC_$_PROP_LIST_SBDChannelEvent
 __OBJC_CLASS_RO_$_SBDChannelEvent
@@ -3935,7 +3947,6 @@ __OBJC_$_INSTANCE_VARIABLES_SBDThumbnailSize
 __OBJC_$_PROP_LIST_SBDThumbnailSize
 __OBJC_CLASS_RO_$_SBDThumbnailSize
 _OBJC_CLASSLIST_REFERENCES_$_.112
-_OBJC_CLASSLIST_REFERENCES_$_.127
 _OBJC_CLASSLIST_REFERENCES_$_.145
 __OBJC_CLASS_PROTOCOLS_$_SBDThumbnail
 __OBJC_METACLASS_RO_$_SBDThumbnail
@@ -4315,7 +4326,6 @@ ___38+[SBDGroupChannelDatabase resetChunk:]_block_invoke
 +[SBDGroupChannelDatabase checkUserIdsFilterExactMatchWithQuery:channel:]
 _OBJC_CLASSLIST_REFERENCES_$_.85
 _OBJC_CLASSLIST_REFERENCES_$_.90
-_OBJC_CLASSLIST_REFERENCES_$_.99
 _OBJC_CLASSLIST_REFERENCES_$_.102
 ___block_descriptor_88_e8_32s48s56r64r72r80r_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.138
@@ -4880,7 +4890,6 @@ __87-[SBDChannelChangeLogsPager requestAllChangeLogsWithTokenDataSource:completi
 -[SBDCommand requestIdAck]
 -[SBDCommand setRequestIdAck:]
 -[SBDCommand .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.70
 _OBJC_CLASSLIST_REFERENCES_$_.96
 _OBJC_CLASSLIST_REFERENCES_$_.105
 _OBJC_CLASSLIST_REFERENCES_$_.110
@@ -6506,7 +6515,6 @@ ___38+[SBDChannelDataSource sharedInstance]_block_invoke
 -[SBDChannelDataSource channelCache]
 -[SBDChannelDataSource setChannelCache:]
 -[SBDChannelDataSource .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.63
 __OBJC_$_CLASS_METHODS_SBDChannelDataSource
 __OBJC_METACLASS_RO_$_SBDChannelDataSource
 __OBJC_$_INSTANCE_METHODS_SBDChannelDataSource
@@ -6985,6 +6993,10 @@ ___29-[SBDGroupChannel comparator]_block_invoke
 -[SBDGroupChannel setMessageOffsetTimestamp:]
 -[SBDGroupChannel messageSurvivalSeconds]
 -[SBDGroupChannel setMessageSurvivalSeconds:]
+-[SBDGroupChannel pinnedMessageIds]
+-[SBDGroupChannel setPinnedMessageIds:]
+-[SBDGroupChannel lastPinnedMessage]
+-[SBDGroupChannel setLastPinnedMessage:]
 -[SBDGroupChannel memberMap]
 -[SBDGroupChannel setMemberMap:]
 -[SBDGroupChannel cachedReadReceiptStatus]
@@ -7154,25 +7166,25 @@ _OBJC_SELECTOR_REFERENCES_.671
 _OBJC_IVAR_$_SBDGroupChannel._hiddenState
 _OBJC_IVAR_$_SBDGroupChannel._myLastRead
 _OBJC_IVAR_$_SBDGroupChannel._messageSurvivalSeconds
+_OBJC_IVAR_$_SBDGroupChannel._pinnedMessageIds
 _OBJC_SELECTOR_REFERENCES_.677
-_OBJC_CLASSLIST_REFERENCES_$_.680
-_OBJC_SELECTOR_REFERENCES_.682
-_OBJC_SELECTOR_REFERENCES_.684
-_OBJC_SELECTOR_REFERENCES_.686
+_OBJC_IVAR_$_SBDGroupChannel._lastPinnedMessage
+_OBJC_CLASSLIST_REFERENCES_$_.686
 _OBJC_SELECTOR_REFERENCES_.688
 _OBJC_SELECTOR_REFERENCES_.690
 _OBJC_SELECTOR_REFERENCES_.692
-_OBJC_CLASSLIST_REFERENCES_$_.693
-_OBJC_SELECTOR_REFERENCES_.702
+_OBJC_SELECTOR_REFERENCES_.694
+_OBJC_CLASSLIST_REFERENCES_$_.699
 _OBJC_SELECTOR_REFERENCES_.704
 _OBJC_SELECTOR_REFERENCES_.708
+_OBJC_SELECTOR_REFERENCES_.712
 _OBJC_SELECTOR_REFERENCES_.724
-_OBJC_CLASSLIST_REFERENCES_$_.729
-_OBJC_SELECTOR_REFERENCES_.731
-_OBJC_SELECTOR_REFERENCES_.735
-_OBJC_IVAR_$_SBDGroupChannel._messageOffsetTimestamp
+_OBJC_SELECTOR_REFERENCES_.732
+_OBJC_SELECTOR_REFERENCES_.734
+_OBJC_CLASSLIST_REFERENCES_$_.735
 _OBJC_SELECTOR_REFERENCES_.741
 _OBJC_SELECTOR_REFERENCES_.745
+_OBJC_IVAR_$_SBDGroupChannel._messageOffsetTimestamp
 _OBJC_SELECTOR_REFERENCES_.753
 _OBJC_SELECTOR_REFERENCES_.759
 _OBJC_SELECTOR_REFERENCES_.761
@@ -7181,16 +7193,17 @@ _OBJC_SELECTOR_REFERENCES_.767
 _OBJC_SELECTOR_REFERENCES_.769
 _OBJC_SELECTOR_REFERENCES_.771
 _OBJC_SELECTOR_REFERENCES_.773
+_OBJC_SELECTOR_REFERENCES_.775
+_OBJC_SELECTOR_REFERENCES_.777
 _OBJC_SELECTOR_REFERENCES_.779
+_OBJC_SELECTOR_REFERENCES_.793
 ___block_descriptor_40_e8_32s_e45_q24?0"SBDGroupChannel"8"SBDGroupChannel"16l
-_OBJC_SELECTOR_REFERENCES_.794
-_OBJC_SELECTOR_REFERENCES_.796
-_OBJC_SELECTOR_REFERENCES_.798
 _OBJC_SELECTOR_REFERENCES_.800
 _OBJC_SELECTOR_REFERENCES_.804
 _OBJC_SELECTOR_REFERENCES_.806
 _OBJC_SELECTOR_REFERENCES_.808
 _OBJC_SELECTOR_REFERENCES_.810
+_OBJC_SELECTOR_REFERENCES_.816
 _OBJC_IVAR_$_SBDGroupChannel._sendMarkAsReadEnable
 _OBJC_IVAR_$_SBDGroupChannel._markAsDeliveredTimer
 _OBJC_IVAR_$_SBDGroupChannel._needRequestMarkAsDelivered
@@ -7730,6 +7743,8 @@ ___81-[SBDPlatformAPIClient getReportStatusWithChannel:limit:token:completionHan
 -[SBDPlatformAPIClient getReportStatusWithMessage:channel:limit:token:completionHandler:]
 ___89-[SBDPlatformAPIClient getReportStatusWithMessage:channel:limit:token:completionHandler:]_block_invoke
 -[SBDPlatformAPIClient sendUserMessageWithChannelType:channelUrl:messageParams:senderId:additionalMentionedUserIds:markAsRead:payload:completionHandler:]
+-[SBDPlatformAPIClient sendAndPinUserMessageWithChannelType:channelUrl:messageParams:senderId:completionHandler:]
+-[SBDPlatformAPIClient updateAndPinUserMessageWithChannelUrl:channelType:messageId:userMessageParams:completionHandler:]
 -[SBDPlatformAPIClient updateUserMessageWithChannelUrl:channelType:messageId:userMessageParams:additionalMentionedUserIds:additionalPayload:completionHandler:]
 -[SBDPlatformAPIClient sendAdminMessageWithChannelUrl:channelType:message:customType:data:isSilent:completionHandler:]
 ___118-[SBDPlatformAPIClient sendAdminMessageWithChannelUrl:channelType:message:customType:data:isSilent:completionHandler:]_block_invoke
@@ -7741,6 +7756,10 @@ ___121-[SBDPlatformAPIClient updateAdminMessageWithChannelUrl:channelType:messag
 -[SBDPlatformAPIClient registerScheduledUserMessageAt:timezone:channelType:channelUrl:message:customType:data:mentionType:mentionedUserIds:metaArrayKeys:pushOption:targetLanguages:sourceLanguage:markAsRead:senderId:completionHandler:]
 -[SBDPlatformAPIClient getMessageWithChannelType:channelUrl:messageId:includeOption:completionHandler:]
 -[SBDPlatformAPIClient translateUserMessageWithChannelType:channelUrl:messageId:targetLanguages:completionHandler:]
+-[SBDPlatformAPIClient pinMessageWithChannelType:channelUrl:messageId:completionHandler:]
+___89-[SBDPlatformAPIClient pinMessageWithChannelType:channelUrl:messageId:completionHandler:]_block_invoke
+-[SBDPlatformAPIClient unpinMessageWithChannelType:channelUrl:messageId:completionHandler:]
+___91-[SBDPlatformAPIClient unpinMessageWithChannelType:channelUrl:messageId:completionHandler:]_block_invoke
 -[SBDPlatformAPIClient createMetaCountersWithChannelURL:channelType:metaCounters:completionHandler:]
 -[SBDPlatformAPIClient getMetaCountersWithChannelURL:channelType:keys:completionHandler:]
 -[SBDPlatformAPIClient getAllMetaCountersWithChannelURL:channelType:completionHandler:]
@@ -7911,24 +7930,31 @@ ___71-[SBDPlatformAPIClient enableReaction:applicationId:completionHandler:]_blo
 _OBJC_CLASSLIST_REFERENCES_$_.41
 _OBJC_CLASSLIST_REFERENCES_$_.182
 ___block_descriptor_32_e29_16?0"SBDMessageMetaArray"8l
-___block_literal_global.304
-___block_literal_global.311
+___block_literal_global.314
+___block_literal_global.321
 _OBJC_SELECTOR_REFERENCES_.327
-_OBJC_SELECTOR_REFERENCES_.467
+_OBJC_SELECTOR_REFERENCES_.401
+_OBJC_SELECTOR_REFERENCES_.403
+_OBJC_SELECTOR_REFERENCES_.435
+_OBJC_SELECTOR_REFERENCES_.449
+_OBJC_SELECTOR_REFERENCES_.453
 _OBJC_SELECTOR_REFERENCES_.469
-_OBJC_SELECTOR_REFERENCES_.471
 _OBJC_SELECTOR_REFERENCES_.479
+_OBJC_SELECTOR_REFERENCES_.481
 _OBJC_SELECTOR_REFERENCES_.483
-_OBJC_CLASSLIST_REFERENCES_$_.496
-_OBJC_SELECTOR_REFERENCES_.504
+_OBJC_CLASSLIST_REFERENCES_$_.506
 _OBJC_SELECTOR_REFERENCES_.508
-_OBJC_CLASSLIST_REFERENCES_$_.527
-_OBJC_SELECTOR_REFERENCES_.531
+_OBJC_SELECTOR_REFERENCES_.510
+_OBJC_CLASSLIST_REFERENCES_$_.537
 ___block_descriptor_40_e8_32s_e24_v32?0"NSValue"8Q16^B24l
-_OBJC_CLASSLIST_REFERENCES_$_.737
-_OBJC_SELECTOR_REFERENCES_.777
-_OBJC_SELECTOR_REFERENCES_.811
-_OBJC_SELECTOR_REFERENCES_.827
+_OBJC_SELECTOR_REFERENCES_.550
+_OBJC_SELECTOR_REFERENCES_.598
+_OBJC_SELECTOR_REFERENCES_.636
+_OBJC_SELECTOR_REFERENCES_.674
+_OBJC_SELECTOR_REFERENCES_.682
+_OBJC_CLASSLIST_REFERENCES_$_.747
+_OBJC_SELECTOR_REFERENCES_.833
+_OBJC_SELECTOR_REFERENCES_.837
 __OBJC_$_CLASS_METHODS_SBDPlatformAPIClient
 __OBJC_METACLASS_RO_$_SBDPlatformAPIClient
 __OBJC_$_INSTANCE_METHODS_SBDPlatformAPIClient
@@ -7974,6 +8000,8 @@ __104-[SBDPlatformAPIClient createMetaArrayWithMessageId:channelUrl:channelType:
 __104-[SBDPlatformAPIClient createMetaArrayWithMessageId:channelUrl:channelType:metaArray:completionHandler:]_block_invoke
 __90-[SBDPlatformAPIClient deleteAllMetaCountersWithChannelURL:channelType:completionHandler:]_block_invoke
 __91-[SBDPlatformAPIClient deleteMetaCountersWithChannelURL:channelType:key:completionHandler:]_block_invoke
+__91-[SBDPlatformAPIClient unpinMessageWithChannelType:channelUrl:messageId:completionHandler:]_block_invoke
+__89-[SBDPlatformAPIClient pinMessageWithChannelType:channelUrl:messageId:completionHandler:]_block_invoke
 __121-[SBDPlatformAPIClient updateAdminMessageWithChannelUrl:channelType:messageId:message:customType:data:completionHandler:]_block_invoke
 __118-[SBDPlatformAPIClient sendAdminMessageWithChannelUrl:channelType:message:customType:data:isSilent:completionHandler:]_block_invoke
 __89-[SBDPlatformAPIClient getReportStatusWithMessage:channel:limit:token:completionHandler:]_block_invoke
@@ -8129,6 +8157,7 @@ ___50-[SBDCommandProcessor processChannelEvent:isJoin:]_block_invoke
 -[SBDCommandProcessor processUpdateOperators:]
 -[SBDCommandProcessor processInvite:]
 -[SBDCommandProcessor processDeclineInvitation:]
+-[SBDCommandProcessor processChannelPinnedMessageUpdated:]
 -[SBDCommandProcessor response:error:completionHandler:]
 ___56-[SBDCommandProcessor response:error:completionHandler:]_block_invoke
 -[SBDCommandProcessor waitAckTimeout:]
@@ -8168,24 +8197,23 @@ _OBJC_CLASSLIST_REFERENCES_$_.390
 _OBJC_CLASSLIST_REFERENCES_$_.407
 _OBJC_SELECTOR_REFERENCES_.413
 _OBJC_SELECTOR_REFERENCES_.431
-_OBJC_SELECTOR_REFERENCES_.435
-_OBJC_CLASSLIST_REFERENCES_$_.444
-_OBJC_CLASSLIST_REFERENCES_$_.451
-_OBJC_SELECTOR_REFERENCES_.453
-_OBJC_SELECTOR_REFERENCES_.465
-_OBJC_CLASSLIST_REFERENCES_$_.468
+_OBJC_SELECTOR_REFERENCES_.441
+_OBJC_CLASSLIST_REFERENCES_$_.446
+_OBJC_SELECTOR_REFERENCES_.467
+_OBJC_CLASSLIST_REFERENCES_$_.470
 _OBJC_SELECTOR_REFERENCES_.488
+_OBJC_SELECTOR_REFERENCES_.492
 ___block_descriptor_48_e8_32s40s_e26_v32?0"SBDMember"8Q16^B24l
+_OBJC_CLASSLIST_REFERENCES_$_.498
 _OBJC_SELECTOR_REFERENCES_.502
+_OBJC_SELECTOR_REFERENCES_.504
 _OBJC_SELECTOR_REFERENCES_.506
-_OBJC_SELECTOR_REFERENCES_.510
-_OBJC_CLASSLIST_REFERENCES_$_.513
-_OBJC_SELECTOR_REFERENCES_.515
+_OBJC_CLASSLIST_REFERENCES_$_.515
 _OBJC_SELECTOR_REFERENCES_.517
 _OBJC_SELECTOR_REFERENCES_.519
 _OBJC_SELECTOR_REFERENCES_.521
-_OBJC_SELECTOR_REFERENCES_.525
 _OBJC_SELECTOR_REFERENCES_.527
+_OBJC_SELECTOR_REFERENCES_.531
 _OBJC_SELECTOR_REFERENCES_.533
 _OBJC_SELECTOR_REFERENCES_.535
 _OBJC_SELECTOR_REFERENCES_.547
@@ -8196,14 +8224,14 @@ _OBJC_SELECTOR_REFERENCES_.559
 _OBJC_SELECTOR_REFERENCES_.563
 _OBJC_SELECTOR_REFERENCES_.569
 _OBJC_SELECTOR_REFERENCES_.573
-_OBJC_SELECTOR_REFERENCES_.577
-_OBJC_SELECTOR_REFERENCES_.583
+_OBJC_SELECTOR_REFERENCES_.579
 _OBJC_SELECTOR_REFERENCES_.601
 _OBJC_SELECTOR_REFERENCES_.603
 _OBJC_SELECTOR_REFERENCES_.605
 _OBJC_SELECTOR_REFERENCES_.607
 _OBJC_SELECTOR_REFERENCES_.609
 _OBJC_SELECTOR_REFERENCES_.611
+_OBJC_SELECTOR_REFERENCES_.625
 __OBJC_METACLASS_RO_$_SBDCommandProcessor
 __OBJC_$_INSTANCE_METHODS_SBDCommandProcessor
 _OBJC_IVAR_$_SBDCommandProcessor._ackTimerBoard
@@ -9425,7 +9453,7 @@ __67-[SBDHTTPClient runRequestWithSharedSession:uri:completionHandler:]_block_in
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke_2
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke
 __CGSizeEqualToSize
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke.215
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke
 __89-[SBDHTTPClient URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]_block_invoke
@@ -9600,7 +9628,6 @@ _OBJC_CLASSLIST_REFERENCES_$_.389
 _OBJC_CLASSLIST_REFERENCES_$_.405
 _OBJC_CLASSLIST_REFERENCES_$_.413
 _OBJC_CLASSLIST_REFERENCES_$_.462
-_OBJC_SELECTOR_REFERENCES_.492
 _OBJC_SELECTOR_REFERENCES_.494
 ___block_descriptor_40_e8_32s_e43_q24?0"SBDBaseMessage"8"SBDBaseMessage"16l
 __OBJC_$_CLASS_METHODS_SBDBaseMessage

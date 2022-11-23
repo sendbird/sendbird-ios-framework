@@ -40,6 +40,7 @@
 ///  * Receives an event when a member typed something in the [`SBDGroupChannel`](../Classes/SBDGroupChannel.html).
 ///  * Receives an event when a new member joined the [`SBDGroupChannel`](../Classes/SBDGroupChannel.html).
 ///  * Receives an event when a member left from the [`SBDGroupChannel`](../Classes/SBDGroupChannel.html).
+///  * Receives an event when there is an update on pinned messages of the [`SBDGroupChannel`](../Classes/SBDGroupChannel.html).
 ///  * Receives an event when a participant entered the [`SBDOpenChannel`](../Classes/SBDOpenChannel.html).
 ///  * Receives an event when a participant exited the [`SBDOpenChannel`](../Classes/SBDOpenChannel.html).
 ///  * Receives an event when a participant was muted or unmuted in the [`SBDOpenChannel`](../Classes/SBDOpenChannel.html).
@@ -116,6 +117,11 @@
 /// @param sender The group channel.
 /// @param user   The member left from the channel.
 - (void)channel:(SBDGroupChannel * _Nonnull)sender userDidLeave:(SBDUser * _Nonnull)user;
+
+/// A callback when there is an update on the channel's pinned messages.
+/// @param channel The group channel.
+/// @since 3.1.35
+- (void)channelDidUpdatePinnedMessages:(SBDGroupChannel * _Nonnull)channel;
 
 /// A callback when a user enter an open channel.
 /// @param sender The open channel.

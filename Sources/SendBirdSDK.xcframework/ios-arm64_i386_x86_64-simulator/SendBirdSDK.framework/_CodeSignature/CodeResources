@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/SBDBaseChannel.h</key>
 		<data>
-		O1RJuuqrAa5YIxbY8Xp36a5iJHE=
+		0HUqgOEDvACCuBLe/XMD32nVb2s=
 		</data>
 		<key>Headers/SBDBaseCollection.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/SBDGroupChannel.h</key>
 		<data>
-		S7G608xFcGQ/LI/6C8HIYlwnSfQ=
+		vNTRADnAW8EkbCCUlFIy0IxoOUk=
 		</data>
 		<key>Headers/SBDGroupChannelChangeLogsParams.h</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Headers/SBDInternalTypes.h</key>
 		<data>
-		yEvMfneomNq6caS6VEnkeYNWxg0=
+		XaKd7Tj/2SD3+YFzNIiDLKVqDSo=
 		</data>
 		<key>Headers/SBDMain.h</key>
 		<data>
@@ -294,7 +294,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		a5rTtKyGFvDfeJCYGI8V4ZmzsXQ=
+		M4317Ui+z6N2mbCdpU6mh3M1yZs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -362,11 +362,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O1RJuuqrAa5YIxbY8Xp36a5iJHE=
+			0HUqgOEDvACCuBLe/XMD32nVb2s=
 			</data>
 			<key>hash2</key>
 			<data>
-			XULrCZ4vb/RVKyoLEBLwFMUqEzUaeNq76z9M4IhpnNo=
+			ysJwkn0Wv6p5In6ccRkkHD7jdQ577dUjF+sYS5Ljxbo=
 			</data>
 		</dict>
 		<key>Headers/SBDBaseCollection.h</key>
@@ -527,11 +527,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S7G608xFcGQ/LI/6C8HIYlwnSfQ=
+			vNTRADnAW8EkbCCUlFIy0IxoOUk=
 			</data>
 			<key>hash2</key>
 			<data>
-			gzqftPUHEGP6OWXD7XYh6k8SPKwHWbfMyN/boygrMZw=
+			hEnjgP/J5yAegJ23ATF17VuEmXBvE4dSsqNlYb8ybBo=
 			</data>
 		</dict>
 		<key>Headers/SBDGroupChannelChangeLogsParams.h</key>
@@ -615,11 +615,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yEvMfneomNq6caS6VEnkeYNWxg0=
+			XaKd7Tj/2SD3+YFzNIiDLKVqDSo=
 			</data>
 			<key>hash2</key>
 			<data>
-			7yNvKaW/2WsDVOWYmS1wmieLwjVu0Azsy2wMRp2ssZ4=
+			6yIuCT8JavkZVFTnNHsLYb6b9oCm7MZVHtQuXaPHe64=
 			</data>
 		</dict>
 		<key>Headers/SBDMain.h</key>

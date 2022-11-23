@@ -196,6 +196,14 @@
 /// @since 3.0.172
 @property (atomic, readonly) NSInteger messageSurvivalSeconds;
 
+/// A list of ids of pinned messages that belong to the channel.
+/// @since 3.1.35
+@property (atomic, nonnull) NSArray<NSNumber *> *pinnedMessageIds;
+
+/// The message that was pinned the last in the channel.
+/// @since 3.1.35
+@property (atomic, nullable) SBDBaseMessage *lastPinnedMessage;
+
 /**
  *  DO NOT USE this initializer. You can only get an instance type of `SBDGroupChannel` from SDK.
  */

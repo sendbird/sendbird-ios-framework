@@ -40,6 +40,7 @@ typedef NS_ENUM(NSInteger, SBDChannelEventCategory) {
     SBDChannelEventCategoryTypingEnd = 10901,
     
     SBDChannelEventCategoryChannelPropChanged = 11000,
+    SBDChannelEventPinnedMessageUpdated = 11300,
     SBDChannelEventCategoryChannelDeleted = 12000,
     
     SBDChannelEventCategoryMetaDataChanged = 11100,

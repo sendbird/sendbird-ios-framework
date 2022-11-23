@@ -1,5 +1,10 @@
 # Changelog
 
+## v3.1.35 (Nov 23, 2022)
+
+### Improvements
+- Improved stability
+
 ## v3.1.34 (Nov 17, 2022)
 
 ### Improvements
