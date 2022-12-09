@@ -25,7 +25,7 @@
 /// This is the uploadable file size limit. (The unit is bytes.)
 ///
 /// @since 3.0.180
-@property (assign, atomic, readonly) long long uploadSizeLimit;
+@property (assign, nonatomic, readonly) long long uploadSizeLimit;
 
 
 /// This is the premium feature list using on your Application ID.

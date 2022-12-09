@@ -1,5 +1,10 @@
 # Changelog
 
+## v3.1.36 (Dec 09, 2022)
+
+- Fixed potentail thread safety issue of getMembers for SBDGroupChannel
+- Fixed session key security issue
+
 ## v3.1.35 (Nov 23, 2022)
 
 ### Improvements
