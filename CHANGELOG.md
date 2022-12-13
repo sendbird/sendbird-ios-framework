@@ -1,5 +1,12 @@
 # Changelog
 
+## v3.1.37 (Dec 13, 2022)
+
+## Improvements
+
+- Fixed unreadMessageCount to be updated when an unread message is deleted
+- Fixed a crash issue in `[SBDAppInfo _toDictionary]`
+
 ## v3.1.36 (Dec 09, 2022)
 
 - Fixed potentail thread safety issue of getMembers for SBDGroupChannel

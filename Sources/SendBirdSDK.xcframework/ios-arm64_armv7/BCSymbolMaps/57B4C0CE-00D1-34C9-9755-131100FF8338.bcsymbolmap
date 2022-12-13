@@ -1,8 +1,8 @@
 BCSymbolMap Version: 2.0
 Apple clang version 13.0.0 (clang-1300.0.29.30)
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk
-iPhoneSimulator15.2.sdk
-/Users/distiller/Library/Developer/Xcode/DerivedData/SendBirdSDK-btaudkundxlthbcqdxvemfiapmfu/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphonesimulator/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk
+iPhoneOS15.2.sdk
+/Users/distiller/Library/Developer/Xcode/DerivedData/SendBirdSDK-btaudkundxlthbcqdxvemfiapmfu/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphoneos/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
 /Users/distiller/project
 -[SBDChannelSyncManager init]
 -[SBDChannelSyncManager dealloc]
@@ -180,7 +180,7 @@ __destroy_helper_block_e8_32s
 __copy_helper_block_e8_32s
 __37-[SBDChannelSyncManager syncChannels]_block_invoke
 __39+[SBDChannelSyncManager sharedInstance]_block_invoke
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/usr/include/dispatch/once.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/usr/include/dispatch/once.h
 -[SBDPair initWithFirstObject:secondObject:]
 -[SBDPair first]
 -[SBDPair setFirst:]
@@ -2498,8 +2498,9 @@ __85-[SBDMessageListQuery loadNextMessagesFromTimestamp:limit:reverse:completion
 -[SBDAppInfo setDisableSupergroupMACK:]
 -[SBDAppInfo .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.18
-_OBJC_CLASSLIST_REFERENCES_$_.79
+_OBJC_CLASSLIST_REFERENCES_$_.55
 _OBJC_SELECTOR_REFERENCES_.83
+_OBJC_SELECTOR_REFERENCES_.85
 __OBJC_CLASS_PROTOCOLS_$_SBDAppInfo
 __OBJC_METACLASS_RO_$_SBDAppInfo
 __OBJC_$_INSTANCE_METHODS_SBDAppInfo
@@ -2710,7 +2711,6 @@ _OBJC_CLASSLIST_REFERENCES_$_.40
 _OBJC_CLASSLIST_REFERENCES_$_.76
 _OBJC_SELECTOR_REFERENCES_.80
 _OBJC_CLASSLIST_REFERENCES_$_.81
-_OBJC_SELECTOR_REFERENCES_.85
 ___block_descriptor_56_e8_32r40r48r_e35_v32?0"NSString"8"NSObject"16^B24l
 _OBJC_CLASSLIST_REFERENCES_$_.107
 ___block_descriptor_48_e8_32s40s_e25_v32?0"NSObject"8Q16^B24l
@@ -2905,7 +2905,6 @@ ___42-[SendBird_SRWebSocket _readFrameContinue]_block_invoke_2.cold.4
 -[SendBird_SRWebSocket _sendFrameWithOpcode:data:].cold.1
 -[SendBird_SRWebSocket safeHandleEvent:stream:].cold.1
 -[SendBird_SRWebSocket start:].cold.1
-_OBJC_CLASSLIST_REFERENCES_$_.55
 ___block_descriptor_40_e8_32w_e54_v32?0"NSError"8"NSInputStream"16"NSOutputStream"24l
 ___block_descriptor_48_e8_32s40w_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.67
@@ -3049,14 +3048,14 @@ __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke_2
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke.352
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke
 CFSwapInt64BigToHost
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
 CFSwapInt16BigToHost
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke.328
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke_2
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke
 validate_dispatch_data_partial_string
 NSMakeRange
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __56-[SendBird_SRWebSocket _readUntilBytes:length:callback:]_block_invoke
 __46-[SendBird_SRWebSocket _cleanupSelfReference:]_block_invoke
 __36-[SendBird_SRWebSocket _pumpWriting]_block_invoke.290
@@ -3462,9 +3461,9 @@ __OBJC_$_CATEGORY_NSString_$_SendBirdSDK
 /Users/distiller/project/SendBirdSDK/NSString+SBDMessage.m
 SendBirdSDK/NSString+SBDMessage.m
 CFStringGetCharacterFromInlineBuffer
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
 CFRangeMake
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
 CFStringInitInlineBuffer
 +[SBDUtils infersMimeTypeFromData:]
 +[SBDUtils infersMimeTypeFromFileName:andFile:]
@@ -5311,6 +5310,7 @@ ___58+[SBDBaseChannel getChannelFromServerWithUrl:channelType:]_block_invoke.659
 -[SBDBaseChannel setCachedMetaData:]
 -[SBDBaseChannel .cxx_destruct]
 ___block_descriptor_40_e8_32bs_e37_v24?0"SBDUserMessage"8"SBDError"16l
+_OBJC_CLASSLIST_REFERENCES_$_.79
 _OBJC_CLASSLIST_REFERENCES_$_.116
 _OBJC_CLASSLIST_REFERENCES_$_.119
 ___block_descriptor_56_e8_32s40s48bs_e35_v24?0"NSDictionary"8"SBDError"16l
@@ -6907,6 +6907,7 @@ ___49+[SBDGroupChannel markAsDeliveredWithChannelUrl:]_block_invoke
 -[SBDGroupChannel clearAllUnreadCount]
 -[SBDGroupChannel isMyUnreadMessageCountEnabled]
 -[SBDGroupChannel increaseUnreadMessageCount]
+-[SBDGroupChannel decreaseUnreadMessageCount]
 -[SBDGroupChannel clearUnreadMessageCount]
 -[SBDGroupChannel isMyUnreadMentionCountEnabled]
 -[SBDGroupChannel increaseUnreadMentionCount]
@@ -8194,52 +8195,45 @@ _OBJC_CLASSLIST_REFERENCES_$_.255
 ___block_descriptor_72_e8_32s40s48s56s64r_e40_v28?0"SBDBaseChannel"8B16"SBDError"20l
 _OBJC_CLASSLIST_REFERENCES_$_.284
 ___block_descriptor_56_e8_32s40s48r_e37_v24?0"SBDOpenChannel"8"SBDError"16l
-_OBJC_CLASSLIST_REFERENCES_$_.297
-___block_descriptor_56_e8_32s40r_e40_v28?0"SBDBaseChannel"8B16"SBDError"20l
-_OBJC_CLASSLIST_REFERENCES_$_.317
-_OBJC_CLASSLIST_REFERENCES_$_.349
-_OBJC_SELECTOR_REFERENCES_.355
-_OBJC_SELECTOR_REFERENCES_.357
+_OBJC_CLASSLIST_REFERENCES_$_.305
+_OBJC_SELECTOR_REFERENCES_.311
+___block_descriptor_81_e8_32s40s48r_e40_v28?0"SBDBaseChannel"8B16"SBDError"20l
+_OBJC_CLASSLIST_REFERENCES_$_.333
+_OBJC_CLASSLIST_REFERENCES_$_.365
 ___block_descriptor_57_e8_32s40s48r_e38_v24?0"SBDGroupChannel"8"SBDError"16l
-_OBJC_CLASSLIST_REFERENCES_$_.371
-___block_descriptor_56_e8_32s40s48r_e38_v24?0"SBDGroupChannel"8"SBDError"16l
-_OBJC_CLASSLIST_REFERENCES_$_.380
 _OBJC_CLASSLIST_REFERENCES_$_.385
+___block_descriptor_56_e8_32s40s48r_e38_v24?0"SBDGroupChannel"8"SBDError"16l
+_OBJC_CLASSLIST_REFERENCES_$_.394
+_OBJC_CLASSLIST_REFERENCES_$_.399
 ___block_descriptor_56_e8_32s40s48r_e40_v28?0"SBDBaseChannel"8B16"SBDError"20l
-_OBJC_CLASSLIST_REFERENCES_$_.390
-_OBJC_CLASSLIST_REFERENCES_$_.407
-_OBJC_SELECTOR_REFERENCES_.413
+_OBJC_CLASSLIST_REFERENCES_$_.404
+_OBJC_CLASSLIST_REFERENCES_$_.419
 _OBJC_SELECTOR_REFERENCES_.431
 _OBJC_SELECTOR_REFERENCES_.441
-_OBJC_CLASSLIST_REFERENCES_$_.446
+_OBJC_CLASSLIST_REFERENCES_$_.465
 _OBJC_SELECTOR_REFERENCES_.467
-_OBJC_CLASSLIST_REFERENCES_$_.470
+_OBJC_SELECTOR_REFERENCES_.471
+_OBJC_CLASSLIST_REFERENCES_$_.482
 _OBJC_SELECTOR_REFERENCES_.488
 _OBJC_SELECTOR_REFERENCES_.492
-___block_descriptor_48_e8_32s40s_e26_v32?0"SBDMember"8Q16^B24l
-_OBJC_CLASSLIST_REFERENCES_$_.498
+_OBJC_SELECTOR_REFERENCES_.494
+_OBJC_SELECTOR_REFERENCES_.496
 _OBJC_SELECTOR_REFERENCES_.502
 _OBJC_SELECTOR_REFERENCES_.504
-_OBJC_SELECTOR_REFERENCES_.506
-_OBJC_CLASSLIST_REFERENCES_$_.515
-_OBJC_SELECTOR_REFERENCES_.517
-_OBJC_SELECTOR_REFERENCES_.519
-_OBJC_SELECTOR_REFERENCES_.521
-_OBJC_SELECTOR_REFERENCES_.527
+___block_descriptor_48_e8_32s40s_e26_v32?0"SBDMember"8Q16^B24l
+_OBJC_CLASSLIST_REFERENCES_$_.527
 _OBJC_SELECTOR_REFERENCES_.531
 _OBJC_SELECTOR_REFERENCES_.533
 _OBJC_SELECTOR_REFERENCES_.535
 _OBJC_SELECTOR_REFERENCES_.547
 _OBJC_SELECTOR_REFERENCES_.553
-_OBJC_SELECTOR_REFERENCES_.555
 _OBJC_SELECTOR_REFERENCES_.557
 _OBJC_SELECTOR_REFERENCES_.559
 _OBJC_SELECTOR_REFERENCES_.563
 _OBJC_SELECTOR_REFERENCES_.573
-_OBJC_SELECTOR_REFERENCES_.589
+_OBJC_SELECTOR_REFERENCES_.577
+_OBJC_SELECTOR_REFERENCES_.581
 _OBJC_SELECTOR_REFERENCES_.591
-_OBJC_SELECTOR_REFERENCES_.593
-_OBJC_SELECTOR_REFERENCES_.595
 _OBJC_SELECTOR_REFERENCES_.597
 _OBJC_SELECTOR_REFERENCES_.599
 _OBJC_SELECTOR_REFERENCES_.601
@@ -8247,6 +8241,7 @@ _OBJC_SELECTOR_REFERENCES_.603
 _OBJC_SELECTOR_REFERENCES_.605
 _OBJC_SELECTOR_REFERENCES_.607
 _OBJC_SELECTOR_REFERENCES_.611
+_OBJC_SELECTOR_REFERENCES_.615
 _OBJC_SELECTOR_REFERENCES_.619
 _OBJC_SELECTOR_REFERENCES_.621
 _OBJC_SELECTOR_REFERENCES_.623
@@ -9428,7 +9423,6 @@ _OBJC_CLASSLIST_REFERENCES_$_.263
 _OBJC_CLASSLIST_REFERENCES_$_.280
 ___block_descriptor_56_e8_32s40s48s_e25_v32?0"NSString"816^B24l
 ___block_descriptor_48_e8_32bs40r_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
-_OBJC_SELECTOR_REFERENCES_.311
 __OBJC_$_CLASS_METHODS_SBDHTTPClient
 __OBJC_CLASS_PROTOCOLS_$_SBDHTTPClient
 __OBJC_METACLASS_RO_$_SBDHTTPClient
@@ -9472,7 +9466,7 @@ __67-[SBDHTTPClient runRequestWithSharedSession:uri:completionHandler:]_block_in
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke_2
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke
 __CGSizeEqualToSize
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke.215
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke
 __89-[SBDHTTPClient URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]_block_invoke
@@ -9647,7 +9641,6 @@ _OBJC_CLASSLIST_REFERENCES_$_.389
 _OBJC_CLASSLIST_REFERENCES_$_.405
 _OBJC_CLASSLIST_REFERENCES_$_.413
 _OBJC_CLASSLIST_REFERENCES_$_.462
-_OBJC_SELECTOR_REFERENCES_.494
 ___block_descriptor_40_e8_32s_e43_q24?0"SBDBaseMessage"8"SBDBaseMessage"16l
 __OBJC_$_CLASS_METHODS_SBDBaseMessage
 __OBJC_CLASS_PROTOCOLS_$_SBDBaseMessage
