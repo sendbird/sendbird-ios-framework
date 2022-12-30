@@ -1,5 +1,12 @@
 # Changelog
 
+## v3.1.38 (Dec 30, 2022)
+
+## Improvements
+
+- Fixed a crash issue in WebSocket.
+- Fixed reachability delegate to always run on main thread.
+
 ## v3.1.37 (Dec 13, 2022)
 
 ## Improvements

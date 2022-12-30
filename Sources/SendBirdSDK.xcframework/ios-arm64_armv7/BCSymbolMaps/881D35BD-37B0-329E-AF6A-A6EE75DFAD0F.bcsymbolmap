@@ -1,8 +1,8 @@
 BCSymbolMap Version: 2.0
 Apple clang version 13.0.0 (clang-1300.0.29.30)
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk
-iPhoneOS15.2.sdk
-/Users/distiller/Library/Developer/Xcode/DerivedData/SendBirdSDK-btaudkundxlthbcqdxvemfiapmfu/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphoneos/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk
+iPhoneSimulator15.2.sdk
+/Users/distiller/Library/Developer/Xcode/DerivedData/SendBirdSDK-btaudkundxlthbcqdxvemfiapmfu/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphonesimulator/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
 /Users/distiller/project
 -[SBDChannelSyncManager init]
 -[SBDChannelSyncManager dealloc]
@@ -180,7 +180,7 @@ __destroy_helper_block_e8_32s
 __copy_helper_block_e8_32s
 __37-[SBDChannelSyncManager syncChannels]_block_invoke
 __39+[SBDChannelSyncManager sharedInstance]_block_invoke
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/usr/include/dispatch/once.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/usr/include/dispatch/once.h
 -[SBDPair initWithFirstObject:secondObject:]
 -[SBDPair first]
 -[SBDPair setFirst:]
@@ -3048,14 +3048,14 @@ __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke_2
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke.352
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke
 CFSwapInt64BigToHost
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
 CFSwapInt16BigToHost
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke.328
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke_2
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke
 validate_dispatch_data_partial_string
 NSMakeRange
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __56-[SendBird_SRWebSocket _readUntilBytes:length:callback:]_block_invoke
 __46-[SendBird_SRWebSocket _cleanupSelfReference:]_block_invoke
 __36-[SendBird_SRWebSocket _pumpWriting]_block_invoke.290
@@ -3461,9 +3461,9 @@ __OBJC_$_CATEGORY_NSString_$_SendBirdSDK
 /Users/distiller/project/SendBirdSDK/NSString+SBDMessage.m
 SendBirdSDK/NSString+SBDMessage.m
 CFStringGetCharacterFromInlineBuffer
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
 CFRangeMake
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
 CFStringInitInlineBuffer
 +[SBDUtils infersMimeTypeFromData:]
 +[SBDUtils infersMimeTypeFromFileName:andFile:]
@@ -6462,6 +6462,7 @@ _ReachabilityCallback
 -[SBDReachability networkStatusForFlags:]
 -[SBDReachability connectionRequired]
 -[SBDReachability currentReachabilityStatus]
+___ReachabilityCallback_block_invoke
 __OBJC_$_CLASS_METHODS_SBDReachability
 __OBJC_METACLASS_RO_$_SBDReachability
 __OBJC_$_INSTANCE_METHODS_SBDReachability
@@ -6469,6 +6470,7 @@ _OBJC_IVAR_$_SBDReachability._reachabilityRef
 __OBJC_$_INSTANCE_VARIABLES_SBDReachability
 __OBJC_CLASS_RO_$_SBDReachability
 /Users/distiller/project/SendBirdSDK/SBDReachability.m
+__ReachabilityCallback_block_invoke
 SendBirdSDK/SBDReachability.m
 PrintReachabilityFlags
 ReachabilityCallback
@@ -9466,7 +9468,7 @@ __67-[SBDHTTPClient runRequestWithSharedSession:uri:completionHandler:]_block_in
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke_2
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke
 __CGSizeEqualToSize
-/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+/Applications/Xcode-13.2.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke.215
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke
 __89-[SBDHTTPClient URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]_block_invoke
