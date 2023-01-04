@@ -8187,10 +8187,9 @@ ___block_descriptor_56_e8_32s40s48bs_e18_v16?0"SBDError"8l
 _OBJC_CLASSLIST_REFERENCES_$_.171
 _OBJC_CLASSLIST_REFERENCES_$_.172
 _OBJC_CLASSLIST_REFERENCES_$_.177
-_OBJC_CLASSLIST_REFERENCES_$_.194
-_OBJC_CLASSLIST_REFERENCES_$_.197
-_OBJC_CLASSLIST_REFERENCES_$_.200
-_OBJC_CLASSLIST_REFERENCES_$_.238
+_OBJC_CLASSLIST_REFERENCES_$_.196
+_OBJC_CLASSLIST_REFERENCES_$_.213
+_OBJC_CLASSLIST_REFERENCES_$_.220
 ___block_descriptor_80_e8_32s40s48s56s64r_e40_v28?0"SBDBaseChannel"8B16"SBDError"20l
 ___block_descriptor_64_e8_32s40s48s56r_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.255
@@ -8414,6 +8413,7 @@ _cachedChannels
 ___block_descriptor_40_e8_32bs_e40_v28?0"SBDOpenChannel"8B16"SBDError"20l
 ___block_descriptor_40_e8_32bs_e37_v24?0"SBDOpenChannel"8"SBDError"16l
 ___block_descriptor_48_e8_32s40bs_e33_v24?0"SBDCommand"8"SBDError"16l
+_OBJC_CLASSLIST_REFERENCES_$_.194
 _enteredChannels.onceToken
 _enteredChannels
 _OBJC_CLASSLIST_REFERENCES_$_.215
@@ -9076,7 +9076,6 @@ ___40-[SBDGroupChannelListQuery loadNextPage]_block_invoke
 -[SBDGroupChannelListQuery queue]
 -[SBDGroupChannelListQuery setQueue:]
 -[SBDGroupChannelListQuery .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.213
 _OBJC_CLASSLIST_REFERENCES_$_.233
 _OBJC_CLASSLIST_REFERENCES_$_.247
 _OBJC_SELECTOR_REFERENCES_.253

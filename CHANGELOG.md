@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.1.39 (Jan 04, 2023)
+
+## Improvements
+
+- Fixed unreadMessageCount not being updated
+
 ## v3.1.38 (Dec 30, 2022)
 
 ## Improvements
