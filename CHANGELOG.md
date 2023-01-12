@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.1.40 (Jan 12, 2023)
+
+## Improvements
+
+- Fixed crash issue when closing websocket
+
 ## v3.1.39 (Jan 04, 2023)
 
 ## Improvements
