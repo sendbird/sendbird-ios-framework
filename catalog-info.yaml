@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Chat iOS v3 SDK Cocoapods
+  description: Public repo used for releasing Chat iOS v3 SDK on Cocoapods
+  annotations:
+    github.com/project-slug: sendbird/sendbird-ios-framework
+spec:
+  type: library
+  lifecycle: production
+  owner: dep-client-platform
+  system: sendbird-chat
+
+
