@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.1.42 (Feb 22, 2023)
+
+## Improvements
+
+- Fixed a bug that the callback of the connect method returns the connection canceled error
+
 ## v3.1.41 (Feb 16, 2023)
 
 ## Improvements
