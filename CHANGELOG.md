@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.1.44 (Mar 10, 2023)
+
+### **Improvements**
+
+- Improved stability
+
 ## v3.1.43 (Mar 03, 2023)
 
 ### **Improvements**

@@ -193,6 +193,11 @@ typedef void(^SBDBackgroundSessionBlock)(void);
 /// @param completionHandler The handler block to execute.
 + (void)disconnectWithCompletionHandler:(nullable void (^)(void))completionHandler;
 
+/// Disconnects only the web socket connection. Current user information and local caching will still be valid after calling this method.
+/// @param completionHandler The handler block to execute.
+/// @since 3.1.44
++ (void)disconnectWebSocketWithCompletionHandler:(nullable void (^)(void))completionHandler;
+
 /// Adds the `SBDConnectionDelegate`.
 /// @param delegate   `SBDConnectionDelegate` delegate.
 /// @param identifier The identifier for the delegate.
