@@ -1,8 +1,8 @@
 BCSymbolMap Version: 2.0
 Apple clang version 13.1.6 (clang-1316.0.21.2.5)
-/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk
-iPhoneSimulator15.5.sdk
-/Users/distiller/Library/Developer/Xcode/DerivedData/SendBirdSDK-btaudkundxlthbcqdxvemfiapmfu/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphonesimulator/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
+/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
+iPhoneOS15.5.sdk
+/Users/distiller/Library/Developer/Xcode/DerivedData/SendBirdSDK-btaudkundxlthbcqdxvemfiapmfu/ArchiveIntermediates/SendBirdSDK/IntermediateBuildFilesPath/SendBirdSDK.build/Release-iphoneos/SendBirdSDK.build/DerivedSources/SendBirdSDK_vers.c
 /Users/distiller/project
 -[SBDChannelSyncManager init]
 -[SBDChannelSyncManager dealloc]
@@ -180,7 +180,7 @@ __destroy_helper_block_e8_32s
 __copy_helper_block_e8_32s
 __37-[SBDChannelSyncManager syncChannels]_block_invoke
 __39+[SBDChannelSyncManager sharedInstance]_block_invoke
-/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/usr/include/dispatch/once.h
+/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/usr/include/dispatch/once.h
 -[SBDPair initWithFirstObject:secondObject:]
 -[SBDPair first]
 -[SBDPair setFirst:]
@@ -413,10 +413,10 @@ ___36+[SBDLocalCachePrefs sharedInstance]_block_invoke
 -[SBDLocalCachePrefs setUserDefaults:]
 -[SBDLocalCachePrefs .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.21
-_OBJC_SELECTOR_REFERENCES_.40
-_OBJC_CLASSLIST_REFERENCES_$_.41
-_OBJC_SELECTOR_REFERENCES_.45
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_CLASSLIST_REFERENCES_$_.43
 _OBJC_SELECTOR_REFERENCES_.47
+_OBJC_SELECTOR_REFERENCES_.49
 __OBJC_$_CLASS_METHODS_SBDLocalCachePrefs
 __OBJC_METACLASS_RO_$_SBDLocalCachePrefs
 __OBJC_$_INSTANCE_METHODS_SBDLocalCachePrefs
@@ -453,7 +453,6 @@ ___64-[SBDChannelRepository loadFromCacheWithOffset:isSyncCompleted:]_block_invo
 -[SBDChannelRepository .cxx_destruct]
 _OBJC_SELECTOR_REFERENCES_.9
 _OBJC_CLASSLIST_REFERENCES_$_.36
-_OBJC_SELECTOR_REFERENCES_.49
 _OBJC_CLASSLIST_REFERENCES_$_.50
 _OBJC_CLASSLIST_REFERENCES_$_.53
 _OBJC_SELECTOR_REFERENCES_.55
@@ -511,7 +510,7 @@ ___61-[SBDOpenChannelListQuery loadNextPageWithCompletionHandler:]_block_invoke_
 -[SBDOpenChannelListQuery setToken:]
 -[SBDOpenChannelListQuery .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.22
-_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_SELECTOR_REFERENCES_.40
 _OBJC_SELECTOR_REFERENCES_.44
 ___block_descriptor_32_e8_16?08l
 _OBJC_CLASSLIST_REFERENCES_$_.60
@@ -813,6 +812,7 @@ ___25-[SBDTimer forceToExpire]_block_invoke
 -[SBDTimer .cxx_destruct]
 ___block_descriptor_40_e8_32w_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.37
+_OBJC_SELECTOR_REFERENCES_.45
 _OBJC_CLASSLIST_REFERENCES_$_.58
 __OBJC_$_CLASS_METHODS_SBDTimer
 __OBJC_METACLASS_RO_$_SBDTimer
@@ -2096,7 +2096,7 @@ __49+[SBDMain removeConnectionDelegateForIdentifier:]_block_invoke
 __copy_helper_block_e8_32s40s
 __44+[SBDMain addConnectionDelegate:identifier:]_block_invoke
 dispatch_get_main_queue
-/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/usr/include/dispatch/queue.h
+/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/usr/include/dispatch/queue.h
 __28+[SBDMain initializeClients]_block_invoke
 __25+[SBDMain sharedInstance]_block_invoke
 __15-[SBDMain init]_block_invoke
@@ -3066,14 +3066,14 @@ __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke_3
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke_2
 __43-[SendBird_SRWebSocket stream:handleEvent:]_block_invoke
 CFSwapInt64BigToHost
-/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
+/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h
 CFSwapInt16BigToHost
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke.328
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke_2
 __41-[SendBird_SRWebSocket _innerPumpScanner]_block_invoke
 validate_dispatch_data_partial_string
 NSMakeRange
-/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __56-[SendBird_SRWebSocket _readUntilBytes:length:callback:]_block_invoke
 __46-[SendBird_SRWebSocket _cleanupSelfReference:]_block_invoke
 __36-[SendBird_SRWebSocket _pumpWriting]_block_invoke.290
@@ -3475,9 +3475,9 @@ __OBJC_$_CATEGORY_NSString_$_SendBirdSDK
 /Users/distiller/project/SendBirdSDK/NSString+SBDMessage.m
 SendBirdSDK/NSString+SBDMessage.m
 CFStringGetCharacterFromInlineBuffer
-/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
+/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
 CFRangeMake
-/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
+/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
 CFStringInitInlineBuffer
 +[SBDUtils infersMimeTypeFromData:]
 +[SBDUtils infersMimeTypeFromFileName:andFile:]
@@ -4574,21 +4574,51 @@ __OBJC_CLASS_RO_$_SendBird_SRRunLoopThread
 /Users/distiller/project/SendBirdSDK/WebSocket/SocketRocket/Internal/RunLoop/SendBird_SRRunLoopThread.m
 SendBirdSDK/WebSocket/SocketRocket/Internal/RunLoop/SendBird_SRRunLoopThread.m
 __40+[SendBird_SRRunLoopThread sharedThread]_block_invoke
--[SBDWebSocketDelegateController delegate]
+-[SBDWebSocketDelegateController init]
 -[SBDWebSocketDelegateController setDelegate:]
--[SBDWebSocketDelegateController dispatchQueue]
+___46-[SBDWebSocketDelegateController setDelegate:]_block_invoke
+-[SBDWebSocketDelegateController delegate]
+___42-[SBDWebSocketDelegateController delegate]_block_invoke
 -[SBDWebSocketDelegateController setDispatchQueue:]
+___51-[SBDWebSocketDelegateController setDispatchQueue:]_block_invoke
+-[SBDWebSocketDelegateController dispatchQueue]
+___47-[SBDWebSocketDelegateController dispatchQueue]_block_invoke
+-[SBDWebSocketDelegateController setOperationQueue:]
+___52-[SBDWebSocketDelegateController setOperationQueue:]_block_invoke
+-[SBDWebSocketDelegateController operationQueue]
+___48-[SBDWebSocketDelegateController operationQueue]_block_invoke
+-[SBDWebSocketDelegateController performDelegateBlock:]
+___55-[SBDWebSocketDelegateController performDelegateBlock:]_block_invoke
+___55-[SBDWebSocketDelegateController performDelegateBlock:]_block_invoke.28
+___copy_helper_block_e8_32b40r48r
+-[SBDWebSocketDelegateController performDelegateQueueBlock:]
+-[SBDWebSocketDelegateController availableDelegateMethods]
+-[SBDWebSocketDelegateController setAvailableDelegateMethods:]
+-[SBDWebSocketDelegateController accessQueue]
 -[SBDWebSocketDelegateController .cxx_destruct]
+___block_descriptor_56_e8_32bs40r48r_e5_v8?0l
 __OBJC_METACLASS_RO_$_SBDWebSocketDelegateController
 __OBJC_$_INSTANCE_METHODS_SBDWebSocketDelegateController
+_OBJC_IVAR_$_SBDWebSocketDelegateController._availableDelegateMethods
 _OBJC_IVAR_$_SBDWebSocketDelegateController._delegate
 _OBJC_IVAR_$_SBDWebSocketDelegateController._dispatchQueue
+_OBJC_IVAR_$_SBDWebSocketDelegateController._operationQueue
+_OBJC_IVAR_$_SBDWebSocketDelegateController._accessQueue
 __OBJC_$_INSTANCE_VARIABLES_SBDWebSocketDelegateController
 __OBJC_$_PROP_LIST_SBDWebSocketDelegateController
 __OBJC_CLASS_RO_$_SBDWebSocketDelegateController
 /Users/distiller/project/SendBirdSDK/WebSocket/SBDWebSocketDelegateController.m
 SendBirdSDK/WebSocket/SBDWebSocketDelegateController.m
 SendBirdSDK/WebSocket/SBDWebSocketDelegateController.h
+__copy_helper_block_e8_32b40r48r
+__55-[SBDWebSocketDelegateController performDelegateBlock:]_block_invoke.28
+__55-[SBDWebSocketDelegateController performDelegateBlock:]_block_invoke
+__48-[SBDWebSocketDelegateController operationQueue]_block_invoke
+__52-[SBDWebSocketDelegateController setOperationQueue:]_block_invoke
+__47-[SBDWebSocketDelegateController dispatchQueue]_block_invoke
+__51-[SBDWebSocketDelegateController setDispatchQueue:]_block_invoke
+__42-[SBDWebSocketDelegateController delegate]_block_invoke
+__46-[SBDWebSocketDelegateController setDelegate:]_block_invoke
 -[SBDRestrictionInfo initWithDictionary:]
 -[SBDRestrictionInfo _toDictionary]
 -[SBDRestrictionInfo infoDescription]
@@ -4622,20 +4652,15 @@ ___49-[SBDSessionWebSocketEngine sendData:completion:]_block_invoke
 -[SBDSessionWebSocketEngine readyState]
 -[SBDSessionWebSocketEngine listen]
 ___35-[SBDSessionWebSocketEngine listen]_block_invoke
--[SBDSessionWebSocketEngine handleMessageError:]
-___48-[SBDSessionWebSocketEngine handleMessageError:]_block_invoke
--[SBDSessionWebSocketEngine handleMessageTypeData:]
-___51-[SBDSessionWebSocketEngine handleMessageTypeData:]_block_invoke
--[SBDSessionWebSocketEngine handleMessageTypeString:]
-___53-[SBDSessionWebSocketEngine handleMessageTypeString:]_block_invoke
+___35-[SBDSessionWebSocketEngine listen]_block_invoke_2
+___35-[SBDSessionWebSocketEngine listen]_block_invoke.89
+___35-[SBDSessionWebSocketEngine listen]_block_invoke_2.96
 -[SBDSessionWebSocketEngine reachabilityChanged:]
 ___49-[SBDSessionWebSocketEngine reachabilityChanged:]_block_invoke
 -[SBDSessionWebSocketEngine URLSession:webSocketTask:didOpenWithProtocol:]
 ___74-[SBDSessionWebSocketEngine URLSession:webSocketTask:didOpenWithProtocol:]_block_invoke
--[SBDSessionWebSocketEngine dispatchWebSocketDidOpen]
 -[SBDSessionWebSocketEngine URLSession:webSocketTask:didCloseWithCode:reason:]
 ___78-[SBDSessionWebSocketEngine URLSession:webSocketTask:didCloseWithCode:reason:]_block_invoke
--[SBDSessionWebSocketEngine dispatchWebSocketDidCloseWithCloseCode:reasonString:]
 -[SBDSessionWebSocketEngine URLSession:task:willBeginDelayedRequest:completionHandler:]
 -[SBDSessionWebSocketEngine URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:]
 -[SBDSessionWebSocketEngine URLSession:task:didReceiveChallenge:completionHandler:]
@@ -4656,9 +4681,13 @@ ___78-[SBDSessionWebSocketEngine URLSession:webSocketTask:didCloseWithCode:reaso
 -[SBDSessionWebSocketEngine .cxx_destruct]
 -[SBDSessionWebSocketEngine start:].cold.1
 _OBJC_CLASSLIST_REFERENCES_$_.2
-_OBJC_CLASSLIST_REFERENCES_$_.47
+_OBJC_CLASSLIST_REFERENCES_$_.41
 ___block_descriptor_40_e8_32bs_e17_v16?0"NSError"8l
+___block_descriptor_48_e8_32s40s_e90_v18?0"<SBDWebSocketDelegate>"8{SendBird_SRDelegateAvailableMethods=b1b1b1b1b1b1b1b1b1}16l
 ___block_descriptor_40_e8_32w_e50_v24?0"NSURLSessionWebSocketMessage"8"NSError"16l
+_OBJC_CLASSLIST_REFERENCES_$_.108
+___block_descriptor_40_e8_32s_e90_v18?0"<SBDWebSocketDelegate>"8{SendBird_SRDelegateAvailableMethods=b1b1b1b1b1b1b1b1b1}16l
+___block_descriptor_56_e8_32s40s_e90_v18?0"<SBDWebSocketDelegate>"8{SendBird_SRDelegateAvailableMethods=b1b1b1b1b1b1b1b1b1}16l
 __OBJC_$_PROTOCOL_REFS_NSURLSessionDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSURLSessionDelegate
 __OBJC_$_PROTOCOL_METHOD_TYPES_NSURLSessionDelegate
@@ -4699,9 +4728,9 @@ SendBirdSDK/WebSocket/SessionSocket/SBDSessionWebSocketEngine.m
 __78-[SBDSessionWebSocketEngine URLSession:webSocketTask:didCloseWithCode:reason:]_block_invoke
 __74-[SBDSessionWebSocketEngine URLSession:webSocketTask:didOpenWithProtocol:]_block_invoke
 __49-[SBDSessionWebSocketEngine reachabilityChanged:]_block_invoke
-__53-[SBDSessionWebSocketEngine handleMessageTypeString:]_block_invoke
-__51-[SBDSessionWebSocketEngine handleMessageTypeData:]_block_invoke
-__48-[SBDSessionWebSocketEngine handleMessageError:]_block_invoke
+__35-[SBDSessionWebSocketEngine listen]_block_invoke_2.96
+__35-[SBDSessionWebSocketEngine listen]_block_invoke.89
+__35-[SBDSessionWebSocketEngine listen]_block_invoke_2
 __35-[SBDSessionWebSocketEngine listen]_block_invoke
 __49-[SBDSessionWebSocketEngine sendData:completion:]_block_invoke
 __51-[SBDSessionWebSocketEngine sendString:completion:]_block_invoke
@@ -5825,7 +5854,6 @@ ___block_descriptor_32_e35_v24?0"NSDictionary"8"SBDError"16l
 ___block_literal_global.19
 ___block_descriptor_40_e8__e18_v16?0"NSString"8l
 ___block_descriptor_40_e8__e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.43
 _sessionkeyQueue.sessionKeyQueue
 _sessionkeyQueue.onceToken
 ___block_literal_global.88
@@ -5914,7 +5942,6 @@ SendBirdSDK/NSData+SBDCrypto.m
 -[SBDBaseMessageParams channelUrl]
 -[SBDBaseMessageParams .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.101
-_OBJC_CLASSLIST_REFERENCES_$_.108
 _OBJC_CLASSLIST_REFERENCES_$_.133
 __OBJC_CLASS_PROTOCOLS_$_SBDBaseMessageParams
 __OBJC_METACLASS_RO_$_SBDBaseMessageParams
@@ -6446,7 +6473,7 @@ __destroy_helper_block_e8_32s40r48w
 __copy_helper_block_e8_32s40r48w
 __38-[SendBird_SRProxyConnect _writeData:]_block_invoke
 CFBridgingRelease
-/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h
+/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h
 __55-[SendBird_SRProxyConnect _fetchPAC:withProxySettings:]_block_invoke
 +[SBDReachability reachabilityWithHostName:]
 -[SBDReachability startNotifier]
@@ -6468,7 +6495,7 @@ SendBirdSDK/SBDReachability.m
 __ReachabilityCallback_block_invoke
 PrintReachabilityFlags
 ReachabilityCallback
-/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/usr/include/Dispatch/queue.h
+/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/usr/include/Dispatch/queue.h
 -[SBDOGMetaData initWithDictionary:]
 -[SBDOGMetaData _toDictionary]
 -[SBDOGMetaData title]
@@ -7582,7 +7609,6 @@ __OBJC_CLASS_RO_$_SBDEmojiContainer
 SendBirdSDK/Emojis/SBDEmoji.m
 SendBirdSDK/Emojis/SBDEmoji.h
 -[SBDWebSocketClient initWithHost:timeout:useNative:]
--[SBDWebSocketClient dealloc]
 +[SBDWebSocketClient createWebSocketClientWithHost:timeout:useNative:]
 -[SBDWebSocketClient restartPinger]
 -[SBDWebSocketClient startWatchdog]
@@ -7642,7 +7668,6 @@ ___52-[SBDWebSocketClient sendCommand:completionHandler:]_block_invoke
 -[SBDWebSocketClient setOnError:]
 -[SBDWebSocketClient .cxx_destruct]
 ___clang_at_available_requires_core_foundation_framework
-_OBJC_CLASSLIST_REFERENCES_$_.66
 ___block_descriptor_40_e8_32w_e18_v16?0"SBDError"8l
 ___block_descriptor_56_e8_32bs40s48s_e18_v16?0"SBDError"8l
 _OBJC_SELECTOR_REFERENCES_.159
@@ -8397,6 +8422,7 @@ ___119-[SBDOpenChannel updateChannelWithName:coverImage:coverImageName:data:oper
 -[SBDOpenChannel .cxx_destruct]
 _cachedChannels
 _OBJC_CLASSLIST_REFERENCES_$_.24
+_OBJC_CLASSLIST_REFERENCES_$_.47
 ___block_descriptor_40_e8_32bs_e40_v28?0"SBDOpenChannel"8B16"SBDError"20l
 ___block_descriptor_40_e8_32bs_e37_v24?0"SBDOpenChannel"8"SBDError"16l
 ___block_descriptor_48_e8_32s40bs_e33_v24?0"SBDCommand"8"SBDError"16l
@@ -9455,7 +9481,7 @@ __67-[SBDHTTPClient runRequestWithSharedSession:uri:completionHandler:]_block_in
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke_2
 __77-[SBDHTTPClient requestWith:uri:multipart:progressHandler:completionHandler:]_block_invoke
 __CGSizeEqualToSize
-/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+/Applications/Xcode-13.4.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke.215
 __51-[SBDHTTPClient buildRequestWithType:body:headers:]_block_invoke
 __89-[SBDHTTPClient URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]_block_invoke
