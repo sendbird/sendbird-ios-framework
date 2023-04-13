@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.1.47 (Apr 13, 2023)
+
+### **Improvements**
+
+- Fixed completion to be called only once when the received websocket command is an error
+
 ## v3.1.46 (Apr 13, 2023)
 
 ### **Improvements**
