@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.1.46 (Apr 13, 2023)
+
+### **Improvements**
+
+- Fixed crash issue that occurs when websocket disconnects
+
 ## v3.1.45 (Apr 07, 2023)
 
 ### **Improvements**
