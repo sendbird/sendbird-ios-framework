@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.1.48 (Apr 26, 2023)
+
+### **Improvements**
+
+- Updated iOS deployment target to 11.0 for Xcode 14.1+
+
 ## v3.1.47 (Apr 13, 2023)
 
 ### **Improvements**
