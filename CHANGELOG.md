@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.1.49 (Jun 19, 2023)
+
+### **Improvements**
+
+- Fixed a crash that could occur when connecting users in multi-threading
+
 ## v3.1.48 (Apr 26, 2023)
 
 ### **Improvements**
