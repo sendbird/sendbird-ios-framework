@@ -1,5 +1,12 @@
 # Changelog
 
+## v3.1.51 (Jul 7, 2023)
+
+### **Improvements**
+
+- Improved stability 
+- Fixed an issue where completionHandler of `SBDMain.initWithApplication` does not get called if `useCaching` is set to `false`
+
 ## v3.1.50 (Jun 19, 2023)
 
 ### **Improvements**
