@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.53 (Sep 27, 2023)
+### **Improvements**
+
+- Fixed an intermittent crash issue when receiving pinned messages.
+
 ## 3.1.52 (Aug 24, 2023)
 ### **Improvements**
 
