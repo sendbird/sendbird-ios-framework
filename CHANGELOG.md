@@ -1,4 +1,9 @@
 # Changelog
+
+## 3.1.57 (Jul 31, 2024)
+### **Improvements**
+- Fixed a crash where `SBDSessionWebSocketEngine` would crash when establishing a new WebSocket connection. 
+
 ## 3.1.56 (Apr 9, 2024)
 ### **Improvements**
 
