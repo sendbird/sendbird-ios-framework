@@ -1,13 +1,13 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/minhyuk.kim/Library/Developer/Xcode/DerivedData/SendBirdSDK-afqgxpnnevjkxbclmtbumpusmibk/Build/Intermediates.noindex/ArchiveIntermediates/SendBirdSDK/InstallationBuildProductsLocation/Library/Frameworks/SendBirdSDK.framework/SendBirdSDK'
+binary-path:     '/Users/tez.park/Library/Developer/Xcode/DerivedData/SendBirdSDK-fbdnfdghdjwjiwahnpffbhdcukwm/ArchiveIntermediates/SendBirdSDK/InstallationBuildProductsLocation/Library/Frameworks/SendBirdSDK.framework/SendBirdSDK'
 relocations:
   - { offsetInCU: 0x34, offset: 0x61982, size: 0x8, addend: 0x0, symName: _SendBirdSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x1030E0, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x619B7, size: 0x8, addend: 0x0, symName: _SendBirdSDKVersionNumber, symObjAddr: 0x30, symBinAddr: 0x103110, symSize: 0x0 }
   - { offsetInCU: 0x27, offset: 0x619F4, size: 0x8, addend: 0x0, symName: '-[SBDChannelSyncManager init]', symObjAddr: 0x0, symBinAddr: 0x1D24, symSize: 0x78 }
   - { offsetInCU: 0x43, offset: 0x61A10, size: 0x8, addend: 0x0, symName: '+[SBDChannelSyncManager sharedInstance]', symObjAddr: 0x110, symBinAddr: 0x1E34, symSize: 0x40 }
-  - { offsetInCU: 0x6D, offset: 0x61A3A, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0xE880, symBinAddr: 0x163EB8, symSize: 0x0 }
-  - { offsetInCU: 0x83, offset: 0x61A50, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0xE888, symBinAddr: 0x163EC0, symSize: 0x0 }
+  - { offsetInCU: 0x6D, offset: 0x61A3A, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0xE850, symBinAddr: 0x163EB8, symSize: 0x0 }
+  - { offsetInCU: 0x83, offset: 0x61A50, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0xE858, symBinAddr: 0x163EC0, symSize: 0x0 }
   - { offsetInCU: 0x8DD, offset: 0x622AA, size: 0x8, addend: 0x0, symName: '-[SBDChannelSyncManager init]', symObjAddr: 0x0, symBinAddr: 0x1D24, symSize: 0x78 }
   - { offsetInCU: 0x94B, offset: 0x62318, size: 0x8, addend: 0x0, symName: '-[SBDChannelSyncManager dealloc]', symObjAddr: 0x78, symBinAddr: 0x1D9C, symSize: 0x44 }
   - { offsetInCU: 0x97E, offset: 0x6234B, size: 0x8, addend: 0x0, symName: '-[SBDChannelSyncManager dispose]', symObjAddr: 0xBC, symBinAddr: 0x1DE0, symSize: 0x54 }
@@ -130,8 +130,8 @@ relocations:
   - { offsetInCU: 0x9A8, offset: 0x661B1, size: 0x8, addend: 0x0, symName: '-[SBDUserMessage .cxx_destruct]', symObjAddr: 0x7D0, symBinAddr: 0x5E80, symSize: 0x14 }
   - { offsetInCU: 0x27, offset: 0x662AD, size: 0x8, addend: 0x0, symName: '+[SBDLocalCachePrefs clearAll]', symObjAddr: 0x0, symBinAddr: 0x5E94, symSize: 0x188 }
   - { offsetInCU: 0x35, offset: 0x662BB, size: 0x8, addend: 0x0, symName: '+[SBDLocalCachePrefs sharedInstance]', symObjAddr: 0x990, symBinAddr: 0x6824, symSize: 0x40 }
-  - { offsetInCU: 0x5F, offset: 0x662E5, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0x4570, symBinAddr: 0x163EC8, symSize: 0x0 }
-  - { offsetInCU: 0x75, offset: 0x662FB, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0x4578, symBinAddr: 0x163ED0, symSize: 0x0 }
+  - { offsetInCU: 0x5F, offset: 0x662E5, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0x4568, symBinAddr: 0x163EC8, symSize: 0x0 }
+  - { offsetInCU: 0x75, offset: 0x662FB, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0x4570, symBinAddr: 0x163ED0, symSize: 0x0 }
   - { offsetInCU: 0xF3, offset: 0x66379, size: 0x8, addend: 0x0, symName: '+[SBDLocalCachePrefs clearAll]', symObjAddr: 0x0, symBinAddr: 0x5E94, symSize: 0x188 }
   - { offsetInCU: 0x155, offset: 0x663DB, size: 0x8, addend: 0x0, symName: '+[SBDLocalCachePrefs removeWithKey:]', symObjAddr: 0x188, symBinAddr: 0x601C, symSize: 0x74 }
   - { offsetInCU: 0x198, offset: 0x6641E, size: 0x8, addend: 0x0, symName: '+[SBDLocalCachePrefs putStringWithKey:value:]', symObjAddr: 0x1FC, symBinAddr: 0x6090, symSize: 0x90 }
@@ -382,11 +382,11 @@ relocations:
   - { offsetInCU: 0xED, offset: 0x6E670, size: 0x8, addend: 0x0, symName: _SBDExtraDataFileUploadSizeLimit, symObjAddr: 0x17070, symBinAddr: 0x138540, symSize: 0x0 }
   - { offsetInCU: 0x103, offset: 0x6E686, size: 0x8, addend: 0x0, symName: _SBDExtraDataEmojiHash, symObjAddr: 0x17078, symBinAddr: 0x138548, symSize: 0x0 }
   - { offsetInCU: 0x119, offset: 0x6E69C, size: 0x8, addend: 0x0, symName: _SBDExtraDataApplicationAttributes, symObjAddr: 0x17080, symBinAddr: 0x138550, symSize: 0x0 }
-  - { offsetInCU: 0xC76, offset: 0x6F1F9, size: 0x8, addend: 0x0, symName: _logLevel, symObjAddr: 0x64C88, symBinAddr: 0x164058, symSize: 0x0 }
-  - { offsetInCU: 0xC8C, offset: 0x6F20F, size: 0x8, addend: 0x0, symName: _applicationVersion, symObjAddr: 0x64C90, symBinAddr: 0x164060, symSize: 0x0 }
+  - { offsetInCU: 0xC76, offset: 0x6F1F9, size: 0x8, addend: 0x0, symName: _logLevel, symObjAddr: 0x64C60, symBinAddr: 0x164058, symSize: 0x0 }
+  - { offsetInCU: 0xC8C, offset: 0x6F20F, size: 0x8, addend: 0x0, symName: _applicationVersion, symObjAddr: 0x64C68, symBinAddr: 0x164060, symSize: 0x0 }
   - { offsetInCU: 0xCA9, offset: 0x6F22C, size: 0x8, addend: 0x0, symName: '+[SBDMain sharedInstance]', symObjAddr: 0xAD4, symBinAddr: 0xDF24, symSize: 0x40 }
-  - { offsetInCU: 0xCD5, offset: 0x6F258, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0x64C98, symBinAddr: 0x163ED8, symSize: 0x0 }
-  - { offsetInCU: 0xCEC, offset: 0x6F26F, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0x64CA0, symBinAddr: 0x163EE0, symSize: 0x0 }
+  - { offsetInCU: 0xCD5, offset: 0x6F258, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0x64C70, symBinAddr: 0x163ED8, symSize: 0x0 }
+  - { offsetInCU: 0xCEC, offset: 0x6F26F, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0x64C78, symBinAddr: 0x163EE0, symSize: 0x0 }
   - { offsetInCU: 0x1174, offset: 0x6F6F7, size: 0x8, addend: 0x0, symName: '-[SBDMain init]', symObjAddr: 0x0, symBinAddr: 0xD450, symSize: 0x660 }
   - { offsetInCU: 0x1323, offset: 0x6F8A6, size: 0x8, addend: 0x0, symName: '___15-[SBDMain init]_block_invoke', symObjAddr: 0x660, symBinAddr: 0xDAB0, symSize: 0x5C }
   - { offsetInCU: 0x134C, offset: 0x6F8CF, size: 0x8, addend: 0x0, symName: '-[SBDMain setApiHost:]', symObjAddr: 0x6BC, symBinAddr: 0xDB0C, symSize: 0x60 }
@@ -1223,8 +1223,8 @@ relocations:
   - { offsetInCU: 0x3C, offset: 0x8B9C1, size: 0x8, addend: 0x0, symName: '-[NSDictionary(SBDQueryString) sbd_buildQueryStringFromParameters]', symObjAddr: 0x0, symBinAddr: 0x2D650, symSize: 0x440 }
   - { offsetInCU: 0x27, offset: 0x8BAFB, size: 0x8, addend: 0x0, symName: '-[SBDDatabase setup]', symObjAddr: 0x0, symBinAddr: 0x2DA90, symSize: 0x110 }
   - { offsetInCU: 0x43, offset: 0x8BB17, size: 0x8, addend: 0x0, symName: '-[SBDDatabase getSqlStatements]', symObjAddr: 0x2240, symBinAddr: 0x2FC04, symSize: 0x40 }
-  - { offsetInCU: 0x6F, offset: 0x8BB43, size: 0x8, addend: 0x0, symName: _getSqlStatements.sqlStatements, symObjAddr: 0xEA98, symBinAddr: 0x163EE8, symSize: 0x0 }
-  - { offsetInCU: 0x86, offset: 0x8BB5A, size: 0x8, addend: 0x0, symName: _getSqlStatements.onceToken, symObjAddr: 0xEAA0, symBinAddr: 0x163EF0, symSize: 0x0 }
+  - { offsetInCU: 0x6F, offset: 0x8BB43, size: 0x8, addend: 0x0, symName: _getSqlStatements.sqlStatements, symObjAddr: 0xEA68, symBinAddr: 0x163EE8, symSize: 0x0 }
+  - { offsetInCU: 0x86, offset: 0x8BB5A, size: 0x8, addend: 0x0, symName: _getSqlStatements.onceToken, symObjAddr: 0xEA70, symBinAddr: 0x163EF0, symSize: 0x0 }
   - { offsetInCU: 0x1B4, offset: 0x8BC88, size: 0x8, addend: 0x0, symName: '-[SBDDatabase setup]', symObjAddr: 0x0, symBinAddr: 0x2DA90, symSize: 0x110 }
   - { offsetInCU: 0x232, offset: 0x8BD06, size: 0x8, addend: 0x0, symName: ___Block_byref_object_copy_, symObjAddr: 0x110, symBinAddr: 0x2DBA0, symSize: 0x10 }
   - { offsetInCU: 0x257, offset: 0x8BD2B, size: 0x8, addend: 0x0, symName: ___Block_byref_object_dispose_, symObjAddr: 0x120, symBinAddr: 0x2DBB0, symSize: 0x8 }
@@ -2037,8 +2037,8 @@ relocations:
   - { offsetInCU: 0x1A72, offset: 0xAAEB5, size: 0x8, addend: 0x0, symName: '-[SBDResendMessageManager .cxx_destruct]', symObjAddr: 0x2DC8, symBinAddr: 0x523C0, symSize: 0x60 }
   - { offsetInCU: 0x27, offset: 0xABC7D, size: 0x8, addend: 0x0, symName: '+[SBDMessageDataSource sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x52420, symSize: 0x40 }
   - { offsetInCU: 0x35, offset: 0xABC8B, size: 0x8, addend: 0x0, symName: '+[SBDMessageDataSource sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x52420, symSize: 0x40 }
-  - { offsetInCU: 0x5F, offset: 0xABCB5, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0x7E50, symBinAddr: 0x163EF8, symSize: 0x0 }
-  - { offsetInCU: 0x75, offset: 0xABCCB, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0x7E58, symBinAddr: 0x163F00, symSize: 0x0 }
+  - { offsetInCU: 0x5F, offset: 0xABCB5, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0x7E28, symBinAddr: 0x163EF8, symSize: 0x0 }
+  - { offsetInCU: 0x75, offset: 0xABCCB, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0x7E30, symBinAddr: 0x163F00, symSize: 0x0 }
   - { offsetInCU: 0x291, offset: 0xABEE7, size: 0x8, addend: 0x0, symName: '___38+[SBDMessageDataSource sharedInstance]_block_invoke', symObjAddr: 0x40, symBinAddr: 0x52460, symSize: 0x30 }
   - { offsetInCU: 0x2B8, offset: 0xABF0E, size: 0x8, addend: 0x0, symName: '-[SBDMessageDataSource upsertMessages:autoResend:]', symObjAddr: 0x70, symBinAddr: 0x52490, symSize: 0x134 }
   - { offsetInCU: 0x35A, offset: 0xABFB0, size: 0x8, addend: 0x0, symName: '-[SBDMessageDataSource updateReaction:]', symObjAddr: 0x1A4, symBinAddr: 0x525C4, symSize: 0x1B4 }
@@ -2862,8 +2862,8 @@ relocations:
   - { offsetInCU: 0x4A, offset: 0xD033A, size: 0x8, addend: 0x0, symName: '-[NSNumber(Utils) sbd_toString]', symObjAddr: 0x0, symBinAddr: 0x78608, symSize: 0x184 }
   - { offsetInCU: 0x27, offset: 0xD03CA, size: 0x8, addend: 0x0, symName: '+[SBDConnectionManager sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x7878C, symSize: 0x40 }
   - { offsetInCU: 0x35, offset: 0xD03D8, size: 0x8, addend: 0x0, symName: '+[SBDConnectionManager sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x7878C, symSize: 0x40 }
-  - { offsetInCU: 0x5F, offset: 0xD0402, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0x9980, symBinAddr: 0x163F18, symSize: 0x0 }
-  - { offsetInCU: 0x75, offset: 0xD0418, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0x9988, symBinAddr: 0x163F20, symSize: 0x0 }
+  - { offsetInCU: 0x5F, offset: 0xD0402, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0x9958, symBinAddr: 0x163F18, symSize: 0x0 }
+  - { offsetInCU: 0x75, offset: 0xD0418, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0x9960, symBinAddr: 0x163F20, symSize: 0x0 }
   - { offsetInCU: 0x25F, offset: 0xD0602, size: 0x8, addend: 0x0, symName: '___38+[SBDConnectionManager sharedInstance]_block_invoke', symObjAddr: 0x40, symBinAddr: 0x787CC, symSize: 0x30 }
   - { offsetInCU: 0x286, offset: 0xD0629, size: 0x8, addend: 0x0, symName: '-[SBDConnectionManager init]', symObjAddr: 0x70, symBinAddr: 0x787FC, symSize: 0xAC }
   - { offsetInCU: 0x2F4, offset: 0xD0697, size: 0x8, addend: 0x0, symName: '+[SBDConnectionManager readyToAPIRequestWithCompletionHandler:]', symObjAddr: 0x11C, symBinAddr: 0x788A8, symSize: 0xC }
@@ -2926,21 +2926,21 @@ relocations:
   - { offsetInCU: 0x27, offset: 0xD2450, size: 0x8, addend: 0x0, symName: '+[SBDSessionManager sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x7A620, symSize: 0x40 }
   - { offsetInCU: 0x41, offset: 0xD246A, size: 0x8, addend: 0x0, symName: _kSessionKeyPath, symObjAddr: 0x22A8, symBinAddr: 0x139FF0, symSize: 0x0 }
   - { offsetInCU: 0x61, offset: 0xD248A, size: 0x8, addend: 0x0, symName: _kUserIdKeyPath, symObjAddr: 0x22B0, symBinAddr: 0x139FF8, symSize: 0x0 }
-  - { offsetInCU: 0x77, offset: 0xD24A0, size: 0x8, addend: 0x0, symName: _sessionKey, symObjAddr: 0xB288, symBinAddr: 0x163F28, symSize: 0x0 }
-  - { offsetInCU: 0x8D, offset: 0xD24B6, size: 0x8, addend: 0x0, symName: _eKey, symObjAddr: 0xB290, symBinAddr: 0x163F30, symSize: 0x0 }
-  - { offsetInCU: 0xA3, offset: 0xD24CC, size: 0x8, addend: 0x0, symName: _gUserId, symObjAddr: 0xB298, symBinAddr: 0x163F38, symSize: 0x0 }
-  - { offsetInCU: 0xB9, offset: 0xD24E2, size: 0x8, addend: 0x0, symName: _sessionToken, symObjAddr: 0xB2A0, symBinAddr: 0x163F40, symSize: 0x0 }
-  - { offsetInCU: 0xCF, offset: 0xD24F8, size: 0x8, addend: 0x0, symName: _success, symObjAddr: 0xB2A8, symBinAddr: 0x163F48, symSize: 0x0 }
-  - { offsetInCU: 0x15B, offset: 0xD2584, size: 0x8, addend: 0x0, symName: _fail, symObjAddr: 0xB2B0, symBinAddr: 0x163F50, symSize: 0x0 }
+  - { offsetInCU: 0x77, offset: 0xD24A0, size: 0x8, addend: 0x0, symName: _sessionKey, symObjAddr: 0xB258, symBinAddr: 0x163F28, symSize: 0x0 }
+  - { offsetInCU: 0x8D, offset: 0xD24B6, size: 0x8, addend: 0x0, symName: _eKey, symObjAddr: 0xB260, symBinAddr: 0x163F30, symSize: 0x0 }
+  - { offsetInCU: 0xA3, offset: 0xD24CC, size: 0x8, addend: 0x0, symName: _gUserId, symObjAddr: 0xB268, symBinAddr: 0x163F38, symSize: 0x0 }
+  - { offsetInCU: 0xB9, offset: 0xD24E2, size: 0x8, addend: 0x0, symName: _sessionToken, symObjAddr: 0xB270, symBinAddr: 0x163F40, symSize: 0x0 }
+  - { offsetInCU: 0xCF, offset: 0xD24F8, size: 0x8, addend: 0x0, symName: _success, symObjAddr: 0xB278, symBinAddr: 0x163F48, symSize: 0x0 }
+  - { offsetInCU: 0x15B, offset: 0xD2584, size: 0x8, addend: 0x0, symName: _fail, symObjAddr: 0xB280, symBinAddr: 0x163F50, symSize: 0x0 }
   - { offsetInCU: 0x1A6, offset: 0xD25CF, size: 0x8, addend: 0x0, symName: '+[SBDSessionManager sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x7A620, symSize: 0x40 }
-  - { offsetInCU: 0x1D0, offset: 0xD25F9, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0xB2B8, symBinAddr: 0x163F58, symSize: 0x0 }
-  - { offsetInCU: 0x1E6, offset: 0xD260F, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0xB2C0, symBinAddr: 0x163F60, symSize: 0x0 }
+  - { offsetInCU: 0x1D0, offset: 0xD25F9, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0xB288, symBinAddr: 0x163F58, symSize: 0x0 }
+  - { offsetInCU: 0x1E6, offset: 0xD260F, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0xB290, symBinAddr: 0x163F60, symSize: 0x0 }
   - { offsetInCU: 0x2B4, offset: 0xD26DD, size: 0x8, addend: 0x0, symName: '+[SBDSessionManager sessionkeyQueue]', symObjAddr: 0xA4C, symBinAddr: 0x7B040, symSize: 0x40 }
-  - { offsetInCU: 0x2DE, offset: 0xD2707, size: 0x8, addend: 0x0, symName: _sessionkeyQueue.sessionKeyQueue, symObjAddr: 0xB2D0, symBinAddr: 0x163F70, symSize: 0x0 }
-  - { offsetInCU: 0x2F4, offset: 0xD271D, size: 0x8, addend: 0x0, symName: _sessionkeyQueue.onceToken, symObjAddr: 0xB2D8, symBinAddr: 0x163F78, symSize: 0x0 }
-  - { offsetInCU: 0x33A, offset: 0xD2763, size: 0x8, addend: 0x0, symName: _resultHandlerQueue, symObjAddr: 0xB2C8, symBinAddr: 0x163F68, symSize: 0x0 }
-  - { offsetInCU: 0x355, offset: 0xD277E, size: 0x8, addend: 0x0, symName: _isRefreshingSessionKey, symObjAddr: 0xB2E0, symBinAddr: 0x163F80, symSize: 0x0 }
-  - { offsetInCU: 0x379, offset: 0xD27A2, size: 0x8, addend: 0x0, symName: _isReconnecting, symObjAddr: 0xB2E1, symBinAddr: 0x163F81, symSize: 0x0 }
+  - { offsetInCU: 0x2DE, offset: 0xD2707, size: 0x8, addend: 0x0, symName: _sessionkeyQueue.sessionKeyQueue, symObjAddr: 0xB2A0, symBinAddr: 0x163F70, symSize: 0x0 }
+  - { offsetInCU: 0x2F4, offset: 0xD271D, size: 0x8, addend: 0x0, symName: _sessionkeyQueue.onceToken, symObjAddr: 0xB2A8, symBinAddr: 0x163F78, symSize: 0x0 }
+  - { offsetInCU: 0x33A, offset: 0xD2763, size: 0x8, addend: 0x0, symName: _resultHandlerQueue, symObjAddr: 0xB298, symBinAddr: 0x163F68, symSize: 0x0 }
+  - { offsetInCU: 0x355, offset: 0xD277E, size: 0x8, addend: 0x0, symName: _isRefreshingSessionKey, symObjAddr: 0xB2B0, symBinAddr: 0x163F80, symSize: 0x0 }
+  - { offsetInCU: 0x379, offset: 0xD27A2, size: 0x8, addend: 0x0, symName: _isReconnecting, symObjAddr: 0xB2B1, symBinAddr: 0x163F81, symSize: 0x0 }
   - { offsetInCU: 0x429, offset: 0xD2852, size: 0x8, addend: 0x0, symName: '___35+[SBDSessionManager sharedInstance]_block_invoke', symObjAddr: 0x40, symBinAddr: 0x7A660, symSize: 0x64 }
   - { offsetInCU: 0x450, offset: 0xD2879, size: 0x8, addend: 0x0, symName: '+[SBDSessionManager setup]', symObjAddr: 0xA4, symBinAddr: 0x7A6C4, symSize: 0xD8 }
   - { offsetInCU: 0x483, offset: 0xD28AC, size: 0x8, addend: 0x0, symName: '___26+[SBDSessionManager setup]_block_invoke', symObjAddr: 0x17C, symBinAddr: 0x7A79C, symSize: 0xAC }
@@ -3223,8 +3223,8 @@ relocations:
   - { offsetInCU: 0x1244, offset: 0xD9A2C, size: 0x8, addend: 0x0, symName: _stringFromReplyType, symObjAddr: 0x11E0, symBinAddr: 0x82334, symSize: 0x24 }
   - { offsetInCU: 0x27, offset: 0xD9C5C, size: 0x8, addend: 0x0, symName: '+[SBDCoreAPIClient shared]', symObjAddr: 0x0, symBinAddr: 0x82358, symSize: 0x40 }
   - { offsetInCU: 0x6A, offset: 0xD9C9F, size: 0x8, addend: 0x0, symName: '+[SBDCoreAPIClient shared]', symObjAddr: 0x0, symBinAddr: 0x82358, symSize: 0x40 }
-  - { offsetInCU: 0x94, offset: 0xD9CC9, size: 0x8, addend: 0x0, symName: _shared.p, symObjAddr: 0x309A0, symBinAddr: 0x163F88, symSize: 0x0 }
-  - { offsetInCU: 0xAA, offset: 0xD9CDF, size: 0x8, addend: 0x0, symName: _shared._sharedObject, symObjAddr: 0x309A8, symBinAddr: 0x163F90, symSize: 0x0 }
+  - { offsetInCU: 0x94, offset: 0xD9CC9, size: 0x8, addend: 0x0, symName: _shared.p, symObjAddr: 0x30970, symBinAddr: 0x163F88, symSize: 0x0 }
+  - { offsetInCU: 0xAA, offset: 0xD9CDF, size: 0x8, addend: 0x0, symName: _shared._sharedObject, symObjAddr: 0x30978, symBinAddr: 0x163F90, symSize: 0x0 }
   - { offsetInCU: 0x626, offset: 0xDA25B, size: 0x8, addend: 0x0, symName: '___26+[SBDCoreAPIClient shared]_block_invoke', symObjAddr: 0x40, symBinAddr: 0x82398, symSize: 0x30 }
   - { offsetInCU: 0x64D, offset: 0xDA282, size: 0x8, addend: 0x0, symName: '-[SBDCoreAPIClient init]', symObjAddr: 0x70, symBinAddr: 0x823C8, symSize: 0x6C }
   - { offsetInCU: 0x684, offset: 0xDA2B9, size: 0x8, addend: 0x0, symName: '-[SBDCoreAPIClient setAPIHost:]', symObjAddr: 0xDC, symBinAddr: 0x82434, symSize: 0x54 }
@@ -3423,8 +3423,8 @@ relocations:
   - { offsetInCU: 0x309, offset: 0xE3153, size: 0x8, addend: 0x0, symName: '-[SBDOGMetaData .cxx_destruct]', symObjAddr: 0x314, symBinAddr: 0x8DC58, symSize: 0x48 }
   - { offsetInCU: 0x27, offset: 0xE3206, size: 0x8, addend: 0x0, symName: '+[SBDChannelDataSource sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x8DCA0, symSize: 0x40 }
   - { offsetInCU: 0x35, offset: 0xE3214, size: 0x8, addend: 0x0, symName: '+[SBDChannelDataSource sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x8DCA0, symSize: 0x40 }
-  - { offsetInCU: 0x5F, offset: 0xE323E, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0xA8E8, symBinAddr: 0x163F98, symSize: 0x0 }
-  - { offsetInCU: 0x75, offset: 0xE3254, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0xA8F0, symBinAddr: 0x163FA0, symSize: 0x0 }
+  - { offsetInCU: 0x5F, offset: 0xE323E, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0xA8B8, symBinAddr: 0x163F98, symSize: 0x0 }
+  - { offsetInCU: 0x75, offset: 0xE3254, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0xA8C0, symBinAddr: 0x163FA0, symSize: 0x0 }
   - { offsetInCU: 0x99E, offset: 0xE3B7D, size: 0x8, addend: 0x0, symName: '___38+[SBDChannelDataSource sharedInstance]_block_invoke', symObjAddr: 0x40, symBinAddr: 0x8DCE0, symSize: 0x88 }
   - { offsetInCU: 0x9C5, offset: 0xE3BA4, size: 0x8, addend: 0x0, symName: '-[SBDChannelDataSource loadAll]', symObjAddr: 0xC8, symBinAddr: 0x8DD68, symSize: 0x1D4 }
   - { offsetInCU: 0xA56, offset: 0xE3C35, size: 0x8, addend: 0x0, symName: '-[SBDChannelDataSource clearAll]', symObjAddr: 0x29C, symBinAddr: 0x8DF3C, symSize: 0x90 }
@@ -3529,9 +3529,9 @@ relocations:
   - { offsetInCU: 0x390, offset: 0xE6380, size: 0x8, addend: 0x0, symName: '-[SendBird_SRIOConsumer unmaskBytes]', symObjAddr: 0xD4, symBinAddr: 0x91184, symSize: 0x8 }
   - { offsetInCU: 0x3C7, offset: 0xE63B7, size: 0x8, addend: 0x0, symName: '-[SendBird_SRIOConsumer .cxx_destruct]', symObjAddr: 0xDC, symBinAddr: 0x9118C, symSize: 0x30 }
   - { offsetInCU: 0x27, offset: 0xE642E, size: 0x8, addend: 0x0, symName: '+[SBDGroupChannel createMyGroupChannelListQueryWithToken:]', symObjAddr: 0x0, symBinAddr: 0x911BC, symSize: 0x4C }
-  - { offsetInCU: 0x4F, offset: 0xE6456, size: 0x8, addend: 0x0, symName: _lastMarkAsDeliveredTimestamp, symObjAddr: 0x556E8, symBinAddr: 0x163FA8, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0xE6456, size: 0x8, addend: 0x0, symName: _lastMarkAsDeliveredTimestamp, symObjAddr: 0x556B0, symBinAddr: 0x163FA8, symSize: 0x0 }
   - { offsetInCU: 0x6C, offset: 0xE6473, size: 0x8, addend: 0x0, symName: _SBDGroupChannelTypingIndicatorThrottlingInterval, symObjAddr: 0x16170, symBinAddr: 0x163C38, symSize: 0x0 }
-  - { offsetInCU: 0x82, offset: 0xE6489, size: 0x8, addend: 0x0, symName: _lastMarkAsReadAllTimestamp, symObjAddr: 0x556F0, symBinAddr: 0x163FB0, symSize: 0x0 }
+  - { offsetInCU: 0x82, offset: 0xE6489, size: 0x8, addend: 0x0, symName: _lastMarkAsReadAllTimestamp, symObjAddr: 0x556B8, symBinAddr: 0x163FB0, symSize: 0x0 }
   - { offsetInCU: 0xFA3, offset: 0xE73AA, size: 0x8, addend: 0x0, symName: '+[SBDGroupChannel createMyGroupChannelListQueryWithToken:]', symObjAddr: 0x0, symBinAddr: 0x911BC, symSize: 0x4C }
   - { offsetInCU: 0xFF6, offset: 0xE73FD, size: 0x8, addend: 0x0, symName: '+[SBDGroupChannel createMyGroupChannelListQuery]', symObjAddr: 0x4C, symBinAddr: 0x91208, symSize: 0x5C }
   - { offsetInCU: 0x1039, offset: 0xE7440, size: 0x8, addend: 0x0, symName: '+[SBDGroupChannel createPublicGroupChannelListQuery]', symObjAddr: 0xA8, symBinAddr: 0x91264, symSize: 0x20 }
@@ -4134,8 +4134,8 @@ relocations:
   - { offsetInCU: 0x7D2, offset: 0xFAB60, size: 0x8, addend: 0x0, symName: '-[SBDTimerBoard .cxx_destruct]', symObjAddr: 0xAC8, symBinAddr: 0xA7D80, symSize: 0x3C }
   - { offsetInCU: 0x27, offset: 0xFAED9, size: 0x8, addend: 0x0, symName: '+[SBDPlatformAPIClient shared]', symObjAddr: 0x0, symBinAddr: 0xA7DBC, symSize: 0x40 }
   - { offsetInCU: 0x8B, offset: 0xFAF3D, size: 0x8, addend: 0x0, symName: '+[SBDPlatformAPIClient shared]', symObjAddr: 0x0, symBinAddr: 0xA7DBC, symSize: 0x40 }
-  - { offsetInCU: 0xB5, offset: 0xFAF67, size: 0x8, addend: 0x0, symName: _shared.p, symObjAddr: 0x4D6B0, symBinAddr: 0x163FC8, symSize: 0x0 }
-  - { offsetInCU: 0xCB, offset: 0xFAF7D, size: 0x8, addend: 0x0, symName: _shared._sharedObject, symObjAddr: 0x4D6B8, symBinAddr: 0x163FD0, symSize: 0x0 }
+  - { offsetInCU: 0xB5, offset: 0xFAF67, size: 0x8, addend: 0x0, symName: _shared.p, symObjAddr: 0x4D680, symBinAddr: 0x163FC8, symSize: 0x0 }
+  - { offsetInCU: 0xCB, offset: 0xFAF7D, size: 0x8, addend: 0x0, symName: _shared._sharedObject, symObjAddr: 0x4D688, symBinAddr: 0x163FD0, symSize: 0x0 }
   - { offsetInCU: 0x5C4, offset: 0xFB476, size: 0x8, addend: 0x0, symName: '___30+[SBDPlatformAPIClient shared]_block_invoke', symObjAddr: 0x40, symBinAddr: 0xA7DFC, symSize: 0x44 }
   - { offsetInCU: 0x5EB, offset: 0xFB49D, size: 0x8, addend: 0x0, symName: '-[SBDPlatformAPIClient setAPIToken:]', symObjAddr: 0x84, symBinAddr: 0xA7E40, symSize: 0x54 }
   - { offsetInCU: 0x62A, offset: 0xFB4DC, size: 0x8, addend: 0x0, symName: '-[SBDPlatformAPIClient setAPIHost:]', symObjAddr: 0xD8, symBinAddr: 0xA7E94, symSize: 0x80 }
@@ -4369,8 +4369,8 @@ relocations:
   - { offsetInCU: 0x363, offset: 0x105D5A, size: 0x8, addend: 0x0, symName: '-[SBDThreadInfo .cxx_destruct]', symObjAddr: 0x484, symBinAddr: 0xBA360, symSize: 0xC }
   - { offsetInCU: 0x27, offset: 0x105E0D, size: 0x8, addend: 0x0, symName: '+[SBDMessageSyncManager setRunningQueueSize:]', symObjAddr: 0x0, symBinAddr: 0xBA36C, symSize: 0x3C }
   - { offsetInCU: 0x35, offset: 0x105E1B, size: 0x8, addend: 0x0, symName: '+[SBDMessageSyncManager sharedInstance]', symObjAddr: 0xBE4, symBinAddr: 0xBAF40, symSize: 0x40 }
-  - { offsetInCU: 0x5F, offset: 0x105E45, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0x8180, symBinAddr: 0x163FD8, symSize: 0x0 }
-  - { offsetInCU: 0x75, offset: 0x105E5B, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0x8188, symBinAddr: 0x163FE0, symSize: 0x0 }
+  - { offsetInCU: 0x5F, offset: 0x105E45, size: 0x8, addend: 0x0, symName: _sharedInstance.p, symObjAddr: 0x8158, symBinAddr: 0x163FD8, symSize: 0x0 }
+  - { offsetInCU: 0x75, offset: 0x105E5B, size: 0x8, addend: 0x0, symName: _sharedInstance._sharedObject, symObjAddr: 0x8160, symBinAddr: 0x163FE0, symSize: 0x0 }
   - { offsetInCU: 0x30B, offset: 0x1060F1, size: 0x8, addend: 0x0, symName: '+[SBDMessageSyncManager setRunningQueueSize:]', symObjAddr: 0x0, symBinAddr: 0xBA36C, symSize: 0x3C }
   - { offsetInCU: 0x35E, offset: 0x106144, size: 0x8, addend: 0x0, symName: '+[SBDMessageSyncManager insertMessageSyncIntoWaitingQueueWithChannels:]', symObjAddr: 0x3C, symBinAddr: 0xBA3A8, symSize: 0x2B0 }
   - { offsetInCU: 0x406, offset: 0x1061EC, size: 0x8, addend: 0x0, symName: '+[SBDMessageSyncManager startSyncWithChannel:]', symObjAddr: 0x2EC, symBinAddr: 0xBA658, symSize: 0x3B8 }
@@ -4399,8 +4399,8 @@ relocations:
   - { offsetInCU: 0xB5C, offset: 0x106942, size: 0x8, addend: 0x0, symName: '-[SBDMessageSyncManager .cxx_destruct]', symObjAddr: 0x1264, symBinAddr: 0xBB5C0, symSize: 0x54 }
   - { offsetInCU: 0x27, offset: 0x107246, size: 0x8, addend: 0x0, symName: _SendBird_SRDefaultBufferSize, symObjAddr: 0x0, symBinAddr: 0xBB614, symSize: 0x40 }
   - { offsetInCU: 0x35, offset: 0x107254, size: 0x8, addend: 0x0, symName: _SendBird_SRDefaultBufferSize, symObjAddr: 0x0, symBinAddr: 0xBB614, symSize: 0x40 }
-  - { offsetInCU: 0x5B, offset: 0x10727A, size: 0x8, addend: 0x0, symName: _SendBird_SRDefaultBufferSize.size, symObjAddr: 0x2440, symBinAddr: 0x163FE8, symSize: 0x0 }
-  - { offsetInCU: 0x71, offset: 0x107290, size: 0x8, addend: 0x0, symName: _SendBird_SRDefaultBufferSize.onceToken, symObjAddr: 0x2448, symBinAddr: 0x163FF0, symSize: 0x0 }
+  - { offsetInCU: 0x5B, offset: 0x10727A, size: 0x8, addend: 0x0, symName: _SendBird_SRDefaultBufferSize.size, symObjAddr: 0x2428, symBinAddr: 0x163FE8, symSize: 0x0 }
+  - { offsetInCU: 0x71, offset: 0x107290, size: 0x8, addend: 0x0, symName: _SendBird_SRDefaultBufferSize.onceToken, symObjAddr: 0x2430, symBinAddr: 0x163FF0, symSize: 0x0 }
   - { offsetInCU: 0x23B, offset: 0x10745A, size: 0x8, addend: 0x0, symName: ___SendBird_SRDefaultBufferSize_block_invoke, symObjAddr: 0x40, symBinAddr: 0xBB654, symSize: 0x20 }
   - { offsetInCU: 0x27D, offset: 0x10749C, size: 0x8, addend: 0x0, symName: _SendBird_SDKVersion, symObjAddr: 0x60, symBinAddr: 0xBB674, symSize: 0xC }
   - { offsetInCU: 0x2A3, offset: 0x1074C2, size: 0x8, addend: 0x0, symName: _SendBird_SRUserAgent, symObjAddr: 0x6C, symBinAddr: 0xBB680, symSize: 0x6C }
@@ -4478,9 +4478,9 @@ relocations:
   - { offsetInCU: 0x33B2, offset: 0x10A941, size: 0x8, addend: 0x0, symName: '-[SBDCommandProcessor .cxx_destruct]', symObjAddr: 0x7C6C, symBinAddr: 0xC304C, symSize: 0x30 }
   - { offsetInCU: 0x27, offset: 0x10BCED, size: 0x8, addend: 0x0, symName: '+[SBDOpenChannel createOpenChannelListQuery]', symObjAddr: 0x0, symBinAddr: 0xC307C, symSize: 0x20 }
   - { offsetInCU: 0x35, offset: 0x10BCFB, size: 0x8, addend: 0x0, symName: '+[SBDOpenChannel enteredChannels]', symObjAddr: 0x3D68, symBinAddr: 0xC6D04, symSize: 0x40 }
-  - { offsetInCU: 0x61, offset: 0x10BD27, size: 0x8, addend: 0x0, symName: _enteredChannels.onceToken, symObjAddr: 0x1DE58, symBinAddr: 0x164000, symSize: 0x0 }
-  - { offsetInCU: 0xAF, offset: 0x10BD75, size: 0x8, addend: 0x0, symName: _cachedChannels, symObjAddr: 0x1DE50, symBinAddr: 0x163FF8, symSize: 0x0 }
-  - { offsetInCU: 0xCA, offset: 0x10BD90, size: 0x8, addend: 0x0, symName: _enteredChannels, symObjAddr: 0x1DE60, symBinAddr: 0x164008, symSize: 0x0 }
+  - { offsetInCU: 0x61, offset: 0x10BD27, size: 0x8, addend: 0x0, symName: _enteredChannels.onceToken, symObjAddr: 0x1DE28, symBinAddr: 0x164000, symSize: 0x0 }
+  - { offsetInCU: 0xAF, offset: 0x10BD75, size: 0x8, addend: 0x0, symName: _cachedChannels, symObjAddr: 0x1DE20, symBinAddr: 0x163FF8, symSize: 0x0 }
+  - { offsetInCU: 0xCA, offset: 0x10BD90, size: 0x8, addend: 0x0, symName: _enteredChannels, symObjAddr: 0x1DE30, symBinAddr: 0x164008, symSize: 0x0 }
   - { offsetInCU: 0x33B, offset: 0x10C001, size: 0x8, addend: 0x0, symName: '+[SBDOpenChannel createOpenChannelListQuery]', symObjAddr: 0x0, symBinAddr: 0xC307C, symSize: 0x20 }
   - { offsetInCU: 0x36E, offset: 0x10C034, size: 0x8, addend: 0x0, symName: '+[SBDOpenChannel getCachedChannels]', symObjAddr: 0x20, symBinAddr: 0xC309C, symSize: 0xC }
   - { offsetInCU: 0x3A1, offset: 0x10C067, size: 0x8, addend: 0x0, symName: '+[SBDOpenChannel createChannelWithCompletionHandler:]', symObjAddr: 0x2C, symBinAddr: 0xC30A8, symSize: 0x64 }
@@ -5045,7 +5045,7 @@ relocations:
   - { offsetInCU: 0x7B, offset: 0x11F215, size: 0x8, addend: 0x0, symName: _SBDAuthenticationTimeout, symObjAddr: 0x108, symBinAddr: 0x163DD8, symSize: 0x0 }
   - { offsetInCU: 0x91, offset: 0x11F22B, size: 0x8, addend: 0x0, symName: _SBDFileTransferTimeout, symObjAddr: 0x110, symBinAddr: 0x163DE0, symSize: 0x0 }
   - { offsetInCU: 0xA7, offset: 0x11F241, size: 0x8, addend: 0x0, symName: _SBDWebSocketResponseTimeout, symObjAddr: 0x118, symBinAddr: 0x163DE8, symSize: 0x0 }
-  - { offsetInCU: 0xBD, offset: 0x11F257, size: 0x8, addend: 0x0, symName: _SBDChannelChangeWhenMark, symObjAddr: 0x20C3, symBinAddr: 0x164010, symSize: 0x0 }
+  - { offsetInCU: 0xBD, offset: 0x11F257, size: 0x8, addend: 0x0, symName: _SBDChannelChangeWhenMark, symObjAddr: 0x20B7, symBinAddr: 0x164010, symSize: 0x0 }
   - { offsetInCU: 0xD3, offset: 0x11F26D, size: 0x8, addend: 0x0, symName: _SBDPreflight, symObjAddr: 0x120, symBinAddr: 0x163DF0, symSize: 0x0 }
   - { offsetInCU: 0xEB, offset: 0x11F285, size: 0x8, addend: 0x0, symName: '+[SBDOptions useMemberAsMessageSender]', symObjAddr: 0x0, symBinAddr: 0xD6158, symSize: 0xC }
   - { offsetInCU: 0x11E, offset: 0x11F2B8, size: 0x8, addend: 0x0, symName: '+[SBDOptions setUseMemberAsMessageSender:]', symObjAddr: 0xC, symBinAddr: 0xD6164, symSize: 0xC }
@@ -5104,10 +5104,10 @@ relocations:
   - { offsetInCU: 0x297, offset: 0x1204B4, size: 0x8, addend: 0x0, symName: '-[SBDRestrictedUser .cxx_destruct]', symObjAddr: 0xAC, symBinAddr: 0xD6EB0, symSize: 0x14 }
   - { offsetInCU: 0x27, offset: 0x12055D, size: 0x8, addend: 0x0, symName: '+[SBDHTTPClient shared]', symObjAddr: 0x0, symBinAddr: 0xD6EC4, symSize: 0x40 }
   - { offsetInCU: 0x2F6, offset: 0x12082C, size: 0x8, addend: 0x0, symName: '+[SBDHTTPClient shared]', symObjAddr: 0x0, symBinAddr: 0xD6EC4, symSize: 0x40 }
-  - { offsetInCU: 0x320, offset: 0x120856, size: 0x8, addend: 0x0, symName: _shared.p, symObjAddr: 0x18BD8, symBinAddr: 0x164018, symSize: 0x0 }
-  - { offsetInCU: 0x336, offset: 0x12086C, size: 0x8, addend: 0x0, symName: _shared._sharedObject, symObjAddr: 0x18BE0, symBinAddr: 0x164020, symSize: 0x0 }
+  - { offsetInCU: 0x320, offset: 0x120856, size: 0x8, addend: 0x0, symName: _shared.p, symObjAddr: 0x18BA8, symBinAddr: 0x164018, symSize: 0x0 }
+  - { offsetInCU: 0x336, offset: 0x12086C, size: 0x8, addend: 0x0, symName: _shared._sharedObject, symObjAddr: 0x18BB0, symBinAddr: 0x164020, symSize: 0x0 }
   - { offsetInCU: 0x385, offset: 0x1208BB, size: 0x8, addend: 0x0, symName: '-[SBDHTTPClient backgroundSession]', symObjAddr: 0x250, symBinAddr: 0xD7114, symSize: 0x80 }
-  - { offsetInCU: 0x3AF, offset: 0x1208E5, size: 0x8, addend: 0x0, symName: _backgroundSession.onceToken, symObjAddr: 0x18BE8, symBinAddr: 0x164028, symSize: 0x0 }
+  - { offsetInCU: 0x3AF, offset: 0x1208E5, size: 0x8, addend: 0x0, symName: _backgroundSession.onceToken, symObjAddr: 0x18BB8, symBinAddr: 0x164028, symSize: 0x0 }
   - { offsetInCU: 0x591, offset: 0x120AC7, size: 0x8, addend: 0x0, symName: '___23+[SBDHTTPClient shared]_block_invoke', symObjAddr: 0x40, symBinAddr: 0xD6F04, symSize: 0x48 }
   - { offsetInCU: 0x5B8, offset: 0x120AEE, size: 0x8, addend: 0x0, symName: '-[SBDHTTPClient init]', symObjAddr: 0x88, symBinAddr: 0xD6F4C, symSize: 0x1BC }
   - { offsetInCU: 0x63E, offset: 0x120B74, size: 0x8, addend: 0x0, symName: '-[SBDHTTPClient setSharedContainerIdentifier:]', symObjAddr: 0x244, symBinAddr: 0xD7108, symSize: 0xC }
