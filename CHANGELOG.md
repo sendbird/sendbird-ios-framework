@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.58 (Frb 10, 2025)
+### **Improvements**
+- Fixed a crash where the delegate method of `SBDWebSocketEngine` would crash when called. 
+
 ## 3.1.57 (Jul 31, 2024)
 ### **Improvements**
 - Fixed a crash where `SBDSessionWebSocketEngine` would crash when establishing a new WebSocket connection. 
