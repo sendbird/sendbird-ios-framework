@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.59 (May 7, 2026)
+### **Improvements**
+- Fixed a WebSocket client teardown race that could crash on `disconnect`/`clear` re-entry and stale engine callbacks
+- Added regression test coverage for `SBDWebSocketClient` teardown races and `SBDSessionWebSocketEngine` restart/clear/queue races
+
 ## 3.1.58 (Frb 10, 2025)
 ### **Improvements**
 - Fixed a crash where the delegate method of `SBDWebSocketEngine` would crash when called. 
