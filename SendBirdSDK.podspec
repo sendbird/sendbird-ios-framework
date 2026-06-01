@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.authors      = {
     'Jed Gyeong' => 'jed.gyeong@sendbird.com',
     'Celine Moon' => 'celine.moon@sendbird.com',
-    'Ernest Hong' => 'ernest.hong@sendbird.com',
-    'Damon Park' => 'damon.park@sendbird.com'
+    'Damon Park' => 'damon.park@sendbird.com',
+    'Tez Park' => 'tez.park@sendbird.com'
   }
   s.source       = { :git => 'https://github.com/sendbird/sendbird-ios-framework.git', :tag => "v3.1.60" }
   s.requires_arc = true
