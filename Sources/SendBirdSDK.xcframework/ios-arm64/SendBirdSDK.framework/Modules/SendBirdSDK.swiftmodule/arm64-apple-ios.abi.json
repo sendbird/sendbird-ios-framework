@@ -1,0 +1,3158 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "SendBirdSDK",
+    "printedName": "SendBirdSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SendBirdSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Atomic",
+        "printedName": "Atomic",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "wrappedValue",
+            "printedName": "wrappedValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK6AtomicC12wrappedValuexvp",
+            "mangledName": "$s11SendBirdSDK6AtomicC12wrappedValuexvp",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SendBirdSDK6AtomicC12wrappedValuexvg",
+                "mangledName": "$s11SendBirdSDK6AtomicC12wrappedValuexvg",
+                "moduleName": "SendBirdSDK",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SendBirdSDK6AtomicC12wrappedValuexvs",
+                "mangledName": "$s11SendBirdSDK6AtomicC12wrappedValuexvs",
+                "moduleName": "SendBirdSDK",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SendBirdSDK6AtomicC12wrappedValuexvM",
+                "mangledName": "$s11SendBirdSDK6AtomicC12wrappedValuexvM",
+                "moduleName": "SendBirdSDK",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "projectedValue",
+            "printedName": "projectedValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Atomic",
+                "printedName": "SendBirdSDK.Atomic<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:11SendBirdSDK6AtomicC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK6AtomicC14projectedValueACyxGvp",
+            "mangledName": "$s11SendBirdSDK6AtomicC14projectedValueACyxGvp",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Atomic",
+                    "printedName": "SendBirdSDK.Atomic<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:11SendBirdSDK6AtomicC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SendBirdSDK6AtomicC14projectedValueACyxGvg",
+                "mangledName": "$s11SendBirdSDK6AtomicC14projectedValueACyxGvg",
+                "moduleName": "SendBirdSDK",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(wrappedValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Atomic",
+                "printedName": "SendBirdSDK.Atomic<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:11SendBirdSDK6AtomicC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SendBirdSDK6AtomicC12wrappedValueACyxGx_tcfc",
+            "mangledName": "$s11SendBirdSDK6AtomicC12wrappedValueACyxGx_tcfc",
+            "moduleName": "SendBirdSDK",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "atomicMutate",
+            "printedName": "atomicMutate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(inout τ_0_0) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK6AtomicC12atomicMutateyyyxzXEF",
+            "mangledName": "$s11SendBirdSDK6AtomicC12atomicMutateyyyxzXEF",
+            "moduleName": "SendBirdSDK",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11SendBirdSDK6AtomicC",
+        "mangledName": "$s11SendBirdSDK6AtomicC",
+        "moduleName": "SendBirdSDK",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "PropertyWrapper",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SendBirdSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SafeSerialQueue",
+        "printedName": "SafeSerialQueue",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "queueKey",
+            "printedName": "queueKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchSpecificKey",
+                "printedName": "Dispatch.DispatchSpecificKey<()>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "usr": "s:8Dispatch0A11SpecificKeyC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK15SafeSerialQueueC8queueKey33_E56BFD06F1A0DD010EE2F049596E95FFLL8Dispatch0r8SpecificH0CyytGvp",
+            "mangledName": "$s11SendBirdSDK15SafeSerialQueueC8queueKey33_E56BFD06F1A0DD010EE2F049596E95FFLL8Dispatch0r8SpecificH0CyytGvp",
+            "moduleName": "SendBirdSDK",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "queue",
+            "printedName": "queue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK15SafeSerialQueueC5queueSo012OS_dispatch_G0Cvp",
+            "mangledName": "$s11SendBirdSDK15SafeSerialQueueC5queueSo012OS_dispatch_G0Cvp",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SendBirdSDK15SafeSerialQueueC5queueSo012OS_dispatch_G0Cvg",
+                "mangledName": "$s11SendBirdSDK15SafeSerialQueueC5queueSo012OS_dispatch_G0Cvg",
+                "moduleName": "SendBirdSDK",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SendBirdSDK15SafeSerialQueueC5queueSo012OS_dispatch_G0Cvs",
+                "mangledName": "$s11SendBirdSDK15SafeSerialQueueC5queueSo012OS_dispatch_G0Cvs",
+                "moduleName": "SendBirdSDK",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SendBirdSDK15SafeSerialQueueC5queueSo012OS_dispatch_G0CvM",
+                "mangledName": "$s11SendBirdSDK15SafeSerialQueueC5queueSo012OS_dispatch_G0CvM",
+                "moduleName": "SendBirdSDK",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(label:queue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SafeSerialQueue",
+                "printedName": "SendBirdSDK.SafeSerialQueue",
+                "usr": "s:11SendBirdSDK15SafeSerialQueueC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SendBirdSDK15SafeSerialQueueC5label5queueACSSSg_So012OS_dispatch_H0CSgtcfc",
+            "mangledName": "$s11SendBirdSDK15SafeSerialQueueC5label5queueACSSSg_So012OS_dispatch_H0CSgtcfc",
+            "moduleName": "SendBirdSDK",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "sync",
+            "printedName": "sync(block:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK15SafeSerialQueueC4sync5blockyyyXE_tF",
+            "mangledName": "$s11SendBirdSDK15SafeSerialQueueC4sync5blockyyyXE_tF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sync",
+            "printedName": "sync(block:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() throws -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK15SafeSerialQueueC4sync5blockyyyKXE_tKF",
+            "mangledName": "$s11SendBirdSDK15SafeSerialQueueC4sync5blockyyyKXE_tKF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sync",
+            "printedName": "sync(block:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK15SafeSerialQueueC4sync5blockxxyXE_tlF",
+            "mangledName": "$s11SendBirdSDK15SafeSerialQueueC4sync5blockxxyXE_tlF",
+            "moduleName": "SendBirdSDK",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sync",
+            "printedName": "sync(block:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() throws -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK15SafeSerialQueueC4sync5blockxxyKXE_tKlF",
+            "mangledName": "$s11SendBirdSDK15SafeSerialQueueC4sync5blockxxyKXE_tKlF",
+            "moduleName": "SendBirdSDK",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "isOpen": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "async",
+            "printedName": "async(block:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK15SafeSerialQueueC5async5blockyyyc_tF",
+            "mangledName": "$s11SendBirdSDK15SafeSerialQueueC5async5blockyyyc_tF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "blockingAsync",
+            "printedName": "blockingAsync(block:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK15SafeSerialQueueC13blockingAsync5blockyyyc_tF",
+            "mangledName": "$s11SendBirdSDK15SafeSerialQueueC13blockingAsync5blockyyyc_tF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11SendBirdSDK15SafeSerialQueueC",
+        "mangledName": "$s11SendBirdSDK15SafeSerialQueueC",
+        "moduleName": "SendBirdSDK",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SendBirdSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "SendBirdSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SBDSwiftSessionWebSocketTask",
+        "printedName": "SBDSwiftSessionWebSocketTask",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "Foundation.URLSessionTask.State",
+                "usr": "c:@E@NSURLSessionTaskState"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP5stateSo012NSURLSessionH5StateVvp",
+            "mangledName": "$s11SendBirdSDK28SBDSwiftSessionWebSocketTaskP5stateSo012NSURLSessionH5StateVvp",
+            "moduleName": "SendBirdSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "Foundation.URLSessionTask.State",
+                    "usr": "c:@E@NSURLSessionTaskState"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP5stateSo012NSURLSessionH5StateVvg",
+                "mangledName": "$s11SendBirdSDK28SBDSwiftSessionWebSocketTaskP5stateSo012NSURLSessionH5StateVvg",
+                "moduleName": "SendBirdSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : SendBirdSDK.SBDSwiftSessionWebSocketTask>",
+                "sugared_genericSig": "<Self where Self : SendBirdSDK.SBDSwiftSessionWebSocketTask>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "resume",
+            "printedName": "resume()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP6resumeyyF",
+            "mangledName": "$s11SendBirdSDK28SBDSwiftSessionWebSocketTaskP6resumeyyF",
+            "moduleName": "SendBirdSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SendBirdSDK.SBDSwiftSessionWebSocketTask>",
+            "sugared_genericSig": "<Self where Self : SendBirdSDK.SBDSwiftSessionWebSocketTask>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP6cancelyyF",
+            "mangledName": "$s11SendBirdSDK28SBDSwiftSessionWebSocketTaskP6cancelyyF",
+            "moduleName": "SendBirdSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SendBirdSDK.SBDSwiftSessionWebSocketTask>",
+            "sugared_genericSig": "<Self where Self : SendBirdSDK.SBDSwiftSessionWebSocketTask>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel(with:reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CloseCode",
+                "printedName": "Foundation.URLSessionWebSocketTask.CloseCode",
+                "usr": "c:@E@NSURLSessionWebSocketCloseCode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP6cancel4with6reasonySo012NSURLSessionfG9CloseCodeV_10Foundation4DataVSgtF",
+            "mangledName": "$s11SendBirdSDK28SBDSwiftSessionWebSocketTaskP6cancel4with6reasonySo012NSURLSessionfG9CloseCodeV_10Foundation4DataVSgtF",
+            "moduleName": "SendBirdSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SendBirdSDK.SBDSwiftSessionWebSocketTask>",
+            "sugared_genericSig": "<Self where Self : SendBirdSDK.SBDSwiftSessionWebSocketTask>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(_:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Message",
+                "printedName": "Foundation.URLSessionWebSocketTask.Message",
+                "usr": "s:So25NSURLSessionWebSocketTaskC10FoundationE7MessageO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "((any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Error)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP4send_17completionHandlerySo012NSURLSessionfgH0C10FoundationE7MessageO_ys5Error_pSgYbctF",
+            "mangledName": "$s11SendBirdSDK28SBDSwiftSessionWebSocketTaskP4send_17completionHandlerySo012NSURLSessionfgH0C10FoundationE7MessageO_ys5Error_pSgYbctF",
+            "moduleName": "SendBirdSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SendBirdSDK.SBDSwiftSessionWebSocketTask>",
+            "sugared_genericSig": "<Self where Self : SendBirdSDK.SBDSwiftSessionWebSocketTask>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "receive",
+            "printedName": "receive()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Message",
+                "printedName": "Foundation.URLSessionWebSocketTask.Message",
+                "usr": "s:So25NSURLSessionWebSocketTaskC10FoundationE7MessageO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP7receiveSo012NSURLSessionfgH0C10FoundationE7MessageOyYaKF",
+            "mangledName": "$s11SendBirdSDK28SBDSwiftSessionWebSocketTaskP7receiveSo012NSURLSessionfgH0C10FoundationE7MessageOyYaKF",
+            "moduleName": "SendBirdSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SendBirdSDK.SBDSwiftSessionWebSocketTask>",
+            "sugared_genericSig": "<Self where Self : SendBirdSDK.SBDSwiftSessionWebSocketTask>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP",
+        "mangledName": "$s11SendBirdSDK28SBDSwiftSessionWebSocketTaskP",
+        "moduleName": "SendBirdSDK",
+        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Sendable>",
+        "intro_iOS": "13",
+        "declAttributes": [
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SBDSwiftSessionWebSocketSession",
+        "printedName": "SBDSwiftSessionWebSocketSession",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "makeWebSocketTask",
+            "printedName": "makeWebSocketTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SBDSwiftSessionWebSocketTask",
+                "printedName": "any SendBirdSDK.SBDSwiftSessionWebSocketTask",
+                "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK024SBDSwiftSessionWebSocketE0P04makefG4Task4withAA0defgI0_p10Foundation10URLRequestV_tF",
+            "mangledName": "$s11SendBirdSDK024SBDSwiftSessionWebSocketE0P04makefG4Task4withAA0defgI0_p10Foundation10URLRequestV_tF",
+            "moduleName": "SendBirdSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SendBirdSDK.SBDSwiftSessionWebSocketSession>",
+            "sugared_genericSig": "<Self where Self : SendBirdSDK.SBDSwiftSessionWebSocketSession>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "finishTasksAndInvalidate",
+            "printedName": "finishTasksAndInvalidate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK024SBDSwiftSessionWebSocketE0P24finishTasksAndInvalidateyyF",
+            "mangledName": "$s11SendBirdSDK024SBDSwiftSessionWebSocketE0P24finishTasksAndInvalidateyyF",
+            "moduleName": "SendBirdSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SendBirdSDK.SBDSwiftSessionWebSocketSession>",
+            "sugared_genericSig": "<Self where Self : SendBirdSDK.SBDSwiftSessionWebSocketSession>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11SendBirdSDK024SBDSwiftSessionWebSocketE0P",
+        "mangledName": "$s11SendBirdSDK024SBDSwiftSessionWebSocketE0P",
+        "moduleName": "SendBirdSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "intro_iOS": "13",
+        "declAttributes": [
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SBDSwiftSessionWebSocketEngine",
+        "printedName": "SBDSwiftSessionWebSocketEngine",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Constants",
+            "printedName": "Constants",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "queueName",
+                "printedName": "queueName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC9ConstantsV9queueNameSSvpZ",
+                "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC9ConstantsV9queueNameSSvpZ",
+                "moduleName": "SendBirdSDK",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC9ConstantsV9queueNameSSvgZ",
+                    "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC9ConstantsV9queueNameSSvgZ",
+                    "moduleName": "SendBirdSDK",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Constants",
+                    "printedName": "SendBirdSDK.SBDSwiftSessionWebSocketEngine.Constants",
+                    "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC9ConstantsV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC9ConstantsVAEycfc",
+                "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC9ConstantsVAEycfc",
+                "moduleName": "SendBirdSDK",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC9ConstantsV",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC9ConstantsV",
+            "moduleName": "SendBirdSDK",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SBDWebSocketState",
+                "printedName": "SendBirdSDK.SBDWebSocketState",
+                "usr": "c:@E@SBDWebSocketState"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5stateSo06SBDWebG5StateVvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5stateSo06SBDWebG5StateVvp",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SBDWebSocketState",
+                    "printedName": "SendBirdSDK.SBDWebSocketState",
+                    "usr": "c:@E@SBDWebSocketState"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5stateSo06SBDWebG5StateVvg",
+                "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5stateSo06SBDWebG5StateVvg",
+                "moduleName": "SendBirdSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SBDWebSocketState",
+                    "printedName": "SendBirdSDK.SBDWebSocketState",
+                    "usr": "c:@E@SBDWebSocketState"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5stateSo06SBDWebG5StateVvs",
+                "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5stateSo06SBDWebG5StateVvs",
+                "moduleName": "SendBirdSDK",
+                "implicit": true,
+                "isOpen": true,
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5stateSo06SBDWebG5StateVvM",
+                "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5stateSo06SBDWebG5StateVvM",
+                "moduleName": "SendBirdSDK",
+                "implicit": true,
+                "isOpen": true,
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$state",
+            "printedName": "$state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Atomic",
+                "printedName": "SendBirdSDK.Atomic<SendBirdSDK.SBDWebSocketState>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SBDWebSocketState",
+                    "printedName": "SendBirdSDK.SBDWebSocketState",
+                    "usr": "c:@E@SBDWebSocketState"
+                  }
+                ],
+                "usr": "s:11SendBirdSDK6AtomicC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC6$stateAA6AtomicCySo06SBDWebG5StateVGvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC6$stateAA6AtomicCySo06SBDWebG5StateVGvp",
+            "moduleName": "SendBirdSDK",
+            "implicit": true,
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Atomic",
+                    "printedName": "SendBirdSDK.Atomic<SendBirdSDK.SBDWebSocketState>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SBDWebSocketState",
+                        "printedName": "SendBirdSDK.SBDWebSocketState",
+                        "usr": "c:@E@SBDWebSocketState"
+                      }
+                    ],
+                    "usr": "s:11SendBirdSDK6AtomicC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC6$stateAA6AtomicCySo06SBDWebG5StateVGvg",
+                "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC6$stateAA6AtomicCySo06SBDWebG5StateVGvg",
+                "moduleName": "SendBirdSDK",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_state",
+            "printedName": "_state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Atomic",
+                "printedName": "SendBirdSDK.Atomic<SendBirdSDK.SBDWebSocketState>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SBDWebSocketState",
+                    "printedName": "SendBirdSDK.SBDWebSocketState",
+                    "usr": "c:@E@SBDWebSocketState"
+                  }
+                ],
+                "usr": "s:11SendBirdSDK6AtomicC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC6_state33_2A736A771AE182471A715F6B51412772LLAA6AtomicCySo06SBDWebG5StateVGvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC6_state33_2A736A771AE182471A715F6B51412772LLAA6AtomicCySo06SBDWebG5StateVGvp",
+            "moduleName": "SendBirdSDK",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "objcDelegate",
+            "printedName": "objcDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any SendBirdSDK.SBDWebSocketDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC12objcDelegate33_2A736A771AE182471A715F6B51412772LLSo06SBDWebgJ0_pSgvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC12objcDelegate33_2A736A771AE182471A715F6B51412772LLSo06SBDWebgJ0_pSgvp",
+            "moduleName": "SendBirdSDK",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "ownership": 1,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "delegateDispatchQueue",
+            "printedName": "delegateDispatchQueue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC21delegateDispatchQueue33_2A736A771AE182471A715F6B51412772LLSo17OS_dispatch_queueCSgvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC21delegateDispatchQueue33_2A736A771AE182471A715F6B51412772LLSo17OS_dispatch_queueCSgvp",
+            "moduleName": "SendBirdSDK",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "_session",
+            "printedName": "_session",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Atomic",
+                "printedName": "SendBirdSDK.Atomic<(any SendBirdSDK.SBDSwiftSessionWebSocketSession)?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SendBirdSDK.SBDSwiftSessionWebSocketSession)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SBDSwiftSessionWebSocketSession",
+                        "printedName": "any SendBirdSDK.SBDSwiftSessionWebSocketSession",
+                        "usr": "s:11SendBirdSDK024SBDSwiftSessionWebSocketE0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:11SendBirdSDK6AtomicC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC8_session33_2A736A771AE182471A715F6B51412772LLAA6AtomicCyAA0defgE0_pSgGvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC8_session33_2A736A771AE182471A715F6B51412772LLAA6AtomicCyAA0defgE0_pSgGvp",
+            "moduleName": "SendBirdSDK",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "_task",
+            "printedName": "_task",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Atomic",
+                "printedName": "SendBirdSDK.Atomic<(any SendBirdSDK.SBDSwiftSessionWebSocketTask)?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SendBirdSDK.SBDSwiftSessionWebSocketTask)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SBDSwiftSessionWebSocketTask",
+                        "printedName": "any SendBirdSDK.SBDSwiftSessionWebSocketTask",
+                        "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:11SendBirdSDK6AtomicC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5_task33_2A736A771AE182471A715F6B51412772LLAA6AtomicCyAA0defG4Task_pSgGvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5_task33_2A736A771AE182471A715F6B51412772LLAA6AtomicCyAA0defG4Task_pSgGvp",
+            "moduleName": "SendBirdSDK",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 4,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "queue",
+            "printedName": "queue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OperationQueue",
+                "printedName": "Foundation.OperationQueue",
+                "usr": "c:objc(cs)NSOperationQueue"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5queue33_2A736A771AE182471A715F6B51412772LLSo16NSOperationQueueCvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5queue33_2A736A771AE182471A715F6B51412772LLSo16NSOperationQueueCvp",
+            "moduleName": "SendBirdSDK",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 5,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "dispatchQueue",
+            "printedName": "dispatchQueue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC13dispatchQueue33_2A736A771AE182471A715F6B51412772LLSo03OS_I6_queueCvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC13dispatchQueue33_2A736A771AE182471A715F6B51412772LLSo03OS_I6_queueCvp",
+            "moduleName": "SendBirdSDK",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 6,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "_moniter",
+            "printedName": "_moniter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Atomic",
+                "printedName": "SendBirdSDK.Atomic<Network.NWPathMonitor?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Network.NWPathMonitor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NWPathMonitor",
+                        "printedName": "Network.NWPathMonitor",
+                        "usr": "s:7Network13NWPathMonitorC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:11SendBirdSDK6AtomicC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC8_moniter33_2A736A771AE182471A715F6B51412772LLAA6AtomicCy7Network13NWPathMonitorCSgGvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC8_moniter33_2A736A771AE182471A715F6B51412772LLAA6AtomicCy7Network13NWPathMonitorCSgGvp",
+            "moduleName": "SendBirdSDK",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 7,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "_status",
+            "printedName": "_status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Atomic",
+                "printedName": "SendBirdSDK.Atomic<Network.NWPath.Status>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Status",
+                    "printedName": "Network.NWPath.Status",
+                    "usr": "s:7Network6NWPathV6StatusO"
+                  }
+                ],
+                "usr": "s:11SendBirdSDK6AtomicC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC7_status33_2A736A771AE182471A715F6B51412772LLAA6AtomicCy7Network6NWPathV6StatusOGvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC7_status33_2A736A771AE182471A715F6B51412772LLAA6AtomicCy7Network6NWPathV6StatusOGvp",
+            "moduleName": "SendBirdSDK",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 8,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "_usesWiFi",
+            "printedName": "_usesWiFi",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Atomic",
+                "printedName": "SendBirdSDK.Atomic<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:11SendBirdSDK6AtomicC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC9_usesWiFi33_2A736A771AE182471A715F6B51412772LLAA6AtomicCySbGvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC9_usesWiFi33_2A736A771AE182471A715F6B51412772LLAA6AtomicCySbGvp",
+            "moduleName": "SendBirdSDK",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 9,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "connectQueue",
+            "printedName": "connectQueue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SafeSerialQueue",
+                "printedName": "SendBirdSDK.SafeSerialQueue",
+                "usr": "s:11SendBirdSDK15SafeSerialQueueC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC12connectQueue33_2A736A771AE182471A715F6B51412772LLAA010SafeSerialJ0Cvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC12connectQueue33_2A736A771AE182471A715F6B51412772LLAA010SafeSerialJ0Cvp",
+            "moduleName": "SendBirdSDK",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 10,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "listenTask",
+            "printedName": "listenTask",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "_Concurrency.Task<(), Swift.Never>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Task",
+                    "printedName": "_Concurrency.Task<(), Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:ScT"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC10listenTask33_2A736A771AE182471A715F6B51412772LLScTyyts5NeverOGSgvp",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC10listenTask33_2A736A771AE182471A715F6B51412772LLScTyyts5NeverOGSgvp",
+            "moduleName": "SendBirdSDK",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 11,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SBDSwiftSessionWebSocketEngine",
+                "printedName": "SendBirdSDK.SBDSwiftSessionWebSocketEngine",
+                "usr": "c:@M@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)init",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineCACycfc",
+            "moduleName": "SendBirdSDK",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(urlRequest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SBDSwiftSessionWebSocketEngine",
+                "printedName": "SendBirdSDK.SBDSwiftSessionWebSocketEngine",
+                "usr": "c:@M@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)initWithURLRequest:",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC10urlRequestAC10Foundation10URLRequestV_tcfc",
+            "moduleName": "SendBirdSDK",
+            "objc_name": "initWithURLRequest:",
+            "declAttributes": [
+              "Convenience",
+              "ObjC"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "reconnectInternallyForPathChange",
+            "printedName": "reconnectInternallyForPathChange()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)reconnectInternallyForPathChange",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC32reconnectInternallyForPathChangeyyF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)start:",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5startyy10Foundation10URLRequestVF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "objc_name": "start:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SBDWebSocketStatusCode",
+                "printedName": "SendBirdSDK.SBDWebSocketStatusCode",
+                "usr": "c:@E@SBDWebSocketStatusCode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)stop:",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC4stopyySo06SBDWebG10StatusCodeVF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "objc_name": "stop:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "internalStart",
+            "printedName": "internalStart(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)internalStart:",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC13internalStartyy10Foundation10URLRequestVF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "internalStop",
+            "printedName": "internalStop(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SBDWebSocketStatusCode",
+                "printedName": "SendBirdSDK.SBDWebSocketStatusCode",
+                "usr": "c:@E@SBDWebSocketStatusCode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)internalStop:",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC12internalStopyySo06SBDWebG10StatusCodeVF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "forceStop",
+            "printedName": "forceStop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)forceStop",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC9forceStopyyF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "objc_name": "forceStop",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendData",
+            "printedName": "sendData(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(((any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "((any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)sendData:completion:",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC8sendData_10completiony10Foundation0J0VSg_ys5Error_pSgcSgtF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendString",
+            "printedName": "sendString(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(((any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "((any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)sendString:completion:",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC10sendString_10completionySS_ys5Error_pSgcSgtF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "urlSession",
+            "printedName": "urlSession(_:webSocketTask:didOpenWithProtocol:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionWebSocketTask",
+                "printedName": "Foundation.URLSessionWebSocketTask",
+                "usr": "c:objc(cs)NSURLSessionWebSocketTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)URLSession:webSocketTask:didOpenWithProtocol:",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC03urlE0_03webG4Task19didOpenWithProtocolySo12NSURLSessionC_So0pfgK0CSSSgtF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "objc_name": "URLSession:webSocketTask:didOpenWithProtocol:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "urlSession",
+            "printedName": "urlSession(_:webSocketTask:didCloseWith:reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionWebSocketTask",
+                "printedName": "Foundation.URLSessionWebSocketTask",
+                "usr": "c:objc(cs)NSURLSessionWebSocketTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CloseCode",
+                "printedName": "Foundation.URLSessionWebSocketTask.CloseCode",
+                "usr": "c:@E@NSURLSessionWebSocketCloseCode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)URLSession:webSocketTask:didCloseWithCode:reason:",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC03urlE0_03webG4Task12didCloseWith6reasonySo12NSURLSessionC_So0pfgK0CSo0pfgM4CodeV10Foundation4DataVSgtF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "objc_name": "URLSession:webSocketTask:didCloseWithCode:reason:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleDidOpen",
+            "printedName": "handleDidOpen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SBDSwiftSessionWebSocketTask",
+                "printedName": "any SendBirdSDK.SBDSwiftSessionWebSocketTask",
+                "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC13handleDidOpenyyAA0defG4Task_pF",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC13handleDidOpenyyAA0defG4Task_pF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleDidClose",
+            "printedName": "handleDidClose(_:closeCode:reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SBDSwiftSessionWebSocketTask",
+                "printedName": "any SendBirdSDK.SBDSwiftSessionWebSocketTask",
+                "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CloseCode",
+                "printedName": "Foundation.URLSessionWebSocketTask.CloseCode",
+                "usr": "c:@E@NSURLSessionWebSocketCloseCode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC14handleDidClose_9closeCode6reasonyAA0defG4Task_p_So012NSURLSessionfgkM0V10Foundation4DataVSgtF",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC14handleDidClose_9closeCode6reasonyAA0defG4Task_p_So012NSURLSessionfgkM0V10Foundation4DataVSgtF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "urlSession",
+            "printedName": "urlSession(_:task:didCompleteWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionTask",
+                "printedName": "Foundation.URLSessionTask",
+                "usr": "c:objc(cs)NSURLSessionTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)URLSession:task:didCompleteWithError:",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC03urlE0_4task20didCompleteWithErrorySo12NSURLSessionC_So0O4TaskCs0N0_pSgtF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "objc_name": "URLSession:task:didCompleteWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any SendBirdSDK.SBDWebSocketDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SBDWebSocketDelegate",
+                    "printedName": "any SendBirdSDK.SBDWebSocketDelegate",
+                    "usr": "c:objc(pl)SBDWebSocketDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)setDelegate:",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC11setDelegateyySo06SBDWebgJ0_pSgF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "objc_name": "setDelegate:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegateDispatchQueue",
+            "printedName": "setDelegateDispatchQueue(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)setDelegateDispatchQueue:",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC24setDelegateDispatchQueueyySo17OS_dispatch_queueCSgF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "objc_name": "setDelegateDispatchQueue:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "readyState",
+            "printedName": "readyState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SBDWebSocketState",
+                "printedName": "SendBirdSDK.SBDWebSocketState",
+                "usr": "c:@E@SBDWebSocketState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)readyState",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC10readyStateSo06SBDWebgJ0VyF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "objc_name": "readyState",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clear",
+            "printedName": "clear()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine(im)clear",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC5clearyyF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "objc_name": "clear",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_setTaskForTesting",
+            "printedName": "_setTaskForTesting(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any SendBirdSDK.SBDSwiftSessionWebSocketTask)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SBDSwiftSessionWebSocketTask",
+                    "printedName": "any SendBirdSDK.SBDSwiftSessionWebSocketTask",
+                    "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC18_setTaskForTestingyyAA0defgJ0_pSgF",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC18_setTaskForTestingyyAA0defgJ0_pSgF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_setSessionForTesting",
+            "printedName": "_setSessionForTesting(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any SendBirdSDK.SBDSwiftSessionWebSocketSession)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SBDSwiftSessionWebSocketSession",
+                    "printedName": "any SendBirdSDK.SBDSwiftSessionWebSocketSession",
+                    "usr": "s:11SendBirdSDK024SBDSwiftSessionWebSocketE0P"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC04_setE10ForTestingyyAA0defgE0_pSgF",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC04_setE10ForTestingyyAA0defgE0_pSgF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_setStateForTesting",
+            "printedName": "_setStateForTesting(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SBDWebSocketState",
+                "printedName": "SendBirdSDK.SBDWebSocketState",
+                "usr": "c:@E@SBDWebSocketState"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC19_setStateForTestingyySo06SBDWebgJ0VF",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC19_setStateForTestingyySo06SBDWebgJ0VF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_taskForTesting",
+            "printedName": "_taskForTesting()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any SendBirdSDK.SBDSwiftSessionWebSocketTask)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SBDSwiftSessionWebSocketTask",
+                    "printedName": "any SendBirdSDK.SBDSwiftSessionWebSocketTask",
+                    "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC15_taskForTestingAA0defG4Task_pSgyF",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC15_taskForTestingAA0defG4Task_pSgyF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_sessionForTesting",
+            "printedName": "_sessionForTesting()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any SendBirdSDK.SBDSwiftSessionWebSocketSession)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SBDSwiftSessionWebSocketSession",
+                    "printedName": "any SendBirdSDK.SBDSwiftSessionWebSocketSession",
+                    "usr": "s:11SendBirdSDK024SBDSwiftSessionWebSocketE0P"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC18_sessionForTestingAA0defgE0_pSgyF",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC18_sessionForTestingAA0defgE0_pSgyF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_connectQueueForTesting",
+            "printedName": "_connectQueueForTesting()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC23_connectQueueForTestingSo17OS_dispatch_queueCyF",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC23_connectQueueForTestingSo17OS_dispatch_queueCyF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_invokeOpenForTesting",
+            "printedName": "_invokeOpenForTesting(task:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SBDSwiftSessionWebSocketTask",
+                "printedName": "any SendBirdSDK.SBDSwiftSessionWebSocketTask",
+                "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC21_invokeOpenForTesting4taskyAA0defG4Task_p_tF",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC21_invokeOpenForTesting4taskyAA0defG4Task_p_tF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_invokeCloseForTesting",
+            "printedName": "_invokeCloseForTesting(task:closeCode:reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SBDSwiftSessionWebSocketTask",
+                "printedName": "any SendBirdSDK.SBDSwiftSessionWebSocketTask",
+                "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CloseCode",
+                "printedName": "Foundation.URLSessionWebSocketTask.CloseCode",
+                "usr": "c:@E@NSURLSessionWebSocketCloseCode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC22_invokeCloseForTesting4task9closeCode6reasonyAA0defG4Task_p_So012NSURLSessionfgjO0V10Foundation4DataVSgtF",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC22_invokeCloseForTesting4task9closeCode6reasonyAA0defG4Task_p_So012NSURLSessionfgjO0V10Foundation4DataVSgtF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_invokeReceiveFailureForTesting",
+            "printedName": "_invokeReceiveFailureForTesting(task:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SBDSwiftSessionWebSocketTask",
+                "printedName": "any SendBirdSDK.SBDSwiftSessionWebSocketTask",
+                "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC31_invokeReceiveFailureForTesting4task5erroryAA0defG4Task_p_s5Error_ptF",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC31_invokeReceiveFailureForTesting4task5erroryAA0defG4Task_p_s5Error_ptF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_invokePathUpdateForTesting",
+            "printedName": "_invokePathUpdateForTesting(status:usesWiFi:usesCellular:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Status",
+                "printedName": "Network.NWPath.Status",
+                "usr": "s:7Network6NWPathV6StatusO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SendBirdSDK30SBDSwiftSessionWebSocketEngineC27_invokePathUpdateForTesting6status8usesWiFi0O8Cellulary7Network6NWPathV6StatusO_S2btF",
+            "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC27_invokePathUpdateForTesting6status8usesWiFi0O8Cellulary7Network6NWPathV6StatusO_S2btF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SendBirdSDK@objc(cs)SBDSwiftSessionWebSocketEngine",
+        "mangledName": "$s11SendBirdSDK30SBDSwiftSessionWebSocketEngineC",
+        "moduleName": "SendBirdSDK",
+        "isOpen": true,
+        "intro_iOS": "13",
+        "objc_name": "SBDSwiftSessionWebSocketEngine",
+        "declAttributes": [
+          "ObjC",
+          "Available"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSessionWebSocketTask",
+        "printedName": "URLSessionWebSocketTask",
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSessionWebSocketTask",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "13.0",
+        "objc_name": "NSURLSessionWebSocketTask",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSURLSessionTask",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Foundation.URLSessionTask",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SBDSwiftSessionWebSocketTask",
+            "printedName": "SBDSwiftSessionWebSocketTask",
+            "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP",
+            "mangledName": "$s11SendBirdSDK28SBDSwiftSessionWebSocketTaskP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSession",
+        "printedName": "URLSession",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "makeWebSocketTask",
+            "printedName": "makeWebSocketTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SBDSwiftSessionWebSocketTask",
+                "printedName": "any SendBirdSDK.SBDSwiftSessionWebSocketTask",
+                "usr": "s:11SendBirdSDK28SBDSwiftSessionWebSocketTaskP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So12NSURLSessionC11SendBirdSDKE17makeWebSocketTask4withAC015SBDSwiftSessionfgH0_p10Foundation10URLRequestV_tF",
+            "mangledName": "$sSo12NSURLSessionC11SendBirdSDKE17makeWebSocketTask4withAC015SBDSwiftSessionfgH0_p10Foundation10URLRequestV_tF",
+            "moduleName": "SendBirdSDK",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSession",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SBDSwiftSessionWebSocketSession",
+            "printedName": "SBDSwiftSessionWebSocketSession",
+            "usr": "s:11SendBirdSDK024SBDSwiftSessionWebSocketE0P",
+            "mangledName": "$s11SendBirdSDK024SBDSwiftSessionWebSocketE0P"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/kai.lee\/Documents\/Github\/Sendbird\/messaging-ios\/SendBirdSDK\/WebSocket\/SessionSocket\/Atomic.swift",
+      "kind": "StringLiteral",
+      "offset": 711,
+      "length": 67,
+      "value": "\"AtomicProperty_\""
+    },
+    {
+      "filePath": "\/Users\/kai.lee\/Documents\/Github\/Sendbird\/messaging-ios\/SendBirdSDK\/WebSocket\/SessionSocket\/Atomic.swift",
+      "kind": "StringLiteral",
+      "offset": 747,
+      "length": 1,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/kai.lee\/Documents\/Github\/Sendbird\/messaging-ios\/SendBirdSDK\/WebSocket\/SessionSocket\/Atomic.swift",
+      "kind": "StringLiteral",
+      "offset": 777,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kai.lee\/Documents\/Github\/Sendbird\/messaging-ios\/SendBirdSDK\/WebSocket\/SessionSocket\/SBDSwiftSessionWebSocketEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 2037,
+      "length": 46,
+      "value": "\"com.sendbird.core.networking.websocket.queue\""
+    },
+    {
+      "filePath": "\/Users\/kai.lee\/Documents\/Github\/Sendbird\/messaging-ios\/SendBirdSDK\/WebSocket\/SessionSocket\/SBDSwiftSessionWebSocketEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2606,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kai.lee\/Documents\/Github\/Sendbird\/messaging-ios\/SendBirdSDK\/WebSocket\/SessionSocket\/SBDSwiftSessionWebSocketEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 2667,
+      "length": 69,
+      "value": "\"com.sendbird.core.networking.websocket.connect.\""
+    },
+    {
+      "filePath": "\/Users\/kai.lee\/Documents\/Github\/Sendbird\/messaging-ios\/SendBirdSDK\/WebSocket\/SessionSocket\/SBDSwiftSessionWebSocketEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 2735,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

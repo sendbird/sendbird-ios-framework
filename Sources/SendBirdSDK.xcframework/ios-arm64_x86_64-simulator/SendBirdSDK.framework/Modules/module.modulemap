@@ -4,3 +4,7 @@ framework module SendBirdSDK {
 
   module * { export * }
 }
+
+module SendBirdSDK.Swift {
+  header "SendBirdSDK-Swift.h"
+}

@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.1.60 (Jun 1, 2026)
+### Improvements
+- Fixed a WebSocket client callback queue hang by decoupling client callbacks and notifications onto dedicated serial queues
+- Added a callback generation guard so stale callbacks are dropped after `clear` and connection teardown
+- Added regression test coverage for `SBDWebSocketClient` callback queue lifecycle
+
 ## 3.1.59 (May 7, 2026)
 ### **Improvements**
 - Fixed a WebSocket client teardown race that could crash on `disconnect`/`clear` re-entry and stale engine callbacks

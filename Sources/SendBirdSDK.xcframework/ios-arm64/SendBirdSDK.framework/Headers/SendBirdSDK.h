@@ -80,6 +80,9 @@
 #import "SBDUserListQuery.h"
 #import "SBDUserMessage.h"
 #import "SBDUserMessageParams.h"
+#import "SBDWebSocketDelegate.h"
+#import "SBDWebSocketEngine.h"
+#import "SBDWebSocketTypes.h"
 
 //! Project version number for SendBirdSDK.
 FOUNDATION_EXPORT double SendBirdSDKVersionNumber;
