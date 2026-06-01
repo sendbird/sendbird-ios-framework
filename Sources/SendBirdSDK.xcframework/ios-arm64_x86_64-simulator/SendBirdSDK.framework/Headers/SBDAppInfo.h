@@ -50,6 +50,8 @@
 /// @since 3.0.222
 @property (assign, atomic, readonly) BOOL useNativeWS;
 
+@property (assign, atomic, readonly) BOOL useSwiftSessionWS;
+
 /// @since 3.0.231
 @property (atomic, readonly) NSInteger concurrentCallLimit;
 

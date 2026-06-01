@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/SBDAppInfo.h</key>
 		<data>
-		f6M7re3ZlDr8pIWcQYTSKSpIsUU=
+		jG3LHcl9y3AuSXvQc251NJa5Yfs=
 		</data>
 		<key>Headers/SBDAppleCriticalAlertOptions.h</key>
 		<data>
@@ -288,17 +288,73 @@
 		<data>
 		ngDWg0536YfHGUMfJVQKdqaab2Y=
 		</data>
+		<key>Headers/SBDWebSocketDelegate.h</key>
+		<data>
+		GtrB2gpa2VP6GTVPorBxGyaw8Gc=
+		</data>
+		<key>Headers/SBDWebSocketEngine.h</key>
+		<data>
+		draZWXu7kT49GCqAJZ+3Vulrxvg=
+		</data>
+		<key>Headers/SBDWebSocketTypes.h</key>
+		<data>
+		y/ck0BDv/JLWJ7U6RFMRj2YxBB8=
+		</data>
+		<key>Headers/SendBirdSDK-Swift.h</key>
+		<data>
+		2j2/++thYmqzq0hZeZ8/OMNE9fY=
+		</data>
 		<key>Headers/SendBirdSDK.h</key>
 		<data>
-		hu3WeXQWntOsv96rR/DAuxrFCCc=
+		XbD06FHWNdA3rQDiLxffhmc3te8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kI8VoABcholiv3aQOaYXKr+LFts=
+		gbXfor1YLKrrFkCuN3znvhBdovI=
+		</data>
+		<key>Modules/SendBirdSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		SoBGxzqms1M6mesCgxCxnB/aRmI=
+		</data>
+		<key>Modules/SendBirdSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		VqrNsvVLKO+0HOf0UvE6ZT68wBs=
+		</data>
+		<key>Modules/SendBirdSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		cd7XL9we9VMTwgvP15dqMqKGbH4=
+		</data>
+		<key>Modules/SendBirdSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		VqrNsvVLKO+0HOf0UvE6ZT68wBs=
+		</data>
+		<key>Modules/SendBirdSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		l78L2sWSf2HDy4aXYXWoWpqs+x4=
+		</data>
+		<key>Modules/SendBirdSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		SoBGxzqms1M6mesCgxCxnB/aRmI=
+		</data>
+		<key>Modules/SendBirdSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		aru1ZpTIdBuGDpPjveXBx3wrzEU=
+		</data>
+		<key>Modules/SendBirdSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		/HekuthZyvN+N8SK+OBfudo1M64=
+		</data>
+		<key>Modules/SendBirdSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		aru1ZpTIdBuGDpPjveXBx3wrzEU=
+		</data>
+		<key>Modules/SendBirdSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		E0GseRYoJfWalE9oSUlTSLgHvnU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		A/hhg+VweZ8bDHDHxFNRL/VekqU=
+		sfG31ngjhnB6Sq++W57+UHkXacA=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -318,7 +374,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vp6Pat0VoUyMtBjgN0q5tDNumiDRIiRQoln58dTmc1g=
+			WPkuZ087Oq28NT4hH9U9Fh7OMl4tBDyVsyK2o3rNzMI=
 			</data>
 		</dict>
 		<key>Headers/SBDAppleCriticalAlertOptions.h</key>
@@ -804,18 +860,116 @@
 			8Ib9mleXQyr8CIJm3yP1DCX7bRc+QXqKEWfEgxnZzHE=
 			</data>
 		</dict>
+		<key>Headers/SBDWebSocketDelegate.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2gcAIRabwwbgQnbLO3xPKRSOniRY+KrQyYOMUDKR/jI=
+			</data>
+		</dict>
+		<key>Headers/SBDWebSocketEngine.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ON8NGKnzqHZNlzOtUUP4Q3DjlO1nunTgw9P8Vj+8/U4=
+			</data>
+		</dict>
+		<key>Headers/SBDWebSocketTypes.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MV/h1ZWcXTWgQ5+WbzK1HkldkfabIgBTV14UCyMD0V8=
+			</data>
+		</dict>
+		<key>Headers/SendBirdSDK-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Bedneg/Mc4Ade8KXWBzTx5J/S3oipz/WyyzZBlKLdbU=
+			</data>
+		</dict>
 		<key>Headers/SendBirdSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fbt2IrmsrnsgJ+z7wWLGPxOriuoLqURHe3AU8iPZTFM=
+			MgoePAprehHDoAEEZnYv8FpZM9fkv8jJyjEMcJYwEHs=
+			</data>
+		</dict>
+		<key>Modules/SendBirdSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			K33/l93pAWkVCO05ZDR7bRRjaupAsPhfMkndgIS8V1w=
+			</data>
+		</dict>
+		<key>Modules/SendBirdSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XHXLROI6TloX2gwu082MLr23sY5VaL6lNa5YWuAuI04=
+			</data>
+		</dict>
+		<key>Modules/SendBirdSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			do6kI/2JFMhcTQ5kH+kisNjZZmBDj3xInD2dwNrC56w=
+			</data>
+		</dict>
+		<key>Modules/SendBirdSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XHXLROI6TloX2gwu082MLr23sY5VaL6lNa5YWuAuI04=
+			</data>
+		</dict>
+		<key>Modules/SendBirdSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KoflRe1vA7+WqFZicoEXxpIOEq10wEoT/tANnNP3IHI=
+			</data>
+		</dict>
+		<key>Modules/SendBirdSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			K33/l93pAWkVCO05ZDR7bRRjaupAsPhfMkndgIS8V1w=
+			</data>
+		</dict>
+		<key>Modules/SendBirdSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jnF6oa6HTz9bINJPO/gBDdwlJvJxfOzwGpjqpU+YjW4=
+			</data>
+		</dict>
+		<key>Modules/SendBirdSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OQUs1GBsFEZFLr9g/ED9V+MwqBfAHU3B44Ot4su0BMI=
+			</data>
+		</dict>
+		<key>Modules/SendBirdSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jnF6oa6HTz9bINJPO/gBDdwlJvJxfOzwGpjqpU+YjW4=
+			</data>
+		</dict>
+		<key>Modules/SendBirdSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w//UW2fJQ7ea9phYPDMrvW5uLeD/AduhO2E0s4xc9eY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Mi9r4a2W79JF4oM7T0aeZ1bJUn7KiN/Nto9ASjHgp8=
+			m3aALl/dycryPjl8JR6QzrQpVpMOM7D0RmBwXdpcJXc=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
